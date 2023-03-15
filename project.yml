@@ -21,11 +21,11 @@ sidebar:
       url: "/concept-cloud-compliance.html"
     - title: Ponga en marcha Cloud Data Sense
       entries:
-      - title: Realice puestas en marcha en el cloud
+      - title: Póngalo en marcha en la nube con BlueXP
         url: "/task-deploy-cloud-compliance.html"
-      - title: Se implementa en un host Linux con acceso a Internet
+      - title: Instale en un host Linux con acceso a Internet
         url: "/task-deploy-compliance-onprem.html"
-      - title: Puesta en marcha en las instalaciones sin acceso a Internet
+      - title: Instale en el entorno local sin acceso a Internet
         url: "/task-deploy-compliance-dark-site.html"
     - title: Active el análisis en sus orígenes de datos
       entries:
@@ -109,7 +109,7 @@ homepage:
       url: concept-cloud-compliance.html
     - title: Novedades
       url: whats-new.html
-    - title: Ponga en marcha el sentido de los datos en el cloud
+    - title: Ponga en marcha el sentido de los datos en el cloud de forma automática
       url: task-deploy-cloud-compliance.html
     - title: Implemente Data Sense en un host Linux con Internet
       url: task-deploy-compliance-onprem.html

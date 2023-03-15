@@ -4,7 +4,7 @@ permalink: task-deploy-compliance-dark-site.html
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
 summary: Complete unos pasos para poner en marcha Cloud Data Sense en un host en un sitio local que no tiene acceso a Internet. Este tipo de instalación es perfecta para sus sitios seguros. 
 ---
-= Implemente Cloud Data Sense en un host sin acceso a Internet
+= Instale Data Sense en un host sin acceso a Internet
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -223,7 +223,7 @@ Sólo se requiere acceso a _api.bluexp.netapp.com_ durante las conexiones inicia
 
 
 
-== Ponga en marcha Data Sense
+== Instale Data Sense en el host Linux en las instalaciones
 
 En configuraciones típicas, instalará el software en un único sistema host. link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["Consulte estos pasos aquí"].
 
@@ -258,26 +258,23 @@ tar -xzf DataSense-offline-bundle-v1.21.0.tar.gz
 +
 Esto extrae el software requerido y el archivo de instalación actual *cc_onprem_installer.tar.gz*.
 
-. Inicie BlueXP y seleccione *Gobierno > Clasificación*.
-. Haga clic en *Activar detección de datos*.
-+
-image:screenshot_cloud_compliance_deploy_start.png["Una captura de pantalla de cómo seleccionar el botón para activar Cloud Data Sense."]
-
-. Haga clic en *desplegar* para iniciar el asistente de implementación en las instalaciones.
-+
-image:screenshot_cloud_compliance_deploy_darksite.png["Una captura de pantalla donde se selecciona el botón para poner en marcha Cloud Data Sense en las instalaciones."]
-
-. Aparece el cuadro de diálogo _Deploy Data Sense on local_. Copie el comando proporcionado y péguelo en un archivo de texto para poder usarlo más tarde y haga clic en *Cerrar*. Por ejemplo:
-+
-`sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq --darksite`
-
 . Descomprima el archivo de instalación en el equipo host; por ejemplo:
 +
 [source, cli]
 ----
 tar -xzf cc_onprem_installer.tar.gz
 ----
-. Cuando el instalador lo solicite, puede introducir los valores necesarios en una serie de mensajes o puede proporcionar los parámetros necesarios como argumentos de línea de comandos al instalador:
+. Inicie BlueXP y seleccione *Gobierno > Clasificación*.
+. Haga clic en *Activar detección de datos*.
++
+image:screenshot_cloud_compliance_deploy_start.png["Una captura de pantalla de cómo seleccionar el botón para activar Cloud Data Sense."]
+
+. Haga clic en *desplegar* para iniciar la instalación en las instalaciones.
++
+image:screenshot_cloud_compliance_deploy_darksite.png["Una captura de pantalla donde se selecciona el botón para poner en marcha Cloud Data Sense en las instalaciones."]
+
+. Aparece el cuadro de diálogo _Deploy Data Sense on local_. Copie el comando proporcionado (por ejemplo: `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq --darksite`) y péguela en un archivo de texto para que pueda usarlo más tarde. A continuación, haga clic en *Cerrar* para descartar el cuadro de diálogo.
+. En el equipo host, escriba el comando que copió y luego siga una serie de avisos, o bien puede proporcionar el comando completo incluyendo todos los parámetros necesarios como argumentos de línea de comandos.
 +
 Tenga en cuenta que el instalador realiza una comprobación previa para asegurarse de que el sistema y los requisitos de red están en su lugar para una instalación correcta.
 
@@ -288,7 +285,7 @@ Tenga en cuenta que el instalador realiza una comprobación previa para asegurar
 
 
  a| 
-.. Pegue la información que ha copiado del paso 7:
+.. Pegue la información que ha copiado del paso 8:
 `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --darksite`
 .. Introduzca la dirección IP o el nombre de host del equipo host de Data Sense para que pueda accederse a él mediante la instancia de Connector.
 .. Introduzca la dirección IP o el nombre de host de la máquina host de BlueXP Connector para que pueda accederse a ella mediante la instancia de detección de datos.
@@ -369,10 +366,7 @@ Además de las variables disponibles para una instalación de un solo host, se u
 Por ejemplo, este comando añade 3 nodos de escáner:
 `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --no-proxy --darksite`
 
-. Antes de que se complete la instalación del nodo de gestión, se mostrará un cuadro de diálogo con el comando de instalación necesario para los nodos del escáner. Copie el comando y guárdelo en un archivo de texto. Por ejemplo:
-+
-`sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`
-
+. Antes de que se complete la instalación del nodo de gestión, se mostrará un cuadro de diálogo con el comando de instalación necesario para los nodos del escáner. Copie el comando (por ejemplo: `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`) y guárdelo en un archivo de texto.
 . En el host *cada nodo del escáner*:
 +
 .. Copie el archivo de instalación de Data Sense (*cc_onprem_installer.tar.gz*) en el equipo host.

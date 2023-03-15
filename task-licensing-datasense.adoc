@@ -185,9 +185,9 @@ Al utilizar una licencia BYOL de Cloud Data Sense, BlueXP muestra una advertenci
 
 Utilice el icono de chat situado en la parte inferior derecha de la interfaz de BlueXP para renovar su licencia cuando vea estas advertencias.
 
-Si la licencia caduca, Data Sense continúa ejecutándose, pero el acceso a los paneles está bloqueado para que no pueda ver información sobre ninguno de los datos analizados. Solo la página _Configuration_ está disponible en caso de que se desee reducir la cantidad de volúmenes que se van a analizar para lograr que su uso de capacidad esté dentro del límite de licencia.
+Si su licencia caduca o ha alcanzado el límite BYOL, Data Sense continúa ejecutándose, pero el acceso a los paneles está bloqueado para que no pueda ver información sobre ninguno de los datos analizados. Solo la página _Configuration_ está disponible en caso de que se desee reducir la cantidad de volúmenes que se van a analizar para lograr que su uso de capacidad esté dentro del límite de licencia.
 
 Una vez que renueve su licencia BYOL, BlueXP actualiza automáticamente la licencia de Digital Wallet y ofrece acceso completo a todas las consolas. Si BlueXP no puede acceder al archivo de licencia a través de la conexión segura a Internet (por ejemplo, cuando está instalado en un sitio oscuro), puede obtener el archivo usted mismo y cargarlo manualmente en BlueXP. Para ver instrucciones, consulte <<Actualice una licencia BYOL de Cloud Data Sense,cómo actualizar una licencia de Cloud Data Sense>>.
 
 
-TIP: Si la cuenta que está utilizando tiene una licencia BYOL y una suscripción a PAYGO, Data Sense _no pasará a la suscripción a PAYGO cuando caduque la licencia BYOL. Debe renovar la licencia de BYOL.
+NOTE: Si la cuenta que está utilizando tiene una licencia BYOL y una suscripción a PAYGO, Data Sense _no pasará a la suscripción a PAYGO cuando caduque la licencia BYOL. Debe renovar la licencia de BYOL.

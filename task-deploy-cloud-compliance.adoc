@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
-summary: Complete unos pasos para poner en marcha Cloud Data en el cloud. La instancia de detección de datos se pondrá en marcha en la misma red de proveedores de cloud que BlueXP Connector. 
+summary: Complete unos pasos para poner en marcha Cloud Data en el cloud. BlueXP implementará la instancia de detección de datos en la misma red de proveedores de nube que BlueXP Connector. 
 ---
-= Ponga en marcha Cloud Data en el cloud
+= Ponga en marcha Cloud Data SENSE en la nube con BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Complete unos pasos para poner en marcha Cloud Data en el cloud. La ins
 
 
 [role="lead"]
-Complete unos pasos para poner en marcha Cloud Data en el cloud. La instancia de detección de datos se pondrá en marcha en la misma red de proveedores de cloud que BlueXP Connector.
+Complete unos pasos para poner en marcha Cloud Data en el cloud. BlueXP implementará la instancia de detección de datos en la misma red de proveedores de nube que BlueXP Connector.
 
-Tenga en cuenta que también puede link:task-deploy-compliance-onprem.html["Instale Data Sense en un host Linux que tenga acceso a Internet"]. Este tipo de instalación puede ser una buena opción si prefiere analizar sistemas ONTAP en las instalaciones mediante una instancia de Data Sense que también está ubicada en las instalaciones -- pero esto no es un requisito. El software funciona exactamente de la misma manera, independientemente del método de instalación que elija.
+Tenga en cuenta que también puede link:task-deploy-compliance-onprem.html["Instale Data Sense en un host Linux que tiene acceso a Internet"]. Este tipo de instalación puede ser una buena opción si prefiere analizar sistemas ONTAP en las instalaciones mediante una instancia de Data Sense que también está ubicada en las instalaciones -- pero esto no es un requisito. El software funciona exactamente de la misma manera, independientemente del método de instalación que elija.
 
 
 
