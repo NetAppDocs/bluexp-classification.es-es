@@ -992,12 +992,6 @@
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">Prepare el sistema host Linux</block>
   <block id="04e234c985524a78187de245502e592b" category="paragraph">El software de detección de datos debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de software, etc. El host Linux puede estar en su red o en la nube. No se admite la detección de datos en un host que se comparte con otras aplicaciones; el host debe ser un host dedicado.</block>
   <block id="26d60e714b69b4b4ee28affb21b41152" category="paragraph">Asegúrese de que puede mantener en funcionamiento Cloud Data Sense. El equipo Cloud Data Sense tiene que seguir para analizar sus datos de forma continua.</block>
-  <block id="1f810cefd66fa5d8c5990d6c051c53a7" category="list-text">*CPU*: 16 núcleos</block>
-  <block id="f1c885ee2358fbb418dfe35e68a4002a" category="list-text">*RAM*: 64 GB (la memoria de intercambio debe estar desactivada en el host)</block>
-  <block id="792c9336a56fa746327b500536c3ac74" category="list-text">*Disco*: SSD con 500 GIB disponibles en /, o.</block>
-  <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 GIB disponibles en /opt</block>
-  <block id="f12d2902352feb2353dd1667f55dc293" category="list-text">400 GIB disponibles en /var</block>
-  <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">5 GIB en /tmp</block>
   <block id="6124944413e19a98a7cefa988e91f90e" category="inline-link">m5.4xgrande</block>
   <block id="753c2f384183a67171ec75bbf3c5b35d" category="list-text">*Tipo de instancia de AWS EC2*: Tipo de instancia que cumple los requisitos de CPU y RAM anteriores. Lo recomendamos<block ref="07a75e0a9170a24a8b798a3f0ad5bd4c" category="inline-link-rx"></block>.</block>
   <block id="dab82bd5fdaa1e12c8086bb3cfa494cb" category="inline-link">Standard_D16s_v3</block>
@@ -1066,7 +1060,6 @@
   <block id="d709c500efa2b07b31dad2acb1fc7b92" category="list-text">Compruebe que su sistema Linux cumple con el <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>.</block>
   <block id="1a70f847ca98ead8008196451ddb3173" category="list-text">Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine y Python 3).</block>
   <block id="7e1fecc0c3cbd38b434a0a6232a69c06" category="list-text">Asegúrese de tener privilegios de usuario raíz en el sistema Linux.</block>
-  <block id="3ce88af879db89d6da43dca91e5ac2a6" category="list-text">Si utiliza un proxy y está realizando intercepción TLS, deberá conocer la ruta en el sistema Data Sense Linux donde están almacenados los certificados de CA TLS.</block>
   <block id="532b2291afa0585aed0b7f83e343086f" category="inline-xref">permisos y conectividad</block>
   <block id="405232a67e7df6a03cfe1d1bf7489f93" category="list-text">Compruebe que su entorno sin conexión cumple con las necesidades <block ref="0ebbc448b5e47d06a6f66fc7d5c48d58" category="inline-xref-macro-rx"></block>.</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">Sitio de soporte de NetApp</block>
@@ -3184,4 +3177,21 @@
   <block id="7c454725651fa93e75c3603da01e3ae2" category="sidebar">Instale en un host Linux con acceso a Internet</block>
   <block id="34c631136a1ff65c0e2a718e56622097" category="sidebar">Instale en el entorno local sin acceso a Internet</block>
   <block id="86d55936ff74c558250b6d6c3c3440fe" category="sidebar">Ponga en marcha el sentido de los datos en el cloud de forma automática</block>
+  <block id="1b829a0b2a17806376d7530e7c1aa7d0" category="list-text">En función del tamaño del conjunto de datos que desee analizar, el sistema host puede especificarse en tres tamaños.</block>
+  <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
+  <block id="05289cee10f1f9057410b216de0d7e36" category="cell">RAM (la memoria de intercambio debe estar desactivada)</block>
+  <block id="380dbc8d9d2c8a17f6ebb0b2c62d3e85" category="cell">Disco</block>
+  <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">Grande</block>
+  <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">16 CPU</block>
+  <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64 GB DE MEMORIA RAM</block>
+  <block id="d1dfcf68dd28742f6e8c1a149039f317" category="cell">SSD de 500 GB en /, o * 100 GB disponibles en /opt * 395 GB disponibles en /var * 5 GB en /tmp</block>
+  <block id="bef6aed074693bd02885fa89c8b418f0" category="cell">8 CPU</block>
+  <block id="70eb72cfa1dbdb5556e79344f161d62a" category="cell">32 GB DE MEMORIA RAM</block>
+  <block id="03c4b3e038e1f3312ead503649c43953" category="cell">SSD de 200 GB en /, o * 50 GB disponibles en /opt * 145 GB disponibles en /var * 5 GB en /tmp</block>
+  <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB DE MEMORIA RAM</block>
+  <block id="ed04b9cefc3e8c7791055ad71b874777" category="cell">SSD de 100 GB en /, o * 50 GB disponibles en /opt * 45 GB disponibles en /var * 5 GB en /tmp</block>
+  <block id="a0b7a7641d24b4614381b2d6a615f220" category="paragraph">Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. Consulte <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> para obtener más detalles.</block>
+  <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">Si utiliza un proxy para acceder a Internet:</block>
+  <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">Necesitará la información del servidor proxy (dirección IP o nombre de host, puerto de conexión, esquema de conexión: https o http, nombre de usuario y contraseña).</block>
+  <block id="566740fad5c1ec59669bd6641875006e" category="list-text">Si el proxy está realizando intercepción TLS, deberá conocer la ruta en el sistema Data Sense Linux donde están almacenados los certificados de CA TLS.</block>
 </blocks>

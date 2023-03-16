@@ -92,19 +92,23 @@ El software de detección de datos debe ejecutarse en un host que cumpla con req
 
 Asegúrese de que puede mantener en funcionamiento Cloud Data Sense. El equipo Cloud Data Sense tiene que seguir para analizar sus datos de forma continua.
 
-* *CPU*: 16 núcleos
-* *RAM*: 64 GB (la memoria de intercambio debe estar desactivada en el host)
-* *Disco*: SSD con 500 GIB disponibles en /, o.
+* En función del tamaño del conjunto de datos que desee analizar, el sistema host puede especificarse en tres tamaños.
 +
-** 100 GIB disponibles en /opt
-** 400 GIB disponibles en /var
-** 5 GIB en /tmp
+[cols="18,18,26,30"]
+|===
+| Tamaño del sistema | CPU | RAM (la memoria de intercambio debe estar desactivada) | Disco 
+
+
+| Grande | 16 CPU | 64 GB DE MEMORIA RAM | SSD de 500 GB en /, o * 100 GB disponibles en /opt * 395 GB disponibles en /var * 5 GB en /tmp 
+
+
+| Mediano | 8 CPU | 32 GB DE MEMORIA RAM | SSD de 200 GB en /, o * 50 GB disponibles en /opt * 145 GB disponibles en /var * 5 GB en /tmp 
+
+
+| Pequeño | 8 CPU | 16 GB DE MEMORIA RAM | SSD de 100 GB en /, o * 50 GB disponibles en /opt * 45 GB disponibles en /var * 5 GB en /tmp 
+|===
 +
-Tenga en cuenta que puede implementar la detección de datos en un sistema con menos CPU y menos RAM, pero existen limitaciones al utilizar estos sistemas. Consulte link:concept-cloud-compliance.html#using-a-smaller-instance-type["Con un tipo de instancia más pequeño"] para obtener más detalles.
-
-
-
-
+Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. Consulte link:concept-cloud-compliance.html#using-a-smaller-instance-type["Con un tipo de instancia más pequeño"] para obtener más detalles.
 
 * *Tipo de instancia de AWS EC2*: Tipo de instancia que cumple los requisitos de CPU y RAM anteriores. Lo recomendamos https://aws.amazon.com/ec2/instance-types/m5/["m5.4xgrande"^].
 * *Tamaño de máquina virtual de Azure*: Tipo de instancia que cumple los requisitos de CPU y RAM anteriores. Lo recomendamos https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^].
@@ -260,7 +264,12 @@ Siga estos pasos al instalar el software Data Sense en un solo host local.
 * Compruebe que su sistema Linux cumple con el <<Prepare el sistema host Linux,requisitos del host>>.
 * Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine y Python 3).
 * Asegúrese de tener privilegios de usuario raíz en el sistema Linux.
-* Si utiliza un proxy y está realizando intercepción TLS, deberá conocer la ruta en el sistema Data Sense Linux donde están almacenados los certificados de CA TLS.
+* Si utiliza un proxy para acceder a Internet:
++
+** Necesitará la información del servidor proxy (dirección IP o nombre de host, puerto de conexión, esquema de conexión: https o http, nombre de usuario y contraseña).
+** Si el proxy está realizando intercepción TLS, deberá conocer la ruta en el sistema Data Sense Linux donde están almacenados los certificados de CA TLS.
+
+
 * Compruebe que su entorno sin conexión cumple con las necesidades <<Habilite el acceso a Internet de salida desde Cloud Data Sense,permisos y conectividad>>.
 
 
