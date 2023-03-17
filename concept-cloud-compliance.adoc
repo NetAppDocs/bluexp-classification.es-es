@@ -278,7 +278,7 @@ La velocidad de análisis se ve afectada por la latencia de la red, la latencia 
 * Al realizar exploraciones de clasificación, Data Sense puede escanear entre 15-40 TIBs de datos por día, por nodo de escáner.
 
 
-link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["Obtenga más información sobre la implementación de varios nodos de escáner para analizar los datos"^].
+link:task-deploy-compliance-onprem.html#install-data-sense-on-the-linux-host["Obtenga más información sobre la implementación de varios nodos de escáner para analizar los datos"^].
 
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: Complete unos pasos para implementar Data Sense en un host Linux de su red, o en un host Linux en la nube, que tenga acceso a Internet. 
+summary: Complete unos pasos para instalar Data Sense en un host Linux de su red, o en un host Linux en la nube, que tenga acceso a Internet. Deberá implementar el host Linux manualmente en su red o en el cloud como parte de esta instalación. 
 ---
 = Instale Data Sense en un host que tiene acceso a Internet
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: Complete unos pasos para implementar Data Sense en un host Linux de su 
 
 
 [role="lead"]
-Complete unos pasos para implementar Data Sense en un host Linux de su red, o en un host Linux en la nube, que tenga acceso a Internet.
+Complete unos pasos para instalar Data Sense en un host Linux de su red, o en un host Linux en la nube, que tenga acceso a Internet. Deberá implementar el host Linux manualmente en su red o en el cloud como parte de esta instalación.
 
 La instalación en las instalaciones puede ser una buena opción si prefiere analizar sistemas ONTAP en las instalaciones mediante una instancia de detección de datos que también está ubicada en las instalaciones, pero esto no es un requisito. El software funciona exactamente de la misma manera, independientemente del método de instalación que elija.
 
-La instalación típica en un host Linux en sus instalaciones tiene los componentes y las conexiones siguientes.
+La instalación típica en un host Linux _in your local_ tiene los siguientes componentes y conexiones.
 
 image:diagram_deploy_onprem_overview.png["Un diagrama de los componentes de red y BlueXP necesarios y las conexiones relacionadas."]
 
-La instalación típica en un host Linux en el cloud tiene los siguientes componentes y conexiones.
+La instalación típica en un host Linux _en la nube_ tiene los siguientes componentes y conexiones.
 
 image:diagram_deploy_onprem_cloud_instance.png["Un diagrama de los componentes de red y BlueXP necesarios y las conexiones relacionadas."]
 

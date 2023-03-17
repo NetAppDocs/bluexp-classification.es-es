@@ -467,21 +467,3 @@ Data Sense ahora puede encontrar números franceses de seguridad social, ID fran
 === Se ha cambiado el puerto del grupo de seguridad para la comunicación de detección de datos con el conector
 
 El grupo de seguridad de Cloud Manager Connector utilizará el puerto 443 en lugar del puerto 80 para el tráfico entrante y saliente hacia y desde la instancia de detección de datos para mayor seguridad. Ambos puertos permanecen abiertos en este momento, por lo que no debería ver ningún problema, pero debería actualizar el grupo de seguridad en cualquier despliegue anterior del conector como el puerto 80 quedará obsoleto en una versión futura.
-
-
-
-== 2 de enero de 2022
-
-
-
-=== Capacidad de integrar un Active Directory global para identificar los propietarios de archivos y permisos
-
-Ahora puede integrar un Active Directory global con Cloud Data Sense para mejorar los resultados que los informes de Data Sense sobre los propietarios de los archivos y qué usuarios y grupos tienen acceso a los archivos.
-
-Además de las credenciales de Active Directory que introduzca para que Data Sense pueda analizar volúmenes de CIFS desde ciertos orígenes de datos, esta nueva integración ofrece como integración adicional para otros usuarios y sistemas. Data sense buscará en todos los directorios activos integrados para los detalles de permisos y usuarios. link:task-add-active-directory-datasense.html["Descubra cómo configurar su Active Directory global"].
-
-
-
-=== Las "políticas" de detección de datos ahora se pueden utilizar para eliminar archivos
-
-Data Sense puede eliminar automáticamente los archivos que coinciden con la consulta definida en una directiva. link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["Vea cómo crear directivas personalizadas"].
