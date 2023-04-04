@@ -27,6 +27,8 @@ sidebar:
         url: "/task-deploy-compliance-onprem.html"
       - title: Instale en el entorno local sin acceso a Internet
         url: "/task-deploy-compliance-dark-site.html"
+      - title: Compruebe que su host Linux esté listo para instalar Data Sense
+        url: "/task-test-linux-system.html"
     - title: Active el análisis en sus orígenes de datos
       entries:
       - title: Cloud Volumes ONTAP y ONTAP en las instalaciones
@@ -91,6 +93,8 @@ sidebar:
       url: "/task-uninstall-data-sense.html"
   - title: Referencia
     entries:
+    - title: Tipos de instancia de Data Sense admitidos
+      url: "/reference-instance-types.html"
     - title: Metadatos recogidos de orígenes de datos
       url: "/reference-collected-metadata.html"
   - title: Conocimiento y apoyo
@@ -109,11 +113,11 @@ homepage:
       url: concept-cloud-compliance.html
     - title: Novedades
       url: whats-new.html
-    - title: Ponga en marcha el sentido de los datos en el cloud de forma automática
+    - title: Ponga en marcha la solución de detección de datos en la nube con BlueXP
       url: task-deploy-cloud-compliance.html
-    - title: Implemente Data Sense en un host Linux con Internet
+    - title: Instale Data Sense en un host Linux con Internet
       url: task-deploy-compliance-onprem.html
-    - title: Ponga en marcha la detección de datos en las instalaciones sin Internet
+    - title: Instale la detección de datos en las instalaciones sin Internet
       url: task-deploy-compliance-dark-site.html
     - title: Integre Active Directory
       url: task-add-active-directory-datasense.html

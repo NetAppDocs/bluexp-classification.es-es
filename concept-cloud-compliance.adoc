@@ -154,15 +154,10 @@ image:diagram_cloud_compliance_instance.png["Un diagrama que muestra una instanc
 
 Tenga en cuenta lo siguiente acerca de la instancia predeterminada:
 
-* En AWS, Cloud Data SENSE se ejecuta en una link:https://aws.amazon.com/ec2/instance-types/m5/["instancia m5.4xlarge"^] Con un disco GP2 de 500 GB. La imagen del sistema operativo es Amazon Linux 2 (Red Hat 7.3.1).
-+
-En regiones donde no está disponible m5.4xLarge, Data Sense se ejecuta en una instancia m4.4xLarge en su lugar.
-
-* En Azure, Cloud Data Sense se ejecuta en una link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["VM Standard_D16s_v3"^] Con un disco de 512 GB. La imagen del sistema operativo es CentOS 7.8.
-* En GCP, Cloud Data Sense se ejecuta en una link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16 VM"^] Con un disco persistente estándar de 512 GB. La imagen del sistema operativo es CentOS 7.9.
-+
-En regiones donde no está disponible n2-standard-16, Data Sense se ejecuta en un equipo virtual n2d-standard-16 o n1-standard-16.
-
+* En AWS, Cloud Data SENSE se ejecuta en una https://aws.amazon.com/ec2/instance-types/m6i/["instancia m6i.4xlarge"^] Con un disco GP2 de 500 GIB. La imagen del sistema operativo es Amazon Linux 2.
+* En Azure, Cloud Data Sense se ejecuta en una link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["VM Standard_D16s_v3"^] Con un disco de 500 GIB. La imagen del sistema operativo es CentOS 7.9.
+* En GCP, Cloud Data Sense se ejecuta en una link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16 VM"^] Con un disco persistente estándar de 500 GIB. La imagen del sistema operativo es CentOS 7.9.
+* En regiones donde la instancia predeterminada no está disponible, Data Sense se ejecuta en una instancia alternativa. link:reference-instance-types.html["Consulte los tipos de instancia alternativa"].
 * La instancia se denomina _CloudCompliance_ con un hash generado (UUID) concatenado. Por ejemplo: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * Sólo se despliega una instancia de detección de datos por conector.
 
@@ -183,15 +178,15 @@ Puede implementar la detección de datos en un sistema con menos CPU y menos RAM
 | Tamaño del sistema | Especificaciones | Limitaciones 
 
 
-| Grande (predeterminado) | 16 CPU, 64 GB DE RAM, 500 GB DE SSD | Ninguno 
+| Grande (predeterminado) | 16 CPU, 64 GB de RAM, 500 GIB de SSD | Ninguno 
 
 
-| Mediano | 8 CPU, 32 GB DE RAM, 200 GB DE SSD | El análisis es más lento y sólo puede analizar un millón de archivos. 
+| Mediano | 8 CPU, 32 GB de RAM, 200 GIB de SSD | El análisis es más lento y sólo puede analizar un millón de archivos. 
 
 
-| Pequeño | 8 CPU, 16 GB DE RAM, 100 GB DE SSD | Las mismas limitaciones que "Medio", más la capacidad de identificar link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["nombres de asunto de los datos"] los archivos internos están desactivados. 
+| Pequeño | 8 CPU, 16 GB de RAM, 100 GIB de SSD | Las mismas limitaciones que "Medio", más la capacidad de identificar link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["nombres de asunto de los datos"] los archivos internos están desactivados. 
 |===
-Al implementar Data Sense en el cloud, envíe un correo electrónico a ng-contact-data-sense@netapp.com para obtener ayuda si desea usar uno de estos sistemas más pequeños. Tendremos que trabajar con usted para poner en marcha estas configuraciones de cloud más pequeñas.
+Al poner en marcha Data Sense en el cloud en AWS, puede elegir una instancia grande, mediana y pequeña. Cuando implemente Data Sense en Azure o GCP, envíe un correo electrónico a ng-contact-data-sense@netapp.com para obtener ayuda si desea usar uno de estos sistemas más pequeños. Tendremos que trabajar con usted para poner en marcha estas configuraciones de cloud más pequeñas.
 
 Al poner en marcha la detección de datos en las instalaciones, solo tiene que utilizar un host Linux con las especificaciones más pequeñas. No necesita ponerse en contacto con NetApp para obtener ayuda.
 

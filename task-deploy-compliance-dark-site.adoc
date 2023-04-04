@@ -18,6 +18,8 @@ Complete unos pasos para instalar Data Sense en un host Linux en un sitio local 
 
 Tenga en cuenta que también puede link:task-deploy-compliance-onprem.html["Ponga en marcha el sentido de los datos en un sitio local con acceso a Internet"].
 
+La secuencia de comandos de instalación de Data Sense se inicia comprobando si el sistema y el entorno cumplen los requisitos previos necesarios. Si se cumplen todos los requisitos previos, se inicia la instalación. Si desea verificar los requisitos previos independientemente de ejecutar la instalación de Data Sense, hay un paquete de software independiente que puede descargar que sólo prueba los requisitos previos. link:task-test-linux-system.html["Compruebe cómo su host Linux está listo para instalar Data Sense"].
+
 
 
 == Orígenes de datos compatibles
@@ -48,7 +50,7 @@ La mayoría de las funciones de detección de datos funcionan cuando se implemen
 * Recibiendo comentarios de usuarios
 * Actualizaciones de software automatizadas desde BlueXP
 +
-Tanto el conector BlueXP como el sensor de datos requerirán actualizaciones manuales periódicas para habilitar nuevas funciones. Puede ver la versión de Data Sense en la parte inferior de las páginas de la interfaz de usuario de Data Sense. Compruebe la link:whats-new.html["Notas de la versión de Cloud Data Sense"] para ver las nuevas funciones de cada versión y si desea esas funciones. A continuación, puede seguir los pasos a. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Actualice el conector BlueXP"^] y.. <<Actualice el software de detección de datos,Actualice su software de detección de datos>>.
+Tanto el conector BlueXP como el sensor de datos requerirán actualizaciones manuales periódicas para habilitar nuevas funciones. Puede ver la versión de Data Sense en la parte inferior de las páginas de la interfaz de usuario de Data Sense. Compruebe la link:whats-new.html["Notas de la versión de Cloud Data Sense"] para ver las nuevas funciones de cada versión y si desea esas funciones. A continuación, puede seguir los pasos a. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["Actualice el conector BlueXP"^] y.. <<Actualice el software de detección de datos,Actualice su software de detección de datos>>.
 
 
 
@@ -60,7 +62,7 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Instale el conector BlueXP
 [role="quick-margin-para"]
-Si aún no tiene un conector instalado en su sitio local sin conexión, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Despliegue el conector"^] Ahora en un host Linux.
+Si aún no tiene un conector instalado en su sitio local sin conexión, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Despliegue el conector"^] Ahora en un host Linux.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Revise los requisitos previos de detección de datos
 [role="quick-margin-para"]
@@ -78,7 +80,7 @@ Los primeros 1 TB de datos que analiza Cloud Data Sense en BlueXP son gratuitos 
 
 == Instale el conector BlueXP
 
-Si aún no tiene un conector BlueXP instalado en su sitio local fuera de línea, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Despliegue el conector"^] En un host Linux del sitio sin conexión.
+Si aún no tiene un conector BlueXP instalado en su sitio local fuera de línea, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Despliegue el conector"^] En un host Linux del sitio sin conexión.
 
 
 
@@ -93,13 +95,15 @@ El software de detección de datos debe ejecutarse en un host que cumpla con req
 | Tamaño del sistema | CPU | RAM (la memoria de intercambio debe estar desactivada) | Disco 
 
 
-| Grande | 16 CPU | 64 GB DE MEMORIA RAM | SSD de 500 GB en /, o * 100 GB disponibles en /opt * 395 GB disponibles en /var * 5 GB en /tmp 
+ a| 
+*Grande*
+| 16 CPU | 64 GB DE MEMORIA RAM | 500 GIB SSD en / o * 100 GIB disponibles en /opt * 395 GIB disponibles en /var * 5 GIB en /tmp 
 
 
-| Mediano | 8 CPU | 32 GB DE MEMORIA RAM | SSD de 200 GB en /, o * 50 GB disponibles en /opt * 145 GB disponibles en /var * 5 GB en /tmp 
+| *Media* | 8 CPU | 32 GB DE MEMORIA RAM | 200 GIB SSD en /, o - 50 GIB disponibles en /opt - 145 GIB disponibles en /var - 5 GIB en /tmp 
 
 
-| Pequeño | 8 CPU | 16 GB DE MEMORIA RAM | SSD de 100 GB en /, o * 50 GB disponibles en /opt * 45 GB disponibles en /var * 5 GB en /tmp 
+| *Pequeño* | 8 CPU | 16 GB DE MEMORIA RAM | 100 GIB SSD en /, o - 50 GIB disponibles en /opt - 45 GIB disponibles en /var - 5 GIB en /tmp 
 |===
 +
 Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. Consulte link:concept-cloud-compliance.html#using-a-smaller-instance-type["Con un tipo de instancia más pequeño"] para obtener más detalles.
@@ -122,12 +126,9 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 ....
 firewall-cmd --permanent --add-service=http
 firewall-cmd --permanent --add-service=https
-firewall-cmd --permanent --add-service=mysql
 firewall-cmd --permanent --add-port=80/tcp
 firewall-cmd --permanent --add-port=8080/tcp
 firewall-cmd --permanent --add-port=443/tcp
-firewall-cmd --permanent --add-port=555/tcp
-firewall-cmd --permanent --add-port=3306/tcp
 firewall-cmd --reload
 ....
 +
@@ -400,8 +401,8 @@ También puede hacerlo link:task-licensing-datasense.html#use-a-cloud-data-sense
 Dado que el software Data Sense se actualiza regularmente con las nuevas funciones, debe entrar en una rutina para comprobar si hay nuevas versiones periódicamente para asegurarse de que está utilizando el software y las funciones más recientes. Deberá actualizar el software Data Sense manualmente porque no hay conectividad a Internet para realizar la actualización automáticamente.
 
 .Antes de empezar
-* El software de detección de datos puede actualizarse una versión principal cada vez. Por ejemplo, si tiene instalada la versión 1.18.x, sólo podrá actualizar a 1.19.x. Si tiene varias versiones principales detrás, tendrá que actualizar el software varias veces.
-* Compruebe que el software del conector en las instalaciones se ha actualizado a la versión más reciente disponible. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Consulte los pasos de actualización del conector"^].
+* El software de detección de datos puede actualizarse una versión principal cada vez. Por ejemplo, si tiene instalada la versión 1.20.x, sólo podrá actualizar a 1.21.x. Si tiene varias versiones principales detrás, tendrá que actualizar el software varias veces.
+* Compruebe que el software del conector en las instalaciones se ha actualizado a la versión más reciente disponible. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["Consulte los pasos de actualización del conector"^].
 
 
 .Pasos

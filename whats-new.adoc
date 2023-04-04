@@ -18,6 +18,34 @@ Descubra las novedades en Cloud Data Sense.
 
 
 
+== 3 de abril de 2023 (versión 1.22)
+
+
+
+=== Nuevo informe de evaluación de detección de datos
+
+El informe de evaluación de detección de datos proporciona un análisis de alto nivel del entorno escaneado para resaltar los resultados obtenidos por el sistema y mostrar las áreas de preocupación y los posibles pasos para solucionarlos. El objetivo de este informe es dar a conocer las preocupaciones sobre la gobernanza de datos, las amenazas a la seguridad de los datos y los vacíos de cumplimiento de normativas en relación con los datos de su conjunto de datos. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["Descubra cómo generar y utilizar el Informe de evaluación de detección de datos"].
+
+
+
+=== Capacidad de poner en marcha la detección de datos en instancias pequeñas en el cloud
+
+Al implementar Data Sense en un conector BlueXP en un entorno AWS, ahora puede seleccionar entre dos tipos de instancia más pequeños que los que están disponibles con la instancia predeterminada. Si está analizando un entorno pequeño, esto puede ayudarle a ahorrar costes en la nube. Sin embargo, hay algunas restricciones al utilizar la instancia más pequeña. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["Vea los tipos de instancia y las limitaciones disponibles"].
+
+
+
+=== Ya está disponible una secuencia de comandos independiente para probar que su sistema Linux es apto para instalar Data Sense
+
+Si desea verificar que el sistema Linux cumple todos los requisitos previos independientemente de ejecutar la instalación de Data Sense, hay otro script que puede descargar que solo prueba los requisitos previos. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Compruebe cómo su host Linux está listo para instalar Data Sense"].
+
+
+
+=== Las licencias BYOL de Data Sense son ahora compatibles en sitios oscuros
+
+Ahora puede cargar su licencia de Data Sense BYOL en el monedero digital en un sitio oscuro para que se le notifique cuando su licencia se está agotando. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-licensing-datasense.html#obtain-your-cloud-data-sense-license-file["Vea cómo obtener y cargar su licencia BYOL de Data Sense"].
+
+
+
 == 7 de marzo de 2023 (versión 1.21)
 
 

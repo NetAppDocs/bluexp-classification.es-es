@@ -119,6 +119,7 @@ Informe de solicitud de acceso de asunto de datos:: Le permite extraer un inform
 Informe PCI DSS:: Le ayuda a identificar la distribución de la información de la tarjeta de crédito a través de sus archivos. link:task-generating-compliance-reports.html#pci-dss-report["Leer más"^].
 Informe HIPAA:: Le ayuda a identificar la distribución de información médica a través de sus archivos. link:task-generating-compliance-reports.html#hipaa-report["Leer más"^].
 Informe asignación de datos:: Proporciona información acerca del tamaño y el número de archivos en los entornos de trabajo. Esto incluye la capacidad de uso, la antigüedad de los datos, el tamaño de los datos y los tipos de archivos. link:task-controlling-governance-data.html#data-mapping-report["Leer más"^].
+Informe de evaluación de detección de datos:: Proporciona un análisis de alto nivel del entorno escaneado para resaltar los resultados del sistema y mostrar las áreas de preocupación y los posibles pasos para solucionarlos. link:task-controlling-governance-data.html#data-discovery-assessment-report["Modo de aprendizaje"^].
 Informa sobre un tipo de información específico:: Hay informes disponibles que incluyen detalles sobre los archivos identificados que contienen datos personales y datos personales confidenciales. También puede ver los archivos desglosados por categoría y tipo de archivo. link:task-controlling-private-data.html["Leer más"^].
 
 
@@ -353,7 +354,7 @@ Por tanto, si tiene datos en muchas de estas ubicaciones, es posible que tenga q
 
 === ¿Puedo desplegar el conector en mi propio host?
 
-Sí. Puede hacerlo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Ponga en marcha el conector en las instalaciones"^] En un host Linux en su red o en la nube. Si tiene pensado poner en marcha Data Sense en las instalaciones, es posible que también desee instalar el conector en las instalaciones; pero no es necesario.
+Sí. Puede hacerlo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Ponga en marcha el conector en las instalaciones"^] En un host Linux en su red o en un host del cloud. Si tiene pensado poner en marcha Data Sense en las instalaciones, es posible que también desee instalar el conector en las instalaciones; pero no es necesario.
 
 
 
@@ -379,9 +380,9 @@ BlueXP permite al usuario analizar y generar informes sobre sistemas prácticame
 
 Cuando link:task-deploy-cloud-compliance.html["implementado en el cloud"]:
 
-* En AWS, Cloud Data Sense se ejecuta en una instancia de mp5.4 x grande con un disco GP2 de 500 GB.
-* En Azure, Cloud Data Sense se ejecuta en una máquina virtual Standard_D16s_v3 con un disco de 512 GB.
-* En GCP, Cloud Data Sense se ejecuta en una máquina virtual n2-estándar-16 con un disco persistente estándar de 512 GB.
+* En AWS, Cloud Data Sense se ejecuta en una instancia m6i.4xLarge con un disco GP2 de 500 GIB. Es posible seleccionar un tipo de instancia menor durante la implementación.
+* En Azure, Cloud Data Sense se ejecuta en una máquina virtual Standard_D16s_v3 con un disco de 500 GIB.
+* En GCP, Cloud Data Sense se ejecuta en una máquina virtual n2-estándar-16 con un disco persistente estándar de 500 GIB.
 
 
 Tenga en cuenta que puede implementar la detección de datos en un sistema con menos CPU y menos RAM, pero existen limitaciones al utilizar estos sistemas. Consulte link:concept-cloud-compliance.html#using-a-smaller-instance-type["Con un tipo de instancia más pequeño"] para obtener más detalles.

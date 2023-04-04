@@ -39,9 +39,11 @@ Una integración de Active Directory con Cloud Data Sense puede identificar dato
 * Azure NetApp Files
 * FSX para ONTAP
 * Recursos compartidos de archivos CIFS de otros proveedores (no recursos compartidos de archivos NFS)
+* Cuentas de OneDrive
+* Cuentas de SharePoint
 
 
-No se ofrece compatibilidad para identificar la información de usuarios y permisos de esquemas de base de datos, cuentas de OneDrive, cuentas de SharePoint, cuentas de Google Drive, cuentas de Amazon S3, O almacenamiento de objetos que utiliza el protocolo simple Storage Service (S3).
+No se ofrece compatibilidad para identificar la información de usuarios y permisos de esquemas de base de datos, cuentas de Google Drive, cuentas de Amazon S3 o Object Storage que utilizan el protocolo simple Storage Service (S3).
 
 
 

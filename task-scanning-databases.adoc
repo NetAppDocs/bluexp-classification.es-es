@@ -138,3 +138,5 @@ image:screenshot_compliance_select_schemas.png["Captura de pantalla de la págin
 
 .Resultado
 Cloud Data Sense comienza a analizar los esquemas de base de datos que ha habilitado. Si hay algún error, aparecerán en la columna Estado, junto con la acción necesaria para corregir el error.
+
+Tenga en cuenta que Data Sense analiza las bases de datos una vez al día: Las bases de datos no se analizan continuamente como otros orígenes de datos.

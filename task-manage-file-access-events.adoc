@@ -1,0 +1,157 @@
+---
+sidebar: sidebar 
+permalink: task-manage-file-access-events.html 
+keywords: compliance, actions, view progress, audit, logs, installation 
+summary: 'Puede configurar Data Sense para registrar eventos en un archivo siempre que se haya accedido o modificado uno de los archivos que está analizando. A continuación, puede ver el contenido de este archivo (el registro de auditoría de acceso a archivos) o descargarlo para ver qué cambios se han producido en los archivos y quién los ha realizado.' 
+---
+= Supervise y gestione eventos de acceso a archivos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede configurar Data Sense para registrar eventos en un archivo siempre que se haya accedido o modificado uno de los archivos que está analizando. A continuación, puede ver el contenido de este archivo (el registro de auditoría de acceso a archivos) o descargarlo para ver qué cambios se han producido en los archivos y quién los ha realizado.
+
+Por ejemplo, si desea realizar un seguimiento cuando se realiza algún cambio en los archivos de personal confidencial o en los archivos de nóminas, puede habilitar esta función en los volúmenes en los que residen estos archivos. A continuación, puede ver el registro de auditoría de acceso a archivos para ver si estos archivos se han modificado. Si se han cambiado, podrá ver el nombre de la persona que realizó el cambio y cuándo se hizo el cambio.
+
+Puede habilitar esta función en cualquier volumen crítico de sus entornos de trabajo de ONTAP. Si se habilita en un volumen, se realiza un seguimiento de los eventos de acceso a archivos de todos los archivos y directorios del volumen. Esta funcionalidad se basa en la https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Función FPolicy"^] Desde sus sistemas ONTAP, utiliza su sistema Data Sense como servidor FPolicy para recibir mensajes de notificación (eventos) de ONTAP.
+
+Data sense captura actualmente los eventos de las siguientes acciones en sus archivos y directorios:
+
+* Cree
+* Lea
+* Escritura
+* Cambiar el nombre
+* Eliminar
+* Cambiar propietario/permisos
+* Cambiar SACL/DACL (cambios en la lista de control de acceso (ACL))
+
+
+Los usuarios de BlueXP con las funciones "Administrador de cuentas" o "Administrador de área de trabajo" pueden configurar volúmenes para el registro de auditoría de acceso a archivos y pueden ver y descargar los registros de auditoría. Los usuarios con el rol "Compliance Viewer" solo pueden ver y descargar los registros de auditoría.
+
+
+
+== Orígenes de datos compatibles
+
+Data sense puede registrar eventos de acceso a archivos para archivos que residen en los siguientes orígenes de datos:
+
+* ONTAP en las instalaciones
+* Cloud Volumes ONTAP
+* Azure NetApp Files
+* FSX para ONTAP
+
+
+Debe tener Active Directory configurado para estos orígenes de datos para que Data Sense pueda identificar el nombre de la persona que ha accedido a los archivos.
+
+
+
+== Configure volúmenes para el registro de auditoría de acceso a archivos
+
+Es posible habilitar el registro de auditoría de acceso a archivos en volúmenes individuales para realizar un seguimiento de los cambios en los archivos y directorios.
+
+CONSEJO:: Puede configurar la auditoría de acceso a los archivos para un máximo de 5 volúmenes en cada sistema ONTAP en este momento.
+
+
+.Pasos
+. En la página _Scan Configuration_ del origen de datos, haga clic en image:screenshot_horizontal_more_button.gif["Icono más"] Para el volumen y seleccione *Configurar auditoría de acceso a archivos*.
++
+image:screenshot_compliance_file_access_audit_button.png["Captura de pantalla de selección de un volumen en el que desea activar el registro de acceso a archivos."]
+
+. En el cuadro de diálogo _Configure File Access Audit_, haga clic en la casilla de verificación *Activar registro de eventos de acceso a archivos* y haga clic en *Guardar*.
++
+Tenga en cuenta que en este momento todas las acciones de registro potenciales están seleccionadas de forma predeterminada -- no son editables.
+
++
+image:screenshot_compliance_file_access_audit_dialog.png["Captura de pantalla del cuadro de diálogo para activar y desactivar el registro de un volumen y para seleccionar las acciones que se van a registrar."]
+
+. Verá que la auditoría de acceso a los archivos está ahora habilitada para ese volumen.
++
+image:screenshot_compliance_file_access_audit_done.png["Una captura de pantalla que muestra que el registro de auditoría de acceso a archivos está activado para un volumen específico."]
+
+
+
+.Resultado
+Todos los eventos de acceso a archivos generados para los archivos de los volúmenes habilitados se añadirán al archivo de registro. Compruebe el archivo de registro ocasionalmente para ver los tipos de eventos que está recibiendo.
+
+
+
+== Contenido del archivo de registro
+
+Se crea un archivo de registro para cada volumen que se haya configurado para realizar un seguimiento de los eventos de acceso a los archivos. Cada línea del registro de auditoría contiene información con el siguiente formato:
+
+`<timestamp> | <volume_name> | <event_type> | <file_name> | <user_name> | <action_result> | <action_details>`
+
+* Marca de hora: Fecha y hora del evento
+* Nombre de volumen: Nombre del volumen
+* Tipo de evento: Crear, leer, escribir, Cambiar nombre, Eliminar, Cambie el propietario/los permisos y cambie SACL/DACL
+* Nombre de archivo: Ruta completa y nombre de archivo
+* Nombre de usuario (o ID): Nombre o ID de la persona que realizó la acción
+* Resultado de la acción: Si la acción se ha realizado correctamente o si ha fallado, y el motivo del éxito o del fracaso
+* Detalles de la acción - lo que se hizo: Depende de la acción
+
+
+Por ejemplo, las siguientes líneas del archivo de registro muestran una operación de copia correcta y una operación de copia con errores.
+
+....
+2022-06-06 15:23:08,910 | INFO | ds_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
+2022-06-06 15:23:08,968 | WARNING | ds_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+....
+
+
+== Acceda a los archivos del registro de auditoría de acceso a archivos
+
+Los archivos de registro de auditoría de acceso a archivos se encuentran en el equipo de detección de datos en: `/opt/netapp/audit_logs/`
+
+Los archivos de registro se denominan "File_Access_Audit_<volume_name>_<timestamp>.log"; por ejemplo, "File Access Audit_MedicalData_20230205092321.log". <timestamp> es el momento en que Data Sense escribió el primer registro en el archivo. Cada archivo está configurado de forma predeterminada para contener un máximo de 50,000 eventos. <<Configure los ajustes del registro de auditoría de acceso a archivos,Puede personalizar este valor en la página File Access Audit Log Configuration.>> Después de alcanzar este máximo, se crea un nuevo archivo de registro para ese volumen. El archivo nuevo tendrá una Marca de hora más nueva.
+
+El tamaño total de todos los archivos de registro del directorio se establece en un valor predeterminado de 50 GB. <<Configure los ajustes del registro de auditoría de acceso a archivos,Puede personalizar este valor en la página File Access Audit Log Configuration.>> Cuando se alcanza ese límite, los archivos de registro más antiguos se eliminan automáticamente.
+
+Cuando se instala Data Sense en una máquina Linux en sus instalaciones o en un equipo Linux implementado en el cloud, puede navegar directamente a los archivos de registro.
+
+Cuando se implementa la detección de datos en el cloud, necesitará SSH para la instancia de Data Sense. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:
+
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path_to_the_ssh_key> = ubicación de claves de autenticación ssh
+* <machine_user>.:
++
+** Para AWS: Utilice <ec2-user>
+** Para Azure: Utilice el usuario creado para la instancia de BlueXP
+** Para GCP: Utilice el usuario creado para la instancia de BlueXP
+
+
+* <datasense_ip> = dirección IP de la instancia de la máquina virtual
+
+
+Tenga en cuenta que deberá modificar las reglas entrantes del grupo de seguridad para acceder al sistema en la nube. Para obtener más información, consulte:
+
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Reglas del grupo de seguridad en AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Reglas de grupos de seguridad en Azure"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Reglas de firewall en Google Cloud"^]
+
+
+
+
+== Configure los ajustes del registro de auditoría de acceso a archivos
+
+Hay tres opciones que puede configurar para los registros de archivos de auditoría de acceso a archivos. Esta configuración se aplica a todos los orígenes de datos que tienen un registro de auditoría de acceso a archivos configurado en esta instancia de detección de datos. Estos ajustes se configuran en la sección _File Access Audit Log_ de la página de detección de datos _Configuration_.
+
+image:screenshot_compliance_file_access_audit_config.png["Captura de pantalla que muestra la configuración de los registros de auditoría en la página Configuración de detección de datos."]
+
+[cols="30,50"]
+|===
+| Opción Registro de auditoría | Descripción 
+
+
+| Ubicación del archivo de registro | La ubicación está actualmente codificada para escribir los archivos de registro en `/opt/netapp/audit_logs/` 
+
+
+| Asignación máxima de almacenamiento para registros de auditoría | El tamaño total de todos los archivos de registro del directorio está actualmente codificado a un valor predeterminado de 50 GB. Cuando se alcanza ese límite, los archivos de registro más antiguos se eliminan automáticamente. 
+
+
+| Número máximo de eventos de auditoría por archivo de auditoría | Actualmente, cada archivo está codificado de forma rígida para contener un máximo de 50,000 eventos. Después de alcanzar este máximo, se crea un nuevo archivo de registro para ese volumen. El archivo nuevo tendrá una Marca de hora más nueva. 
+|===
+Tenga en cuenta que estos ajustes están actualmente codificados a los valores predeterminados. No se pueden cambiar.

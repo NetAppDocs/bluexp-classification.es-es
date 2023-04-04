@@ -151,33 +151,88 @@ Consulte link:task-org-private-data.html#categorizing-your-data-using-aip-labels
 
 
 
-=== Informe de asignación de datos
+== Informe de asignación de datos
 
-El informe de asignación de datos proporciona una descripción general de los datos que se almacenan en sus fuentes de datos empresariales para ayudarle en la toma de decisiones de migración, copia de seguridad, seguridad y procesos de cumplimiento de normativas. En el informe se incluye, en primer lugar, un informe general en el que se resumen todos sus entornos de trabajo y fuentes de datos y, a continuación, se presenta un desglose de cada entorno de trabajo.
+El informe de asignación de datos proporciona una descripción general de los datos que se almacenan en sus fuentes de datos empresariales para ayudarle en la toma de decisiones de migración, copia de seguridad, seguridad y procesos de cumplimiento de normativas. En el informe se enumera una descripción general que resume todos sus entornos de trabajo y orígenes de datos y, a continuación, proporciona un desglose para cada entorno de trabajo.
 
 El informe incluye la siguiente información:
 
-Capacidad de uso:: Para todos los entornos de trabajo: Enumera el número de archivos y la capacidad utilizada para cada entorno de trabajo. Para entornos de trabajo individuales: Enumera los archivos que utilizan la mayor capacidad.
-Antigüedad de los datos:: Proporciona tres gráficos para cuándo se crearon los archivos, la última modificación o el último acceso. Enumera el número de archivos y su capacidad utilizada, en función de determinados rangos de fechas.
-Tamaño de los datos:: Enumera el número de archivos que existen dentro de determinados rangos de tamaño en los entornos de trabajo.
-Tipos de archivo:: Enumera el número total de archivos y la capacidad utilizada para cada tipo de archivo que se almacena en sus entornos de trabajo.
+[cols="25,65"]
+|===
+| Categoría | Descripción 
 
 
+| Capacidad de uso | Para todos los entornos de trabajo: Enumera el número de archivos y la capacidad utilizada para cada entorno de trabajo. Para entornos de trabajo individuales: Enumera los archivos que utilizan la mayor capacidad. 
 
 
-==== Generación del Informe de asignación de datos
+| Antigüedad de los datos | Proporciona tres gráficos para cuándo se crearon los archivos, la última modificación o el último acceso. Enumera el número de archivos y su capacidad utilizada, en función de determinados rangos de fechas. 
 
-Vaya a la ficha detección de datos para generar el informe.
+
+| Tamaño de los datos | Enumera el número de archivos que existen dentro de determinados rangos de tamaño en los entornos de trabajo. 
+
+
+| Tipos de archivo | Enumera el número total de archivos y la capacidad utilizada para cada tipo de archivo que se almacena en sus entornos de trabajo. 
+|===
+
+
+=== Generación del Informe de asignación de datos
+
+Genere este informe desde la ficha Gobierno en el sentido de datos.
 
 .Pasos
 . En el menú BlueXP, haga clic en *Gobierno > Clasificación*.
-. Haga clic en *Gobierno* y, a continuación, haga clic en el botón *Informe de visión general de mapas de datos completos* del Panel de gobierno.
+. Haga clic en *Gobierno* y, a continuación, haga clic en el botón *Informe de asignación de datos*.
 +
 image:screenshot_compliance_data_mapping_report_button.png["Captura de pantalla del panel de gobierno que muestra cómo iniciar el informe de asignación de datos."]
 
 
 
 .Resultado
-Cloud Data Sense genera un informe en PDF que puede revisar y enviar a otros grupos según sea necesario.
+Data Sense genera un informe en PDF que puede revisar y enviar a otros grupos según sea necesario.
+
+Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de detección de datos haciendo clic en image:screenshot_gallery_options.gif["El botón más"] Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.
+
+
+
+== Informe de evaluación de identificación de datos
+
+El informe de evaluación de detección de datos proporciona un análisis de alto nivel del entorno escaneado para resaltar los resultados obtenidos por el sistema y mostrar las áreas de preocupación y los posibles pasos de solución. Los resultados se basan en la asignación y clasificación de los datos. El objetivo de este informe es concienciar sobre tres aspectos importantes de su conjunto de datos:
+
+[cols="25,65"]
+|===
+| Función | Descripción 
+
+
+| Cuestiones relacionadas con el gobierno de los datos | Una imagen detallada de todos los datos de su propiedad y áreas en las que puede reducir la cantidad de datos para ahorrar costes. 
+
+
+| Riesgos para la seguridad de los datos | Áreas en las que los datos son accesibles para ataques internos o externos debido a amplios permisos de acceso. 
+
+
+| Lagunas de cumplimiento de normativas para los datos | Cuando su información personal personal personal personal o confidencial se encuentre para seguridad y para DSARs (solicitudes de acceso a sujetos de datos). 
+|===
+Tras la evaluación, este informe identifica las áreas en las que puede:
+
+* Reducir los costes de almacenamiento cambiando la política de retención o moviendo o eliminando ciertos datos (datos obsoletos, duplicados o no empresariales).
+* Proteja sus datos con amplios permisos mediante la revisión de las políticas de gestión de grupos globales
+* Proteja sus datos con información personal o confidencial moviendo PII a almacenes de datos más seguros
+
+
+
+
+=== Generación del Informe de evaluación de detección de datos
+
+Genere este informe desde la ficha Gobierno en el sentido de datos.
+
+.Pasos
+. En el menú BlueXP, haga clic en *Gobierno > Clasificación*.
+. Haga clic en *Gobierno* y, a continuación, haga clic en el botón *Informe de evaluación de detección de datos*.
++
+image:screenshot_compliance_data_discovery_report_button.png["Captura de pantalla del panel de gobierno que muestra cómo iniciar el informe de evaluación de detección de datos."]
+
+
+
+.Resultado
+Data Sense genera un informe en PDF que puede revisar y enviar a otros grupos según sea necesario.
 
 Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de detección de datos haciendo clic en image:screenshot_gallery_options.gif["El botón más"] Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.

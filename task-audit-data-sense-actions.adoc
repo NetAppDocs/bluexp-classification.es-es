@@ -50,7 +50,7 @@ Por ejemplo, las siguientes líneas del archivo de registro muestran una operaci
 ....
 
 
-== Acceso al archivo de registro
+== Acceda al archivo de registro
 
 Los archivos de registro de auditoría de gestión se encuentran en la máquina de detección de datos en: `/opt/netapp/audit_logs/`
 
@@ -58,7 +58,7 @@ Los archivos de registro de auditoría de instalación se escriben en `/ops/neta
 
 Cada archivo de registro puede tener un tamaño máximo de 10 MB. Cuando se alcanza ese límite, se inicia un nuevo archivo de registro. Los archivos de registro se denominan "DataSense_audit.log", "DataSense_audit.log.1", "DataSense_audit.log.2", etc. Se conservan un máximo de 100 archivos de registro en el sistema: Los archivos de registro antiguos se eliminan automáticamente después de alcanzar el máximo.
 
-Cuando se instala Data Sense en las instalaciones, puede navegar directamente al archivo de registro.
+Cuando se instala Data Sense en una máquina Linux en sus instalaciones o en un equipo Linux implementado en el cloud, puede navegar directamente al archivo de registro.
 
 Cuando se implementa la detección de datos en el cloud, necesita SSH a la instancia de Data Sense. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:
 

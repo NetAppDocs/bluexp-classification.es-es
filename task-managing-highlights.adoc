@@ -254,7 +254,7 @@ Puede eliminar de forma permanente los archivos de origen que parezcan poco segu
 Puede eliminar archivos manualmente desde el panel Investigación, o. link:task-using-policies.html#deleting-source-files-automatically-using-policies["Uso automático de directivas"^].
 
 
-TIP: No se pueden eliminar los archivos que residen en las bases de datos.
+TIP: No se pueden eliminar los archivos que residen en las bases de datos. Se admiten todos los demás orígenes de datos.
 
 Para eliminar archivos, es necesario contar con los siguientes permisos:
 

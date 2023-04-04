@@ -79,7 +79,7 @@ Si todavía no hay una instancia implementada, implemente Cloud Data Sense.
 
 Si está escaneando sistemas Cloud Volumes ONTAP y ONTAP locales a los que se puede acceder a través de Internet, puede hacerlo link:task-deploy-cloud-compliance.html["Ponga en marcha Cloud Data en el cloud"^] o. link:task-deploy-compliance-onprem.html["en una ubicación en el hotel que tiene acceso a internet"^].
 
-Si está escaneando en las instalaciones sistemas ONTAP que se han instalado en un sitio oscuro que no tiene acceso a Internet, debe hacerlo link:task-deploy-compliance-dark-site.html["Implemente Cloud Data Sense en la misma ubicación en las instalaciones que no tiene acceso a Internet"^]. Esto también requiere que el conector BlueXP se despliegue en esa misma ubicación en las instalaciones.
+Si está escaneando en las instalaciones sistemas ONTAP que se han instalado en un sitio oscuro que no tiene acceso a Internet, debe hacerlo link:task-deploy-compliance-dark-site.html["Implemente Data Sense en la misma ubicación en las instalaciones que no tiene acceso a Internet"^]. Esto también requiere que el conector BlueXP se despliegue en esa misma ubicación en las instalaciones.
 
 Las actualizaciones del software Data Sense se automatizan siempre que la instancia tenga conectividad a Internet.
 
