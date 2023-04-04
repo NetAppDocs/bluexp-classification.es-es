@@ -16,7 +16,7 @@ summary: Complete unos pasos para instalar Data Sense en un host Linux en un sit
 [role="lead"]
 Complete unos pasos para instalar Data Sense en un host Linux en un sitio local que no tiene acceso a Internet. Este tipo de instalación es perfecta para sus sitios seguros.
 
-Tenga en cuenta que también puede link:task-deploy-compliance-onprem.html["Ponga en marcha el sentido de los datos en un sitio local con acceso a Internet"].
+Tenga en cuenta que también puede link:task-quick-start-connector-on-prem.html["Ponga en marcha el sentido de los datos en un sitio local con acceso a Internet"].
 
 La secuencia de comandos de instalación de Data Sense se inicia comprobando si el sistema y el entorno cumplen los requisitos previos necesarios. Si se cumplen todos los requisitos previos, se inicia la instalación. Si desea verificar los requisitos previos independientemente de ejecutar la instalación de Data Sense, hay un paquete de software independiente que puede descargar que sólo prueba los requisitos previos. link:task-test-linux-system.html["Compruebe cómo su host Linux está listo para instalar Data Sense"].
 
@@ -33,9 +33,7 @@ Cuando se instala de esta manera (a veces denominado sitio "sin conexión" o "os
 * Almacenamiento de objetos que utiliza el protocolo simple Storage Service (S3)
 
 
-En situaciones especiales en las que necesita una instalación BlueXP muy segura, pero también desea analizar datos locales de cuentas de OneDrive o de cuentas de SharePoint Online, puede utilizar el instalador sin conexión de Data Sense y proporcionar acceso a Internet a unos pocos extremos seleccionados. Consulte <<Requisitos especiales para SharePoint y OneDrive,Requisitos especiales para SharePoint y OneDrive>> para obtener más detalles.
-
-Actualmente no hay compatibilidad para escanear cuentas Cloud Volumes ONTAP, Azure NetApp Files, FSX para ONTAP, AWS S3 o Google Drive cuando Data Sense se implementa en un sitio oscuro.
+Actualmente no hay compatibilidad para analizar Cloud Volumes ONTAP, Azure NetApp Files, FSX para ONTAP, AWS S3 o Google Drive, Las cuentas de OneDrive o SharePoint Online cuando se pone en marcha Data Sense en un sitio oscuro.
 
 
 
@@ -50,7 +48,7 @@ La mayoría de las funciones de detección de datos funcionan cuando se implemen
 * Recibiendo comentarios de usuarios
 * Actualizaciones de software automatizadas desde BlueXP
 +
-Tanto el conector BlueXP como el sensor de datos requerirán actualizaciones manuales periódicas para habilitar nuevas funciones. Puede ver la versión de Data Sense en la parte inferior de las páginas de la interfaz de usuario de Data Sense. Compruebe la link:whats-new.html["Notas de la versión de Cloud Data Sense"] para ver las nuevas funciones de cada versión y si desea esas funciones. A continuación, puede seguir los pasos a. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["Actualice el conector BlueXP"^] y.. <<Actualice el software de detección de datos,Actualice su software de detección de datos>>.
+Tanto el conector BlueXP como el sensor de datos requerirán actualizaciones manuales periódicas para habilitar nuevas funciones. Puede ver la versión de Data Sense en la parte inferior de las páginas de la interfaz de usuario de Data Sense. Compruebe la link:whats-new.html["Notas de la versión de Cloud Data Sense"] para ver las nuevas funciones de cada versión y si desea esas funciones. A continuación, puede seguir los pasos a. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Actualice el conector BlueXP"^] y.. <<Actualice el software de detección de datos,Actualice su software de detección de datos>>.
 
 
 
@@ -207,26 +205,6 @@ Debe tener la información de Active Directory:
 
 |===
 Si utiliza varios hosts de detección de datos para proporcionar potencia de procesamiento adicional para analizar sus fuentes de datos, tendrá que habilitar puertos y protocolos adicionales. link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["Consulte los requisitos de puerto adicionales"].
-
-
-
-== Requisitos especiales para SharePoint y OneDrive
-
-Cuando se implementa BlueXP y Data Sense en un sitio sin acceso a Internet, puede analizar archivos en cuentas de SharePoint Online y OneDrive proporcionando acceso a Internet a unos pocos extremos seleccionados.
-
-Las cuentas locales de SharePoint instaladas localmente se pueden analizar sin proporcionar acceso a Internet.
-
-[cols="50,50"]
-|===
-| Puntos finales | Específico 
-
-
-| \login.microsoft.com \graph.microsoft.com | Comunicación con los servidores de Microsoft para iniciar sesión en el servicio en línea seleccionado. 
-
-
-| \https://api.bluexp.netapp.com | Comunicación con el servicio BlueXP, que incluye cuentas de NetApp. 
-|===
-Sólo se requiere acceso a _api.bluexp.netapp.com_ durante las conexiones iniciales con estos servicios externos.
 
 
 

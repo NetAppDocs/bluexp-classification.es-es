@@ -40,12 +40,6 @@ Si desea verificar que el sistema Linux cumple todos los requisitos previos inde
 
 
 
-=== Las licencias BYOL de Data Sense son ahora compatibles en sitios oscuros
-
-Ahora puede cargar su licencia de Data Sense BYOL en el monedero digital en un sitio oscuro para que se le notifique cuando su licencia se está agotando. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-licensing-datasense.html#obtain-your-cloud-data-sense-license-file["Vea cómo obtener y cargar su licencia BYOL de Data Sense"].
-
-
-
 == 7 de marzo de 2023 (versión 1.21)
 
 
