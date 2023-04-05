@@ -59,14 +59,11 @@ Revise los siguientes requisitos previos para asegurarse de que está preparado 
 
 Si todavía no hay una instancia implementada, implemente Cloud Data Sense.
 
-* Para SharePoint Online, el sentido de los datos puede ser link:task-deploy-cloud-compliance.html["implementado en el cloud"^] o. link:task-deploy-compliance-onprem.html["se instala en una ubicación local con acceso a internet"^].
-+
-La detección de datos también puede ser link:task-deploy-compliance-dark-site.html["se implementa en una ubicación local que no tiene acceso a internet"^]. Sin embargo, deberá proporcionar acceso a Internet a unos pocos puntos finales seleccionados para analizar sus archivos de SharePoint Online. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["Consulte la lista de puntos finales necesarios aquí"].
-
+* Para SharePoint Online, el sentido de los datos puede ser link:task-deploy-cloud-compliance.html["implementado en el cloud"^].
 * Para SharePoint en las instalaciones, se puede instalar Data Sense link:task-deploy-compliance-onprem.html["en una ubicación en el hotel que tiene acceso a internet"^] o. link:task-deploy-compliance-dark-site.html["en una ubicación en el hotel que no tiene acceso a internet"^].
 
 
-Cuando se instala detección de datos en un sitio sin acceso a Internet, el conector BlueXP también debe instalarse en ese mismo sitio sin acceso a Internet. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Leer más"^].
+Cuando se instala detección de datos en un sitio sin acceso a Internet, el conector BlueXP también debe instalarse en ese mismo sitio sin acceso a Internet. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Leer más"^].
 
 Las actualizaciones del software Data Sense se automatizan siempre que la instancia tenga conectividad a Internet.
 

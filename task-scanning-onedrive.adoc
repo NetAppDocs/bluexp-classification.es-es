@@ -58,8 +58,6 @@ El sentido de los datos puede ser link:task-deploy-cloud-compliance.html["implem
 
 Las actualizaciones del software Data Sense se automatizan siempre que la instancia tenga conectividad a Internet.
 
-La detección de datos también puede ser link:task-deploy-compliance-dark-site.html["se implementa en una ubicación local que no tiene acceso a internet"^]. Sin embargo, deberá proporcionar acceso a Internet a unos pocos extremos seleccionados para analizar sus archivos de OneDrive locales. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["Consulte la lista de puntos finales necesarios aquí"].
-
 
 
 == Adición de la cuenta de OneDrive

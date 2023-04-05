@@ -24,7 +24,7 @@ También hay una secuencia de comandos de prueba de requisito previo que forma p
 
 Realizará las siguientes tareas.
 
-. Opcional. Instale un conector BlueXP si aún no tiene uno instalado. Puede ejecutar la secuencia de comandos de prueba sin tener un conector instalado, pero la secuencia de comandos comprueba la conectividad entre el conector y la máquina host de detección de datos, por lo que se recomienda tener un conector.
+. Opcionalmente, instale un conector BlueXP si aún no tiene uno instalado. Puede ejecutar la secuencia de comandos de prueba sin tener un conector instalado, pero la secuencia de comandos comprueba la conectividad entre el conector y la máquina host de detección de datos, por lo que se recomienda tener un conector.
 . Prepare el equipo host y compruebe que cumple todos los requisitos.
 . Habilite el acceso saliente a Internet desde el equipo host de Data Sense.
 . Verifique que todos los puertos necesarios estén activados en todos los sistemas.
@@ -175,21 +175,23 @@ Siga estos pasos para ejecutar la secuencia de comandos de requisitos previos de
 
 
 .Pasos
-. Descargue el script de requisitos previos de detección de datos de https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Sitio de soporte de NetApp"^]. El archivo que debe seleccionar se denomina *test_datosense_prerrequisitos_<version>*.
+. Descargue el script de requisitos previos de detección de datos de https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Sitio de soporte de NetApp"^]. El archivo que debe seleccionar se llama *Standalone-pre-requisito-tester-<version>*.
 . Copie el archivo en el host Linux que tiene previsto utilizar (mediante `scp` o algún otro método).
 . Asigne permisos para ejecutar el script.
 +
 [source, cli]
 ----
-chmod +x test_datasense_prerequisites_1_0
+chmod +x standalone-pre-requisite-tester-v1.21.0
 ----
 . Ejecute el script con el siguiente comando.
 +
-./test_datensense_prerrequisitos_1_0 &#8592;-darksite>
 [source, cli]
 ----
-Add the option "--darksite" only if you are running the script on a host that doesn't have internet access. Certain prerequisite tests are skipped when the host is not connected to the internet.
+ ./standalone-pre-requisite-tester-v1.21.0 <--darksite>
 ----
++
+Agregue la opción "--darksite" sólo si está ejecutando la secuencia de comandos en un host que no tiene acceso a Internet. Algunas pruebas de requisitos previos se omiten cuando el host no está conectado a Internet.
+
 . La secuencia de comandos solicita la dirección IP del equipo host de Data Sense.
 +
 ** Introduzca la dirección IP o el nombre de host.
@@ -201,7 +203,7 @@ Add the option "--darksite" only if you are running the script on a host that do
 ** Introduzca *y* si tiene un conector instalado. A continuación, introduzca la dirección IP o el nombre de host del conector BlueXP para que la secuencia de comandos de prueba pueda probar esta conectividad.
 
 
-. La secuencia de comandos ejecuta una variedad de pruebas en el sistema y muestra los resultados a medida que avanza. Cuando termine, escribe un registro de la sesión en un archivo.
+. La secuencia de comandos ejecuta una variedad de pruebas en el sistema y muestra los resultados a medida que avanza. Cuando termine, escribe un registro de la sesión en un archivo llamado `prerequisites-test-<timestamp>.log` en el directorio `/opt/netapp/install_logs`.
 
 
 .Resultado
