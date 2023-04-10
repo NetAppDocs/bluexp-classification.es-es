@@ -130,7 +130,7 @@ Data sense admite las versiones 3.x, 4.0 y 4.1 de NFS, y las versiones 1.x, 2.0,
 link:task-licensing-datasense.html["Descubra cómo otorgar licencias a Cloud Data Sense"^].
 
 * La instalación de Cloud Data Sense en el cloud requiere la puesta en marcha de una instancia de cloud, lo cual resulta en cargos del proveedor de cloud en el que está puesta en marcha. Consulte <<La instancia de Cloud Data Sense,el tipo de instancia que se pone en marcha en cada cloud proveedor>>. No tiene coste si instala Data Sense en un sistema local.
-* Cloud Data Sense requiere que haya implementado un conector BlueXP. En muchos casos ya tiene un conector debido a otros servicios y almacenamiento que está utilizando en BlueXP. La instancia de Connector representa cargos del proveedor de cloud en el que se ha puesto en marcha. Consulte https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["tipo de instancia que se pone en marcha para cada proveedor de cloud"^]. No hay costo si instala el conector en un sistema local.
+* Cloud Data Sense requiere que haya implementado un conector BlueXP. En muchos casos ya tiene un conector debido a otros servicios y almacenamiento que está utilizando en BlueXP. La instancia de Connector representa cargos del proveedor de cloud en el que se ha puesto en marcha. Consulte https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["tipo de instancia que se pone en marcha para cada proveedor de cloud"^]. No hay costo si instala el conector en un sistema local.
 
 
 

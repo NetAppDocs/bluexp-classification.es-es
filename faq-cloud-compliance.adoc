@@ -354,13 +354,13 @@ Por tanto, si tiene datos en muchas de estas ubicaciones, es posible que tenga q
 
 === ¿Puedo desplegar el conector en mi propio host?
 
-Sí. Puede hacerlo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Ponga en marcha el conector en las instalaciones"^] En un host Linux en su red o en un host del cloud. Si tiene pensado poner en marcha Data Sense en las instalaciones, es posible que también desee instalar el conector en las instalaciones; pero no es necesario.
+Sí. Puede hacerlo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Ponga en marcha el conector en las instalaciones"^] En un host Linux en su red o en un host del cloud. Si tiene pensado poner en marcha Data Sense en las instalaciones, es posible que también desee instalar el conector en las instalaciones; pero no es necesario.
 
 
 
 === ¿Qué pasa con sitios seguros sin acceso a Internet?
 
-Sí, también es compatible. Puede hacerlo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Implemente el conector en un host Linux local que no tenga acceso a Internet"^]. Después puede detectar clústeres de ONTAP en las instalaciones y otros orígenes de datos locales y analizar los datos con Data Sense.
+Sí, también es compatible. Puede hacerlo https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Implemente el conector en un host Linux local que no tenga acceso a Internet"^]. Después puede detectar clústeres de ONTAP en las instalaciones y otros orígenes de datos locales y analizar los datos con Data Sense.
 
 
 
