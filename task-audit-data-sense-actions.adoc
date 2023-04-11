@@ -54,7 +54,7 @@ Por ejemplo, las siguientes líneas del archivo de registro muestran una operaci
 
 Los archivos de registro de auditoría de gestión se encuentran en la máquina de detección de datos en: `/opt/netapp/audit_logs/`
 
-Los archivos de registro de auditoría de instalación se escriben en `/ops/netapp/install_logs`
+Los archivos de registro de auditoría de instalación se escriben en `/opt/netapp/install_logs/`
 
 Cada archivo de registro puede tener un tamaño máximo de 10 MB. Cuando se alcanza ese límite, se inicia un nuevo archivo de registro. Los archivos de registro se denominan "DataSense_audit.log", "DataSense_audit.log.1", "DataSense_audit.log.2", etc. Se conservan un máximo de 100 archivos de registro en el sistema: Los archivos de registro antiguos se eliminan automáticamente después de alcanzar el máximo.
 

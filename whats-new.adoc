@@ -34,7 +34,7 @@ Al implementar Data Sense en un conector BlueXP en un entorno AWS, ahora puede s
 
 
 
-=== Ya está disponible una secuencia de comandos independiente para probar que su sistema Linux es apto para instalar Data Sense
+=== Ya hay disponible un script independiente para calificar su sistema Linux antes de instalar Data Sense
 
 Si desea verificar que el sistema Linux cumple todos los requisitos previos independientemente de ejecutar la instalación de Data Sense, hay otro script que puede descargar que solo prueba los requisitos previos. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Compruebe cómo su host Linux está listo para instalar Data Sense"].
 
@@ -419,27 +419,3 @@ Data Sense puede identificar y categorizar archivos que contengan el TFN (númer
 === El servidor de Active Directory global puede ser ahora un servidor LDAP
 
 El servidor global de Active Directory que se integra con Data Sense puede ser ahora un servidor LDAP además del servidor DNS previamente admitido. link:task-add-active-directory-datasense.html["Vaya aquí para obtener más información"].
-
-
-
-== 15 de marzo de 2022 (versión 1.10.0)
-
-
-
-=== Nuevo filtro para mostrar los archivos a los que un usuario o grupo específico tiene permisos de lectura o escritura
-
-Se ha agregado un nuevo filtro denominado "permisos de usuario/grupo" para que pueda enumerar los archivos a los que un usuario o grupo específico tiene permisos de lectura y/o escritura. Puede seleccionar uno o más nombres de usuario o de grupo, o bien introducir un nombre parcial. Esta funcionalidad está disponible para volúmenes en Cloud Volumes ONTAP, ONTAP en las instalaciones, Azure NetApp Files, Amazon FSX para ONTAP y recursos compartidos de archivos.
-
-
-
-=== El sentido de los datos puede determinar los permisos para los archivos en cuentas de SharePoint y OneDrive
-
-Data Sense puede leer los permisos existentes para los archivos que se están analizando en cuentas de OneDrive y cuentas de SharePoint ahora. Esta información aparece en los detalles del panel de investigación de los archivos y en el área permisos abiertos del Panel de control de gobierno.
-
-
-
-=== Dos tipos adicionales de datos personales pueden ser identificados por Data Sense
-
-* INSEE Francés - el código INSEE es un código numérico utilizado por el Instituto Nacional de Estadística y Estudios Económicos de Francia (INSEE) para identificar diversas entidades.
-* Contraseñas: Esta información se identifica mediante la validación de proximidad buscando permutaciones de la palabra "password" junto a una cadena alfanumérica. El número de elementos encontrados se enumerará en "resultados personales" en el Panel de cumplimiento. Puede buscar archivos que contengan contraseñas en el panel Investigación mediante el filtro * datos personales > Contraseña*.
-
