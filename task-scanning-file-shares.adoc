@@ -34,7 +34,7 @@ link:task-deploy-cloud-compliance.html["Ponga en marcha Cloud Data Sense"^] si a
 [role="quick-margin-para"]
 El grupo es un contenedor para los recursos compartidos de archivos que desea analizar y se utiliza como nombre del entorno de trabajo para esos archivos compartidos.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Añada los recursos compartidos de archivos y seleccione los recursos compartidos que desea analizar
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Añada los recursos compartidos de archivos al grupo
 [role="quick-margin-para"]
 Agregue la lista de recursos compartidos de archivos que desea analizar y seleccione el tipo de análisis. Puede añadir hasta 100 archivos compartidos a la vez.
 
@@ -44,7 +44,10 @@ Agregue la lista de recursos compartidos de archivos que desea analizar y selecc
 
 Revise los siguientes requisitos previos para asegurarse de tener una configuración compatible antes de habilitar Cloud Data Sense.
 
-* Los recursos compartidos se pueden alojar en cualquier lugar, incluso en el cloud o en las instalaciones. Son recursos compartidos de archivos que residen en sistemas de almacenamiento que no son de NetApp.
+* Los recursos compartidos se pueden alojar en cualquier lugar, incluso en el cloud o en las instalaciones. En la mayoría de los casos se trata de recursos compartidos de archivos que se encuentran en sistemas de almacenamiento que no son de NetApp. Sin embargo, los recursos compartidos de CIFS de los antiguos sistemas de almacenamiento NetApp 7-Mode se pueden analizar como recursos compartidos de archivos.
++
+Data Sense no puede extraer permisos ni la última hora de acceso de los sistemas 7-Mode. Además, existe un problema conocido por el que el montaje de recursos compartidos de CIFS en la versión 2 de SMB no es compatible con Linux.
+
 * Debe haber conectividad de red entre la instancia de detección de datos y los recursos compartidos.
 * Asegúrese de que estos puertos estén abiertos a la instancia de Data Sense:
 +

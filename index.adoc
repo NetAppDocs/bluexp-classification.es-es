@@ -2,8 +2,8 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-lead: Cloud Data Sense is a data governance service that scans your data sources to map and classify data, and to identify private information. 
-summary: Cloud Data Sense es un servicio de gobierno de datos que analiza sus orígenes de datos para asignar y clasificar los datos e identificar información privada. 
+lead: 'BlueXP classification (Cloud Data Sense) is a data governance service that scans your data sources to map and classify data, and to identify private information.' 
+summary: 'La clasificación de BlueXP (Cloud Data Sense) es un servicio de gobernanza de datos que analiza tus orígenes de datos para asignar y clasificar datos e identificar la información privada.' 
 ---
 = Documentación de Cloud Data Sense
 :hardbreaks:

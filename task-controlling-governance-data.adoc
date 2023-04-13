@@ -45,6 +45,10 @@ Puede que desee investigar los elementos del área _Saving Opportunities_ para v
 
 
 * *Duplicar archivos*: Archivos duplicados en otras ubicaciones de los orígenes de datos que está analizando. link:task-investigate-data.html#viewing-all-duplicated-files["Consulte qué tipos de archivos duplicados se muestran"].
++
+NOTA:: Si alguno de sus orígenes de datos implementa una organización en niveles de datos, los datos antiguos que ya residen en el almacenamiento de objetos se pueden identificar en la categoría _datos obsoletos_.
+
+
 
 
 
@@ -91,7 +95,7 @@ Puede hacer clic en el bloque en el que está interesado para ver los resultados
 No se muestra ningún dato en este panel si no ha integrado un servicio de identidad con detección de datos. link:task-add-active-directory-datasense.html["Descubra cómo integrar su servicio Active Directory con Data Sense"^].
 
 
-TIP: Este panel admite archivos en recursos compartidos de CIFS, OneDrive y orígenes de datos de SharePoint. Actualmente no existe compatibilidad con bases de datos, Google Drive, Amazon S3 y el almacenamiento de objetos genérico.
+TIP: Este panel admite archivos en recursos compartidos de CIFS, OneDrive y orígenes de datos de SharePoint. Actualmente no se admite el almacenamiento de bases de datos, Google Drive, Amazon S3 y objetos genéricos.
 
 
 
@@ -117,6 +121,10 @@ Puede pasar el ratón sobre un punto de los gráficos para ver detalles sobre la
 
 * * Edad del Gráfico de datos* - categoriza los datos en función de la hora en que se creó, la última vez que se accedió o la última vez que se modificó.
 * * Tamaño del gráfico de datos* - categoriza los datos en función del tamaño.
++
+NOTA:: Si alguno de sus orígenes de datos implementa una organización en niveles de datos, los datos antiguos que ya residen en el almacenamiento de objetos se pueden identificar en el gráfico _Age of Data_.
+
+
 
 
 

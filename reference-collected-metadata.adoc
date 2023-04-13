@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-collected-metadata.html 
-keywords: compliance, metadata, permissions, time stamps, privacy 
+keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
 summary: El sentido de los datos recopila ciertos metadatos al realizar análisis de clasificación de los datos de sus orígenes de datos y entornos de trabajo. El sentido de los datos puede acceder a la mayoría de los metadatos que necesitamos para clasificar sus datos, pero hay algunos orígenes en los que no podemos acceder a los datos que necesitamos. 
 ---
 = Metadatos recogidos de orígenes de datos
@@ -16,6 +16,7 @@ summary: El sentido de los datos recopila ciertos metadatos al realizar análisi
 [role="lead"]
 El sentido de los datos recopila ciertos metadatos al realizar análisis de clasificación de los datos de sus orígenes de datos y entornos de trabajo. El sentido de los datos puede acceder a la mayoría de los metadatos que necesitamos para clasificar sus datos, pero hay algunos orígenes en los que no podemos acceder a los datos que necesitamos.
 
+[cols="15,25,25,25"]
 |===
 |  | *Metadatos* | *CIFS* | *NFS* 
 
@@ -38,7 +39,7 @@ El sentido de los datos recopila ciertos metadatos al realizar análisis de clas
 
 == Marca de hora del último acceso
 
-Cuando Data Sense extrae datos de archivos compartidos, el sistema operativo considera que accede a los datos y cambia la "última hora de acceso" en consecuencia. Después del análisis, detección de datos intenta revertir la última hora de acceso a la Marca de tiempo original. Si Data Sense no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no puede revertir la última hora de acceso a la Marca de hora original.
+Cuando Data Sense extrae datos de archivos compartidos, el sistema operativo considera que accede a los datos y cambia la "última hora de acceso" en consecuencia. Después del análisis, detección de datos intenta revertir la última hora de acceso a la Marca de tiempo original. Si Data Sense no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no puede revertir la última hora de acceso a la Marca de hora original. Los volúmenes ONTAP configurados con SnapLock tienen permisos de solo lectura y además no pueden revertir la última hora de acceso a la marca de tiempo original.
 
 De forma predeterminada, si Data Sense no tiene estos permisos, el sistema no analizará esos archivos en los volúmenes porque Data Sense no puede revertir la "última hora de acceso" a la Marca de hora original. Sin embargo, si no le importa si la última hora de acceso se restablece a la hora original en sus archivos, puede hacer clic en el conmutador *Buscar cuando faltan los permisos de "atributos de escritura"* situado en la parte inferior de la página de configuración para que Data Sense analice los volúmenes independientemente de los permisos.
 
