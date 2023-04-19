@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-google-drive.html 
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, google drive, data sense 
-summary: Realice algunos pasos para empezar a analizar archivos de usuario en sus cuentas de Google Drive con Cloud Data Sense. 
+summary: Completa unos pocos pasos para comenzar a escanear archivos de usuario en tus cuentas de Google Drive con la clasificación de BlueXP. 
 ---
 = Analizando cuentas de Google Drive
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Realice algunos pasos para empezar a analizar archivos de usuario en su
 
 
 [role="lead"]
-Realice algunos pasos para empezar a analizar archivos de usuario en sus cuentas de Google Drive con Cloud Data Sense.
+Completa unos pocos pasos para comenzar a escanear archivos de usuario en tus cuentas de Google Drive con la clasificación de BlueXP.
 
 
 
@@ -26,9 +26,9 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 [role="quick-margin-para"]
 Asegúrese de que tiene las credenciales de administrador para iniciar sesión en la cuenta de Google Drive.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Ponga en marcha Cloud Data Sense
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la clasificación de BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Ponga en marcha Cloud Data Sense"^] si aún no hay una instancia implementada.
+link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP"^] si aún no hay una instancia implementada.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Inicie sesión en la cuenta de Google Drive
 [role="quick-margin-para"]
@@ -42,7 +42,7 @@ Seleccione el tipo de análisis que desea realizar en los archivos de usuario; a
 
 == Revisión de los requisitos de Google Drive
 
-Revise los siguientes requisitos previos para asegurarse de que está listo para habilitar Cloud Data Sense en una cuenta de Google Drive.
+Revisa los siguientes requisitos previos para asegurarte de estar listo para habilitar la clasificación BlueXP en una cuenta de Google Drive.
 
 * Debe tener las credenciales de inicio de sesión de administrador para la cuenta de Google Drive que proporciona acceso de lectura a los archivos del usuario
 
@@ -51,7 +51,7 @@ Revise los siguientes requisitos previos para asegurarse de que está listo para
 
 === Restricciones actuales
 
-Las siguientes funciones de detección de datos no son compatibles actualmente con los archivos de Google Drive:
+Las siguientes funciones de clasificación de BlueXP no son compatibles con los archivos de Google Drive actualmente:
 
 * Al ver archivos en la página Investigación de datos, las acciones de la barra de botones no están activas. No puede copiar, mover, eliminar, etc. ningún archivo.
 * Los permisos no se pueden identificar dentro de los archivos de Google Drive, por lo que no se muestra ninguna información de permisos en la página Investigación.
@@ -59,13 +59,13 @@ Las siguientes funciones de detección de datos no son compatibles actualmente c
 
 
 
-== Poner en marcha Cloud Data Sense
+== Implementando la clasificación de BlueXP
 
-Si todavía no hay una instancia implementada, implemente Cloud Data Sense.
+Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
 
-El sentido de los datos puede ser link:task-deploy-cloud-compliance.html["implementado en el cloud"^] o. link:task-deploy-compliance-onprem.html["en una ubicación en el hotel que tiene acceso a internet"^].
+La clasificación de BlueXP puede ser link:task-deploy-cloud-compliance.html["implementado en el cloud"^] o. link:task-deploy-compliance-onprem.html["en una ubicación en el hotel que tiene acceso a internet"^].
 
-Las actualizaciones del software Data Sense se automatizan siempre que la instancia tenga conectividad a Internet.
+Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
 
 
 
@@ -79,7 +79,7 @@ Agregue la cuenta de Google Drive donde residen los archivos de usuario. Si dese
 image:screenshot_compliance_add_google_drive_button.png["Una captura de pantalla de la página Configuración de exploración donde puede hacer clic en el botón Agregar unidad de Google."]
 
 . En el cuadro de diálogo Agregar una cuenta de Google Drive, haga clic en *Iniciar sesión en Google Drive*.
-. En la página de Google que aparece, seleccione la cuenta de Google Drive e introduzca el usuario y la contraseña de administrador necesarios y, a continuación, haga clic en *Aceptar* para permitir que detección de datos en la nube lea datos de esta cuenta.
+. En la página de Google que aparece, selecciona la cuenta de Google Drive e introduce el usuario Admin y la contraseña necesarios, luego haz clic en *Aceptar* para permitir que la clasificación de BlueXP lea los datos de esta cuenta.
 
 
 La cuenta de Google Drive se añade a la lista de entornos de trabajo.
@@ -88,7 +88,7 @@ La cuenta de Google Drive se añade a la lista de entornos de trabajo.
 
 == Selección del tipo de análisis para los datos del usuario
 
-Seleccione el tipo de análisis que Cloud Data Sense realizará en los datos del usuario.
+Seleccione el tipo de análisis que realizará la clasificación de BlueXP en los datos del usuario.
 
 .Pasos
 . En la página _Configuration_, haga clic en el botón *Configuration* de la cuenta de Google Drive.
@@ -97,7 +97,7 @@ image:screenshot_compliance_google_drive_add_sites.png["Captura de pantalla de l
 
 . Active análisis de sólo asignación o análisis de asignación y clasificación en los archivos de la cuenta de Google Drive.
 +
-image:screenshot_compliance_google_drive_select_scan.png["Una captura de pantalla que muestra cómo seleccionar el tipo de detección de datos de exploración se realizará en los datos de Google Drive."]
+image:screenshot_compliance_google_drive_select_scan.png["Se realizará una captura de pantalla que muestra cómo seleccionar el tipo de clasificación de BlueXP de exploración en los datos de Google Drive."]
 
 +
 [cols="45,45"]
@@ -116,10 +116,10 @@ image:screenshot_compliance_google_drive_select_scan.png["Una captura de pantall
 
 
 .Resultado
-Cloud Data Sense comienza a analizar los archivos de la cuenta de Google Drive que agregó, y los resultados se muestran en el Panel y en otras ubicaciones.
+La clasificación de BlueXP comienza a analizar los archivos en la cuenta de Google Drive que agregaste y los resultados se muestran en el Dashboard y en otras ubicaciones.
 
 
 
 == Eliminación de una cuenta de Google Drive de los análisis de cumplimiento
 
-Dado que sólo los archivos de Google Drive de un solo usuario forman parte de una única cuenta de Google Drive, si desea detener el análisis de archivos desde la cuenta de Google Drive de un usuario, entonces debería hacerlo link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["Elimine la cuenta de Google Drive de Data Sense"].
+Dado que sólo los archivos de Google Drive de un solo usuario forman parte de una única cuenta de Google Drive, si desea detener el análisis de archivos desde la cuenta de Google Drive de un usuario, entonces debería hacerlo link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Elimina la cuenta de Google Drive de la clasificación de BlueXP"].

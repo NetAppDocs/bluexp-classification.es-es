@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-file-shares.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, Data Sense 
-summary: Complete unos pasos para empezar a analizar recursos compartidos de archivos NFS o CIFS no de NetApp directamente con Cloud Data Sense. Estos recursos compartidos de archivos pueden residir en las instalaciones o en el cloud. 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
+summary: Completa unos pasos para empezar a analizar recursos compartidos de archivos NFS o CIFS que no sean de NetApp directamente con la clasificación de BlueXP. Estos recursos compartidos de archivos pueden residir en las instalaciones o en el cloud. 
 ---
 = Analizando recursos compartidos de archivos
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Complete unos pasos para empezar a analizar recursos compartidos de arc
 
 
 [role="lead"]
-Complete unos pasos para empezar a analizar recursos compartidos de archivos NFS o CIFS no de NetApp directamente con Cloud Data Sense. Estos recursos compartidos de archivos pueden residir en las instalaciones o en el cloud.
+Completa unos pasos para empezar a analizar recursos compartidos de archivos NFS o CIFS que no sean de NetApp directamente con la clasificación de BlueXP. Estos recursos compartidos de archivos pueden residir en las instalaciones o en el cloud.
 
 
 
@@ -26,9 +26,9 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 [role="quick-margin-para"]
 Para los recursos compartidos CIFS (SMB), asegúrese de tener credenciales para acceder a los recursos compartidos.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Ponga en marcha la instancia de Cloud Data Sense
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Ponga en marcha Cloud Data Sense"^] si aún no hay una instancia implementada.
+link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP"^] si aún no hay una instancia implementada.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Cree un grupo que contenga los recursos compartidos de archivos
 [role="quick-margin-para"]
@@ -42,37 +42,37 @@ Agregue la lista de recursos compartidos de archivos que desea analizar y selecc
 
 == Revisión de los requisitos de uso compartido de archivos
 
-Revise los siguientes requisitos previos para asegurarse de tener una configuración compatible antes de habilitar Cloud Data Sense.
+Revise los siguientes requisitos previos para comprobar que tiene una configuración compatible antes de habilitar la clasificación de BlueXP.
 
 * Los recursos compartidos se pueden alojar en cualquier lugar, incluso en el cloud o en las instalaciones. En la mayoría de los casos se trata de recursos compartidos de archivos que se encuentran en sistemas de almacenamiento que no son de NetApp. Sin embargo, los recursos compartidos de CIFS de los antiguos sistemas de almacenamiento NetApp 7-Mode se pueden analizar como recursos compartidos de archivos.
 +
-Data Sense no puede extraer permisos ni la última hora de acceso de los sistemas 7-Mode. Además, existe un problema conocido por el que el montaje de recursos compartidos de CIFS en la versión 2 de SMB no es compatible con Linux.
+Tenga en cuenta que la clasificación de BlueXP no puede extraer permisos ni la «última hora de acceso» de los sistemas 7-Mode. Además, debido a un problema conocido entre algunas versiones de Linux y recursos compartidos CIFS en sistemas 7-Mode, debe configurar el recurso compartido para que utilice solo SMB v1 con la autenticación NTLM habilitada.
 
-* Debe haber conectividad de red entre la instancia de detección de datos y los recursos compartidos.
-* Asegúrese de que estos puertos estén abiertos a la instancia de Data Sense:
+* Es necesario que haya conectividad de red entre la instancia de clasificación de BlueXP y los recursos compartidos.
+* Asegúrate de que estos puertos estén abiertos a la instancia de clasificación de BlueXP:
 +
 ** Para NFS, puertos 111 y 2049.
 ** Para CIFS, puertos 139 y 445.
 
 
 * Necesitará la lista de recursos compartidos que desea añadir en el formato `<host_name>:/<share_path>`. Puede introducir los recursos compartidos individualmente o proporcionar una lista separada por líneas de los recursos compartidos de archivos que desea escanear.
-* En el caso de los recursos compartidos CIFS (SMB), asegúrese de tener credenciales de Active Directory con acceso de lectura a los recursos compartidos. Las credenciales de administración son preferidas en caso de que Cloud Data Sense necesite analizar cualquier dato que requiera permisos elevados.
+* En el caso de los recursos compartidos CIFS (SMB), asegúrese de tener credenciales de Active Directory con acceso de lectura a los recursos compartidos. Se prefieren las credenciales de administrador en caso de que la clasificación de BlueXP deba analizar cualquier dato que requiera permisos elevados.
 +
-Si desea asegurarse de que los análisis de clasificación de detección de datos no modifican sus archivos “horas a las que se accedió por última vez”, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
+Si quieres asegurarte de que las «horas de último acceso» de tus archivos no cambien debido a los análisis de clasificación de BlueXP, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
 
 
 
 
 
-== Implementar la instancia de Cloud Data Sense
+== Implementar la instancia de clasificación de BlueXP
 
-Si todavía no hay una instancia implementada, implemente Cloud Data Sense.
+Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
 
-Si va a analizar recursos compartidos de archivos NFS o CIFS de otros proveedores a los que se puede acceder a través de Internet, puede hacerlo link:task-deploy-cloud-compliance.html["Ponga en marcha Cloud Data en el cloud"^] o. link:task-deploy-compliance-onprem.html["Implemente el software de detección de datos en una ubicación local con acceso a Internet"^].
+Si va a analizar recursos compartidos de archivos NFS o CIFS de otros proveedores a los que se puede acceder a través de Internet, puede hacerlo link:task-deploy-cloud-compliance.html["Pon en marcha la clasificación de BlueXP en el cloud"^] o. link:task-deploy-compliance-onprem.html["Pon en marcha la clasificación de BlueXP en una ubicación on-premises que tenga acceso a Internet"^].
 
-Si va a escanear recursos compartidos de archivos NFS o CIFS que no son de NetApp y que se han instalado en un sitio oscuro que no tiene acceso a Internet, necesita hacerlo link:task-deploy-compliance-dark-site.html["Implemente Cloud Data Sense en la misma ubicación en las instalaciones que no tiene acceso a Internet"^]. Esto también requiere que el conector BlueXP se despliegue en esa misma ubicación en las instalaciones.
+Si va a escanear recursos compartidos de archivos NFS o CIFS que no son de NetApp y que se han instalado en un sitio oscuro que no tiene acceso a Internet, necesita hacerlo link:task-deploy-compliance-dark-site.html["Pon en marcha la clasificación de BlueXP en la misma ubicación on-premises que no tiene acceso a Internet"^]. Esto también requiere que el conector BlueXP se despliegue en esa misma ubicación en las instalaciones.
 
-Las actualizaciones del software Data Sense se automatizan siempre que la instancia tenga conectividad a Internet.
+Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
 
 
 
@@ -96,7 +96,7 @@ El nuevo grupo de archivos compartidos se agrega a la lista de entornos de traba
 
 == Agregar recursos compartidos de archivos a un grupo
 
-Se agregan recursos compartidos de archivos al grupo de recursos compartidos de archivos para que Cloud Data Sense analice estos archivos en esos recursos compartidos. Los recursos compartidos se añaden con el formato `<host_name>:/<share_path>`.
+Añades archivos compartidos al grupo File Shares para que los archivos de esos recursos compartidos se analicen mediante la clasificación de BlueXP. Los recursos compartidos se añaden con el formato `<host_name>:/<share_path>`.
 
 Puede agregar recursos compartidos de archivos individuales o puede proporcionar una lista separada por líneas de los recursos compartidos de archivos que desea analizar. Puede añadir hasta 100 recursos compartidos al mismo tiempo.
 
@@ -146,12 +146,12 @@ Si el cuadro de diálogo enumera los recursos compartidos que no se han podido a
 | Desactive el análisis en recursos compartidos de archivos | Haga clic en *Desactivado* 
 |===
 +
-El conmutador situado en la parte superior de la página para *Buscar cuando faltan los permisos de "atributos de escritura"* está desactivado de forma predeterminada. Esto significa que si Data Sense no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos porque el sentido de datos no puede revertir la Marca de hora original a la "hora del último acceso". Si no le importa si se restablece la última hora de acceso, ENCIENDA el conmutador y se explorarán todos los archivos independientemente de los permisos. link:reference-collected-metadata.html#last-access-time-timestamp["Leer más"^].
+El conmutador situado en la parte superior de la página para *Buscar cuando faltan los permisos de "atributos de escritura"* está desactivado de forma predeterminada. Esto significa que, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Si no le importa si se restablece la última hora de acceso, ENCIENDA el conmutador y se explorarán todos los archivos independientemente de los permisos. link:reference-collected-metadata.html#last-access-time-timestamp["Leer más"^].
 
 
 
 .Resultado
-Cloud Data Sense comienza a analizar los archivos de los recursos compartidos de archivos agregados y los resultados se muestran en el Panel y en otras ubicaciones.
+La clasificación de BlueXP comienza a analizar los archivos en los recursos compartidos de archivos que ha añadido y los resultados se muestran en la consola y en otras ubicaciones.
 
 
 

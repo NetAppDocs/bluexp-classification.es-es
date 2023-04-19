@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-reduce-scan-speed.html 
 keywords: slow scans, reduce speed 
-summary: 'Los análisis de datos tienen un impacto insignificante en los sistemas de almacenamiento y en los datos. Sin embargo, si le preocupa incluso un impacto muy pequeño, puede configurar Data Sense para realizar exploraciones "lentas".' 
+summary: Los análisis de datos tienen un impacto insignificante en los sistemas de almacenamiento y en los datos. Sin embargo, si te preocupa incluso un impacto muy pequeño, puedes configurar la clasificación de BlueXP para realizar análisis «lentos». 
 ---
-= Reducción de la velocidad de exploración de detección de datos
+= Reducir la velocidad de exploración de clasificación de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Los análisis de datos tienen un impacto insignificante en los sistema
 
 
 [role="lead"]
-Los análisis de datos tienen un impacto insignificante en los sistemas de almacenamiento y en los datos. Sin embargo, si le preocupa incluso un impacto muy pequeño, puede configurar Data Sense para realizar exploraciones "lentas".
+Los análisis de datos tienen un impacto insignificante en los sistemas de almacenamiento y en los datos. Sin embargo, si te preocupa incluso un impacto muy pequeño, puedes configurar la clasificación de BlueXP para realizar análisis «lentos».
 
 Cuando está activada, el análisis lento se utiliza en todas las fuentes de datos; no puede configurar el análisis lento para un único entorno de trabajo o origen de datos.
 

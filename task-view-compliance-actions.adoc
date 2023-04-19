@@ -20,8 +20,8 @@ Esto permite ver las acciones que se completaron correctamente, las que están e
 
 El estado puede ser:
 
-* Éxito: Se ha completado Una acción de detección de datos y todos los elementos se han realizado correctamente.
-* Éxito parcial: Una acción de detección de datos ha finalizado y algunos elementos han fallado y otros han sido correctamente.
+* Correcto: La acción de clasificación de BlueXP ha finalizado y todos los elementos se han realizado correctamente.
+* Correcto parcial: Una acción de clasificación de BlueXP ha finalizado, algunos elementos han fallado y otros se han realizado correctamente.
 * En curso: La acción sigue en curso.
 * Queued: La acción no ha comenzado.
 * Cancelado: La acción se ha cancelado.
@@ -31,7 +31,7 @@ El estado puede ser:
 Tenga en cuenta que puede cancelar cualquier acción que tenga el estado "en cola" o "en curso".
 
 .Pasos
-. En la parte inferior derecha de la interfaz de usuario de detección de datos puede ver el botón *Estado de acciones* image:button_actions_status.png[""].
+. En la parte inferior derecha de la interfaz de usuario de clasificación de BlueXP, puedes ver el botón *Actions Status* image:button_actions_status.png[""].
 . Haga clic en este botón y se muestran las 20 acciones más recientes.
 +
 image:screenshot_compliance_action_status.png["Captura de pantalla que muestra las últimas 20 acciones y su estado en la página Configuración."]

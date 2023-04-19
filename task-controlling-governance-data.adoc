@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
 keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
-summary: Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. Cloud Data Sense identifica la cantidad de datos desfasados, datos no empresariales, archivos duplicados y archivos de gran tamaño de sus sistemas para poder decidir si desea quitar o organizar algunos archivos en niveles en un almacenamiento de objetos menos costoso. 
+summary: Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato. 
 ---
 = Ver los detalles de gobernanza sobre los datos almacenados en su organización
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Controle los costes relacionados con los datos que residen en los recur
 
 
 [role="lead"]
-Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. Cloud Data Sense identifica la cantidad de datos desfasados, datos no empresariales, archivos duplicados y archivos de gran tamaño de sus sistemas para poder decidir si desea quitar o organizar algunos archivos en niveles en un almacenamiento de objetos menos costoso.
+Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato.
 
 Además, si tiene pensado migrar datos desde ubicaciones locales al cloud, puede visualizar el tamaño de los datos y si alguno de ellos contiene información confidencial antes de moverlos.
 
@@ -24,7 +24,7 @@ Además, si tiene pensado migrar datos desde ubicaciones locales al cloud, puede
 
 La consola de gobernanza proporciona información para que pueda aumentar la eficiencia y controlar los costes relacionados con los datos almacenados en sus recursos de almacenamiento.
 
-image:screenshot_compliance_governance_dashboard.png["Una captura de pantalla del panel Cloud Data Sense Governance."]
+image:screenshot_compliance_governance_dashboard.png["Una captura de pantalla del panel de gobernanza de clasificación de BlueXP."]
 
 
 
@@ -92,7 +92,7 @@ image:screenshot_compliance_sensitive_data.png["Captura de pantalla que muestra 
 
 Puede hacer clic en el bloque en el que está interesado para ver los resultados filtrados de los archivos afectados en la página Investigación para poder seguir investigando.
 
-No se muestra ningún dato en este panel si no ha integrado un servicio de identidad con detección de datos. link:task-add-active-directory-datasense.html["Descubra cómo integrar su servicio Active Directory con Data Sense"^].
+No se muestran datos en este panel si no se ha integrado un servicio de identidades con la clasificación de BlueXP. link:task-add-active-directory-datasense.html["Descubre cómo integrar tu servicio de Active Directory con la clasificación de BlueXP"^].
 
 
 TIP: Este panel admite archivos en recursos compartidos de CIFS, OneDrive y orígenes de datos de SharePoint. Actualmente no se admite el almacenamiento de bases de datos, Google Drive, Amazon S3 y objetos genéricos.
@@ -185,7 +185,7 @@ El informe incluye la siguiente información:
 
 === Generación del Informe de asignación de datos
 
-Genere este informe desde la ficha Gobierno en el sentido de datos.
+Este informe se genera desde la pestaña Gobernanza de la clasificación de BlueXP.
 
 .Pasos
 . En el menú BlueXP, haga clic en *Gobierno > Clasificación*.
@@ -196,9 +196,9 @@ image:screenshot_compliance_data_mapping_report_button.png["Captura de pantalla 
 
 
 .Resultado
-Data Sense genera un informe en PDF que puede revisar y enviar a otros grupos según sea necesario.
+La clasificación de BlueXP genera un informe PDF que se puede revisar y enviar a otros grupos según sea necesario.
 
-Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de detección de datos haciendo clic en image:screenshot_gallery_options.gif["El botón más"] Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.
+Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de clasificación de BlueXP haciendo clic en image:screenshot_gallery_options.gif["El botón más"] Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.
 
 
 
@@ -230,7 +230,7 @@ Tras la evaluación, este informe identifica las áreas en las que puede:
 
 === Generación del Informe de evaluación de detección de datos
 
-Genere este informe desde la ficha Gobierno en el sentido de datos.
+Este informe se genera desde la pestaña Gobernanza de la clasificación de BlueXP.
 
 .Pasos
 . En el menú BlueXP, haga clic en *Gobierno > Clasificación*.
@@ -241,6 +241,6 @@ image:screenshot_compliance_data_discovery_report_button.png["Captura de pantall
 
 
 .Resultado
-Data Sense genera un informe en PDF que puede revisar y enviar a otros grupos según sea necesario.
+La clasificación de BlueXP genera un informe PDF que se puede revisar y enviar a otros grupos según sea necesario.
 
-Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de detección de datos haciendo clic en image:screenshot_gallery_options.gif["El botón más"] Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.
+Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de clasificación de BlueXP haciendo clic en image:screenshot_gallery_options.gif["El botón más"] Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.

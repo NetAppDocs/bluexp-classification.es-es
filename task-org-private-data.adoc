@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-org-private-data.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Cloud Data Sense ofrece muchas formas de gestionar y organizar sus datos privados. Esto le facilita ver los datos que más le importan. 
+summary: La clasificación de BlueXP ofrece muchas formas de gestionar y organizar los datos privados. Esto le facilita ver los datos que más le importan. 
 ---
 = Organizar sus datos privados
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Cloud Data Sense ofrece muchas formas de gestionar y organizar sus dato
 
 
 [role="lead"]
-Cloud Data Sense ofrece muchas formas de gestionar y organizar sus datos privados. Esto le facilita ver los datos que más le importan.
+La clasificación de BlueXP ofrece muchas formas de gestionar y organizar los datos privados. Esto le facilita ver los datos que más le importan.
 
-* Si está suscrito a. https://azure.microsoft.com/en-us/services/information-protection/["Protección de información de Azure (AIP)"^] Para clasificar y proteger sus archivos, puede utilizar Cloud Data Sense para administrar esas etiquetas AIP.
+* Si está suscrito a. https://azure.microsoft.com/en-us/services/information-protection/["Protección de información de Azure (AIP)"^] Para clasificar y proteger tus archivos, puedes usar la clasificación de BlueXP para gestionar esas etiquetas de AIP.
 * Puede agregar etiquetas a los archivos que desee marcar para la organización o para algún tipo de seguimiento.
 * Puede asignar un usuario de BlueXP a un archivo específico, o a varios archivos, para que la persona pueda ser responsable de administrar el archivo.
 * Con la funcionalidad "Directiva" puede crear sus propias consultas de búsqueda personalizadas para que pueda ver fácilmente los resultados haciendo clic en un botón.
@@ -30,23 +30,23 @@ NOTE: Las capacidades descritas en esta sección sólo están disponibles si ha 
 
 == ¿Debo usar etiquetas o etiquetas?
 
-A continuación se ofrece una comparación del etiquetado de Data Sense y del etiquetado de la protección de la información de Azure.
+A continuación se muestra una comparación del etiquetado de clasificación de BlueXP y el etiquetado de Azure Information Protection.
 
 [cols="50,50"]
 |===
 | Etiquetas | Etiquetas 
 
 
-| Las etiquetas de archivo son una parte integrada de Data Sense. | Requiere que se haya suscrito a la protección de información de Azure (AIP). 
+| Las etiquetas de archivos son una parte integrada de la clasificación de BlueXP. | Requiere que se haya suscrito a la protección de información de Azure (AIP). 
 
 
-| La etiqueta sólo se guarda en la base de datos de detección de datos; no se escribe en el archivo. No cambia el archivo, ni los tiempos de acceso o modificación del archivo. | La etiqueta forma parte del archivo y cuando la etiqueta cambia, el archivo cambia. Este cambio también cambia los tiempos de acceso y modificación del archivo. 
+| La etiqueta solo se conserva en la base de datos de clasificación de BlueXP: No se escribe en el archivo. No cambia el archivo, ni los tiempos de acceso o modificación del archivo. | La etiqueta forma parte del archivo y cuando la etiqueta cambia, el archivo cambia. Este cambio también cambia los tiempos de acceso y modificación del archivo. 
 
 
 | Puede tener varias etiquetas en un único archivo. | Puede tener una etiqueta en un solo archivo. 
 
 
-| La etiqueta se puede utilizar para la acción de detección de datos interna, como copiar, mover, eliminar, ejecutar una política, etc. | Otros sistemas que pueden leer el archivo pueden ver la etiqueta, que se puede utilizar para automatización adicional. 
+| La etiqueta se puede usar para la acción de clasificación interna de BlueXP, como copiar, mover, eliminar, ejecutar una política etc. | Otros sistemas que pueden leer el archivo pueden ver la etiqueta, que se puede utilizar para automatización adicional. 
 
 
 | Sólo se utiliza una sola llamada API para ver si un archivo tiene una etiqueta. |  
@@ -55,15 +55,15 @@ A continuación se ofrece una comparación del etiquetado de Data Sense y del et
 
 == Categorizar sus datos mediante etiquetas AIP
 
-Puede administrar etiquetas AIP en los archivos que detección de datos en la nube está analizando si se ha suscrito https://azure.microsoft.com/en-us/services/information-protection/["Protección de información de Azure (AIP)"^]. AIP le permite clasificar y proteger documentos y archivos aplicando etiquetas al contenido. Data Sense permite ver las etiquetas que ya están asignadas a los archivos, agregar etiquetas a los archivos y cambiar etiquetas cuando ya existe una etiqueta.
+Puede gestionar etiquetas AIP en los archivos a los que está analizando la clasificación de BlueXP si ya se ha suscrito https://azure.microsoft.com/en-us/services/information-protection/["Protección de información de Azure (AIP)"^]. AIP le permite clasificar y proteger documentos y archivos aplicando etiquetas al contenido. La clasificación de BlueXP te permite ver las etiquetas que ya están asignadas a archivos, agregar etiquetas a archivos y cambiar etiquetas cuando ya existe una etiqueta.
 
-Cloud Data Sense admite etiquetas AIP dentro de los siguientes tipos de archivo: .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX.
+La clasificación de BlueXP admite etiquetas AIP en los siguientes tipos de archivos: .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX.
 
 [NOTE]
 ====
 * Actualmente no puede cambiar etiquetas en archivos de más de 30 MB. Para las cuentas de OneDrive, SharePoint y Google Drive, el tamaño máximo del archivo es 4 MB.
-* Si un archivo tiene una etiqueta que ya no existe en AIP, Cloud Data Sense la considera un archivo sin etiqueta.
-* Si ha implementado Data Sense en una región gubernamental o en una ubicación local que no tiene acceso a Internet (también conocida como sitio oscuro), la funcionalidad de etiqueta AIP no estará disponible.
+* Si un archivo tiene una etiqueta que ya no existe en AIP, la clasificación de BlueXP lo considera como un archivo sin una etiqueta.
+* Si has implementado la clasificación de BlueXP en una región gubernamental o en una ubicación on-premises que no tiene acceso a Internet (también conocida como sitio oscuro), la funcionalidad de etiqueta AIP no estará disponible.
 
 
 ====
@@ -71,7 +71,7 @@ Cloud Data Sense admite etiquetas AIP dentro de los siguientes tipos de archivo:
 
 === Integración de etiquetas AIP en el espacio de trabajo
 
-Antes de poder administrar etiquetas AIP, debe integrar la funcionalidad de etiquetas AIP en Cloud Data Sense iniciando sesión en su cuenta de Azure existente. Una vez activado, puede administrar etiquetas AIP dentro de los archivos para todos link:concept-cloud-compliance.html#supported-data-sources["fuentes de datos"^] En el espacio de trabajo de BlueXP.
+Para poder administrar etiquetas AIP, debes integrar la funcionalidad de etiqueta AIP en la clasificación de BlueXP iniciando sesión en tu cuenta de Azure existente. Una vez activado, puede administrar etiquetas AIP dentro de los archivos para todos link:concept-cloud-compliance.html#supported-data-sources["fuentes de datos"^] En el espacio de trabajo de BlueXP.
 
 .Requisitos
 * Debe tener una cuenta y una licencia de Azure Information Protection.
@@ -80,13 +80,13 @@ Antes de poder administrar etiquetas AIP, debe integrar la funcionalidad de etiq
 
 
 .Pasos
-. En la página Configuración de detección de datos en la nube, haga clic en *integrar etiquetas AIP*.
+. En la página Configuración de clasificación de BlueXP, haz clic en *Integrar etiquetas AIP*.
 +
-image:screenshot_compliance_integrate_aip_labels.png["Captura de pantalla que muestra cómo hacer clic en el botón para integrar la funcionalidad de etiquetas AIP en Cloud Data Sense."]
+image:screenshot_compliance_integrate_aip_labels.png["Una captura de pantalla que muestra hacer clic en el botón para integrar la funcionalidad de etiquetas AIP en la clasificación de BlueXP."]
 
 . En el cuadro de diálogo integrar etiquetas AIP, haga clic en *Iniciar sesión en Azure*.
 . En la página de Microsoft que aparece, seleccione la cuenta e introduzca las credenciales necesarias.
-. Vuelva a la ficha sentido de datos en la nube y verá el mensaje "_AIP Labels se han integrado correctamente con la cuenta <account_name>_".
+. Vuelve a la pestaña de clasificación de BlueXP y verás el mensaje «_AIP Labels se han integrado correctamente con la cuenta <account_name>_».
 . Haga clic en *Cerrar* y verá el texto _AIP Labels integrated_ en la parte superior de la página.
 +
 image:screenshot_compliance_aip_labels_int.png["Se ha integrado correctamente una captura de pantalla que muestra las etiquetas AIP."]
@@ -110,7 +110,7 @@ image:screenshot_compliance_show_label.png["Captura de pantalla que muestra los 
 
 === Asignación manual de etiquetas AIP
 
-Puede agregar, cambiar y eliminar etiquetas AIP de sus archivos con Cloud Data Sense.
+Puedes añadir, cambiar y eliminar etiquetas AIP de tus archivos mediante la clasificación de BlueXP.
 
 Siga estos pasos para asignar una etiqueta AIP a un único archivo.
 
@@ -150,14 +150,14 @@ La etiqueta AIP se agrega a los metadatos de todos los archivos seleccionados.
 
 === Eliminación de la integración AIP
 
-Si ya no desea gestionar etiquetas AIP en archivos, puede eliminar la cuenta AIP de la interfaz de Cloud Data Sense.
+Si ya no quieres tener la capacidad de administrar etiquetas AIP en archivos, puedes eliminar la cuenta AIP de la interfaz de clasificación de BlueXP.
 
-Tenga en cuenta que no se realiza ningún cambio en las etiquetas que ha agregado con Data Sense. Las etiquetas que existen en los archivos permanecerán tal como existen actualmente.
+Ten en cuenta que no se realizan cambios en las etiquetas que has añadido mediante la clasificación de BlueXP. Las etiquetas que existen en los archivos permanecerán tal como existen actualmente.
 
 .Pasos
 . En la página _Configuration_, haga clic en *Etiquetas AIP integradas > Eliminar integración*.
 +
-image:screenshot_compliance_un_integrate_aip_labels.png["Una captura de pantalla que muestra cómo eliminar las integraciones AIP con Cloud Data Sense."]
+image:screenshot_compliance_un_integrate_aip_labels.png["Una captura de pantalla que muestra cómo eliminar las integraciones AIP con la clasificación de BlueXP."]
 
 . Haga clic en *Eliminar integración* en el cuadro de diálogo de confirmación.
 
@@ -168,12 +168,12 @@ image:screenshot_compliance_un_integrate_aip_labels.png["Una captura de pantalla
 
 Puede agregar una etiqueta a los archivos que desee marcar para algún tipo de seguimiento. Por ejemplo, es posible que haya encontrado algunos archivos duplicados y desee eliminar uno de ellos, pero debe comprobar qué se debe eliminar. Puede agregar una etiqueta de "comprobar para eliminar" al archivo para que sepa que este archivo requiere algún tipo de investigación y acción futura.
 
-Data Sense permite ver las etiquetas asignadas a los archivos, agregar o quitar etiquetas de los archivos y cambiar el nombre o eliminar una etiqueta existente.
+La clasificación de BlueXP permite ver las etiquetas asignadas a archivos, añadir o quitar etiquetas de los archivos, y cambiar el nombre o eliminar una etiqueta existente.
 
-Tenga en cuenta que la etiqueta no se agrega al archivo de la misma manera que las etiquetas AIP forman parte de los metadatos del archivo. Los usuarios de BlueXP acaban de ver la etiqueta con Cloud Data Sense, por lo que puede ver si es necesario eliminar o comprobar un archivo para algún tipo de seguimiento.
+Tenga en cuenta que la etiqueta no se agrega al archivo de la misma manera que las etiquetas AIP forman parte de los metadatos del archivo. Los usuarios de BlueXP solo ven la etiqueta con la clasificación de BlueXP, para que puedas ver si es necesario eliminar o comprobar un archivo en cuanto a algún tipo de seguimiento.
 
 
-TIP: Las etiquetas asignadas a los archivos en Cloud Data Sense no están relacionadas con las etiquetas que puede agregar a los recursos, como volúmenes o instancias de máquinas virtuales. Las etiquetas de detección de datos se aplican en el nivel de archivo.
+TIP: Las etiquetas asignadas a archivos en la clasificación de BlueXP no están relacionadas con las etiquetas que se pueden añadir a recursos, como volúmenes o instancias de máquinas virtuales. Las etiquetas de clasificación de BlueXP se aplican a nivel de archivo.
 
 
 
@@ -181,7 +181,7 @@ TIP: Las etiquetas asignadas a los archivos en Cloud Data Sense no están relaci
 
 Puede ver todos los archivos que tienen asignadas etiquetas específicas.
 
-. Haga clic en la ficha *Investigación* de Cloud Data Sense.
+. Haga clic en la pestaña *Investigation* de la clasificación de BlueXP.
 . En la página Investigación de datos, haga clic en *Etiquetas* en el panel Filtros y, a continuación, seleccione las etiquetas necesarias.
 +
 image:screenshot_compliance_filter_status.png["Una captura de pantalla que muestra cómo seleccionar etiquetas en el panel Filtros."]
@@ -261,7 +261,7 @@ Puede asignar un usuario de BlueXP a un archivo específico, o a varios archivos
 
 Por ejemplo, puede tener un archivo que contiene ciertos datos personales que permiten a demasiados usuarios acceso de lectura y escritura (permisos abiertos). Así que podría asignar la etiqueta de estado "Cambiar permisos" y asignar este archivo al usuario "Joan Smith" para que puedan decidir cómo solucionar el problema. Cuando hayan solucionado el problema, podrían cambiar la etiqueta de estado a "completado".
 
-Tenga en cuenta que el nombre de usuario no se agrega al archivo como parte de los metadatos de los archivos; los usuarios de BlueXP acaban de ver al utilizar Cloud Data Sense.
+Tenga en cuenta que el nombre de usuario no se añade al archivo como parte de los metadatos del archivo; los usuarios de BlueXP lo ven cuando usan la clasificación de BlueXP.
 
 Un filtro nuevo en la página Investigación le permite ver fácilmente todos los archivos que tienen la misma persona en el campo "asignado a".
 

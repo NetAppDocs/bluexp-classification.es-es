@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Las directivas son como una lista de favoritos de filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento solicitadas con frecuencia. Cloud Data Sense proporciona un conjunto de políticas predefinidas basadas en las solicitudes comunes del cliente. Puede crear directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización. 
+summary: Las directivas son como una lista de favoritos de filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento solicitadas con frecuencia. La clasificación de BlueXP proporciona un conjunto de políticas predefinidas basadas en solicitudes habituales de los clientes. Puede crear directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización. 
 ---
 = Asignación de políticas a sus datos
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Las directivas son como una lista de favoritos de filtros personalizado
 
 
 [role="lead"]
-Las directivas son como una lista de favoritos de filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento solicitadas con frecuencia. Cloud Data Sense proporciona un conjunto de políticas predefinidas basadas en las solicitudes comunes del cliente. Puede crear directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización.
+Las directivas son como una lista de favoritos de filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento solicitadas con frecuencia. La clasificación de BlueXP proporciona un conjunto de políticas predefinidas basadas en solicitudes habituales de los clientes. Puede crear directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización.
 
 Las políticas ofrecen la siguiente funcionalidad:
 
@@ -26,9 +26,9 @@ Las políticas ofrecen la siguiente funcionalidad:
 * Elimine archivos automáticamente (una vez al día) cuando determinadas directivas devuelvan resultados para que pueda proteger sus datos automáticamente
 
 
-En la ficha *Directivas* del Panel de cumplimiento se enumeran todas las directivas predefinidas y personalizadas disponibles en esta instancia de Cloud Data Sense.
+La pestaña *Políticas* del Panel de cumplimiento enumera todas las políticas predefinidas y personalizadas disponibles en esta instancia de clasificación de BlueXP.
 
-image:screenshot_compliance_highlights_tab.png["Una captura de pantalla de la pestaña Policies del panel Cloud Data Sense."]
+image:screenshot_compliance_highlights_tab.png["Una captura de pantalla de la pestaña Políticas del panel de clasificación de BlueXP."]
 
 Además, las políticas aparecen en la lista de filtros de la página Investigación.
 
@@ -76,7 +76,7 @@ La nueva directiva aparece en la ficha Directivas.
 
 == Envío de alertas por correo electrónico cuando se encuentran datos no conformes
 
-Cloud Data Sense puede enviar alertas por correo electrónico a los usuarios de BlueXP en su cuenta cuando ciertas políticas críticas devuelven resultados para que pueda obtener notificaciones para proteger sus datos. Puede optar por enviar las notificaciones por correo electrónico diariamente, semanalmente o mensualmente. También puede optar por enviar alertas de correo electrónico a cualquier otra dirección de correo electrónico - hasta 20 direcciones de correo electrónico - no en su cuenta de BlueXP.
+La clasificación de BlueXP puede enviar alertas por correo electrónico a los usuarios de BlueXP en tu cuenta cuando ciertas políticas críticas devuelvan resultados para que puedas recibir notificaciones que protejan tus datos. Puede optar por enviar las notificaciones por correo electrónico diariamente, semanalmente o mensualmente. También puede optar por enviar alertas de correo electrónico a cualquier otra dirección de correo electrónico - hasta 20 direcciones de correo electrónico - no en su cuenta de BlueXP.
 
 Puede configurar esta configuración al crear la directiva o al editar cualquier directiva.
 
@@ -106,7 +106,7 @@ El primer correo electrónico se envía ahora si hay algún resultado de la Pol�
 
 == Eliminación automática de archivos de origen mediante directivas
 
-Puede crear una directiva personalizada para eliminar los archivos que coincidan con la directiva. Por ejemplo, puede que desee eliminar archivos que contengan información confidencial y que fueron detectados por Data Sense en los últimos 30 días.
+Puede crear una directiva personalizada para eliminar los archivos que coincidan con la directiva. Por ejemplo, puede que desee eliminar archivos que contienen información confidencial y que se han detectado por la clasificación de BlueXP en los últimos 30 días.
 
 Sólo los administradores de cuentas pueden crear una directiva para eliminar archivos automáticamente.
 
@@ -139,7 +139,7 @@ Puede ver la lista de archivos que se han eliminado en link:task-view-compliance
 
 Puede asignar una etiqueta AIP a todos los archivos que cumplan los criterios de la directiva. Puede especificar la etiqueta AIP al crear la directiva, o puede agregar la etiqueta al editar cualquier directiva.
 
-Las etiquetas se agregan o actualizan continuamente en archivos a medida que Cloud Data Sense analiza los archivos.
+Las etiquetas se añaden o actualizan en los archivos continuamente a medida que la clasificación de BlueXP analiza los archivos.
 
 En función de si una etiqueta ya se ha aplicado a un archivo y del nivel de clasificación de la etiqueta, se realizan las siguientes acciones al cambiar una etiqueta:
 
@@ -220,7 +220,7 @@ Para eliminar una directiva, haga clic en image:screenshot_gallery_options.gif["
 
 == Lista de directivas predefinidas
 
-Cloud Data Sense proporciona las siguientes políticas definidas por el sistema:
+La clasificación de BlueXP proporciona las siguientes políticas definidas por el sistema:
 
 [cols="25,40,40"]
 |===

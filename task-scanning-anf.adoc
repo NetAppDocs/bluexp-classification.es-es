@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-anf.html 
-keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, Azure NetApp Files, data sense 
-summary: Complete unos pasos para empezar a usar Cloud Data Sense para Azure NetApp Files. 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
+summary: Completa unos pasos para empezar a usar la clasificación de BlueXP para Azure NetApp Files. 
 ---
-= Introducción a Cloud Data Sense para Azure NetApp Files
+= Primeros pasos con la clasificación de BlueXP para Azure NetApp Files
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Complete unos pasos para empezar a usar Cloud Data Sense para Azure Net
 
 
 [role="lead"]
-Complete unos pasos para empezar a usar Cloud Data Sense para Azure NetApp Files.
+Completa unos pasos para empezar a usar la clasificación de BlueXP para Azure NetApp Files.
 
 
 
@@ -26,28 +26,28 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 [role="quick-margin-para"]
 Antes de poder analizar volúmenes Azure NetApp Files, https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Debe configurar BlueXP para descubrir la configuración"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Ponga en marcha la instancia de Cloud Data Sense
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Ponga en marcha Cloud Data Sense en BlueXP"^] si aún no hay una instancia implementada.
+link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP en BlueXP"^] si aún no hay una instancia implementada.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Habilite Cloud Data Sense y seleccione los volúmenes que desea analizar
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Habilita la clasificación de BlueXP y selecciona los volúmenes que deseas escanear
 [role="quick-margin-para"]
 Haga clic en *cumplimiento*, seleccione la ficha *Configuración* y active los análisis de cumplimiento para volúmenes en entornos de trabajo específicos.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Garantice el acceso a los volúmenes
 [role="quick-margin-para"]
-Ahora que Cloud Data Sense está habilitado, asegúrese de que pueda acceder a todos los volúmenes.
+Ahora que la clasificación de BlueXP está habilitada, asegúrate de que puede acceder a todos los volúmenes.
 
 [role="quick-margin-list"]
-* La instancia de Cloud Data Sense necesita una conexión de red a cada subred de Azure NetApp Files.
-* Asegúrese de que estos puertos estén abiertos a la instancia de Data Sense:
+* La instancia de clasificación de BlueXP necesita una conexión de red con cada subred Azure NetApp Files.
+* Asegúrate de que estos puertos estén abiertos a la instancia de clasificación de BlueXP:
 +
 ** Para NFS, puertos 111 y 2049.
 ** Para CIFS, puertos 139 y 445.
 
 
-* Las políticas de exportación de volúmenes NFS deben permitir el acceso desde la instancia de Data Sense.
-* La detección de datos necesita credenciales de Active Directory para analizar volúmenes CIFS.
+* Las políticas de exportación de volúmenes de NFS deben permitir el acceso desde la instancia de clasificación de BlueXP.
+* La clasificación de BlueXP necesita credenciales de Active Directory para analizar los volúmenes de CIFS.
 +
 Haga clic en *cumplimiento* > *Configuración* > *Editar credenciales CIFS* y proporcione las credenciales.
 
@@ -55,7 +55,7 @@ Haga clic en *cumplimiento* > *Configuración* > *Editar credenciales CIFS* y pr
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinco"] Gestione los volúmenes que desea analizar
 [role="quick-margin-para"]
-Seleccione o anule la selección de los volúmenes que desea analizar y Cloud Data Sense iniciará o dejará de analizarlos.
+Selecciona o anula la selección de los volúmenes que quieres analizar y la clasificación de BlueXP iniciará o detendrá su análisis.
 
 
 
@@ -67,25 +67,25 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.
 
 
 
-== Implementar la instancia de Cloud Data Sense
+== Implementar la instancia de clasificación de BlueXP
 
-link:task-deploy-cloud-compliance.html["Ponga en marcha Cloud Data Sense"^] si aún no hay una instancia implementada.
+link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP"^] si aún no hay una instancia implementada.
 
-El sentido de los datos se debe implementar en el cloud al analizar volúmenes de Azure NetApp Files y debe ponerse en marcha en la misma región que los volúmenes que desea analizar.
+La clasificación de BlueXP debe ponerse en marcha en la nube al analizar los volúmenes de Azure NetApp Files y debe implementarse en la misma región que los volúmenes que deseas analizar.
 
-*Nota:* actualmente no se admite la implementación de la detección de datos en la nube en una ubicación local al analizar volúmenes Azure NetApp Files.
+*Nota:* La implementación de la clasificación de BlueXP en una ubicación local no es compatible actualmente al analizar volúmenes de Azure NetApp Files.
 
-Las actualizaciones del software Data Sense se automatizan siempre que la instancia tenga conectividad a Internet.
+Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
 
 
 
-== Habilitar el sentido de los datos en el cloud en sus entornos de trabajo
+== Habilitar la clasificación de BlueXP en tus entornos de trabajo
 
-Puede habilitar la detección de datos en el cloud en Azure NetApp Files Volumes.
+Puede habilitar la clasificación de BlueXP en sus volúmenes de Azure NetApp Files.
 
 . En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y seleccione la ficha *Configuración*.
 +
-image:screenshot_cloud_compliance_anf_scan_config.png["Una captura de pantalla de la pestaña Configuration inmediatamente después de implementar la instancia de Cloud Data Sense."]
+image:screenshot_cloud_compliance_anf_scan_config.png["Una captura de pantalla de la pestaña Configuration inmediatamente después de implementar la instancia de clasificación de BlueXP."]
 
 . Seleccione cómo desea analizar los volúmenes en cada entorno de trabajo. link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Obtenga más información sobre las exploraciones de clasificación y mapeo"]:
 +
@@ -97,46 +97,46 @@ Consulte <<Habilitar y deshabilitar los análisis de cumplimiento de normativas 
 
 
 
-. En el cuadro de diálogo de confirmación, haga clic en *aprobar* para que Data SENSE empiece a analizar los volúmenes.
+. En el cuadro de diálogo de confirmación, haz clic en *Aprobar* para que la clasificación de BlueXP comience a escanear tus volúmenes.
 
 
 .Resultado
-Cloud Data Sense comienza a analizar los volúmenes seleccionados en el entorno de trabajo. Los resultados estarán disponibles en el panel de cumplimiento tan pronto como Data Sense termine las exploraciones iniciales. El tiempo que se tarda en depende de la cantidad de datos; puede que sea unos minutos u horas.
+La clasificación de BlueXP comienza a analizar los volúmenes que seleccionaste en el entorno de trabajo. Los resultados estarán disponibles en la consola de cumplimiento en cuanto la clasificación de BlueXP finalice los análisis iniciales. El tiempo que se tarda en depende de la cantidad de datos; puede que sea unos minutos u horas.
 
 
-NOTE: De forma predeterminada, si Data sense no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos de los volúmenes, ya que el detección de datos no puede revertir la "última hora de acceso" a la Marca de hora original. Si no le importa si se restablece la última hora de acceso, haga clic en *o seleccione el tipo de exploración para cada volumen*. Esa página tiene un valor que se puede habilitar para que Data Sense analice los volúmenes sin tener en cuenta los permisos.
+NOTE: De forma predeterminada, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS u permisos de escritura en NFS, el sistema no analizará los archivos de tus volúmenes, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Si no le importa si se restablece la última hora de acceso, haga clic en *o seleccione el tipo de exploración para cada volumen*. Esa página tiene una configuración que se puede habilitar para que la clasificación de BlueXP analice los volúmenes independientemente de los permisos.
 
 
 
-== Comprobar que Cloud Data Sense tiene acceso a volúmenes
+== Verificar que la clasificación de BlueXP tenga acceso a los volúmenes
 
-Asegúrese de que Cloud Data Sense pueda acceder a los volúmenes mediante la comprobación de la red, los grupos de seguridad y las políticas de exportación. Deberá proporcionar la detección de datos con credenciales CIFS para poder acceder a volúmenes CIFS.
+Asegúrese de que la clasificación de BlueXP pueda acceder a los volúmenes comprobando la red, los grupos de seguridad y las políticas de exportación. Tendrás que ofrecer la clasificación de BlueXP con credenciales CIFS para que pueda acceder a los volúmenes de CIFS.
 
 .Pasos
-. Asegúrese de que haya una conexión de red entre la instancia de Cloud Data Sense y cada red que incluya los volúmenes para Azure NetApp Files.
+. Asegúrate de que haya una conexión de red entre la instancia de clasificación de BlueXP y cada red que incluya volúmenes para Azure NetApp Files.
 +
 
-NOTE: Para Azure NetApp Files, Cloud Data Sense solo puede analizar volúmenes que se encuentran en la misma región que BlueXP.
+NOTE: Para Azure NetApp Files, la clasificación de BlueXP solo puede analizar volúmenes que estén en la misma región que BlueXP.
 
-. Asegúrese de que los siguientes puertos están abiertos a la instancia de Data Sense:
+. Compruebe que los siguientes puertos estén abiertos en la instancia de clasificación de BlueXP:
 +
 ** Para NFS, puertos 111 y 2049.
 ** Para CIFS, puertos 139 y 445.
 
 
-. Compruebe que las políticas de exportación de volúmenes NFS incluyan la dirección IP de la instancia de Data Sense para poder acceder a los datos de cada volumen.
-. Si utiliza CIFS, proporcione detección de datos con credenciales de Active Directory para poder analizar volúmenes CIFS.
+. Compruebe que las políticas de exportación de volúmenes de NFS incluyan la dirección IP de la instancia de clasificación de BlueXP para que pueda acceder a los datos de cada volumen.
+. Si usas CIFS, proporciona una clasificación de BlueXP con credenciales de Active Directory para que pueda analizar los volúmenes de CIFS.
 +
 .. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y seleccione la ficha *Configuración*.
 +
 image:screenshot_cifs_credentials.gif["Captura de pantalla de la ficha cumplimiento que muestra el botón Estado del análisis que está disponible en la parte superior derecha del panel de contenido."]
 
-.. Para cada entorno de trabajo, haga clic en *Editar credenciales CIFS* e introduzca el nombre de usuario y la contraseña que necesita Data Sense para acceder a los volúmenes CIFS en el sistema.
+.. Para cada entorno de trabajo, haga clic en *Edit CIFS Credentials* e introduzca el nombre de usuario y la contraseña que la clasificación de BlueXP necesita para acceder a los volúmenes CIFS del sistema.
 +
-Las credenciales pueden ser de sólo lectura, pero si se proporcionan credenciales de administrador, se garantiza que Data Sense pueda leer cualquier dato que requiera permisos elevados. Las credenciales se almacenan en la instancia de Cloud Data Sense.
+Las credenciales pueden ser de solo lectura, pero al proporcionar credenciales de administrador se garantiza que la clasificación de BlueXP pueda leer cualquier dato que requiera permisos elevados. Las credenciales se almacenan en la instancia de clasificación de BlueXP.
 
 +
-Si desea asegurarse de que los análisis de clasificación de detección de datos no modifican sus archivos “horas a las que se accedió por última vez”, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
+Si quieres asegurarte de que las «horas de último acceso» de tus archivos no cambien debido a los análisis de clasificación de BlueXP, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
 
 +
 Después de introducir las credenciales, debe ver un mensaje que indica que todos los volúmenes CIFS se autenticaron correctamente.
@@ -148,10 +148,10 @@ image:screenshot_cifs_status.gif["Captura de pantalla que muestra la página Con
 
 . En la página _Configuration_, haga clic en *View Details* para revisar el estado de cada volumen CIFS y NFS y corregir los errores.
 +
-Por ejemplo, la siguiente imagen muestra cuatro volúmenes; uno de los cuales no puede analizar Cloud Data Sense debido a problemas de conectividad de red entre la instancia de detección de datos y el volumen.
+Por ejemplo, la siguiente imagen muestra cuatro volúmenes, uno de los cuales la clasificación de BlueXP no puede analizar debido a problemas de conectividad de red entre la instancia de clasificación de BlueXP y el volumen.
 
 +
-image:screenshot_compliance_volume_details.gif["Captura de pantalla de la página Ver detalles de la configuración de exploración que muestra cuatro volúmenes; uno de los cuales no se analiza debido a la conectividad de red entre detección de datos y el volumen."]
+image:screenshot_compliance_volume_details.gif["Una captura de pantalla de la página View Details en la configuración de análisis que muestra cuatro volúmenes, uno de los cuales no se analiza debido a la conectividad de red entre la clasificación de BlueXP y el volumen."]
 
 
 
@@ -161,7 +161,7 @@ image:screenshot_compliance_volume_details.gif["Captura de pantalla de la págin
 
 Puede iniciar o detener exploraciones de sólo asignación, o bien análisis de asignación y clasificación, en un entorno de trabajo en cualquier momento desde la página Configuración. También puede cambiar de exploraciones de sólo asignación a exploraciones de asignación y clasificación, y viceversa. Le recomendamos que analice todos los volúmenes.
 
-El conmutador situado en la parte superior de la página para *Buscar cuando faltan los permisos de "atributos de escritura"* está desactivado de forma predeterminada. Esto significa que si Data Sense no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos porque el sentido de datos no puede revertir la Marca de hora original a la "hora del último acceso". Si no le importa si se restablece la última hora de acceso, ENCIENDA el conmutador y se explorarán todos los archivos independientemente de los permisos. link:reference-collected-metadata.html#last-access-time-timestamp["Leer más"^].
+El conmutador situado en la parte superior de la página para *Buscar cuando faltan los permisos de "atributos de escritura"* está desactivado de forma predeterminada. Esto significa que, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Si no le importa si se restablece la última hora de acceso, ENCIENDA el conmutador y se explorarán todos los archivos independientemente de los permisos. link:reference-collected-metadata.html#last-access-time-timestamp["Leer más"^].
 
 image:screenshot_volume_compliance_selection.png["Captura de pantalla de la página Configuración en la que puede activar o desactivar el análisis de volúmenes individuales."]
 

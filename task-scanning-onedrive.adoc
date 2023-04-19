@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-onedrive.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, Data Sense 
-summary: Complete unos pasos para empezar a analizar archivos en las carpetas de OneDrive de su usuario con Cloud Data Sense. 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
+summary: Completa unos pasos para comenzar a escanear archivos en las carpetas de OneDrive de tu usuario con la clasificación de BlueXP. 
 ---
 = Analizando cuentas de OneDrive
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Complete unos pasos para empezar a analizar archivos en las carpetas de
 
 
 [role="lead"]
-Complete unos pasos para empezar a analizar archivos en las carpetas de OneDrive de su usuario con Cloud Data Sense.
+Completa unos pasos para comenzar a escanear archivos en las carpetas de OneDrive de tu usuario con la clasificación de BlueXP.
 
 
 
@@ -26,9 +26,9 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 [role="quick-margin-para"]
 Compruebe que tiene las credenciales de administrador para iniciar sesión en la cuenta de OneDrive.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Ponga en marcha la instancia de Cloud Data Sense
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Ponga en marcha Cloud Data Sense"^] si aún no hay una instancia implementada.
+link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP"^] si aún no hay una instancia implementada.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Añada la cuenta de OneDrive
 [role="quick-margin-para"]
@@ -42,7 +42,7 @@ Agregue la lista de usuarios de la cuenta de OneDrive que desee analizar y selec
 
 == Revisión de los requisitos de OneDrive
 
-Revise los siguientes requisitos previos para asegurarse de tener una configuración compatible antes de habilitar Cloud Data Sense.
+Revise los siguientes requisitos previos para comprobar que tiene una configuración compatible antes de habilitar la clasificación de BlueXP.
 
 * Debe tener las credenciales de inicio de sesión de administrador para la cuenta de OneDrive para la Empresa que proporcione acceso de lectura a los archivos del usuario.
 * Necesitará una lista separada por líneas de las direcciones de correo electrónico para todos los usuarios cuyas carpetas de OneDrive desee analizar.
@@ -50,13 +50,13 @@ Revise los siguientes requisitos previos para asegurarse de tener una configurac
 
 
 
-== Implementar la instancia de Cloud Data Sense
+== Implementar la instancia de clasificación de BlueXP
 
-Si todavía no hay una instancia implementada, implemente Cloud Data Sense.
+Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
 
-El sentido de los datos puede ser link:task-deploy-cloud-compliance.html["implementado en el cloud"^] o. link:task-deploy-compliance-onprem.html["en una ubicación en el hotel que tiene acceso a internet"^].
+La clasificación de BlueXP puede ser link:task-deploy-cloud-compliance.html["implementado en el cloud"^] o. link:task-deploy-compliance-onprem.html["en una ubicación en el hotel que tiene acceso a internet"^].
 
-Las actualizaciones del software Data Sense se automatizan siempre que la instancia tenga conectividad a Internet.
+Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
 
 
 
@@ -70,7 +70,7 @@ Agregue la cuenta de OneDrive donde residen los archivos de usuario.
 image:screenshot_compliance_add_onedrive_button.png["Captura de pantalla de la página Configuración de exploración donde puede hacer clic en el botón Agregar OneDrive."]
 
 . En el cuadro de diálogo Agregar cuenta de OneDrive, haga clic en *Iniciar sesión en OneDrive*.
-. En la página de Microsoft que aparece, seleccione la cuenta de OneDrive e introduzca el usuario y la contraseña del administrador necesarios y, a continuación, haga clic en *Aceptar* para permitir que Cloud Data Sense lea datos de esta cuenta.
+. En la página de Microsoft que aparece, selecciona la cuenta de OneDrive e introduce el usuario y la contraseña de administrador necesarios, luego haz clic en *Aceptar* para permitir que la clasificación de BlueXP lea los datos de esta cuenta.
 
 
 La cuenta de OneDrive se agrega a la lista de entornos de trabajo.
@@ -79,7 +79,7 @@ La cuenta de OneDrive se agrega a la lista de entornos de trabajo.
 
 == Añadir usuarios de OneDrive a los análisis de cumplimiento de normativas
 
-Puede añadir usuarios individuales de OneDrive o todos sus usuarios de OneDrive para que sus archivos se puedan analizar mediante Cloud Data Sense.
+Puede añadir usuarios individuales de OneDrive, o todos sus usuarios de OneDrive, de manera que sus archivos se analizarán mediante la clasificación de BlueXP.
 
 .Pasos
 . En la página _Configuration_, haga clic en el botón *Configuration* de la cuenta de OneDrive.
@@ -124,7 +124,7 @@ Si el cuadro de diálogo enumera los usuarios que no se han podido agregar, capt
 
 
 .Resultado
-Cloud Data Sense comienza a analizar los archivos de los usuarios agregados y los resultados se muestran en el Panel y en otras ubicaciones.
+La clasificación de BlueXP comienza a analizar los archivos para los usuarios que has añadido; los resultados se muestran en el Dashboard y en otras ubicaciones.
 
 
 
@@ -134,4 +134,4 @@ Si dejan la compañía o cambia su dirección de correo electrónico, puede elim
 
 image:screenshot_compliance_onedrive_remove_user.png["Una captura de pantalla que muestra cómo eliminar a un solo usuario de que se escaneen sus archivos."]
 
-Tenga en cuenta que puede link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["Elimine toda la cuenta de OneDrive de Data Sense"] Si ya no desea analizar ningún dato de usuario desde la cuenta de OneDrive.
+Tenga en cuenta que puede link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Elimina toda la cuenta de OneDrive de la clasificación de BlueXP"] Si ya no desea analizar ningún dato de usuario desde la cuenta de OneDrive.

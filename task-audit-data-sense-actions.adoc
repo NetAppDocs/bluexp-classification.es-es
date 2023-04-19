@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-audit-data-sense-actions.html 
 keywords: compliance, actions, view progress, audit, logs, installation 
-summary: Data sense registra las actividades de gestión que se han realizado en archivos de todos los entornos de trabajo y orígenes de datos que Data Sense está analizando. El sensor de datos también registra las actividades al implementar la instancia de detección de datos. 
+summary: Actividades de gestión de registros de clasificación de BlueXP que se han realizado en archivos de todos los entornos de trabajo y fuentes de datos que está analizando la clasificación de BlueXP. La clasificación de BlueXP también registra las actividades al implementar la instancia de clasificación de BlueXP. 
 ---
-= Auditoría del historial de acciones de detección de datos
+= Audita el historial de acciones de clasificación de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Data sense registra las actividades de gestión que se han realizado en
 
 
 [role="lead"]
-Data sense registra las actividades de gestión que se han realizado en archivos de todos los entornos de trabajo y orígenes de datos que Data Sense está analizando. El sensor de datos también registra las actividades al implementar la instancia de detección de datos.
+Actividades de gestión de registros de clasificación de BlueXP que se han realizado en archivos de todos los entornos de trabajo y fuentes de datos que está analizando la clasificación de BlueXP. La clasificación de BlueXP también registra las actividades al implementar la instancia de clasificación de BlueXP.
 
-Puede ver el contenido de los archivos de registro de auditoría de Data Sense o descargarlos para ver los cambios que se han producido en los archivos y cuándo. Por ejemplo, puede ver qué solicitud se emitió, la hora de la solicitud y detalles como la ubicación de origen en caso de que se haya eliminado un archivo o la ubicación de origen y destino en caso de que se haya movido un archivo.
+Puede ver el contenido de los archivos de registro de auditoría de clasificación de BlueXP o descargarlos, para ver qué cambios se han producido en los archivos y cuándo. Por ejemplo, puede ver qué solicitud se emitió, la hora de la solicitud y detalles como la ubicación de origen en caso de que se haya eliminado un archivo o la ubicación de origen y destino en caso de que se haya movido un archivo.
 
 
 
@@ -52,15 +52,15 @@ Por ejemplo, las siguientes líneas del archivo de registro muestran una operaci
 
 == Acceda al archivo de registro
 
-Los archivos de registro de auditoría de gestión se encuentran en la máquina de detección de datos en: `/opt/netapp/audit_logs/`
+Los archivos de registro de auditoría de gestión están ubicados en la máquina de clasificación de BlueXP en lo siguiente: `/opt/netapp/audit_logs/`
 
 Los archivos de registro de auditoría de instalación se escriben en `/opt/netapp/install_logs/`
 
 Cada archivo de registro puede tener un tamaño máximo de 10 MB. Cuando se alcanza ese límite, se inicia un nuevo archivo de registro. Los archivos de registro se denominan "DataSense_audit.log", "DataSense_audit.log.1", "DataSense_audit.log.2", etc. Se conservan un máximo de 100 archivos de registro en el sistema: Los archivos de registro antiguos se eliminan automáticamente después de alcanzar el máximo.
 
-Cuando se instala Data Sense en una máquina Linux en sus instalaciones o en un equipo Linux implementado en el cloud, puede navegar directamente al archivo de registro.
+Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, puede navegar directamente al archivo de registro.
 
-Cuando se implementa la detección de datos en el cloud, necesita SSH a la instancia de Data Sense. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:
+Cuando se pone en marcha la clasificación de BlueXP en la nube, necesitas SSH para la instancia de clasificación de BlueXP. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:
 
  ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
 * <path_to_the_ssh_key> = ubicación de claves de autenticación ssh

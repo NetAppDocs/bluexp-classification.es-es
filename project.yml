@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Data Sense
+  name: BlueXP classification
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,15 +11,15 @@ settings:
   langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr
 sidebar:
   entries:
-  - title: Documentos de Cloud Data Sense
+  - title: Documentos de clasificación de BlueXP
     url: "/index.html"
   - title: Notas de la versión
     url: "/whats-new.html"
   - title: Manos a la obra
     entries:
-    - title: Más información acerca de Cloud Data Sense
+    - title: Más información sobre la clasificación de BlueXP
       url: "/concept-cloud-compliance.html"
-    - title: Ponga en marcha Cloud Data Sense
+    - title: Implementa la clasificación de BlueXP
       entries:
       - title: Póngalo en marcha en la nube con BlueXP
         url: "/task-deploy-cloud-compliance.html"
@@ -27,7 +27,8 @@ sidebar:
         url: "/task-deploy-compliance-onprem.html"
       - title: Instale en el entorno local sin acceso a Internet
         url: "/task-deploy-compliance-dark-site.html"
-      - title: Compruebe que su host Linux esté listo para instalar Data Sense
+      - title: Compruebe que su host Linux esté listo para instalar la clasificación
+          de BlueXP
         url: "/task-test-linux-system.html"
     - title: Active el análisis en sus orígenes de datos
       entries:
@@ -57,7 +58,7 @@ sidebar:
       url: "/task-licensing-datasense.html"
     - title: PREGUNTAS FRECUENTES
       url: "/faq-cloud-compliance.html"
-  - title: Utilice Cloud Data Sense
+  - title: Usa la clasificación de BlueXP
     entries:
     - title: Ver detalles sobre gobernanza de sus datos
       url: "/task-controlling-governance-data.html"
@@ -77,23 +78,23 @@ sidebar:
       url: task-managing-repo-scanning.html
     - title: Generar informes de cumplimiento
       url: "/task-generating-compliance-reports.html"
-  - title: Gestione el sentido de los datos en el cloud
+  - title: Gestiona la clasificación de BlueXP
     entries:
     - title: Agregar identificadores de datos personales personalizados
       url: "/task-managing-data-fusion.html"
-    - title: Ver el estado de las acciones de detección de datos
+    - title: Consulta el estado de las acciones de clasificación de BlueXP
       url: "/task-view-compliance-actions.html"
-    - title: Auditar el historial de acciones de detección de datos
+    - title: Audita el historial de acciones de clasificación de BlueXP
       url: "/task-audit-data-sense-actions.html"
-    - title: Reduzca la velocidad de exploración de detección de datos
+    - title: Reduce la velocidad de exploración de clasificación de BlueXP
       url: "/task-reduce-scan-speed.html"
-    - title: Eliminar orígenes de datos de Data Sense
+    - title: Quita las fuentes de datos de la clasificación de BlueXP
       url: "/task-managing-compliance.html"
-    - title: Desinstale Data Sense
+    - title: Desinstala la clasificación de BlueXP
       url: "/task-uninstall-data-sense.html"
   - title: Referencia
     entries:
-    - title: Tipos de instancia de Data Sense admitidos
+    - title: Tipos de instancia de clasificación de BlueXP admitidos
       url: "/reference-instance-types.html"
     - title: Metadatos recogidos de orígenes de datos
       url: "/reference-collected-metadata.html"
@@ -109,15 +110,15 @@ homepage:
   tiles:
   - title: Manos a la obra
     links:
-    - title: Más información acerca de Cloud Data Sense
+    - title: Más información sobre la clasificación de BlueXP
       url: concept-cloud-compliance.html
     - title: Novedades
       url: whats-new.html
-    - title: Ponga en marcha la solución de detección de datos en la nube con BlueXP
+    - title: Pon en marcha la clasificación de BlueXP en el cloud con BlueXP
       url: task-deploy-cloud-compliance.html
-    - title: Instale Data Sense en un host Linux con Internet
+    - title: Instala la clasificación BlueXP en un host Linux mediante Internet
       url: task-deploy-compliance-onprem.html
-    - title: Instale la detección de datos en las instalaciones sin Internet
+    - title: Instala la clasificación de BlueXP on-premises sin Internet
       url: task-deploy-compliance-dark-site.html
     - title: Integre Active Directory
       url: task-add-active-directory-datasense.html
@@ -185,7 +186,7 @@ homepage:
     links:
     - title: Comunidad de NetApp
       url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: Casos de uso de detección de datos
+    - title: Casos de uso de clasificación de BlueXP
       url: https://bluexp.netapp.com/netapp-cloud-data-sense
     - title: Blog de BlueXP
       url: https://bluexp.netapp.com/blog

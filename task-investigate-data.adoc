@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-investigate-data.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
-summary: Puede investigar los datos de su organización visualizando los detalles en la página Investigación de datos. Puede desplazarse a esta página desde muchas áreas de la interfaz de usuario de Data Sense, incluidos los paneles de control de gobierno y cumplimiento de normativas. 
+summary: Puede investigar los datos de su organización visualizando los detalles en la página Investigación de datos. Puedes navegar a esta página desde muchas áreas de la interfaz de usuario de clasificación de BlueXP, incluidas las consolas de gobierno y cumplimiento de normativas. 
 ---
 = Investigue los datos almacenados en su organización
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Puede investigar los datos de su organización visualizando los detalle
 
 
 [role="lead"]
-Puede investigar los datos de su organización visualizando los detalles en la página Investigación de datos. Puede desplazarse a esta página desde muchas áreas de la interfaz de usuario de Data Sense, incluidos los paneles de control de gobierno y cumplimiento de normativas.
+Puede investigar los datos de su organización visualizando los detalles en la página Investigación de datos. Puedes navegar a esta página desde muchas áreas de la interfaz de usuario de clasificación de BlueXP, incluidas las consolas de gobierno y cumplimiento de normativas.
 
 
 NOTE: Las capacidades descritas en esta sección sólo están disponibles si ha elegido realizar un análisis de clasificación completo en sus orígenes de datos. Los orígenes de datos que han tenido un análisis de sólo asignación no muestran detalles de nivel de archivo.
@@ -51,7 +51,7 @@ Utilice los siguientes filtros para ver cuánta información confidencial contie
 | Nivel de sensibilidad | Seleccione el nivel de sensibilidad: Personal, personal sensible o no confidencial. 
 
 
-| Número de identificadores | Seleccione el rango de identificadores confidenciales detectados por archivo. Incluye datos personales y datos personales confidenciales. Al filtrar en directorios, Data Sense suma las coincidencias de todos los archivos de cada carpeta (y subcarpetas). 
+| Número de identificadores | Seleccione el rango de identificadores confidenciales detectados por archivo. Incluye datos personales y datos personales confidenciales. Al filtrar en Directorios, la clasificación de BlueXP totaliza las coincidencias de todos los archivos de cada carpeta (y subcarpetas). 
 
 
 | Datos personales | Seleccione la link:reference-private-data-categories.html#types-of-personal-data["tipos de datos personales"^]. 
@@ -98,13 +98,13 @@ Utilice los siguientes filtros para ver datos según criterios de tiempo.
 | Hora de creación | Seleccione un intervalo de tiempo cuando se creó el archivo. También puede especificar un intervalo de tiempo personalizado para restringir aún más los resultados de la búsqueda. 
 
 
-| Hora de detección | Seleccione un intervalo de tiempo cuando Data Sense detectó el archivo. También puede especificar un intervalo de tiempo personalizado para restringir aún más los resultados de la búsqueda. 
+| Hora de detección | Selecciona un intervalo de tiempo cuando la clasificación de BlueXP detecte el archivo. También puede especificar un intervalo de tiempo personalizado para restringir aún más los resultados de la búsqueda. 
 
 
 | Última modificación | Seleccione un intervalo de tiempo en el que se modificó por última vez el archivo. También puede especificar un intervalo de tiempo personalizado para restringir aún más los resultados de la búsqueda. 
 
 
-| Último acceso | Seleccione un intervalo de tiempo cuando se accedió por última vez al archivo o directorio (solo CIFS o NFS). También puede especificar un intervalo de tiempo personalizado para restringir aún más los resultados de la búsqueda. En el caso de los tipos de archivos que analiza Data Sense, es la última vez que Data Sense analizó el archivo. 
+| Último acceso | Seleccione un intervalo de tiempo cuando se accedió por última vez al archivo o directorio (solo CIFS o NFS). También puede especificar un intervalo de tiempo personalizado para restringir aún más los resultados de la búsqueda. Para los tipos de archivos que analiza la clasificación de BlueXP, esta es la última vez que la clasificación de BlueXP analizó el archivo. 
 |===
 
 
@@ -117,7 +117,7 @@ Utilice los siguientes filtros para ver los datos según la ubicación, el tama�
 | Filtro | Detalles 
 
 
-| Ruta del archivo | Introduzca hasta 20 rutas parciales o completas que desee incluir o excluir de la consulta. Si introduce ambas rutas de acceso de inclusión y rutas de exclusión, Data Sense busca primero todos los archivos de las rutas de acceso incluidas, quita los archivos de las rutas de acceso excluidas y, a continuación, muestra los resultados. Tenga en cuenta que el uso de "*" en este filtro no tiene ningún efecto y que no puede excluir carpetas específicas del análisis; se analizarán todos los directorios y archivos de un recurso compartido configurado. 
+| Ruta del archivo | Introduzca hasta 20 rutas parciales o completas que desee incluir o excluir de la consulta. Si introduces ambas rutas de inclusión y excluyes las rutas, la clasificación de BlueXP busca primero todos los archivos de las rutas incluidas, luego quita los archivos de las rutas excluidas y, a continuación, muestra los resultados. Tenga en cuenta que el uso de "*" en este filtro no tiene ningún efecto y que no puede excluir carpetas específicas del análisis; se analizarán todos los directorios y archivos de un recurso compartido configurado. 
 
 
 | Tipo de directorio | Seleccione el tipo de directorio; "Compartir" o "carpeta". 
@@ -176,7 +176,7 @@ Utilice los siguientes filtros para ver los datos por etiquetas o etiquetas AIP.
 
 === Filtrar datos por estado de análisis
 
-Utilice el siguiente filtro para ver datos por el estado de análisis de detección de datos.
+Use el siguiente filtro para ver los datos por el estado de escaneo de clasificación de BlueXP.
 
 [cols="30,60"]
 |===
@@ -186,7 +186,7 @@ Utilice el siguiente filtro para ver datos por el estado de análisis de detecci
 | Estado del análisis | Seleccione una opción para mostrar la lista de archivos que están pendientes de primer análisis, que se han finalizado el análisis, que se han reescaneado pendiente o que no se han podido analizar. 
 
 
-| Evento Análisis de exploración | Seleccione si desea ver los archivos que no estaban clasificados porque la detección de datos no pudo revertir la última hora a la que se accedió, o los archivos que se clasificaron aunque la detección de datos no pudo revertir la última hora a la que se accedió. 
+| Evento Análisis de exploración | Selecciona si quieres ver archivos que no estaban clasificados porque la clasificación de BlueXP no pudo revertir la hora del último acceso o los archivos que estaban clasificados aunque la clasificación de BlueXP no pudo revertir la última hora a la que se accedió. 
 |===
 link:reference-collected-metadata.html#last-access-time-timestamp["Consulte los detalles acerca de la Marca de hora "última en la que se accedió""] Para obtener más información acerca de los elementos que aparecen en la página Investigación al filtrar mediante el filtrado del evento Análisis de Análisis.
 
@@ -211,7 +211,7 @@ En el panel resultados de la investigación de datos puede hacer clic en image:b
 
 image:screenshot_compliance_file_details.png["Captura de pantalla que muestra los detalles de metadatos de un archivo en la página Investigación de datos."]
 
-Además de mostrarle el entorno de trabajo y el volumen en el que reside el archivo, los metadatos muestran mucha más información, incluidos los permisos de archivo, el propietario del archivo, si hay duplicados de este archivo y la etiqueta AIP asignada (si lo tiene link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP integrado en Cloud Data Sense"^]). Esta información es útil si tiene previsto hacerlo link:task-using-policies.html#creating-custom-policies["Crear políticas"] porque puede ver toda la información que puede utilizar para filtrar sus datos.
+Además de mostrarle el entorno de trabajo y el volumen en el que reside el archivo, los metadatos muestran mucha más información, incluidos los permisos de archivo, el propietario del archivo, si hay duplicados de este archivo y la etiqueta AIP asignada (si lo tiene link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP integrado en la clasificación de BlueXP"^]). Esta información es útil si tiene previsto hacerlo link:task-using-policies.html#creating-custom-policies["Crear políticas"] porque puede ver toda la información que puede utilizar para filtrar sus datos.
 
 Tenga en cuenta que no toda la información está disponible para todas las fuentes de datos - sólo lo que es apropiado para ese origen de datos. Por ejemplo, el nombre de volumen, los permisos y las etiquetas AIP no son relevantes para los archivos de la base de datos.
 
@@ -221,7 +221,7 @@ Al ver los detalles de un único archivo, hay algunas acciones que puede realiza
 * Puede eliminar el archivo. Consulte link:task-managing-highlights.html#deleting-source-files["Eliminando archivos de origen"] para obtener más detalles.
 * Puede asignar un estado determinado al archivo. Consulte link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["Aplicación de etiquetas"] para obtener más detalles.
 * Puede asignar el archivo a un usuario de BlueXP para que sea responsable de las acciones de seguimiento que se deban realizar en el archivo. Consulte link:task-org-private-data.html#assigning-users-to-manage-certain-files["Asignar usuarios a un archivo"] para obtener más detalles.
-* Si ha integrado etiquetas AIP con Cloud Data Sense, puede asignar una etiqueta a este archivo o cambiar a una etiqueta diferente si ya existe. Consulte link:task-org-private-data.html#assigning-aip-labels-manually["Asignación manual de etiquetas AIP"] para obtener más detalles.
+* Si has integrado etiquetas AIP con la clasificación de BlueXP, puedes asignar una etiqueta a este archivo o cambiarla a otra, si ya existe alguna. Consulte link:task-org-private-data.html#assigning-aip-labels-manually["Asignación manual de etiquetas AIP"] para obtener más detalles.
 
 
 
@@ -230,7 +230,7 @@ Al ver los detalles de un único archivo, hay algunas acciones que puede realiza
 
 Para ver una lista de todos los usuarios o grupos que tienen acceso a un archivo o directorio y los tipos de permisos que tienen, haga clic en *Ver todos los permisos*. Este botón solo está disponible para datos en recursos compartidos CIFS, SharePoint Online, SharePoint en las instalaciones y OneDrive.
 
-Tenga en cuenta que si ve SID (identificadores de seguridad) en lugar de nombres de usuario y de grupo, debe integrar Active Directory en el sentido de datos. link:task-add-active-directory-datasense.html["Descubra cómo hacerlo"].
+Tenga en cuenta que, si ve SID (identificadores de seguridad) en lugar de nombres de usuarios y grupos, debería integrar su Active Directory en la clasificación de BlueXP. link:task-add-active-directory-datasense.html["Descubra cómo hacerlo"].
 
 image:screenshot_compliance_permissions.png["Captura de pantalla que muestra los permisos de archivo detallados."]
 
@@ -244,7 +244,7 @@ Además, Puede hacer clic en el nombre de un usuario o un grupo y la página de 
 
 Puede ver si se están almacenando ficheros duplicados en los sistemas de almacenamiento. Esto resulta útil para identificar áreas en las que puede ahorrar espacio de almacenamiento. También puede ser útil asegurarse de que determinados archivos que tienen permisos específicos o información confidencial no se dupliquen innecesariamente en sus sistemas de almacenamiento.
 
-La detección de datos utiliza la tecnología de hashing para determinar los archivos duplicados. Si algún archivo tiene el mismo código hash que otro archivo, podemos estar 100% seguros de que los archivos son duplicados exactos, incluso si los nombres de archivo son diferentes.
+La clasificación de BlueXP usa tecnología de hash para determinar los archivos duplicados. Si algún archivo tiene el mismo código hash que otro archivo, podemos estar 100% seguros de que los archivos son duplicados exactos, incluso si los nombres de archivo son diferentes.
 
 Puede descargar la lista de archivos duplicados y enviarlos al administrador de almacenamiento para que puedan decidir qué archivos se pueden eliminar, si los hay. O usted puede link:task-managing-highlights.html#deleting-source-files["elimine el archivo"] usted mismo si está seguro de que una versión específica del archivo no es necesaria.
 
@@ -275,9 +275,9 @@ TIP: Puede usar el valor "hash de archivo" que se proporciona en esta página e 
 
 El Informe de investigación de datos es una descarga del contenido filtrado de la página Investigación de datos.
 
-Puede guardar el informe en la máquina local como un archivo .CSV (que puede incluir hasta 5,000 filas de datos) o como un archivo .JSON que exporte a un recurso compartido NFS (que puede incluir un número ilimitado de filas). Si la detección de datos está analizando archivos (datos no estructurados), directorios (carpetas y recursos compartidos de archivos) o bases de datos (datos estructurados), puede descargar hasta tres archivos de informes.
+Puede guardar el informe en la máquina local como un archivo .CSV (que puede incluir hasta 5,000 filas de datos) o como un archivo .JSON que exporte a un recurso compartido NFS (que puede incluir un número ilimitado de filas). Si la clasificación de BlueXP es archivos de análisis (datos no estructurados), directorios (carpetas y recursos compartidos de archivos) o bases de datos (datos estructurados), puede haber hasta tres archivos de informes descargados.
 
-Al exportar a un recurso compartido de archivos, asegúrese de que Data Sense tiene los permisos correctos para el acceso de exportación.
+Al exportar a un recurso compartido de archivos, asegúrese de que la clasificación de BlueXP tenga los permisos correctos para acceder a las exportaciones.
 
 
 

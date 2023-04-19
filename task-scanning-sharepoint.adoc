@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-sharepoint.html 
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, sharepoint online, sharepoint on-premises, data sense 
-summary: Realice unos pasos para comenzar a analizar archivos en sus cuentas de SharePoint Online y SharePoint en las instalaciones con Cloud Data Sense. 
+summary: Complete unos pasos para empezar a analizar archivos en sus cuentas on-premise de SharePoint Online y SharePoint con clasificación de BlueXP. 
 ---
 = Analizando cuentas de SharePoint
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Realice unos pasos para comenzar a analizar archivos en sus cuentas de 
 
 
 [role="lead"]
-Realice unos pasos para comenzar a analizar archivos en sus cuentas de SharePoint Online y SharePoint en las instalaciones con Cloud Data Sense.
+Complete unos pasos para empezar a analizar archivos en sus cuentas on-premise de SharePoint Online y SharePoint con clasificación de BlueXP.
 
 
 
@@ -26,9 +26,9 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 [role="quick-margin-para"]
 Asegúrese de que tiene credenciales completas para iniciar sesión en la cuenta de SharePoint y de que tiene las direcciones URL de los sitios de SharePoint que desea analizar.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Ponga en marcha la instancia de Cloud Data Sense
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Ponga en marcha Cloud Data Sense"^] si aún no hay una instancia implementada.
+link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP"^] si aún no hay una instancia implementada.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Inicie sesión en la cuenta de SharePoint
 [role="quick-margin-para"]
@@ -42,7 +42,7 @@ Agregue la lista de direcciones URL del sitio de SharePoint que desea analizar e
 
 == Revisar los requisitos de SharePoint
 
-Revise los siguientes requisitos previos para asegurarse de que está preparado para activar Cloud Data Sense en una cuenta de SharePoint.
+Revisa los siguientes requisitos previos para asegurarte de que estás listo para activar la clasificación BlueXP en una cuenta de SharePoint.
 
 * Debe tener las credenciales de inicio de sesión de usuario administrador para la cuenta de SharePoint que proporciona acceso de lectura a todos los sitios de SharePoint.
 +
@@ -55,17 +55,17 @@ Revise los siguientes requisitos previos para asegurarse de que está preparado 
 
 
 
-== Implementar la instancia de Cloud Data Sense
+== Implementar la instancia de clasificación de BlueXP
 
-Si todavía no hay una instancia implementada, implemente Cloud Data Sense.
+Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
 
-* Para SharePoint Online, el sentido de los datos puede ser link:task-deploy-cloud-compliance.html["implementado en el cloud"^].
-* Para SharePoint en las instalaciones, se puede instalar Data Sense link:task-deploy-compliance-onprem.html["en una ubicación en el hotel que tiene acceso a internet"^] o. link:task-deploy-compliance-dark-site.html["en una ubicación en el hotel que no tiene acceso a internet"^].
+* Para SharePoint Online, la clasificación de BlueXP puede ser link:task-deploy-cloud-compliance.html["implementado en el cloud"^].
+* En el caso de SharePoint en las instalaciones, se puede instalar la clasificación de BlueXP link:task-deploy-compliance-onprem.html["en una ubicación en el hotel que tiene acceso a internet"^] o. link:task-deploy-compliance-dark-site.html["en una ubicación en el hotel que no tiene acceso a internet"^].
 
 
-Cuando se instala detección de datos en un sitio sin acceso a Internet, el conector BlueXP también debe instalarse en ese mismo sitio sin acceso a Internet. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Leer más"^].
+Cuando se instala la clasificación de BlueXP en un sitio sin acceso a Internet, también se debe instalar BlueXP Connector en ese mismo sitio sin acceso a Internet. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Leer más"^].
 
-Las actualizaciones del software Data Sense se automatizan siempre que la instancia tenga conectividad a Internet.
+Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
 
 
 
@@ -79,7 +79,7 @@ Agregue la cuenta de SharePoint Online donde residen los archivos de usuario.
 image:screenshot_compliance_add_sharepoint_button.png["Una captura de pantalla de la página Configuración en la que puede hacer clic en el botón Agregar SharePoint Online."]
 
 . En el cuadro de diálogo Agregar una cuenta en línea de SharePoint, haga clic en *Iniciar sesión en SharePoint*.
-. En la página de Microsoft que aparece, seleccione la cuenta de SharePoint e introduzca el usuario y la contraseña (usuario administrador u otro usuario con acceso a los sitios de SharePoint) y, a continuación, haga clic en *Aceptar* para permitir que Cloud Data Sense lea datos de esta cuenta.
+. En la página de Microsoft que aparece, seleccione la cuenta de SharePoint e introduzca el usuario y la contraseña (usuario administrador u otro usuario con acceso a los sitios de SharePoint) y, a continuación, haga clic en *Aceptar* para permitir que la clasificación de BlueXP lea los datos de esta cuenta.
 
 
 La cuenta de SharePoint Online se agrega a la lista de entornos de trabajo.
@@ -113,7 +113,7 @@ La cuenta de SharePoint en las instalaciones se agrega a la lista de entornos de
 
 == Agregar sitios de SharePoint a los análisis de cumplimiento
 
-Puede agregar sitios de SharePoint individuales o todos los sitios de SharePoint de la cuenta para que los archivos asociados sean analizados por Cloud Data Sense. Los pasos son los mismos al agregar sitios locales de SharePoint Online o SharePoint.
+Puede añadir sitios de SharePoint individuales, o todos los sitios de SharePoint de la cuenta, para que los archivos asociados se analicen según la clasificación de BlueXP. Los pasos son los mismos al agregar sitios locales de SharePoint Online o SharePoint.
 
 .Pasos
 . En la página _Configuration_, haga clic en el botón *Configuration* de la cuenta de SharePoint.
@@ -158,7 +158,7 @@ Si el cuadro de diálogo enumera los sitios que no se han podido agregar, captur
 
 
 .Resultado
-Cloud Data Sense comienza a analizar los archivos de los sitios de SharePoint agregados y los resultados se muestran en el Panel y en otras ubicaciones.
+La clasificación de BlueXP comienza a analizar los archivos en los sitios de SharePoint que ha agregado y los resultados se muestran en el Dashboard y en otras ubicaciones.
 
 
 
@@ -168,4 +168,4 @@ Si quita un sitio de SharePoint en el futuro o decide no analizar archivos en un
 
 image:screenshot_compliance_sharepoint_remove_site.png["Una captura de pantalla que muestra cómo eliminar un único sitio de SharePoint de la captura de sus archivos."]
 
-Tenga en cuenta que puede link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["Elimine toda la cuenta de SharePoint de Data Sense"] Si ya no desea analizar los datos de usuario desde la cuenta de SharePoint.
+Tenga en cuenta que puede link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Elimina toda la cuenta de SharePoint de la clasificación de BlueXP"] Si ya no desea analizar los datos de usuario desde la cuenta de SharePoint.
