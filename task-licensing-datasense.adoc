@@ -57,17 +57,17 @@ image:screenshot_add_subscription.gif["Una captura de pantalla del menú en la p
 
 . Seleccione una suscripción existente y haga clic en *asociado*, o haga clic en *Agregar suscripción* y siga los pasos.
 +
-El siguiente vídeo muestra cómo asociar un https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Mercado AWS"^] Suscripción a una suscripción a AWS:
+El siguiente vídeo muestra cómo asociar un https://["Mercado AWS"^] Suscripción a una suscripción a AWS:
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]
 +
-El siguiente vídeo muestra cómo asociar un https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^] Suscripción a una suscripción de Azure:
+El siguiente vídeo muestra cómo asociar un https://["Azure Marketplace"^] Suscripción a una suscripción de Azure:
 
 +
 video::video_subscribing_azure.mp4[width=848,height=480]
 +
-El siguiente vídeo muestra cómo asociar un https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Mercado para GCP"^] Suscripción a una suscripción a GCP:
+El siguiente vídeo muestra cómo asociar un https://["Mercado para GCP"^] Suscripción a una suscripción a GCP:
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
@@ -85,7 +85,7 @@ Si no tienes una licencia de clasificación de BlueXP, ponte en contacto con nos
 * Haga clic en el icono de chat situado en la parte inferior derecha de BlueXP para solicitar una licencia.
 
 
-Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de clasificación de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
+Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de clasificación de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://["Vaya aquí para obtener más información"^].
 
 Utilizarás la página de la cartera digital de BlueXP en BlueXP para gestionar las licencias de BYOL para la clasificación de BlueXP. Puede añadir licencias nuevas y actualizar las licencias existentes.
 
@@ -98,7 +98,7 @@ Después de comprar tu licencia de clasificación de BlueXP (Data Sense), activa
 Si has implementado la clasificación de BlueXP en un host de un sitio local que no tenga acceso a Internet, necesitarás obtener el archivo de licencia de un sistema conectado a Internet. La activación de la licencia mediante el número de serie y la cuenta de NSS no está disponible para las instalaciones de sitios oscuros.
 
 .Pasos
-. Inicie sesión en la https://mysupport.netapp.com["Sitio de soporte de NetApp"^] Y haga clic en *sistemas > licencias de software*.
+. Inicie sesión en la https://["Sitio de soporte de NetApp"^] Y haga clic en *sistemas > licencias de software*.
 . Introduce el número de serie de la licencia de clasificación de BlueXP.
 +
 image:screenshot_cloud_tiering_license_step1.gif["Captura de pantalla que muestra una tabla de licencias después de buscar por número de serie."]
@@ -126,7 +126,7 @@ Después de comprar una licencia de clasificación (Data Sense) de BlueXP para t
 +
 ** Si tienes el número de serie de la licencia de clasificación de BlueXP y conoces tu cuenta NSS, selecciona la opción *Enter Serial Number* e introduce esa información.
 +
-Si su cuenta del sitio de soporte de NetApp no está disponible en la lista desplegable, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Agregue la cuenta NSS a BlueXP"^].
+Si su cuenta del sitio de soporte de NetApp no está disponible en la lista desplegable, https://["Agregue la cuenta NSS a BlueXP"^].
 
 ** Si tienes el archivo de licencia de clasificación de BlueXP (necesario cuando se instala en un sitio oscuro), selecciona la opción *Cargar archivo de licencia* y sigue las indicaciones para adjuntar el archivo.
 +

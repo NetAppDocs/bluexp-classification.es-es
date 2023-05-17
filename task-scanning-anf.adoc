@@ -24,7 +24,7 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Descubra los sistemas Azure NetApp Files que desea analizar
 [role="quick-margin-para"]
-Antes de poder analizar volúmenes Azure NetApp Files, https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Debe configurar BlueXP para descubrir la configuración"^].
+Antes de poder analizar volúmenes Azure NetApp Files, https://["Debe configurar BlueXP para descubrir la configuración"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
 [role="quick-margin-para"]
@@ -63,7 +63,7 @@ Selecciona o anula la selección de los volúmenes que quieres analizar y la cla
 
 Si el sistema Azure NetApp Files que desea escanear no está ya en BlueXP como entorno de trabajo, puede agregarlo al lienzo en este momento.
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Descubra cómo descubrir el sistema Azure NetApp Files en BlueXP"^].
+https://["Descubra cómo descubrir el sistema Azure NetApp Files en BlueXP"^].
 
 
 
@@ -136,7 +136,7 @@ image:screenshot_cifs_credentials.gif["Captura de pantalla de la ficha cumplimie
 Las credenciales pueden ser de solo lectura, pero al proporcionar credenciales de administrador se garantiza que la clasificación de BlueXP pueda leer cualquier dato que requiera permisos elevados. Las credenciales se almacenan en la instancia de clasificación de BlueXP.
 
 +
-Si quieres asegurarte de que las «horas de último acceso» de tus archivos no cambien debido a los análisis de clasificación de BlueXP, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
+Si quieres asegurarte de que las «horas de último acceso» no cambian debido a los análisis de clasificación de BlueXP, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
 
 +
 Después de introducir las credenciales, debe ver un mensaje que indica que todos los volúmenes CIFS se autenticaron correctamente.

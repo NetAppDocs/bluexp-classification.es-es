@@ -23,6 +23,24 @@
 +
 Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. Consulte link:concept-cloud-compliance.html#using-a-smaller-instance-type["Con un tipo de instancia más pequeño"] para obtener más detalles.
 
+* *Permisos de carpeta UNIX*: Se requieren los siguientes permisos mínimos de UNIX:
++
+[cols="25,25"]
+|===
+| Carpeta | Permisos mínimos 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /user/lib/systemd/system | `rwxr-xr-x` 
+|===
 * A la hora de poner en marcha una instancia de computación en la nube para la instalación de tu clasificación de BlueXP, te recomendamos un sistema que cumpla los requisitos «grandes» del sistema anteriores:
 +
 ** *Tipo de instancia de AWS EC2*: Recomendamos "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consulte tipos de instancia de AWS adicionales"^].
@@ -31,18 +49,17 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 
 
 * *Sistema operativo*: El sistema operativo debe ser capaz de instalar el motor de Docker.
+
+
+* Red Hat Enterprise Linux versiones 8,0 a 8,7
+* CentOS versiones 8,0 a 8,7
+* CentOS Stream 8
+* Se puede utilizar RHEL o CentOS, versiones 7,8 o 7,9, pero la versión del kernel de Linux debe ser 4,0 o superior
 +
-** Red Hat Enterprise Linux versiones 8,0 a 8,7
-** CentOS versiones 8,0 a 8,7
-** CentOS Stream 8
-** Se pueden utilizar las versiones 7.8 o 7.9, pero la versión de kernel de Linux debe ser 4.0 o posterior
+** *Red Hat Subscription Management*: El host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el sistema no puede acceder a los repositorios para actualizar el software de 3rd partes necesario durante la instalación.
+** *Software adicional*: Debes instalar el siguiente software en el host antes de instalar la clasificación BlueXP:
 
 
-* *Red Hat Subscription Management*: El host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el sistema no puede acceder a los repositorios para actualizar el software de 3rd partes necesario durante la instalación.
-* *Software adicional*: Debes instalar el siguiente software en el host antes de instalar la clasificación BlueXP:
-+
-** Docker Engine versión 19.3.1 o posterior. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^].
-** Python 3 versión 3.6 o posterior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
-
-
+* Docker Engine versión 19.3.1 o posterior. https://["Ver las instrucciones de instalación"^].
+* Python 3 versión 3.6 o posterior. https://["Ver las instrucciones de instalación"^].
 

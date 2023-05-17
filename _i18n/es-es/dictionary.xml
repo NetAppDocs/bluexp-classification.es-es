@@ -215,7 +215,6 @@
   <block id="9fe6e2fee7993c52383e8b7d6305217d" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Inicie sesión en la cuenta de SharePoint</block>
   <block id="6d3bb929d06fa3023ab7239f4567ed1a" category="paragraph">Con credenciales de usuario completas, inicie sesión en la cuenta de SharePoint a la que desea acceder para que se agregue como nuevo origen de datos/entorno de trabajo.</block>
   <block id="3c584664ee2c98abe2634d62c3ff9951" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Agregue las direcciones URL del sitio de SharePoint que desea analizar</block>
-  <block id="a8c0024f4de7eafbcc79573f90579f5f" category="paragraph">Agregue la lista de direcciones URL del sitio de SharePoint que desea analizar en la cuenta de SharePoint y seleccione el tipo de análisis. Puede agregar hasta 100 URL a la vez.</block>
   <block id="2b4e0126afcd89267252cefaf503c414" category="section-title">Revisar los requisitos de SharePoint</block>
   <block id="7a8c400460fcd57ab61e646f8f7222ff" category="list-text">Debe tener las credenciales de inicio de sesión de usuario administrador para la cuenta de SharePoint que proporciona acceso de lectura a todos los sitios de SharePoint.</block>
   <block id="fbd2a3d3a2a95ffb088fd8e0ccf6b67d" category="list-text">Para SharePoint Online puede utilizar una cuenta que no sea de administrador, pero ese usuario debe tener permiso para tener acceso a todos los sitios de SharePoint que desea analizar.</block>
@@ -563,8 +562,6 @@
   <block id="fadb1720cdd8a007cefc0f21747a7236" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Añada el servicio de almacenamiento de objetos</block>
   <block id="0cf30da5b3284b65f1bd1464a838ef7e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Seleccione los cucharones que desea escanear</block>
   <block id="763a21e3ec238bca68eb25847cf75843" category="section-title">Revisión de requisitos de almacenamiento de objetos</block>
-  <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link-macro">Servicio de Minio</block>
-  <block id="753043f41e69e8fdeb706dd070e87f37" category="list-text">La compatibilidad con Azure Blob requiere que utilice el <block ref="bb7c39e5bbb16f5f9e18534c8bb03c91" category="inline-link-macro-rx"></block>.</block>
   <block id="0065ab04ebf28ab82ddb160d51d486e6" category="paragraph">Añada el servicio de almacenamiento de objetos.</block>
   <block id="58dc807771e7cb80307d5179257d8cf5" category="list-text">En la página Configuración de entornos de trabajo, haga clic en *Agregar origen de datos* &gt; *Agregar servicio de almacenamiento de objetos*.</block>
   <block id="28a37c29073d01b41af962aa45f11615" category="inline-image-macro">Una captura de pantalla de la página Configuración de exploración donde puede hacer clic en el botón Agregar grupo de recursos compartidos de archivos.</block>
@@ -680,12 +677,9 @@
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">Prepare el sistema host Linux</block>
   <block id="dab82bd5fdaa1e12c8086bb3cfa494cb" category="inline-link">Standard_D16s_v3</block>
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">n2-estándar-16</block>
-  <block id="ce12cca419124f32a01c6fec5a3be62f" category="list-text">Se pueden utilizar las versiones 7.8 o 7.9, pero la versión de kernel de Linux debe ser 4.0 o posterior</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">Ver las instrucciones de instalación</block>
   <block id="969665117064b959d3c660b43611f713" category="list-text">Docker Engine versión 19.3.1 o posterior.<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>.</block>
   <block id="c0ffa5845aefb5e4bb0fa6089bcc513d" category="list-text">Python 3 versión 3.6 o posterior.<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block>.</block>
-  <block id="f132f9796727cdfbd850e6d1f0af2208" category="cell">\https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm</block>
-  <block id="c82303c6d5888ba9f147a501b8fe7f29" category="cell">Proporciona paquetes de requisitos previos para la instalación.</block>
   <block id="5ec77a792038bab65f9bfd97af0b2704" category="section-title">Verifique que todos los puertos necesarios estén habilitados</block>
   <block id="e279c07f8fb282c171724e558925c858" category="cell">Tipo de conexión</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="cell">Puertos</block>
@@ -728,8 +722,6 @@
   <block id="92a8de5d873f4ac3a57f4d866c8ed98c" category="cell">Introduzca el comando Full:</block>
   <block id="99a5b8fe9eadd5739e3e760584c579fc" category="paragraph">Valores de variable:</block>
   <block id="82fbba9871c4c69830c0ea5c2c6fa6f8" category="list-text">_account_id_ = ID de cuenta de NetApp</block>
-  <block id="ce49b2db53a11ca7ddb5f05294345b09" category="list-text">_Agent_id_ = ID del conector</block>
-  <block id="1e182d514fc6063a1b524c471660e230" category="list-text">_token_ = token de usuario jwt</block>
   <block id="e1b1b617543f2b58f77159919d102775" category="list-text">_Cm_host_ = dirección IP o nombre de host del sistema BlueXP Connector.</block>
   <block id="f31705a3bb2f2507f4803c1d996c4887" category="list-text">_proxy_host_ = IP o nombre de host del servidor proxy si el host está detrás de un servidor proxy.</block>
   <block id="580d63944c0010bfed9db7cc082666bf" category="list-text">_proxy_Port_ = Puerto para conectarse al servidor proxy (predeterminado 80).</block>
@@ -790,7 +782,6 @@
   <block id="7ef314f37951a4ffae65aed3439a8da1" category="inline-image-macro">Captura de pantalla de la página Documentación de la API, con un enlace a las instrucciones de autenticación.</block>
   <block id="e7897b39cbb592afc0430305aca32cc1" category="paragraph"><block ref="e7897b39cbb592afc0430305aca32cc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1480262c4a9656977a70cff8c21b5dc0" category="paragraph"><block ref="0d45fd4edeb386e475963435f8cc230a" prefix="" category="inline-code"></block></block>
-  <block id="0490466572986d52027e27d707b776a5" category="list-text">_Client_id_ = ID de cliente del conector</block>
   <block id="5d0fd32ac4fe744d7966c459776a6b4c" category="list-text">_Cm_host_ = dirección IP o nombre de host del sistema conector</block>
   <block id="33b07d0ffb66d0a6cd8a0162e20adca4" category="list-text">_USER_token_ = token de acceso de usuario JWT</block>
   <block id="611c763bf4c9dbb7098d6afa814b754f" category="list-text">En el host *cada nodo del escáner*:</block>
@@ -816,7 +807,6 @@
   <block id="2f22ab4135a481a1450cf28cb5f05c26" category="list-text">Siga los pasos 1 a 7 de la <block ref="ca10c193ae29117fbfb6ce9e3e248e8b" category="inline-xref-macro-rx"></block> en el nodo de gestión.</block>
   <block id="48e1e343989571ace6bf404a680635d8" category="list-text">Como se muestra en el paso 8, cuando el instalador lo solicite, puede introducir los valores necesarios en una serie de peticiones o puede proporcionar los parámetros necesarios como argumentos de línea de comandos al instalador.</block>
   <block id="8b1cdcd166f0c70f7233d0d11c7bddf2" category="paragraph">Además de las variables disponibles para una instalación de un solo host, se utiliza una nueva opción *-n &lt;node_ip&gt;* para especificar las direcciones IP de los nodos del escáner. Las varias IP de nodos de escáner están separadas por una coma.</block>
-  <block id="6b356fe759d450cad6ec9f478a17a524" category="paragraph">Por ejemplo, este comando añade 3 nodos de escáner:<block ref="a61b72f19cddc6cf4bd85aabead8c46d" prefix=" " category="inline-code"></block></block>
   <block id="3f0a4de61ad13ce65d1a7332a726eb8d" category="list-text">Pegue y ejecute el comando que copió en el paso 3.</block>
   <block id="184b6c7c3567a8ecd4dd8971fff94bfa" category="paragraph">Cuando la instalación finalice en todos los nodos de escáner y se han Unido al nodo de gestión, también se completa la instalación del nodo de gestión.</block>
   <block id="16ace13e9030ba8b43b8bf469be3ffff" category="doc">Ver los detalles de gobernanza sobre los datos almacenados en su organización</block>
@@ -1538,7 +1528,6 @@
   <block id="bb88c75c573c51be16c7d85804e7a9fe" category="list-text">Nutanix</block>
   <block id="15fca3b27e46d9a8a2810d30feb9b434" category="list-text">Cualquier otro proveedor de almacenamiento</block>
   <block id="30899efa777e04d2606dffe90717c0b4" category="paragraph">*Cloud:*</block>
-  <block id="52745271323ee9ea30e3a37d0338d118" category="list-text">Azure Blob</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="list-text">Google Cloud Storage</block>
   <block id="f79cd76b16e526d536ec5f9e3a3dbe9d" category="list-text">OneDrive</block>
   <block id="27bafb3855ae4ca3df676518f2aaad5a" category="list-text">SharePoint online</block>
@@ -1663,14 +1652,12 @@
   <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">Esto extrae el software requerido y el archivo de instalación actual *cc_onprem_installer.tar.gz*.</block>
   <block id="99bc31b68f8a295277219d11cfd94709" category="list-text">Inicie BlueXP y seleccione *Gobierno &gt; Clasificación*.</block>
   <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">Descomprima el archivo de instalación en el equipo host; por ejemplo:</block>
-  <block id="d34764ccb2a6879e5ef576e7ea2fb550" category="cell">También puede crear el comando completo por adelantado, proporcionando los parámetros de host necesarios:<block ref="8be7faa282b129c5ae6cdfbd7b416f76" prefix=" " category="inline-code"></block></block>
   <block id="5d0d87e9be98aaab11076c1b64d38cc3" category="inline-link-macro">Clústeres de ONTAP en las instalaciones</block>
   <block id="e61ce3062cb76770658896b778ad06cd" category="inline-link-macro">oracle</block>
   <block id="c3cea28bb90c637f494d5021dcebdf2d" category="paragraph">En la página Configuration puede seleccionar el local <block ref="c23a74d01fbf5deb3a784c3ec1da6439" category="inline-link-macro-rx"></block> y.. <block ref="6d4571a63bcf6d226319383d2911863e" category="inline-link-macro-rx"></block> que desea escanear.</block>
   <block id="9098e762df6423155c77747444ce3402" category="list-text">Siga los pasos 1 a 8 de la <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> en el nodo de gestión.</block>
   <block id="cfc66ec017142ce1f8420ffb8db2e3cd" category="list-text">Como se muestra en el paso 9, cuando el instalador lo solicite, puede introducir los valores necesarios en una serie de peticiones o puede proporcionar los parámetros necesarios como argumentos de línea de comandos al instalador.</block>
   <block id="5e2f5642806d5ddc2868631f2e508d3d" category="paragraph">Además de las variables disponibles para una instalación de un solo host, se utiliza una nueva opción *-n &lt;node_ip&gt;* para especificar las direcciones IP de los nodos del escáner. Las IP de varios nodos están separadas por una coma.</block>
-  <block id="5fa878295b23e50238df7f7395042d79" category="paragraph">Por ejemplo, este comando añade 3 nodos de escáner:<block ref="1a694cf483de989b463cab5a8d7d0d87" prefix=" " category="inline-code"></block></block>
   <block id="6cc29d8f722610f8a1e880227931a300" category="list-text">Copie el archivo de instalación de Data Sense (*cc_onprem_installer.tar.gz*) en el equipo host.</block>
   <block id="05c158c3674b19417f2abea1a13ea2f3" category="list-text">Pegue y ejecute el comando que copió en el paso 3.</block>
   <block id="eb5d5731dad89c6e51beb903e93f42bf" category="paragraph">En la página Configuration puede seleccionar el local <block ref="c23a74d01fbf5deb3a784c3ec1da6439" category="inline-link-macro-rx"></block> y local <block ref="6d4571a63bcf6d226319383d2911863e" category="inline-link-macro-rx"></block> que desea escanear.</block>
@@ -1798,7 +1785,6 @@
   <block id="22d9005388d9e535daefed3f2e693f8c" category="inline-link-macro">tipos de datos personales confidenciales</block>
   <block id="efbc704c741274e96fb34f9918eea9bc" category="cell">Seleccione la <block ref="ea8f57582e4e2ddb4974e03972a326d7" category="inline-link-macro-rx"></block>.</block>
   <block id="6e264db6b651951b08b9d4e4d7a39d66" category="cell">Asunto de los datos</block>
-  <block id="e9f27357b5c27ea5a56801efd544f2d7" category="cell">Introduzca el nombre completo o el identificador conocido de un sujeto de datos.</block>
   <block id="987fbe649715077616c7db868bf36786" category="section-title">Filtrar los datos por propietario y permisos de usuario</block>
   <block id="67d3d4113dc052ac6827e9faba9e9a7b" category="paragraph">Utilice los siguientes filtros para ver los propietarios de archivos y los permisos para acceder a los datos.</block>
   <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">Abra permisos</block>
@@ -1849,7 +1835,6 @@
   <block id="158e99247d19480d767e25e00d129553" category="section-title">Filtrar datos por estado de análisis</block>
   <block id="d55969f99169fb1ccecedd45e530342d" category="cell">Estado del análisis</block>
   <block id="133617814b053dc465cdc57c432b1756" category="cell">Seleccione una opción para mostrar la lista de archivos que están pendientes de primer análisis, que se han finalizado el análisis, que se han reescaneado pendiente o que no se han podido analizar.</block>
-  <block id="3da9db7f0e8d0dab6787227f56d0489b" category="section-title">Filtrar datos por duplicados</block>
   <block id="9c7541a95b9333c21b847910917cc789" category="paragraph">Utilice el siguiente filtro para ver los archivos duplicados en su almacenamiento.</block>
   <block id="763275034b3bde5ad4f0fb074a35e741" category="cell">Duplicados</block>
   <block id="936baf22f04cffa654fef2a2806e8fcd" category="cell">Seleccione si el archivo está duplicado en los repositorios.</block>
@@ -2207,7 +2192,6 @@
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs y comunidad</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog de BlueXP</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toda la documentación de BlueXP</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Utilice opciones de soporte automático</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Cree un caso con el soporte de NetApp</block>
@@ -2311,7 +2295,6 @@
   <block id="497d508053af04935d2eb62e219372c8" category="list-text">Haga clic en *desplegar* para iniciar la instalación en las instalaciones.</block>
   <block id="7bde2d7cf6c722c1135ccccea2a76b1a" category="list-text">Aparece el cuadro de diálogo _Deploy Data Sense on local_. Copie el comando proporcionado (por ejemplo:<block ref="4041549bf21d4c7bed0bfcbf52842063" prefix=" " category="inline-code"></block>) y péguela en un archivo de texto para que pueda usarlo más tarde. A continuación, haga clic en *Cerrar* para descartar el cuadro de diálogo.</block>
   <block id="9c219f00fda547ddab566c43975acd6b" category="list-text">En el equipo host, escriba el comando que copió y luego siga una serie de avisos, o bien puede proporcionar el comando completo incluyendo todos los parámetros necesarios como argumentos de línea de comandos.</block>
-  <block id="2817a1d472ecfcca8fe861c57ec6f447" category="list-text">Pegue la información que ha copiado del paso 8:<block ref="feca0af1809ee364465c858e41f4ada4" prefix=" " category="inline-code"></block></block>
   <block id="ce99bf86c57675420203e054ffc86a6d" category="list-text">Antes de que se complete la instalación del nodo de gestión, se mostrará un cuadro de diálogo con el comando de instalación necesario para los nodos del escáner. Copie el comando (por ejemplo:<block ref="2478484d96d8c17b7752fd15d3b26f12" prefix=" " category="inline-code"></block>) y guárdelo en un archivo de texto.</block>
   <block id="19c8d978817f5ad2c7d566851ddf6e4e" category="paragraph"><block ref="19c8d978817f5ad2c7d566851ddf6e4e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bda678b1fb683a403f093f2555da8faf" category="list-text">Aparece el cuadro de diálogo _Deploy Data Sense on local_. Copie el comando proporcionado (por ejemplo:<block ref="a402a6c8a10b4c24d7596599c6dfb7db" prefix=" " category="inline-code"></block>) y péguela en un archivo de texto para que pueda usarlo más tarde. A continuación, haga clic en *Cerrar* para descartar el cuadro de diálogo.</block>
@@ -2361,7 +2344,6 @@
   <block id="04857641e7994338feb506f5b60ebeb0" category="section-title">Tipos de instancia de GCP</block>
   <block id="dd654e120269d83d0f32a6f695b8bab9" category="cell"><block ref="fc953708959f6784e56436278d753426" category="inline-link-rx"></block> (predeterminado) n2d-standard-16 n1-standard-16</block>
   <block id="aebeafb9d6b45d6e3629685737b0b510" category="doc">Supervise y gestione eventos de acceso a archivos</block>
-  <block id="cec7bcb15c6741f47d69974fd0f0a3da" category="paragraph">Por ejemplo, si desea realizar un seguimiento cuando se realiza algún cambio en los archivos de personal confidencial o en los archivos de nóminas, puede habilitar esta función en los volúmenes en los que residen estos archivos. A continuación, puede ver el registro de auditoría de acceso a archivos para ver si estos archivos se han modificado. Si se han cambiado, podrá ver el nombre de la persona que realizó el cambio y cuándo se hizo el cambio.</block>
   <block id="4189ddcc75f1e8d4ba9a48d4e7f2fa48" category="inline-link">Función FPolicy</block>
   <block id="686e697538050e4664636337cc3b834f" category="list-text">Cree</block>
   <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">Lea</block>
@@ -2374,8 +2356,6 @@
   <block id="10eaa67ba3824a947cec2803e682249a" category="list-text">ONTAP en las instalaciones</block>
   <block id="de7a9ded100f5ab68960785a7977419c" category="section-title">Configure volúmenes para el registro de auditoría de acceso a archivos</block>
   <block id="80027566e31a879d1baef50d58692dc4" category="paragraph">Es posible habilitar el registro de auditoría de acceso a archivos en volúmenes individuales para realizar un seguimiento de los cambios en los archivos y directorios.</block>
-  <block id="1eab470a6f707b92e15040773251a746" category="list-text">CONSEJO</block>
-  <block id="0925da7b2159d87a33d0fde69e738426" category="list-text">Puede configurar la auditoría de acceso a los archivos para un máximo de 5 volúmenes en cada sistema ONTAP en este momento.</block>
   <block id="9d0e2b2eb032ffd4efa13096caae567a" category="list-text">En la página _Scan Configuration_ del origen de datos, haga clic en <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> Para el volumen y seleccione *Configurar auditoría de acceso a archivos*.</block>
   <block id="c791f5a696fa23cbe4c6c1b76be84e2f" category="inline-image-macro">Captura de pantalla de selección de un volumen en el que desea activar el registro de acceso a archivos.</block>
   <block id="df0da4611bcc736388ba21984af1f174" category="paragraph"><block ref="df0da4611bcc736388ba21984af1f174" category="inline-image-macro-rx" type="image"></block></block>
@@ -2387,26 +2367,14 @@
   <block id="760fa6a53e99af41106fb9a484537801" category="inline-image-macro">Una captura de pantalla que muestra que el registro de auditoría de acceso a archivos está activado para un volumen específico.</block>
   <block id="128380149729d40c8a7f08ebcf71b393" category="paragraph"><block ref="128380149729d40c8a7f08ebcf71b393" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a11ed4a6864c5bc8fd26866333740e8b" category="paragraph">Todos los eventos de acceso a archivos generados para los archivos de los volúmenes habilitados se añadirán al archivo de registro. Compruebe el archivo de registro ocasionalmente para ver los tipos de eventos que está recibiendo.</block>
-  <block id="1f61b01a11eb001752e432e36c02a458" category="paragraph">Se crea un archivo de registro para cada volumen que se haya configurado para realizar un seguimiento de los eventos de acceso a los archivos. Cada línea del registro de auditoría contiene información con el siguiente formato:</block>
-  <block id="3608b8757d42972237c90a4166cb40ef" category="paragraph"><block ref="f81bca8d84e25507999914272dc54cf0" prefix="" category="inline-code"></block></block>
-  <block id="1953cba0d55aa268eb5c81452ed41aa0" category="list-text">Marca de hora: Fecha y hora del evento</block>
-  <block id="0837106e33dba045cd4d616fc85d209f" category="list-text">Nombre de volumen: Nombre del volumen</block>
-  <block id="03c77c7d7f8909d2d11fdaebf9f808ca" category="list-text">Tipo de evento: Crear, leer, escribir, Cambiar nombre, Eliminar, Cambie el propietario/los permisos y cambie SACL/DACL</block>
-  <block id="5dd6810cd17cbba46940574283942107" category="list-text">Nombre de archivo: Ruta completa y nombre de archivo</block>
-  <block id="4385297914f93c5a09fb1cce2acb1a12" category="list-text">Nombre de usuario (o ID): Nombre o ID de la persona que realizó la acción</block>
-  <block id="3e5220331a650cbadbd6ee74b8f31714" category="list-text">Resultado de la acción: Si la acción se ha realizado correctamente o si ha fallado, y el motivo del éxito o del fracaso</block>
-  <block id="41a8d2e8bafe2324a30d9ef1430e5dcb" category="list-text">Detalles de la acción - lo que se hizo: Depende de la acción</block>
   <block id="2da4d8c5bc0edc06ac63f3c95d761c7b" category="section-title">Acceda a los archivos del registro de auditoría de acceso a archivos</block>
   <block id="a02f04e5cf15eab34e36540d19d919c6" category="inline-xref">Puede personalizar este valor en la página File Access Audit Log Configuration.</block>
-  <block id="cee8cebe9beae40b9ff2920c17036564" category="paragraph">El tamaño total de todos los archivos de registro del directorio se establece en un valor predeterminado de 50 GB. <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> Cuando se alcanza ese límite, los archivos de registro más antiguos se eliminan automáticamente.</block>
   <block id="f1232e8f69c85f39de4569648f81f7d8" category="section-title">Configure los ajustes del registro de auditoría de acceso a archivos</block>
   <block id="03dbd1b5fc01bd9510606278903a28bc" category="cell">Opción Registro de auditoría</block>
   <block id="d13e01ef2af0326f4f5a6e15fee2c4bc" category="cell">Ubicación del archivo de registro</block>
-  <block id="fbc948416dfe24ca5eec1703b2d724e2" category="cell">La ubicación está actualmente codificada para escribir los archivos de registro en<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
   <block id="00fc8ad0777a7d04155f0aea1a460364" category="cell">Asignación máxima de almacenamiento para registros de auditoría</block>
   <block id="e78e3ddb79416e357c114831c02be2ac" category="cell">El tamaño total de todos los archivos de registro del directorio está actualmente codificado a un valor predeterminado de 50 GB. Cuando se alcanza ese límite, los archivos de registro más antiguos se eliminan automáticamente.</block>
   <block id="b98e5f30ca3cd0f113adc1ab13a39525" category="cell">Número máximo de eventos de auditoría por archivo de auditoría</block>
-  <block id="f46fa6c8b79f57cf8c58c5f05f8134cc" category="cell">Actualmente, cada archivo está codificado de forma rígida para contener un máximo de 50,000 eventos. Después de alcanzar este máximo, se crea un nuevo archivo de registro para ese volumen. El archivo nuevo tendrá una Marca de hora más nueva.</block>
   <block id="5046b3bc48bd37acc83c5000548deccc" category="paragraph">Tenga en cuenta que estos ajustes están actualmente codificados a los valores predeterminados. No se pueden cambiar.</block>
   <block id="8b6c5ced74ae32d25c3f6ebff98f9529" category="inline-link">Instale el conector en las instalaciones</block>
   <block id="d848fab961367a4c9f58a25dc74053f3" category="paragraph">También puede hacerlo<block ref="a4b2312bac71e1fcb5d5edc9dd08d5ef" category="inline-link-rx"></block> En un host Linux de su red o en un host Linux del cloud.</block>
@@ -2479,16 +2447,13 @@
   <block id="44bc729b266ea1f75cc8d556fa17943e" category="paragraph">Para crear una en su entorno de proveedor de cloud, consulte<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>,<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>, o.<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>.</block>
   <block id="dcdba57692d95c33c15bffffceb6357c" category="paragraph">Si aún no tiene un conector instalado en su sitio local sin conexión,<block ref="c356cb96564d1aac144adbd1ad0f2ab1" category="inline-link-rx"></block> Ahora en un host Linux.</block>
   <block id="89825cdcfb92068b90e1077fbbbe7eee" category="paragraph">Si aún no tiene un conector BlueXP instalado en su sitio local fuera de línea,<block ref="c356cb96564d1aac144adbd1ad0f2ab1" category="inline-link-rx"></block> En un host Linux del sitio sin conexión.</block>
-  <block id="c1fb9db100b9c0b30bdce67dd119b43a" category="list-text">Compruebe que el software del conector en las instalaciones se ha actualizado a la versión más reciente disponible.<block ref="ab6868debf887d8dec6688f98c536c70" category="inline-link-rx"></block>.</block>
   <block id="95d360d4c70cbbf05116206b4e5edd67" category="section-title">Acceda al archivo de registro</block>
   <block id="57f460460036fcd7ebbf1fddeaa6a3a5" category="paragraph">Si aún no tiene un conector, cree un conector ahora. Consulte<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>,<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>, o.<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>.</block>
   <block id="8b4cc0616cd3112ce97c78446249e336" category="inline-link-macro">tipo de instancia alternativa</block>
   <block id="b4628b43616bed69627de3b91fe817d0" category="paragraph">Agregue la opción "--darksite" sólo si está ejecutando la secuencia de comandos en un host que no tiene acceso a Internet. Algunas pruebas de requisitos previos se omiten cuando el host no está conectado a Internet.</block>
   <block id="1bb79e71fe1463a15c91ab711e20a6ac" category="list-text">La secuencia de comandos ejecuta una variedad de pruebas en el sistema y muestra los resultados a medida que avanza. Cuando termine, escribe un registro de la sesión en un archivo llamado<block ref="7bca4c3da1c027ba15644b115a5e9fd9" prefix=" " category="inline-code"></block> en el directorio<block ref="8a788ac11c9bfeaba837d43d9090ac97" prefix=" " category="inline-code"></block>.</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
-  <block id="5f2318cc261d90be3fcc5f4c7cc873c8" category="list-text">Pegue el comando que copió del paso 7:<block ref="924ff0749b2ad085d56d695be970e489" prefix=" " category="inline-code"></block></block>
   <block id="388579bd3749a8791992636cbe6fcba2" category="paragraph">Si está instalando en una instancia de cloud (no en sus instalaciones), agregue<block ref="8a51c007faa66fa433403fdda9b5aea8" prefix=" " category="inline-code"></block>.</block>
-  <block id="6da4fe596757430b3c8aac2020ced6c0" category="cell">También puede crear el comando completo por adelantado, proporcionando los parámetros de host y proxy necesarios:<block ref="dd2499ea1a73d24df83008235f503dbc" prefix=" " category="inline-code"></block></block>
   <block id="652d29fc9fdc8e0b507bb9eeecca952e" category="list-text">_CLOUD_PROVEEDOR_ = Cuando se instala en una instancia de nube, ingresa “AWS”, “Azure” o “GCP” dependiendo del proveedor de nube.</block>
   <block id="9e7ff0af4669feb5e45b838a89143e27" category="paragraph">Los archivos de registro de auditoría de instalación se escriben en<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block></block>
   <block id="e08c39eeecbac5d5f73dff71e2512def" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Añada los recursos compartidos de archivos al grupo</block>
@@ -2509,7 +2474,6 @@
   <block id="bd069242cf8eda4643c1e3d125af30e2" category="list-text">Es necesario que haya conectividad de red entre la instancia de clasificación de BlueXP y los recursos compartidos.</block>
   <block id="4c6967e71e17b25bd9aba5d07ac1a719" category="list-text">Asegúrate de que estos puertos estén abiertos a la instancia de clasificación de BlueXP:</block>
   <block id="7adf75f8aca26c6ef58c5ad60b1edba5" category="list-text">En el caso de los recursos compartidos CIFS (SMB), asegúrese de tener credenciales de Active Directory con acceso de lectura a los recursos compartidos. Se prefieren las credenciales de administrador en caso de que la clasificación de BlueXP deba analizar cualquier dato que requiera permisos elevados.</block>
-  <block id="0cab35f215ad785f6bbbd922e56cfc04" category="paragraph">Si quieres asegurarte de que las «horas de último acceso» de tus archivos no cambien debido a los análisis de clasificación de BlueXP, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.</block>
   <block id="bb0a1704cdb3aa4652bac58b0632ab23" category="section-title">Implementar la instancia de clasificación de BlueXP</block>
   <block id="66d6758c1474f6b831dd835dbec91562" category="paragraph">Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.</block>
   <block id="d040d135cea4209ef4244e9d6e171fee" category="inline-link-macro">Pon en marcha la clasificación de BlueXP en el cloud</block>
@@ -2658,7 +2622,6 @@
   <block id="599b3adc06ff60709e02c3d42a15c442" category="paragraph">Tenga en cuenta que algunas de las operaciones de copia y sincronización habituales de BlueXP se deshabilitan cuando se invocan desde la clasificación de BlueXP:</block>
   <block id="0507a26254d90555779319aac2a586a6" category="paragraph">Puede mover los archivos de origen que la clasificación de BlueXP esté analizando a cualquier recurso compartido NFS. La unidad compartida de NFS no necesita integrarse con la clasificación de BlueXP (consulte <block ref="29fc238c82f37afa6e56193b0cf6f5eb" category="inline-link-macro-rx"></block>).</block>
   <block id="687c2785d0e6bcc55e7d411f98257c26" category="list-text">Para mover archivos, es necesario que el recurso compartido de NFS permita el acceso desde la dirección IP de la instancia de clasificación de BlueXP.</block>
-  <block id="cba343df3354e636ac19b2eb001d2453" category="summary">Completa unos pasos para empezar a analizar datos en el almacenamiento de objetos directamente con la clasificación de BlueXP. La clasificación de BlueXP puede analizar datos de cualquier servicio de almacenamiento de objetos que use el protocolo Simple Storage Service (S3). Entre ellas se incluyen StorageGRID de NetApp, IBM Cloud Object Store, Azure Blob (Using Minio), Linode, B2 Cloud Storage, Amazon S3, etc.</block>
   <block id="ab799d9194a97ef175cc77104273ab42" category="paragraph">Debe tener la clave de acceso y la clave secreta del proveedor de almacenamiento de objetos para que la clasificación de BlueXP pueda acceder a los bloques.</block>
   <block id="53ab1a83968fb0e47aaf2604fd097f22" category="paragraph">Añade el servicio de almacenamiento de objetos a la clasificación de BlueXP.</block>
   <block id="a9dd30151c7008ee5251686104cfa16e" category="paragraph">Si va a analizar datos de un almacenamiento de objetos S3 al que se puede acceder a través de Internet, puede hacerlo <block ref="8faa540c15177bc62b151869f0948a64" category="inline-link-macro-rx"></block> o. <block ref="15df3adeb2abcc06430d6dc64cee819e" category="inline-link-macro-rx"></block>.</block>
@@ -2667,7 +2630,6 @@
   <block id="e263659a3c43d4bb84ed4f6fa63a1fb7" category="list-text">Introduzca la clave de acceso y la clave secreta para que la clasificación de BlueXP pueda acceder a los buckets del almacenamiento de objetos.</block>
   <block id="5f7d2531317684863a8928345cd2c72a" category="paragraph">Después de habilitar la clasificación de BlueXP en tu servicio de almacenamiento de objetos, el paso siguiente es configurar los bloques que quieres analizar. La clasificación de BlueXP descubre esos buckets y los muestra en el entorno de trabajo que has creado.</block>
   <block id="37e611c0f6034e9d39537aca9c9331a7" category="paragraph">La clasificación de BlueXP comienza a analizar los bloques que has habilitado. Si hay algún error, aparecerán en la columna Estado, junto con la acción necesaria para corregir el error.</block>
-  <block id="0382fa55a5763522351262f003e2c25e" category="paragraph">+ Si quieres asegurarte de que tus archivos “Tiempos de último acceso” no cambian por los análisis de clasificación de BlueXP, te recomendamos que el usuario tenga permisos de Atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.</block>
   <block id="264b044bf416a5337d28443921b46791" category="list-text">La clasificación de BlueXP no se admite en un host compartido con otras aplicaciones; el host debe ser un host dedicado.</block>
   <block id="34c6b12ec99e0004de549a9d1fd9589c" category="list-text">Al crear el sistema host en tus instalaciones, puedes elegir entre tres tamaños de sistema en función del tamaño del conjunto de datos que tengas pensado analizar la clasificación de BlueXP.</block>
   <block id="d5c832490c0ab9dcb105acd9ee7b4709" category="list-text">A la hora de poner en marcha una instancia de computación en la nube para la instalación de tu clasificación de BlueXP, te recomendamos un sistema que cumpla los requisitos «grandes» del sistema anteriores:</block>
@@ -2715,12 +2677,7 @@
   <block id="e7fa07083790a8112d00af542356ec88" category="paragraph">De forma predeterminada, los volúmenes de protección de datos (DP) no se analizan porque no se exponen externamente y la clasificación de BlueXP no puede acceder a ellos. Se trata de los volúmenes de destino de las operaciones de SnapMirror desde un sistema ONTAP en las instalaciones o desde un sistema Cloud Volumes ONTAP.</block>
   <block id="7c0a9b3e555cf595d3d01d33df76df82" category="list-text">Los volúmenes que se crearon inicialmente como volúmenes CIFS en el sistema ONTAP de origen requieren la introducción de credenciales CIFS para analizar dichos volúmenes DP. Si ya has introducido credenciales de Active Directory para que la clasificación de BlueXP pueda analizar los volúmenes de CIFS, pueda usar esas credenciales o puede especificar un conjunto diferente de credenciales de administrador.</block>
   <block id="fbf1d4f9e395daa419609b8d5b9705f7" category="summary">Puede configurar la clasificación de BlueXP para registrar eventos en un archivo cada vez que se haya accedido o modificado uno de los archivos que está analizando. A continuación, puede ver el contenido de este archivo (el registro de auditoría de acceso a archivos) o descargarlo para ver qué cambios se han producido en los archivos y quién los ha realizado.</block>
-  <block id="ba688e1991b77fcd44ff6195e0c84363" category="paragraph">Puede habilitar esta función en cualquier volumen crítico de sus entornos de trabajo de ONTAP. Si se habilita en un volumen, se realiza un seguimiento de los eventos de acceso a archivos de todos los archivos y directorios del volumen. Esta funcionalidad se basa en la<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> Desde sus sistemas ONTAP y usa su sistema de clasificación de BlueXP como servidor de FPolicy para recibir mensajes de notificación (eventos) de ONTAP.</block>
   <block id="52887b7fa084c02e609d7372dfab4740" category="paragraph">La clasificación de BlueXP captura actualmente eventos para las siguientes acciones en tus archivos y directorios:</block>
-  <block id="30fc63feb36d512bc110dc008277f74a" category="paragraph">La clasificación de BlueXP puede registrar eventos de acceso a archivos para archivos que residen en los siguientes orígenes de datos:</block>
-  <block id="e3ca60acdd422d6c4d10471ba7bafd7a" category="paragraph">Debe tener Active Directory configurado para estos orígenes de datos de modo que la clasificación de BlueXP pueda identificar el nombre de la persona que accedió a los archivos.</block>
-  <block id="63affb81f248b01271368473d544b519" category="paragraph">Los archivos de registro de auditoría de acceso a archivos se encuentran en la máquina de clasificación de BlueXP en:<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
-  <block id="9f6e20b07afbaa7f960a88a7109d46b7" category="paragraph">Los archivos de registro se denominan "File_Access_Audit_&lt;volume_name&gt;_&lt;timestamp&gt;.log"; por ejemplo, "File Access Audit_MedicalData_20230205092321.log". La &lt;timestamp&gt; es la hora en la que la clasificación BlueXP escribió el primer registro en el archivo. Cada archivo está configurado de forma predeterminada para contener un máximo de 50,000 eventos. <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> Después de alcanzar este máximo, se crea un nuevo archivo de registro para ese volumen. El archivo nuevo tendrá una Marca de hora más nueva.</block>
   <block id="f8a450637ddb6668a04ea30131e3a1e2" category="paragraph">Cuando se instala la clasificación de BlueXP en un equipo Linux en tus instalaciones o en un equipo Linux puesto en marcha en el cloud, puedes navegar directamente a los archivos de registro.</block>
   <block id="c025349cd3a26a699951f8e578938046" category="paragraph">Cuando la clasificación de BlueXP se ponga en marcha en la nube, necesitarás SSH para la instancia de clasificación de BlueXP. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:</block>
   <block id="cbe58906292040b6d0a07fdaf6ed1e88" category="paragraph">Hay tres opciones que puede configurar para los registros de archivos de auditoría de acceso a archivos. Esta configuración se aplica a todos los orígenes de datos que hayan configurado el registro de auditoría de acceso a archivos en esta instancia de clasificación de BlueXP. Estos ajustes se configuran desde la sección _File Access Audit Log_ de la página _Configuration_ de clasificación de BlueXP.</block>
@@ -2833,7 +2790,6 @@
   <block id="5c06ff49871066f9ed72b5135320a06f" category="list-text">En el caso de SharePoint en las instalaciones, se puede instalar la clasificación de BlueXP <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block> o. <block ref="a9e45dedd045b23b06be5ebd4c9f12fb" category="inline-link-macro-rx"></block>.</block>
   <block id="4680fd81d7e45ccfd1ceacd31a49b359" category="paragraph">Cuando se instala la clasificación de BlueXP en un sitio sin acceso a Internet, también se debe instalar BlueXP Connector en ese mismo sitio sin acceso a Internet.<block ref="1c688d8f43aa189fb0a1239cdf9c5893" category="inline-link-rx"></block>.</block>
   <block id="4e977298e88aace1f09c15f59ce0e78a" category="list-text">En la página de Microsoft que aparece, seleccione la cuenta de SharePoint e introduzca el usuario y la contraseña (usuario administrador u otro usuario con acceso a los sitios de SharePoint) y, a continuación, haga clic en *Aceptar* para permitir que la clasificación de BlueXP lea los datos de esta cuenta.</block>
-  <block id="180a03d01ffffc932373d00975d086ae" category="paragraph">Puede añadir sitios de SharePoint individuales, o todos los sitios de SharePoint de la cuenta, para que los archivos asociados se analicen según la clasificación de BlueXP. Los pasos son los mismos al agregar sitios locales de SharePoint Online o SharePoint.</block>
   <block id="b42ad0875678c7c089fca9adf508bcd1" category="paragraph">La clasificación de BlueXP comienza a analizar los archivos en los sitios de SharePoint que ha agregado y los resultados se muestran en el Dashboard y en otras ubicaciones.</block>
   <block id="59ebdcac794eeda1621f09a3ecc27439" category="inline-link-macro">Elimina toda la cuenta de SharePoint de la clasificación de BlueXP</block>
   <block id="87ea3e57f659d791ccd6bc17b3e404d5" category="paragraph">Tenga en cuenta que puede <block ref="afcbfb2e520b0252550180b9b85892a0" category="inline-link-macro-rx"></block> Si ya no desea analizar los datos de usuario desde la cuenta de SharePoint.</block>
@@ -2973,7 +2929,6 @@
   <block id="8e14c56957ac95c2facdf955093df914" category="paragraph">El software de clasificación de BlueXP debe ejecutarse en un host que cumpla con los requisitos específicos del sistema operativo, los requisitos de RAM, los requisitos de software, etc.</block>
   <block id="cd2c26e6dff9147da7b2b00b90713d5e" category="list-text">* Consideraciones de Firewalld*: Si usted está planeando utilizar<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>, Te recomendamos que lo habilites antes de instalar la clasificación de BlueXP. Ejecute los siguientes comandos para configurar<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> Para que sea compatible con la clasificación de BlueXP:</block>
   <block id="90cb1400dc841cf0e0395cb466d11c1b" category="paragraph">Si tienes pensado usar otros hosts de clasificación de BlueXP como nodos de escáner (en un modelo distribuido), añade estas reglas a tu sistema principal en este momento:</block>
-  <block id="17929764ec3eccca8e82d4e75aba909b" category="paragraph">Si activa<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> Tras instalar la clasificación de BlueXP, debes reiniciar docker.</block>
   <block id="56fe5177fa37261644d5d8d101772da7" category="paragraph">La clasificación de BlueXP requiere acceso a Internet saliente. Si tu red física o virtual utiliza un servidor proxy para acceder a Internet, asegúrese de que la instancia de clasificación de BlueXP tenga acceso a Internet saliente para contactar con los siguientes extremos.</block>
   <block id="deee1d8f5a3df758bd42edb041e173a5" category="paragraph">Debes asegurarte de que todos los puertos requeridos estén abiertos para la comunicación entre el conector, la clasificación de BlueXP, Active Directory y los orígenes de datos.</block>
   <block id="f067a4d9a77738e1e7acac4c6780b5e2" category="cell">Conector Clasificación de &lt;&gt; BlueXP</block>
@@ -3106,8 +3061,6 @@
   <block id="8a77259a547d85aa243c1731eb9cf4f9" category="list-text">En un sistema configurado por Internet, descargue el software de clasificación de BlueXP en la<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>. El archivo que debe seleccionar se llama *DataSense-offline-Bundle-&lt;version&gt;.tar.gz*.</block>
   <block id="dcbcd05aacb89b95f784a8b1f1d67b86" category="inline-image-macro">Una captura de pantalla de cómo seleccionar el botón para implementar la clasificación de BlueXP en las instalaciones.</block>
   <block id="9dc22b84a6a7541bd88f9e0826037c0e" category="paragraph"><block ref="9dc22b84a6a7541bd88f9e0826037c0e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3b2bec612e179a339e2d986e54f12d2d" category="list-text">Introduzca la dirección IP o el nombre de host de la máquina host de clasificación de BlueXP para que la instancia de Connector pueda acceder a ellos.</block>
-  <block id="20d266f8fd4f7f938ee410c8fc73fb14" category="list-text">Introduzca la dirección IP o el nombre de host de la máquina host de BlueXP Connector para que se pueda acceder a ellos mediante la instancia de clasificación de BlueXP.</block>
   <block id="00f28e201d21c2b9684ea38809307277" category="list-text">_ds_host_ = dirección IP o nombre de host del sistema Linux de clasificación de BlueXP.</block>
   <block id="e1d099266f9e920a7c8817ff766480f2" category="paragraph">El instalador de clasificación de BlueXP instala los paquetes, registra la instalación e instala la clasificación de BlueXP. La instalación puede tardar entre 10 y 20 minutos.</block>
   <block id="9abb289ebc0275e08c6036e047e788f2" category="paragraph">Si hay conectividad por el puerto 8080 entre el equipo host y la instancia de Connector, verás el progreso de la instalación en la pestaña de clasificación de BlueXP de BlueXP.</block>
@@ -3320,4 +3273,72 @@
   <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">Instala la clasificación BlueXP en un host Linux mediante Internet</block>
   <block id="c3e36333a4a6733ccd92dafc9d8c17b5" category="sidebar">Instala la clasificación de BlueXP on-premises sin Internet</block>
   <block id="c0b7cbffdfa6fa18059367f2045ac22c" category="sidebar">Casos de uso de clasificación de BlueXP</block>
+  <block id="44b48aa0d2158361e53832315034f513" category="paragraph">Por ejemplo, si desea realizar un seguimiento cuando se realiza algún cambio en los archivos de personal confidencial o en los archivos de nóminas, puede habilitar esta función en los volúmenes en los que residen estos archivos. A continuación, puede ver el registro de auditoría de acceso a archivos para ver si estos archivos se han modificado. Si se han cambiado, podrá ver el identificador de seguridad (SID) de la persona que realizó el cambio y cuándo se realizó el cambio.</block>
+  <block id="f8877f183813ba08abe0b73b3b1c1a0a" category="paragraph">Es posible habilitar esta función en cualquier volumen crítico en sus entornos de trabajo que ejecutan el software ONTAP. Si se habilita en un volumen, se realiza un seguimiento de los eventos de acceso a archivos de todos los archivos y directorios del volumen. Esta funcionalidad se basa en la<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> Desde sus sistemas ONTAP y usa su sistema de clasificación de BlueXP como servidor de FPolicy para recibir mensajes de notificación (eventos) de ONTAP.</block>
+  <block id="c7f8db8434f3e3057bca29922b597e31" category="paragraph">La clasificación de BlueXP puede registrar eventos de acceso a archivos para archivos que residen en volúmenes de ONTAP en los siguientes orígenes de datos:</block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX para ONTAP de NetApp</block>
+  <block id="64067288b8531fcd99186eba6a8c23b0" category="paragraph">Los orígenes de datos deben ejecutar el software ONTAP versión 9,11 o posterior.</block>
+  <block id="e409723ead2999f7cf6579d5cdaa079c" category="admonition">Puede configurar la auditoría de acceso a archivos en este momento para un máximo de 5 volúmenes en cada origen de datos.</block>
+  <block id="266321178f48dd580597ebe11b4ed93e" category="list-text">Debes tener Active Directory configurado para los orígenes de datos de manera que la clasificación de BlueXP pueda enumerar el ID de la persona que accedió a los archivos.</block>
+  <block id="c59b99fd4a78f457a5e94a037bb88563" category="list-text">El puerto 5018 debe estar abierto para el acceso saliente desde el sistema de clasificación de BlueXP.</block>
+  <block id="4d2cf95eb79434a26117b70f40109d70" category="paragraph">Se crea un archivo de registro para cada volumen que se haya configurado para realizar un seguimiento de los eventos de acceso a los archivos. Los archivos de registro se denominan «&lt;volume_name&gt;_&lt;volume_uuid&gt;_.log»; por ejemplo «fpolicy_cifs_838c1727-dd2d-11ed-a3ec-590ce4991.log». Cada línea del registro de auditoría contiene información con el siguiente formato:</block>
+  <block id="d3369c54154da78d99f4f3934bb84f8f" category="list-text">TIMESTAMP: Fecha y hora del evento</block>
+  <block id="4fe39ce84cbfb175d3002259d9f4de1e" category="list-text">IP de cliente: Dirección IP de la instancia/PC/Proxy en la que se realizó la operación de archivo</block>
+  <block id="abc097a42e084882f0b5057b088f61bd" category="list-text">Volume Name: Nombre del volumen</block>
+  <block id="dbad63ce70d94484137fd2bcee25dc1c" category="list-text">UUID de volumen: UUID del volumen</block>
+  <block id="ff8a55161214e6aa8d081013df298e9d" category="list-text">Tipo de archivo - tipo de archivo: ARCHIVO o DIR</block>
+  <block id="64256f21f179e353ec3d64543426b9ac" category="list-text">Tamaño de archivo: Tamaño del archivo en bytes</block>
+  <block id="69de0dc8b418fef573ebde0673a1eae6" category="list-text">Ruta: Ruta completa y nombre del archivo o directorio afectado</block>
+  <block id="3c08f92438e4ac1c4646bf56ca891fa9" category="list-text">Tipo de volumen: Tipo de volumen: Bloque de mensajes del servidor o NFS</block>
+  <block id="04dad560a21879bc6d32b8e30f651a71" category="list-text">ID de usuario: Identificador de seguridad (SID) de la persona que realizó la acción</block>
+  <block id="cb4c145642d6cf35e5d4a33ece6b7833" category="list-text">ID de propietario del archivo: Identificador de seguridad (SID) del propietario del archivo</block>
+  <block id="46892b1d18541880bb4ef3ee2f331f45" category="list-text">Tipo de evento: Crear, Leer, Escribir, Cambiar nombre, Suprimir, Cambie el propietario/permisos o cambie SACL/DACL</block>
+  <block id="ae99dae6f6384006aeadebbab894f370" category="list-text">Detalles de la acción: Lo que se hizo: Depende de la acción</block>
+  <block id="e4e81dbf5cdcb72e814265ea01d1f3eb" category="paragraph">Por ejemplo, la siguiente línea del archivo de registro muestra que se ha producido una acción «Create» en el volumen «fpolicy_cifs»; se ha creado un nuevo archivo «F14» en el volumen.</block>
+  <block id="e5f8c207227297bb2868689eb39d6520" category="paragraph">Puedes usar la página de investigación de clasificación de BlueXP para buscar el volumen (con el filtro «Repositorio de almacenamiento») o el archivo (con el filtro «Archivo/Ruta de acceso al directorio») para ver más detalles sobre el volumen y el archivo afectados.</block>
+  <block id="f78abbcec2f9ea5bc3fa03b36826fc43" category="paragraph">Los archivos de registro de auditoría de acceso a archivos se encuentran en la máquina de clasificación de BlueXP en:<block ref="fec957882759a1b449bd1dfc164a64e6" prefix=" " category="inline-code"></block></block>
+  <block id="d83435d800785132bce0e54bcaa13373" category="paragraph">Cada archivo está configurado de forma predeterminada para contener un máximo de 50,000 eventos. <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> Una vez alcanzado este máximo, se sobrescriben las entradas más antiguas del archivo de registro.</block>
+  <block id="55b3e20fcb82b08c30a902311468d3c8" category="paragraph">El tamaño total de todos los archivos de registro del directorio se define por defecto en un máximo de 50 GB. <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> Cuando se alcanza ese límite, los archivos de registro más antiguos se eliminan a medida que se añaden nuevos archivos de registro. Además, los archivos de registro anteriores a 14 días se sobrescribirán, ya que es el tiempo de retención máximo.</block>
+  <block id="a0381bb8e5ebb77d0c9d2d40db0d1fe3" category="list-text">&lt;datasense_ip&gt; = dirección IP de la instancia de máquina virtual de clasificación de BlueXP</block>
+  <block id="5c3750f0826de99975f78125d81ce638" category="cell">La ubicación está actualmente codificada para escribir los archivos de registro en<block ref="fec957882759a1b449bd1dfc164a64e6" prefix=" " category="inline-code"></block></block>
+  <block id="190e59fe3d6a787439b4b5c2c989f6bf" category="cell">Actualmente, cada archivo está codificado de forma rígida para contener un máximo de 50,000 eventos. Una vez alcanzado este máximo, los eventos antiguos se eliminan a medida que se añaden eventos nuevos.</block>
+  <block id="a1c4e88cdf8e157dbb344fe556f58d28" category="paragraph">Si quieres asegurarte de que las «horas de último acceso» no cambian debido a los análisis de clasificación de BlueXP, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.</block>
+  <block id="6af032d0de89339877509ae11ea19c63" category="paragraph">Agregue la lista de direcciones URL del sitio de SharePoint que desea analizar en la cuenta de SharePoint y seleccione el tipo de análisis. Puede agregar hasta 100 URL a la vez, y hasta 1.000 sitios en total por cada cuenta.</block>
+  <block id="ef7e50ee52c97b486ba02e2d652aeb20" category="paragraph">Puede añadir sitios de SharePoint individuales, o hasta 1.000 sitios de SharePoint en la cuenta, de modo que la clasificación de BlueXP analice los archivos asociados. Los pasos son los mismos si agrega sitios de SharePoint Online o de SharePoint en las instalaciones.</block>
+  <block id="77c882826320136a310240e5fcb6d49b" category="list-text">Si necesita agregar más de 100 sitios para esta cuenta, simplemente haga clic en *Agregar sitios de SharePoint* nuevamente hasta que haya agregado todos sus sitios para esta cuenta (hasta 1.000 sitios en total para cada cuenta).</block>
+  <block id="114b40cee02180a916d6e0a652f1300d" category="list-text">*Permisos de carpeta UNIX*: Se requieren los siguientes permisos mínimos de UNIX:</block>
+  <block id="b0f2b97dc5d2b76b26e040408bb1d8af" category="cell">Carpeta</block>
+  <block id="9dc48a158dad20b2148d68f6a5863b5e" category="cell">Permisos mínimos</block>
+  <block id="d42b9c57d24cf5db3bd8d332dc35437f" category="cell">/tmp</block>
+  <block id="f1e98237c93c0717db2bfa4c6177762f" category="cell"><block ref="4d0e8b4926781b53ee3d95354f5c8bb5" prefix="" category="inline-code"></block></block>
+  <block id="68ab1268abb7e5f5688810968df97d6b" category="cell">/opt</block>
+  <block id="5cbcaeca0f98bea3f5714fbeb859b1f8" category="cell"><block ref="a39d05df186d1deb03343bf4f79e6b17" prefix="" category="inline-code"></block></block>
+  <block id="2e1a4e3f55001820560b237188c70bc3" category="cell">/var/lib/docker</block>
+  <block id="651ffe70d1da174ca6955ceb139ab71c" category="cell"><block ref="20218561600e990c68a725b6b98ae569" prefix="" category="inline-code"></block></block>
+  <block id="361e697d946a0a8473f2bda1979090c3" category="cell">/user/lib/systemd/system</block>
+  <block id="fa17233f7eaadf931550cd80b9ba0e45" category="list-text">Se puede utilizar RHEL o CentOS, versiones 7,8 o 7,9, pero la versión del kernel de Linux debe ser 4,0 o superior</block>
+  <block id="9997b2ae11cbffd6fe1a6e9f683ed24a" category="paragraph">+ Si quieres asegurarte de que tus archivos “Tiempos de último acceso” no cambian por las exploraciones de clasificación de BlueXP, te recomendamos que el usuario tenga permisos de Atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.</block>
+  <block id="ae4d468f55febeccb4eff973d9b635ff" category="inline-link-macro">Obtenga más información sobre los temas de datos aquí</block>
+  <block id="1a7107cbf75ccf5399b80fbafd0ee649" category="cell">Introduzca el nombre completo o el identificador conocido de un sujeto de datos. <block ref="dbe06c006d2f67629a75e1ec088edbea" category="inline-link-macro-rx"></block>.</block>
+  <block id="21ed6b8b65a14c2b031742eda9665bec" category="section-title">Filtrar datos por duplicados</block>
+  <block id="3cdb36967a02a71e0d639c6d71d16ac3" category="summary">Completa unos pasos para empezar a analizar datos en el almacenamiento de objetos directamente con la clasificación de BlueXP. La clasificación de BlueXP puede analizar datos de cualquier servicio de almacenamiento de objetos que use el protocolo Simple Storage Service (S3). Entre ellas se incluyen NetApp StorageGRID, IBM Cloud Object Store, Linode, B2 Cloud Storage, Amazon S3, etc.</block>
+  <block id="c3e061f64826624fb21952c760e39065" category="paragraph">Tenga en cuenta que la clasificación de BlueXP no extrae el «tiempo de último acceso» de los siguientes orígenes de datos: SharePoint Online, SharePoint on-premises (SharePoint Server), OneDrive, Google Drive y Amazon S3.</block>
+  <block id="967e2833b7b63650ec3b8ae154cf6a53" category="paragraph">Tenga en cuenta que debe reiniciar Docker cada vez que habilite o actualice<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> configuración.</block>
+  <block id="04b2719843afa330fd4278f18f551cc0" category="list-text">Pegue la información que ha copiado del paso 8:<block ref="f2d89fd6adc07cc741bd63dae759c280" prefix=" " category="inline-code"></block></block>
+  <block id="a4dd9b20157e1f61ccf2fa0ae455122b" category="list-text">Introduzca la dirección IP o el nombre de host de la máquina host de clasificación de BlueXP para que se pueda acceder a ella desde el sistema Connector.</block>
+  <block id="ddc6172b757657046107ead16ab653d6" category="list-text">Introduzca la dirección IP o el nombre de host de la máquina host del conector de BlueXP para que el sistema de clasificación de BlueXP pueda acceder a ellos.</block>
+  <block id="6b0aea6c68ef96dbcfc3127ea709758f" category="cell">También puede crear el comando completo por adelantado, proporcionando los parámetros de host necesarios:<block ref="30e6510f8ccbe93aadbdbce29e25b293" prefix=" " category="inline-code"></block></block>
+  <block id="8ef5d363a3f52c2b1fa183d2e2dbcb3c" category="list-text">_Client_id_ = Identificador de cliente de conector (agregue el sufijo “clientes” al ID de cliente si aún no está allí)</block>
+  <block id="e8cce14fafe88ef9a395cf54e51a3470" category="list-text">_ds_host_ = dirección IP o nombre de host del sistema de clasificación de BlueXP.</block>
+  <block id="f28b62cbbb13ada1264e3712622be29c" category="paragraph">Por ejemplo, este comando añade 3 nodos de escáner:<block ref="1e3d5ab9f2f03870882d89f4a82b2729" prefix=" " category="inline-code"></block></block>
+  <block id="de093cfeaa4d569528bc92ff96d56cde" category="list-text">Compruebe que el software BlueXP Connector se haya actualizado a la última versión disponible.<block ref="4d8a85a10354910c72eace431e2b6c17" category="inline-link-rx"></block>.</block>
+  <block id="441e8ff948470291018a26dd540b6d1d" category="cell">\https://github.com/docker \https://download.docker.com</block>
+  <block id="b629edc182d9ce4a079d9f954ad3f9b7" category="cell">Proporciona paquetes de requisitos previos para la instalación de Docker.</block>
+  <block id="fa328073ed60b8719f54add213e6f2e6" category="cell">\http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm</block>
+  <block id="43881c6dbe21a65cdf42dc01d8cfb295" category="cell">Proporciona paquetes de requisitos previos para la instalación de CentOS.</block>
+  <block id="3c2ecff14c7a136216f1928a3a8052bf" category="list-text">Pegue el comando que copió del paso 7:<block ref="50a00801fc41bbffdcb652318eb14c43" prefix=" " category="inline-code"></block></block>
+  <block id="8a7af24665c107d42e27bf9f85872742" category="cell">También puede crear el comando completo por adelantado, proporcionando los parámetros de host y proxy necesarios:<block ref="3b4bbf213dadbeb10421530a3d8a245b" prefix=" " category="inline-code"></block></block>
+  <block id="79dad5af8e7ba04bd45d58a3d10d4209" category="list-text">_Client_id_ = Identificador de cliente de conector (agregue el sufijo «Clientes» al ID de cliente que copió en los pasos de requisito previo)</block>
+  <block id="800fbb2e9f1063caafe6917c236f24a6" category="paragraph">Por ejemplo, este comando añade 3 nodos de escáner:<block ref="ba1da14563d546c370f034861b50d8f8" prefix=" " category="inline-code"></block></block>
+  <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">Seminarios web de BlueXP</block>
 </blocks>

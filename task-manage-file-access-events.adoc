@@ -16,9 +16,9 @@ summary: 'Puede configurar la clasificación de BlueXP para registrar eventos en
 [role="lead"]
 Puede configurar la clasificación de BlueXP para registrar eventos en un archivo cada vez que se haya accedido o modificado uno de los archivos que está analizando. A continuación, puede ver el contenido de este archivo (el registro de auditoría de acceso a archivos) o descargarlo para ver qué cambios se han producido en los archivos y quién los ha realizado.
 
-Por ejemplo, si desea realizar un seguimiento cuando se realiza algún cambio en los archivos de personal confidencial o en los archivos de nóminas, puede habilitar esta función en los volúmenes en los que residen estos archivos. A continuación, puede ver el registro de auditoría de acceso a archivos para ver si estos archivos se han modificado. Si se han cambiado, podrá ver el nombre de la persona que realizó el cambio y cuándo se hizo el cambio.
+Por ejemplo, si desea realizar un seguimiento cuando se realiza algún cambio en los archivos de personal confidencial o en los archivos de nóminas, puede habilitar esta función en los volúmenes en los que residen estos archivos. A continuación, puede ver el registro de auditoría de acceso a archivos para ver si estos archivos se han modificado. Si se han cambiado, podrá ver el identificador de seguridad (SID) de la persona que realizó el cambio y cuándo se realizó el cambio.
 
-Puede habilitar esta función en cualquier volumen crítico de sus entornos de trabajo de ONTAP. Si se habilita en un volumen, se realiza un seguimiento de los eventos de acceso a archivos de todos los archivos y directorios del volumen. Esta funcionalidad se basa en la https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Función FPolicy"^] Desde sus sistemas ONTAP y usa su sistema de clasificación de BlueXP como servidor de FPolicy para recibir mensajes de notificación (eventos) de ONTAP.
+Es posible habilitar esta función en cualquier volumen crítico en sus entornos de trabajo que ejecutan el software ONTAP. Si se habilita en un volumen, se realiza un seguimiento de los eventos de acceso a archivos de todos los archivos y directorios del volumen. Esta funcionalidad se basa en la https://["Función FPolicy"^] Desde sus sistemas ONTAP y usa su sistema de clasificación de BlueXP como servidor de FPolicy para recibir mensajes de notificación (eventos) de ONTAP.
 
 La clasificación de BlueXP captura actualmente eventos para las siguientes acciones en tus archivos y directorios:
 
@@ -37,15 +37,15 @@ Los usuarios de BlueXP con las funciones "Administrador de cuentas" o "Administr
 
 == Orígenes de datos compatibles
 
-La clasificación de BlueXP puede registrar eventos de acceso a archivos para archivos que residen en los siguientes orígenes de datos:
+La clasificación de BlueXP puede registrar eventos de acceso a archivos para archivos que residen en volúmenes de ONTAP en los siguientes orígenes de datos:
 
 * ONTAP en las instalaciones
 * Cloud Volumes ONTAP
 * Azure NetApp Files
-* FSX para ONTAP
+* Amazon FSX para ONTAP de NetApp
 
 
-Debe tener Active Directory configurado para estos orígenes de datos de modo que la clasificación de BlueXP pueda identificar el nombre de la persona que accedió a los archivos.
+Los orígenes de datos deben ejecutar el software ONTAP versión 9,11 o posterior.
 
 
 
@@ -53,7 +53,12 @@ Debe tener Active Directory configurado para estos orígenes de datos de modo qu
 
 Es posible habilitar el registro de auditoría de acceso a archivos en volúmenes individuales para realizar un seguimiento de los cambios en los archivos y directorios.
 
-CONSEJO:: Puede configurar la auditoría de acceso a los archivos para un máximo de 5 volúmenes en cada sistema ONTAP en este momento.
+
+TIP: Puede configurar la auditoría de acceso a archivos en este momento para un máximo de 5 volúmenes en cada origen de datos.
+
+.Antes de empezar
+* Debes tener Active Directory configurado para los orígenes de datos de manera que la clasificación de BlueXP pueda enumerar el ID de la persona que accedió a los archivos.
+* El puerto 5018 debe estar abierto para el acceso saliente desde el sistema de clasificación de BlueXP.
 
 
 .Pasos
@@ -81,34 +86,36 @@ Todos los eventos de acceso a archivos generados para los archivos de los volúm
 
 == Contenido del archivo de registro
 
-Se crea un archivo de registro para cada volumen que se haya configurado para realizar un seguimiento de los eventos de acceso a los archivos. Cada línea del registro de auditoría contiene información con el siguiente formato:
+Se crea un archivo de registro para cada volumen que se haya configurado para realizar un seguimiento de los eventos de acceso a los archivos. Los archivos de registro se denominan «<volume_name>_<volume_uuid>_.log»; por ejemplo «fpolicy_cifs_838c1727-dd2d-11ed-a3ec-590ce4991.log». Cada línea del registro de auditoría contiene información con el siguiente formato:
 
-`<timestamp> | <volume_name> | <event_type> | <file_name> | <user_name> | <action_result> | <action_details>`
+* TIMESTAMP: Fecha y hora del evento
+* IP de cliente: Dirección IP de la instancia/PC/Proxy en la que se realizó la operación de archivo
+* Volume Name: Nombre del volumen
+* UUID de volumen: UUID del volumen
+* Tipo de archivo - tipo de archivo: ARCHIVO o DIR
+* Tamaño de archivo: Tamaño del archivo en bytes
+* Ruta: Ruta completa y nombre del archivo o directorio afectado
+* Tipo de volumen: Tipo de volumen: Bloque de mensajes del servidor o NFS
+* ID de usuario: Identificador de seguridad (SID) de la persona que realizó la acción
+* ID de propietario del archivo: Identificador de seguridad (SID) del propietario del archivo
+* Tipo de evento: Crear, Leer, Escribir, Cambiar nombre, Suprimir, Cambie el propietario/permisos o cambie SACL/DACL
+* Detalles de la acción: Lo que se hizo: Depende de la acción
 
-* Marca de hora: Fecha y hora del evento
-* Nombre de volumen: Nombre del volumen
-* Tipo de evento: Crear, leer, escribir, Cambiar nombre, Eliminar, Cambie el propietario/los permisos y cambie SACL/DACL
-* Nombre de archivo: Ruta completa y nombre de archivo
-* Nombre de usuario (o ID): Nombre o ID de la persona que realizó la acción
-* Resultado de la acción: Si la acción se ha realizado correctamente o si ha fallado, y el motivo del éxito o del fracaso
-* Detalles de la acción - lo que se hizo: Depende de la acción
 
+Por ejemplo, la siguiente línea del archivo de registro muestra que se ha producido una acción «Create» en el volumen «fpolicy_cifs»; se ha creado un nuevo archivo «F14» en el volumen.
 
-Por ejemplo, las siguientes líneas del archivo de registro muestran una operación de copia correcta y una operación de copia con errores.
+ {"Timestamp": "2023-04-24 13:57", "Client_IP": "172.31.14.35", "Volume_Name": "fpolicy_cifs", "Volume_UUID": "838c1727-dd2d-11ed-a3ec-590ce4991", "File_Type": "FILE", "File_Size": 100, "Path": \\FPOLICY_CVO\fpolicy_cifs_share\dbs\f14, "Volume_Type": "SMB", "User_ID": "S-1-5-21-459977447-2546672318-3630509715-500", "File_Owner_ID": "S-1-5-32-544", "Event_Type": "CREATE", "Action_Details": {details}}
+Puedes usar la página de investigación de clasificación de BlueXP para buscar el volumen (con el filtro «Repositorio de almacenamiento») o el archivo (con el filtro «Archivo/Ruta de acceso al directorio») para ver más detalles sobre el volumen y el archivo afectados.
 
-....
-2022-06-06 15:23:08,910 | INFO | ds_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
-2022-06-06 15:23:08,968 | WARNING | ds_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
-....
 
 
 == Acceda a los archivos del registro de auditoría de acceso a archivos
 
-Los archivos de registro de auditoría de acceso a archivos se encuentran en la máquina de clasificación de BlueXP en: `/opt/netapp/audit_logs/`
+Los archivos de registro de auditoría de acceso a archivos se encuentran en la máquina de clasificación de BlueXP en: `/opt/netapp/file_access_audit_logs/`
 
-Los archivos de registro se denominan "File_Access_Audit_<volume_name>_<timestamp>.log"; por ejemplo, "File Access Audit_MedicalData_20230205092321.log". La <timestamp> es la hora en la que la clasificación BlueXP escribió el primer registro en el archivo. Cada archivo está configurado de forma predeterminada para contener un máximo de 50,000 eventos. <<Configure los ajustes del registro de auditoría de acceso a archivos,Puede personalizar este valor en la página File Access Audit Log Configuration.>> Después de alcanzar este máximo, se crea un nuevo archivo de registro para ese volumen. El archivo nuevo tendrá una Marca de hora más nueva.
+Cada archivo está configurado de forma predeterminada para contener un máximo de 50,000 eventos. <<Configure los ajustes del registro de auditoría de acceso a archivos,Puede personalizar este valor en la página File Access Audit Log Configuration.>> Una vez alcanzado este máximo, se sobrescriben las entradas más antiguas del archivo de registro.
 
-El tamaño total de todos los archivos de registro del directorio se establece en un valor predeterminado de 50 GB. <<Configure los ajustes del registro de auditoría de acceso a archivos,Puede personalizar este valor en la página File Access Audit Log Configuration.>> Cuando se alcanza ese límite, los archivos de registro más antiguos se eliminan automáticamente.
+El tamaño total de todos los archivos de registro del directorio se define por defecto en un máximo de 50 GB. <<Configure los ajustes del registro de auditoría de acceso a archivos,Puede personalizar este valor en la página File Access Audit Log Configuration.>> Cuando se alcanza ese límite, los archivos de registro más antiguos se eliminan a medida que se añaden nuevos archivos de registro. Además, los archivos de registro anteriores a 14 días se sobrescribirán, ya que es el tiempo de retención máximo.
 
 Cuando se instala la clasificación de BlueXP en un equipo Linux en tus instalaciones o en un equipo Linux puesto en marcha en el cloud, puedes navegar directamente a los archivos de registro.
 
@@ -123,14 +130,14 @@ Cuando la clasificación de BlueXP se ponga en marcha en la nube, necesitarás S
 ** Para GCP: Utilice el usuario creado para la instancia de BlueXP
 
 
-* <datasense_ip> = dirección IP de la instancia de la máquina virtual
+* <datasense_ip> = dirección IP de la instancia de máquina virtual de clasificación de BlueXP
 
 
 Tenga en cuenta que deberá modificar las reglas entrantes del grupo de seguridad para acceder al sistema en la nube. Para obtener más información, consulte:
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Reglas del grupo de seguridad en AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Reglas de grupos de seguridad en Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Reglas de firewall en Google Cloud"^]
+* https://["Reglas del grupo de seguridad en AWS"^]
+* https://["Reglas de grupos de seguridad en Azure"^]
+* https://["Reglas de firewall en Google Cloud"^]
 
 
 
@@ -146,12 +153,12 @@ image:screenshot_compliance_file_access_audit_config.png["Una captura de pantall
 | Opción Registro de auditoría | Descripción 
 
 
-| Ubicación del archivo de registro | La ubicación está actualmente codificada para escribir los archivos de registro en `/opt/netapp/audit_logs/` 
+| Ubicación del archivo de registro | La ubicación está actualmente codificada para escribir los archivos de registro en `/opt/netapp/file_access_audit_logs/` 
 
 
 | Asignación máxima de almacenamiento para registros de auditoría | El tamaño total de todos los archivos de registro del directorio está actualmente codificado a un valor predeterminado de 50 GB. Cuando se alcanza ese límite, los archivos de registro más antiguos se eliminan automáticamente. 
 
 
-| Número máximo de eventos de auditoría por archivo de auditoría | Actualmente, cada archivo está codificado de forma rígida para contener un máximo de 50,000 eventos. Después de alcanzar este máximo, se crea un nuevo archivo de registro para ese volumen. El archivo nuevo tendrá una Marca de hora más nueva. 
+| Número máximo de eventos de auditoría por archivo de auditoría | Actualmente, cada archivo está codificado de forma rígida para contener un máximo de 50,000 eventos. Una vez alcanzado este máximo, los eventos antiguos se eliminan a medida que se añaden eventos nuevos. 
 |===
 Tenga en cuenta que estos ajustes están actualmente codificados a los valores predeterminados. No se pueden cambiar.

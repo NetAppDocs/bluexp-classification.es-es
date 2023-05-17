@@ -36,7 +36,7 @@ Con credenciales de usuario completas, inicie sesión en la cuenta de SharePoint
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Agregue las direcciones URL del sitio de SharePoint que desea analizar
 [role="quick-margin-para"]
-Agregue la lista de direcciones URL del sitio de SharePoint que desea analizar en la cuenta de SharePoint y seleccione el tipo de análisis. Puede agregar hasta 100 URL a la vez.
+Agregue la lista de direcciones URL del sitio de SharePoint que desea analizar en la cuenta de SharePoint y seleccione el tipo de análisis. Puede agregar hasta 100 URL a la vez, y hasta 1.000 sitios en total por cada cuenta.
 
 
 
@@ -63,7 +63,7 @@ Pon en marcha la clasificación de BlueXP si aún no hay una instancia implement
 * En el caso de SharePoint en las instalaciones, se puede instalar la clasificación de BlueXP link:task-deploy-compliance-onprem.html["en una ubicación en el hotel que tiene acceso a internet"^] o. link:task-deploy-compliance-dark-site.html["en una ubicación en el hotel que no tiene acceso a internet"^].
 
 
-Cuando se instala la clasificación de BlueXP en un sitio sin acceso a Internet, también se debe instalar BlueXP Connector en ese mismo sitio sin acceso a Internet. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Leer más"^].
+Cuando se instala la clasificación de BlueXP en un sitio sin acceso a Internet, también se debe instalar BlueXP Connector en ese mismo sitio sin acceso a Internet. https://["Leer más"^].
 
 Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
 
@@ -113,7 +113,7 @@ La cuenta de SharePoint en las instalaciones se agrega a la lista de entornos de
 
 == Agregar sitios de SharePoint a los análisis de cumplimiento
 
-Puede añadir sitios de SharePoint individuales, o todos los sitios de SharePoint de la cuenta, para que los archivos asociados se analicen según la clasificación de BlueXP. Los pasos son los mismos al agregar sitios locales de SharePoint Online o SharePoint.
+Puede añadir sitios de SharePoint individuales, o hasta 1.000 sitios de SharePoint en la cuenta, de modo que la clasificación de BlueXP analice los archivos asociados. Los pasos son los mismos si agrega sitios de SharePoint Online o de SharePoint en las instalaciones.
 
 .Pasos
 . En la página _Configuration_, haga clic en el botón *Configuration* de la cuenta de SharePoint.
@@ -140,6 +140,7 @@ Un cuadro de diálogo de confirmación muestra el número de sitios que se han a
 +
 Si el cuadro de diálogo enumera los sitios que no se han podido agregar, capture esta información para que pueda resolver el problema. En algunos casos, puede volver a agregar el sitio con una dirección URL corregida.
 
+. Si necesita agregar más de 100 sitios para esta cuenta, simplemente haga clic en *Agregar sitios de SharePoint* nuevamente hasta que haya agregado todos sus sitios para esta cuenta (hasta 1.000 sitios en total para cada cuenta).
 . Habilite los análisis de sólo asignación, o los análisis de asignación y clasificación, en los archivos de los sitios de SharePoint.
 +
 [cols="45,45"]

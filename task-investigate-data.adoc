@@ -60,7 +60,7 @@ Utilice los siguientes filtros para ver cuánta información confidencial contie
 | Datos personales confidenciales | Seleccione la link:reference-private-data-categories.html#types-of-sensitive-personal-data["tipos de datos personales confidenciales"^]. 
 
 
-| Asunto de los datos | Introduzca el nombre completo o el identificador conocido de un sujeto de datos. 
+| Asunto de los datos | Introduzca el nombre completo o el identificador conocido de un sujeto de datos. link:task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports["Obtenga más información sobre los temas de datos aquí"^]. 
 |===
 
 

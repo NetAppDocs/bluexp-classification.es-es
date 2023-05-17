@@ -63,7 +63,7 @@ image:screenshot_compliance_investigation_page_directory.png["Captura de pantall
 
 == Visualización de archivos que contienen datos personales confidenciales
 
-La clasificación de BlueXP identifica automáticamente tipos especiales de información personal confidencial, tal y como definen las normativas de privacidad como https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["Artículos 9 y 10 del RGPD"^]. Por ejemplo, información sobre la salud, origen étnico o orientación sexual de una persona. link:reference-private-data-categories.html#types-of-sensitive-personal-data["Consulte la lista completa"^]. La clasificación de BlueXP identifica este tipo de información en archivos individuales, en archivos dentro de directorios (recursos compartidos y carpetas) y en tablas de bases de datos.
+La clasificación de BlueXP identifica automáticamente tipos especiales de información personal confidencial, tal y como definen las normativas de privacidad como https://["Artículos 9 y 10 del RGPD"^]. Por ejemplo, información sobre la salud, origen étnico o orientación sexual de una persona. link:reference-private-data-categories.html#types-of-sensitive-personal-data["Consulte la lista completa"^]. La clasificación de BlueXP identifica este tipo de información en archivos individuales, en archivos dentro de directorios (recursos compartidos y carpetas) y en tablas de bases de datos.
 
 La clasificación de BlueXP utiliza la inteligencia artificial (IA), el procesamiento del lenguaje natural (NLP), el aprendizaje automático (ML) y la computación cognitiva (CC) para entender el significado del contenido que escanea para extraer entidades y categorizarlo adecuadamente.
 
