@@ -133,21 +133,21 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 
 
 * *Sistema operativo*: El sistema operativo debe ser capaz de instalar el motor de Docker.
-
-
-* Red Hat Enterprise Linux versiones 8,0 a 8,7
-* CentOS versiones 8,0 a 8,7
-* CentOS Stream 8
-* Se puede utilizar RHEL o CentOS, versiones 7,8 o 7,9, pero la versión del kernel de Linux debe ser 4,0 o superior
 +
-** *Red Hat Subscription Management*: El host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el sistema no puede acceder a los repositorios para actualizar el software de 3rd partes necesario durante la instalación.
-** *Software adicional*: Debes instalar el siguiente software en el host antes de instalar la clasificación BlueXP:
+** Red Hat Enterprise Linux versiones 8,0 a 8,7
+** CentOS versiones 8,0 a 8,7
+** CentOS Stream 8
+** Se puede utilizar RHEL o CentOS, versiones 7,8 o 7,9, pero la versión del kernel de Linux debe ser 4,0 o superior
 
 
-* Docker Engine versión 19.3.1 o posterior. https://["Ver las instrucciones de instalación"^].
-* Python 3 versión 3.6 o posterior. https://["Ver las instrucciones de instalación"^].
+* *Red Hat Subscription Management*: El host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el sistema no puede acceder a los repositorios para actualizar el software de 3rd partes necesario durante la instalación.
+* *Software adicional*: Debes instalar el siguiente software en el host antes de instalar la clasificación BlueXP:
 +
-** * Consideraciones de Firewalld*: Si usted está planeando utilizar `firewalld`, Te recomendamos que lo habilites antes de instalar la clasificación de BlueXP. Ejecute los siguientes comandos para configurar `firewalld` Para que sea compatible con la clasificación de BlueXP:
+** Docker Engine versión 19.3.1 o posterior. https://["Ver las instrucciones de instalación"^].
+** Python 3 versión 3.6 o posterior. https://["Ver las instrucciones de instalación"^].
+
+
+* * Consideraciones de Firewalld*: Si usted está planeando utilizar `firewalld`, Te recomendamos que lo habilites antes de instalar la clasificación de BlueXP. Ejecute los siguientes comandos para configurar `firewalld` Para que sea compatible con la clasificación de BlueXP:
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -159,8 +159,6 @@ firewall-cmd --reload
 ....
 +
 Tenga en cuenta que debe reiniciar Docker cada vez que habilite o actualice `firewalld` configuración.
-
-
 
 
 

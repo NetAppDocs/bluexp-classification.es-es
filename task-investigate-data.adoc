@@ -104,7 +104,11 @@ Utilice los siguientes filtros para ver datos según criterios de tiempo.
 | Última modificación | Seleccione un intervalo de tiempo en el que se modificó por última vez el archivo. También puede especificar un intervalo de tiempo personalizado para restringir aún más los resultados de la búsqueda. 
 
 
-| Último acceso | Seleccione un intervalo de tiempo cuando se accedió por última vez al archivo o directorio (solo CIFS o NFS). También puede especificar un intervalo de tiempo personalizado para restringir aún más los resultados de la búsqueda. Para los tipos de archivos que analiza la clasificación de BlueXP, esta es la última vez que la clasificación de BlueXP analizó el archivo. 
+| Último acceso  a| 
+Seleccione un intervalo de tiempo cuando se accedió por última vez al archivo o directorio (solo CIFS o NFS). También puede especificar un intervalo de tiempo personalizado para restringir aún más los resultados de la búsqueda. Para los tipos de archivos que analiza la clasificación de BlueXP, esta es la última vez que la clasificación de BlueXP analizó el archivo.
+
+Tenga en cuenta que la clasificación de BlueXP no extrae el «tiempo de último acceso» de los siguientes orígenes de datos: SharePoint Online, SharePoint on-premises (SharePoint Server), OneDrive, Google Drive y Amazon S3.
+
 |===
 
 
