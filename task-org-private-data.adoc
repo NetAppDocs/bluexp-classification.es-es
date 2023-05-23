@@ -16,7 +16,7 @@ summary: La clasificación de BlueXP ofrece muchas formas de gestionar y organiz
 [role="lead"]
 La clasificación de BlueXP ofrece muchas formas de gestionar y organizar los datos privados. Esto le facilita ver los datos que más le importan.
 
-* Si está suscrito a. https://["Protección de información de Azure (AIP)"^] Para clasificar y proteger tus archivos, puedes usar la clasificación de BlueXP para gestionar esas etiquetas de AIP.
+* Si está suscrito a. https://azure.microsoft.com/en-us/services/information-protection/["Protección de información de Azure (AIP)"^] Para clasificar y proteger tus archivos, puedes usar la clasificación de BlueXP para gestionar esas etiquetas de AIP.
 * Puede agregar etiquetas a los archivos que desee marcar para la organización o para algún tipo de seguimiento.
 * Puede asignar un usuario de BlueXP a un archivo específico, o a varios archivos, para que la persona pueda ser responsable de administrar el archivo.
 * Con la funcionalidad "Directiva" puede crear sus propias consultas de búsqueda personalizadas para que pueda ver fácilmente los resultados haciendo clic en un botón.
@@ -55,7 +55,7 @@ A continuación se muestra una comparación del etiquetado de clasificación de 
 
 == Categorizar sus datos mediante etiquetas AIP
 
-Puede gestionar etiquetas AIP en los archivos a los que está analizando la clasificación de BlueXP si ya se ha suscrito https://["Protección de información de Azure (AIP)"^]. AIP le permite clasificar y proteger documentos y archivos aplicando etiquetas al contenido. La clasificación de BlueXP te permite ver las etiquetas que ya están asignadas a archivos, agregar etiquetas a archivos y cambiar etiquetas cuando ya existe una etiqueta.
+Puede gestionar etiquetas AIP en los archivos a los que está analizando la clasificación de BlueXP si ya se ha suscrito https://azure.microsoft.com/en-us/services/information-protection/["Protección de información de Azure (AIP)"^]. AIP le permite clasificar y proteger documentos y archivos aplicando etiquetas al contenido. La clasificación de BlueXP te permite ver las etiquetas que ya están asignadas a archivos, agregar etiquetas a archivos y cambiar etiquetas cuando ya existe una etiqueta.
 
 La clasificación de BlueXP admite etiquetas AIP en los siguientes tipos de archivos: .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX.
 

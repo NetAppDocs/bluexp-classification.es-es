@@ -29,13 +29,13 @@ En las siguientes tablas, si el sistema marcado como «predeterminado» no está
 | Tamaño del sistema | Especificaciones | Tipo de instancia 
 
 
-| Grande | 16 CPU, 64 GB de RAM, 500 GIB de SSD | https://["m6i.4xgrande"^] (por defecto) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+| Grande | 16 CPU, 64 GB de RAM, 500 GIB de SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xgrande"^] (por defecto) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
 
 
-| Mediano | 8 CPU, 32 GB de RAM, 200 GIB de SSD | https://["m6i.2xgrande"^] (por defecto) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+| Mediano | 8 CPU, 32 GB de RAM, 200 GIB de SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.2xgrande"^] (por defecto) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
 
 
-| Pequeño | 8 CPU, 16 GB de RAM, 100 GIB de SSD | https://["cera.2xlarge"^] (predeterminado) c5a.2xgrande c5.2xgrande c4.2xgrande 
+| Pequeño | 8 CPU, 16 GB de RAM, 100 GIB de SSD | https://aws.amazon.com/ec2/instance-types/c6a/["cera.2xlarge"^] (predeterminado) c5a.2xgrande c5.2xgrande c4.2xgrande 
 |===
 
 
@@ -46,7 +46,7 @@ En las siguientes tablas, si el sistema marcado como «predeterminado» no está
 | Tamaño del sistema | Especificaciones | Tipo de instancia 
 
 
-| Grande | 16 CPU, 64 GB de RAM, 500 GIB de SSD | https://["Standard_D16s_v3"^] (predeterminado) 
+| Grande | 16 CPU, 64 GB de RAM, 500 GIB de SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] (predeterminado) 
 |===
 
 
@@ -57,5 +57,5 @@ En las siguientes tablas, si el sistema marcado como «predeterminado» no está
 | Tamaño del sistema | Especificaciones | Tipo de instancia 
 
 
-| Grande | 16 CPU, 64 GB de RAM, 500 GIB de SSD | https://["n2-estándar-16"^] (predeterminado) n2d-standard-16 n1-standard-16 
+| Grande | 16 CPU, 64 GB de RAM, 500 GIB de SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-estándar-16"^] (predeterminado) n2d-standard-16 n1-standard-16 
 |===

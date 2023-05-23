@@ -59,8 +59,8 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 * *Red Hat Subscription Management*: El host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el sistema no puede acceder a los repositorios para actualizar el software de 3rd partes necesario durante la instalación.
 * *Software adicional*: Debes instalar el siguiente software en el host antes de instalar la clasificación BlueXP:
 +
-** Docker Engine versión 19.3.1 o posterior. https://["Ver las instrucciones de instalación"^].
-** Python 3 versión 3.6 o posterior. https://["Ver las instrucciones de instalación"^].
+** Docker Engine versión 19.3.1 o posterior. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^].
+** Python 3 versión 3.6 o posterior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
 
 
 
