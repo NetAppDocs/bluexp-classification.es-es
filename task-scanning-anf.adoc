@@ -24,7 +24,7 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Descubra los sistemas Azure NetApp Files que desea analizar
 [role="quick-margin-para"]
-Antes de poder analizar volúmenes Azure NetApp Files, https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Debe configurar BlueXP para descubrir la configuración"^].
+Antes de poder analizar volúmenes Azure NetApp Files, https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["Debe configurar BlueXP para descubrir la configuración"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
 [role="quick-margin-para"]
@@ -63,7 +63,7 @@ Selecciona o anula la selección de los volúmenes que quieres analizar y la cla
 
 Si el sistema Azure NetApp Files que desea escanear no está ya en BlueXP como entorno de trabajo, puede agregarlo al lienzo en este momento.
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Descubra cómo descubrir el sistema Azure NetApp Files en BlueXP"^].
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["Descubra cómo descubrir el sistema Azure NetApp Files en BlueXP"^].
 
 
 

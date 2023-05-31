@@ -85,7 +85,7 @@ Si no tienes una licencia de clasificación de BlueXP, ponte en contacto con nos
 * Haga clic en el icono de chat situado en la parte inferior derecha de BlueXP para solicitar una licencia.
 
 
-Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de clasificación de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
+Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de clasificación de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
 
 Utilizarás la página de la cartera digital de BlueXP en BlueXP para gestionar las licencias de BYOL para la clasificación de BlueXP. Puede añadir licencias nuevas y actualizar las licencias existentes.
 
@@ -126,7 +126,7 @@ Después de comprar una licencia de clasificación (Data Sense) de BlueXP para t
 +
 ** Si tienes el número de serie de la licencia de clasificación de BlueXP y conoces tu cuenta NSS, selecciona la opción *Enter Serial Number* e introduce esa información.
 +
-Si su cuenta del sitio de soporte de NetApp no está disponible en la lista desplegable, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Agregue la cuenta NSS a BlueXP"^].
+Si su cuenta del sitio de soporte de NetApp no está disponible en la lista desplegable, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Agregue la cuenta NSS a BlueXP"^].
 
 ** Si tienes el archivo de licencia de clasificación de BlueXP (necesario cuando se instala en un sitio oscuro), selecciona la opción *Cargar archivo de licencia* y sigue las indicaciones para adjuntar el archivo.
 +
