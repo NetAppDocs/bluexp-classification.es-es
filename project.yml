@@ -14,7 +14,11 @@ sidebar:
   - title: Documentos de clasificación de BlueXP
     url: "/index.html"
   - title: Notas de la versión
-    url: "/whats-new.html"
+    entries:
+    - title: Novedades
+      url: "/whats-new.html"
+    - title: Limitaciones conocidas
+      url: "/reference-limitations.html"
   - title: Manos a la obra
     entries:
     - title: Más información sobre la clasificación de BlueXP
@@ -74,6 +78,8 @@ sidebar:
       url: "/task-using-policies.html"
     - title: Gestione sus datos privados
       url: "/task-managing-highlights.html"
+    - title: Supervise y gestione eventos de acceso a archivos
+      url: "/task-manage-file-access-events.html"
     - title: Cambiar la configuración de exploración
       url: task-managing-repo-scanning.html
     - title: Generar informes de cumplimiento

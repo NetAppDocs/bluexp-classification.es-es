@@ -109,9 +109,13 @@ Consulte <<Habilitar y deshabilitar los análisis de cumplimiento de normativas 
 .Resultado
 La clasificación de BlueXP comienza a analizar los volúmenes que seleccionaste en el entorno de trabajo. Los resultados estarán disponibles en la consola de cumplimiento en cuanto la clasificación de BlueXP finalice los análisis iniciales. El tiempo que se tarda en depende de la cantidad de datos; puede que sea unos minutos u horas.
 
+[NOTE]
+====
+* De forma predeterminada, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS u permisos de escritura en NFS, el sistema no analizará los archivos de tus volúmenes, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Si no le importa si se restablece la última hora de acceso, haga clic en *o seleccione el tipo de exploración para cada volumen*. La página resultante tiene un ajuste que se puede habilitar para que la clasificación de BlueXP analice los volúmenes independientemente de los permisos.
+* La clasificación de BlueXP solo analiza un recurso compartido de archivos en un volumen. Si tiene varios recursos compartidos en sus volúmenes, deberá escanear los otros recursos compartidos por separado como un grupo de recursos compartidos. link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["Consulta más detalles sobre esta limitación de clasificación de BlueXP"^].
 
-NOTE: De forma predeterminada, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS u permisos de escritura en NFS, el sistema no analizará los archivos de tus volúmenes, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Si no le importa si se restablece la última hora de acceso, haga clic en *o seleccione el tipo de exploración para cada volumen*. Esa página tiene una configuración que se puede habilitar para que la clasificación de BlueXP analice los volúmenes independientemente de los permisos.
 
+====
 
 
 == Verificar que la clasificación de BlueXP tenga acceso a los volúmenes

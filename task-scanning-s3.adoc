@@ -129,7 +129,7 @@ image:screenshot_s3_compliance_iam_role.png["Una captura de pantalla de cómo in
 
 
 
-TIP: También puede habilitar análisis de cumplimiento de un entorno de trabajo desde la página Configuración haciendo clic en image:screenshot_gallery_options.gif[""] Y seleccionando *Activar clasificación de BlueXP*.
+TIP: También puede habilitar análisis de cumplimiento de un entorno de trabajo desde la página Configuración haciendo clic en image:screenshot_gallery_options.gif["tres puntos"] Y seleccionando *Activar clasificación de BlueXP*.
 
 .Resultado
 BlueXP asigna la función IAM a la instancia.

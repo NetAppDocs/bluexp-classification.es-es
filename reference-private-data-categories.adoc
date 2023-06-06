@@ -43,7 +43,7 @@ Tenga en cuenta que puede agregar a la lista de datos personales que se encuentr
 | Dirección de correo electrónico | No | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Número de iban (número de cuenta bancaria internacional) | No | ✓ | ✓ | ✓ |  | ✓ 
+| Número IBAN (número internacional de cuenta bancaria) | No | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | Dirección IP | No | ✓ | ✓ | ✓ |  | ✓ 

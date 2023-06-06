@@ -198,7 +198,7 @@ NOTE: La búsqueda de sujetos de datos no es compatible en las bases de datos en
 Busque el nombre completo o el identificador conocido del sujeto de datos y, a continuación, descargue un informe de la lista de archivos o un informe DSAR. Puede buscar por link:reference-private-data-categories.html#types-of-personal-data["cualquier tipo de información personal"^].
 
 
-NOTE: Se admiten el inglés, el alemán y el español cuando se buscan los nombres de los temas de datos. Más adelante se añadirá compatibilidad con más idiomas.
+NOTE: El inglés, el alemán, el japonés y el español son compatibles al buscar los nombres de los sujetos de datos. Más adelante se añadirá compatibilidad con más idiomas.
 
 .Pasos
 . En el menú BlueXP, haga clic en *Gobierno > Clasificación*.

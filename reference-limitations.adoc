@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, data sense, classification, scan shares 
+summary: Las limitaciones conocidas identifican funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente. 
+---
+= Limitaciones conocidas
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las limitaciones conocidas identifican funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente.
+
+
+
+== Limitaciones de análisis de clasificación de BlueXP
+
+
+
+=== La clasificación de BlueXP solo analiza un recurso compartido de un volumen
+
+Si tienes varios recursos compartidos de archivos en un solo volumen, la clasificación de BlueXP analiza el recurso compartido con la jerarquía más alta. Por ejemplo, si tiene recursos compartidos como los siguientes:
+
+* /A
+* /A/B
+* /C
+* /D/E
+
+
+A continuación, se escanearán los datos de /A. Los datos en /C y /D no se escanearán.
+
+.Solución alternativa
+Hay una solución para asegurarse de que está escaneando datos de todos los recursos compartidos del volumen. Siga estos pasos:
+
+. En el entorno de trabajo, agregue el volumen que se va a escanear.
+. Una vez que la clasificación de BlueXP haya completado el análisis del volumen, vaya a la página _Data Investigation_ y cree un filtro para ver qué recurso compartido se está analizando:
++
+Filtrará los datos por «Nombre del entorno de trabajo» y «Tipo de directorio = Compartir» para ver qué recurso compartido se está escaneando.
+
+. Obtenga la lista completa de recursos compartidos que existen en el volumen para poder ver qué recursos compartidos no se están analizando.
+. link:task-scanning-file-shares.html["Agregue los recursos compartidos restantes a un grupo de recursos compartidos"].
++
+Deberá agregar todos los recursos compartidos de forma individual, por ejemplo:
+
++
+....
+/C
+/D
+....
+. Realice estos pasos para cada volumen del entorno de trabajo que tenga varios recursos compartidos.
+

@@ -134,9 +134,9 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 
 * *Sistema operativo*: El sistema operativo debe ser capaz de instalar el motor de Docker.
 +
-** Red Hat Enterprise Linux versiones 8,0 a 8,7
-** CentOS versiones 8,0 a 8,7
-** CentOS Stream 8
+** Sistema operativo Ubuntu 22,04
+** Red Hat Enterprise Linux versiones 8,0 a 8,5
+** CentOS versiones 8,0 a 8,5
 ** Se puede utilizar RHEL o CentOS, versiones 7,8 o 7,9, pero la versión del kernel de Linux debe ser 4,0 o superior
 
 
@@ -407,8 +407,8 @@ También puede hacerlo link:task-licensing-datasense.html#use-a-bluexp-classific
 Dado que el software de clasificación BlueXP se actualiza con nuevas funciones de forma regular, deberías entrar en rutina para comprobar si hay nuevas versiones periódicamente y asegurarse de que estás usando el software y las funciones más recientes. Tendrás que actualizar el software de clasificación de BlueXP manualmente porque no hay conectividad a Internet para realizar la actualización de forma automática.
 
 .Antes de empezar
+* Recomendamos que el software BlueXP Connector se actualice a la última versión disponible. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Consulte los pasos de actualización del conector"^].
 * El software de clasificación BlueXP se puede actualizar una versión principal a la vez. Por ejemplo, si tiene instalada la versión 1.20.x, sólo podrá actualizar a 1.21.x. Si tiene varias versiones principales detrás, tendrá que actualizar el software varias veces.
-* Compruebe que el software BlueXP Connector se haya actualizado a la última versión disponible. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Consulte los pasos de actualización del conector"^].
 
 
 .Pasos
@@ -418,7 +418,7 @@ Dado que el software de clasificación BlueXP se actualiza con nuevas funciones 
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.21.0.tar.gz
+tar -xvf DataSense-offline-bundle-v1.22.0.tar.gz
 ----
 +
 Esto extrae el archivo de instalación *cc_onprem_installer.tar.gz*.
