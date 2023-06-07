@@ -67,7 +67,7 @@ image:screenshot_compliance_repo_scan_all.png["Captura de pantalla que muestra c
 
 == Pausar y reanudar el análisis de un repositorio
 
-Puede "pausar" el análisis en un repositorio si desea detener temporalmente el análisis de determinados contenidos. Esto no es lo mismo que desactivar la exploración. Cuando se desactiva el análisis, se eliminan del sistema toda la indexación y la información sobre ese volumen. Detener el análisis significa que la clasificación de BlueXP no realizará análisis futuros para ver si hay cambios o adiciones al repositorio, pero que todos los resultados actuales se seguirán mostrando en el sistema.
+Puede "pausar" el análisis en un repositorio si desea detener temporalmente el análisis de determinados contenidos. Esto no es lo mismo que desactivar la exploración. Cuando se desactiva el escaneo, se elimina del sistema toda la indexación y la información sobre ese volumen, y se detiene la carga para el escaneo de los datos. Detener el análisis significa que la clasificación de BlueXP no realizará análisis futuros para ver si hay cambios o adiciones al repositorio, pero que todos los resultados actuales se seguirán mostrando en el sistema. La pausa del escaneo no detiene la carga para escanear los datos porque los datos aún existen.
 
 Puede "reanudar" la exploración en cualquier momento.
 

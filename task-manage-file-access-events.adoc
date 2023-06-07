@@ -111,7 +111,7 @@ Puedes usar la página de investigación de clasificación de BlueXP para buscar
 
 == Acceda a los archivos del registro de auditoría de acceso a archivos
 
-Los archivos de registro de auditoría de acceso a archivos se encuentran en la máquina de clasificación de BlueXP en: `/opt/netapp/file_access_audit_logs/`
+Los archivos de registro de auditoría de acceso a archivos se encuentran en la máquina de clasificación de BlueXP en: `/opt/netapp/fpolicy/logs`
 
 Cada archivo está configurado de forma predeterminada para contener un máximo de 50,000 eventos. <<Configure los ajustes del registro de auditoría de acceso a archivos,Puede personalizar este valor en la página File Access Audit Log Configuration.>> Una vez alcanzado este máximo, se sobrescriben las entradas más antiguas del archivo de registro.
 
@@ -153,7 +153,7 @@ image:screenshot_compliance_file_access_audit_config.png["Una captura de pantall
 | Opción Registro de auditoría | Descripción 
 
 
-| Ubicación del archivo de registro | La ubicación está actualmente codificada para escribir los archivos de registro en `/opt/netapp/file_access_audit_logs/` 
+| Ubicación del archivo de registro | La ubicación está actualmente codificada para escribir los archivos de registro en `/opt/netapp/fpolicy/logs` 
 
 
 | Asignación máxima de almacenamiento para registros de auditoría | El tamaño total de todos los archivos de registro del directorio está actualmente codificado a un valor predeterminado de 50 GB. Cuando se alcanza ese límite, los archivos de registro más antiguos se eliminan automáticamente. 

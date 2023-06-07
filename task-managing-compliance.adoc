@@ -16,6 +16,8 @@ summary: Si es necesario, puedes evitar que la clasificación de BlueXP analice 
 [role="lead"]
 Si es necesario, puedes evitar que la clasificación de BlueXP analice uno o más entornos de trabajo, bases de datos, grupos de recursos compartidos de archivos, cuentas de OneDrive, cuentas de Google Drive, O cuentas de SharePoint.
 
+La carga para escanear los datos se detiene cuando se elimina el origen de datos.
+
 
 
 == Desactivar los análisis de cumplimiento de normativas en un entorno de trabajo

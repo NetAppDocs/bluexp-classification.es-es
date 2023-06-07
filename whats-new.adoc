@@ -30,7 +30,7 @@ Ahora se pueden introducir nombres en japonés al buscar el nombre de un sujeto 
 
 === Ubuntu ahora es una distribución Linux compatible en la que puedes instalar la clasificación de BlueXP
 
-Ubuntu 22,04 ha sido calificado como un sistema operativo compatible para la clasificación BlueXP. Puede instalar la clasificación de BlueXP en un host Ubuntu Linux de su red o en un host Linux en el cloud. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Descubre cómo instalar la clasificación de BlueXP en un host con Ubuntu instalado"].
+Ubuntu 22,04 ha sido calificado como un sistema operativo compatible para la clasificación BlueXP. Puede instalar la clasificación de BlueXP en un host Ubuntu Linux de su red o en un host Linux en el cloud cuando utilice la versión 1,23 del instalador. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Descubre cómo instalar la clasificación de BlueXP en un host con Ubuntu instalado"].
 
 
 
