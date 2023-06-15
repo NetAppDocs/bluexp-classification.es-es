@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-file-access-events.html 
 keywords: compliance, actions, view progress, audit, logs, installation 
-summary: 'Puede configurar la clasificación de BlueXP para registrar eventos en un archivo cada vez que se haya accedido o modificado uno de los archivos que está analizando. A continuación, puede ver el contenido de este archivo (el registro de auditoría de acceso a archivos) o descargarlo para ver qué cambios se han producido en los archivos y quién los ha realizado.' 
+summary: 'Puede configurar la clasificación de BlueXP para registrar eventos en un archivo cada vez que se haya accedido o modificado uno de los archivos que está analizando. A continuación, puede ver el contenido de este archivo de registro (el registro de auditoría de acceso a archivos), o descargarlo, para ver qué cambios de archivos se han producido y quién ha realizado.' 
 ---
 = Supervise y gestione eventos de acceso a archivos
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: 'Puede configurar la clasificación de BlueXP para registrar eventos en
 
 
 [role="lead"]
-Puede configurar la clasificación de BlueXP para registrar eventos en un archivo cada vez que se haya accedido o modificado uno de los archivos que está analizando. A continuación, puede ver el contenido de este archivo (el registro de auditoría de acceso a archivos) o descargarlo para ver qué cambios se han producido en los archivos y quién los ha realizado.
+Puede configurar la clasificación de BlueXP para registrar eventos en un archivo cada vez que se haya accedido o modificado uno de los archivos que está analizando. A continuación, puede ver el contenido de este archivo de registro (el registro de auditoría de acceso a archivos), o descargarlo, para ver qué cambios de archivos se han producido y quién ha realizado.
 
 Por ejemplo, si desea realizar un seguimiento cuando se realiza algún cambio en los archivos de personal confidencial o en los archivos de nóminas, puede habilitar esta función en los volúmenes en los que residen estos archivos. A continuación, puede ver el registro de auditoría de acceso a archivos para ver si estos archivos se han modificado. Si se han cambiado, podrá ver el identificador de seguridad (SID) de la persona que realizó el cambio y cuándo se realizó el cambio.
 
-Es posible habilitar esta función en cualquier volumen crítico en sus entornos de trabajo que ejecutan el software ONTAP. Si se habilita en un volumen, se realiza un seguimiento de los eventos de acceso a archivos de todos los archivos y directorios del volumen. Esta funcionalidad se basa en la https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Función FPolicy"^] Desde sus sistemas ONTAP y usa su sistema de clasificación de BlueXP como servidor de FPolicy para recibir mensajes de notificación (eventos) de ONTAP.
+Es posible habilitar esta función en cualquier volumen crítico en sus entornos de trabajo que ejecutan el software ONTAP. Si se habilita en un volumen, se realiza un seguimiento de los eventos de acceso a archivos de todos los archivos y directorios del volumen. Esta funcionalidad se basa en la https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Función FPolicy"^] Desde sus sistemas ONTAP y usa su sistema de clasificación de BlueXP como servidor de FPolicy para recibir mensajes de notificación (eventos) de ONTAP. La clasificación de BlueXP puede procesar aproximadamente 25 990 eventos por segundo desde ONTAP.
 
 La clasificación de BlueXP captura actualmente eventos para las siguientes acciones en tus archivos y directorios:
 
@@ -52,9 +52,6 @@ Los orígenes de datos deben ejecutar el software ONTAP versión 9,11 o posterio
 == Configure volúmenes para el registro de auditoría de acceso a archivos
 
 Es posible habilitar el registro de auditoría de acceso a archivos en volúmenes individuales para realizar un seguimiento de los cambios en los archivos y directorios.
-
-
-TIP: Puede configurar la auditoría de acceso a archivos en este momento para un máximo de 5 volúmenes en cada origen de datos.
 
 .Antes de empezar
 * Debes tener Active Directory configurado para los orígenes de datos de manera que la clasificación de BlueXP pueda enumerar el ID de la persona que accedió a los archivos.
