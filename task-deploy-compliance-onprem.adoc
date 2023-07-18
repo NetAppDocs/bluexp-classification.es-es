@@ -149,10 +149,10 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 
 * *Sistema operativo*: El sistema operativo debe ser capaz de instalar el motor de Docker.
 +
-** Sistema operativo Ubuntu 22,04
-** Red Hat Enterprise Linux versiones 8,0 a 8,5
-** CentOS versiones 8,0 a 8,5
-** Se puede utilizar RHEL o CentOS, versiones 7,8 o 7,9, pero la versión del kernel de Linux debe ser 4,0 o superior
+** Red Hat Enterprise Linux versiones 7,8 y 7,9: La versión del kernel de Linux debe ser 4,0 o superior
+** CentOS versión 7,8 y 7,9: La versión del kernel de Linux debe ser 4,0 o superior
+** Rocky Linux 9 (requiere la versión de clasificación de BlueXP 1,24 y posterior)
+** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 y posterior)
 
 
 * *Red Hat Subscription Management*: El host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el sistema no puede acceder a los repositorios para actualizar el software de 3rd partes necesario durante la instalación.
@@ -307,6 +307,8 @@ Revise los requisitos y siga estos pasos al instalar el software de clasificaci�
 
 https://youtu.be/gE-vrBLSJqw["Vea este vídeo"] Para ver cómo instalar la clasificación de BlueXP.
 
+Tenga en cuenta que todas las actividades de instalación se registran al instalar la clasificación de BlueXP. Si tiene algún problema durante la instalación, puede ver el contenido del registro de auditoría de la instalación. Está escrito en `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-file["Consulte más detalles aquí"].
+
 .Lo que necesitará
 * Compruebe que su sistema Linux cumple con el <<Prepare el sistema host Linux,requisitos del host>>.
 * Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine y Python 3).
@@ -329,7 +331,7 @@ https://youtu.be/gE-vrBLSJqw["Vea este vídeo"] Para ver cómo instalar la clasi
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.21.0.tar.gz
+tar -xzf DATASENSE-INSTALLER-V1.22.0.tar.gz
 ----
 . En BlueXP, seleccione *Gobierno > Clasificación*.
 . Haga clic en *Activar detección de datos*.

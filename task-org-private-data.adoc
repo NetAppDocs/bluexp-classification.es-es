@@ -226,6 +226,9 @@ image:screenshot_compliance_tag_multi_files.png["Una captura de pantalla que mue
 +
 ** Para seleccionar archivos individuales, marque la casilla de cada archivo (image:button_backup_1_volume.png[""]).
 ** Para seleccionar todos los archivos de la página actual, active la casilla de la fila de título (image:button_select_all_files.png[""]).
++
+En este momento, puede aplicar etiquetas a un máximo de 20 archivos a la vez, una página n en la página Resultados de la investigación de datos.
+
 
 
 . En la barra de botones, haga clic en *Etiquetas* y aparecerán las etiquetas asignadas actualmente.

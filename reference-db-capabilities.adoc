@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: reference-db-capabilities.html 
+keywords: database actions, database filters, supported, unsupported 
+summary: Hay algunas características y funcionalidades que no están disponibles con la clasificación de BlueXP cuando se analizan esquemas de base de datos. 
+---
+= Capacidades de base de datos admitidas y no soportadas
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Hay algunas características y funcionalidades que no están disponibles con la clasificación de BlueXP cuando se analizan esquemas de base de datos. Consulte la siguiente lista.
+
+Puedes añadir tus esquemas de bases de datos a la clasificación de BlueXP para analizarlos link:task-scanning-databases.html["como se describe aquí"^].
+
+[cols="12,25,9,9,9,9,9,9,9"]
+|===
+| Tipo | Descripción | MongoDB | Servidor SQL | MySQL | Oracle | PostgreSQL | SAP HANA | Amazon RDS 
+
+
+.9+| Acciones | Crear política | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Etiquetar | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Asignar a. | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Exportar datos | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Repetir escaneo | x | x | x | x | x | x | x 
+
+
+| Eliminar | x | x | x | x | x | x | x 
+
+
+| Mover | x | x | x | x | x | x | x 
+
+
+| Copiar | x | x | x | x | x | x | x 
+
+
+| Etiqueta | x | x | x | x | x | x | x 
+
+
+.25+| Filtros | Normativas | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Estado del análisis de adquisición | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Tipo de entorno de trabajo | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Entorno de trabajo | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Repositorio de almacenamiento | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Nivel de sensibilidad | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Datos personales confidenciales | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Categorías | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Datos personales | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Sujeto de datos | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Tipo de archivo | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Tamaño de archivo | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Hora de detección | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Etiquetas | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Asignar a. | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Evento de análisis de adquisición | x | x | x | x | x | x | x 
+
+
+| Ruta de archivo/directorio | x | x | x | x | x | x | x 
+
+
+| Filtros de permisos | x | x | x | x | x | x | x 
+
+
+| Etiqueta | x | x | x | x | x | x | x 
+
+
+| Número de identificadores | x | x | x | x | x | x | x 
+
+
+| Tipo de directorio | x | x | x | x | x | x | x 
+
+
+| Hora de creación | x | x | x | x | x | x | x 
+
+
+| Última modificación | x | x | x | x | x | x | x 
+
+
+| Último acceso | x | x | x | x | x | x | x 
+
+
+| Duplicados | x | x | x | x | x | x | x 
+|===

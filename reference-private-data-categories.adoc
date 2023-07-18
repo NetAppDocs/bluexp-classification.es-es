@@ -52,7 +52,7 @@ Tenga en cuenta que puede agregar a la lista de datos personales que se encuentr
 | Contraseña | Sí | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.54+| Identificadores nacionales | Australian TFN (número de archivo fiscal) | Sí | ✓ | ✓ | ✓ |  |  
+.57+| Identificadores nacionales | Australian TFN (número de archivo fiscal) | Sí | ✓ | ✓ | ✓ |  |  
 
 
 | Licencia Australian Driver's License | Sí | ✓ | ✓ | ✓ |  |  
@@ -119,6 +119,15 @@ Tenga en cuenta que puede agregar a la lista de datos personales que se encuentr
 
 
 | Número de identificación fiscal francés (SPI) | Sí | ✓ | ✓ | ✓ | ✓ |  
+
+
+| Identificación alemana (Personalausweisnummer) | Sí | ✓ | ✓ | ✓ |  |  
+
+
+| Alemania - ID Interno para Transferencias Bancarias | Sí | ✓ | ✓ | ✓ |  |  
+
+
+| Número de Seguro Social Alemán (Sozialversicherungsnummer) | Sí | ✓ | ✓ | ✓ |  |  
 
 
 | Número de identificación fiscal alemán (Steuerliche Identifikationsnummer) | Sí | ✓ | ✓ | ✓ |  |  

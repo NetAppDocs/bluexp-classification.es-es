@@ -18,6 +18,40 @@ Descubre las novedades en la clasificación de BlueXP.
 
 
 
+== 17 de julio de 2023 (versión 1,24)
+
+
+
+=== Dos nuevos tipos de datos personales alemanes se identifican por la clasificación de BlueXP
+
+La clasificación de BlueXP puede identificar y categorizar los archivos que contengan los siguientes tipos de datos:
+
+* Identificación alemana (Personalausweisnummer)
+* Número de Seguro Social Alemán (Sozialversicherungsnummer)
+
+
+https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Consulta todos los tipos de datos personales que la clasificación de BlueXP puede identificar en tus datos"].
+
+
+
+=== Rocky Linux 9 ahora es una distribución Linux compatible en la que puedes instalar la clasificación de BlueXP
+
+Rocky Linux 9 (9,0, 9,1 y 9,2) se ha calificado como un sistema operativo compatible para la clasificación de BlueXP. Puede instalar la clasificación de BlueXP en un host Rocky Linux de su red o en un host Linux en el cloud cuando utilice la versión 1,24 del instalador. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Descubre cómo instalar la clasificación de BlueXP en un host con Rocky Linux instalado"].
+
+
+
+=== La clasificación de BlueXP es totalmente compatible con el modo restringido y el modo privado
+
+La clasificación de BlueXP ahora es totalmente compatible en sitios sin acceso a Internet (modo privado) y con acceso a Internet saliente limitado (modo restringido). https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtén más información sobre los modos de puesta en marcha de BlueXP para Connector"^].
+
+
+
+=== Capacidad de omitir versiones al actualizar una instalación en modo privado de la clasificación de BlueXP
+
+Ahora puedes actualizar a una versión más reciente de la clasificación de BlueXP incluso si no es secuencial. Esto significa que ya no es necesaria la limitación actual para actualizar la clasificación de BlueXP de una versión a la vez. Esta función es relevante a partir de la versión 1,24 en adelante.
+
+
+
 == 6 de junio de 2023 (versión 1,23)
 
 
@@ -364,91 +398,3 @@ En el pasado, cuando se creó una directiva personalizada, los resultados mostra
 === Data sense puede transferir hasta 100,000 archivos cada vez
 
 Si planea utilizar Data Sense para mover archivos de un origen de datos escaneado a un recurso compartido NFS, el número máximo de archivos se ha aumentado a 100,000. https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["Vea cómo mover archivos con Data Sense"].
-
-
-
-== 12 de junio de 2022 (versión 1.13.1)
-
-
-
-=== Ahora puede descargar los resultados desde la página Investigación de datos como un informe .JSON
-
-Después de filtrar los datos en la página Investigación de datos, ahora puede guardar los datos como un informe en un archivo .JSON que puede exportar a un recurso compartido NFS, además de guardar los datos en un archivo .CSV en el sistema local. Asegúrese de que Data Sense tiene los permisos correctos para el acceso de exportación. https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#data-investigation-report["Consulte cómo crear informes desde la página Investigación de datos"].
-
-
-
-=== Capacidad para desinstalar Data Sense de la interfaz de usuario de Data Sense
-
-Puede desinstalar Data Sense para eliminar de forma permanente el software del host y, en el caso de una implementación de cloud, eliminar la máquina virtual/instancia en la que se ha implementado Data Sense. Al eliminar la instancia, se elimina permanentemente toda la información indexada que se ha analizado Data Sense. https://docs.netapp.com/us-en/bluexp-classification/task-uninstall-data-sense.html["Descubra cómo"].
-
-
-
-=== El registro de auditoría está ahora disponible para realizar el seguimiento del historial de acciones que ha realizado la detección de datos
-
-El registro de auditoría realiza un seguimiento de las actividades de administración que Data Sense ha realizado en archivos de todos los entornos de trabajo y orígenes de datos que Data Sense está analizando. Las actividades pueden ser generadas por el usuario (eliminar un archivo, crear una directiva, etc.) o generadas por una directiva (agregar etiquetas automáticamente a los archivos, eliminar archivos automáticamente, etc.).
-
-https://docs.netapp.com/us-en/bluexp-classification/task-audit-data-sense-actions.html["Consulte más detalles sobre el registro de auditoría"].
-
-
-
-=== Nuevo filtro para el número de identificadores confidenciales en la página Investigación de datos
-
-El filtro “número de identificadores” permite enumerar los archivos que tienen un cierto número de identificadores confidenciales, incluidos datos personales y datos personales confidenciales. Puede seleccionar un rango como 1-10 o 501-1000 para ver sólo los archivos que contienen ese número de identificadores confidenciales.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Consulte la lista de todos los filtros que puede utilizar para investigar los datos"].
-
-
-
-=== Ahora puede editar las directivas existentes que ha creado
-
-Si necesita realizar un cambio en una directiva personalizada que ha creado anteriormente, ahora puede editar la directiva en lugar de crear una nueva. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#editing-policies["Vea cómo editar una directiva"].
-
-
-
-== 11 de mayo de 2022 (versión 1.12.1)
-
-
-
-=== Se ha agregado compatibilidad para analizar datos en cuentas de Google Drive
-
-Ahora puede agregar sus cuentas de Google Drive a Data Sense para poder escanear los documentos y archivos de esas cuentas de Google Drive. https://docs.netapp.com/us-en/bluexp-classification/task-scanning-google-drive.html["Descubra cómo analizar sus cuentas de Google Drive"].
-
-El sentido de los datos puede identificar la Información personal identificable (PII) en los siguientes tipos de archivos de Google desde la suite Google Docs -- Docs, Sheets, and Slides -- además de la https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-files["tipos de archivo existentes"].
-
-
-
-=== Vista de nivel de directorio agregada a la página Investigación de datos
-
-Además de ver y filtrar datos de todos los archivos y bases de datos, ahora puede ver y filtrar datos en función de todos los datos de carpetas y recursos compartidos de la página Investigación de datos. Los directorios se indexarán para recursos compartidos CIFS y NFS analizados, así como para carpetas de OneDrive, SharePoint y Google Drive. Ahora puede ver los permisos y gestionar los datos en el nivel de directorio. https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Vea cómo seleccionar la vista directorios de los datos escaneados"].
-
-
-
-=== Expanda grupos para mostrar los usuarios o miembros que tienen permisos para tener acceso a un archivo
-
-Como parte de las capacidades de permisos de detección de datos, ahora puede ver la lista de usuarios y grupos que tienen acceso a un archivo. Cada grupo se puede expandir para mostrar la lista de usuarios del grupo. https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#viewing-permissions-for-files["Vea cómo ver usuarios y grupos que tienen permisos de lectura y/o escritura en sus archivos"].
-
-
-
-=== Se han agregado dos nuevos filtros a la página Investigación de datos
-
-* El filtro “Tipo de directorio” permite afinar los datos para ver sólo carpetas o recursos compartidos. Los resultados se mostrarán en la nueva pestaña *directorios*.
-* El filtro "permisos de usuario/grupo" le permite enumerar los archivos, carpetas y recursos compartidos a los que un usuario o grupo específico tiene permisos de lectura y/o escritura. Puede seleccionar varios usuarios y/o nombres de grupo - o introducir un nombre parcial.
-
-
-https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Consulte la lista de todos los filtros que puede utilizar para investigar los datos"].
-
-
-
-== 5 de abril de 2022 (versión 1.11.1)
-
-
-
-=== Cuatro nuevos tipos de datos personales australianos se pueden identificar mediante detección de datos
-
-Data Sense puede identificar y categorizar archivos que contengan el TFN (número de archivo fiscal) australiano, el número de licencia de conducir australiano, el número de Medicare australiano y el número de pasaporte australiano. link:reference-private-data-categories.html#types-of-personal-data["Vea todos los tipos de datos personales que Data Sense puede identificar en sus datos"].
-
-
-
-=== El servidor de Active Directory global puede ser ahora un servidor LDAP
-
-El servidor global de Active Directory que se integra con Data Sense puede ser ahora un servidor LDAP además del servidor DNS previamente admitido. link:task-add-active-directory-datasense.html["Vaya aquí para obtener más información"].

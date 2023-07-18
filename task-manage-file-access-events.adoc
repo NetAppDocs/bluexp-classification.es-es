@@ -41,7 +41,6 @@ La clasificación de BlueXP puede registrar eventos de acceso a archivos para ar
 
 * ONTAP en las instalaciones
 * Cloud Volumes ONTAP
-* Azure NetApp Files
 * Amazon FSX para ONTAP de NetApp
 
 
@@ -52,6 +51,9 @@ Los orígenes de datos deben ejecutar el software ONTAP versión 9,11 o posterio
 == Configure volúmenes para el registro de auditoría de acceso a archivos
 
 Es posible habilitar el registro de auditoría de acceso a archivos en volúmenes individuales para realizar un seguimiento de los cambios en los archivos y directorios.
+
+
+TIP: Puede configurar la auditoría de acceso a archivos en este momento para un máximo de 8 volúmenes en cada origen de datos.
 
 .Antes de empezar
 * Debes tener Active Directory configurado para los orígenes de datos de manera que la clasificación de BlueXP pueda enumerar el ID de la persona que accedió a los archivos.

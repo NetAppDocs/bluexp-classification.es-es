@@ -251,7 +251,7 @@ La clasificación de BlueXP es compatible con las versiones de NFS 3.x, 4,0 y 4,
 
 === ¿Existen restricciones cuando se implementa en una región gubernamental?
 
-La clasificación BlueXP se admite cuando Connector se implementa en una región gubernamental (AWS GovCloud, Azure Gov o Azure DoD). Cuando se implementa de esta manera, la clasificación de BlueXP tiene las siguientes restricciones:
+La clasificación de BlueXP se admite cuando Connector se pone en marcha en una región gubernamental (AWS GovCloud, Azure Gov o Azure DoD), también conocida como «modo restringido». Cuando se implementa de esta manera, la clasificación de BlueXP tiene las siguientes restricciones:
 
 * Las cuentas de OneDrive, cuentas de SharePoint y cuentas de Google Drive no se pueden analizar.
 * La funcionalidad de etiqueta de Microsoft Azure Information Protection (AIP) no se puede integrar.
@@ -261,7 +261,7 @@ La clasificación BlueXP se admite cuando Connector se implementa en una región
 
 === ¿Qué fuentes de datos puedo analizar si instalo la clasificación de BlueXP en un sitio sin acceso a Internet?
 
-La clasificación de BlueXP solo puede analizar datos de orígenes de datos locales al sitio on-premises. En este momento, la clasificación de BlueXP puede analizar las siguientes fuentes de datos locales en un sitio «oscuro»:
+La clasificación de BlueXP solo puede analizar datos de orígenes de datos locales al sitio on-premises. En este momento, la clasificación de BlueXP puede analizar las siguientes fuentes de datos locales en «modo privado», también conocido como sitio «oscuro»:
 
 * Sistemas ONTAP en las instalaciones
 * Esquemas de base de datos
@@ -360,7 +360,7 @@ Sí. Puede hacerlo https://docs.netapp.com/us-en/bluexp-setup-admin/task-install
 
 === ¿Qué pasa con sitios seguros sin acceso a Internet?
 
-Sí, también es compatible. Puede hacerlo https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Implemente el conector en un host Linux local que no tenga acceso a Internet"^]. A continuación, puedes detectar clústeres de ONTAP on-premises y otras fuentes de datos locales y analizar los datos mediante la clasificación de BlueXP.
+Sí, también es compatible. Puede hacerlo https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Implemente el conector en un host Linux local que no tenga acceso a Internet"^]. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Esto también se conoce como “modo privado”"^]. A continuación, puedes detectar clústeres de ONTAP on-premises y otras fuentes de datos locales y analizar los datos mediante la clasificación de BlueXP.
 
 
 
