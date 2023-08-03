@@ -52,6 +52,16 @@ Ahora puedes actualizar a una versión más reciente de la clasificación de Blu
 
 
 
+=== La API de clasificación de BlueXP ya está disponible
+
+La API de clasificación de BlueXP permite realizar acciones, crear consultas y exportar información sobre los datos que está escaneando. La documentación interactiva se encuentra disponible mediante Swagger. La documentación se divide en varias categorías, incluidas Investigación, Cumplimiento, Gobernanza y Configuración. Cada categoría es una referencia a las pestañas de la interfaz de usuario de clasificación de BlueXP.
+
+Para entrar en Swagger, necesitarás la dirección IP de tu instancia de clasificación de BlueXP. En el caso de una puesta en marcha de cloud, utilizará la dirección IP pública. Entonces tendrás que entrar en este punto final:
+
+https://<classification_ip>/documentation[]
+
+
+
 == 6 de junio de 2023 (versión 1,23)
 
 
@@ -364,37 +374,3 @@ Hay dos formas de agregar "datos personales" personalizados que el sentido de da
 
 
 Estas palabras clave y patrones se agregan a los patrones predefinidos existentes que Data Sense ya utiliza, y los resultados serán visibles en la sección patrones personales. https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html["Leer más"^].
-
-
-
-== 6 de julio de 2022 (versión 1.14)
-
-
-
-=== Ahora puede ver los usuarios y grupos que tienen acceso a sus directorios
-
-Anteriormente, podría ver los tipos de permisos abiertos concedidos en archivos individuales. Ahora puede ver una lista de todos los usuarios o grupos que tienen acceso a directorios (carpetas y recursos compartidos de archivos) y los tipos de permisos que tienen. https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#viewing-permissions-for-files-and-directories["Vea cómo ver los usuarios y grupos que tienen acceso a las carpetas y los recursos compartidos de archivos"].
-
-
-
-=== Puede "pausar" el análisis de un repositorio para detener temporalmente el análisis de cierto contenido
-
-Pausar el análisis significa que Data Sense no realizará más análisis futuro de adiciones o cambios en un volumen o bloque, pero que todavía estarán disponibles en el sistema todos los resultados actuales. https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository["Consulte cómo pausar y reanudar la exploración"].
-
-
-
-=== Los datos DE licencias de conducir DE EE.UU. Procedentes de tres estados adicionales pueden ser identificados por Data Sense
-
-El sentido de los datos puede identificar y categorizar archivos que contengan datos de licencias de conducir de Indiana, Nueva York y Texas. link:reference-private-data-categories.html#types-of-personal-data["Vea todos los tipos de datos personales que Data Sense puede identificar en sus datos"].
-
-
-
-=== Las directivas devuelven ahora directorios que coinciden con los criterios de búsqueda
-
-En el pasado, cuando se creó una directiva personalizada, los resultados mostraban los archivos que coincidieron con los criterios de búsqueda. Ahora los resultados también muestran los directorios (carpetas y archivos compartidos) que coinciden con la consulta. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#creating-custom-policies["Más información acerca de la creación de políticas"].
-
-
-
-=== Data sense puede transferir hasta 100,000 archivos cada vez
-
-Si planea utilizar Data Sense para mover archivos de un origen de datos escaneado a un recurso compartido NFS, el número máximo de archivos se ha aumentado a 100,000. https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["Vea cómo mover archivos con Data Sense"].

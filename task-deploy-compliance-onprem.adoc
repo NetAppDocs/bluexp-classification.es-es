@@ -160,7 +160,7 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 +
 ** Docker Engine versión 19.3.1 o posterior. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^].
 +
-https://youtu.be/H1WS_-85pWA["Vea este vídeo"] Para obtener una demostración rápida de la instalación de Docker en CentOS.
+https://youtu.be/Ogoufel1q6c["Vea este vídeo"^] Para obtener una demostración rápida de la instalación de Docker en CentOS.
 
 ** Python 3 versión 3.6 o posterior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
 
@@ -305,7 +305,7 @@ NOTE: La clasificación de BlueXP no puede analizar los buckets de S3, Azure Net
 
 Revise los requisitos y siga estos pasos al instalar el software de clasificación de BlueXP en un único host local.
 
-https://youtu.be/gE-vrBLSJqw["Vea este vídeo"] Para ver cómo instalar la clasificación de BlueXP.
+https://youtu.be/rFpmekdbORc["Vea este vídeo"^] Para ver cómo instalar la clasificación de BlueXP.
 
 Tenga en cuenta que todas las actividades de instalación se registran al instalar la clasificación de BlueXP. Si tiene algún problema durante la instalación, puede ver el contenido del registro de auditoría de la instalación. Está escrito en `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-file["Consulte más detalles aquí"].
 
@@ -345,7 +345,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["Una captura de pantalla don
 . Aparece el cuadro de diálogo _Deploy Data Sense on local_. Copie el comando proporcionado (por ejemplo: `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`) y péguela en un archivo de texto para que pueda usarlo más tarde. A continuación, haga clic en *Cerrar* para descartar el cuadro de diálogo.
 . En el equipo host, escriba el comando que copió y luego siga una serie de avisos, o bien puede proporcionar el comando completo incluyendo todos los parámetros necesarios como argumentos de línea de comandos.
 +
-Tenga en cuenta que el instalador realiza una comprobación previa para asegurarse de que el sistema y los requisitos de red están en su lugar para una instalación correcta. https://youtu.be/UZtn_I0e1Ls["Vea este vídeo"] para comprender los mensajes e implicaciones de comprobación previa.
+Tenga en cuenta que el instalador realiza una comprobación previa para asegurarse de que el sistema y los requisitos de red están en su lugar para una instalación correcta. https://youtu.be/_RCYpuLXiV0["Vea este vídeo"^] para comprender los mensajes e implicaciones de comprobación previa.
 
 +
 [cols="50a,50"]

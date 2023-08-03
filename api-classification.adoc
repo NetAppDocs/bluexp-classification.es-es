@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: api-classification.html 
+keywords: api, apis, rest, restful, authorization, classification, data sense, swagger, body, header, list apis 
+summary: Las funcionalidades de clasificación de BlueXP que están disponibles en la interfaz de usuario web también están disponibles en la API de Swagger. 
+---
+= API de clasificación de BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las funcionalidades de clasificación de BlueXP que están disponibles en la interfaz de usuario web también están disponibles en la API de Swagger.
+
+Hay cuatro categorías definidas en la clasificación de BlueXP que se corresponden con las pestañas de la interfaz de usuario:
+
+* Investigación
+* Cumplimiento de normativas
+* Gobernanza
+* Configuración
+
+
+Las API de la documentación de Swagger te permiten buscar, agregar datos, realizar un seguimiento de tus escaneos y crear acciones como copiar, mover y otras.
+
+
+
+== Descripción general
+
+La API le permite realizar las siguientes funciones:
+
+* Información de exportación
++
+** Todo lo que está disponible en la interfaz de usuario se puede exportar a través de la API (con la excepción de los informes)
+** Los datos se exportan en formato JSON (fácil de analizar y enviar a aplicaciones de 3rd partes, como Splunk).
+
+
+* Cree consultas utilizando las sentencias AND y OR, incluya y excluya información y mucho más.
++
+Por ejemplo, puede localizar archivos _sin_ Información personal identificable específica (PII) (funcionalidad no disponible en la interfaz de usuario). También puede excluir campos específicos para la operación de exportación.
+
+* Realice acciones
++
+** Actualice las credenciales de CIFS
+** Ver y cancelar acciones
+** Vuelva a explorar los directorios
+
+
+
+
+La API es segura y utiliza el mismo método de autenticación que la interfaz de usuario. Puede encontrar información sobre la autenticación en: https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html[]
+
+
+
+== Acceder a la referencia de API de Swagger
+
+Para entrar en Swagger, necesitarás la dirección IP de tu instancia de clasificación de BlueXP. En el caso de una puesta en marcha de cloud, utilizará la dirección IP pública. Entonces tendrás que entrar en este punto final:
+
+https://<classification_ip>/documentation[]
