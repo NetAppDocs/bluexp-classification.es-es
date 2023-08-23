@@ -55,11 +55,12 @@ Tenga en cuenta que la clasificación de BlueXP no puede extraer permisos ni la 
 ** Para CIFS, puertos 139 y 445.
 
 
-* Necesitará la lista de recursos compartidos que desea añadir en el formato `<host_name>:/<share_path>`. Puede introducir los recursos compartidos individualmente o proporcionar una lista separada por líneas de los recursos compartidos de archivos que desea escanear.
+* Puede agregar un recurso compartido DFS (sistema de archivos distribuidos) como un recurso compartido de CIFS normal. Sin embargo, como la clasificación de BlueXP no sabe que el recurso compartido se crea en varios servidores o volúmenes combinados como un único recurso compartido de CIFS, puede que reciba errores de permiso o conectividad sobre el recurso compartido cuando el mensaje solo se aplica a una de las carpetas o recursos compartidos que está ubicada en un servidor o volumen diferente.
 * En el caso de los recursos compartidos CIFS (SMB), asegúrese de tener credenciales de Active Directory con acceso de lectura a los recursos compartidos. Se prefieren las credenciales de administrador en caso de que la clasificación de BlueXP deba analizar cualquier dato que requiera permisos elevados.
 +
 Si quieres asegurarte de que las «horas de último acceso» no cambian debido a los análisis de clasificación de BlueXP, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
 
+* Necesitará la lista de recursos compartidos que desea añadir en el formato `<host_name>:/<share_path>`. Puede introducir los recursos compartidos individualmente o proporcionar una lista separada por líneas de los recursos compartidos de archivos que desea escanear.
 
 
 

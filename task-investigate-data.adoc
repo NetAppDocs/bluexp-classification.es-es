@@ -279,9 +279,16 @@ TIP: Puede usar el valor "hash de archivo" que se proporciona en esta página e 
 
 El Informe de investigación de datos es una descarga del contenido filtrado de la página Investigación de datos.
 
-Puede guardar el informe en la máquina local como un archivo .CSV (que puede incluir hasta 5,000 filas de datos) o como un archivo .JSON que exporte a un recurso compartido NFS (que puede incluir un número ilimitado de filas). Si la clasificación de BlueXP es archivos de análisis (datos no estructurados), directorios (carpetas y recursos compartidos de archivos) o bases de datos (datos estructurados), puede haber hasta tres archivos de informes descargados.
+Puede guardar el informe en dos formatos diferentes:
 
+* Como un archivo .CSV para el equipo local; que puede incluir hasta 5.000 filas de datos.
+* Como archivo .JSON que se exporta a un recurso compartido NFS; que puede incluir hasta 100.000 filas de datos. Si hay más de 100.000 filas de datos, se crean archivos .JSON adicionales.
++
 Al exportar a un recurso compartido de archivos, asegúrese de que la clasificación de BlueXP tenga los permisos correctos para acceder a las exportaciones.
+
+
+
+Puede haber hasta tres archivos de informes descargados si la clasificación de BlueXP está analizando archivos (datos no estructurados), directorios (carpetas y recursos compartidos de archivos) y bases de datos (datos estructurados).
 
 
 
@@ -291,10 +298,10 @@ Al exportar a un recurso compartido de archivos, asegúrese de que la clasificac
 . En la página Data Investigation, haga clic en image:button_download.png["botón de descarga"] en la parte superior derecha de la página.
 . Seleccione si desea descargar un informe .CSV o un informe .JSON de los datos y haga clic en *Descargar informe*.
 +
-image:screenshot_compliance_investigation_report.png["Captura de pantalla de la página Informe de investigación de descargas con varias opciones."]
+Al seleccionar un informe .JSON, introduzca el nombre del recurso compartido NFS al que se descargará el informe con el formato `<host_name>:/<share_path>`.
 
 +
-Al seleccionar un informe .JSON, introduzca el nombre del recurso compartido NFS al que se descargará el informe con el formato `<host_name>:/<share_path>`.
+image:screenshot_compliance_investigation_report.png["Captura de pantalla de la página Informe de investigación de descargas con varias opciones."]
 
 
 
