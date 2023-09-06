@@ -20,6 +20,7 @@ Antes de leer más:
 
 * Si ya te has suscrito a la suscripción de pago por uso (PAYGO) de BlueXP en el mercado de tu proveedor de cloud, también te suscribirás automáticamente a la clasificación de BlueXP. No tendrá que volver a suscribirse.
 * La clasificación BYOL (bring-your-own-license) de BlueXP (Data Sense) es una licencia _flotante_ que puedes utilizar en todos los entornos de trabajo y orígenes de datos del espacio de trabajo que planeas analizar. Verás una suscripción activa en la cartera digital de BlueXP.
+* La cantidad de datos que se analizan se calcula en función del tamaño lógico de archivo, sin ninguna eficiencia del almacenamiento.
 
 
 link:concept-cloud-compliance.html#cost["Obtén más información sobre las licencias y los costes relacionados con la clasificación de BlueXP"].

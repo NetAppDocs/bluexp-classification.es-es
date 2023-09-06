@@ -248,6 +248,8 @@ Además, Puede hacer clic en el nombre de un usuario o un grupo y la página de 
 
 Puede ver si se están almacenando ficheros duplicados en los sistemas de almacenamiento. Esto resulta útil para identificar áreas en las que puede ahorrar espacio de almacenamiento. También puede ser útil asegurarse de que determinados archivos que tienen permisos específicos o información confidencial no se dupliquen innecesariamente en sus sistemas de almacenamiento.
 
+Todos los archivos (sin incluir las bases de datos) que son de 1 MB o más y que contienen información personal o personal confidencial, se comparan para ver si hay duplicados. Puedes usar los filtros de página de investigación “Tamaño de archivo” junto con “Duplicados” para ver qué archivos de un rango de tamaño determinado están duplicados en tu entorno.
+
 La clasificación de BlueXP usa tecnología de hash para determinar los archivos duplicados. Si algún archivo tiene el mismo código hash que otro archivo, podemos estar 100% seguros de que los archivos son duplicados exactos, incluso si los nombres de archivo son diferentes.
 
 Puede descargar la lista de archivos duplicados y enviarlos al administrador de almacenamiento para que puedan decidir qué archivos se pueden eliminar, si los hay. O usted puede link:task-managing-highlights.html#deleting-source-files["elimine el archivo"] usted mismo si está seguro de que una versión específica del archivo no es necesaria.
@@ -258,7 +260,7 @@ Puede descargar la lista de archivos duplicados y enviarlos al administrador de 
 
 Si desea obtener una lista de todos los archivos duplicados en los entornos de trabajo y los orígenes de datos que está analizando, puede utilizar el filtro llamado *duplicados > tiene duplicados* en la página Investigación de datos.
 
-Todos los archivos con duplicados de todos los tipos de archivo (sin incluir bases de datos), con un tamaño mínimo de 50 MB y/o que contengan información personal personal o confidencial, se mostrarán en la página de resultados.
+Todos los archivos duplicados se muestran en la página de resultados.
 
 
 
