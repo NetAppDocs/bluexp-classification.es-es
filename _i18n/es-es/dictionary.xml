@@ -891,7 +891,6 @@
   <block id="f761b4a4393e1a53850ec9f4dd420f50" category="paragraph"><block ref="f761b4a4393e1a53850ec9f4dd420f50" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11dfa7f8030ea34c4933fff6eaa19333" category="list-text">Haga clic en *asignar una etiqueta a este archivo* y, a continuación, seleccione la etiqueta.</block>
   <block id="5108557521189397e1f9be01f92633b0" category="paragraph">La etiqueta aparece en los metadatos del archivo.</block>
-  <block id="398b53642810a3ebb827ca64a7e031fe" category="paragraph">Para asignar una etiqueta AIP a varios archivos:</block>
   <block id="f26e9a93fd90f2481bfff0f8c4517da6" category="list-text">En el panel resultados de la investigación de datos, seleccione el archivo o los archivos que desea etiquetar.</block>
   <block id="4547ea9eb340b9b3af947472b935464f" category="inline-image-macro">Una captura de pantalla que muestra cómo seleccionar los archivos que desea etiquetar y el botón etiqueta en la página Investigación de datos.</block>
   <block id="82f4c85e0490488ae85ec5e3e8910f40" category="paragraph"><block ref="82f4c85e0490488ae85ec5e3e8910f40" category="inline-image-macro-rx" type="image"></block></block>
@@ -940,12 +939,10 @@
   <block id="c38adf84c9ff1f07a9abdc6fc5abfc96" category="paragraph">Puede asignar un usuario de BlueXP a un archivo específico, o a varios archivos, para que pueda ser responsable de cualquier acción de seguimiento que necesite realizar en el archivo. Esta funcionalidad se suele utilizar con la función para agregar etiquetas de estado personalizadas a un archivo.</block>
   <block id="640ddcfcbdd6fd24058616dfd813d30c" category="paragraph">Por ejemplo, puede tener un archivo que contiene ciertos datos personales que permiten a demasiados usuarios acceso de lectura y escritura (permisos abiertos). Así que podría asignar la etiqueta de estado "Cambiar permisos" y asignar este archivo al usuario "Joan Smith" para que puedan decidir cómo solucionar el problema. Cuando hayan solucionado el problema, podrían cambiar la etiqueta de estado a "completado".</block>
   <block id="931074f4d66344e7b9658958b6d87907" category="paragraph">Un filtro nuevo en la página Investigación le permite ver fácilmente todos los archivos que tienen la misma persona en el campo "asignado a".</block>
-  <block id="6f4326437137a604ca129e07fbf28447" category="paragraph">Para asignar un usuario a un único archivo:</block>
   <block id="a86a8c5ea91657b179c7c6639a2c33e7" category="list-text">Haga clic en el campo *asignado a* y seleccione el nombre de usuario.</block>
   <block id="a80ae116cfcf2ab82dcddbfc170be5b7" category="inline-image-macro">Captura de pantalla que muestra cómo asignar un usuario a un archivo en la página Investigación de datos.</block>
   <block id="412f0fb9ebd6475572b807f651180d22" category="paragraph"><block ref="412f0fb9ebd6475572b807f651180d22" category="inline-image-macro-rx" type="image"></block></block>
   <block id="608c20f332a7cdf1c8b13907f1cc490c" category="paragraph">El nombre de usuario aparece en los metadatos del archivo.</block>
-  <block id="8533d80dc327c1f01f502cb153b295dd" category="paragraph">Para asignar un usuario a varios archivos:</block>
   <block id="9d03854319e73cc41bd352adb5eb647e" category="list-text">En el panel resultados de la investigación de datos, seleccione el archivo o los archivos que desea asignar a un usuario.</block>
   <block id="ca614decc202c0a06868e70380a540ca" category="inline-image-macro">Una captura de pantalla que muestra cómo seleccionar los archivos que desea asignar a un usuario y el botón asignar a de la página Investigación de datos.</block>
   <block id="5771f928056682d86e2c8ac3c8a3ba87" category="paragraph"><block ref="5771f928056682d86e2c8ac3c8a3ba87" category="inline-image-macro-rx" type="image"></block></block>
@@ -3472,4 +3469,8 @@ Asegúrese de que el puerto 8080 está abierto para que pueda ver el progreso de
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">Clasificación de BlueXP utilizada para identificar los archivos duplicados solo cuando los archivos tenían 50 MB o más. Ahora se pueden identificar los archivos duplicados que comienzan con 1 MB. Puedes usar los filtros de página de investigación “Tamaño de archivo” junto con “Duplicados” para ver qué archivos de un determinado tamaño están duplicados en tu entorno.</block>
   <block id="a0b0397888c391cefadbe3fa028a49bc" category="list-text">Para seleccionar todos los archivos de todas las páginas, active la casilla de la fila de título (<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>) y, a continuación, en el mensaje emergente <block ref="6d073c59586864da957e4fe8e0338e10" category="inline-image-macro-rx" type="image"></block>, Haga clic en *Seleccionar todos los elementos de la lista (xxx elementos)*.</block>
   <block id="b28003dc3eea16791b3379012ffb1993" category="paragraph">Puede aplicar etiquetas a un máximo de 100.000 archivos a la vez.</block>
+  <block id="8b6c126d65d4a1501ecb5e4a7f296fa9" category="paragraph"><block ref="78a1f63a475eced077a3b4ccbdcfca4e" category="inline-link-rx"></block> Para ver cómo ejecutar el script de requisitos previos e interpretar los resultados.</block>
+  <block id="6558368ee6073deea643cc8c934764fc" category="paragraph">Siga estos pasos para asignar una etiqueta AIP a varios archivos. Tenga en cuenta que puede asignar una etiqueta AIP a un máximo de 20 archivos a la vez (una página en la interfaz de usuario).</block>
+  <block id="734926fafb1271c111d9404b81a2a40f" category="paragraph">Siga estos pasos para asignar un usuario a un único archivo.</block>
+  <block id="7cb00932323e74919350bd2ce54bb9db" category="paragraph">Siga estos pasos para asignar un usuario a varios archivos. Tenga en cuenta que puede asignar un usuario a un máximo de 20 archivos a la vez (una página en la interfaz de usuario).</block>
 </blocks>

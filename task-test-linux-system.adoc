@@ -214,6 +214,8 @@ BlueXP detecta los clústeres de ONTAP mediante HTTPS. Si utiliza directivas de 
 
 Sigue estos pasos para ejecutar el script de requisitos previos de clasificación de BlueXP.
 
+https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["Vea este vídeo"^] Para ver cómo ejecutar el script de requisitos previos e interpretar los resultados.
+
 .Lo que necesitará
 * Compruebe que su sistema Linux cumple con el <<Verifique los requisitos del host,requisitos del host>>.
 * Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine y Python 3).

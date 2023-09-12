@@ -125,7 +125,7 @@ La etiqueta aparece en los metadatos del archivo.
 
 
 
-Para asignar una etiqueta AIP a varios archivos:
+Siga estos pasos para asignar una etiqueta AIP a varios archivos. Tenga en cuenta que puede asignar una etiqueta AIP a un máximo de 20 archivos a la vez (una página en la interfaz de usuario).
 
 .Pasos
 . En el panel resultados de la investigación de datos, seleccione el archivo o los archivos que desea etiquetar.
@@ -269,7 +269,7 @@ Tenga en cuenta que el nombre de usuario no se añade al archivo como parte de l
 
 Un filtro nuevo en la página Investigación le permite ver fácilmente todos los archivos que tienen la misma persona en el campo "asignado a".
 
-Para asignar un usuario a un único archivo:
+Siga estos pasos para asignar un usuario a un único archivo.
 
 .Pasos
 . En el panel resultados de la investigación de datos, haga clic en image:button_down_caret.png["signo de intercalación descendente"] para que el archivo expanda los detalles de metadatos del archivo.
@@ -282,7 +282,7 @@ El nombre de usuario aparece en los metadatos del archivo.
 
 
 
-Para asignar un usuario a varios archivos:
+Siga estos pasos para asignar un usuario a varios archivos. Tenga en cuenta que puede asignar un usuario a un máximo de 20 archivos a la vez (una página en la interfaz de usuario).
 
 .Pasos
 . En el panel resultados de la investigación de datos, seleccione el archivo o los archivos que desea asignar a un usuario.
