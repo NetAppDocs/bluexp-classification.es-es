@@ -61,7 +61,6 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 +
 *** Red Hat Enterprise Linux versiones 7,8 y 7,9: La versión del kernel de Linux debe ser 4,0 o superior
 *** CentOS versión 7,8 y 7,9: La versión del kernel de Linux debe ser 4,0 o superior
-*** Rocky Linux 9 (requiere una versión de clasificación de BlueXP 1,24 o posterior)
 *** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
 
 

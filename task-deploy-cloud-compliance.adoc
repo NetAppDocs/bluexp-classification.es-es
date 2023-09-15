@@ -204,19 +204,7 @@ Tenga en cuenta que cuando implemente la clasificación de BlueXP desde un conec
 image:screenshot_cloud_compliance_deploy_start.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
 
 . Haga clic en *Activar detección de datos*.
-+
-image:screenshot_cloud_compliance_deploy_cloud_aws.png["Una captura de pantalla de cómo seleccionar el botón para implementar la clasificación de BlueXP en la nube."]
-
 . En la página _Installation_, haga clic en *deploy > Deploy* para utilizar el tamaño de instancia "grande" e iniciar el asistente de implementación de la nube.
-+
-También puede hacer clic en *desplegar > Configuración* para elegir entre dos tipos de instancia más pequeños si no tiene muchos datos para escanear. Esto puede suponer un ahorro en costes del cloud cuando se utiliza una instancia más pequeña. A continuación se muestra un tamaño de recurso "mediano".
-
-+
-A continuación, haga clic en *implementar* para iniciar el asistente de implementación de la nube.
-
-+
-image:screenshot_cloud_deploy_resource_size.png["Una captura de pantalla de la página de implementación para elegir el tamaño de la instancia en la que se implementará la clasificación de BlueXP."]
-
 . El asistente muestra el progreso a medida que avanza por los pasos de implementación. Se detendrá y pedirá información si se produce algún problema.
 +
 image:screenshot_cloud_compliance_wizard_start.png["Una captura de pantalla del asistente de clasificación de BlueXP para implementar una nueva instancia."]
