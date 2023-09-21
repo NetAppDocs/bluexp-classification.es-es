@@ -37,7 +37,7 @@ La clasificación de BlueXP recopila ciertos metadatos al realizar análisis de 
 |===
 [NOTE]
 ====
-* La clasificación de BlueXP no extrae el «tiempo de última vez que se accedió» de los siguientes orígenes de datos: SharePoint Online, SharePoint on-premises (SharePoint Server), OneDrive, Google Drive y Amazon S3.
+* La clasificación de BlueXP no extrae el «tiempo de último acceso» de los siguientes orígenes de datos: SharePoint Online, SharePoint on-premises (SharePoint Server), OneDrive, Google Drive y Amazon S3, y bases de datos.
 * Las versiones anteriores del sistema operativo Windows (por ejemplo, Windows 7 y Windows 8) desactivan la recopilación del atributo de tiempo de último acceso de forma predeterminada porque puede afectar al rendimiento del sistema. Cuando no se recopila este atributo, se afectará el análisis de clasificación de BlueXP que se basa en el «tiempo de último acceso». Puede habilitar la recopilación de la última hora de acceso en estos sistemas Windows antiguos si es necesario.
 
 

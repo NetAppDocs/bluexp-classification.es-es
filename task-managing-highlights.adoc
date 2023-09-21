@@ -205,11 +205,11 @@ Tenga en cuenta que algunas de las operaciones de copia y sincronización habitu
 
 == Mover archivos de origen a un recurso compartido NFS
 
-Puede mover los archivos de origen que la clasificación de BlueXP esté analizando a cualquier recurso compartido NFS. La unidad compartida de NFS no necesita integrarse con la clasificación de BlueXP (consulte link:task-scanning-file-shares.html["Analizando recursos compartidos de archivos"]).
+Puede mover los archivos de origen que la clasificación de BlueXP esté analizando a cualquier recurso compartido NFS. La unidad de NFS no es necesario integrar con la clasificación de BlueXP.
 
 De manera opcional, puede dejar un archivo de rastro en la ubicación del archivo movido. Un archivo de rastro ayuda a los usuarios a comprender por qué se trasladó un archivo desde su ubicación original. Para cada archivo movido, el sistema crea un archivo de rastro en la ubicación de origen llamada `<filename>-breadcrumb-<date>.txt`. Puede añadir texto al cuadro de diálogo que se añadirá al archivo de rastro para indicar la ubicación donde se trasladó el archivo y el usuario que trasladó el archivo.
 
-Si existe un archivo con el mismo nombre en la ubicación de destino, el archivo no se moverá.
+Tenga en cuenta que la estructura de subdirectorios del archivo de origen se vuelve a crear en el recurso compartido de destino cuando se mueve el archivo, de modo que es más fácil entender desde dónde se movió el archivo. Si existe un archivo con el mismo nombre en la ubicación de destino, el archivo no se moverá.
 
 
 TIP: No se pueden mover los archivos que residen en las bases de datos.

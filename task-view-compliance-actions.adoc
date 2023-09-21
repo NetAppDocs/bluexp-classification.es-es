@@ -16,7 +16,7 @@ summary: Cuando ejecuta una acción desde el panel de resultados de la investiga
 [role="lead"]
 Cuando ejecuta una acción asincrónica desde el panel de resultados de la investigación en muchos archivos, por ejemplo, al mover o eliminar archivos 100, el proceso puede tardar algún tiempo. Puede supervisar el estado de estas acciones en el panel _Action Status_ para saber cuándo se ha aplicado a todos los archivos.
 
-Esto permite ver las acciones que se completaron correctamente, las que están en curso en ese momento y las que han fallado para poder diagnosticar y corregir cualquier problema.
+Esto permite ver las acciones que se completaron correctamente, las que están en curso en ese momento y las que han fallado para poder diagnosticar y corregir cualquier problema. Tenga en cuenta que las operaciones cortas que se completan rápidamente, como mover un único archivo, no aparecen en el panel Estado de acciones.
 
 El estado puede ser:
 
