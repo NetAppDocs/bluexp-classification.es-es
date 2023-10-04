@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy cloud BlueXP classification, cloud compliance access, compliance, on-premises, linux, test linux system 
+keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman 
 summary: Antes de instalar manualmente la clasificación de BlueXP en un host Linux, puede ejecutar un script en el host para comprobar que haya todos los requisitos previos para instalar la clasificación de BlueXP. Puede ejecutar este script en un host Linux de su red o en un host Linux de la nube. El host puede conectarse a Internet, o el host puede residir en un sitio que no tenga acceso a Internet. 
 ---
 = Compruebe que su host Linux esté listo para instalar la clasificación de BlueXP
@@ -111,6 +111,17 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 *** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
 
 
+** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,26 o posterior:
++
+*** Red Hat Enterprise Linux versiones 9,0, 9,1 y 9,2
++
+Tenga en cuenta que las siguientes funciones no son compatibles actualmente con RHEL 9.x:
+
++
+**** Instalación en un sitio oscuro
+**** Escaneo distribuido; utilizando un nodo de escáner maestro y nodos de escáner remoto
+
+
 
 
 
@@ -124,6 +135,7 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 +
 https://youtu.be/Ogoufel1q6c["Vea este vídeo"^] Para obtener una demostración rápida de la instalación de Docker en CentOS.
 
+*** Podman versión 4 o superior. Para instalar Podman, actualice los paquetes del sistema (`sudo yum update -y`) Y, a continuación, instale Podman (`sudo yum install podman -y`).
 
 
 ** Python versión 3,6 o superior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
@@ -150,7 +162,7 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-Tenga en cuenta que debe reiniciar Docker cada vez que habilite o actualice `firewalld` configuración.
+Tenga en cuenta que debe reiniciar Docker o Podman cada vez que habilite o actualice `firewalld` configuración.
 
 
 
@@ -217,7 +229,7 @@ https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["Vea este vídeo"^] Para ver c�
 
 .Lo que necesitará
 * Compruebe que su sistema Linux cumple con el <<Verifique los requisitos del host,requisitos del host>>.
-* Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine y Python 3).
+* Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine o Podman y Python 3).
 * Asegúrese de tener privilegios de usuario raíz en el sistema Linux.
 
 

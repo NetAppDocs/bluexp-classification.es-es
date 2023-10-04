@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman 
 summary: Completa unos pasos para instalar la clasificación de BlueXP en un host Linux en tu red o en un host Linux en la nube que tenga acceso a Internet. Deberá implementar el host Linux manualmente en su red o en el cloud como parte de esta instalación. 
 ---
 = Instala la clasificación de BlueXP en un host que tenga acceso a Internet
@@ -156,6 +156,17 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 *** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
 
 
+** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,26 o posterior:
++
+*** Red Hat Enterprise Linux versiones 9,0, 9,1 y 9,2
++
+Tenga en cuenta que las siguientes funciones no son compatibles actualmente con RHEL 9.x:
+
++
+**** Instalación en un sitio oscuro
+**** Escaneo distribuido; utilizando un nodo de escáner maestro y nodos de escáner remoto
+
+
 
 
 
@@ -169,6 +180,7 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 +
 https://youtu.be/Ogoufel1q6c["Vea este vídeo"^] Para obtener una demostración rápida de la instalación de Docker en CentOS.
 
+*** Podman versión 4 o superior. Para instalar Podman, actualice los paquetes del sistema (`sudo yum update -y`) Y, a continuación, instale Podman (`sudo yum install podman -y`).
 
 
 ** Python versión 3,6 o superior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
@@ -320,7 +332,7 @@ Tenga en cuenta que todas las actividades de instalación se registran al instal
 
 .Lo que necesitará
 * Compruebe que su sistema Linux cumple con el <<Prepare el sistema host Linux,requisitos del host>>.
-* Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine y Python 3).
+* Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine o Podman y Python 3).
 * Asegúrese de tener privilegios de usuario raíz en el sistema Linux.
 * Si utiliza un proxy para acceder a Internet:
 +
@@ -450,7 +462,7 @@ Seguirás estos pasos para instalar nodos adicionales de escáner de clasificaci
 
 .Lo que necesitará
 * Compruebe que todos los sistemas Linux para los nodos del escáner cumplen con el <<Prepare el sistema host Linux,requisitos del host>>.
-* Compruebe que los sistemas tienen instalados los dos paquetes de software de requisitos previos (Docker Engine y Python 3).
+* Compruebe que los sistemas tienen instalados los dos paquetes de software de requisitos previos (Docker Engine o Podman y Python 3).
 * Asegúrese de tener privilegios de usuario raíz en los sistemas Linux.
 * Compruebe que su entorno cumple con las necesidades <<Habilita el acceso a Internet saliente desde la clasificación de BlueXP,permisos y conectividad>>.
 * Debe tener las direcciones IP de los hosts del nodo Scanner que desea añadir.
@@ -495,7 +507,7 @@ firewall-cmd --permanent --add-port=4789/udp
 firewall-cmd --reload
 ....
 +
-Tenga en cuenta que debe reiniciar Docker cada vez que habilite o actualice `firewalld` configuración.
+Tenga en cuenta que debe reiniciar Docker o Podman cada vez que habilite o actualice `firewalld` configuración.
 
 
 

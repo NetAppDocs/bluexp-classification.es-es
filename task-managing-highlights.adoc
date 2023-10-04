@@ -217,8 +217,9 @@ TIP: No se pueden mover los archivos que residen en las bases de datos.
 .Requisitos
 * Debe tener el rol Administrador de cuentas o Administrador de área de trabajo para mover archivos.
 * Los archivos de origen se pueden ubicar en los siguientes orígenes de datos: ONTAP en las instalaciones, Cloud Volumes ONTAP, Azure NetApp Files, recursos compartidos de archivos y SharePoint Online.
-* Para mover archivos, es necesario que el recurso compartido de NFS permita el acceso desde la dirección IP de la instancia de clasificación de BlueXP.
 * Puede mover un máximo de 15 millones de archivos al mismo tiempo.
+* Solo se mueven los archivos de 50 MB o menos.
+* El recurso compartido de NFS de destino debe permitir el acceso desde la dirección IP de la instancia de clasificación de BlueXP.
 
 
 .Pasos

@@ -64,6 +64,17 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 *** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
 
 
+** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,26 o posterior:
++
+*** Red Hat Enterprise Linux versiones 9,0, 9,1 y 9,2
++
+Tenga en cuenta que las siguientes funciones no son compatibles actualmente con RHEL 9.x:
+
++
+**** Instalación en un sitio oscuro
+**** Escaneo distribuido; utilizando un nodo de escáner maestro y nodos de escáner remoto
+
+
 
 
 
@@ -77,6 +88,7 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 +
 https://youtu.be/Ogoufel1q6c["Vea este vídeo"^] Para obtener una demostración rápida de la instalación de Docker en CentOS.
 
+*** Podman versión 4 o superior. Para instalar Podman, actualice los paquetes del sistema (`sudo yum update -y`) Y, a continuación, instale Podman (`sudo yum install podman -y`).
 
 
 ** Python versión 3,6 o superior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
