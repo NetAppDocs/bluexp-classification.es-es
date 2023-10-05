@@ -96,7 +96,7 @@ Utilizarás la página de la cartera digital de BlueXP en BlueXP para gestionar 
 
 Después de comprar tu licencia de clasificación de BlueXP (Data Sense), activa la licencia en BlueXP introduciendo el número de serie de la clasificación de BlueXP y la cuenta de NSS o cargando el archivo de licencia NLF. Los pasos a continuación muestran cómo obtener el archivo de licencia de NLF si planea utilizar ese método.
 
-Si has implementado la clasificación de BlueXP en un host de un sitio local que no tenga acceso a Internet, necesitarás obtener el archivo de licencia de un sistema conectado a Internet. La activación de la licencia mediante el número de serie y la cuenta de NSS no está disponible para las instalaciones de sitios oscuros.
+Si has implementado la clasificación de BlueXP en un host de un sitio local que no tiene acceso a Internet, lo que significa que has implementado el conector de BlueXP en https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["modo privado"^], necesitará obtener el archivo de licencia de un sistema conectado a internet. La activación de la licencia mediante el número de serie y la cuenta de NSS no está disponible para las instalaciones de sitios oscuros.
 
 .Antes de empezar
 Antes de comenzar, necesitará tener la siguiente información:
@@ -107,7 +107,7 @@ Busque este número en su pedido de ventas o póngase en contacto con el equipo 
 
 * ID de cuenta de BlueXP
 +
-Puede encontrar su ID de cuenta de BlueXP seleccionando el menú desplegable *cuenta* de la parte superior de BlueXP y, a continuación, haciendo clic en *Administrar cuenta* junto a su cuenta. Su ID de cuenta se encuentra en la ficha Descripción general.
+Puede encontrar su ID de cuenta de BlueXP seleccionando el menú desplegable *cuenta* de la parte superior de BlueXP y, a continuación, haciendo clic en *Administrar cuenta* junto a su cuenta. Su ID de cuenta se encuentra en la ficha Descripción general. Para sitios de modo privado sin acceso a Internet, utilice *CUENTA-DARKSITE1*.
 
 
 

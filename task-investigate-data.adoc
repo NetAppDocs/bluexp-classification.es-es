@@ -329,6 +329,7 @@ El *Informe de datos de archivos no estructurados* incluye la siguiente informac
 * Hora de creación
 * Última modificación
 * Último acceso
+* Permisos abiertos
 * Propietario del archivo
 * Categoría
 * Información personal
