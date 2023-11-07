@@ -3479,4 +3479,8 @@ Asegúrese de que el puerto 8080 está abierto para que pueda ver el progreso de
   <block id="74246010013353726bd9ff99866fa7d4" category="section-title">Compatibilidad con las instalaciones on-premises de la clasificación de BlueXP en la versión 9 de RHEL</block>
   <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linux, las versiones 8 y 9 no son compatibles con el motor Docker; se requería para la instalación de la clasificación de BlueXP. Ahora admitimos la instalación de clasificación de BlueXP en RHEL 9,0, 9,1 y 9,2 mediante Podman versión 4 o posterior como infraestructura de contenedores. Si tu entorno requiere el uso de las versiones más recientes de RHEL, ahora puedes instalar la clasificación de BlueXP (versión 1,26 o posterior) cuando utilizas Podman.</block>
   <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">En este momento, no admitimos instalaciones de sitios oscuros ni entornos de análisis distribuidos (con nodos de escáner maestro y remoto) cuando se usa RHEL 9.x.</block>
+  <block id="abff2804f60c6da51fe02e78167abad1" category="section-title">6 de noviembre (versión 1.26.3)</block>
+  <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">Los siguientes problemas se han solucionado en esta versión</block>
+  <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">Se ha corregido una inconsistencia al presentar el número de archivos escaneados por el sistema en los paneles de control.</block>
+  <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Se ha mejorado el comportamiento de escaneo al manejar e informar sobre archivos y directorios con caracteres especiales en el nombre y los metadatos.</block>
 </blocks>

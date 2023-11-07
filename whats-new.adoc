@@ -18,6 +18,18 @@ Descubre las novedades en la clasificación de BlueXP.
 
 
 
+== 6 de noviembre (versión 1.26.3)
+
+
+
+=== Los siguientes problemas se han solucionado en esta versión
+
+* Se ha corregido una inconsistencia al presentar el número de archivos escaneados por el sistema en los paneles de control.
+* Se ha mejorado el comportamiento de escaneo al manejar e informar sobre archivos y directorios con caracteres especiales en el nombre y los metadatos.
+
+
+
+
 == 4 de octubre (versión 1,26)
 
 
