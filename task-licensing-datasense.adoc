@@ -27,13 +27,21 @@ link:concept-cloud-compliance.html#cost["Obtén más información sobre las lice
 
 
 
-== Usa una suscripción PAYGO de clasificación de BlueXP
+== prueba gratuita de 30 días
 
-Las suscripciones de pago por uso del mercado de su proveedor de cloud permiten usar los sistemas Cloud Volumes ONTAP y muchos servicios de datos cloud, como la clasificación de BlueXP.
+Está disponible una prueba gratuita de 30 días para hasta 1 TB de datos que analiza la clasificación de BlueXP en un espacio de trabajo de BlueXP. Tendrá que comprar una licencia BYOL de NetApp o un registro para obtener una suscripción desde el mercado del proveedor de cloud para seguir escaneando los datos después de ese momento.
 
 Puede suscribirse en cualquier momento y no se le cobrará hasta que finalice la prueba de 30 días o la cantidad de datos supere 1 TB. Siempre puedes ver la cantidad total de datos que se analizan en el Panel de gobernanza de clasificación de BlueXP. Y el botón _Subscribe Now_ facilita la suscripción cuando esté listo.
 
 image:screenshot_compliance_subscribe.png["Una captura de pantalla que muestra la cantidad de datos que se están analizando y el botón Suscribirse para suscribirse al servicio."]
+
+
+
+== Usa una suscripción PAYGO de clasificación de BlueXP
+
+Las suscripciones de pago por uso desde el mercado de su proveedor de cloud permiten utilizar las licencias para usar los sistemas Cloud Volumes ONTAP y muchos servicios BlueXP, como la clasificación de BlueXP. Pagarás a tu proveedor de nube por la cantidad de datos que se analiza la clasificación de BlueXP por horas con una única suscripción.
+
+La suscripción garantiza que no se produzca ninguna interrupción en el servicio una vez que finalice la prueba gratuita. Cuando finalice la prueba, se le cobrará cada hora según la cantidad de datos que esté escaneando. No se le cobrará por su suscripción durante su prueba gratuita.
 
 .Pasos
 Un usuario que tenga la función _Account Admin_ debe completar estos pasos.
@@ -42,23 +50,23 @@ Un usuario que tenga la función _Account Admin_ debe completar estos pasos.
 +
 image:screenshot_settings_icon.gif["Una captura de pantalla del banner superior derecho de BlueXP donde puede seleccionar el icono Configuración."]
 
-. Busque las credenciales de AWS Instance Profile, Azure Managed Service Identity o Google Project.
+. Haga clic en *Credenciales* y, a continuación, busque las credenciales para el perfil de instancia de AWS, la identidad de servicio gestionado de Azure o Google Project.
 +
 La suscripción se debe agregar al perfil de instancia, la identidad de servicio gestionado o Google Project. La carga no funcionará de otro modo.
 
 +
-Si ya tiene una suscripción a BlueXP (que se muestra a continuación para AWS), entonces está preparado, no hay nada más que hacer.
+Si ya tienes una suscripción a BlueXP (como se muestra a continuación para AWS), entonces ya estás todo listo: No hay nada más que tengas que hacer.
 
 +
 image:screenshot_profile_subscription.gif["Captura de pantalla de la página credenciales que muestra el perfil de instancia con una suscripción activa."]
 
-. Si todavía no tiene una suscripción, pase el cursor sobre las credenciales, haga clic en el menú de acciones y haga clic en *Suscripción asociada*.
+. Si aún no tienes una suscripción, haz clic en el menú de acciones y haz clic en *Suscripción asociada*.
 +
 image:screenshot_add_subscription.gif["Una captura de pantalla del menú en la página credenciales. Muestra un botón para asociar una suscripción a las credenciales."]
 
 . Seleccione una suscripción existente y haga clic en *asociado*, o haga clic en *Agregar suscripción* y siga los pasos.
 +
-El siguiente vídeo muestra cómo asociar un https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Mercado AWS"^] Suscripción a una suscripción a AWS:
+El siguiente vídeo muestra cómo asociar un https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["Mercado AWS"^] Suscripción a una suscripción a AWS:
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]
@@ -68,10 +76,23 @@ El siguiente vídeo muestra cómo asociar un https://azuremarketplace.microsoft.
 +
 video::video_subscribing_azure.mp4[width=848,height=480]
 +
-El siguiente vídeo muestra cómo asociar un https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Mercado para GCP"^] Suscripción a una suscripción a GCP:
+El siguiente vídeo muestra cómo asociar un https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud Marketplace"^] Suscripción a una suscripción a GCP:
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
+
+
+
+
+== Utilizar un contrato anual
+
+Paga por la clasificación BlueXP cada año comprando un contrato anual. Están disponibles en plazos de 1, 2 o 3 años.
+
+Si tienes un contrato anual en un mercado, todo el análisis de datos de clasificación de BlueXP se cobrará en función de ese contrato. No se puede mezclar y combinar un contrato anual de mercado con una licencia propia.
+
+* AWS: https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["Vaya a la oferta de BlueXP Marketplace para obtener información sobre precios"^].
+* Azure: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["Vaya a la oferta de BlueXP Marketplace para obtener información sobre precios"^].
+* Google Cloud: Póngase en contacto con su representante de ventas de NetApp para adquirir un contrato anual. El contrato está disponible como oferta privada en Google Cloud Marketplace. Después de que NetApp comparta la oferta privada contigo, puedes seleccionar el plan anual al suscribirte en el mercado de Google Cloud durante la activación de la clasificación de BlueXP.
 
 
 
@@ -88,15 +109,15 @@ Si no tienes una licencia de clasificación de BlueXP, ponte en contacto con nos
 
 Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de clasificación de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
 
-Utilizarás la página de la cartera digital de BlueXP en BlueXP para gestionar las licencias de BYOL para la clasificación de BlueXP. Puede añadir licencias nuevas y actualizar las licencias existentes.
+Utilizarás la cartera digital de BlueXP para gestionar las licencias de BYOL para la clasificación de BlueXP. Puedes añadir nuevas licencias, actualizar las licencias existentes y ver el estado de la licencia desde la cartera digital de BlueXP.
 
 
 
 === Obtenga el archivo de licencia de clasificación de BlueXP
 
-Después de comprar tu licencia de clasificación de BlueXP (Data Sense), activa la licencia en BlueXP introduciendo el número de serie de la clasificación de BlueXP y la cuenta de NSS o cargando el archivo de licencia NLF. Los pasos a continuación muestran cómo obtener el archivo de licencia de NLF si planea utilizar ese método.
+Después de comprar tu licencia de clasificación de BlueXP (Data Sense), activa la licencia en BlueXP introduciendo el número de serie de la clasificación de BlueXP y la cuenta del sitio de soporte de NetApp (NSS) o cargando el archivo de licencia de NetApp (NLF). Los pasos a continuación muestran cómo obtener el archivo de licencia de NLF si planea utilizar ese método.
 
-Si has implementado la clasificación de BlueXP en un host de un sitio local que no tiene acceso a Internet, lo que significa que has implementado el conector de BlueXP en https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["modo privado"^], necesitará obtener el archivo de licencia de un sistema conectado a internet. La activación de la licencia mediante el número de serie y la cuenta de NSS no está disponible para las instalaciones de sitios oscuros.
+Si has implementado la clasificación de BlueXP en un host de un sitio local que no tiene acceso a Internet, lo que significa que has implementado el conector de BlueXP en https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["modo privado"^], necesitará obtener el archivo de licencia de un sistema conectado a internet. La activación de la licencia mediante el número de serie y la cuenta NSS no está disponible para instalaciones de modo privado.
 
 .Antes de empezar
 Antes de comenzar, necesitará tener la siguiente información:
@@ -118,7 +139,7 @@ Puede encontrar su ID de cuenta de BlueXP seleccionando el menú desplegable *cu
 image:screenshot_cloud_tiering_license_step1.gif["Captura de pantalla que muestra una tabla de licencias después de buscar por número de serie."]
 
 . En la columna *Clave de licencia*, haz clic en *Obtener archivo de licencia de NetApp*.
-. Introduce tu ID de inquilino (ID de cuenta de BlueXP) y haz clic en *Enviar* para descargar el archivo de licencia.
+. Introduzca su ID de cuenta de BlueXP (esto se denomina ID de inquilino en el sitio de soporte) y haga clic en *Enviar* para descargar el archivo de licencia.
 +
 image:screenshot_cloud_tiering_license_step2.gif["Una captura de pantalla que muestra el cuadro de diálogo obtener licencia donde se introduce el ID de inquilino y, a continuación, haga clic en Enviar para descargar el archivo de licencia."]
 
@@ -154,11 +175,11 @@ BlueXP añade la licencia para que tu servicio de clasificación de BlueXP esté
 
 === Actualizar una licencia BYOL de clasificación de BlueXP
 
-Si el plazo que tienes para la licencia se acerca a la fecha de caducidad o si la capacidad que tienes para la licencia está llegando al límite, se te notificará en la clasificación de BlueXP.
+Si el plazo que le otorga la licencia se acerca a la fecha de caducidad o si su capacidad con licencia está llegando al límite, se le notificará en la IU de clasificación.
 
 image:screenshot_services_license_expire_cc1.png["Una captura de pantalla que muestra una licencia que va a caducar en la página de clasificación de BlueXP."]
 
-Este estado también aparece en la cartera digital de BlueXP.
+Este estado también aparece en la cartera digital de BlueXP y en https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["Notificaciones"^].
 
 image:screenshot_services_license_expire_cc2.png["Una captura de pantalla que muestra una licencia que va a caducar en la página de la cartera digital de BlueXP."]
 
