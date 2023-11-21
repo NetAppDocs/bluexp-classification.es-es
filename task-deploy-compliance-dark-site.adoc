@@ -223,9 +223,13 @@ Debes asegurarte de que todos los puertos requeridos estén abiertos para la com
 | Tipo de conexión | Puertos | Descripción 
 
 
-| Conector Clasificación de <> BlueXP | 8080 (TCP), 6000 (TCP), 443 (TCP) Y 80 | El grupo de seguridad del Connector debe permitir el tráfico de entrada y salida a través de los puertos 6000 y 443 hacia y desde la instancia de clasificación de BlueXP.
+| Conector Clasificación de <> BlueXP | 8080 (TCP), 6000 (TCP), 443 (TCP) Y 80  a| 
+El grupo de seguridad del Connector debe permitir el tráfico de entrada y salida a través de los puertos 6000 y 443 hacia y desde la instancia de clasificación de BlueXP.
 
-Asegúrese de que el puerto 8080 está abierto para que pueda ver el progreso de la instalación en BlueXP. 
+* Se requiere el puerto 6000 para que la licencia BYOL de clasificación de BlueXP funcione en un sitio oscuro.
+* El puerto 8080 debería estar abierto para que puedas ver el progreso de la instalación en BlueXP.
+
+
 
 
 | Conector <> clúster ONTAP (NAS) | 443 (TCP)  a| 
