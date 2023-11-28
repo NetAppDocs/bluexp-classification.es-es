@@ -151,8 +151,8 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 +
 ** Los siguientes sistemas operativos requieren el uso del motor de contenedor Docker:
 +
-*** Red Hat Enterprise Linux versiones 7,8 y 7,9: La versión del kernel de Linux debe ser 4,0 o superior
-*** CentOS versión 7,8 y 7,9: La versión del kernel de Linux debe ser 4,0 o superior
+*** Red Hat Enterprise Linux versiones 7,8 y 7,9
+*** CentOS versión 7,8 y 7,9
 *** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
 
 
