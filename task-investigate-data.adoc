@@ -283,7 +283,7 @@ El Informe de investigación de datos es una descarga del contenido filtrado de 
 
 Puede guardar el informe en dos formatos diferentes:
 
-* Como un archivo .CSV para el equipo local; que puede incluir hasta 5.000 filas de datos.
+* Como un archivo .CSV para el equipo local; que puede incluir hasta 10.000 filas de datos.
 * Como archivo .JSON que se exporta a un recurso compartido NFS; que puede incluir hasta 100.000 filas de datos. Si hay más de 100.000 filas de datos, se crean archivos .JSON adicionales.
 +
 Al exportar a un recurso compartido de archivos, asegúrese de que la clasificación de BlueXP tenga los permisos correctos para acceder a las exportaciones.
