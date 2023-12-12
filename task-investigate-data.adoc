@@ -281,10 +281,16 @@ TIP: Puede usar el valor "hash de archivo" que se proporciona en esta página e 
 
 El Informe de investigación de datos es una descarga del contenido filtrado de la página Investigación de datos.
 
-Puede guardar el informe en dos formatos diferentes:
+El informe está disponible en dos formatos diferentes:
 
-* Como un archivo .CSV para el equipo local; que puede incluir hasta 10.000 filas de datos.
-* Como archivo .JSON que se exporta a un recurso compartido NFS; que puede incluir hasta 100.000 filas de datos. Si hay más de 100.000 filas de datos, se crean archivos .JSON adicionales.
+* Como archivo .CSV que se puede guardar en el equipo local.
++
+Este informe puede incluir un máximo de 10.000 filas de datos.
+
+* Como un archivo .JSON que se exporta a un recurso compartido NFS.
++
+Si hay más de 250.000 filas de datos, se crean archivos .JSON adicionales.
+
 +
 Al exportar a un recurso compartido de archivos, asegúrese de que la clasificación de BlueXP tenga los permisos correctos para acceder a las exportaciones.
 
@@ -322,18 +328,19 @@ El *Informe de datos de archivos no estructurados* incluye la siguiente informac
 * Tipo de ubicación
 * Nombre del entorno de trabajo
 * Repositorio de almacenamiento (por ejemplo, un volumen, un bloque, recursos compartidos)
-* Tipo de entorno de trabajo
+* Tipo de repositorio
 * Ruta del archivo
 * Tipo de archivo
-* Tamaño de archivo
+* Tamaño de archivo (en MB)
 * Hora de creación
 * Última modificación
 * Último acceso
-* Permisos abiertos
 * Propietario del archivo
 * Categoría
 * Información personal
 * Información personal confidencial
+* Permisos abiertos
+* Error de análisis de adquisición
 * Fecha de detección de eliminación
 +
 Una fecha de detección de eliminación identifica la fecha en la que se eliminó o movió el archivo. Esto le permite identificar cuándo se han movido los archivos confidenciales. Los archivos eliminados no forman parte del recuento de números de archivo que aparece en el panel o en la página Investigación. Los archivos solo aparecen en los informes CSV.
@@ -342,11 +349,11 @@ Una fecha de detección de eliminación identifica la fecha en la que se elimin�
 
 *Informe de datos de directorios no estructurados* incluye la siguiente información sobre sus carpetas y recursos compartidos de archivos:
 
-* Nombre del entorno de trabajo
-* Repositorio de almacenamiento (por ejemplo, una carpeta o archivos compartidos)
 * Tipo de entorno de trabajo
-* Ruta del archivo (nombre de directorio)
-* Propietario del archivo
+* Nombre del entorno de trabajo
+* Nombre del directorio
+* Repositorio de almacenamiento (por ejemplo, una carpeta o archivos compartidos)
+* Propietario del directorio
 * Hora de creación
 * Hora de detección
 * Última modificación
