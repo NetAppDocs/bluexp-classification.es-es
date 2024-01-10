@@ -18,6 +18,22 @@ Descubre las novedades en la clasificación de BlueXP.
 
 
 
+== 10 de enero (versión 1,27)
+
+
+
+=== Los resultados de la página de investigación ahora muestran el tamaño total además del número total de elementos
+
+Los resultados filtrados en la página de investigación ahora muestran el tamaño total de los elementos además del número total de archivos. Esto puede ayudar al mover archivos, eliminar archivos y más.
+
+
+
+=== Configurar IDs de grupo adicionales como abiertos para la organización
+
+Ahora puedes configurar los ID de grupo en NFS para que se consideren «abiertos a la organización» directamente en la clasificación de BlueXP si no se habían establecido inicialmente con ese permiso. Descubra cómo https://task-add-group-id-as-open["Agregar ID de grupo adicionales como abiertos a la organización"].
+
+
+
 == 6 de noviembre (versión 1.26.3)
 
 

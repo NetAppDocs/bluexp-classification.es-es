@@ -1,0 +1,24 @@
+= 
+:allow-uri-read: 
+
+
+Cuando se pone en marcha la clasificación de BlueXP en la nube, necesitas SSH para la instancia de clasificación de BlueXP. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:
+
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path_to_the_ssh_key> = ubicación de claves de autenticación ssh
+* <machine_user>.:
++
+** Para AWS: Utilice <ec2-user>
+** Para Azure: Utilice el usuario creado para la instancia de BlueXP
+** Para GCP: Utilice el usuario creado para la instancia de BlueXP
+
+
+* <datasense_ip> = dirección IP de la instancia de la máquina virtual
+
+
+Tenga en cuenta que deberá modificar las reglas entrantes del grupo de seguridad para acceder al sistema en la nube. Para obtener más información, consulte:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Reglas del grupo de seguridad en AWS"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Reglas de grupos de seguridad en Azure"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Reglas de firewall en Google Cloud"^]
+

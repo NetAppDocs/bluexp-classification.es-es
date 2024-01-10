@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-add-group-id-as-open.html 
+keywords: permissions, open to organization, file access 
+summary: 'Cuando los ID de grupo se adjuntan a archivos o carpetas en recursos compartidos de archivos NFS, definen los permisos para el archivo o la carpeta; por ejemplo, si están abiertos a la organización. Si algunos identificadores de grupo (GID) no se configuran inicialmente con el nivel de permiso «Abrir para organización», puede agregar ese permiso al GID para que todos los archivos y carpetas que tengan ese GID adjunto se consideren «abiertos a la organización».' 
+---
+= Definir IDs de grupo adicionales como abiertos a la organización
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cuando se adjuntan ID de grupo (GID) a archivos o carpetas en recursos compartidos de archivos NFS, definen los permisos para el archivo o la carpeta; por ejemplo, si están «abiertos a la organización». Si algunos identificadores de grupo (GID) no se configuran inicialmente con el nivel de permiso «Abrir para organización», puede agregar ese permiso al GID para que todos los archivos y carpetas que tengan ese GID adjunto se consideren «abiertos a la organización».
+
+Después de realizar este cambio y la clasificación de BlueXP vuelve a analizar los archivos y carpetas, todos los archivos y carpetas que tengan estos ID de grupo adjuntos mostrarán este permiso en la página Detalles de la investigación, y también aparecerán en los informes donde se muestran los permisos de archivo.
+
+Tienes que iniciar sesión en el sistema de clasificación de BlueXP para poder editar un archivo de configuración y ejecutar un script para utilizar esta funcionalidad.
+
+
+
+== Inicia sesión en el sistema de clasificación de BlueXP
+
+Cuando la clasificación de BlueXP está instalada en un equipo Linux en las instalaciones o en un equipo Linux implementado en la nube, puedes acceder al archivo de configuración y al script directamente.
+
+Cuando se pone en marcha la clasificación de BlueXP en la nube, necesitas SSH para la instancia de clasificación de BlueXP. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:
+
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path_to_the_ssh_key> = ubicación de claves de autenticación ssh
+* <machine_user>.:
++
+** Para AWS: Utilice <ec2-user>
+** Para Azure: Utilice el usuario creado para la instancia de BlueXP
+** Para GCP: Utilice el usuario creado para la instancia de BlueXP
+
+
+* <datasense_ip> = dirección IP de la instancia de la máquina virtual
+
+
+Tenga en cuenta que deberá modificar las reglas entrantes del grupo de seguridad para acceder al sistema en la nube. Para obtener más información, consulte:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Reglas del grupo de seguridad en AWS"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Reglas de grupos de seguridad en Azure"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Reglas de firewall en Google Cloud"^]
+
+
+
+
+== Agregue el permiso de apertura a la organización a los ID de grupo
+
+Debe tener los Núm.s de ID de grupo (GID) antes de iniciar esta tarea.
+
+.Pasos
+. En el sistema de clasificación de BlueXP, vaya a «/opt/netapp/config/custom_configuration» y abra el archivo «data_provider.yaml».
+. En la línea ORGANIZATION_GROUP_ids: [], agregue los IDs de grupo. Por ejemplo:
++
+ organization_group_ids: [1014, 1015, 21, 2021, 1013, 2020, 1018, 1019]
++
+No cambie nada más en este archivo.
+
+. Vaya a «/opt/netapp/Datasense» y ejecute el siguiente script:
++
+ update_data_providers_from_config_file.sh
++
+Este comando confirma los permisos de ID de grupo revisados en el motor de clasificación.
+
+
+
+Todos los escaneos posteriores de sus datos identificarán archivos o carpetas que tienen estos ID de grupo adjuntos como “abiertos a la organización”.
+
+Puede editar la lista de ID de grupo y eliminar cualquier ID de grupo que haya agregado en el pasado mediante estos mismos pasos. La lista revisada de ID de grupo se actualizará después de ejecutar el script para confirmar los cambios.
+
+Para ver la lista actual de ID de grupo que ha añadido a la clasificación de BlueXP, ejecute el siguiente comando en «/opt/netapp/Datasense»:
+
+ get_data_providers_configuration.sh
