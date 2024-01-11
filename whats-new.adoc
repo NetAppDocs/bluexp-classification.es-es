@@ -30,7 +30,7 @@ Los resultados filtrados en la página de investigación ahora muestran el tama�
 
 === Configurar IDs de grupo adicionales como abiertos para la organización
 
-Ahora puedes configurar los ID de grupo en NFS para que se consideren «abiertos a la organización» directamente en la clasificación de BlueXP si no se habían establecido inicialmente con ese permiso. Descubra cómo https://task-add-group-id-as-open["Agregar ID de grupo adicionales como abiertos a la organización"].
+Ahora puedes configurar los ID de grupo en NFS para que se consideren «abiertos a la organización» directamente en la clasificación de BlueXP si no se habían establecido inicialmente con ese permiso. Descubra cómo https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["Agregar ID de grupo adicionales como abiertos a la organización"].
 
 
 
