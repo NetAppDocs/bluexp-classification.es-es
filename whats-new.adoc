@@ -30,7 +30,7 @@ Los resultados filtrados en la página de investigación ahora muestran el tama�
 
 === Configurar IDs de grupo adicionales como abiertos para la organización
 
-Ahora puedes configurar los ID de grupo en NFS para que se consideren «abiertos a la organización» directamente en la clasificación de BlueXP si no se habían establecido inicialmente con ese permiso. Descubra cómo https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["Agregar ID de grupo adicionales como abiertos a la organización"].
+Ahora puede configurar los ID de grupo en NFS para que se consideren «abiertos a la organización» directamente desde la clasificación de BlueXP si el grupo no se había establecido inicialmente con ese permiso. Todos los archivos y carpetas que tengan estos ID de grupo adjuntos se mostrarán como abiertos a la organización en la página Detalles de la investigación. Descubra cómo https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["Agregar ID de grupo adicionales como abiertos a la organización"].
 
 
 
@@ -317,33 +317,3 @@ Se han agregado las siguientes mejoras para la instalación de detección de dat
 
 
 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Obtenga más información acerca de la instalación de Data Sense en un solo servidor host y en varios hosts"].
-
-
-
-== 13 de noviembre de 2022 (versión 1.17)
-
-
-
-=== Compatibilidad para analizar cuentas en las instalaciones de SharePoint
-
-Ahora, el sentido de los datos puede analizar tanto cuentas en línea de SharePoint como cuentas en las instalaciones de SharePoint (SharePoint Server). Si necesita instalar SharePoint en sus propios servidores, o en sitios sin acceso a Internet, ahora puede hacer que Data Sense analice los archivos de usuario en esas cuentas. https://docs.netapp.com/us-en/bluexp-classification/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["Leer más"^].
-
-
-
-=== Capacidad para volver a analizar varios directorios (carpetas o recursos compartidos)
-
-Ahora puede volver a analizar varios directorios (carpetas o recursos compartidos) inmediatamente para que los cambios se reflejen en el sistema. Esto le permite priorizar el reexamen de determinados datos antes de otros. https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["Consulte cómo volver a analizar un directorio"^].
-
-
-
-=== Posibilidad de añadir nodos de "escáner" locales adicionales para analizar orígenes de datos específicos
-
-Si ha instalado Data Sense en una ubicación local y necesita más potencia de procesamiento de análisis para analizar determinados orígenes de datos, puede añadir más nodos de "escáner" y asignarles datos de origen. Puede añadir los nodos del escáner inmediatamente después de instalar el nodo Manager, o bien puede añadir un nodo de escáner más adelante.
-
-Si es necesario, los nodos de escáner pueden instalarse en sistemas host que estén físicamente más cerca de los orígenes de datos que esté analizando. Cuanto más cerca esté el nodo del escáner de los datos, mejor será porque reduce la latencia de red tanto como sea posible mientras escanea datos. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["Consulte cómo instalar nodos de escáner para analizar orígenes de datos adicionales"^].
-
-
-
-=== Los instaladores en las instalaciones ahora realizan una comprobación previa antes de iniciar la instalación
-
-Al instalar Data Sense en un sistema Linux, el instalador comprueba si el sistema cumple todos los requisitos necesarios (CPU, RAM, capacidad, red, etc.) antes de iniciar la instalación real. Esto ayuda a detectar problemas *antes* usted pasa tiempo en la instalación.

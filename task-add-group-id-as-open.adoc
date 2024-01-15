@@ -18,7 +18,7 @@ Cuando se adjuntan ID de grupo (GID) a archivos o carpetas en recursos compartid
 
 Después de realizar este cambio y la clasificación de BlueXP vuelve a analizar los archivos y carpetas, todos los archivos y carpetas que tengan estos ID de grupo adjuntos mostrarán este permiso en la página Detalles de la investigación, y también aparecerán en los informes donde se muestran los permisos de archivo.
 
-Tienes que iniciar sesión en el sistema de clasificación de BlueXP para poder editar un archivo de configuración y ejecutar un script para utilizar esta funcionalidad.
+Para activar esta funcionalidad, debes iniciar sesión en el sistema de clasificación de BlueXP para poder editar un archivo de configuración y ejecutar un script.
 
 
 
