@@ -70,7 +70,7 @@ La clasificación de BlueXP funciona como parte de BlueXP y es compatible con AW
 
 === ¿La clasificación de BlueXP tiene una API REST y funciona con herramientas de terceros?
 
-BlueXP admite las funcionalidades de la API DE REST para sus servicios. Si BlueXP no es el punto preferido de gestión, servicios como la clasificación de BlueXP también se pueden usar a través de una API DE REST. Cada acción del usuario tiene una API REST que se puede integrar con sistemas de terceros.
+BlueXP admite las funcionalidades de la API DE REST para sus servicios. Si BlueXP no es el punto preferido de gestión, servicios como la clasificación de BlueXP también se pueden usar a través de una API DE REST. Cada acción del usuario tiene una API REST que se puede integrar con sistemas de terceros. Consulte link:api-classification.html["API de clasificación de BlueXP"^] para obtener más detalles.
 
 
 
@@ -178,6 +178,20 @@ link:task-managing-data-fusion.html["Leer más"^].
 
 
 
+=== ¿Qué sucede si la organización en niveles de datos está habilitada en sus volúmenes de ONTAP?
+
+Cuando la clasificación de BlueXP analiza volúmenes que tienen datos inactivos organizados en niveles en el almacenamiento de objetos, analiza todos los datos que hay en los discos locales y los datos inactivos organizados en niveles en el almacenamiento de objetos. Esto también es aplicable a productos que no son de NetApp que implementan la organización en niveles.
+
+El análisis no calienta los datos fríos: Permanecen inactivos y permanecen en el almacenamiento de objetos.
+
+
+
+=== ¿Se analizan copias Snapshot que residen en los volúmenes ONTAP?
+
+No La clasificación de BlueXP no analiza las copias Snapshot porque el contenido es idéntico al contenido del volumen.
+
+
+
 === ¿Puedo limitar la información de clasificación de BlueXP a usuarios específicos?
 
 Sí, la clasificación de BlueXP está totalmente integrada en BlueXP. Los usuarios de BlueXP sólo pueden ver información sobre los entornos de trabajo que pueden ver según sus privilegios de área de trabajo.
@@ -191,14 +205,6 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["Leer m
 === ¿Puede alguien acceder a los datos privados enviados entre mi navegador y la clasificación de BlueXP?
 
 No Los datos privados que se envíen entre su explorador y la instancia de clasificación de BlueXP se mantienen seguros gracias al cifrado integral, lo que significa que ni NetApp ni terceros podrán leerlos. La clasificación de BlueXP no compartirá datos ni resultados con NetApp a menos que solicites y apruebes el acceso.
-
-
-
-=== ¿Qué sucede si la organización en niveles de datos está habilitada en sus volúmenes de ONTAP?
-
-Cuando la clasificación de BlueXP analiza volúmenes que tienen datos inactivos organizados en niveles en el almacenamiento de objetos, analiza todos los datos que hay en los discos locales y los datos inactivos organizados en niveles en el almacenamiento de objetos. Esto también es aplicable a productos que no son de NetApp que implementan la organización en niveles.
-
-El análisis no calienta los datos fríos: Permanecen inactivos y permanecen en el almacenamiento de objetos.
 
 
 
