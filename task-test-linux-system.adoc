@@ -100,7 +100,7 @@ Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. 
 | /var/lib/docker | `rwx------` 
 
 
-| /user/lib/systemd/system | `rwxr-xr-x` 
+| /usr/lib/systemd/system | `rwxr-xr-x` 
 |===
 * *sistema operativo*:
 +

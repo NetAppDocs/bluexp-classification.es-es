@@ -1966,30 +1966,6 @@
   <block id="b243b08794c870ea91d13357c677102f" category="sidebar">Agregar identificadores de datos personales personalizados</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Referencia</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Novedades</block>
-  <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">Analice sus entornos de trabajo</block>
-  <block id="7a1ecd84a5a121cd176d1d7c8945c20b" category="sidebar">Volúmenes de Cloud Volumes ONTAP</block>
-  <block id="8d097e38d6920ece5917d57da5699e5c" category="sidebar">Volúmenes ONTAP en las instalaciones</block>
-  <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">Volúmenes de Azure NetApp Files</block>
-  <block id="fd2fd9101d9dde8ab7090da05f8117ff" category="sidebar">Amazon FSX para volúmenes ONTAP</block>
-  <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">Analizar otros orígenes de datos</block>
-  <block id="1dc03133d25c1924f8604133a6fa7f0a" category="sidebar">Cubos S3 genéricos</block>
-  <block id="3305adbdafef990b45e1b0ded7f5a486" category="sidebar">Ver detalles sobre sus datos</block>
-  <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">Permite ver los archivos que contienen información privada</block>
-  <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">Vea los archivos duplicados en su almacenamiento</block>
-  <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">Filtre los datos para ver archivos concretos</block>
-  <block id="ca60961cf2d876d600daca4a1ad60001" category="sidebar">Cree directivas para ver sus búsquedas principales</block>
-  <block id="514f916b25444f3ec0ab113c2706f83a" category="sidebar">Aplique etiquetas y propietarios a los archivos que necesiten atención</block>
-  <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="sidebar">Categorice los datos mediante etiquetas AIP</block>
-  <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">Agregue sus propios identificadores de datos personales personalizados</block>
-  <block id="503c49a3ccf62894992dc5b2f108ca21" category="sidebar">Copie los archivos de origen</block>
-  <block id="2987f20ce906ae32ec7e3e192413377f" category="sidebar">Mover archivos de origen</block>
-  <block id="865eee83e350aaa1f9bf0c9f0c4adef0" category="sidebar">Elimine los archivos de origen</block>
-  <block id="40af1406afc061038f5851961a636714" category="sidebar">Cree alertas por correo electrónico cuando encuentre datos no conformes</block>
-  <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">Responder a una solicitud de acceso de un sujeto de datos</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs y comunidad</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog de BlueXP</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Utilice opciones de soporte automático</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Cree un caso con el soporte de NetApp</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">En la página *Recursos*, elija una de las opciones disponibles en Soporte técnico:</block>
@@ -2965,9 +2941,6 @@
   <block id="3304fa5a3260dac4f8f51ddd7ca9e5f3" category="sidebar">Reduce la velocidad de exploración de clasificación de BlueXP</block>
   <block id="54892fa61b1eb6050fbd342fbf8e2218" category="sidebar">Quita las fuentes de datos de la clasificación de BlueXP</block>
   <block id="997bc9ee8834fdaee5b662f9a2bd743f" category="sidebar">Desinstala la clasificación de BlueXP</block>
-  <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">Instala la clasificación BlueXP en un host Linux mediante Internet</block>
-  <block id="c3e36333a4a6733ccd92dafc9d8c17b5" category="sidebar">Instala la clasificación de BlueXP on-premises sin Internet</block>
-  <block id="c0b7cbffdfa6fa18059367f2045ac22c" category="sidebar">Casos de uso de clasificación de BlueXP</block>
   <block id="44b48aa0d2158361e53832315034f513" category="paragraph">Por ejemplo, si desea realizar un seguimiento cuando se realiza algún cambio en los archivos de personal confidencial o en los archivos de nóminas, puede habilitar esta función en los volúmenes en los que residen estos archivos. A continuación, puede ver el registro de auditoría de acceso a archivos para ver si estos archivos se han modificado. Si se han cambiado, podrá ver el identificador de seguridad (SID) de la persona que realizó el cambio y cuándo se realizó el cambio.</block>
   <block id="c7f8db8434f3e3057bca29922b597e31" category="paragraph">La clasificación de BlueXP puede registrar eventos de acceso a archivos para archivos que residen en volúmenes de ONTAP en los siguientes orígenes de datos:</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX para ONTAP de NetApp</block>
@@ -3006,7 +2979,6 @@
   <block id="5cbcaeca0f98bea3f5714fbeb859b1f8" category="cell"><block ref="a39d05df186d1deb03343bf4f79e6b17" prefix="" category="inline-code"></block></block>
   <block id="2e1a4e3f55001820560b237188c70bc3" category="cell">/var/lib/docker</block>
   <block id="651ffe70d1da174ca6955ceb139ab71c" category="cell"><block ref="20218561600e990c68a725b6b98ae569" prefix="" category="inline-code"></block></block>
-  <block id="361e697d946a0a8473f2bda1979090c3" category="cell">/user/lib/systemd/system</block>
   <block id="9997b2ae11cbffd6fe1a6e9f683ed24a" category="paragraph">+ Si quieres asegurarte de que tus archivos “Tiempos de último acceso” no cambian por las exploraciones de clasificación de BlueXP, te recomendamos que el usuario tenga permisos de Atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.</block>
   <block id="ae4d468f55febeccb4eff973d9b635ff" category="inline-link-macro">Obtenga más información sobre los temas de datos aquí</block>
   <block id="1a7107cbf75ccf5399b80fbafd0ee649" category="cell">Introduzca el nombre completo o el identificador conocido de un sujeto de datos. <block ref="dbe06c006d2f67629a75e1ec088edbea" category="inline-link-macro-rx"></block>.</block>
@@ -3028,7 +3000,6 @@
   <block id="8a7af24665c107d42e27bf9f85872742" category="cell">También puede crear el comando completo por adelantado, proporcionando los parámetros de host y proxy necesarios:<block ref="3b4bbf213dadbeb10421530a3d8a245b" prefix=" " category="inline-code"></block></block>
   <block id="79dad5af8e7ba04bd45d58a3d10d4209" category="list-text">_Client_id_ = Identificador de cliente de conector (agregue el sufijo «Clientes» al ID de cliente que copió en los pasos de requisito previo)</block>
   <block id="800fbb2e9f1063caafe6917c236f24a6" category="paragraph">Por ejemplo, este comando añade 3 nodos de escáner:<block ref="ba1da14563d546c370f034861b50d8f8" prefix=" " category="inline-code"></block></block>
-  <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">Seminarios web de BlueXP</block>
   <block id="c1560b054493db03cae97adece148673" category="list-text"><block ref="c1560b054493db03cae97adece148673" category="inline-link-rx"></block></block>
   <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
   <block id="9d7d457b861dcdf8b4b7f28f3a120c36" category="list-text"><block ref="9d7d457b861dcdf8b4b7f28f3a120c36" category="inline-link-rx"></block></block>
@@ -3320,7 +3291,6 @@
   <block id="85b9386ed443776127e099931d73448a" category="list-text">Cuando se le solicite, seleccione *continuar* para que se le redirija a una página de inicio de sesión de Microsoft.</block>
   <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">La API de clasificación de BlueXP ya está disponible</block>
   <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">La API de clasificación de BlueXP permite realizar acciones, crear consultas y exportar información sobre los datos que está escaneando. La documentación interactiva se encuentra disponible mediante Swagger. La documentación se divide en varias categorías, incluidas Investigación, Cumplimiento, Gobernanza y Configuración. Cada categoría es una referencia a las pestañas de la interfaz de usuario de clasificación de BlueXP.</block>
-  <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">Vídeos de clasificación de BlueXP</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -3481,4 +3451,5 @@
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXP admite las funcionalidades de la API DE REST para sus servicios. Si BlueXP no es el punto preferido de gestión, servicios como la clasificación de BlueXP también se pueden usar a través de una API DE REST. Cada acción del usuario tiene una API REST que se puede integrar con sistemas de terceros. Consulte <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> para obtener más detalles.</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">¿Se analizan copias Snapshot que residen en los volúmenes ONTAP?</block>
   <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">No La clasificación de BlueXP no analiza las copias Snapshot porque el contenido es idéntico al contenido del volumen.</block>
+  <block id="dce2a9642217836d54f614dfd625b753" category="cell">/usr/lib/systemd/system</block>
 </blocks>
