@@ -50,33 +50,16 @@ Por ejemplo, las siguientes líneas del archivo de registro muestran una operaci
 ....
 
 
-== Acceda al archivo de registro
+== Ubicaciones de archivos de registro
 
 Los archivos de registro de auditoría de gestión están ubicados en la máquina de clasificación de BlueXP en lo siguiente: `/opt/netapp/audit_logs/`
 
 Los archivos de registro de auditoría de instalación se escriben en `/opt/netapp/install_logs/`
 
-Cada archivo de registro puede tener un tamaño máximo de 10 MB. Cuando se alcanza ese límite, se inicia un nuevo archivo de registro. Los archivos de registro se denominan "DataSense_audit.log", "DataSense_audit.log.1", "DataSense_audit.log.2", etc. Se conservan un máximo de 100 archivos de registro en el sistema: Los archivos de registro antiguos se eliminan automáticamente después de alcanzar el máximo.
-
-Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, puede navegar directamente al archivo de registro.
-
-Cuando se pone en marcha la clasificación de BlueXP en la nube, necesitas SSH para la instancia de clasificación de BlueXP. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path_to_the_ssh_key> = ubicación de claves de autenticación ssh
-* <machine_user>.:
-+
-** Para AWS: Utilice <ec2-user>
-** Para Azure: Utilice el usuario creado para la instancia de BlueXP
-** Para GCP: Utilice el usuario creado para la instancia de BlueXP
+Cada archivo de registro puede tener un tamaño máximo de 10 MB. Cuando se alcanza ese límite, se inicia un nuevo archivo de registro. Los archivos de registro se denominan "DataSense_audit.log", "DataSense_audit.log.1", "DataSense_audit.log.2", etc. Un máximo de 100 archivos de registro se retienen en el sistema - los archivos de registro antiguos se eliminan automáticamente una vez alcanzado el máximo.
 
 
-* <datasense_ip> = dirección IP de la instancia de la máquina virtual
 
+== Accediendo a los archivos de registro
 
-Tenga en cuenta que deberá modificar las reglas entrantes del grupo de seguridad para acceder al sistema en la nube. Para obtener más información, consulte:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Reglas del grupo de seguridad en AWS"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Reglas de grupos de seguridad en Azure"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Reglas de firewall en Google Cloud"^]
-
+Tendrás que iniciar sesión en el sistema de clasificación de BlueXP para acceder a los archivos de registro. Descubra cómo link:reference-log-in-to-instance.html["Inicia sesión en el sistema de clasificación de BlueXP"] Dependiendo de si instaló manualmente el software en una máquina Linux o si implementó la instancia en la nube.

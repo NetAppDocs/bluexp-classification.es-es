@@ -1,6 +1,22 @@
-= 
+---
+sidebar: sidebar 
+permalink: reference-log-in-to-instance.html 
+keywords: log in, data sense, classification 
+summary: A veces es posible que tengas que iniciar sesión en el sistema de clasificación de BlueXP para poder acceder a los archivos de registro o editar los archivos de configuración. 
+---
+= Inicia sesión en el sistema de clasificación de BlueXP
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
+
+[role="lead"]
+A veces es posible que tengas que iniciar sesión en el sistema de clasificación de BlueXP para poder acceder a los archivos de registro o editar los archivos de configuración.
+
+Cuando la clasificación de BlueXP está instalada en un equipo Linux en las instalaciones o en un equipo Linux implementado en la nube, puedes acceder al archivo de configuración y al script directamente.
 
 Cuando se pone en marcha la clasificación de BlueXP en la nube, necesitas SSH para la instancia de clasificación de BlueXP. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:
 

@@ -53,3 +53,5 @@ image:screenshot_compliance_uninstall.png["Una captura de pantalla del botón pa
 cleanup.sh
 ----
 
+
+Descubra cómo link:reference-log-in-to-instance.html["Inicia sesión en el equipo host de clasificación de BlueXP"].

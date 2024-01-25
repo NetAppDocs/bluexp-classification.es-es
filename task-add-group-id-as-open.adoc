@@ -18,34 +18,7 @@ Cuando se adjuntan ID de grupo (GID) a archivos o carpetas en recursos compartid
 
 Después de realizar este cambio y la clasificación de BlueXP vuelve a analizar los archivos y carpetas, todos los archivos y carpetas que tengan estos ID de grupo adjuntos mostrarán este permiso en la página Detalles de la investigación, y también aparecerán en los informes donde se muestran los permisos de archivo.
 
-Para activar esta funcionalidad, debes iniciar sesión en el sistema de clasificación de BlueXP para poder editar un archivo de configuración y ejecutar un script.
-
-
-
-== Inicia sesión en el sistema de clasificación de BlueXP
-
-Cuando la clasificación de BlueXP está instalada en un equipo Linux en las instalaciones o en un equipo Linux implementado en la nube, puedes acceder al archivo de configuración y al script directamente.
-
-Cuando se pone en marcha la clasificación de BlueXP en la nube, necesitas SSH para la instancia de clasificación de BlueXP. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path_to_the_ssh_key> = ubicación de claves de autenticación ssh
-* <machine_user>.:
-+
-** Para AWS: Utilice <ec2-user>
-** Para Azure: Utilice el usuario creado para la instancia de BlueXP
-** Para GCP: Utilice el usuario creado para la instancia de BlueXP
-
-
-* <datasense_ip> = dirección IP de la instancia de la máquina virtual
-
-
-Tenga en cuenta que deberá modificar las reglas entrantes del grupo de seguridad para acceder al sistema en la nube. Para obtener más información, consulte:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Reglas del grupo de seguridad en AWS"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Reglas de grupos de seguridad en Azure"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Reglas de firewall en Google Cloud"^]
-
+Para activar esta funcionalidad, debes iniciar sesión en el sistema de clasificación de BlueXP para poder editar un archivo de configuración y ejecutar un script. Descubra cómo link:reference-log-in-to-instance.html["Inicia sesión en el sistema de clasificación de BlueXP"] Dependiendo de si instaló manualmente el software en una máquina Linux o si implementó la instancia en la nube.
 
 
 
