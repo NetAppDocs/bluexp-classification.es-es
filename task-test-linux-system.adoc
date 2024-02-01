@@ -141,7 +141,7 @@ https://youtu.be/Ogoufel1q6c["Vea este vídeo"^] Para obtener una demostración 
 ** Python versión 3,6 o superior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
 
 
-* *Consideraciones sobre NTP*: NetApp recomienda configurar el sistema de clasificación BlueXP para usar un servicio de Protocolo de hora de red (NTP). La hora debe sincronizarse entre el sistema de clasificación de BlueXP y el sistema de conectores BlueXP.
+* *Consideraciones sobre NTP*: NetApp recomienda configurar el sistema de clasificación BlueXP para usar un servicio de Protocolo de hora de red (NTP). La hora debe sincronizarse entre el sistema de clasificación de BlueXP y el sistema BlueXP Connector.
 * * Consideraciones de Firewalld*: Si usted está planeando utilizar `firewalld`, Te recomendamos que lo habilites antes de instalar la clasificación de BlueXP. Ejecute los siguientes comandos para configurar `firewalld` Para que sea compatible con la clasificación de BlueXP:
 +
 ....

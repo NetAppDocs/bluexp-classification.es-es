@@ -192,22 +192,6 @@ No La clasificación de BlueXP no analiza las copias Snapshot porque el contenid
 
 
 
-=== ¿Puedo limitar la información de clasificación de BlueXP a usuarios específicos?
-
-Sí, la clasificación de BlueXP está totalmente integrada en BlueXP. Los usuarios de BlueXP sólo pueden ver información sobre los entornos de trabajo que pueden ver según sus privilegios de área de trabajo.
-
-Además, si quieres permitir que determinados usuarios solo vean los resultados del análisis de clasificación de BlueXP sin tener la capacidad de administrar las configuraciones de clasificación de BlueXP, puedes asignar a esos usuarios el rol Cloud Compliance Viewer.
-
-link:concept-cloud-compliance.html#user-access-to-compliance-information["Leer más"^].
-
-
-
-=== ¿Puede alguien acceder a los datos privados enviados entre mi navegador y la clasificación de BlueXP?
-
-No Los datos privados que se envíen entre su explorador y la instancia de clasificación de BlueXP se mantienen seguros gracias al cifrado integral, lo que significa que ni NetApp ni terceros podrán leerlos. La clasificación de BlueXP no compartirá datos ni resultados con NetApp a menos que solicites y apruebes el acceso.
-
-
-
 === ¿Puede la clasificación de BlueXP enviar notificaciones a mi organización?
 
 Sí. Junto con la función Directivas, puede enviar alertas por correo electrónico a los usuarios de BlueXP (diariamente, semanalmente o mensualmente) o a cualquier otra dirección de correo electrónico, cuando una Política devuelva los resultados para que pueda obtener notificaciones para proteger sus datos. Más información acerca de link:task-using-policies.html["Normativas"^].
@@ -309,6 +293,46 @@ Los análisis de clasificación de BlueXP usan protocolos estándar y permiso de
 Después de un análisis completo, hay muchas funciones adicionales de clasificación de BlueXP que puedes aplicar a tus datos, como ver y refinar datos en la página de Investigación de datos, buscar nombres dentro de los archivos, copiar, mover y eliminar archivos de origen, y mucho más.
 
 
+
+La clasificación de BlueXP captura metadatos como: Nombre del archivo, permisos, hora de creación, último acceso y última modificación. Esto incluye todos los metadatos que aparecen en la página Detalles de investigación de datos y en los informes de investigación de datos.
+
+La clasificación de BlueXP puede identificar muchos tipos de datos privados, como los datos personales y los datos personales confidenciales. Para obtener información detallada sobre los datos privados, consulte https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorías de datos privados que escanea la clasificación de BlueXP"].
+
+
+
+=== ¿Puedo limitar la información de clasificación de BlueXP a usuarios específicos?
+
+Sí, la clasificación de BlueXP está totalmente integrada en BlueXP. Los usuarios de BlueXP sólo pueden ver información sobre los entornos de trabajo que pueden ver según sus privilegios de área de trabajo.
+
+Además, si quieres permitir que determinados usuarios solo vean los resultados del análisis de clasificación de BlueXP sin tener la capacidad de administrar las configuraciones de clasificación de BlueXP, puedes asignar a esos usuarios el rol Cloud Compliance Viewer.
+
+link:concept-cloud-compliance.html#user-access-to-compliance-information["Leer más"^].
+
+
+
+=== ¿Puede alguien acceder a los datos privados enviados entre mi navegador y la clasificación de BlueXP?
+
+No Los datos privados que se envíen entre su explorador y la instancia de clasificación de BlueXP se mantienen seguros gracias al cifrado integral, lo que significa que ni NetApp ni terceros podrán leerlos. La clasificación de BlueXP no compartirá datos ni resultados con NetApp a menos que solicites y apruebes el acceso.
+
+Los datos que se analizan permanecen dentro de su entorno.
+
+
+
+=== ¿Cómo se gestionan los datos confidenciales?
+
+NetApp no tiene acceso a los datos confidenciales y no los muestra en la interfaz de usuario de. Los datos confidenciales están enmascarados; por ejemplo, los últimos cuatro números se muestran para obtener información sobre la tarjeta de crédito.
+
+
+
+=== ¿Dónde se almacenan los datos?
+
+Los resultados del análisis se almacenan en Elastisearch dentro de tu instancia de clasificación de BlueXP.
+
+
+
+=== ¿Cómo se accede a los datos?
+
+La clasificación de BlueXP accede a los datos almacenados en Elasticsearch mediante llamadas a API, que requieren autenticación y están cifrados mediante AES-128. Para acceder a Elasticsearch se necesita acceso de raíz directamente.
 
 
 
