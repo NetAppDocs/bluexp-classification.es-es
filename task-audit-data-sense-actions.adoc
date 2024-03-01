@@ -60,6 +60,6 @@ Cada archivo de registro puede tener un tamaño máximo de 10 MB. Cuando se alca
 
 
 
-== Accediendo a los archivos de registro
+== Acceder a los archivos de registro
 
 Tendrás que iniciar sesión en el sistema de clasificación de BlueXP para acceder a los archivos de registro. Descubra cómo link:reference-log-in-to-instance.html["Inicia sesión en el sistema de clasificación de BlueXP"] Dependiendo de si instaló manualmente el software en una máquina Linux o si implementó la instancia en la nube.

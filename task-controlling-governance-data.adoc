@@ -4,7 +4,7 @@ permalink: task-controlling-governance-data.html
 keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
 summary: Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato. 
 ---
-= Ver los detalles de gobernanza sobre los datos almacenados en su organización
+= Ver detalles de gobierno sobre los datos almacenados en su organización
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -28,7 +28,7 @@ image:screenshot_compliance_governance_dashboard.png["Una captura de pantalla de
 
 
 
-=== Guardando oportunidades
+=== Guarde las oportunidades
 
 Puede que desee investigar los elementos del área _Saving Opportunities_ para ver si hay datos que debe eliminar o organizar en niveles un almacenamiento de objetos menos costoso. Haga clic en cada elemento para ver los resultados filtrados en la página Investigación.
 
@@ -44,7 +44,7 @@ Puede que desee investigar los elementos del área _Saving Opportunities_ para v
 ** Varios (categoría general "otros")
 
 
-* *Duplicar archivos*: Archivos duplicados en otras ubicaciones de los orígenes de datos que está analizando. link:task-investigate-data.html#viewing-all-duplicated-files["Consulte qué tipos de archivos duplicados se muestran"].
+* *Duplicar archivos*: Archivos duplicados en otras ubicaciones de los orígenes de datos que está analizando. link:task-investigate-data.html#view-all-duplicated-files["Consulte qué tipos de archivos duplicados se muestran"].
 +
 NOTA:: Si alguno de sus orígenes de datos implementa una organización en niveles de datos, los datos antiguos que ya residen en el almacenamiento de objetos se pueden identificar en la categoría _datos obsoletos_.
 
@@ -131,7 +131,7 @@ NOTA:: Si alguno de sus orígenes de datos implementa una organización en nivel
 
 === La mayoría de las clasificaciones de datos identificadas
 
-El área _Classification_ proporciona una lista de los más identificados link:task-controlling-private-data.html#viewing-files-by-categories["Categorías"^], link:task-controlling-private-data.html#viewing-files-by-file-types["Tipos de archivo"^], y. link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Etiquetas AIP"^] en los datos escaneados.
+El área _Classification_ proporciona una lista de los más identificados link:task-controlling-private-data.html#view-files-by-categories["Categorías"^], link:task-controlling-private-data.html#view-files-by-file-types["Tipos de archivo"^], y. link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquetas AIP"^] en los datos escaneados.
 
 
 
@@ -139,7 +139,7 @@ El área _Classification_ proporciona una lista de los más identificados link:t
 
 Las categorías pueden ayudarle a entender lo que está pasando con sus datos mostrándole los tipos de información que tiene. Por ejemplo, una categoría como "currículos" o "contratos de empleados" puede incluir datos confidenciales. Cuando investiga los resultados, puede que encuentre que los contratos de empleados están almacenados en una ubicación insegura. Entonces puede corregir ese problema.
 
-Consulte link:task-controlling-private-data.html#viewing-files-by-categories["Ver archivos por categorías"^] si quiere más información.
+Consulte link:task-controlling-private-data.html#view-files-by-categories["Ver archivos por categorías"^] si quiere más información.
 
 
 
@@ -147,7 +147,7 @@ Consulte link:task-controlling-private-data.html#viewing-files-by-categories["Ve
 
 La revisión de los tipos de archivo puede ayudarle a controlar los datos confidenciales porque puede encontrar que determinados tipos de archivo no se almacenan correctamente.
 
-Consulte link:task-controlling-private-data.html#viewing-files-by-file-types["Visualización de tipos de archivo"^] si quiere más información.
+Consulte link:task-controlling-private-data.html#view-files-by-file-types["Visualización de tipos de archivo"^] si quiere más información.
 
 
 
@@ -155,7 +155,7 @@ Consulte link:task-controlling-private-data.html#viewing-files-by-file-types["Vi
 
 Si se ha suscrito a la protección de información de Azure (AIP), puede clasificar y proteger documentos y archivos aplicando etiquetas al contenido. La revisión de las etiquetas AIP más utilizadas que se asignan a los archivos le permite ver qué etiquetas se utilizan más en sus archivos.
 
-Consulte link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Etiquetas AIP"^] si quiere más información.
+Consulte link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquetas AIP"^] si quiere más información.
 
 
 
@@ -183,7 +183,7 @@ El informe incluye la siguiente información:
 |===
 
 
-=== Generación del Informe de asignación de datos
+=== Generar el informe de asignación de datos
 
 Este informe se genera desde la pestaña Gobernanza de la clasificación de BlueXP.
 
@@ -198,7 +198,7 @@ image:screenshot_compliance_data_mapping_report_button.png["Captura de pantalla 
 .Resultado
 La clasificación de BlueXP genera un informe PDF que se puede revisar y enviar a otros grupos según sea necesario.
 
-Si el informe tiene un tamaño superior a los 1 MB, el archivo PDF se conservará en la instancia de clasificación de BlueXP y verás un mensaje emergente sobre la ubicación exacta. Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, podrá acceder directamente al archivo PDF. Cuando la clasificación de BlueXP se ponga en marcha en la nube, necesitarás SSH en la instancia de clasificación de BlueXP para descargar el archivo PDF. link:task-audit-data-sense-actions.html#access-the-log-file["Consulte cómo acceder a los datos en la instancia de clasificación"^].
+Si el informe tiene un tamaño superior a los 1 MB, el archivo PDF se conservará en la instancia de clasificación de BlueXP y verás un mensaje emergente sobre la ubicación exacta. Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, podrá acceder directamente al archivo PDF. Cuando la clasificación de BlueXP se ponga en marcha en la nube, necesitarás SSH en la instancia de clasificación de BlueXP para descargar el archivo PDF. link:task-audit-data-sense-actions.html#access-the-log-files["Consulte cómo acceder a los datos en la instancia de clasificación"^].
 
 Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de clasificación de BlueXP haciendo clic en image:screenshot_gallery_options.gif["El botón más"] Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.
 
@@ -230,7 +230,7 @@ Tras la evaluación, este informe identifica las áreas en las que puede:
 
 
 
-=== Generación del Informe de evaluación de detección de datos
+=== Generar el informe de evaluación de detección de datos
 
 Este informe se genera desde la pestaña Gobernanza de la clasificación de BlueXP.
 

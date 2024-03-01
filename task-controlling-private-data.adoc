@@ -4,7 +4,7 @@ permalink: task-controlling-private-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
 summary: Controle sus datos privados al ver los detalles sobre los datos personales y los datos personales confidenciales de su empresa. También puedes obtener visibilidad revisando las categorías y los tipos de archivos que se encuentra en la clasificación de BlueXP en tus datos. 
 ---
-= Ver los detalles de cumplimiento de normativas sobre los datos almacenados en la empresa
+= Consulte los detalles del cumplimiento de normativas sobre los datos almacenados en su organización
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -23,13 +23,13 @@ De forma predeterminada, la consola de clasificación de BlueXP muestra los dato
 
 image:screenshot_compliance_dashboard.png["Una captura de pantalla del panel de clasificación de BlueXP"]
 
-Si sólo desea ver datos para algunos de los entornos de trabajo, <<Visualización de datos de Dashboard para entornos de trabajo específicos,seleccione esos entornos de trabajo>>.
+Si sólo desea ver datos para algunos de los entornos de trabajo, <<Ver datos del panel de control para entornos de trabajo específicos,seleccione esos entornos de trabajo>>.
 
-También puede filtrar los resultados desde la página Investigación de datos y descargar un informe de los resultados como un archivo CSV. Consulte link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["Filtrar datos en la página Investigación de datos"] para obtener más detalles.
+También puede filtrar los resultados desde la página Investigación de datos y descargar un informe de los resultados como un archivo CSV. Consulte link:task-investigate-data.html#filter-data-in-the-data-investigation-page["Filtrar datos en la página Investigación de datos"] para obtener más detalles.
 
 
 
-== Visualización de archivos que contienen datos personales
+== Ver archivos que contienen datos personales
 
 La clasificación de BlueXP identifica automáticamente palabras, cadenas y patrones específicos (Regex) dentro de los datos. Por ejemplo, Información de identificación personal (PII), números de tarjeta de crédito, números de seguridad social, números de cuenta bancaria, contraseñas, y sigue. link:reference-private-data-categories.html#types-of-personal-data["Consulte la lista completa"^]. La clasificación de BlueXP identifica este tipo de información en archivos individuales, en archivos dentro de directorios (recursos compartidos y carpetas) y en tablas de bases de datos.
 
@@ -61,7 +61,7 @@ image:screenshot_compliance_investigation_page_directory.png["Captura de pantall
 
 
 
-== Visualización de archivos que contienen datos personales confidenciales
+== Ver archivos que contienen datos personales confidenciales
 
 La clasificación de BlueXP identifica automáticamente tipos especiales de información personal confidencial, tal y como definen las normativas de privacidad como https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["Artículos 9 y 10 del RGPD"^]. Por ejemplo, información sobre la salud, origen étnico o orientación sexual de una persona. link:reference-private-data-categories.html#types-of-sensitive-personal-data["Consulte la lista completa"^]. La clasificación de BlueXP identifica este tipo de información en archivos individuales, en archivos dentro de directorios (recursos compartidos y carpetas) y en tablas de bases de datos.
 
@@ -107,7 +107,7 @@ image:screenshot_categories.gif["Una captura de pantalla del cuadro de diálogo 
 
 
 
-== Ver archivos por tipos de archivos
+== Ver archivos por tipos de archivo
 
 La clasificación de BlueXP toma los datos que ha escaneado y los desglosa por según el tipo de archivo. La revisión de los tipos de archivo puede ayudarle a controlar los datos confidenciales porque puede encontrar que determinados tipos de archivo no se almacenan correctamente. link:reference-private-data-categories.html#types-of-files["Consulte la lista de tipos de archivo"^].
 
@@ -124,7 +124,7 @@ image:screenshot_file_types.gif["Una captura de pantalla del cuadro de diálogo 
 
 
 
-== Visualización de datos de Dashboard para entornos de trabajo específicos
+== Ver datos del panel de control para entornos de trabajo específicos
 
 Puedes filtrar el contenido de la consola de clasificación de BlueXP para ver los datos de cumplimiento de normativas de todos los entornos de trabajo y bases de datos, o simplemente para entornos de trabajo específicos.
 

@@ -4,7 +4,7 @@ permalink: task-managing-data-fusion.html
 keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
 summary: La clasificación de BlueXP ofrece muchas formas de agregar una lista personalizada de «datos personales» que la clasificación de BlueXP identificará en futuros análisis, lo que te da una visión completa de dónde residen los datos potencialmente confidenciales en todos los archivos de tus organizaciones. 
 ---
-= Agregar identificadores de datos personales a tus análisis de clasificación de BlueXP
+= Añade identificadores de datos personales a tus análisis de clasificación de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -40,7 +40,7 @@ Como puede ver, se han encontrado dos ID de cliente únicos en dos volúmenes y 
 Tenga en cuenta que, como escanea sus propias bases de datos, independientemente del idioma en el que se almacenen los datos se utilizará para identificar datos en futuros análisis de clasificación de BlueXP.
 
 .Pasos
-Debe tener link:task-scanning-databases.html#adding-the-database-server["se añadió al menos un servidor de base de datos"^] A la clasificación de BlueXP antes de poder añadir orígenes de datos Fusion.
+Debe tener link:task-scanning-databases.html#add-the-database-server["se añadió al menos un servidor de base de datos"^] A la clasificación de BlueXP antes de poder añadir orígenes de datos Fusion.
 
 . En la página Configuración, haga clic en *Administrar Fusion de datos* en la base de datos donde residen los datos de origen.
 +
@@ -184,7 +184,7 @@ Puedes agregar categorías personalizadas a la clasificación de BlueXP para que
 
 Por ejemplo, es posible que desee ver dónde se encuentran los archivos de instalación comprimidos en formato .gz en sus archivos para que pueda eliminarlos, si es necesario.
 
-Después de actualizar las categorías personalizadas, la clasificación de BlueXP reiniciará el análisis de todas las fuentes de datos. Una vez que se haya completado el análisis, los nuevos resultados aparecerán en la consola de cumplimiento de la clasificación de BlueXP, en la sección «Categorías» y en la página de investigación del filtro «Categoría». link:task-controlling-private-data.html#viewing-files-by-categories["Vea cómo ver archivos por categorías"].
+Después de actualizar las categorías personalizadas, la clasificación de BlueXP reiniciará el análisis de todas las fuentes de datos. Una vez que se haya completado el análisis, los nuevos resultados aparecerán en la consola de cumplimiento de la clasificación de BlueXP, en la sección «Categorías» y en la página de investigación del filtro «Categoría». link:task-controlling-private-data.html#view-files-by-categories["Vea cómo ver archivos por categorías"].
 
 .Lo que necesitará
 Tendrás que crear un mínimo de 25 archivos de entrenamiento que contengan muestras de las categorías de datos que quieres que reconozca la clasificación de BlueXP. Se admiten los siguientes tipos de archivo:

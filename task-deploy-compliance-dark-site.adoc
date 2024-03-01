@@ -91,9 +91,15 @@ El software de clasificación de BlueXP debe ejecutarse en un host que cumpla co
 * La clasificación de BlueXP no se admite en un host compartido con otras aplicaciones; el host debe ser un host dedicado.
 * Al crear el sistema host en tus instalaciones, puedes elegir entre tres tamaños de sistema en función del tamaño del conjunto de datos que tengas pensado analizar la clasificación de BlueXP.
 +
-[cols="18,18,26,30"]
+[cols="17,17,27,31"]
 |===
 | Tamaño del sistema | CPU | RAM (la memoria de intercambio debe estar desactivada) | Disco 
+
+
+| * Extra grande* | 32 CPU | 128 GB DE MEMORIA RAM | 1 TiB SSD en /, o.
+- 100 GiB disponible en /opt
+- 895 GiB disponible en /var/lib/docker
+- 5 GiB en /tmp 
 
 
 | *Grande* | 16 CPU | 64 GB DE MEMORIA RAM | 500 GiB SSD en /, o.
@@ -114,7 +120,7 @@ El software de clasificación de BlueXP debe ejecutarse en un host que cumpla co
 - 5 GiB en /tmp 
 |===
 +
-Tenga en cuenta que existen limitaciones al usar estos sistemas más pequeños. Consulte link:concept-cloud-compliance.html#using-a-smaller-instance-type["Con un tipo de instancia más pequeño"] para obtener más detalles.
+Tenga en cuenta que existen limitaciones cuando se utilizan sistemas más pequeños. Consulte link:concept-cloud-compliance.html#using-a-smaller-instance-type["Con un tipo de instancia más pequeño"] para obtener más detalles.
 
 * A la hora de poner en marcha una instancia de computación en la nube para la instalación de tu clasificación de BlueXP, te recomendamos un sistema que cumpla los requisitos «grandes» del sistema anteriores:
 +
@@ -292,7 +298,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["Un diagrama que muestra 
 
 Siga estos pasos al instalar el software de clasificación de BlueXP en un único host local en un entorno sin conexión.
 
-Tenga en cuenta que todas las actividades de instalación se registran al instalar la clasificación de BlueXP. Si tiene algún problema durante la instalación, puede ver el contenido del registro de auditoría de la instalación. Está escrito en `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-file["Consulte más detalles aquí"].
+Tenga en cuenta que todas las actividades de instalación se registran al instalar la clasificación de BlueXP. Si tiene algún problema durante la instalación, puede ver el contenido del registro de auditoría de la instalación. Está escrito en `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-files["Consulte más detalles aquí"].
 
 .Lo que necesitará
 * Compruebe que su sistema Linux cumple con el <<Prepare el sistema host Linux,requisitos del host>>.

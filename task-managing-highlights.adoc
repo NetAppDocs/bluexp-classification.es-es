@@ -32,7 +32,7 @@ La clasificación de BlueXP ofrece muchas formas de gestionar los datos privados
 ====
 
 
-== Copiando archivos de origen
+== Copie los archivos de origen
 
 Puede copiar todos los archivos de origen que la clasificación de BlueXP esté analizando. Existen tres tipos de operaciones de copia en función de lo que intente lograr:
 
@@ -52,7 +52,7 @@ Esto resulta útil en situaciones en las que se migran datos de un sistema de or
 
 
 
-=== Copiando archivos de origen a un recurso compartido NFS
+=== Copie los archivos de origen en un recurso compartido NFS
 
 Puede copiar los archivos de origen que la clasificación de BlueXP esté analizando en cualquier recurso compartido NFS. No es necesario integrar el recurso compartido de NFS con la clasificación de BlueXP, solo tienes que saber el nombre del recurso compartido de NFS en el que se copiarán todos los archivos seleccionados en formato `<host_name>:/<share_path>`.
 
@@ -94,7 +94,7 @@ image:screenshot_compliance_copy_file.png["Captura de pantalla que muestra la se
 
 
 
-=== Clonar datos de volumen en un volumen nuevo
+=== Clone los datos de volúmenes en un volumen nuevo
 
 Puede clonar un volumen de ONTAP existente que analice la clasificación de BlueXP mediante la funcionalidad _FlexClone_ de NetApp. Esto le permite duplicar rápidamente el volumen e incluir únicamente los archivos seleccionados. Esto resulta útil si va a migrar datos y desea excluir determinados archivos del volumen original o si desea crear una copia de un volumen para realizar las pruebas.
 
@@ -248,11 +248,11 @@ image:screenshot_compliance_move_file.png["Captura de pantalla que muestra la se
 
 
 
-== Eliminando archivos de origen
+== Elimine los archivos de origen
 
 Puede eliminar de forma permanente los archivos de origen que parezcan poco seguros o demasiado arriesgados para dejar su sistema de almacenamiento, o que haya identificado como duplicados. Esta acción es permanente y no hay deshacer ni restaurar.
 
-Puede eliminar archivos manualmente desde el panel Investigación, o. link:task-using-policies.html#deleting-source-files-automatically-using-policies["Uso automático de directivas"^].
+Puede eliminar archivos manualmente desde el panel Investigación, o. link:task-using-policies.html#delete-source-files-automatically-using-policies["Uso automático de directivas"^].
 
 
 TIP: No se pueden eliminar los archivos que residen en las bases de datos. Se admiten todos los demás orígenes de datos.
@@ -266,7 +266,7 @@ Para eliminar archivos, es necesario contar con los siguientes permisos:
 
 
 
-=== Eliminación manual de archivos de origen
+=== Elimine los archivos de origen manualmente
 
 .Requisitos
 * Debe tener el rol de administrador de cuentas o administrador de área de trabajo para eliminar archivos.

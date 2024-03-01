@@ -4,7 +4,7 @@ permalink: task-org-private-data.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: La clasificación de BlueXP ofrece muchas formas de gestionar y organizar los datos privados. Esto le facilita ver los datos que más le importan. 
 ---
-= Organizar sus datos privados
+= Organice sus datos privados
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -17,6 +17,10 @@ summary: La clasificación de BlueXP ofrece muchas formas de gestionar y organiz
 La clasificación de BlueXP ofrece muchas formas de gestionar y organizar los datos privados. Esto le facilita ver los datos que más le importan.
 
 * Si está suscrito a. https://azure.microsoft.com/en-us/services/information-protection/["Protección de información de Azure (AIP)"^] Para clasificar y proteger tus archivos, puedes usar la clasificación de BlueXP para gestionar esas etiquetas de AIP.
++
+
+NOTE: La versión de diciembre de 2023 (v1.26.6) eliminó temporalmente la opción de integrar datos mediante etiquetas de protección de información de Azure (AIP).
+
 * Puede agregar etiquetas a los archivos que desee marcar para la organización o para algún tipo de seguimiento.
 * Puede asignar un usuario de BlueXP a un archivo específico, o a varios archivos, para que la persona pueda ser responsable de administrar el archivo.
 * Con la funcionalidad "Directiva" puede crear sus propias consultas de búsqueda personalizadas para que pueda ver fácilmente los resultados haciendo clic en un botón.
@@ -53,7 +57,7 @@ A continuación se muestra una comparación del etiquetado de clasificación de 
 |===
 
 
-== Categorizar sus datos mediante etiquetas AIP
+== Categorice los datos mediante etiquetas AIP
 
 Puede gestionar etiquetas AIP en los archivos a los que está analizando la clasificación de BlueXP si ya se ha suscrito https://azure.microsoft.com/en-us/services/information-protection/["Protección de información de Azure (AIP)"^]. AIP le permite clasificar y proteger documentos y archivos aplicando etiquetas al contenido. La clasificación de BlueXP te permite ver las etiquetas que ya están asignadas a archivos, agregar etiquetas a archivos y cambiar etiquetas cuando ya existe una etiqueta.
 
@@ -69,7 +73,7 @@ La clasificación de BlueXP admite etiquetas AIP en los siguientes tipos de arch
 ====
 
 
-=== Integración de etiquetas AIP en el espacio de trabajo
+=== Integre las etiquetas AIP en su espacio de trabajo
 
 Para poder administrar etiquetas AIP, debes integrar la funcionalidad de etiqueta AIP en la clasificación de BlueXP iniciando sesión en tu cuenta de Azure existente. Una vez activado, puede administrar etiquetas AIP dentro de los archivos para todos link:concept-cloud-compliance.html#supported-data-sources["fuentes de datos"^] En el espacio de trabajo de BlueXP.
 
@@ -98,7 +102,7 @@ Puede ver y asignar etiquetas AIP desde el panel de resultados de la página Inv
 
 
 
-=== Ver etiquetas AIP en los archivos
+=== Vea las etiquetas AIP en sus archivos
 
 Puede ver la etiqueta AIP actual que está asignada a un archivo.
 
@@ -108,7 +112,7 @@ image:screenshot_compliance_show_label.png["Captura de pantalla que muestra los 
 
 
 
-=== Asignación manual de etiquetas AIP
+=== Asignar etiquetas AIP manualmente
 
 Puedes añadir, cambiar y eliminar etiquetas AIP de tus archivos mediante la clasificación de BlueXP.
 
@@ -148,7 +152,7 @@ La etiqueta AIP se agrega a los metadatos de todos los archivos seleccionados.
 
 
 
-=== Eliminación de la integración AIP
+=== Elimine la integración AIP
 
 Si ya no quieres tener la capacidad de administrar etiquetas AIP en archivos, puedes eliminar la cuenta AIP de la interfaz de clasificación de BlueXP.
 
@@ -164,7 +168,7 @@ image:screenshot_compliance_un_integrate_aip_labels.png["Una captura de pantalla
 
 
 
-== Aplicación de etiquetas para administrar los archivos capturados
+== Aplique etiquetas para gestionar los archivos escaneados
 
 Puede agregar una etiqueta a los archivos que desee marcar para algún tipo de seguimiento. Por ejemplo, es posible que haya encontrado algunos archivos duplicados y desee eliminar uno de ellos, pero debe comprobar qué se debe eliminar. Puede agregar una etiqueta de "comprobar para eliminar" al archivo para que sepa que este archivo requiere algún tipo de investigación y acción futura.
 
@@ -177,7 +181,7 @@ TIP: Las etiquetas asignadas a archivos en la clasificación de BlueXP no están
 
 
 
-=== Ver archivos que tienen ciertas etiquetas aplicadas
+=== Ver archivos que tienen determinadas etiquetas aplicadas
 
 Puede ver todos los archivos que tienen asignadas etiquetas específicas.
 
@@ -193,7 +197,7 @@ El panel resultados de la investigación muestra todos los archivos que tienen a
 
 
 
-=== Asignar etiquetas a archivos
+=== Asigne etiquetas a los archivos
 
 Puede agregar etiquetas a un único archivo o a un grupo de archivos.
 
@@ -259,7 +263,7 @@ Si ha seleccionado varios archivos, la etiqueta se elimina de todos los archivos
 
 
 
-== Asignar usuarios para administrar determinados archivos
+== Asigne usuarios para administrar ciertos archivos
 
 Puede asignar un usuario de BlueXP a un archivo específico, o a varios archivos, para que pueda ser responsable de cualquier acción de seguimiento que necesite realizar en el archivo. Esta funcionalidad se suele utilizar con la función para agregar etiquetas de estado personalizadas a un archivo.
 

@@ -4,7 +4,7 @@ permalink: task-using-policies.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: Las directivas son como una lista de favoritos de filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento solicitadas con frecuencia. La clasificación de BlueXP proporciona un conjunto de políticas predefinidas basadas en solicitudes habituales de los clientes. Puede crear directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización. 
 ---
-= Asignación de políticas a sus datos
+= Asigne políticas a sus datos
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -34,7 +34,7 @@ Además, las políticas aparecen en la lista de filtros de la página Investigac
 
 
 
-== Ver los resultados de la directiva en la página Investigación
+== Ver los resultados de la política en la página Investigación
 
 Para mostrar los resultados de una directiva en la página Investigación, haga clic en image:screenshot_gallery_options.gif["Botón más"] Para una política específica y, a continuación, seleccione *investigar resultados*.
 
@@ -42,7 +42,7 @@ image:screenshot_compliance_highlights_investigate.png["Una captura de pantalla 
 
 
 
-== Creación de directivas personalizadas
+== Crear políticas personalizadas
 
 Puede crear sus propias directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización. Los resultados se devuelven para todos los archivos y directorios (recursos compartidos y carpetas) que coincidan con los criterios de búsqueda.
 
@@ -57,10 +57,10 @@ image:screenshot_compliance_save_as_highlight.png["Captura de pantalla que muest
 . Asigne un nombre a la directiva y seleccione otras acciones que ésta pueda realizar:
 +
 .. Introduzca un nombre y una descripción únicos.
-.. Opcionalmente, marque la casilla para eliminar automáticamente los archivos que coincidan con los parámetros de directiva. Más información acerca de <<Eliminación automática de archivos de origen mediante directivas,eliminación de archivos de origen mediante una directiva>>.
-.. Opcionalmente, marque la casilla si desea que se envíen correos electrónicos de notificación a usuarios de BlueXP en su cuenta y elija el intervalo en el que se envía el correo electrónico. Más información acerca de <<Envío de alertas por correo electrónico cuando se encuentran datos no conformes,envío de alertas por correo electrónico basadas en los resultados de la política>>.
+.. Opcionalmente, marque la casilla para eliminar automáticamente los archivos que coincidan con los parámetros de directiva. Más información acerca de <<Eliminar archivos de origen automáticamente mediante Políticas,eliminación de archivos de origen mediante una directiva>>.
+.. Opcionalmente, marque la casilla si desea que se envíen correos electrónicos de notificación a usuarios de BlueXP en su cuenta y elija el intervalo en el que se envía el correo electrónico. Más información acerca de <<Enviar alertas de correo electrónico cuando se encuentren datos no conformes,envío de alertas por correo electrónico basadas en los resultados de la política>>.
 .. Opcionalmente, marque la casilla si desea enviar correos electrónicos de notificación a otros usuarios, introduzca hasta 20 direcciones de correo electrónico y elija el intervalo en el que se envía el correo electrónico.
-.. Opcionalmente, active la casilla para asignar automáticamente etiquetas AIP a archivos que coincidan con los parámetros de directiva y seleccione la etiqueta. (Sólo si ya tiene etiquetas AIP integradas. Más información acerca de link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Etiquetas AIP"].)
+.. Opcionalmente, active la casilla para asignar automáticamente etiquetas AIP a archivos que coincidan con los parámetros de directiva y seleccione la etiqueta. (Sólo si ya tiene etiquetas AIP integradas. Más información acerca de link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquetas AIP"].)
 .. Haga clic en *Crear directiva*.
 +
 image:screenshot_compliance_save_highlight.png["Una captura de pantalla que muestra cómo configurar la directiva y guardarla."]
@@ -74,7 +74,7 @@ La nueva directiva aparece en la ficha Directivas.
 
 
 
-== Envío de alertas por correo electrónico cuando se encuentran datos no conformes
+== Enviar alertas de correo electrónico cuando se encuentren datos no conformes
 
 La clasificación de BlueXP puede enviar alertas por correo electrónico a los usuarios de BlueXP en tu cuenta cuando ciertas políticas críticas devuelvan resultados para que puedas recibir notificaciones que protejan tus datos. Puede optar por enviar las notificaciones por correo electrónico diariamente, semanalmente o mensualmente. También puede optar por enviar alertas de correo electrónico a cualquier otra dirección de correo electrónico - hasta 20 direcciones de correo electrónico - no en su cuenta de BlueXP.
 
@@ -104,7 +104,7 @@ El primer correo electrónico se envía ahora si hay algún resultado de la Pol�
 
 
 
-== Eliminación automática de archivos de origen mediante directivas
+== Eliminar archivos de origen automáticamente mediante Políticas
 
 Puede crear una directiva personalizada para eliminar los archivos que coincidan con la directiva. Por ejemplo, puede que desee eliminar archivos que contienen información confidencial y que se han detectado por la clasificación de BlueXP en los últimos 30 días.
 
@@ -135,7 +135,7 @@ Puede ver la lista de archivos que se han eliminado en link:task-view-compliance
 
 
 
-== Asignación automática de etiquetas AIP con directivas
+== Asigne etiquetas AIP automáticamente con directivas
 
 Puede asignar una etiqueta AIP a todos los archivos que cumplan los criterios de la directiva. Puede especificar la etiqueta AIP al crear la directiva, o puede agregar la etiqueta al editar cualquier directiva.
 
@@ -181,7 +181,7 @@ NOTE: Si se ha configurado una directiva con una etiqueta, pero la etiqueta se h
 
 
 
-== Edición de directivas
+== Editar políticas
 
 Puede modificar cualquier criterio para una política existente que haya creado previamente. Esto puede resultar especialmente útil si desea cambiar la consulta (los elementos definidos mediante Filtros) para agregar o quitar determinados parámetros.
 
@@ -210,7 +210,7 @@ La directiva cambia inmediatamente. Cualquier acción definida para que esa dire
 
 
 
-== Eliminar directivas
+== Eliminar políticas
 
 Puede eliminar cualquier directiva personalizada que haya creado si ya no la necesita. No se puede eliminar ninguna de las directivas predefinidas.
 

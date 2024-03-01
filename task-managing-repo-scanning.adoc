@@ -20,7 +20,7 @@ Algunas de las cosas que puedes cambiar son si se analiza o no un repositorio y 
 
 
 
-== Ver el estado del análisis de los repositorios
+== Vea el estado de escaneo de sus repositorios
 
 Puedes ver los repositorios individuales que analiza la clasificación de BlueXP (volúmenes, bloques, etc.) de cada entorno de trabajo y cada origen de datos. Además, puedes ver cuántos han sido "mapeados" y cuántos han sido "clasificados". La clasificación tarda más tiempo en realizarse a medida que se realiza la identificación de IA completa en todos los datos.
 
@@ -39,7 +39,7 @@ Puede colocar el cursor sobre el gráfico en la columna _Scan Status_ para ver e
 
 
 
-== Cambiar el tipo de análisis de un repositorio
+== Cambie el tipo de exploración de un repositorio
 
 Puede iniciar o detener exploraciones de sólo asignación, o bien análisis de asignación y clasificación, en un entorno de trabajo en cualquier momento desde la página Configuración. También puede cambiar de exploraciones de sólo asignación a exploraciones de asignación y clasificación, y viceversa.
 
@@ -65,7 +65,7 @@ image:screenshot_compliance_repo_scan_all.png["Captura de pantalla que muestra c
 
 
 
-== Deteniendo la exploración de un repositorio
+== Detener la búsqueda de un repositorio
 
 Puede detener el análisis de un repositorio (por ejemplo, un volumen) si ya no necesita supervisarlo para cumplimiento de normativas. Para ello, desactive la exploración. Cuando se desactiva el escaneo, se elimina del sistema toda la indexación y la información sobre ese volumen, y se detiene la carga para el escaneo de los datos.
 
@@ -107,7 +107,7 @@ image:screenshot_compliance_repo_pause_resume2.png["Captura de pantalla que mues
 
 
 
-== Volver a buscar datos para un repositorio existente
+== Volver a escanear datos para un repositorio existente
 
 La clasificación de BlueXP analiza continuamente tus datos para detectar cambios incrementales en los repositorios que has añadido. Sin embargo, el sistema tarda tiempo en analizar todos los entornos y no hay ningún método para controlar el orden de los repositorios que se analizan. Si necesita volver a analizar un repositorio determinado de inmediato para que los cambios se reflejen en el sistema, puede seleccionar el repositorio y volver a analizar dicho repositorio. Esto permite priorizar el análisis de determinados datos antes que otros. Tras la acción de repetición de escaneo, el repositorio seleccionado vuelve al análisis según el programa de clasificación normal de BlueXP.
 

@@ -204,7 +204,7 @@ También puede descargar informes de estado desde la página Gobierno y la pági
 
 Sí. Puede gestionar etiquetas AIP en los archivos a los que está analizando la clasificación de BlueXP si ya se ha suscrito https://azure.microsoft.com/en-us/services/information-protection/["Protección de información de Azure (AIP)"^]. Puede ver las etiquetas que ya están asignadas a los archivos, agregar etiquetas a los archivos y cambiar las etiquetas existentes.
 
-link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Leer más"^].
+link:task-org-private-data.html#categorize-your-data-using-aip-labels["Leer más"^].
 
 
 
@@ -326,7 +326,7 @@ NetApp no tiene acceso a los datos confidenciales y no los muestra en la interfa
 
 === ¿Dónde se almacenan los datos?
 
-Los resultados del análisis se almacenan en Elastisearch dentro de tu instancia de clasificación de BlueXP.
+Los resultados del análisis se almacenan en Elasticsearch, dentro de tu instancia de clasificación de BlueXP.
 
 
 

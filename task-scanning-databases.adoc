@@ -4,7 +4,7 @@ permalink: task-scanning-databases.html
 keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
 summary: Completa unos pasos para empezar a analizar tus esquemas de base de datos con la clasificación de BlueXP. 
 ---
-= Analizando esquemas de base de datos
+= Escanear esquemas de base de datos
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -42,7 +42,7 @@ Seleccione los esquemas que desea analizar.
 
 
 
-== Revisión de requisitos previos
+== Revise los requisitos previos
 
 Revise los siguientes requisitos previos para comprobar que tiene una configuración compatible antes de habilitar la clasificación de BlueXP.
 
@@ -83,7 +83,7 @@ Al seleccionar un nombre de usuario y una contraseña, es importante elegir uno 
 
 
 
-== Implementar la instancia de clasificación de BlueXP
+== Implementa la instancia de clasificación de BlueXP
 
 Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
 
@@ -95,7 +95,7 @@ Las actualizaciones del software de clasificación de BlueXP se automatizan siem
 
 
 
-== Agregando el servidor de la base de datos
+== Agregue el servidor de la base de datos
 
 Agregue el servidor de base de datos donde residen los esquemas.
 
@@ -121,7 +121,7 @@ La base de datos se agrega a la lista de entornos de trabajo.
 
 
 
-== Habilitar y deshabilitar los análisis de cumplimiento de normativas en esquemas de base de datos
+== Activar y desactivar exploraciones de cumplimiento en esquemas de base de datos
 
 Puede detener o iniciar el análisis completo de sus esquemas en cualquier momento.
 
