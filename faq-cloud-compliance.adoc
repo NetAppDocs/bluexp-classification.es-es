@@ -178,17 +178,25 @@ link:task-managing-data-fusion.html["Leer más"^].
 
 
 
-=== ¿Qué sucede si la organización en niveles de datos está habilitada en sus volúmenes de ONTAP?
+=== ¿Puedo indicar al servicio que excluya los datos de escaneo en ciertos directorios?
 
-Cuando la clasificación de BlueXP analiza volúmenes que tienen datos inactivos organizados en niveles en el almacenamiento de objetos, analiza todos los datos que hay en los discos locales y los datos inactivos organizados en niveles en el almacenamiento de objetos. Esto también es aplicable a productos que no son de NetApp que implementan la organización en niveles.
+Sí. Si desea que la clasificación de BlueXP excluya los datos de análisis que residen en determinados directorios de orígenes de datos, puede proporcionar esa lista al motor de clasificación. Después de aplicar ese cambio, la clasificación de BlueXP excluirá el análisis de datos en los directorios especificados.
 
-El análisis no calienta los datos fríos: Permanecen inactivos y permanecen en el almacenamiento de objetos.
+link:task-exclude-scan-paths.html["Leer más"^].
 
 
 
 === ¿Se analizan copias Snapshot que residen en los volúmenes ONTAP?
 
 No La clasificación de BlueXP no analiza las copias Snapshot porque el contenido es idéntico al contenido del volumen.
+
+
+
+=== ¿Qué sucede si la organización en niveles de datos está habilitada en sus volúmenes de ONTAP?
+
+Cuando la clasificación de BlueXP analiza volúmenes que tienen datos inactivos organizados en niveles en el almacenamiento de objetos, analiza todos los datos que hay en los discos locales y los datos inactivos organizados en niveles en el almacenamiento de objetos. Esto también es aplicable a productos que no son de NetApp que implementan la organización en niveles.
+
+El análisis no calienta los datos fríos: Permanecen inactivos y permanecen en el almacenamiento de objetos.
 
 
 

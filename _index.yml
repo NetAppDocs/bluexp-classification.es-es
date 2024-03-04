@@ -65,7 +65,7 @@ indexpage:
       url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
     - title: Filtre los datos para ver archivos concretos
       url: task-investigate-data.html
-    - title: Cree directivas para ver sus búsquedas principales
+    - title: Cree políticas para ver los resultados de las búsquedas principales
       url: task-using-policies.html
     - title: Generar informes de cumplimiento
       url: task-generating-compliance-reports.html
@@ -77,6 +77,8 @@ indexpage:
       url: task-org-private-data.html#categorize-your-data-using-aip-labels
     - title: Agregue sus propios identificadores de datos personales personalizados
       url: task-managing-data-fusion.html
+    - title: Excluya ciertos directorios de la exploración
+      url: task-exclude-scan-paths.html
   - title: Gestione sus datos privados
     links:
     - title: Copie los archivos de origen

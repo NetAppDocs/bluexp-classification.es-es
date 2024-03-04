@@ -89,6 +89,8 @@ sidebar:
     entries:
     - title: Agregar identificadores de datos personales personalizados
       url: "/task-managing-data-fusion.html"
+    - title: Excluir directorios de la exploración
+      url: "/task-exclude-scan-paths.html"
     - title: Consulta el estado de las acciones de clasificación de BlueXP
       url: "/task-view-compliance-actions.html"
     - title: Definir IDs de grupo existentes como abiertos a la organización
