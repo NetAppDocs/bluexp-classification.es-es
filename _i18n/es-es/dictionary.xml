@@ -3573,4 +3573,13 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó temporalmen
   <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">Cree políticas para ver los resultados de las búsquedas principales</block>
   <block id="3e01ecaa94897c14b8a0c8eb76bf0c93" category="sidebar">Excluya ciertos directorios de la exploración</block>
   <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">Excluir directorios de la exploración</block>
+  <block id="6505788c29b47651fe2e94f0607a2ef7" category="section-title">El soporte de instancias extra grandes ya está cualificado</block>
+  <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">Si necesitas la clasificación de BlueXP para analizar más de 250 millones de archivos, puedes utilizar una instancia de Extra Large en la puesta en marcha de la nube o en la instalación on-premises. Este tipo de sistema puede escanear hasta 500 millones de archivos.</block>
+  <block id="1b4f4b549e0860b1392190bfc2a23f81" category="paragraph"><block ref="1eef614f77c6908f78f84cb1847e2ab8" category="inline-link-rx"></block>.</block>
+  <block id="9b751021fe03877034959f96cd4215c8" category="cell">32 CPU, 128 GB de RAM, 1 TiB GP3 SSD</block>
+  <block id="208031164ce87fe17cb9a0ed2c215c9d" category="inline-link">m6i.8xlarge</block>
+  <block id="e29d39e8b73232f4d7b95d15d9f1add1" category="cell"><block ref="0285aa638d8bc84a14485422bcb58514" category="inline-link-rx"></block> (predeterminado)</block>
+  <block id="49aabd686b53c6afa598f1b2279c7966" category="cell">32 CPU, 128 GB de RAM, SSD de 1 TiB (rendimiento mínimo de 750MB GB/s)</block>
+  <block id="02201d429f7390acabd29e5c0c6e22e2" category="inline-link">Standard_D32_v3</block>
+  <block id="f15da40a9b4a1b9d1900476ba761ddf8" category="cell"><block ref="98fbfccb7d937f28be2761c9fd869045" category="inline-link-rx"></block> (predeterminado)</block>
 </blocks>

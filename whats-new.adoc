@@ -30,6 +30,14 @@ https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html
 
 
 
+=== El soporte de instancias extra grandes ya está cualificado
+
+Si necesitas la clasificación de BlueXP para analizar más de 250 millones de archivos, puedes utilizar una instancia de Extra Large en la puesta en marcha de la nube o en la instalación on-premises. Este tipo de sistema puede escanear hasta 500 millones de archivos.
+
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["Leer más"].
+
+
+
 == 10 de enero de 2024 (versión 1,27)
 
 

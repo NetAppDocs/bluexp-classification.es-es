@@ -29,6 +29,9 @@ En las siguientes tablas, si el sistema marcado como «predeterminado» no está
 | Tamaño del sistema | Especificaciones | Tipo de instancia 
 
 
+| Extra grande | 32 CPU, 128 GB de RAM, 1 TiB GP3 SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.8xlarge"^] (predeterminado) 
+
+
 | Grande | 16 CPU, 64 GB de RAM, 500 GIB de SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xgrande"^] (por defecto) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
 
 
@@ -44,6 +47,9 @@ En las siguientes tablas, si el sistema marcado como «predeterminado» no está
 [cols="20,30,25"]
 |===
 | Tamaño del sistema | Especificaciones | Tipo de instancia 
+
+
+| Extra grande | 32 CPU, 128 GB de RAM, SSD de 1 TiB (rendimiento mínimo de 750MB GB/s) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^] (predeterminado) 
 
 
 | Grande | 16 CPU, 64 GB de RAM, 500 GIB de SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] (predeterminado) 
