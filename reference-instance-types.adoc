@@ -49,7 +49,7 @@ En las siguientes tablas, si el sistema marcado como «predeterminado» no está
 | Tamaño del sistema | Especificaciones | Tipo de instancia 
 
 
-| Extra grande | 32 CPU, 128 GB de RAM, SSD de 1 TiB (rendimiento mínimo de 750MB GB/s) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^] (predeterminado) 
+| Extra grande | 32 CPU, 128 GB de RAM, disco de SO (2.048 GiB, rendimiento mínimo de 250 MB/s) y disco de datos (1 TiB SSD, rendimiento mínimo de 750 MB/s) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^] (predeterminado) 
 
 
 | Grande | 16 CPU, 64 GB de RAM, 500 GIB de SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] (predeterminado) 
