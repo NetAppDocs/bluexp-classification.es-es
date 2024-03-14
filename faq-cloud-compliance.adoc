@@ -320,7 +320,7 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["Leer m
 
 === ¿Puede alguien acceder a los datos privados enviados entre mi navegador y la clasificación de BlueXP?
 
-No Los datos privados que se envíen entre su explorador y la instancia de clasificación de BlueXP se mantienen seguros gracias al cifrado integral, lo que significa que ni NetApp ni terceros podrán leerlos. La clasificación de BlueXP no compartirá datos ni resultados con NetApp a menos que solicites y apruebes el acceso.
+No Los datos privados que se envíen entre su explorador y la instancia de clasificación de BlueXP se mantienen seguros gracias al cifrado integral con TLS 1,2, lo que significa que ni NetApp ni terceros podrán leerlos. La clasificación de BlueXP no compartirá datos ni resultados con NetApp a menos que solicites y apruebes el acceso.
 
 Los datos que se analizan permanecen dentro de su entorno.
 
