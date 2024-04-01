@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman 
+keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, dark site 
 summary: Antes de instalar manualmente la clasificación de BlueXP en un host Linux, puede ejecutar un script en el host para comprobar que haya todos los requisitos previos para instalar la clasificación de BlueXP. Puede ejecutar este script en un host Linux de su red o en un host Linux de la nube. El host puede conectarse a Internet, o el host puede residir en un sitio que no tenga acceso a Internet. 
 ---
 = Compruebe que su host Linux esté listo para instalar la clasificación de BlueXP
@@ -14,7 +14,7 @@ summary: Antes de instalar manualmente la clasificación de BlueXP en un host Li
 
 
 [role="lead"]
-Antes de instalar manualmente la clasificación de BlueXP en un host Linux, puede ejecutar un script en el host para comprobar que estén establecidos todos los requisitos previos para instalar la clasificación de BlueXP. Puede ejecutar este script en un host Linux de su red o en un host Linux de la nube. El anfitrión puede ser conectado a Internet, o el anfitrión puede residir en un sitio que no tiene acceso a Internet (un "sitio oscuro").
+Antes de instalar manualmente la clasificación de BlueXP en un host Linux, puede ejecutar un script en el host para comprobar que estén establecidos todos los requisitos previos para instalar la clasificación de BlueXP. Puede ejecutar este script en un host Linux de su red o en un host Linux de la nube. El host se puede conectar a Internet, o el host puede residir en un sitio que no tiene acceso a Internet (un _sitio oscuro_).
 
 También hay un script de prueba de requisito previo que forma parte del script de instalación de clasificación de BlueXP. El script descrito aquí está específicamente diseñado para usuarios que quieren verificar el host Linux independientemente de ejecutar el script de instalación de la clasificación de BlueXP.
 
@@ -117,11 +117,11 @@ Tenga en cuenta que existen limitaciones cuando se utilizan sistemas más peque�
 *** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
 
 
-** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,26 o posterior:
+** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior:
 +
-*** Red Hat Enterprise Linux versiones 9,0, 9,1 y 9,2
+*** Red Hat Enterprise Linux versiones 8,8, 9,0, 9,1, 9,2 y 9,3
 +
-Tenga en cuenta que las siguientes funciones no son compatibles actualmente con RHEL 9.x:
+Tenga en cuenta que las siguientes funciones no son compatibles actualmente con RHEL 8.x y RHEL 9.x:
 
 +
 **** Instalación en un sitio oscuro
@@ -141,14 +141,17 @@ Tenga en cuenta que las siguientes funciones no son compatibles actualmente con 
 +
 https://youtu.be/Ogoufel1q6c["Vea este vídeo"^] Para obtener una demostración rápida de la instalación de Docker en CentOS.
 
-*** Podman versión 4 o superior. Para instalar Podman, actualice los paquetes del sistema (`sudo yum update -y`) Y, a continuación, instale Podman (`sudo yum install podman -y`).
+*** Podman versión 4 o superior. Para instalar Podman, actualice los paquetes del sistema (`sudo yum update -y`) Y, a continuación, instale Podman (`sudo yum install netavark -y`).
 
 
-** Python versión 3,6 o superior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
 
 
-* *Consideraciones sobre NTP*: NetApp recomienda configurar el sistema de clasificación BlueXP para usar un servicio de Protocolo de hora de red (NTP). La hora debe sincronizarse entre el sistema de clasificación de BlueXP y el sistema BlueXP Connector.
-* * Consideraciones de Firewalld*: Si usted está planeando utilizar `firewalld`, Te recomendamos que lo habilites antes de instalar la clasificación de BlueXP. Ejecute los siguientes comandos para configurar `firewalld` Para que sea compatible con la clasificación de BlueXP:
+
+
+* Python versión 3,6 o superior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
++
+** *Consideraciones sobre NTP*: NetApp recomienda configurar el sistema de clasificación BlueXP para usar un servicio de Protocolo de hora de red (NTP). La hora debe sincronizarse entre el sistema de clasificación de BlueXP y el sistema BlueXP Connector.
+** * Consideraciones de Firewalld*: Si usted está planeando utilizar `firewalld`, Te recomendamos que lo habilites antes de instalar la clasificación de BlueXP. Ejecute los siguientes comandos para configurar `firewalld` Para que sea compatible con la clasificación de BlueXP:
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -170,6 +173,8 @@ firewall-cmd --permanent --add-port=4789/udp
 ....
 +
 Tenga en cuenta que debe reiniciar Docker o Podman cada vez que habilite o actualice `firewalld` configuración.
+
+
 
 
 

@@ -70,11 +70,11 @@ Tenga en cuenta que existen limitaciones cuando se utilizan sistemas más peque�
 *** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
 
 
-** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,26 o posterior:
+** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior:
 +
-*** Red Hat Enterprise Linux versiones 9,0, 9,1 y 9,2
+*** Red Hat Enterprise Linux versiones 8,8, 9,0, 9,1, 9,2 y 9,3
 +
-Tenga en cuenta que las siguientes funciones no son compatibles actualmente con RHEL 9.x:
+Tenga en cuenta que las siguientes funciones no son compatibles actualmente con RHEL 8.x y RHEL 9.x:
 
 +
 **** Instalación en un sitio oscuro
@@ -94,11 +94,16 @@ Tenga en cuenta que las siguientes funciones no son compatibles actualmente con 
 +
 https://youtu.be/Ogoufel1q6c["Vea este vídeo"^] Para obtener una demostración rápida de la instalación de Docker en CentOS.
 
-*** Podman versión 4 o superior. Para instalar Podman, actualice los paquetes del sistema (`sudo yum update -y`) Y, a continuación, instale Podman (`sudo yum install podman -y`).
+*** Podman versión 4 o superior. Para instalar Podman, actualice los paquetes del sistema (`sudo yum update -y`) Y, a continuación, instale Podman (`sudo yum install netavark -y`).
 
 
-** Python versión 3,6 o superior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
 
 
-* *Consideraciones sobre NTP*: NetApp recomienda configurar el sistema de clasificación BlueXP para usar un servicio de Protocolo de hora de red (NTP). La hora debe sincronizarse entre el sistema de clasificación de BlueXP y el sistema BlueXP Connector.
+
+
+* Python versión 3,6 o superior. https://www.python.org/downloads/["Ver las instrucciones de instalación"^].
++
+** *Consideraciones sobre NTP*: NetApp recomienda configurar el sistema de clasificación BlueXP para usar un servicio de Protocolo de hora de red (NTP). La hora debe sincronizarse entre el sistema de clasificación de BlueXP y el sistema BlueXP Connector.
+
+
 

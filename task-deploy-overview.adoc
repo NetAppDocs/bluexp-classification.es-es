@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-overview.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
+summary: Planifique qué implementación de la clasificación de BlueXP satisface sus necesidades. 
+---
+= ¿Qué puesta en marcha de clasificación de BlueXP deberías utilizar?
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puedes poner en marcha la clasificación de BlueXP de distintas formas. Aprende qué método satisface tus necesidades.
+
+La clasificación de BlueXP se puede implementar de las siguientes maneras:
+
+* link:task-deploy-cloud-compliance.html["Póngalo en marcha en la nube con BlueXP"]. BlueXP pondrá en marcha la instancia de clasificación de BlueXP en la misma red de proveedores de cloud que BlueXP Connector.
+* link:task-deploy-compliance-onprem.html["Instale en un host Linux con acceso a Internet"]. Instala la clasificación de BlueXP en un host Linux de tu red o en un host Linux en el cloud que tenga acceso a Internet. Este tipo de instalación puede ser una buena opción si prefieres analizar sistemas ONTAP on-premises mediante una instancia de clasificación de BlueXP que también está ubicada en las instalaciones, pero este no es un requisito.
+* link:task-deploy-compliance-dark-site.html["Instale en un host Linux en un sitio local sin acceso a Internet"], También conocido como _modo privado._ Este tipo de instalación, que utiliza un script de instalación, es bueno para sus sitios seguros.
+
+
+Tanto la instalación en un host Linux con acceso a Internet como la instalación en las instalaciones en un host Linux sin acceso a Internet utilizan un script de instalación. El script comienza comprobando si el sistema y el entorno cumplen los requisitos previos. Si se cumplen los requisitos previos, se inicia la instalación. Si desea verificar los requisitos previos independientemente de la ejecución de la instalación de la clasificación de BlueXP, puede descargar un paquete de software independiente que solo prueba los requisitos previos.
+
+Consulte link:task-test-linux-system.html["Compruebe que su host Linux esté listo para instalar la clasificación de BlueXP"].

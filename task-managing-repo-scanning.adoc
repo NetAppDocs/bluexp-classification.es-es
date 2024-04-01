@@ -35,7 +35,7 @@ image:screenshot_compliance_repo_scan_settings.png["Captura de pantalla que mues
 
 
 
-Puede colocar el cursor sobre el gráfico en la columna _Scan Status_ para ver el número de archivos que quedan por asignar o clasificar en cada repositorio (bloque en este ejemplo).
+Puede pasar el cursor sobre el gráfico en la columna _Mapping Status_ para ver el número de archivos que quedan por asignar o clasificar en cada repositorio (bucket en este ejemplo).
 
 
 
@@ -53,7 +53,7 @@ image:screenshot_compliance_config_button.png["Una captura de pantalla que muest
 
 . En la página Configuración de escaneo puede cambiar cualquiera de los repositorios (bloques en este ejemplo) para realizar escaneos de *Map* o *Map & Classify*.
 +
-image:screenshot_compliance_repo_scanning.png["Una captura de pantalla que muestra cómo seleccionar el tipo de exploración de un cucharón."]
+image:screenshot_compliance_repo_scan_settings.png["Una captura de pantalla que muestra cómo seleccionar el tipo de exploración de un cucharón."]
 
 
 

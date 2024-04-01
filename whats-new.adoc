@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, bluexp, bluexp classification' 
 summary: Descubre las novedades en la clasificación de BlueXP. 
 ---
 = Novedades de la clasificación de BlueXP
@@ -14,7 +14,29 @@ summary: Descubre las novedades en la clasificación de BlueXP.
 
 
 [role="lead"]
-Descubre las novedades en la clasificación de BlueXP.
+Descubre las novedades de la clasificación de BlueXP (Cloud Data Sense).
+
+
+
+== 1 de abril de 2024 (Versión 1,30)
+
+
+
+=== Compatibilidad añadida para la clasificación de BlueXP de RHEL v8,8 y v9,3
+
+Esta versión es compatible con Red Hat Enterprise Linux v8,8 y v9,3, además de la versión 9.x admitida anteriormente, que requiere Podman, en lugar del motor Docker.
+
+Esto es aplicable a cualquier instalación manual en las instalaciones de la clasificación de BlueXP.
+
+Los siguientes sistemas operativos deben utilizar el motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior: Red Hat Enterprise Linux versiones 8,8, 9,0, 9,1, 9,2 y 9,3.
+
+Más información acerca de link:task-deploy-overview.html["Información general sobre las puestas en marcha de clasificación de BlueXP"].
+
+
+
+=== Se quitó la opción para activar la recogida del registro de auditoría
+
+Se deshabilitó la opción para activar la recogida de registros de auditoría.
 
 
 
