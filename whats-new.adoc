@@ -24,19 +24,31 @@ Descubre las novedades de la clasificación de BlueXP (Cloud Data Sense).
 
 === Compatibilidad añadida para la clasificación de BlueXP de RHEL v8,8 y v9,3
 
-Esta versión es compatible con Red Hat Enterprise Linux v8,8 y v9,3, además de la versión 9.x admitida anteriormente, que requiere Podman, en lugar del motor Docker.
-
-Esto es aplicable a cualquier instalación manual en las instalaciones de la clasificación de BlueXP.
+Esta versión es compatible con Red Hat Enterprise Linux v8,8 y v9,3, además de la versión 9.x admitida anteriormente, que requiere Podman, en lugar del motor Docker. Esto es aplicable a cualquier instalación manual en las instalaciones de la clasificación de BlueXP.
 
 Los siguientes sistemas operativos deben utilizar el motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior: Red Hat Enterprise Linux versiones 8,8, 9,0, 9,1, 9,2 y 9,3.
 
-Más información acerca de link:task-deploy-overview.html["Información general sobre las puestas en marcha de clasificación de BlueXP"].
+Más información acerca de https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["Información general sobre las puestas en marcha de clasificación de BlueXP"].
 
 
 
 === Se quitó la opción para activar la recogida del registro de auditoría
 
 Se deshabilitó la opción para activar la recogida de registros de auditoría.
+
+
+
+=== Velocidad de escaneo mejorada
+
+Se ha mejorado el rendimiento de escaneo en nodos de escáner secundarios. Puede agregar más nodos de escáner si necesita potencia de procesamiento adicional para sus escaneos. Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Instala la clasificación de BlueXP en un host que tenga acceso a Internet"].
+
+
+
+=== Actualizaciones automáticas
+
+Si implementaste la clasificación de BlueXP en un sistema con acceso a Internet, el sistema se actualizará automáticamente. Anteriormente, la actualización se produjo después de un tiempo específico transcurrido desde la última actividad del usuario. Con esta versión, la clasificación de BlueXP se actualiza automáticamente si la hora local es entre las 1:00 y las 5:00:00. Si la hora local está fuera de estas horas, la actualización se produce después de que transcurra un tiempo específico desde la última actividad del usuario. Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Instale en un host Linux con acceso a Internet"].
+
+Si implementaste la clasificación de BlueXP sin acceso a Internet, tendrás que actualizar manualmente. Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["Instala la clasificación BlueXP en un host Linux sin acceso a Internet"].
 
 
 
