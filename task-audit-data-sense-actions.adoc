@@ -18,6 +18,11 @@ Actividades de gestión de registros de clasificación de BlueXP que se han real
 
 Puede ver el contenido de los archivos de registro de auditoría de clasificación de BlueXP o descargarlos, para ver qué cambios se han producido en los archivos y cuándo. Por ejemplo, puede ver qué solicitud se emitió, la hora de la solicitud y detalles como la ubicación de origen en caso de que se haya eliminado un archivo o la ubicación de origen y destino en caso de que se haya movido un archivo.
 
+[]
+====
+*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
+
+====
 
 
 == Contenido del archivo de registro

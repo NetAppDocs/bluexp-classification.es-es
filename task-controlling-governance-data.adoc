@@ -45,11 +45,10 @@ Puede que desee investigar los elementos del área _Saving Opportunities_ para v
 
 
 * *Duplicar archivos*: Archivos duplicados en otras ubicaciones de los orígenes de datos que está analizando. link:task-investigate-data.html#view-all-duplicated-files["Consulte qué tipos de archivos duplicados se muestran"].
-+
-NOTA:: Si alguno de sus orígenes de datos implementa una organización en niveles de datos, los datos antiguos que ya residen en el almacenamiento de objetos se pueden identificar en la categoría _datos obsoletos_.
 
 
 
+NOTE: Si alguno de sus orígenes de datos implementa una organización en niveles de datos, los datos antiguos que ya residen en el almacenamiento de objetos se pueden identificar en la categoría _datos obsoletos_.
 
 
 
@@ -82,23 +81,6 @@ Haga clic en cada área para ver los resultados filtrados en la página Investig
 
 
 
-=== Datos listados por sensibilidad y permisos amplios
-
-El área _Sensitive Data y Wide Permissions_ proporciona un mapa térmico de los archivos que contienen datos confidenciales (incluidos datos personales confidenciales y confidenciales) y que son demasiado permisivos. Esto puede ayudarle a ver dónde puede tener algunos riesgos con datos confidenciales.
-
-Los archivos se clasifican en función del número de usuarios con permiso para acceder a los archivos del eje X (del más bajo al más alto) y del número de identificadores confidenciales dentro de los archivos del eje y (del más bajo al más alto). Los bloques representan el número de archivos que coinciden con los elementos de los ejes X e Y. El bloque de color más claro es bueno; con menos usuarios capaces de acceder a los archivos y con menos identificadores confidenciales por archivo. Los bloques más oscuros son los elementos que tal vez desee investigar. Por ejemplo, la siguiente pantalla muestra el texto de desplazamiento del bloque azul oscuro. Muestra que tiene 1,500 archivos en los que 751-100 usuarios tienen acceso y donde hay 501-100 identificadores confidenciales por archivo.
-
-image:screenshot_compliance_sensitive_data.png["Captura de pantalla que muestra los datos mostrados al colocar el cursor sobre un elemento de este panel."]
-
-Puede hacer clic en el bloque en el que está interesado para ver los resultados filtrados de los archivos afectados en la página Investigación para poder seguir investigando.
-
-No se muestran datos en este panel si no se ha integrado un servicio de identidades con la clasificación de BlueXP. link:task-add-active-directory-datasense.html["Descubre cómo integrar tu servicio de Active Directory con la clasificación de BlueXP"^].
-
-
-TIP: Este panel admite archivos en recursos compartidos de CIFS, OneDrive y orígenes de datos de SharePoint. Actualmente no se admite el almacenamiento de bases de datos, Google Drive, Amazon S3 y objetos genéricos.
-
-
-
 === Datos listados por tipos de permisos abiertos
 
 El área _Open Permissions_ muestra el porcentaje de cada tipo de permisos que existen para todos los archivos que se están analizando. El gráfico muestra los siguientes tipos de permisos:
@@ -121,17 +103,16 @@ Puede pasar el ratón sobre un punto de los gráficos para ver detalles sobre la
 
 * * Edad del Gráfico de datos* - categoriza los datos en función de la hora en que se creó, la última vez que se accedió o la última vez que se modificó.
 * * Tamaño del gráfico de datos* - categoriza los datos en función del tamaño.
-+
-NOTA:: Si alguno de sus orígenes de datos implementa una organización en niveles de datos, los datos antiguos que ya residen en el almacenamiento de objetos se pueden identificar en el gráfico _Age of Data_.
 
 
 
+NOTE: Si alguno de sus orígenes de datos implementa una organización en niveles de datos, los datos antiguos que ya residen en el almacenamiento de objetos se pueden identificar en el gráfico _Age of Data_.
 
 
 
 === La mayoría de las clasificaciones de datos identificadas
 
-El área _Classification_ proporciona una lista de los más identificados link:task-controlling-private-data.html#view-files-by-categories["Categorías"^], link:task-controlling-private-data.html#view-files-by-file-types["Tipos de archivo"^], y. link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquetas AIP"^] en los datos escaneados.
+El área _Classification_ proporciona una lista de los más identificados link:task-controlling-private-data.html#view-files-by-categories["Categorías"^] y.. link:task-controlling-private-data.html#view-files-by-file-types["Tipos de archivo"^] en los datos escaneados.
 
 
 
@@ -148,14 +129,6 @@ Consulte link:task-controlling-private-data.html#view-files-by-categories["Ver a
 La revisión de los tipos de archivo puede ayudarle a controlar los datos confidenciales porque puede encontrar que determinados tipos de archivo no se almacenan correctamente.
 
 Consulte link:task-controlling-private-data.html#view-files-by-file-types["Visualización de tipos de archivo"^] si quiere más información.
-
-
-
-==== Etiquetas AIP
-
-Si se ha suscrito a la protección de información de Azure (AIP), puede clasificar y proteger documentos y archivos aplicando etiquetas al contenido. La revisión de las etiquetas AIP más utilizadas que se asignan a los archivos le permite ver qué etiquetas se utilizan más en sus archivos.
-
-Consulte link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquetas AIP"^] si quiere más información.
 
 
 
@@ -244,5 +217,3 @@ image:screenshot_compliance_data_discovery_report_button.png["Captura de pantall
 
 .Resultado
 La clasificación de BlueXP genera un informe PDF que se puede revisar y enviar a otros grupos según sea necesario.
-
-Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de clasificación de BlueXP haciendo clic en image:screenshot_gallery_options.gif["El botón más"] Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.

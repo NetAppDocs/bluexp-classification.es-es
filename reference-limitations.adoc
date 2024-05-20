@@ -18,9 +18,9 @@ Las limitaciones conocidas identifican funciones que no son compatibles con esta
 
 
 
-== El lanzamiento de clasificación de BlueXP eliminó temporalmente las opciones
+== El lanzamiento de clasificación de BlueXP eliminó las opciones
 
-La versión de diciembre de 2023 (versión 1.26.6) eliminó temporalmente las siguientes opciones:
+La versión de diciembre de 2023 (versión 1.26.6) eliminó las siguientes opciones:
 
 * Se deshabilitó la opción para activar la recogida de registros de auditoría.
 * Durante la investigación de directorios, la opción de calcular el número de datos de información personal identificable (PII) por directorios no está disponible.

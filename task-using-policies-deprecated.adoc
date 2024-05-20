@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: task-using-policies-deprecated.html 
+keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
+summary: Las directivas son como una lista de favoritos de filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento solicitadas con frecuencia. La clasificación de BlueXP proporciona un conjunto de políticas predefinidas basadas en solicitudes habituales de los clientes. Puede crear directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización. 
+---
+= Enviar alertas de correo electrónico cuando se encuentren datos no conformes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La clasificación de BlueXP puede enviar alertas por correo electrónico a los usuarios de BlueXP en tu cuenta cuando ciertas políticas críticas devuelvan resultados para que puedas obtener notificaciones que protejan tus datos. Puede optar por enviar las notificaciones por correo electrónico diariamente, semanalmente o mensualmente. También puede optar por enviar alertas de correo electrónico a cualquier otra dirección de correo electrónico - hasta 20 direcciones de correo electrónico - no en su cuenta de BlueXP.
+
+Puede configurar esta configuración al crear la política o al editar cualquier política.
+
+Siga estos pasos para agregar actualizaciones de correo electrónico a una política existente.
+
+.Pasos
+. En la página Lista de políticas, haga clic en *Editar* para la política en la que desea agregar (o cambiar) la configuración del correo electrónico.
++
+image:screenshot_compliance_add_email_alert_1.png["Una captura de pantalla que muestra cómo editar una política existente."]
+
+. En la página Edit Policy:
++
+.. Marque la casilla "Enviar por correo electrónico a todos los usuarios de esta cuenta" si desea enviar correos electrónicos de notificación a los usuarios de su cuenta de BlueXP y elija el intervalo en el que se envía el correo electrónico (por ejemplo, *todos los días*).
+.. Marque la casilla "Enviar correo electrónico" si desea enviar correos electrónicos de notificación a usuarios adicionales, seleccione el intervalo en el que se envía el correo electrónico e introduzca hasta 20 direcciones de correo electrónico.
++
+image:screenshot_compliance_add_email_alert_2.png["Una captura de pantalla que muestra cómo elegir el criterio de correo electrónico que se enviará para la Política."]
+
+
+
+. Haga clic en *Guardar política* y el intervalo en el que se envía el correo electrónico aparece en la descripción de la política.
+
+
+.Resultado
+El primer correo electrónico se envía ahora si hay algún resultado de la política, pero solo si algún archivo cumple con los criterios de la política. No se envía información personal en los correos electrónicos de notificación. El correo electrónico indica que hay archivos que coinciden con los criterios de la política y proporciona un enlace a los resultados de la política.
+
+
+
+== Eliminar archivos de origen automáticamente mediante políticas
+
+Puede crear una directiva personalizada para eliminar los archivos que coincidan con la directiva. Por ejemplo, puede que desee eliminar archivos que contienen información confidencial y que se han detectado por la clasificación de BlueXP en los últimos 30 días.
+
+Sólo los administradores de cuentas pueden crear una directiva para eliminar archivos automáticamente.
+
+
+NOTE: Todos los archivos que coincidan con la directiva se eliminarán de forma permanente una vez al día.
+
+.Pasos
+. En la página Investigación de datos, defina la búsqueda seleccionando todos los filtros que desee utilizar. Consulte link:task-investigate-data.html["Filtrar datos en la página Investigación de datos"^] para obtener más detalles.
+. Una vez que tenga todas las características de filtro de la forma que desee, haga clic en *Crear directiva de esta búsqueda*.
+. Asigne un nombre a la política y seleccione otras acciones que puede realizar la política:
++
+.. Introduzca un nombre y una descripción únicos.
+.. Active la casilla para "eliminar automáticamente los archivos que coinciden con esta directiva" y escriba *eliminar permanentemente* para confirmar que desea que los archivos se eliminen de forma permanente mediante esta directiva.
+.. Haga clic en *Crear directiva*.
++
+image:screenshot_compliance_delete_files_using_policies.png["Una captura de pantalla que muestra cómo configurar la política y guardarla."]
+
+
+
+
+
+.Resultado
+La nueva política aparece en la pestaña Policies. Los archivos que coinciden con la directiva se eliminan una vez al día cuando se ejecuta la directiva.
+
+Puede ver la lista de archivos que se han eliminado en link:task-view-compliance-actions.html["Panel Estado de acciones"].
+
+
+
+== Asigne etiquetas AIP automáticamente con políticas
+
+Puede asignar una etiqueta AIP a todos los archivos que cumplan los criterios de la política. Puede especificar la etiqueta AIP al crear la política, o puede agregar la etiqueta al editar cualquier política.
+
+Las etiquetas se añaden o actualizan en los archivos continuamente a medida que la clasificación de BlueXP analiza los archivos.
+
+En función de si una etiqueta ya se ha aplicado a un archivo y del nivel de clasificación de la etiqueta, se realizan las siguientes acciones al cambiar una etiqueta:
+
+[cols="60,40"]
+|===
+| Si el archivo... | Realice lo siguiente... 
+
+
+| No tiene etiqueta | Se agrega la etiqueta 
+
+
+| Tiene una etiqueta de un nivel inferior de clasificación | Se agrega la etiqueta de nivel superior 
+
+
+| Tiene una etiqueta existente de un nivel superior de clasificación | Se mantiene la etiqueta de nivel superior 
+
+
+| Se asigna una etiqueta tanto manualmente como mediante una política | Se agrega la etiqueta de nivel superior 
+
+
+| Se asigna dos etiquetas diferentes mediante dos políticas | Se agrega la etiqueta de nivel superior 
+|===
+Siga estos pasos para agregar una etiqueta AIP a una política existente.
+
+.Pasos
+. En la página Lista de políticas, haga clic en *Editar* para la directiva en la que desea agregar (o cambiar) la etiqueta AIP.
++
+image:screenshot_compliance_add_label_highlight_1.png["Una captura de pantalla que muestra cómo editar una directiva existente."]
+
+. En la página Editar directiva, active la casilla para habilitar etiquetas automáticas para los archivos que coincidan con los parámetros de directiva y seleccione la etiqueta (por ejemplo, *General*).
++
+image:screenshot_compliance_add_label_highlight_2.png["Una captura de pantalla que muestra cómo seleccionar la etiqueta que se asignará a los archivos que coincidan con la directiva."]
+
+. Haga clic en *Guardar política* y la etiqueta aparecerá en la descripción de la política.
+
+
+
+NOTE: Si se configuró una directiva con una etiqueta, pero la etiqueta se ha eliminado de AIP, el nombre de la etiqueta se DESACTIVA y la etiqueta ya no se asigna.

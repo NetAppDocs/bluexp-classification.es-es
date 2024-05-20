@@ -16,6 +16,11 @@ summary: La clasificación de BlueXP ofrece muchas formas de gestionar los datos
 [role="lead"]
 La clasificación de BlueXP ofrece muchas formas de gestionar los datos privados. Algunas funcionalidades facilitan la preparación para la migración de datos, mientras que otras permiten realizar cambios en los datos.
 
+[]
+====
+*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
+
+====
 * Puede copiar archivos en un recurso compartido NFS de destino si desea realizar una copia de determinados datos y moverlos a una ubicación NFS diferente.
 * Es posible clonar un volumen de ONTAP en un volumen nuevo, e incluir solo los archivos seleccionados del volumen de origen en el nuevo volumen clonado. Esto resulta útil en situaciones en las que se migran datos y se desean excluir determinados archivos del volumen original.
 * Puede copiar y sincronizar archivos de un repositorio de origen a un directorio en una ubicación de destino específica. Esto resulta útil en situaciones en las que se migran datos de un sistema de origen a otro mientras todavía hay alguna actividad final en los archivos de origen.
@@ -143,7 +148,7 @@ El nuevo volumen clonado se crea en el mismo agregado que el volumen de origen.
 
 Puede ver el progreso de la operación de clonado en el link:task-view-compliance-actions.html["Panel Estado de acciones"].
 
-Si inicialmente seleccionaste *Asignar todos los volúmenes* o *Asignar y clasificar todos los volúmenes* cuando habilitaste la clasificación de BlueXP para el entorno de trabajo donde reside el volumen de origen, la clasificación de BlueXP escaneará el nuevo volumen clonado automáticamente. Si inicialmente no ha utilizado ninguna de estas selecciones, si desea explorar este nuevo volumen, deberá hacerlo link:task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes["active la exploración en el volumen manualmente"].
+Si inicialmente seleccionaste *Asignar todos los volúmenes* o *Asignar y clasificar todos los volúmenes* cuando habilitaste la clasificación de BlueXP para el entorno de trabajo donde reside el volumen de origen, la clasificación de BlueXP escaneará el nuevo volumen clonado automáticamente. Si inicialmente no ha utilizado ninguna de estas selecciones, si desea explorar este nuevo volumen, deberá hacerlo link:task-getting-started-compliance.html["active la exploración en el volumen manualmente"].
 
 
 
@@ -252,7 +257,7 @@ image:screenshot_compliance_move_file.png["Captura de pantalla que muestra la se
 
 Puede eliminar de forma permanente los archivos de origen que parezcan poco seguros o demasiado arriesgados para dejar su sistema de almacenamiento, o que haya identificado como duplicados. Esta acción es permanente y no hay deshacer ni restaurar.
 
-Puede eliminar archivos manualmente desde el panel Investigación, o. link:task-using-policies.html#delete-source-files-automatically-using-policies["Uso automático de directivas"^].
+Puede eliminar archivos manualmente desde el panel Investigación, o. link:task-using-policies.html["Uso automático de directivas"^].
 
 
 TIP: No se pueden eliminar los archivos que residen en las bases de datos. Se admiten todos los demás orígenes de datos.

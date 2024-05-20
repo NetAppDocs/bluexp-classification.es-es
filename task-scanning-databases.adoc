@@ -16,8 +16,6 @@ summary: Completa unos pasos para empezar a analizar tus esquemas de base de dat
 [role="lead"]
 Completa unos pasos para empezar a analizar tus esquemas de base de datos con la clasificación de BlueXP.
 
-Tenga en cuenta que después de habilitar el análisis de bases de datos, puede agregar identificadores únicos que la clasificación de BlueXP identificará en todos sus orígenes de datos en función de columnas específicas de sus bases de datos. Esto se denomina función _Data Fusion_. link:task-managing-data-fusion.html#add-custom-personal-data-identifiers-from-your-databases["Aprenda a agregar identificadores de datos personales personalizados de sus bases de datos"^].
-
 
 
 == Inicio rápido

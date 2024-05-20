@@ -1,0 +1,161 @@
+---
+sidebar: sidebar 
+permalink: reference-free-paid.html 
+keywords: bluexp, classification, cloud data sense, data sense, compliance, security 
+summary: Hay algunas características y funcionalidades que no están disponibles en la versión gratuita de la clasificación de BlueXP. 
+---
+= Funciones obsoletas de clasificación de BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La clasificación de BlueXP está disponible como funcionalidad básica dentro de BlueXP sin coste adicional. Al incluir la clasificación de BlueXP como una funcionalidad central de BlueXP disponible para todos los clientes, NetApp te permite acceder a una gestión de datos personalizada con funciones principales.
+
+Hay algunas funciones y funcionalidades obsoletas en la versión principal de BlueXP a partir de la versión 1,31 y posteriores, y todavía se admiten en las versiones heredadas 1,30 y anteriores.
+
+
+
+== Orígenes de datos compatibles
+
+[cols="60,20,20"]
+|===
+| Origen de datos | Versiones heredadas 1,30 y anteriores | BlueXP Core versiones 1,31 y posteriores 
+
+
+| Cloud Volumes ONTAP (implementado en AWS, Azure o GCP) | Sí | Sí 
+
+
+| Clústeres de ONTAP en las instalaciones | Sí | Sí 
+
+
+| StorageGRID | Sí | No 
+
+
+| Azure NetApp Files | Sí | Sí 
+
+
+| Amazon FSX para ONTAP | Sí | Sí 
+
+
+| NetApp Volumes para Google Cloud | Sí | Sí 
+
+
+| Cloud Volumes Service para Google Cloud | Sí | Sí 
+
+
+| Oracle | Sí | Sí 
+
+
+| Amazon S3 | Sí | No 
+
+
+| Google Cloud Storage | Sí | No 
+
+
+| OneDrive | Sí | No 
+
+
+| SharePoint online | Sí | No 
+
+
+| SharePoint en las instalaciones (SharePoint Server) | Sí | No 
+
+
+| Unidad de Google | Sí | No 
+|===
+
+
+== Funciones de cumplimiento normativo
+
+[cols="60,20,20"]
+|===
+| Función | Versiones heredadas 1,30 y anteriores | BlueXP Core versiones 1,31 y posteriores 
+
+
+| Identificación de la Información personal de identificación (PII). | Sí | Sí 
+
+
+| Identificar la información personal confidencial | Sí | Sí 
+
+
+| Responder a solicitudes de acceso de sujetos de datos (DSAR) | Sí | Sí 
+
+
+| Crear una lista personalizada de los “datos personales” que se identifican | Sí | No 
+
+
+| Notificar a los usuarios por correo electrónico cuando los archivos contienen cierta PII. (Este criterio se define mediante link:task-using-policies.html["Normativas"^].) | Sí | Sí 
+
+
+| Usar filtros a nivel de directorio | Sí | Sí 
+
+
+| Utilice el análisis PII a nivel de directorio | Sí | No 
+|===
+
+
+== Funciones para gestionar los datos
+
+[cols="60,20,20"]
+|===
+| Función | Versiones heredadas 1,30 y anteriores | BlueXP Core versiones 1,31 y posteriores 
+
+
+| Mover, copiar y eliminar archivos de origen | Sí | No 
+
+
+| Categorice los datos mediante etiquetas de estado | Sí | No 
+
+
+| Categorizar los datos mediante etiquetas AIP | Sí | No 
+
+
+| Asigne archivos a los usuarios | Sí | No 
+
+
+| Volver a analizar datos bajo demanda | Sí | No 
+
+
+| Crear clasificadores personalizados | Sí | No 
+
+
+| Excluir directorios de la exploración | Sí | Sí 
+
+
+| Buscar nombres dentro de los archivos | Sí | Sí 
+
+
+| Exportar datos a NFS desde la investigación | Sí | No 
+
+
+| Soporte para múltiples escáneres | Sí | No 
+
+
+| Integre Active Directory | Sí | Sí 
+
+
+| Utilice análisis de permisos y filtros | Sí | Sí 
+
+
+| Utilice la tarjeta de archivo | Sí | Sí 
+
+
+| Utilice el mapa de calor | Sí | Sí 
+
+
+| Utilice acciones en el panel de control y en la tarjeta de archivo | Sí | No 
+
+
+| Utilizar el registro de auditoría de acceso a archivos | Sí | No 
+
+
+| Active el acceso a archivos desde la página Configuración | Sí | No 
+
+
+| Use ciertas políticas predefinidas | Sí | No 
+|===

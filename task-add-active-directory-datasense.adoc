@@ -39,8 +39,7 @@ Una integración de Active Directory con la clasificación de BlueXP puede ident
 * Azure NetApp Files
 * FSX para ONTAP
 * Recursos compartidos de archivos CIFS de otros proveedores (no recursos compartidos de archivos NFS)
-* Cuentas de OneDrive
-* Cuentas de SharePoint
+* Cuentas de OneDrive y cuentas de SharePoint (para versiones anteriores 1,30 y anteriores)
 
 
 No se ofrece compatibilidad para identificar la información de usuarios y permisos de esquemas de base de datos, cuentas de Google Drive, cuentas de Amazon S3 o Object Storage que utilizan el protocolo simple Storage Service (S3).

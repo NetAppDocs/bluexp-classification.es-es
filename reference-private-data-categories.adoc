@@ -14,7 +14,7 @@ summary: Hay muchos tipos de datos privados que la clasificación de BlueXP pued
 
 
 [role="lead"]
-Hay muchos tipos de datos privados que la clasificación de BlueXP puede identificar en tus volúmenes, bloques de Amazon S3, bases de datos, carpetas de OneDrive, cuentas de SharePoint, etc. Y cuentas de Google Drive. Vea las categorías a continuación.
+Hay muchos tipos de datos privados que la clasificación de BlueXP puede identificar en tus volúmenes y bases de datos. Vea las categorías a continuación.
 
 
 TIP: Si necesita la clasificación de BlueXP para identificar otros tipos de datos privados, como números de identificación nacionales o identificadores sanitarios adicionales, envíe un correo electrónico a ng-contact-data-sense@netapp.com con su solicitud.
@@ -26,8 +26,6 @@ TIP: Si necesita la clasificación de BlueXP para identificar otros tipos de dat
 Los datos personales encontrados en los archivos pueden ser datos personales generales o identificadores nacionales. La tercera columna de la siguiente tabla identifica si la clasificación de BlueXP lo utiliza link:task-controlling-private-data.html#view-files-that-contain-personal-data["validación de proximidad"^] validar los resultados del identificador.
 
 Los idiomas en los que se pueden reconocer estos elementos se identifican en la tabla.
-
-Tenga en cuenta que puede agregar a la lista de datos personales que se encuentran en sus archivos. Si vas a analizar un servidor de bases de datos, la función _Data Fusion_ te permite elegir identificadores adicionales que buscará la clasificación de BlueXP en sus exploraciones seleccionando columnas en una tabla de base de datos. También puede agregar palabras clave personalizadas desde un archivo de texto o patrones personalizados utilizando una expresión regular. Consulte link:task-managing-data-fusion.html["Agregar identificadores de datos personales a tus análisis de clasificación de BlueXP"^] para obtener más detalles.
 
 [cols="13,37,10,8,8,8,8,8"]
 |===

@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-multi-host-install-dark-site.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification, classification, install 
+summary: Completa unos pocos pasos para instalar la clasificación de BlueXP en un host Linux, en un sitio local que no tenga acceso a Internet, también conocido como «modo privado». Este tipo de instalación es perfecta para sus sitios seguros. 
+---
+= Instale la clasificación de BlueXP en varios hosts para configuraciones de gran tamaño sin acceso a Internet
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Completa unos pocos pasos para instalar la clasificación de BlueXP en varios hosts de un sitio local que no tenga acceso a Internet (también conocido como _private mode_). Este tipo de instalación es perfecta para sus sitios seguros.
+
+Para configuraciones muy grandes en las que escaneará petabytes de datos en sitios sin acceso a Internet, puede incluir varios hosts para proporcionar potencia de procesamiento adicional. Cuando se utilizan varios sistemas host, el sistema principal se denomina _Manager node_ y los sistemas adicionales que proporcionan potencia de procesamiento adicional se denominan _Scanner Nodes_.
+
+Siga estos pasos al instalar el software de clasificación BlueXP en varios hosts on-premises en un entorno sin conexión.
+
+[]
+====
+*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
+
+====
+.Lo que necesitará
+* Compruebe que todos los sistemas Linux para los nodos Manager y Scanner cumplen los requisitos del host.
+* Compruebe que ha instalado los dos paquetes de software de requisitos previos (Docker Engine o Podman y Python 3).
+* Asegúrese de tener privilegios de usuario raíz en los sistemas Linux.
+* Verifique que su entorno fuera de línea cumpla con los permisos y la conectividad requeridos.
+* Debe tener las direcciones IP de los hosts de nodos de escáner que desee utilizar.
+* Deben habilitarse los siguientes puertos y protocolos en todos los hosts:
++
+[cols="15,20,55"]
+|===
+| Puerto | Protocolos | Descripción 
+
+
+| 2377 | TCP | Comunicaciones de gestión de clústeres 
+
+
+| 7946 | TCP, UDP | Comunicación entre nodos 
+
+
+| 4789 | UDP | Superpone el tráfico de red 
+
+
+| 50 | ESP | Tráfico de red de superposición (ESP) IPsec cifrada 
+
+
+| 111 | TCP, UDP | Servidor NFS para compartir archivos entre los hosts (necesario de cada nodo de escáner al nodo de administración) 
+
+
+| 2049 | TCP, UDP | Servidor NFS para compartir archivos entre los hosts (necesario de cada nodo de escáner al nodo de administración) 
+|===
+
+
+.Pasos
+. Siga los pasos 1 a 8 de la link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["Instalación de un solo host"] en el nodo de gestión.
+. Como se muestra en el paso 9, cuando el instalador lo solicite, puede introducir los valores necesarios en una serie de peticiones o puede proporcionar los parámetros necesarios como argumentos de línea de comandos al instalador.
++
+Además de las variables disponibles para una instalación de un solo host, se utiliza una nueva opción *-n <node_ip>* para especificar las direcciones IP de los nodos del escáner. Las IP de varios nodos están separadas por una coma.
+
++
+Por ejemplo, este comando añade 3 nodos de escáner:
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --no-proxy --darksite`
+
+. Antes de que se complete la instalación del nodo de gestión, se mostrará un cuadro de diálogo con el comando de instalación necesario para los nodos del escáner. Copie el comando (por ejemplo: `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`) y guárdelo en un archivo de texto.
+. En el host *cada nodo del escáner*:
++
+.. Copie el archivo de instalación de Data Sense (*cc_onprem_installer.tar.gz*) en el equipo host.
+.. Descomprima el archivo del instalador.
+.. Pegue y ejecute el comando que copió en el paso 3.
++
+Cuando la instalación finalice en todos los nodos de escáner y se han Unido al nodo de gestión, también se completa la instalación del nodo de gestión.
+
+
+
+
+
+.Resultado
+El instalador de clasificación de BlueXP finalizará la instalación de paquetes y registrará la instalación. La instalación puede tardar entre 15 y 25 minutos.
+
+.El futuro
+En la página Configuration puede seleccionar el local link:task-getting-started-compliance.html["Clústeres de ONTAP en las instalaciones"] y local link:task-scanning-databases.html["oracle"] que desea escanear.
+
+También puede hacerlo link:task-licensing-datasense.html["Configura las licencias de BYOL para la clasificación de BlueXP"] Desde la página de la cartera digital de BlueXP en este momento. No se le cobrará incluso después de que finalice su prueba gratuita de 30 días.

@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-managing-repo-scanning-deprecated.html 
+keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
+summary: 'Puede gestionar cómo se analizan sus datos en cada uno de sus entornos de trabajo y fuentes de datos. Puede realizar los cambios en función del "repositorio", lo que significa que puede realizar cambios para cada volumen, bloque, recurso compartido, esquema, usuario, etc. dependiendo del tipo de origen de datos que esté escaneando.' 
+---
+= Volver a escanear datos para un repositorio existente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La clasificación de BlueXP analiza continuamente tus datos para detectar cambios incrementales en los repositorios que has añadido. Sin embargo, el sistema tarda tiempo en analizar todos los entornos y no hay ningún método para controlar el orden de los repositorios que se analizan. Si necesita volver a analizar un repositorio determinado de inmediato para que los cambios se reflejen en el sistema, puede seleccionar el repositorio y volver a analizar dicho repositorio. Esto permite priorizar el análisis de determinados datos antes que otros. Tras la acción de repetición de escaneo, el repositorio seleccionado vuelve al análisis según el programa de clasificación normal de BlueXP.
+
+[]
+====
+*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
+
+====
+La clasificación de BlueXP admite los directorios de análisis en todos los tipos de orígenes de datos excepto en Amazon S3 y bases de datos. Actualmente, podemos volver a utilizar un único directorio (carpeta o recurso compartido) o varios directorios. En el futuro, se ofrecerá compatibilidad con otros tipos de repositorios adicionales (archivos, bases de datos, etc.).
+
+* Al volver a analizar un directorio, se vuelven a enlatar todos los archivos del directorio, pero las subcarpetas del directorio no se vuelven a analizar.
+* Al volver a analizar un recurso compartido, solo se vuelven a almacenar los metadatos del recurso compartido.
+* Un máximo de 1K elementos se pueden volver a enlatar a la vez.
+
+
+.Pasos
+. En el panel resultados de la investigación de datos, seleccione las carpetas o recursos compartidos que desea volver a analizar y haga clic en *Volver a explorar*.
++
+image:screenshot_compliance_rescan_directory.png["Captura de pantalla que muestra cómo seleccionar y volver a explorar un directorio."]
+
+. En el cuadro de diálogo _Rescan Directory_, haga clic en *Rescan*.
+
+
+Tenga en cuenta que también puede volver a analizar un directorio individual al ver los detalles de los metadatos. Simplemente haga clic en *Rescan*.
+
+image:screenshot_compliance_rescan_single_file.png["Captura de pantalla que muestra cómo volver a explorar una única carpeta o recurso compartido."]

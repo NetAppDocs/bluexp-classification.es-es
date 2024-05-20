@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-investigate-data-deprecated.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+summary: Puede investigar los datos de su organización visualizando los detalles en la página Investigación de datos. Puedes navegar a esta página desde muchas áreas de la interfaz de usuario de clasificación de BlueXP, incluidas las consolas de gobierno y cumplimiento de normativas. 
+---
+= Investigue los datos almacenados en la página de investigación de datos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede investigar los datos de su organización visualizando los detalles en la página Investigación de datos. Puedes navegar a esta página desde muchas áreas de la interfaz de usuario de clasificación de BlueXP, incluidas las consolas de gobierno y cumplimiento de normativas.
+
+
+NOTE: Las capacidades descritas en esta sección sólo están disponibles si ha elegido realizar un análisis de clasificación completo en sus orígenes de datos. Los orígenes de datos que han tenido un análisis de sólo asignación no muestran detalles de nivel de archivo.
+
+
+
+== Filtrar datos en la página Investigación de datos
+
+Puede filtrar el contenido de la página de investigación para que muestre solo los resultados que desea ver. Esta es una característica muy eficaz porque después de afinar los datos, puede utilizar la barra de botones en la parte superior de la página para realizar una variedad de acciones, incluyendo copiar archivos, mover archivos, agregar una etiqueta o etiqueta AIP a los archivos, y mucho más.
+
+
+
+=== Filtre los datos por etiquetas, usuarios asignados y políticas
+
+Utilice los siguientes filtros para ver los datos por etiquetas, etiquetas AIP, usuarios asignados o políticas.
+
+[]
+====
+*NOTA* La capacidad de filtrar por etiquetas, etiquetas y usuarios asignados solo es relevante para las versiones de clasificación de BlueXP 1,30 y anteriores.
+
+====
+[cols="30,60"]
+|===
+| Filtro | Detalles 
+
+
+| Normativas | Seleccione una política o políticas. Vaya link:task-using-policies.html["aquí"^] para ver la lista de directivas existentes y crear sus propias directivas personalizadas. 
+
+
+| Etiqueta | Seleccione link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquetas AIP"] que se asignan a sus archivos. 
+
+
+| Etiquetas | Seleccione link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["la etiqueta o las etiquetas"] que se asignan a sus archivos. 
+
+
+| Asignado a. | Seleccione el nombre de la persona a la que se asigna el archivo. 
+|===
+
+
+== Cree el informe de investigación de datos
+
+El Informe de investigación de datos es una descarga del contenido filtrado de la página Investigación de datos.
+
+El informe está disponible en dos formatos diferentes:
+
+* Como archivo .CSV que se puede guardar en el equipo local.
++
+Este informe puede incluir un máximo de 10.000 filas de datos.
+
+* Como un archivo .JSON que se exporta a un recurso compartido NFS.
++
+Si hay más de 250.000 filas de datos, se crean archivos .JSON adicionales.
+
++
+Al exportar a un recurso compartido de archivos, asegúrese de que la clasificación de BlueXP tenga los permisos correctos para acceder a las exportaciones.
+
++
+[]
+====
+*NOTA* La capacidad de generar el informe en . El formato JSON solo es relevante para las versiones de clasificación de BlueXP 1,30 y anteriores.
+
+====
+
+
+Puede haber hasta tres archivos de informes descargados si la clasificación de BlueXP está analizando archivos (datos no estructurados), directorios (carpetas y recursos compartidos de archivos) y bases de datos (datos estructurados).
+
+.Pasos
+. En la página Data Investigation, haga clic en image:button_download.png["botón de descarga"] en la parte superior derecha de la página.
+. Seleccione si desea descargar un informe .CSV o un informe .JSON de los datos y haga clic en *Descargar informe*.
++
+Al seleccionar un informe .JSON, introduzca el nombre del recurso compartido NFS al que se descargará el informe con el formato `<host_name>:/<share_path>`.
+
++
+Puede ver el progreso de la generación de informes JSON en la link:task-view-compliance-actions.html["Panel Estado de acciones"].
+
++
+[]
+====
+*NOTA* La capacidad de filtrar por etiquetas, etiquetas y usuarios asignados solo es relevante para las versiones de clasificación de BlueXP 1,30 y anteriores.
+
+====
+

@@ -17,6 +17,9 @@ summary: Completa unos pasos para empezar a analizar recursos compartidos de arc
 Completa unos pasos para empezar a analizar recursos compartidos de archivos NFS o CIFS que no sean de NetApp directamente con la clasificación de BlueXP. Estos recursos compartidos de archivos pueden residir en las instalaciones o en el cloud.
 
 
+TIP: La única forma de analizar los datos de volúmenes de Google Cloud NetApp es añadir recursos compartidos de archivos.
+
+
 
 == Inicio rápido
 

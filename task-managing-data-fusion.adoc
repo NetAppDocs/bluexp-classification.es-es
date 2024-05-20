@@ -16,6 +16,11 @@ summary: La clasificación de BlueXP ofrece muchas formas de agregar una lista p
 [role="lead"]
 La clasificación de BlueXP ofrece muchas formas de añadir una lista personalizada de «datos personales» que identificará la clasificación de BlueXP en futuros análisis, lo que te da una imagen completa sobre dónde residen los datos potencialmente confidenciales en _todos_ los archivos de tu organización.
 
+[]
+====
+*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
+
+====
 * Puede agregar identificadores únicos basados en columnas específicas de las bases de datos que está analizando.
 * Puede agregar palabras clave personalizadas desde un archivo de texto: Estas palabras se identifican dentro de sus datos.
 * Puede agregar un patrón personal utilizando una expresión regular (regex) -- el regex se agrega a los patrones predefinidos existentes.

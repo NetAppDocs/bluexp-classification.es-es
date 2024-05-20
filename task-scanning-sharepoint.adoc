@@ -4,7 +4,7 @@ permalink: task-scanning-sharepoint.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, sharepoint online, sharepoint on-premises, data sense 
 summary: Complete unos pasos para empezar a analizar archivos en sus cuentas on-premise de SharePoint Online y SharePoint con clasificación de BlueXP. 
 ---
-= Analizando cuentas de SharePoint
+= Analizar cuentas de SharePoint
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,6 +16,11 @@ summary: Complete unos pasos para empezar a analizar archivos en sus cuentas on-
 [role="lead"]
 Complete unos pasos para empezar a analizar archivos en sus cuentas on-premise de SharePoint Online y SharePoint con clasificación de BlueXP.
 
+[]
+====
+*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
+
+====
 
 
 == Inicio rápido
@@ -55,7 +60,7 @@ Revisa los siguientes requisitos previos para asegurarte de que estás listo par
 
 
 
-== Implementar la instancia de clasificación de BlueXP
+== Implementa la instancia de clasificación de BlueXP
 
 Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
 
@@ -69,7 +74,7 @@ Las actualizaciones del software de clasificación de BlueXP se automatizan siem
 
 
 
-== Agregar una cuenta de SharePoint Online
+== Agregue una cuenta de SharePoint Online
 
 Agregue la cuenta de SharePoint Online donde residen los archivos de usuario.
 
@@ -86,7 +91,7 @@ La cuenta de SharePoint Online se agrega a la lista de entornos de trabajo.
 
 
 
-== Adición de una cuenta de SharePoint en las instalaciones
+== Agregue una cuenta de SharePoint On-Premise
 
 Agregue la cuenta de SharePoint en las instalaciones donde residen los archivos de usuario.
 
@@ -111,7 +116,7 @@ La cuenta de SharePoint en las instalaciones se agrega a la lista de entornos de
 
 
 
-== Agregar sitios de SharePoint a los análisis de cumplimiento
+== Agregue sitios de SharePoint a las exploraciones de cumplimiento
 
 Puede añadir sitios de SharePoint individuales, o hasta 1.000 sitios de SharePoint en la cuenta, de modo que la clasificación de BlueXP analice los archivos asociados. Los pasos son los mismos si agrega sitios de SharePoint Online o de SharePoint en las instalaciones.
 
@@ -163,10 +168,10 @@ La clasificación de BlueXP comienza a analizar los archivos en los sitios de Sh
 
 
 
-== Quitar un sitio de SharePoint de los análisis de cumplimiento
+== Eliminar un sitio de SharePoint de los análisis de cumplimiento
 
 Si quita un sitio de SharePoint en el futuro o decide no analizar archivos en un sitio de SharePoint, puede eliminar sitios de SharePoint individuales para que sus archivos se analicen en cualquier momento. Haga clic en *Quitar sitio de SharePoint* de la página Configuración.
 
 image:screenshot_compliance_sharepoint_remove_site.png["Una captura de pantalla que muestra cómo eliminar un único sitio de SharePoint de la captura de sus archivos."]
 
-Tenga en cuenta que puede link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Elimina toda la cuenta de SharePoint de la clasificación de BlueXP"] Si ya no desea analizar los datos de usuario desde la cuenta de SharePoint.
+Tenga en cuenta que puede link:task-managing-compliance.html["Elimina toda la cuenta de SharePoint de la clasificación de BlueXP"] Si ya no desea analizar los datos de usuario desde la cuenta de SharePoint.

@@ -18,6 +18,11 @@ Cuando ejecuta una acción asincrónica desde el panel de resultados de la inves
 
 Esto permite ver las acciones que se completaron correctamente, las que están en curso en ese momento y las que han fallado para poder diagnosticar y corregir cualquier problema. Tenga en cuenta que las operaciones cortas que se completan rápidamente, como mover un único archivo, no aparecen en el panel Estado de acciones.
 
+[]
+====
+*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
+
+====
 El estado puede ser:
 
 * Correcto: La acción de clasificación de BlueXP ha finalizado y todos los elementos se han realizado correctamente.

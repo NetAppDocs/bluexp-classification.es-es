@@ -41,7 +41,7 @@ Inicia el asistente de instalación para implementar la instancia de clasificaci
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Suscríbete al servicio de clasificación de BlueXP
 [role="quick-margin-para"]
-Los primeros 1 TB de datos que analiza la clasificación de BlueXP en BlueXP son gratuitos durante 30 días. Debe haber una suscripción a BlueXP a través de su plataforma de proveedores de cloud o una licencia BYOL de NetApp para continuar analizando los datos después de ese punto.
+Los primeros 500 TB de datos que analiza la clasificación de BlueXP en BlueXP son gratuitos durante 30 días. Debe haber una suscripción a BlueXP a través de su plataforma de proveedores de cloud o una licencia BYOL de NetApp para continuar analizando los datos después de ese punto.
 
 
 
@@ -51,7 +51,7 @@ Si aún no tiene un conector, cree un conector en su proveedor de cloud. Consult
 
 Existen algunas situaciones en las que debe utilizar un conector implementado en un proveedor de cloud específico:
 
-* Cuando escanea datos en Cloud Volumes ONTAP en AWS, Amazon FSx para ONTAP o en buckets AWS S3, usa un conector en AWS.
+* Cuando escanea datos en Cloud Volumes ONTAP en buckets de AWS o Amazon FSx para ONTAP, usa un conector en AWS.
 * Al escanear datos en Cloud Volumes ONTAP en Azure o en Azure NetApp Files, se utiliza un conector en Azure.
 +
 ** Para Azure NetApp Files, debe implementarse en la misma región que los volúmenes que desea analizar.
@@ -60,7 +60,7 @@ Existen algunas situaciones en las que debe utilizar un conector implementado en
 * Al analizar datos en Cloud Volumes ONTAP en GCP, se utiliza un conector en GCP.
 
 
-Los sistemas ONTAP en las instalaciones, recursos compartidos de archivos que no son de NetApp, almacenamiento de objetos genéricos de S3, bases de datos, carpetas de OneDrive, cuentas de SharePoint y cuentas de Google Drive se pueden analizar al utilizar cualquiera de estos conectores de cloud.
+Los sistemas ONTAP en las instalaciones, los recursos compartidos de archivos que no son de NetApp, el almacenamiento de objetos S3 genérico y las bases de datos se pueden analizar al utilizar cualquiera de estos conectores en la nube.
 
 Tenga en cuenta que también puede https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Instale el conector en las instalaciones"^] En un host Linux en su red o en la nube. Algunos usuarios que planean instalar la clasificación de BlueXP en las instalaciones también pueden optar por instalar el conector en las instalaciones.
 
@@ -71,10 +71,6 @@ Como puede ver, puede que haya algunas situaciones en las que necesite utilizar 
 === Apoyo del Gobierno en las regiones
 
 La clasificación BlueXP se admite cuando Connector se implementa en una región gubernamental (AWS GovCloud, Azure Gov o Azure DoD). Cuando se implementa de esta manera, la clasificación de BlueXP tiene las siguientes restricciones:
-
-* Las cuentas de OneDrive, cuentas de SharePoint y cuentas de Google Drive no se pueden analizar.
-* La funcionalidad de etiqueta de Microsoft Azure Information Protection (AIP) no se puede integrar.
-
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["Consulte más información sobre el despliegue del conector en una región gubernamental"^].
 

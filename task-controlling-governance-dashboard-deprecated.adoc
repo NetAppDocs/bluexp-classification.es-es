@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-controlling-governance-dashboard-deprecated.html 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
+summary: Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato. 
+---
+= Consulte los detalles de gobierno sobre sus datos a través de la consola de gobierno
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato.
+
+Además, si tiene pensado migrar datos desde ubicaciones locales al cloud, puede visualizar el tamaño de los datos y si alguno de ellos contiene información confidencial antes de moverlos.
+
+[]
+====
+*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
+
+====
+
+
+== Datos enumerados por confidencialidad y amplios permisos en la consola de gobierno
+
+El área Datos sensibles y Permisos amplios del panel de control de gobierno proporciona un mapa térmico de archivos que contienen datos confidenciales (incluidos datos personales sensibles y confidenciales) y que son excesivamente permisivos. Esto puede ayudarle a ver dónde puede tener algunos riesgos con datos confidenciales.
+
+
+NOTE: Esto se aplica a las versiones de clasificación de BlueXP 1,30 y anteriores.
+
+Los archivos se clasifican en función del número de usuarios con permiso para acceder a los archivos del eje X (del más bajo al más alto) y del número de identificadores confidenciales dentro de los archivos del eje y (del más bajo al más alto). Los bloques representan el número de archivos que coinciden con los elementos de los ejes X e Y. El bloque de color más claro es bueno; con menos usuarios capaces de acceder a los archivos y con menos identificadores confidenciales por archivo. Los bloques más oscuros son los elementos que tal vez desee investigar. Por ejemplo, la siguiente pantalla muestra el texto de desplazamiento del bloque azul oscuro. Muestra que tiene 1,500 archivos en los que 751-100 usuarios tienen acceso y donde hay 501-100 identificadores confidenciales por archivo.
+
+image:screenshot_compliance_sensitive_data.png["Captura de pantalla que muestra los datos mostrados al colocar el cursor sobre un elemento de este panel."]
+
+Puede hacer clic en el bloque en el que está interesado para ver los resultados filtrados de los archivos afectados en la página Investigación para poder seguir investigando.
+
+No se muestran datos en este panel si no se ha integrado un servicio de identidades con la clasificación de BlueXP. link:task-add-active-directory-datasense.html["Descubre cómo integrar tu servicio de Active Directory con la clasificación de BlueXP"^].
+
+
+TIP: Este panel admite archivos en recursos compartidos de CIFS, OneDrive y orígenes de datos de SharePoint. Actualmente no se admite el almacenamiento de bases de datos, Google Drive, Amazon S3 y objetos genéricos.
+
+
+
+== Área de clasificación en el panel de control que muestra las etiquetas AIP
+
+El área _Classification_ del panel de control proporciona una lista de las etiquetas de protección de información de Azure (AIP) más identificadas en los datos escaneados.
+
+Si se ha suscrito a la protección de información de Azure (AIP), puede clasificar y proteger documentos y archivos aplicando etiquetas al contenido. La revisión de las etiquetas AIP más utilizadas que se asignan a los archivos le permite ver qué etiquetas se utilizan más en sus archivos.
+
+Consulte link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquetas AIP"^] si quiere más información.
