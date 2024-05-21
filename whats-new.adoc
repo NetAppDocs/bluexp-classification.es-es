@@ -42,6 +42,8 @@ Los siguientes sistemas operativos deben utilizar el motor de contenedor Podman 
 
 Más información acerca de https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["Información general sobre las puestas en marcha de clasificación de BlueXP"].
 
+La clasificación BlueXP es compatible si instala el Connector en un host RHEL 8 o 9 que reside en las instalaciones. No se admite si el host RHEL 8 o 9 reside en AWS, Azure o Google Cloud.
+
 
 
 === Se quitó la opción para activar la recogida del registro de auditoría

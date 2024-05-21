@@ -3544,4 +3544,5 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="77811a66f12d1085614f313861555339" category="sidebar">Gestione los datos</block>
   <block id="08a8e0f5e4c7d91e565955cb7f30b215" category="sidebar">Consulte los detalles de gobierno sobre los datos en la consola de gobierno</block>
   <block id="aeb69ebcaffd7e18cd55db906e582bf5" category="sidebar">Eliminar una cuenta de OneDrive, SharePoint o Google Drive</block>
+  <block id="b6417b62aacc6d16c1ae7a79d851d413" category="paragraph">La clasificación BlueXP es compatible si instala el Connector en un host RHEL 8 o 9 que reside en las instalaciones. No se admite si el host RHEL 8 o 9 reside en AWS, Azure o Google Cloud.</block>
 </blocks>
