@@ -89,7 +89,7 @@ Hay algunas funciones y funcionalidades obsoletas en la versión principal de Bl
 | Crear una lista personalizada de los “datos personales” que se identifican | Sí | No 
 
 
-| Notificar a los usuarios por correo electrónico cuando los archivos contienen cierta PII. (Este criterio se define mediante link:task-using-policies.html["Normativas"^].) | Sí | Sí 
+| Notificar a los usuarios por correo electrónico cuando los archivos contienen cierta PII. (Este criterio se define mediante link:task-using-policies.html["Normativas"^].) | Sí | No 
 
 
 | Usar filtros a nivel de directorio | Sí | Sí 
@@ -131,6 +131,9 @@ Hay algunas funciones y funcionalidades obsoletas en la versión principal de Bl
 
 
 | Exportar datos a NFS desde la investigación | Sí | No 
+
+
+| Exportar datos a CSV desde la investigación | Sí | Sí 
 
 
 | Soporte para múltiples escáneres | Sí | No 
