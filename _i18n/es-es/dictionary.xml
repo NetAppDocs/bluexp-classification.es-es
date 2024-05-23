@@ -340,29 +340,18 @@
   <block id="70e4204451ab8b7224b342245071bd70" category="paragraph"><block ref="8b78b4503f012c98d9a7bad6859a8875" category="inline-link-macro-rx"></block>.</block>
   <block id="ae64bece015f15eb39e95575c833f8d3" category="section-title">¿Qué sucede si la organización en niveles de datos está habilitada en sus volúmenes de ONTAP?</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="inline-link-macro">Normativas</block>
-  <block id="fa5af203c1129bb563bbf7f09ad2de8e" category="paragraph">Sí. Junto con la función Directivas, puede enviar alertas por correo electrónico a los usuarios de BlueXP (diariamente, semanalmente o mensualmente) o a cualquier otra dirección de correo electrónico, cuando una Política devuelva los resultados para que pueda obtener notificaciones para proteger sus datos. Más información acerca de <block ref="52a90c0911f2be2601275d578a93ce51" category="inline-link-macro-rx"></block>.</block>
-  <block id="0a351d661588dd9301518a85a687c4dc" category="paragraph">También puede descargar informes de estado desde la página Gobierno y la página Investigación que puede compartir internamente en su organización.</block>
   <block id="2a03ec9e7d9aaa65371a523434cb5fb5" category="inline-link">Protección de información de Azure (AIP)</block>
   <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">Tipos de sistemas y tipos de datos de origen</block>
   <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">Las siguientes preguntas están relacionadas con los tipos de almacenamiento que se pueden analizar y los tipos de datos que se analizan.</block>
-  <block id="335e4bf959c1a6bf79337e11e91e4b41" category="paragraph">*Entornos de trabajo:*</block>
   <block id="434b441a61769bba5eecb3dd327a4342" category="list-text">Cloud Volumes ONTAP (implementado en AWS, Azure o GCP)</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">Clústeres de ONTAP en las instalaciones</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="list-text">Azure NetApp Files</block>
   <block id="18cf072964a583150dd247485ba75b92" category="list-text">Amazon FSX para ONTAP</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
-  <block id="69324e9ada23ef5bcac1bc763ac5938e" category="paragraph">*Fuentes de datos:*</block>
   <block id="34a23f91ee1733d5151d67d6f922e573" category="list-text">Recursos compartidos de archivos que no son de NetApp</block>
-  <block id="c58c082d5caf77a57bf200c63dfeaeb9" category="list-text">Almacenamiento de objetos (que utiliza el protocolo S3)</block>
-  <block id="bdcce4158cfc2b8c6a2ccd87f6c5170b" category="list-text">Bases de datos (Amazon RDS, MongoDB, MySQL, Oracle, PostgreSQL y SAP HANA, SQL SERVER)</block>
-  <block id="807a3c50d901b21b3f3b8e077bc903f8" category="list-text">Cuentas de OneDrive</block>
-  <block id="4bb7a83842b1271682b6be62080707cb" category="list-text">Cuentas en línea y en las instalaciones de SharePoint</block>
-  <block id="c6bcf4a88b4c531d404128df1f1ad3a8" category="list-text">Cuentas de Google Drive</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">¿Existen restricciones cuando se implementa en una región gubernamental?</block>
   <block id="d0a39c85bb5fdaacac18ed6c4e5b511f" category="list-text">Sistemas ONTAP en las instalaciones</block>
   <block id="ae9d17dd7732dafc7b97f62ac9094cf7" category="list-text">Esquemas de base de datos</block>
-  <block id="cd02721523de57441e385fc64cc693cc" category="list-text">Cuentas locales de SharePoint (SharePoint Server)</block>
-  <block id="ec1fb1662782ed20e20c07aa72cea943" category="list-text">Recursos compartidos de archivos NFS o CIFS de terceros</block>
   <block id="c6b920b524033c55e0dbc0115eae5c7e" category="list-text">Almacenamiento de objetos que utiliza el protocolo simple Storage Service (S3)</block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">¿Qué tipos de archivo son compatibles?</block>
   <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph"><block ref="0b3e64f511542d0a580dfbeb6d666614" prefix="" category="inline-code"></block></block>
@@ -370,11 +359,6 @@
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">Después de un análisis rápido, puede generar un informe de asignación de datos. Este informe es una descripción general de los datos almacenados en sus orígenes de datos corporativos para ayudarle a tomar decisiones sobre la utilización de los recursos, la migración, el backup, la seguridad y los procesos de cumplimiento de normativas.</block>
   <block id="201f7350fba7bb40edd7973d2df21f7d" category="list-text">Exploración de clasificación de datos (profunda).</block>
   <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">Licencias y costes</block>
-  <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">Una suscripción a la lista de BlueXP Marketplace de su proveedor de la nube, o.</block>
-  <block id="4aaa082eb5a6a6d38594fed7ac9dfc5c" category="list-text">A bring-your-own-license (BYOL) de NetApp</block>
-  <block id="59aab28b54594c59dab8d19afd9478e4" category="inline-link">precios</block>
-  <block id="ea2ae808e5bc26e70d719a3dccac3d1e" category="paragraph">Consulte<block ref="8035aa4e87ed378ff4c6d7c3151d4d34" category="inline-link-rx"></block> para obtener más detalles.</block>
-  <block id="df633ebdc2836fc65b2b5c8df3071fad" category="section-title">¿Qué sucede si he alcanzado el límite de capacidad de su licencia?</block>
   <block id="f56912566696fa3cc8524bcac5febbeb" category="section-title">Despliegue del conector</block>
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">Las siguientes preguntas se refieren al conector BlueXP.</block>
   <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">¿Qué es el conector?</block>
@@ -1372,7 +1356,6 @@
   <block id="7b895b198aba9634ffec5e0ec9a3aff4" category="section-title">Información general sobre redes</block>
   <block id="d359ba9662c22ff5e27bf861300c6bbf" category="section-title">Acceso de los usuarios a la información de cumplimiento</block>
   <block id="7e576e4144e56e656ad24bb096e2e6fe" category="list-text">Un *Administrador de cuentas* puede administrar la configuración de cumplimiento y ver la información de cumplimiento de todos los entornos de trabajo.</block>
-  <block id="e84e463a5d50d51ba24671ea703ccd3a" category="list-text">Los usuarios con la función *Compliance Viewer* sólo pueden ver información de cumplimiento y generar informes para los sistemas a los que tienen permiso de acceso. Estos usuarios no pueden habilitar o deshabilitar el análisis de volúmenes, bloques o esquemas de base de datos. Estos usuarios no pueden copiar, mover ni eliminar archivos.</block>
   <block id="78e53b124783e106b07d5599c5ff16c3" category="inline-link">Más información sobre los roles de BlueXP</block>
   <block id="2d4684d2aec68a0b0d987ac449846c38" category="inline-link">añadir usuarios con roles específicos</block>
   <block id="b2c97ae425dd751b0e48a3acae79cf4a" category="inline-link-macro">filtro</block>
@@ -1382,7 +1365,6 @@
   <block id="84f064335aeff156ccda8eb3c64109d6" category="admonition">Los SID del usuario local y los SID de dominios desconocidos no se traducen al nombre de usuario real.</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="list-text">FSX para ONTAP</block>
-  <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">Recursos compartidos de archivos CIFS de otros proveedores (no recursos compartidos de archivos NFS)</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">Debe tener un Active Directory ya configurado para los usuarios de su empresa.</block>
   <block id="7078363248b15fb54dcc0ed38080ad0d" category="list-text">Dirección IP del servidor DNS o varias direcciones IP</block>
   <block id="e81c4e4f2b7b93b481e13a8553c2ae1b" category="paragraph">o.</block>
@@ -2305,9 +2287,6 @@
   <block id="78d74c7ac59dc7722ad434f3b07f8c77" category="paragraph">Además, si quieres permitir que determinados usuarios solo vean los resultados del análisis de clasificación de BlueXP sin tener la capacidad de administrar las configuraciones de clasificación de BlueXP, puedes asignar a esos usuarios el rol Cloud Compliance Viewer.</block>
   <block id="baa3d508ff34a4c15a58d71fbe4f0e0f" category="section-title">¿Puede alguien acceder a los datos privados enviados entre mi navegador y la clasificación de BlueXP?</block>
   <block id="d85edc022c467b1de0d062bc4f4215b5" category="paragraph">Cuando la clasificación de BlueXP analiza volúmenes que tienen datos inactivos organizados en niveles en el almacenamiento de objetos, analiza todos los datos que hay en los discos locales y los datos inactivos organizados en niveles en el almacenamiento de objetos. Esto también es aplicable a productos que no son de NetApp que implementan la organización en niveles.</block>
-  <block id="f56bd4fda221a92df45e4216f8b75da7" category="section-title">¿Puede la clasificación de BlueXP enviar notificaciones a mi organización?</block>
-  <block id="b1855bdbeb4a91ab4dc5cedfdb491dbf" category="section-title">¿Puede la clasificación de BlueXP funcionar con las etiquetas AIP que he incrustado en mis archivos?</block>
-  <block id="44d5aeda44eb4d5cf4e34a77d73348a0" category="paragraph">Sí. Puede gestionar etiquetas AIP en los archivos a los que está analizando la clasificación de BlueXP si ya se ha suscrito<block ref="dc81bb027ada9d4ecc15bb9933242e3a" category="inline-link-rx"></block>. Puede ver las etiquetas que ya están asignadas a los archivos, agregar etiquetas a los archivos y cambiar las etiquetas existentes.</block>
   <block id="a243387e3677f17692394ce770a377f8" category="section-title">¿Qué fuentes de datos se pueden analizar con la clasificación de BlueXP?</block>
   <block id="af0ca0f7eeb04884e0718a50bbcfb74d" category="paragraph">La clasificación de BlueXP puede analizar los datos de los entornos de trabajo que haya añadido a BlueXP Canvas y de muchos tipos de fuentes de datos estructuradas y no estructuradas a las que puede acceder la clasificación de BlueXP en sus redes.</block>
   <block id="4f554b82a208efb281c300628a271b8e" category="section-title">¿Qué fuentes de datos puedo analizar si instalo la clasificación de BlueXP en un sitio sin acceso a Internet?</block>
@@ -2320,8 +2299,6 @@
   <block id="dd3080e9b8238619b33db17f32f0014c" category="paragraph">Después de un análisis completo, hay muchas funciones adicionales de clasificación de BlueXP que puedes aplicar a tus datos, como ver y refinar datos en la página de Investigación de datos, buscar nombres dentro de los archivos, copiar, mover y eliminar archivos de origen, y mucho más.</block>
   <block id="c7c0e44b6916a9859c04b6f890acc7f4" category="paragraph">Las siguientes preguntas hacen referencia a las licencias y los costes para usar la clasificación de BlueXP.</block>
   <block id="c327ff2d5e993e56b5e37bd52bc902cc" category="section-title">¿Cuánto cuesta la clasificación de BlueXP?</block>
-  <block id="ceff76808d468622c1e0a066fef32324" category="paragraph">El coste de utilizar la clasificación de BlueXP depende de la cantidad de datos que se estén escaneando. Los primeros 1 TB de datos que analiza la clasificación de BlueXP en un espacio de trabajo de BlueXP son gratis durante 30 días. Después de alcanzar cualquiera de los límites, necesitará uno de los siguientes para continuar con el análisis de datos:</block>
-  <block id="08ded86bec8c14194b76ccd46cc137b5" category="paragraph">Si alcanzas el límite de capacidad de tu propia licencia, la clasificación de BlueXP sigue ejecutándose, pero se bloquea el acceso a las consolas de forma que no puedas ver información sobre ninguno de los datos escaneados. Solo la página Configuration está disponible en caso de que se desee reducir la cantidad de volúmenes que se van a analizar para potencialmente traer su uso de capacidad bajo el límite de licencia. Debe renovar su licencia BYOL para recuperar el acceso total a la clasificación de BlueXP.</block>
   <block id="655b44b42a0405ade73bd1b7c7fe7759" category="paragraph">Connector es un software que se ejecuta en una instancia informática dentro de su cuenta cloud o en las instalaciones, que permite a BlueXP gestionar de forma segura los recursos cloud. Debes implementar un conector para usar la clasificación de BlueXP.</block>
   <block id="20d2d9d43536e58f448006e30ede92ef" category="section-title">Puesta en marcha de la clasificación de BlueXP</block>
   <block id="f64f1950281393c4954c25f27bf434bd" category="paragraph">Las siguientes preguntas hacen referencia a la instancia de clasificación de BlueXP aparte.</block>
@@ -2501,7 +2478,6 @@
   <block id="840d233bacdf6f0129b122ee5eb8f00f" category="paragraph">La clasificación de BlueXP proporciona varias herramientas que pueden ayudarte en tus tareas de cumplimiento de normativas. Puedes usar la clasificación de BlueXP para lo siguiente:</block>
   <block id="ce02ca731a7112daefd674bb361fff90" category="paragraph">La clasificación de BlueXP puede identificar los datos a los que podría correr riesgo de acceder con fines criminales. Puedes usar la clasificación de BlueXP para lo siguiente:</block>
   <block id="f9d643ab04854145a0dd7aacf4788ad5" category="paragraph">La clasificación de BlueXP proporciona herramientas que pueden ayudarte con el TCO (TCO) de tu almacenamiento. Puedes usar la clasificación de BlueXP para lo siguiente:</block>
-  <block id="6f329e64b2ec5336c7b26cd545ec085a" category="paragraph">La clasificación de BlueXP puede analizar y analizar datos estructurados y no estructurados a partir de los siguientes tipos de orígenes de datos:</block>
   <block id="79de69a9c27339b7e2c0888ade6a7ff9" category="list-text">Para instalar la clasificación de BlueXP en la nube, es necesario poner en marcha una instancia de nube, lo que se genera en los cargos del proveedor de nube en el que se la pone en marcha. Consulte <block ref="a640e98c8584c0b162d717c76dd083cd" category="inline-xref-macro-rx"></block>. No hay coste si instalas la clasificación de BlueXP en un sistema on-premises.</block>
   <block id="5224a506004fee451317bef2d8675e7e" category="inline-image-macro">Un diagrama que muestra una instancia de BlueXP y una instancia de clasificación de BlueXP que se ejecuta en tu proveedor de cloud.</block>
   <block id="fd1e8dbd30ef938d68f6110d8e753a9e" category="paragraph"><block ref="fd1e8dbd30ef938d68f6110d8e753a9e" category="inline-image-macro-rx" type="image"></block></block>
@@ -2598,7 +2574,6 @@
   <block id="c4070b10cbb51d0f6e51c7660f31d23e" category="paragraph">La clasificación de BlueXP admite etiquetas AIP en los siguientes tipos de archivos: .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX.</block>
   <block id="520c4020066bd01c032e80343eb1c80a" category="list-text">Si un archivo tiene una etiqueta que ya no existe en AIP, la clasificación de BlueXP lo considera como un archivo sin una etiqueta.</block>
   <block id="5ec40c5e6d8523b9b27a700af68e8db5" category="list-text">Si has implementado la clasificación de BlueXP en una región gubernamental o en una ubicación on-premises que no tiene acceso a Internet (también conocida como sitio oscuro), la funcionalidad de etiqueta AIP no estará disponible.</block>
-  <block id="31bb1a36af754f234f9441ac77d0d491" category="paragraph">Para poder administrar etiquetas AIP, debes integrar la funcionalidad de etiqueta AIP en la clasificación de BlueXP iniciando sesión en tu cuenta de Azure existente. Una vez activado, puede administrar etiquetas AIP dentro de los archivos para todos <block ref="590012ab10bd1b63820c3ad5e15aed82" category="inline-link-macro-rx"></block> En el espacio de trabajo de BlueXP.</block>
   <block id="cd687af63af301ade0c53e918d96e65c" category="list-text">En la página Configuración de clasificación de BlueXP, haz clic en *Integrar etiquetas AIP*.</block>
   <block id="9552319fe1a50c182971c77d6c6d0c4a" category="inline-image-macro">Una captura de pantalla que muestra hacer clic en el botón para integrar la funcionalidad de etiquetas AIP en la clasificación de BlueXP.</block>
   <block id="d8f9af26cf2404ac2e5cb244b9a30e31" category="paragraph"><block ref="d8f9af26cf2404ac2e5cb244b9a30e31" category="inline-image-macro-rx" type="image"></block></block>
@@ -3066,7 +3041,6 @@
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">Definir IDs de grupo existentes como abiertos a la organización</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">Vaya a «/opt/netapp/Datasense/tools/customer_configuration/data_providers» y ejecute el siguiente script:</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Ahora puede configurar los ID de grupo en NFS para que se consideren «abiertos a la organización» directamente desde la clasificación de BlueXP si el grupo no se había establecido inicialmente con ese permiso. Todos los archivos y carpetas que tengan estos ID de grupo adjuntos se mostrarán como abiertos a la organización en la página Detalles de la investigación. Descubra cómo<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
-  <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXP admite las funcionalidades de la API DE REST para sus servicios. Si BlueXP no es el punto preferido de gestión, servicios como la clasificación de BlueXP también se pueden usar a través de una API DE REST. Cada acción del usuario tiene una API REST que se puede integrar con sistemas de terceros. Consulte <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> para obtener más detalles.</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">¿Se analizan copias Snapshot que residen en los volúmenes ONTAP?</block>
   <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">No La clasificación de BlueXP no analiza las copias Snapshot porque el contenido es idéntico al contenido del volumen.</block>
   <block id="dce2a9642217836d54f614dfd625b753" category="cell">/usr/lib/systemd/system</block>
@@ -3155,7 +3129,6 @@
   <block id="865eee83e350aaa1f9bf0c9f0c4adef0" category="section-title">Elimine los archivos de origen</block>
   <block id="d771d7d12660fbeb94c2343ab606b51d" category="section-title">Elimine los archivos de origen manualmente</block>
   <block id="a83bc0aa2bd876d7cc5a350879bd008c" category="section-title">Acceder a los archivos de registro</block>
-  <block id="a6ed2c91ea69381b6a464e642ca3c940" category="paragraph"><block ref="8600e76f489947dcd3c20a1b1ce1e8ca" category="inline-link-macro-rx"></block>.</block>
   <block id="ed6f72ce35fa37960b096efc305078ca" category="paragraph">Los resultados del análisis se almacenan en Elasticsearch, dentro de tu instancia de clasificación de BlueXP.</block>
   <block id="07b74cfb8b148331baaaa74d89dd4cec" category="doc">Ver informes de cumplimiento</block>
   <block id="8932e9435ce03fbb7ecf0b2f738ce66a" category="paragraph">De forma predeterminada, las consolas de clasificación de BlueXP muestran los datos de cumplimiento y gobierno de todos los entornos de trabajo, las bases de datos y los orígenes de datos. Si desea ver informes que contengan datos sólo para algunos de los entornos de trabajo, <block ref="200c05d79644e6ad09afbf686b752513" category="inline-xref-macro-rx"></block>.</block>
@@ -3378,9 +3351,7 @@
   <block id="cbbd546102a0bc266daf8b091654a2b4" category="paragraph">Puede agregar nodos de escáner a una implementación existente en un host Linux con acceso a Internet.</block>
   <block id="c9e3afc5b6aaffe6ac686b4597beb1c2" category="list-text">Compruebe que todos los sistemas Linux para nodos de escáner cumplen los requisitos del host.</block>
   <block id="b265c78ad0089ab8d45e4e16de6c955f" category="list-text">Compruebe que el entorno cumple con los permisos y la conectividad necesarios.</block>
-  <block id="02840098861c7ad2f05f7818f3cd9f42" category="paragraph">Los primeros 500 TB de datos que analiza la clasificación de BlueXP en BlueXP son gratuitos durante 30 días. Debe haber una suscripción a BlueXP a través de su plataforma de proveedores de cloud o una licencia BYOL de NetApp para continuar analizando los datos después de ese punto.</block>
   <block id="e32bdff502d5f24b8e2b7d5291d9fe6a" category="list-text">Cuando escanea datos en Cloud Volumes ONTAP en buckets de AWS o Amazon FSx para ONTAP, usa un conector en AWS.</block>
-  <block id="b9223018c07973c3d44c3544ea71f666" category="paragraph">Los sistemas ONTAP en las instalaciones, los recursos compartidos de archivos que no son de NetApp, el almacenamiento de objetos S3 genérico y las bases de datos se pueden analizar al utilizar cualquiera de estos conectores en la nube.</block>
   <block id="d23cdfe3be69f69baed369d543f36aa9" category="paragraph">El área _Classification_ proporciona una lista de los más identificados <block ref="d3b5de2fe3785a28f0b4099f30abefe6" category="inline-link-macro-rx"></block> y.. <block ref="6d5873eba480eee9411c9a14fd12e5d9" category="inline-link-macro-rx"></block> en los datos escaneados.</block>
   <block id="f754acc189a7236fe2fb4657457fcb2c" category="paragraph">*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores. La versión de diciembre de 2023 (v1.26.6) eliminó la opción de integrar datos mediante etiquetas de protección de información de Azure (AIP).</block>
   <block id="13871df601ad6fe31ca70129438c5986" category="list-text">La clasificación de BlueXP no extrae la «hora de último acceso» de los orígenes de datos de la base de datos.</block>
@@ -3389,7 +3360,6 @@
   <block id="c7b12c8155232c80e9aca6bc1eb67427" category="paragraph">Para las versiones 1,30 y anteriores, si tienes que instalar la clasificación de BlueXP en varios hosts, consulta el <block ref="94ed65ad8557cbd4dade332ad2e77a61" category="inline-link-macro-rx"></block>.</block>
   <block id="0dcde9bea70f4948a25486523fde4e97" category="paragraph">También puede hacerlo <block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block> para ubicaciones completamente seguras.</block>
   <block id="85aa6acd6442a61f72e7d0ea942bae6f" category="admonition">Para las versiones anteriores 1,30 y anteriores, para agregar nodos de escáner, consulte <block ref="6201a969fc4638d8cfca1139fbc49a51" category="inline-link-macro-rx"></block>.</block>
-  <block id="8910c7d2c0ea97f7243545a9153a2762" category="paragraph">Los primeros 500 TB de datos que analiza la clasificación de BlueXP en BlueXP son gratuitos durante 30 días. Debe suscribirse a su mercado de proveedores de cloud o una licencia de BYOL de NetApp para continuar analizando los datos después de ese punto.</block>
   <block id="7cc60b2d044c80070664df0b3bdf1a77" category="paragraph">Es necesario un conector BlueXP para poder instalar y utilizar la clasificación de BlueXP. En la mayoría de los casos, es probable que tengas configurado un Connector antes de intentar activar la clasificación de BlueXP debido a que en la mayoría de los casos<block ref="4b65067251af1a04ab5f187e9a47f47a" category="inline-link-rx"></block>, pero hay casos en los que necesitará configurar uno ahora.</block>
   <block id="d91ed5bff9bd13eee5c43964bbe67be4" category="list-text">Cuando escanea datos en Cloud Volumes ONTAP en AWS o Amazon FSx para ONTAP, usa un conector en AWS.</block>
   <block id="f7ddb3fae62084df9775f83831fce054" category="paragraph">Los sistemas ONTAP on-premises, los recursos compartidos de archivos y las cuentas de bases de datos que no son de NetApp se pueden analizar con cualquiera de estos conectores de nube.</block>
@@ -3467,8 +3437,6 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="aa03ad3837e520978aceb5f3f06e3acc" category="paragraph">Está disponible una prueba gratuita de 30 días para hasta 500 TB de datos que analiza la clasificación de BlueXP en un espacio de trabajo de BlueXP. Tendrá que comprar una licencia BYOL de NetApp o un registro para obtener una suscripción desde el mercado del proveedor de cloud para seguir escaneando los datos después de ese momento.</block>
   <block id="bb0dfe0b54c3baac2c6710b8940b4744" category="paragraph">Puede suscribirse en cualquier momento y no se le cobrará incluso después de que finalice la prueba de 30 días. Siempre puedes ver la cantidad total de datos que se analizan en el Panel de gobernanza de clasificación de BlueXP. Y el botón _Subscribe Now_ facilita la suscripción cuando esté listo.</block>
   <block id="f5e624878bf9762aa2d37e975ce44226" category="paragraph">La suscripción garantiza que no se produzca ninguna interrupción en el servicio una vez que finalice la prueba gratuita. Cuando finalice la prueba, no se te cobrará la versión principal de BlueXP 1,31 o posterior.</block>
-  <block id="ea3f2d7d4d355da886e9a61f85ef440d" category="paragraph">Utiliza la clasificación de BlueXP anualmente obteniendo un contrato anual. Están disponibles en plazos de 1, 2 o 3 años.</block>
-  <block id="a0294eb160aa64c46110636473e56f33" category="paragraph">Si no tienes una licencia de clasificación de BlueXP, ponte en contacto con nosotros para obtener una:</block>
   <block id="98700edb399fd9cd3004efe19dd93686" category="doc">Analizar cuentas de Google Drive</block>
   <block id="08ad59dcccad79cacd26939ded6a4aaf" category="section-title">Revisa los requisitos de Google Drive</block>
   <block id="587344d853bf2178c36331b139134c53" category="section-title">Agregue la cuenta de Google Drive</block>
@@ -3478,7 +3446,6 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="470ff04800cc0e7e4547c6f8184436fa" category="admonition">Para las versiones heredadas 1,30 y anteriores, si necesita instalar la clasificación de BlueXP en varios hosts, consulte <block ref="94ed65ad8557cbd4dade332ad2e77a61" category="inline-link-macro-rx"></block>.</block>
   <block id="991ebd87a81ed22c3d81251fd13ad652" category="paragraph">Actualmente no hay compatibilidad para analizar cuentas de Cloud Volumes ONTAP, Azure NetApp Files o FSx para ONTAP cuando la clasificación de BlueXP se pone en marcha en modo privado.</block>
   <block id="806f5ac1a8b4e82bb0bb458ed4a8f577" category="paragraph">Tanto el conector de BlueXP como la clasificación de BlueXP requerirán actualizaciones manuales periódicas para permitir nuevas funciones. Puedes ver la versión de clasificación de BlueXP en la parte inferior de las páginas de interfaz de usuario de clasificación de BlueXP. Compruebe la <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> para ver las nuevas funciones de cada versión y si desea esas funciones. A continuación, puede seguir los pasos a.<block ref="03a7f11cb6270c0421715ee58cbcdb85" category="inline-link-rx"></block> y.. <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>.</block>
-  <block id="bbe5af14df083907120d20d0dfd67809" category="paragraph">Los primeros 500 TB de datos que analiza la clasificación de BlueXP en BlueXP son gratuitos durante 30 días. Se requiere una licencia BYOL de NetApp para continuar con el análisis de los datos después de ese punto. La versión principal de BlueXP 1,31 es gratuita.</block>
   <block id="3fba2d2072ada5e4a305ed49625f7c97" category="paragraph">Si utilizas varios hosts de clasificación de BlueXP para obtener una capacidad de procesamiento adicional para analizar tus orígenes de datos, tendrás que habilitar puertos/protocolos adicionales. <block ref="8ab506a6f74eff926eb35a8eb7627a1d" category="inline-link-macro-rx"></block>.</block>
   <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">En configuraciones típicas, instalará el software en un único sistema host.</block>
   <block id="1d8330f2303758f6a2278d74e5f2fda9" category="paragraph">También puede hacerlo <block ref="22859e5e32c097ea1d67937698834047" category="inline-link-macro-rx"></block> Desde la página de la cartera digital de BlueXP en este momento. No se le cobrará hasta que finalice su prueba gratuita de 30 días.</block>
@@ -3490,9 +3457,7 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="705e8077ff3af41dc9b8a84050d869d1" category="paragraph">Los usuarios que hayan estado utilizando versiones heredadas 1,30 o anteriores seguirán pudiendo usar esa versión hasta que caduque su suscripción.</block>
   <block id="c43934763319d8b34916e416e6cab93d" category="list-text">Utilice _Policies_ para detectar automáticamente nuevos problemas de seguridad para que el personal de seguridad pueda actuar inmediatamente.</block>
   <block id="12745f1753f4a2151c5bd9d0d7cadbd9" category="list-text">Aumente la eficiencia del almacenamiento identificando datos duplicados o no relacionados con la empresa.</block>
-  <block id="0961d28fb6751f833f6618d3ead18455" category="list-text">Recursos compartidos de archivos (por ejemplo, Dell EMC Isilon, Pure Storage, Nutanix, etc.)</block>
   <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">Bases de datos:</block>
-  <block id="2829810f94e62c98b1953f33cf0661fd" category="paragraph">La clasificación de BlueXP ahora es gratuita para hasta 500 TiB de datos. No se requiere licencia de clasificación ni suscripción de pago. Si tiene más de 500 TiB de datos que desea analizar, puede deshabilitar el análisis en algunos de sus sistemas originales y escanear los nuevos sistemas que, de lo contrario, superarían el límite de 500 TiB.</block>
   <block id="bcf2e25b0a67b74f2ef04fa33cb52b61" category="section-title">Costes de infraestructura</block>
   <block id="ee47dd1923abd4a3137c0a87287394d9" category="paragraph">Los costes de la transferencia de datos dependen de su configuración. Si la instancia de clasificación y el origen de datos de BlueXP se encuentran en la misma zona y región de disponibilidad, no hay costes de transferencia de datos. Pero si el origen de datos, como un sistema Cloud Volumes ONTAP, se encuentra en una zona o región de disponibilidad _diferente_, su proveedor de cloud le cobrará los costes de transferencia de datos. Consulte estos enlaces para obtener más información:</block>
   <block id="48548251123016c15c7cccf4410ce19b" category="paragraph">Después de habilitar la clasificación de BlueXP y seleccionar los repositorios que desea analizar (estos son los volúmenes, esquemas de base de datos u otros datos de usuario), comienza de inmediato a analizar los datos para identificar los datos personales y confidenciales. Debería centrarse en analizar los datos de producción en directo en la mayoría de los casos en lugar de realizar backups, duplicados o sitios de recuperación ante desastres. A continuación, la clasificación de BlueXP asigna sus datos de organización, categoriza cada archivo e identifica y extrae entidades y patrones predefinidos en los datos. El resultado de la exploración es un índice de información personal, información personal confidencial, categorías de datos y tipos de archivo.</block>
@@ -3527,7 +3492,6 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="4cf46b88592b20071552593714707a46" category="paragraph">Si inicialmente seleccionaste *Asignar todos los volúmenes* o *Asignar y clasificar todos los volúmenes* cuando habilitaste la clasificación de BlueXP para el entorno de trabajo donde reside el volumen de origen, la clasificación de BlueXP escaneará el nuevo volumen clonado automáticamente. Si inicialmente no ha utilizado ninguna de estas selecciones, si desea explorar este nuevo volumen, deberá hacerlo <block ref="9c238ad6b45b928020692cb5de74fd06" category="inline-link-macro-rx"></block>.</block>
   <block id="c63897b00e1bb7484e004dc2e1337d94" category="paragraph">Puede eliminar archivos manualmente desde el panel Investigación, o. <block ref="189dcbbb5debf653b5fc0860b1c881e2" category="inline-link-macro-rx"></block>.</block>
   <block id="240debedb0b95c0376b930ba9355ecf4" category="section-title">15 de mayo de 2024 (Versión 1,31)</block>
-  <block id="1b4882b9c3ea8338ab43984dee93eba3" category="section-title">La clasificación está disponible como un servicio gratuito en BlueXP</block>
   <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">La clasificación de BlueXP ahora está disponible como funcionalidad básica en BlueXP sin coste adicional para hasta 500 TiB de datos escaneados. No se requiere licencia de clasificación ni suscripción de pago. A medida que nos centramos en la funcionalidad de clasificación de BlueXP en analizar sistemas de almacenamiento de NetApp con esta nueva versión, algunas funcionalidades heredadas solo estarán disponibles para los clientes que hayan pagado previamente por una licencia. El uso de estas funciones heredadas caducará cuando el contrato pagado alcance su fecha de finalización.</block>
   <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">Obtenga más información sobre las características obsoletas</block>
   <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>.</block>
@@ -3540,10 +3504,29 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="dd6f713e594790101284e68ce9ae76f7" category="sidebar">Lista de operaciones anticuadas</block>
   <block id="4ebce9b5fd8cf4975c04bb94087ff4b3" category="sidebar">Lista de características anticuadas</block>
   <block id="57a53311aaf61c9ce5d7ccc7b0678f93" category="sidebar">Configura una prueba gratuita o trae tu propia licencia</block>
-  <block id="d7d802cbdbf98cd72c574cb0eda77889" category="sidebar">Escanear datos</block>
-  <block id="77811a66f12d1085614f313861555339" category="sidebar">Gestione los datos</block>
   <block id="08a8e0f5e4c7d91e565955cb7f30b215" category="sidebar">Consulte los detalles de gobierno sobre los datos en la consola de gobierno</block>
   <block id="aeb69ebcaffd7e18cd55db906e582bf5" category="sidebar">Eliminar una cuenta de OneDrive, SharePoint o Google Drive</block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="paragraph">La clasificación BlueXP es compatible si instala el Connector en un host RHEL 8 o 9 que reside en las instalaciones. No se admite si el host RHEL 8 o 9 reside en AWS, Azure o Google Cloud.</block>
   <block id="cfe5d63c50c4794111fa6f65b931e130" category="cell">Exportar datos a CSV desde la investigación</block>
+  <block id="09c3548e206e0fdb1fb77e5c168f0624" category="paragraph">No, la clasificación de BlueXP no tiene una API REST.</block>
+  <block id="53fa8df095671f897c8cbcd13ce182b1" category="inline-link-macro">Entornos de trabajo y fuentes de datos compatibles</block>
+  <block id="2930994d2cff6bdaceb544c2a0169659" category="paragraph">Consulte <block ref="fb235327a04124182aad24d53e898b94" category="inline-link-macro-rx"></block>.</block>
+  <block id="3270840fec1d1272ecdf8fa5dacfe375" category="paragraph">La clasificación de BlueXP es una funcionalidad básica de BlueXP y no se carga.</block>
+  <block id="1f5565609924c19f8cc66ee9b3e5ff8b" category="paragraph">Hace falta una suscripción a BlueXP a través del mercado del proveedor de nube.</block>
+  <block id="07005138abd2ab6bc21bd0ca8dd1552a" category="paragraph">Los sistemas ONTAP en las instalaciones, los recursos compartidos de archivos de NetApp, el almacenamiento de objetos S3 genérico y las bases de datos se pueden analizar al usar cualquiera de estos conectores en la nube.</block>
+  <block id="178bf9bf543decf7d7b3739b703708f1" category="paragraph">Para poder administrar etiquetas AIP, debes integrar la funcionalidad de etiqueta AIP en la clasificación de BlueXP iniciando sesión en tu cuenta de Azure existente. Una vez activado, puede administrar etiquetas AIP dentro de los archivos para todos <block ref="9f69f043f42f5e941f29feed1ea9caea" category="inline-link-macro-rx"></block> En el espacio de trabajo de BlueXP.</block>
+  <block id="25c24221a948a50ce66f8d4fb0f6d79c" category="paragraph">Es necesario suscribirse al mercado de su proveedor de cloud.</block>
+  <block id="147b35ab5352426bba38d99d810db4ed" category="list-text">Puede obtener el archivo de licencia en el sitio de soporte de NetApp.</block>
+  <block id="5956d6a178701862e65cfb2557c264ca" category="paragraph">Cuando utiliza una licencia BYOL de clasificación (Data Sense) de BlueXP, BlueXP muestra una advertencia en la interfaz de usuario de clasificación de BlueXP y en la interfaz de usuario de cartera digital de BlueXP cuando el tamaño de todos los datos que escaneas se acerca al límite de capacidad o se acerca a la fecha de caducidad de la licencia.</block>
+  <block id="c5225ba8742170a4ff16813a131d50d2" category="paragraph">Recibe estas advertencias:</block>
+  <block id="c6f088f8c47d3f6f693b41a70370107f" category="paragraph">La clasificación de BlueXP puede analizar y analizar datos estructurados y no estructurados a partir de los siguientes tipos de entornos de trabajo y fuentes de datos:</block>
+  <block id="4e74f624e4d0f3f558ca01aa93696658" category="paragraph">*Entornos de trabajo*</block>
+  <block id="181c4b9812ec18a3c5280cac985783ed" category="paragraph">*Fuentes de datos*</block>
+  <block id="ffc184891768c331383cd53bcd1bc968" category="list-text">Recursos compartidos de archivos NetApp</block>
+  <block id="1d4f5c4d2298eeba0567ba65029151d4" category="paragraph">La clasificación de BlueXP ahora es gratuita. No se requiere licencia de clasificación ni suscripción de pago.</block>
+  <block id="92b5d31c7573ec4b607f3345517ac2ac" category="list-text">Los usuarios con la función *Compliance Viewer* sólo pueden ver información de cumplimiento y generar informes para los sistemas a los que tienen permiso de acceso. Estos usuarios no pueden habilitar o deshabilitar el análisis de volúmenes, bloques o esquemas de base de datos.</block>
+  <block id="d1e72f4d21bb915d180e5f6d1e9d4264" category="section-title">La clasificación está disponible como servicio principal en BlueXP</block>
+  <block id="ff9a5988c9084ed8f91f339a8c5730ef" category="sidebar">Pon en marcha las deprecaciones de clasificación de BlueXP</block>
+  <block id="08504eba0f24252abaffadf616e91d7c" category="sidebar">Rastreo de deprecaciones de datos</block>
+  <block id="58b46c120f259bfcd0cbe13c84945204" category="sidebar">Gestionar las deprecaciones de datos</block>
 </blocks>

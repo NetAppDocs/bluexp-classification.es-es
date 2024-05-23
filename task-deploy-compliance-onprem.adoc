@@ -63,7 +63,7 @@ Descarga el software de clasificación de Cloud BlueXP en el sitio de soporte de
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Suscríbete al servicio de clasificación de BlueXP
 [role="quick-margin-para"]
-Los primeros 500 TB de datos que analiza la clasificación de BlueXP en BlueXP son gratuitos durante 30 días. Debe suscribirse a su mercado de proveedores de cloud o una licencia de BYOL de NetApp para continuar analizando los datos después de ese punto.
+Es necesario suscribirse al mercado de su proveedor de cloud.
 
 
 

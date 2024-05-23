@@ -85,7 +85,7 @@ sidebar:
     entries:
     - title: Lista de características anticuadas
       url: "/reference-free-paid.html"
-    - title: Implementa la clasificación de BlueXP
+    - title: Pon en marcha las deprecaciones de clasificación de BlueXP
       entries:
       - title: Instala la clasificación de BlueXP en varios hosts sin acceso a Internet
         url: "/task-deploy-multi-host-install-dark-site.html"
@@ -93,7 +93,7 @@ sidebar:
         url: "/task-deploy-add-scanner-nodes.html"
       - title: Configura una prueba gratuita o trae tu propia licencia
         url: "/task-licensing-byol-freetrial.html"
-    - title: Escanear datos
+    - title: Rastreo de deprecaciones de datos
       entries:
       - title: Escanee los buckets de Amazon S3
         url: "/task-scanning-s3.html"
@@ -105,7 +105,7 @@ sidebar:
         url: "/task-scanning-google-drive.html"
       - title: Analice el almacenamiento de objetos que utiliza el protocolo S3
         url: "/task-scanning-object-storage.html"
-    - title: Gestione los datos
+    - title: Gestionar las deprecaciones de datos
       entries:
       - title: Consulte los detalles de gobierno sobre los datos en la consola de
           gobierno

@@ -22,7 +22,7 @@ Descubre las novedades de la clasificación de BlueXP (Cloud Data Sense).
 
 
 
-=== La clasificación está disponible como un servicio gratuito en BlueXP
+=== La clasificación está disponible como servicio principal en BlueXP
 
 La clasificación de BlueXP ahora está disponible como funcionalidad básica en BlueXP sin coste adicional para hasta 500 TiB de datos escaneados. No se requiere licencia de clasificación ni suscripción de pago. A medida que nos centramos en la funcionalidad de clasificación de BlueXP en analizar sistemas de almacenamiento de NetApp con esta nueva versión, algunas funcionalidades heredadas solo estarán disponibles para los clientes que hayan pagado previamente por una licencia. El uso de estas funciones heredadas caducará cuando el contrato pagado alcance su fecha de finalización.
 

@@ -70,16 +70,22 @@ La clasificación de BlueXP proporciona herramientas que pueden ayudarte con el 
 
 
 
-== Orígenes de datos compatibles
+== Entornos de trabajo y fuentes de datos compatibles
 
-La clasificación de BlueXP puede analizar y analizar datos estructurados y no estructurados a partir de los siguientes tipos de orígenes de datos:
+La clasificación de BlueXP puede analizar y analizar datos estructurados y no estructurados a partir de los siguientes tipos de entornos de trabajo y fuentes de datos:
+
+*Entornos de trabajo*
 
 * Cloud Volumes ONTAP (implementado en AWS, Azure o GCP)
 * Clústeres de ONTAP en las instalaciones
 * Azure NetApp Files
 * Amazon FSX para ONTAP
 * NetApp Volumes para Google Cloud
-* Recursos compartidos de archivos (por ejemplo, Dell EMC Isilon, Pure Storage, Nutanix, etc.)
+
+
+*Fuentes de datos*
+
+* Recursos compartidos de archivos NetApp
 * Bases de datos:
 +
 ** Servicio de bases de datos relacionales de Amazon (Amazon RDS)
@@ -99,7 +105,7 @@ La clasificación de BlueXP es compatible con las versiones de NFS 3.x y CIFS 1.
 
 == Coste
 
-La clasificación de BlueXP ahora es gratuita para hasta 500 TiB de datos. No se requiere licencia de clasificación ni suscripción de pago. Si tiene más de 500 TiB de datos que desea analizar, puede deshabilitar el análisis en algunos de sus sistemas originales y escanear los nuevos sistemas que, de lo contrario, superarían el límite de 500 TiB.
+La clasificación de BlueXP ahora es gratuita. No se requiere licencia de clasificación ni suscripción de pago.
 
 
 
@@ -280,7 +286,7 @@ El rol asignado a cada usuario proporciona diferentes funcionalidades dentro de 
 
 * Un *Administrador de cuentas* puede administrar la configuración de cumplimiento y ver la información de cumplimiento de todos los entornos de trabajo.
 * *Workspace Admin* puede administrar la configuración de cumplimiento y ver la información de cumplimiento sólo para los sistemas a los que tienen permisos de acceso. Si un administrador de espacio de trabajo no puede acceder a un entorno de trabajo en BlueXP, no podrá ver ninguna información de cumplimiento de normativas del entorno de trabajo en la pestaña de clasificación de BlueXP.
-* Los usuarios con la función *Compliance Viewer* sólo pueden ver información de cumplimiento y generar informes para los sistemas a los que tienen permiso de acceso. Estos usuarios no pueden habilitar o deshabilitar el análisis de volúmenes, bloques o esquemas de base de datos. Estos usuarios no pueden copiar, mover ni eliminar archivos.
+* Los usuarios con la función *Compliance Viewer* sólo pueden ver información de cumplimiento y generar informes para los sistemas a los que tienen permiso de acceso. Estos usuarios no pueden habilitar o deshabilitar el análisis de volúmenes, bloques o esquemas de base de datos.
 
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["Más información sobre los roles de BlueXP"^] y cómo https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html#adding-users["añadir usuarios con roles específicos"^].
