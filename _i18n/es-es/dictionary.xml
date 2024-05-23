@@ -380,7 +380,6 @@
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">Etiquetas AIP</block>
   <block id="fdc2c96185d2a7c98ab81a927c827edb" category="list-text">Haga clic en *Crear directiva*.</block>
   <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">Una captura de pantalla que muestra cómo configurar la directiva y guardarla.</block>
-  <block id="23e34b6c117b6fd91abb568e48195e27" category="paragraph"><block ref="23e34b6c117b6fd91abb568e48195e27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">La nueva directiva aparece en la ficha Directivas.</block>
   <block id="101d185440168237801a902f598c9576" category="inline-image-macro">Una captura de pantalla que muestra cómo editar una directiva existente.</block>
   <block id="0f45f5e9392cad0f6f0647364c3255a6" category="list-text">En la página Edit Policy:</block>
@@ -3498,7 +3497,6 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">La versión también eliminó las siguientes opciones:</block>
   <block id="cf39647f74e2ee71e92d2dcb020dab2d" category="paragraph">Es posible habilitar los registros de auditoría de acceso a archivos para que se recopilen en el sistema de clasificación de BlueXP para los eventos de acceso a archivos detectados en volúmenes en tus entornos de trabajo. La clasificación de BlueXP puede capturar los siguientes tipos de eventos de FPolicy y los usuarios que realizaron las acciones en sus archivos: Crear, leer, escribir, eliminar, cambiar el nombre, Cambie el propietario/permisos y cambie SACL/DACL.</block>
   <block id="06e3e3e8a40062c8a44b3bead8f60ccb" category="list-text">Cuentas de OneDrive y cuentas de SharePoint (para versiones anteriores 1,30 y anteriores)</block>
-  <block id="a0c44cafcacc5478c539dba887219bc9" category="sidebar">Características disponibles en versiones gratuitas y de pago</block>
   <block id="2cb8839a5444b5db421bd5b52586dd24" category="sidebar">Escanee sus orígenes de datos</block>
   <block id="98f9f8a11a148aec70c39965293ea9b3" category="sidebar">Funciones en desuso</block>
   <block id="dd6f713e594790101284e68ce9ae76f7" category="sidebar">Lista de operaciones anticuadas</block>
@@ -3529,4 +3527,6 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="ff9a5988c9084ed8f91f339a8c5730ef" category="sidebar">Pon en marcha las deprecaciones de clasificación de BlueXP</block>
   <block id="08504eba0f24252abaffadf616e91d7c" category="sidebar">Rastreo de deprecaciones de datos</block>
   <block id="58b46c120f259bfcd0cbe13c84945204" category="sidebar">Gestionar las deprecaciones de datos</block>
+  <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="39ba3e6e56f553f6665e61fc4be73bd0" category="sidebar">Funciones disponibles en las versiones principales y heredadas de BlueXP</block>
 </blocks>

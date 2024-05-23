@@ -55,7 +55,7 @@ image:screenshot_compliance_save_as_highlight.png["Captura de pantalla que muest
 .. Opcionalmente, marque la casilla para eliminar automáticamente los archivos que coincidan con los parámetros de la política.
 .. Haga clic en *Crear directiva*.
 +
-image:screenshot_compliance_save_highlight.png["Una captura de pantalla que muestra cómo configurar la directiva y guardarla."]
+image:screenshot_compliance_save_highlight2.png["Una captura de pantalla que muestra cómo configurar la directiva y guardarla."]
 
 
 

@@ -21,7 +21,7 @@ indexpage:
       url: concept-cloud-compliance.html
     - title: Novedades
       url: whats-new.html
-    - title: Características disponibles en versiones gratuitas y de pago
+    - title: Funciones disponibles en las versiones principales y heredadas de BlueXP
       url: reference-free-paid.html
     - title: Pon en marcha la clasificación de BlueXP en el cloud con BlueXP
       url: task-deploy-cloud-compliance.html
