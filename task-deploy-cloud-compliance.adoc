@@ -60,7 +60,7 @@ Existen algunas situaciones en las que debe utilizar un conector implementado en
 * Al analizar datos en Cloud Volumes ONTAP en GCP, se utiliza un conector en GCP.
 
 
-Los sistemas ONTAP en las instalaciones, los recursos compartidos de archivos de NetApp, el almacenamiento de objetos S3 genérico y las bases de datos se pueden analizar al usar cualquiera de estos conectores en la nube.
+Los sistemas ONTAP locales, los recursos compartidos de archivos de NetApp y las bases de datos se pueden analizar al utilizar cualquiera de estos conectores en la nube.
 
 Tenga en cuenta que también puede https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Instale el conector en las instalaciones"^] En un host Linux en su red o en la nube. Algunos usuarios que planean instalar la clasificación de BlueXP en las instalaciones también pueden optar por instalar el conector en las instalaciones.
 

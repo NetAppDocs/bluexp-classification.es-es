@@ -14,10 +14,10 @@ summary: Completa unos pasos para empezar a analizar recursos compartidos de arc
 
 
 [role="lead"]
-Completa unos pasos para empezar a analizar recursos compartidos de archivos NFS o CIFS que no sean de NetApp directamente con la clasificación de BlueXP. Estos recursos compartidos de archivos pueden residir en las instalaciones o en el cloud.
+Complete unos pasos para comenzar a analizar recursos compartidos de archivos NFS o CIFS desde volúmenes de Google Cloud NetApp y desde 7 sistemas de-Mode de NetApp anteriores. Estos recursos compartidos de archivos pueden residir en las instalaciones o en el cloud.
 
 
-TIP: La única forma de analizar los datos de volúmenes de Google Cloud NetApp es añadir recursos compartidos de archivos.
+NOTE: El análisis de datos procedentes de recursos compartidos de archivos que no son de NetApp no se admite en la versión central de la clasificación de BlueXP.
 
 
 
@@ -47,7 +47,7 @@ Agregue la lista de recursos compartidos de archivos que desea analizar y selecc
 
 Revise los siguientes requisitos previos para comprobar que tiene una configuración compatible antes de habilitar la clasificación de BlueXP.
 
-* Los recursos compartidos se pueden alojar en cualquier lugar, incluso en el cloud o en las instalaciones. En la mayoría de los casos se trata de recursos compartidos de archivos que se encuentran en sistemas de almacenamiento que no son de NetApp. Sin embargo, los recursos compartidos de CIFS de los antiguos sistemas de almacenamiento NetApp 7-Mode se pueden analizar como recursos compartidos de archivos.
+* Los recursos compartidos se pueden alojar en cualquier lugar, incluso en el cloud o en las instalaciones. Los recursos compartidos de CIFS de sistemas de almacenamiento antiguos de NetApp 7-Mode se pueden analizar como recursos compartidos de archivos.
 +
 Tenga en cuenta que la clasificación de BlueXP no puede extraer permisos ni la «última hora de acceso» de los sistemas 7-Mode. Además, debido a un problema conocido entre algunas versiones de Linux y recursos compartidos CIFS en sistemas 7-Mode, debe configurar el recurso compartido para que utilice solo SMB v1 con la autenticación NTLM habilitada.
 
@@ -71,10 +71,6 @@ Si quieres asegurarte de que las «horas de último acceso» no cambian debido a
 == Implementar la instancia de clasificación de BlueXP
 
 Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
-
-Si va a analizar recursos compartidos de archivos NFS o CIFS de otros proveedores a los que se puede acceder a través de Internet, puede hacerlo link:task-deploy-cloud-compliance.html["Pon en marcha la clasificación de BlueXP en el cloud"^] o. link:task-deploy-compliance-onprem.html["Pon en marcha la clasificación de BlueXP en una ubicación on-premises que tenga acceso a Internet"^].
-
-Si va a escanear recursos compartidos de archivos NFS o CIFS que no son de NetApp y que se han instalado en un sitio oscuro que no tiene acceso a Internet, necesita hacerlo link:task-deploy-compliance-dark-site.html["Pon en marcha la clasificación de BlueXP en la misma ubicación on-premises que no tiene acceso a Internet"^]. Esto también requiere que el conector BlueXP se despliegue en esa misma ubicación en las instalaciones.
 
 Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
 
@@ -119,7 +115,7 @@ image:screenshot_compliance_fileshares_add_initial_shares.png["Una captura de pa
 Si va a agregar archivos compartidos a un grupo existente, haga clic en *Agregar recursos compartidos*.
 
 +
-image:screenshot_compliance_fileshares_add_more_shares.png["Una captura de pantalla que muestra el botón Agregar recursos compartidos para agregar más recursos compartidos al grupo."]
+image:screenshot_compliance_fileshares_add_more_shares2.png["Una captura de pantalla que muestra el botón Agregar recursos compartidos para agregar más recursos compartidos al grupo."]
 
 . Seleccione el protocolo para los recursos compartidos de archivos que va a agregar, agregue los recursos compartidos de archivos que desea analizar - un recurso compartido de archivos por línea - y haga clic en *continuar*.
 +

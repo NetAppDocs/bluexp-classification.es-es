@@ -30,7 +30,8 @@ image:diagram_deploy_onprem_cloud_instance.png["Un diagrama de los componentes d
 
 Para configuraciones muy grandes en las que analizará petabytes de datos, en las versiones 1,30 y anteriores, puede incluir varios hosts para proporcionar potencia de procesamiento adicional. Cuando se utilizan varios sistemas host, el sistema principal se denomina _Manager node_ y los sistemas adicionales que proporcionan potencia de procesamiento adicional se denominan _Scanner Nodes_.
 
-Para las versiones 1,30 y anteriores, si tienes que instalar la clasificación de BlueXP en varios hosts, consulta el link:task-deploy-multi-host-install-dark-site.html["Instala la clasificación de BlueXP en varios hosts sin acceso a Internet"].
+
+NOTE: Para las versiones heredadas 1,30 y anteriores, si necesita instalar la clasificación de BlueXP en varios hosts, consulte link:task-deploy-multi-host-install-dark-site.html["Instala la clasificación de BlueXP en varios hosts sin acceso a Internet"].
 
 También puede hacerlo link:task-deploy-compliance-dark-site.html["Instala la clasificación de BlueXP en un sitio on-premises que no tenga acceso a Internet"] para ubicaciones completamente seguras.
 
@@ -83,11 +84,9 @@ Para Azure NetApp Files, debe implementarse en la misma región que los volúmen
 * Al analizar datos en Cloud Volumes ONTAP en GCP, se utiliza un conector en GCP.
 
 
-Los sistemas ONTAP on-premises, los recursos compartidos de archivos y las cuentas de bases de datos que no son de NetApp se pueden analizar con cualquiera de estos conectores de nube.
+Los sistemas ONTAP locales, los recursos compartidos de archivos de NetApp y las cuentas de bases de datos se pueden analizar utilizando cualquiera de estos conectores en la nube.
 
 Tenga en cuenta que también puede https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Ponga en marcha el conector en las instalaciones"^] En un host Linux de su red o en un host Linux del cloud. Algunos usuarios que planean instalar la clasificación de BlueXP en las instalaciones también pueden optar por instalar el conector en las instalaciones.
-
-Como puede ver, puede que haya algunas situaciones en las que necesite utilizar https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Múltiples conectores"].
 
 Necesitarás la dirección IP o el nombre de host del sistema Connector al instalar la clasificación de BlueXP. Tendrá esta información si instaló el conector en sus instalaciones. Si el conector está implementado en la nube, puede encontrar esta información desde la consola BlueXP: Haga clic en el icono Ayuda, seleccione *Soporte* y haga clic en *conector BlueXP*.
 
@@ -316,8 +315,6 @@ Debe tener la información de Active Directory:
 
 
 |===
-Si utilizas varios hosts de clasificación de BlueXP para obtener una capacidad de procesamiento adicional para analizar tus orígenes de datos, tendrás que habilitar puertos/protocolos adicionales. link:task-deploy-compliance-onprem.html["Consulte los requisitos de puerto adicionales"].
-
 
 
 == Instale la clasificación BlueXP en el host Linux
