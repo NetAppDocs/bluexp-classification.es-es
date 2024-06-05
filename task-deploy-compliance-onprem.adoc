@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense 
 summary: Completa unos pasos para instalar la clasificación de BlueXP en un host Linux en tu red o en un host Linux en la nube que tenga acceso a Internet. Deberá implementar el host Linux manualmente en su red o en el cloud como parte de esta instalación. 
 ---
 = Instala la clasificación de BlueXP en un host que tenga acceso a Internet
@@ -114,19 +114,19 @@ Asegúrate de que puedes mantener en funcionamiento la clasificación de BlueXP.
 
 | *Grande* | 16 CPU | 64 GB DE MEMORIA RAM | 500 GiB SSD en /, o.
 - 100 GiB disponible en /opt
-- 395 GiB disponible en /var/lib/docker
+- 395 GiB disponible en /var/lib/docker o para Podman /var/lib/containers o para Podman /var/lib/containers
 - 5 GiB en /tmp 
 
 
 | *Media* | 8 CPU | 32 GB DE MEMORIA RAM | 200 GiB SSD en /, o.
 - 50 GiB disponible en /opt
-- 145 GiB disponible en /var/lib/docker
+- 145 GiB disponible en /var/lib/docker o para Podman /var/lib/containers
 - 5 GiB en /tmp 
 
 
 | *Pequeño* | 8 CPU | 16 GB DE MEMORIA RAM | 100 GiB SSD en /, o.
 - 50 GiB disponible en /opt
-- 45 GiB disponible en /var/lib/docker
+- 45 GiB disponible en /var/lib/docker o para Podman /var/lib/containers
 - 5 GiB en /tmp 
 |===
 +
@@ -134,7 +134,7 @@ Tenga en cuenta que existen limitaciones cuando se utilizan sistemas más peque�
 
 * A la hora de poner en marcha una instancia de computación en la nube para la instalación de tu clasificación de BlueXP, te recomendamos un sistema que cumpla los requisitos «grandes» del sistema anteriores:
 +
-** *Tipo de instancia de AWS EC2*: Recomendamos "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Consulte tipos de instancia de AWS adicionales"^].
+** *Tipo de instancia de Amazon Elastic Compute Cloud (Amazon EC2)*: Recomendamos “m6i.4xlarge”. link:reference-instance-types.html#aws-instance-types["Consulte tipos de instancia de AWS adicionales"^].
 ** *Azure VM size*: Recomendamos "Standard_D16s_v3". link:reference-instance-types.html#azure-instance-types["Consulte tipos de instancia de Azure adicionales"^].
 ** *Máquina GCP tipo*: Recomendamos "n2-standard-16". link:reference-instance-types.html#gcp-instance-types["Consulte tipos de instancia de GCP adicionales"^].
 

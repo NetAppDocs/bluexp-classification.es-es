@@ -52,7 +52,7 @@ De forma predeterminada, si la clasificación de BlueXP no tiene estos permisos,
 
 image:screenshot_scan_missing_permissions.png["Una captura de pantalla que muestra el switch que puedes utilizar para que la clasificación de BlueXP analice tus archivos aunque no tenga los permisos correctos para revertir la hora del último acceso a la marca de tiempo original."]
 
-Esta funcionalidad se puede aplicar a sistemas ONTAP en las instalaciones, Cloud Volumes ONTAP, Azure NetApp Files, FSX para ONTAP y recursos compartidos de archivos no de NetApp.
+Esta funcionalidad se aplica a los sistemas ONTAP en las instalaciones, Cloud Volumes ONTAP, Azure NetApp Files, FSx para ONTAP y recursos compartidos de archivos de terceros.
 
 Tenga en cuenta que hay un filtro en la página de investigación llamado _Scan Analysis Event_ que le permite mostrar los archivos que no se clasificaron porque la clasificación de BlueXP no pudo revertir la última hora a la que se accedió. O los archivos que estaban clasificados aunque la clasificación de BlueXP no pudieron revertir la última hora de acceso.
 

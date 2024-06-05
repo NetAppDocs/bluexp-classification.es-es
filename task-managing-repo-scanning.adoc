@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-repo-scanning.html 
-keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
-summary: 'Puede gestionar cómo se analizan sus datos en cada uno de sus entornos de trabajo y fuentes de datos. Puede realizar los cambios en función del "repositorio", lo que significa que puede realizar cambios para cada volumen, bloque, recurso compartido, esquema, usuario, etc. dependiendo del tipo de origen de datos que esté escaneando.' 
+keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification, bluexp 
+summary: 'Puedes gestionar cómo se analizan los datos en cada uno de tus entornos de trabajo y fuentes de datos en la clasificación de BlueXP. Puede realizar los cambios en función del "repositorio", lo que significa que puede realizar cambios para cada volumen, bloque, recurso compartido, esquema, usuario, etc. dependiendo del tipo de origen de datos que esté escaneando.' 
 ---
 = Cambie la configuración de escaneo de sus repositorios
 :hardbreaks:
@@ -23,6 +23,18 @@ Algunas de las cosas que puedes cambiar son si se analiza o no un repositorio y 
 == Vea el estado de escaneo de sus repositorios
 
 Puedes ver los repositorios individuales que analiza la clasificación de BlueXP (volúmenes, bloques, etc.) de cada entorno de trabajo y cada origen de datos. Además, puedes ver cuántos han sido "mapeados" y cuántos han sido "clasificados". La clasificación tarda más tiempo en realizarse a medida que se realiza la identificación de IA completa en todos los datos.
+
+Puede ver el estado de escaneo de cada entorno de trabajo en la página Configuración:
+
+* *Inicializando* (punto azul claro): Se activa la configuración del mapa o clasificación. Esto aparece durante unos segundos antes de iniciar el estado de “cola pendiente”.
+* *Cola pendiente* (punto naranja): La tarea de escaneo está esperando para ser listada en la cola de escaneo.
+* *En cola* (punto naranja): La tarea se ha agregado correctamente a la cola de escaneo. El sistema comenzará a asignar o clasificar el volumen cuando llegue su turno en la cola.
+* *Running* (punto verde): La tarea de escaneo, que estaba en la cola, ahora se está haciendo en el repositorio de almacenamiento seleccionado.
+* *Finalizado* (punto verde): El escaneo del repositorio de almacenamiento está completo.
+* *Pausa* (punto gris): Seleccionaste la opción “Pausa” para pausar el escaneo. Aunque los cambios en el volumen no se muestran en el sistema, los datos escaneados siguen mostrándose.
+* *Error* (punto rojo): El escaneo no se puede completar porque ha encontrado problemas. Si necesita completar una acción, el error aparece en la información sobre herramientas debajo de la columna “Acción requerida”.  De lo contrario, el sistema muestra un estado de “error” e intenta recuperarse. Cuando termina, el estado cambia.
+* *No escaneando*: Se seleccionó la configuración de volumen de “Desactivado” y el sistema no escanea el volumen.
+
 
 .Pasos
 . En la ficha Configuración, haga clic en el botón *Configuración* del entorno de trabajo.

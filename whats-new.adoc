@@ -18,6 +18,48 @@ Descubre las novedades de la clasificación de BlueXP (Cloud Data Sense).
 
 
 
+== 5 de junio de 2024 (Versión 1,32)
+
+Esta versión incluye las siguientes actualizaciones.
+
+
+
+=== Las exploraciones de asignación recopilan metadatos
+
+Los siguientes metadatos se extraen de los archivos durante las exploraciones de mapeo y se muestran en los paneles de control de gobierno, cumplimiento e investigación:
+
+* Entorno de trabajo
+* Tipo de entorno de trabajo
+* Repositorio de almacenamiento
+* Tipo de archivo
+* Capacidad utilizada
+* Número de archivos
+* Tamaño de archivo
+* Creación de archivos
+* Último acceso al archivo
+* Última modificación del archivo
+* Hora de detección de archivo
+* Extracción de permisos
+
+
+
+
+=== Datos adicionales en consolas
+
+Esta versión actualiza los datos que aparecen en los paneles de control de gobierno, cumplimiento e investigación durante las exploraciones de mapeo.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["¿Cuál es la diferencia entre las exploraciones de mapeo y clasificación"]
+
+
+
+=== Nueva columna de estado de asignación en la página Configuración
+
+Esta versión muestra ahora una nueva columna de estado de asignación en la página Configuración. La nueva columna ayuda a identificar si la asignación está en ejecución, en cola, en pausa o más.
+
+Para obtener una explicación de los estados, consulte https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["Cambiar la configuración de exploración"].
+
+
+
 == 15 de mayo de 2024 (Versión 1,31)
 
 

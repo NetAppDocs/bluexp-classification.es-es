@@ -52,6 +52,6 @@ Puede editar la lista de ID de grupo y eliminar cualquier ID de grupo que haya a
 
 == Ver la lista actual de ID de grupo
 
-Es posible para el contenido del `data_provider.yaml` el archivo de configuración debe ser diferente al que se ha confirmado después de ejecutar el `update_data_providers_from_config_file.sh` guión. Para ver la lista actual de ID de grupo que ha añadido a la clasificación de BlueXP, ejecute el siguiente comando en «/opt/netapp/Datasense/tools/customer_configuration/data_providers»:
+Es posible para el contenido del `data_provider.yaml` archivo de configuración que difiere de lo que realmente se ha confirmado después de ejecutar el `update_data_providers_from_config_file.sh` guión. Para ver la lista actual de ID de grupo que ha añadido a la clasificación de BlueXP, ejecute el siguiente comando en «/opt/netapp/Datasense/tools/customer_configuration/data_providers»:
 
  get_data_providers_configuration.sh

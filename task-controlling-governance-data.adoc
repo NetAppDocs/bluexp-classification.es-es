@@ -16,7 +16,7 @@ summary: Controle los costes relacionados con los datos que residen en los recur
 [role="lead"]
 Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato.
 
-Además, si tiene pensado migrar datos desde ubicaciones locales al cloud, puede visualizar el tamaño de los datos y si alguno de ellos contiene información confidencial antes de moverlos.
+Además, si tiene pensado migrar datos desde ubicaciones en las instalaciones al cloud, puede ver el tamaño de los datos y si alguno de ellos contiene información confidencial antes de moverlos.
 
 
 
@@ -75,7 +75,7 @@ El área _Top Data Repository by Sensitivity Level_ enumera los cuatro principal
 * Datos personales confidenciales
 
 
-Puede pasar el ratón sobre cada sección para ver el número total de elementos de cada categoría.
+Puede colocar el cursor sobre cada sección para ver el número total de elementos de cada categoría.
 
 Haga clic en cada área para ver los resultados filtrados en la página Investigación para que pueda seguir investigando.
 
@@ -91,7 +91,7 @@ El área _Open Permissions_ muestra el porcentaje de cada tipo de permisos que e
 * Acceso desconocido
 
 
-Puede pasar el ratón sobre cada sección para ver el número total de archivos de cada categoría. Haga clic en cada área para ver los resultados filtrados en la página Investigación para que pueda seguir investigando.
+Puede colocar el cursor sobre cada sección para ver el número total de archivos de cada categoría. Haga clic en cada área para ver los resultados filtrados en la página Investigación para que pueda seguir investigando.
 
 
 
@@ -99,7 +99,7 @@ Puede pasar el ratón sobre cada sección para ver el número total de archivos 
 
 Puede que desee investigar los elementos de los gráficos _Age_ y _Size_ para ver si hay datos que debe eliminar o organizar en niveles un almacenamiento de objetos menos costoso.
 
-Puede pasar el ratón sobre un punto de los gráficos para ver detalles sobre la antigüedad o el tamaño de los datos de esa categoría. Haga clic para ver todos los archivos filtrados por esa edad o rango de tamaño.
+Puede colocar el cursor sobre un punto de los gráficos para ver detalles sobre la edad o el tamaño de los datos de esa categoría. Haga clic para ver todos los archivos filtrados por esa edad o rango de tamaño.
 
 * * Edad del Gráfico de datos* - categoriza los datos en función de la hora en que se creó, la última vez que se accedió o la última vez que se modificó.
 * * Tamaño del gráfico de datos* - categoriza los datos en función del tamaño.
@@ -118,7 +118,7 @@ El área _Classification_ proporciona una lista de los más identificados link:t
 
 ==== Categorías
 
-Las categorías pueden ayudarle a entender lo que está pasando con sus datos mostrándole los tipos de información que tiene. Por ejemplo, una categoría como "currículos" o "contratos de empleados" puede incluir datos confidenciales. Cuando investiga los resultados, puede que encuentre que los contratos de empleados están almacenados en una ubicación insegura. Entonces puede corregir ese problema.
+Las categorías pueden ayudarle a entender lo que está pasando con sus datos mostrándole los tipos de información que tiene. Por ejemplo, una categoría como "currículos" o "contratos de empleados" puede incluir datos confidenciales. Al investigar los resultados, puede que se dé cuenta de que los contratos de empleados están almacenados en una ubicación no segura. Entonces puede corregir ese problema.
 
 Consulte link:task-controlling-private-data.html#view-files-by-categories["Ver archivos por categorías"^] si quiere más información.
 
@@ -134,7 +134,7 @@ Consulte link:task-controlling-private-data.html#view-files-by-file-types["Visua
 
 == Informe de asignación de datos
 
-El informe de asignación de datos proporciona una descripción general de los datos que se almacenan en sus fuentes de datos empresariales para ayudarle en la toma de decisiones de migración, copia de seguridad, seguridad y procesos de cumplimiento de normativas. En el informe se enumera una descripción general que resume todos sus entornos de trabajo y orígenes de datos y, a continuación, proporciona un desglose para cada entorno de trabajo.
+El informe de asignación de datos proporciona una descripción general de los datos que se almacenan en sus fuentes de datos empresariales para ayudarle en la toma de decisiones de migración, copia de seguridad, seguridad y procesos de cumplimiento de normativas. En primer lugar, el informe muestra una descripción general que resume todos los entornos de trabajo y orígenes de datos y, a continuación, proporciona un análisis para cada entorno de trabajo.
 
 El informe incluye la siguiente información:
 
@@ -169,9 +169,9 @@ image:screenshot_compliance_data_mapping_report_button.png["Captura de pantalla 
 
 
 .Resultado
-La clasificación de BlueXP genera un informe PDF que se puede revisar y enviar a otros grupos según sea necesario.
+La clasificación de BlueXP genera un informe .pdf que se puede revisar y enviar a otros grupos según sea necesario.
 
-Si el informe tiene un tamaño superior a los 1 MB, el archivo PDF se conservará en la instancia de clasificación de BlueXP y verás un mensaje emergente sobre la ubicación exacta. Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, podrá acceder directamente al archivo PDF. Cuando la clasificación de BlueXP se ponga en marcha en la nube, necesitarás SSH en la instancia de clasificación de BlueXP para descargar el archivo PDF. link:task-audit-data-sense-actions.html#access-the-log-files["Consulte cómo acceder a los datos en la instancia de clasificación"^].
+Si el informe tiene un tamaño superior a 1 MB, el archivo .pdf se conservará en la instancia de clasificación de BlueXP, y verás un mensaje emergente sobre la ubicación exacta. Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, puede navegar directamente al archivo .pdf. Cuando la clasificación de BlueXP se ponga en marcha en la nube, necesitarás SSH en la instancia de clasificación de BlueXP para descargar el archivo .pdf. link:task-audit-data-sense-actions.html#access-the-log-files["Consulte cómo acceder a los datos en la instancia de clasificación"^].
 
 Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de clasificación de BlueXP haciendo clic en image:screenshot_gallery_options.gif["El botón más"] Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.
 
@@ -179,7 +179,7 @@ Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la
 
 == Informe de evaluación de identificación de datos
 
-El informe de evaluación de detección de datos proporciona un análisis de alto nivel del entorno escaneado para resaltar los resultados obtenidos por el sistema y mostrar las áreas de preocupación y los posibles pasos de solución. Los resultados se basan en la asignación y clasificación de los datos. El objetivo de este informe es concienciar sobre tres aspectos importantes de su conjunto de datos:
+El informe de evaluación de detección de datos proporciona un análisis de alto nivel del entorno escaneado para resaltar los resultados obtenidos por el sistema y mostrar las áreas de preocupación y los posibles pasos de solución. Los resultados se basan en la asignación y clasificación de los datos. El objetivo de este informe es dar a conocer tres aspectos significativos de su conjunto de datos:
 
 [cols="25,65"]
 |===
@@ -216,4 +216,4 @@ image:screenshot_compliance_data_discovery_report_button.png["Captura de pantall
 
 
 .Resultado
-La clasificación de BlueXP genera un informe PDF que se puede revisar y enviar a otros grupos según sea necesario.
+La clasificación de BlueXP genera un informe .pdf que se puede revisar y enviar a otros grupos según sea necesario.

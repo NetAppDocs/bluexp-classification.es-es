@@ -147,7 +147,7 @@ NOTE: Para quitar por completo la instancia de clasificación de BlueXP, puedes 
 
 === ¿Puedo personalizar el servicio según las necesidades de mi organización?
 
-La clasificación de BlueXP proporciona información inmediata sobre tus datos. Estos conocimientos se pueden extraer y utilizar para las necesidades de su organización.
+La clasificación de BlueXP proporciona información sobre tus datos. Estos conocimientos se pueden extraer y utilizar para las necesidades de su organización.
 
 Además, la clasificación de BlueXP ofrece muchas formas de añadir una lista personalizada de «datos personales» que identificará la clasificación de BlueXP en los análisis, lo que proporciona una imagen completa sobre dónde residen los datos potencialmente confidenciales en _todos_ los archivos de su organización.
 
@@ -168,7 +168,7 @@ link:task-exclude-scan-paths.html["Leer más"^].
 
 
 
-=== ¿Se analizan copias Snapshot que residen en los volúmenes ONTAP?
+=== ¿Las snapshots que residen en volúmenes ONTAP analizados?
 
 No La clasificación de BlueXP no analiza las copias Snapshot porque el contenido es idéntico al contenido del volumen.
 
@@ -272,7 +272,7 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["Leer m
 
 === ¿Puede alguien acceder a los datos privados enviados entre mi navegador y la clasificación de BlueXP?
 
-No Los datos privados que se envíen entre su explorador y la instancia de clasificación de BlueXP se mantienen seguros gracias al cifrado integral con TLS 1,2, lo que significa que ni NetApp ni terceros podrán leerlos. La clasificación de BlueXP no compartirá datos ni resultados con NetApp a menos que solicites y apruebes el acceso.
+No Los datos privados que se envíen entre su explorador y la instancia de clasificación de BlueXP se mantienen seguros gracias al cifrado integral con TLS 1,2, lo que significa que tanto NetApp como terceros no pueden leerlos. La clasificación de BlueXP no compartirá datos ni resultados con NetApp a menos que solicites y apruebes el acceso.
 
 Los datos que se analizan permanecen dentro de su entorno.
 

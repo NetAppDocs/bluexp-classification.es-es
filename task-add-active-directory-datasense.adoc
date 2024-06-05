@@ -16,7 +16,7 @@ summary: Puedes integrar un Active Directory global con la clasificación de Blu
 [role="lead"]
 Puedes integrar un Active Directory global con la clasificación de BlueXP para mejorar los resultados que la clasificación de BlueXP informa sobre los propietarios de archivos y qué usuarios y grupos tienen acceso a tus archivos.
 
-Cuando configuras ciertas fuentes de datos (que se enumeran a continuación), tienes que introducir las credenciales de Active Directory para que la clasificación de BlueXP analice los volúmenes de CIFS. Esta integración proporciona la clasificación de BlueXP con el propietario de archivo y los detalles de permisos para los datos que residen en esos orígenes de datos. El directorio activo introducido para esos orígenes de datos puede ser diferente de las credenciales globales de Active Directory especificadas aquí. La clasificación de BlueXP buscará en todos los directorios activos integrados para obtener información sobre los usuarios y los permisos.
+Cuando configuras ciertas fuentes de datos (que se enumeran a continuación), tienes que introducir las credenciales de Active Directory para que la clasificación de BlueXP analice los volúmenes de CIFS. Esta integración proporciona la clasificación de BlueXP con el propietario de archivo y los detalles de permisos para los datos que residen en esos orígenes de datos. El Active Directory introducido para esos orígenes de datos puede diferir de las credenciales globales de Active Directory introducidas aquí. La clasificación de BlueXP buscará en todos los directorios activos integrados para obtener información sobre los usuarios y los permisos.
 
 Esta integración proporciona información adicional en las siguientes ubicaciones en la clasificación de BlueXP:
 
@@ -51,7 +51,7 @@ Después de implementar la clasificación de BlueXP y haber activado el análisi
 
 Las credenciales de Active Directory pueden ser de solo lectura, pero ofrecer credenciales de administrador garantiza que la clasificación de BlueXP pueda leer cualquier dato que requiera permisos elevados. Las credenciales se almacenan en la instancia de clasificación de BlueXP.
 
-Para volúmenes/recursos compartidos de archivos CIFS, si deseas asegurarte de que los análisis de clasificación de BlueXP no cambien tus archivos, recomendamos que el usuario tenga permiso de atributos de escritura. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
+Para volúmenes/recursos compartidos de archivos CIFS, si deseas asegurarte de que los análisis de clasificación de BlueXP no cambien los «tiempos de último acceso» de tus archivos, recomendamos que el usuario tenga permiso de atributos de escritura. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
 
 .Requisitos
 * Debe tener un Active Directory ya configurado para los usuarios de su empresa.
