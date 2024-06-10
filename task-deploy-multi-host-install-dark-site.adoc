@@ -85,5 +85,3 @@ El instalador de clasificación de BlueXP finalizará la instalación de paquete
 
 .El futuro
 En la página Configuration puede seleccionar el local link:task-getting-started-compliance.html["Clústeres de ONTAP en las instalaciones"] y local link:task-scanning-databases.html["oracle"] que desea escanear.
-
-También puede hacerlo link:task-licensing-datasense.html["Configura las licencias de BYOL para la clasificación de BlueXP"] Desde la página de la cartera digital de BlueXP en este momento. No se le cobrará incluso después de que finalice su prueba gratuita de 30 días.

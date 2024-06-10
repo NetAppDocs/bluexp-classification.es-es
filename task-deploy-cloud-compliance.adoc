@@ -39,10 +39,6 @@ Asegúrese de que el entorno pueda cumplir con los requisitos previos. Esto incl
 [role="quick-margin-para"]
 Inicia el asistente de instalación para implementar la instancia de clasificación de BlueXP en la nube.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Suscríbete al servicio de clasificación de BlueXP
-[role="quick-margin-para"]
-Hace falta una suscripción a BlueXP a través del mercado del proveedor de nube.
-
 
 
 == Cree un conector
@@ -257,5 +253,3 @@ Las actualizaciones en BlueXP Connector y el software de clasificación BlueXP s
 
 .El futuro
 En la página Configuración puede seleccionar los orígenes de datos que desea analizar.
-
-También puede hacerlo link:task-licensing-datasense.html["Configura las licencias para la clasificación de BlueXP"] en este momento. No se le cobrará hasta que finalice su prueba gratuita de 30 días.

@@ -16,6 +16,9 @@ summary: Puedes integrar un Active Directory global con la clasificación de Blu
 [role="lead"]
 Puedes integrar un Active Directory global con la clasificación de BlueXP para mejorar los resultados que la clasificación de BlueXP informa sobre los propietarios de archivos y qué usuarios y grupos tienen acceso a tus archivos.
 
+
+NOTE: La integración con Active Directory no es compatible con la versión principal de clasificación de BlueXP.
+
 Cuando configuras ciertas fuentes de datos (que se enumeran a continuación), tienes que introducir las credenciales de Active Directory para que la clasificación de BlueXP analice los volúmenes de CIFS. Esta integración proporciona la clasificación de BlueXP con el propietario de archivo y los detalles de permisos para los datos que residen en esos orígenes de datos. El Active Directory introducido para esos orígenes de datos puede diferir de las credenciales globales de Active Directory introducidas aquí. La clasificación de BlueXP buscará en todos los directorios activos integrados para obtener información sobre los usuarios y los permisos.
 
 Esta integración proporciona información adicional en las siguientes ubicaciones en la clasificación de BlueXP:

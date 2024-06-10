@@ -298,7 +298,7 @@ La clasificación de BlueXP accede a los datos almacenados en Elasticsearch medi
 
 == Licencias y costes
 
-Las siguientes preguntas hacen referencia a las licencias y los costes para usar la clasificación de BlueXP.
+La siguiente pregunta está relacionada con las licencias y los costes para usar la clasificación de BlueXP.
 
 
 

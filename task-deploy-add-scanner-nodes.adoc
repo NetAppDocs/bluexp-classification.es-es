@@ -202,5 +202,3 @@ image:screenshot_work_env_id.png["Una captura de pantalla del ID de entorno de t
 También puede ver la lista de todos los grupos de escáneres junto con la dirección IP y el estado de cada nodo de escáner del grupo en la parte inferior de la página Configuración.
 
 image:screenshot_scanner_groups.png["Una captura de pantalla que muestra todos los grupos de escáner junto con la dirección IP de cada nodo de escáner del grupo."]
-
-Puede hacerlo link:task-licensing-datasense.html["Configura las licencias para la clasificación de BlueXP"] en este momento. No se le cobrará hasta que finalice su prueba gratuita de 30 días.
