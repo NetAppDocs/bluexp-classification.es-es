@@ -47,7 +47,7 @@ La mayoría de las funciones de clasificación de BlueXP funcionan cuando se imp
 * Copiar y sincronizar archivos de origen mediante la copia y sincronización de BlueXP
 * Actualizaciones de software automatizadas desde BlueXP
 +
-Tanto el conector de BlueXP como la clasificación de BlueXP requerirán actualizaciones manuales periódicas para permitir nuevas funciones. Puedes ver la versión de clasificación de BlueXP en la parte inferior de las páginas de interfaz de usuario de clasificación de BlueXP. Compruebe la link:whats-new.html["Notas de la versión de clasificación de BlueXP"] para ver las nuevas funciones de cada versión y si desea esas funciones. A continuación, puede seguir los pasos a. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Actualice el conector BlueXP"^] y.. <<Actualiza el software de clasificación BlueXP,Actualiza tu software de clasificación BlueXP>>.
+Tanto el conector de BlueXP como la clasificación de BlueXP requerirán actualizaciones manuales periódicas para permitir nuevas funciones. Puedes ver la versión de clasificación de BlueXP en la parte inferior de las páginas de interfaz de usuario de clasificación de BlueXP. Compruebe la link:whats-new.html["Notas de la versión de clasificación de BlueXP"] para ver las nuevas funciones de cada versión y si desea esas funciones. A continuación, puede seguir los pasos a. https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Actualice el conector BlueXP"^] y.. <<Actualiza el software de clasificación BlueXP,Actualiza tu software de clasificación BlueXP>>.
 
 
 
@@ -378,7 +378,7 @@ En la página Configuration puede seleccionar el local link:task-getting-started
 Dado que el software de clasificación BlueXP se actualiza con nuevas funciones de forma regular, deberías entrar en rutina para comprobar si hay nuevas versiones periódicamente y asegurarse de que estás usando el software y las funciones más recientes. Tendrás que actualizar el software de clasificación de BlueXP manualmente porque no hay conectividad a Internet para realizar la actualización de forma automática.
 
 .Antes de empezar
-* Recomendamos que el software BlueXP Connector se actualice a la última versión disponible. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Consulte los pasos de actualización del conector"^].
+* Recomendamos que el software BlueXP Connector se actualice a la última versión disponible. https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Consulte los pasos de actualización del conector"^].
 * A partir de la versión de clasificación de BlueXP 1,24, puede realizar actualizaciones a cualquier futura versión del software.
 +
 Si tu software de clasificación BlueXP ejecuta una versión anterior a la 1,24, solo puedes actualizar una versión principal cada vez. Por ejemplo, si tiene instalada la versión 1,21.x, solo puede actualizar a 1,22.x. Si tiene varias versiones principales detrás, tendrá que actualizar el software varias veces.
