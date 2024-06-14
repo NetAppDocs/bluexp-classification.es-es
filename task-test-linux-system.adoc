@@ -50,7 +50,7 @@ Necesitará la dirección IP o el nombre de host del sistema Connector cuando ej
 El software de clasificación de BlueXP debe ejecutarse en un host que cumpla con los requisitos específicos del sistema operativo, los requisitos de RAM, los requisitos de software, etc.
 
 * La clasificación de BlueXP no se admite en un host compartido con otras aplicaciones; el host debe ser un host dedicado.
-* Al crear el sistema host en tus instalaciones, puedes elegir entre tres tamaños de sistema en función del tamaño del conjunto de datos que tengas pensado analizar la clasificación de BlueXP.
+* Al crear el sistema host en sus instalaciones, se puede elegir entre estos tamaños del sistema según el tamaño del conjunto de datos al que vaya a analizar la clasificación de BlueXP.
 +
 [cols="17,17,27,31"]
 |===
@@ -67,22 +67,7 @@ El software de clasificación de BlueXP debe ejecutarse en un host que cumpla co
 - 100 GiB disponible en /opt
 - 395 GiB disponible en /var/lib/docker o para Podman /var/lib/containers o para Podman /var/lib/containers
 - 5 GiB en /tmp 
-
-
-| *Media* | 8 CPU | 32 GB DE MEMORIA RAM | 200 GiB SSD en /, o.
-- 50 GiB disponible en /opt
-- 145 GiB disponible en /var/lib/docker o para Podman /var/lib/containers
-- 5 GiB en /tmp 
-
-
-| *Pequeño* | 8 CPU | 16 GB DE MEMORIA RAM | 100 GiB SSD en /, o.
-- 50 GiB disponible en /opt
-- 45 GiB disponible en /var/lib/docker o para Podman /var/lib/containers
-- 5 GiB en /tmp 
 |===
-+
-Tenga en cuenta que existen limitaciones cuando se utilizan sistemas más pequeños. Consulte link:concept-cloud-compliance.html#using-a-smaller-instance-type["Con un tipo de instancia más pequeño"] para obtener más detalles.
-
 * A la hora de poner en marcha una instancia de computación en la nube para la instalación de tu clasificación de BlueXP, te recomendamos un sistema que cumpla los requisitos «grandes» del sistema anteriores:
 +
 ** *Tipo de instancia de Amazon Elastic Compute Cloud (Amazon EC2)*: Recomendamos “m6i.4xlarge”. link:reference-instance-types.html#aws-instance-types["Consulte tipos de instancia de AWS adicionales"^].
