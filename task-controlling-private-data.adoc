@@ -4,7 +4,7 @@ permalink: task-controlling-private-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
 summary: Controle sus datos privados al ver los detalles sobre los datos personales y los datos personales confidenciales de su empresa. También puedes obtener visibilidad revisando las categorías y los tipos de archivos que se encuentra en la clasificación de BlueXP en tus datos. 
 ---
-= Consulte los detalles del cumplimiento de normativas sobre los datos almacenados en su organización
+= Consulte los detalles del cumplimiento de normativas sobre los datos privados almacenados en su organización
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Controle sus datos privados al ver los detalles sobre los datos persona
 
 
 [role="lead"]
-Controle sus datos privados al ver los detalles sobre los datos personales y los datos personales confidenciales de su empresa. También puedes obtener visibilidad revisando las categorías y los tipos de archivos que se encuentra en la clasificación de BlueXP en tus datos.
+Obtenga el control de sus datos privados al ver los detalles sobre los datos personales (PII) y los datos personales confidenciales (SPII) en su organización. También puedes obtener visibilidad revisando las categorías y los tipos de archivos que se encuentra en la clasificación de BlueXP en tus datos.
 
 
 NOTE: Las capacidades descritas en esta sección sólo están disponibles si ha elegido realizar un análisis de clasificación completo en sus orígenes de datos. Los orígenes de datos que han tenido un análisis de sólo asignación no muestran detalles de nivel de archivo.

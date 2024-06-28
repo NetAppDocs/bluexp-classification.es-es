@@ -18,6 +18,46 @@ Descubre las novedades de la clasificación de BlueXP (Cloud Data Sense).
 
 
 
+== 1 de julio de 2024 (Versión 1,33)
+
+Esta versión incluye las siguientes actualizaciones.
+
+
+
+=== Compatibilidad con Ubuntu
+
+Esta versión es compatible con la plataforma Linux Ubuntu 24,04.
+
+
+
+=== Las exploraciones de asignación recopilan metadatos
+
+Los siguientes metadatos se extraen de los archivos durante las exploraciones de mapeo y se muestran en los paneles de control de gobierno, cumplimiento e investigación:
+
+* Entorno de trabajo
+* Tipo de entorno de trabajo
+* Repositorio de almacenamiento
+* Tipo de archivo
+* Capacidad utilizada
+* Número de archivos
+* Tamaño de archivo
+* Creación de archivos
+* Último acceso al archivo
+* Última modificación del archivo
+* Hora de detección de archivo
+* Extracción de permisos
+
+
+
+
+=== Datos adicionales en consolas
+
+Esta versión actualiza los datos que aparecen en los paneles de control de gobierno, cumplimiento e investigación durante las exploraciones de mapeo.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["¿Cuál es la diferencia entre las exploraciones de mapeo y clasificación"]
+
+
+
 == 5 de junio de 2024 (Versión 1,32)
 
 Esta versión incluye la siguiente actualización.

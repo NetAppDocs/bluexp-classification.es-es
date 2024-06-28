@@ -14,7 +14,13 @@ summary: Hay muchos tipos de datos privados que la clasificación de BlueXP pued
 
 
 [role="lead"]
-Hay muchos tipos de datos privados que la clasificación de BlueXP puede identificar en tus volúmenes y bases de datos. Vea las categorías a continuación.
+Hay muchos tipos de datos privados que la clasificación de BlueXP puede identificar en tus volúmenes y bases de datos.
+
+La clasificación de BlueXP identifica dos tipos de datos personales:
+
+* *Información de identificación personal (PII)*
+* *Información personal sensible (SPII)*
+
 
 
 TIP: Si necesita la clasificación de BlueXP para identificar otros tipos de datos privados, como números de identificación nacionales o identificadores sanitarios adicionales, envíe un correo electrónico a ng-contact-data-sense@netapp.com con su solicitud.
@@ -23,7 +29,7 @@ TIP: Si necesita la clasificación de BlueXP para identificar otros tipos de dat
 
 == Tipos de datos personales
 
-Los datos personales encontrados en los archivos pueden ser datos personales generales o identificadores nacionales. La tercera columna de la siguiente tabla identifica si la clasificación de BlueXP lo utiliza link:task-controlling-private-data.html#view-files-that-contain-personal-data["validación de proximidad"^] validar los resultados del identificador.
+Los datos personales, o información personal identificable_ (PII), que se encuentran en los archivos pueden ser datos personales generales o identificadores nacionales. La tercera columna de la siguiente tabla identifica si la clasificación de BlueXP lo utiliza link:task-controlling-private-data.html#view-files-that-contain-personal-data["validación de proximidad"^] validar los resultados del identificador.
 
 Los idiomas en los que se pueden reconocer estos elementos se identifican en la tabla.
 
@@ -224,19 +230,19 @@ Los idiomas en los que se pueden reconocer estos elementos se identifican en la 
 
 == Tipos de datos personales confidenciales
 
-Los datos personales confidenciales que puede encontrar la clasificación de BlueXP en los archivos incluyen la siguiente lista.
+La clasificación de BlueXP puede encontrar la siguiente información personal confidencial (SPII) en archivos.
 
 Los elementos de esta categoría sólo se pueden reconocer en inglés en este momento.
 
-Procedimientos penales referencia:: Datos relativos a las condenas y delitos penales de una persona natural.
-Referencia étnica:: Datos relativos al origen racial o étnico de una persona natural.
-Referencia de Salud:: Datos relativos a la salud de una persona física.
-Códigos médicos ICD-9-cm:: Códigos utilizados en la industria médica y de la salud.
-Códigos médicos ICD-10-cm:: Códigos utilizados en la industria médica y de la salud.
-Creencias filosóficas referencia:: Datos relativos a las creencias filosóficas de una persona natural.
-Opiniones políticas referencia:: Datos relativos a las opiniones políticas de una persona natural.
-Referencia de creencias religiosas:: Datos relativos a las creencias religiosas de una persona natural.
-Referencia de vida sexual o orientación:: Datos relativos a la vida sexual o la orientación sexual de una persona natural.
+* *Referencia de Procedimientos Penales*: Datos relativos a las condenas y delitos penales de una persona física.
+* *Referencia étnica*: Datos relativos al origen racial o étnico de una persona física.
+* *Referencia de salud*: Datos relativos a la salud de una persona física.
+* *Códigos Médicos ICD-9-CM*: Códigos utilizados en la industria médica y de la salud.
+* *Códigos Médicos ICD-10-CM*: Códigos utilizados en la industria médica y de la salud.
+* *Referencia de creencias filosóficas*: Datos relativos a las creencias filosóficas de una persona natural.
+* *Referencia de opiniones políticas*: Datos relativos a las opiniones políticas de una persona física.
+* *Referencia de creencias religiosas*: Datos relativos a las creencias religiosas de una persona natural.
+* *Vida sexual u Orientación Referencia*: Datos relativos a la vida sexual u orientación sexual de una persona natural.
 
 
 
@@ -319,12 +325,12 @@ Los siguientes metadatos también se categorizan y se identifican en los mismos 
 * Datos de aplicaciones
 * Archivos de archivo
 * Audio
-* Datos de aplicaciones de negocio
+* Rutas de navegación de la clasificación de BlueXP
+Datos de aplicaciones de negocio
 * Archivos CAD
 * Codificación
 * Dañado
 * Archivos de base de datos e índice
-* Breadcrumbs de clasificación de BlueXP
 * Archivos de diseño
 * Datos de aplicación de correo electrónico
 * Cifrado (archivos con una puntuación de entropía alta)
