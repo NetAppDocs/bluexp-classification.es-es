@@ -18,6 +18,20 @@ Descubre las novedades de la clasificación de BlueXP (Cloud Data Sense).
 
 
 
+== 5 de agosto de 2024 (Versión 1,34)
+
+Esta versión de clasificación de BlueXP  incluye la siguiente actualización.
+
+
+
+=== Cambiar de CentOS a Ubuntu
+
+La clasificación BlueXP  ha actualizado su sistema operativo Linux para Microsoft Azure y Google Cloud Platform (GCP) de CentOS 7,9 a Ubuntu 22,04.
+
+Para obtener más información sobre el despliegue, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#prepare-the-linux-host-system["Instale en un host Linux con acceso a Internet y prepare el sistema host Linux"].
+
+
+
 == 1 de julio de 2024 (Versión 1,33)
 
 Esta versión incluye las siguientes actualizaciones.

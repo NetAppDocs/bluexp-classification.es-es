@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense, cds, linux host 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, linux, ubuntu, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense, cds, rhel, linux host 
 summary: Completa unos pasos para instalar la clasificación de BlueXP en un host Linux en tu red o en un host Linux en la nube que tenga acceso a Internet. Deberá implementar el host Linux manualmente en su red o en el cloud como parte de esta instalación. 
 ---
 = Instala la clasificación de BlueXP en un host que tenga acceso a Internet
@@ -143,8 +143,8 @@ Asegúrate de que puedes mantener en funcionamiento la clasificación de BlueXP.
 ** Los siguientes sistemas operativos requieren el uso del motor de contenedor Docker:
 +
 *** Red Hat Enterprise Linux versiones 7,8 y 7,9
-*** CentOS versión 7,8 y 7,9
 *** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
+*** Ubuntu 24,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
 
 
 ** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior:

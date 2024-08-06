@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, dark site, bluexp 
+keywords: cloud compliance, bluexp, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, ubuntu, rhel, dark site, bluexp 
 summary: Antes de instalar manualmente la clasificación de BlueXP en un host Linux, puede ejecutar un script en el host para comprobar que haya todos los requisitos previos para instalar la clasificación de BlueXP. Puede ejecutar este script en un host Linux de su red o en un host Linux de la nube. El host puede conectarse a Internet, o el host puede residir en un sitio que no tenga acceso a Internet. 
 ---
 = Compruebe que su host Linux esté listo para instalar la clasificación de BlueXP
@@ -98,8 +98,8 @@ El software de clasificación de BlueXP debe ejecutarse en un host que cumpla co
 ** Los siguientes sistemas operativos requieren el uso del motor de contenedor Docker:
 +
 *** Red Hat Enterprise Linux versiones 7,8 y 7,9
-*** CentOS versión 7,8 y 7,9
 *** Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
+*** Ubuntu 24,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)
 
 
 ** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior:
