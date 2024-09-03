@@ -4,7 +4,7 @@ permalink: task-getting-started-compliance.html
 keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense 
 summary: Completa unos pasos para empezar a analizar tus volúmenes de ONTAP en Cloud Volumes ONTAP y on-premises mediante la clasificación de BlueXP. 
 ---
-= Primeros pasos con la clasificación de BlueXP para Cloud Volumes ONTAP y ONTAP on-premises
+= Comience a utilizar la clasificación BlueXP  para Cloud Volumes ONTAP y ONTAP local
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -65,7 +65,7 @@ Selecciona o anula la selección de los volúmenes que quieres analizar y la cla
 
 
 
-== Detección de los orígenes de datos que desea analizar
+== Descubra los orígenes de datos que desea analizar
 
 Si los orígenes de datos que desea analizar no están ya en su entorno de BlueXP, puede añadirlos al lienzo en este momento.
 
@@ -73,7 +73,7 @@ Sus sistemas Cloud Volumes ONTAP ya deben estar disponibles en el lienzo de Blue
 
 
 
-== Implementar la instancia de clasificación de BlueXP
+== Implementa la instancia de clasificación de BlueXP
 
 Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
 
@@ -85,7 +85,7 @@ Las actualizaciones del software de clasificación de BlueXP se automatizan siem
 
 
 
-== Habilitar la clasificación de BlueXP en tus entornos de trabajo
+== Active la clasificación BlueXP  en sus entornos de trabajo
 
 Puedes habilitar la clasificación de BlueXP en sistemas Cloud Volumes ONTAP en cualquier proveedor de nube compatible y en clústeres de ONTAP on-premises.
 
@@ -99,7 +99,7 @@ image:screenshot_cloud_compliance_we_scan_config.png["Una captura de pantalla de
 ** Para asignar y clasificar todos los volúmenes, haga clic en *asignar y clasificar todos los volúmenes*.
 ** Para personalizar la exploración de cada volumen, haga clic en *o seleccione el tipo de exploración para cada volumen* y, a continuación, elija los volúmenes que desea asignar y/o clasificar.
 +
-Consulte <<Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes,Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes>> para obtener más detalles.
+Consulte <<Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes,Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes>> para obtener más información.
 
 
 
@@ -118,7 +118,7 @@ La clasificación de BlueXP comienza a analizar los volúmenes que seleccionaste
 ====
 
 
-== Verificar que la clasificación de BlueXP tenga acceso a los volúmenes
+== Compruebe que la clasificación BlueXP  tenga acceso a los volúmenes
 
 Asegúrese de que la clasificación de BlueXP pueda acceder a los volúmenes comprobando la red, los grupos de seguridad y las políticas de exportación. Tendrás que ofrecer la clasificación de BlueXP con credenciales CIFS para que pueda acceder a los volúmenes de CIFS.
 
@@ -167,7 +167,7 @@ image:screenshot_compliance_volume_details.gif["Una captura de pantalla de la p�
 
 
 
-== Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes
+== Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes
 
 Puede iniciar o detener exploraciones de sólo asignación, o bien análisis de asignación y clasificación, en un entorno de trabajo en cualquier momento desde la página Configuración. También puede cambiar de exploraciones de sólo asignación a exploraciones de asignación y clasificación, y viceversa. Le recomendamos que analice todos los volúmenes.
 
@@ -205,7 +205,7 @@ NOTE: Los nuevos volúmenes agregados al entorno de trabajo sólo se analizan au
 
 
 
-== Análisis de volúmenes de protección de datos
+== Analizar volúmenes de protección de datos
 
 De forma predeterminada, los volúmenes de protección de datos (DP) no se analizan porque no se exponen externamente y la clasificación de BlueXP no puede acceder a ellos. Se trata de los volúmenes de destino de las operaciones de SnapMirror desde un sistema ONTAP en las instalaciones o desde un sistema Cloud Volumes ONTAP.
 

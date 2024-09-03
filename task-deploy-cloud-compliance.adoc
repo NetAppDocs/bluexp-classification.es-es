@@ -173,8 +173,6 @@ Consulte los siguientes enlaces para obtener más información sobre los límite
 * https://cloud.google.com/compute/quotas["Documentación de Google Cloud: Cuotas de recursos"^]
 
 
-Tenga en cuenta que puede poner en marcha la clasificación de BlueXP en una instancia en entornos de cloud de AWS con menos CPU y menos RAM, pero hay limitaciones cuando se utilizan estos sistemas. Consulte link:concept-cloud-compliance.html#using-a-smaller-instance-type["Con un tipo de instancia más pequeño"] para obtener más detalles.
-
 --
 
 

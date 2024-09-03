@@ -108,7 +108,7 @@ Debe implementar la instancia con un conector puesto en marcha en AWS para que B
 
 *Nota:* La implementación de la clasificación de BlueXP en una ubicación local no es compatible actualmente al analizar cubos S3.
 
-Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
+Las actualizaciones al software de clasificación BlueXP  se automatizan siempre que la instancia tenga conectividad a Internet.
 
 
 

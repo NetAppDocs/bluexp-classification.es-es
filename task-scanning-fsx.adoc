@@ -73,7 +73,7 @@ Seleccione o anule la selección de los volúmenes que desea analizar y la clasi
 
 
 
-== Descubrir el FSX para el sistema de archivos ONTAP que desea analizar
+== Descubre el sistema de archivos FSx para ONTAP que quieres analizar
 
 Si el sistema de archivos FSX para ONTAP que desea analizar no está ya en BlueXP como entorno de trabajo, puede agregarlo al lienzo en este momento.
 
@@ -81,7 +81,7 @@ https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-env
 
 
 
-== Implementar la instancia de clasificación de BlueXP
+== Implementa la instancia de clasificación de BlueXP
 
 link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP"^] si aún no hay una instancia implementada.
 
@@ -93,7 +93,7 @@ Las actualizaciones del software de clasificación de BlueXP se automatizan siem
 
 
 
-== Habilitar la clasificación de BlueXP en tus entornos de trabajo
+== Active la clasificación BlueXP  en sus entornos de trabajo
 
 Puedes habilitar la clasificación de BlueXP para FSx para volúmenes de ONTAP.
 
@@ -107,7 +107,7 @@ image:screenshot_fsx_scanning_activate.png["Una captura de pantalla de la pesta�
 ** Para asignar y clasificar todos los volúmenes, haga clic en *asignar y clasificar todos los volúmenes*.
 ** Para personalizar la exploración de cada volumen, haga clic en *o seleccione el tipo de exploración para cada volumen* y, a continuación, elija los volúmenes que desea asignar y/o clasificar.
 +
-Consulte <<Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes,Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes>> para obtener más detalles.
+Consulte <<Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes,Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes>> para obtener más información.
 
 
 
@@ -126,7 +126,7 @@ La clasificación de BlueXP comienza a analizar los volúmenes que seleccionaste
 ====
 
 
-== Verificar que la clasificación de BlueXP tenga acceso a los volúmenes
+== Compruebe que la clasificación BlueXP  tenga acceso a los volúmenes
 
 Para asegurarse de que la clasificación de BlueXP pueda acceder a los volúmenes, compruebe la red, los grupos de seguridad y las políticas de exportación.
 
@@ -171,7 +171,7 @@ Después de introducir las credenciales, debe ver un mensaje que indica que todo
 
 
 
-== Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes
+== Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes
 
 Puede iniciar o detener exploraciones de sólo asignación, o bien análisis de asignación y clasificación, en un entorno de trabajo en cualquier momento desde la página Configuración. También puede cambiar de exploraciones de sólo asignación a exploraciones de asignación y clasificación, y viceversa. Le recomendamos que analice todos los volúmenes.
 
@@ -209,7 +209,7 @@ NOTE: Los nuevos volúmenes agregados al entorno de trabajo sólo se analizan au
 
 
 
-== Análisis de volúmenes de protección de datos
+== Analizar volúmenes de protección de datos
 
 De forma predeterminada, los volúmenes de protección de datos (DP) no se analizan porque no se exponen externamente y la clasificación de BlueXP no puede acceder a ellos. Estos son los volúmenes de destino de las operaciones de SnapMirror desde un FSX para el sistema de archivos ONTAP.
 

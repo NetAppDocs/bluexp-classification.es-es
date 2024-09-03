@@ -47,8 +47,6 @@ Por ejemplo, puede localizar archivos _sin_ Información personal identificable 
 ** Actualice las credenciales de CIFS
 ** Ver y cancelar acciones
 ** Vuelva a explorar los directorios
-** Elimine, copie, etiquete y asigne usuarios a los datos
-** Clonar y copiar archivos
 ** Exportar datos
 
 

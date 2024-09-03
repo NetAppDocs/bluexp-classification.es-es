@@ -16,7 +16,7 @@ summary: El software de clasificación de BlueXP debe ejecutarse en un host que 
 [role="lead"]
 El software de clasificación de BlueXP debe ejecutarse en un host que cumpla con los requisitos específicos del sistema operativo, los requisitos de RAM, los requisitos de software, etc. Al poner en marcha la clasificación de BlueXP en el cloud, le recomendamos que utilice un sistema con las características «grandes» para disfrutar de todas las funciones.
 
-Puedes poner en marcha la clasificación de BlueXP en un sistema con menos CPU y menos RAM, pero existen algunas limitaciones al usar estos sistemas menos potentes. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Obtenga información sobre estas limitaciones"^].
+Puedes poner en marcha la clasificación de BlueXP en un sistema con menos CPU y menos RAM, pero existen algunas limitaciones al usar estos sistemas menos potentes. link:concept-cloud-compliance.html["Obtenga información sobre estas limitaciones"^].
 
 En las siguientes tablas, si el sistema marcado como «predeterminado» no está disponible en la región donde instalas la clasificación de BlueXP, se implementará el siguiente sistema de la tabla.
 

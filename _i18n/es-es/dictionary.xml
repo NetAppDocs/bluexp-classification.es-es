@@ -58,7 +58,6 @@
   <block id="8a1f7f28105f0b82b916d62dd700157d" category="list-text"><block ref="8a1f7f28105f0b82b916d62dd700157d" category="inline-link-rx"></block></block>
   <block id="679c6b026096af4912243f7d0fe0c56a" category="inline-link">Documentación de Google Cloud: Cuotas de recursos</block>
   <block id="e0c1891bead6f9e2f86ecf6043345b62" category="list-text"><block ref="e0c1891bead6f9e2f86ecf6043345b62" category="inline-link-rx"></block></block>
-  <block id="5da9cb7e92b520a48c2475de5ec9958c" category="inline-link-macro">Con un tipo de instancia más pequeño</block>
   <block id="fd1958e5e74317f89c6c16bbca7d1446" category="inline-link">Reglas para el conector en AWS</block>
   <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Reglas para Connector en Azure</block>
   <block id="23c0e03df230b1dfa0e16b9d275b80ea" category="list-text">En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno &gt; Clasificación*.</block>
@@ -159,7 +158,6 @@
   <block id="d98982ed425bb70925dcb326c8228f2b" category="paragraph">Haga clic en *cumplimiento* &gt; *Configuración* &gt; *Editar credenciales CIFS* y proporcione las credenciales.</block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">Cinco</block>
   <block id="2f16858adc0a1e155de180519a9e4591" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Gestione los volúmenes que desea analizar</block>
-  <block id="2e9f6b00a7a0f1c26bc47bb134eae6d9" category="section-title">Detección del sistema Azure NetApp Files que desea analizar</block>
   <block id="4739351a47029a08d047c6f8c00da39e" category="paragraph">Si el sistema Azure NetApp Files que desea escanear no está ya en BlueXP como entorno de trabajo, puede agregarlo al lienzo en este momento.</block>
   <block id="fe7e3d60e37233edf0b5fcd9a28bb00d" category="inline-link">Descubra cómo descubrir el sistema Azure NetApp Files en BlueXP</block>
   <block id="79212600af75dc48b9f7e59a9927a88e" category="list-text">En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno &gt; Clasificación* y seleccione la ficha *Configuración*.</block>
@@ -169,7 +167,6 @@
   <block id="21c697bd29539f20edb6f0b4e29ca986" category="list-text">Para asignar y clasificar todos los volúmenes, haga clic en *asignar y clasificar todos los volúmenes*.</block>
   <block id="5e5a91a0ea67cf11b397b43a5c240af0" category="list-text">Para personalizar la exploración de cada volumen, haga clic en *o seleccione el tipo de exploración para cada volumen* y, a continuación, elija los volúmenes que desea asignar y/o clasificar.</block>
   <block id="9fa58f0e5c00772b9262b1da0ff9f2cb" category="inline-xref">Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes</block>
-  <block id="4976afb7a20e2ded93bcee9f4f63b5e0" category="paragraph">Consulte <block ref="ff48588b92e5d0773f5ef04161ad7544" category="inline-xref-macro-rx"></block> para obtener más detalles.</block>
   <block id="2d680ca666fd821f3c51a507d41a26cb" category="inline-image-macro">Captura de pantalla de la ficha cumplimiento que muestra el botón Estado del análisis que está disponible en la parte superior derecha del panel de contenido.</block>
   <block id="0c0c3b0c55f2b5101c7ea7c5d755cabe" category="paragraph"><block ref="0c0c3b0c55f2b5101c7ea7c5d755cabe" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b401c479fc7a1b8aa216a7173ee8782f" category="paragraph">Después de introducir las credenciales, debe ver un mensaje que indica que todos los volúmenes CIFS se autenticaron correctamente.</block>
@@ -461,11 +458,9 @@
   <block id="360c11bcd9a9bfedb1aa5353935d21cd" category="paragraph">Comience rápidamente siguiendo estos pasos o desplácese hacia abajo para obtener todos los detalles.</block>
   <block id="d9c5a199091edda801a88fd2fdabd9d0" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Descubra el FSX para los sistemas de archivos ONTAP que desea analizar</block>
   <block id="d0e7ae8581484b514e52b4bee068c4f2" category="inline-link">Debe tener un entorno de trabajo FSX con volúmenes configurados</block>
-  <block id="bdcd2e9d167fc54f49913257386095c4" category="section-title">Descubrir el FSX para el sistema de archivos ONTAP que desea analizar</block>
   <block id="42161ed94a32c7fa5d4458da4f8fd247" category="paragraph">Si el sistema de archivos FSX para ONTAP que desea analizar no está ya en BlueXP como entorno de trabajo, puede agregarlo al lienzo en este momento.</block>
   <block id="7c71ca28422eaaaf66d759fac9ddacd8" category="inline-link">Descubra cómo descubrir o crear el sistema de archivos FSX para ONTAP en BlueXP</block>
   <block id="d7f427e021c7b93fd75b9364e170beaa" category="list-text">En la página _Configuration_, haga clic en *View Details* para revisar el estado y corregir los errores.</block>
-  <block id="09a33e27026656462be6bc592a4ed808" category="section-title">Análisis de volúmenes de protección de datos</block>
   <block id="cc2aceb1237f12696c6da3c671aebf3a" category="paragraph">Inicialmente, la lista de volúmenes identifica estos volúmenes como _Type_ *DP* con el _Status_ *no Scanning* y el _Required Action_ *Enable Access to DP Volumes*.</block>
   <block id="6aa3c8215593c54e1d788a94766b3ae7" category="inline-image-macro">Una captura de pantalla que muestra el botón Activar acceso a volúmenes DP que puede seleccionar para analizar volúmenes de protección de datos.</block>
   <block id="5527bf6460aac122d9350ebcc432db9e" category="paragraph"><block ref="5527bf6460aac122d9350ebcc432db9e" category="inline-image-macro-rx" type="image"></block></block>
@@ -485,7 +480,6 @@
   <block id="95c6a4075477a94df7d6ca6d51fde02e" category="inline-link">BlueXP debe detectar los clústeres de ONTAP</block>
   <block id="162627490dd9e3bfa1451fcbd693e2df" category="list-text">Para NFS: Puertos 111 y 2049.</block>
   <block id="ebc566be80d2aa97a2d54b51da6e0306" category="list-text">Para CIFS: Puertos 139 y 445.</block>
-  <block id="9ad43a991a6562a94520e8bb53577c56" category="section-title">Detección de los orígenes de datos que desea analizar</block>
   <block id="0c482db6ff22c3a7bd9036d861655cbf" category="paragraph">Si los orígenes de datos que desea analizar no están ya en su entorno de BlueXP, puede añadirlos al lienzo en este momento.</block>
   <block id="f0d07e71c0ad5ba2b297c19c3e9347e0" category="inline-link">BlueXP descubre estos clústeres</block>
   <block id="f13aece6b768921832b7bb943cab9f19" category="list-text">Se habilitan los volúmenes que se crearon inicialmente como volúmenes NFS en el sistema ONTAP de origen.</block>
@@ -541,7 +535,6 @@
   <block id="5ec77a792038bab65f9bfd97af0b2704" category="section-title">Verifique que todos los puertos necesarios estén habilitados</block>
   <block id="e279c07f8fb282c171724e558925c858" category="cell">Tipo de conexión</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="cell">Puertos</block>
-  <block id="d58ea55d9425e8ef73d976d9662c2616" category="cell">8080 (TCP), 443 (TCP) y 80</block>
   <block id="62e97b929ca433dfe61e82d128653c46" category="cell">Conector &lt;&gt; clúster ONTAP (NAS)</block>
   <block id="3a0fddda7e650f4aa4c24cb76fb17af0" category="cell">443 (TCP)</block>
   <block id="7e5d9a5421498db733ec66073d7872b4" category="paragraph">BlueXP detecta los clústeres de ONTAP mediante HTTPS. Si utiliza directivas de firewall personalizadas, deben cumplir los siguientes requisitos:</block>
@@ -974,22 +967,18 @@
   <block id="51d9478e8b1c7fd3b915c3258ca90c5f" category="cell">80%-95%</block>
   <block id="1f11d46635a2bb0b45eb74583d762a6b" category="cell">20%-30%</block>
   <block id="fcfb74f2666b695b8ad53eb3d1e156ff" category="cell">90%-97%</block>
-  <block id="116345e97c90251e8fb2bfe5041418b4" category="doc">Analizando recursos compartidos de archivos</block>
   <block id="a3f1215a60ced30f6b58ece6e4fb2da2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Revise los requisitos previos para compartir archivos</block>
   <block id="8b30b43b2d32f52db456a78f120bec50" category="paragraph">Para los recursos compartidos CIFS (SMB), asegúrese de tener credenciales para acceder a los recursos compartidos.</block>
   <block id="116ef64523fed5112220351fa1d75dc4" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Cree un grupo que contenga los recursos compartidos de archivos</block>
   <block id="d2ea2bf943bb8c943367ebfd6b8aec96" category="paragraph">El grupo es un contenedor para los recursos compartidos de archivos que desea analizar y se utiliza como nombre del entorno de trabajo para esos archivos compartidos.</block>
   <block id="925a5b3d46766546e19dbce83a2fefb6" category="paragraph">Agregue la lista de recursos compartidos de archivos que desea analizar y seleccione el tipo de análisis. Puede añadir hasta 100 archivos compartidos a la vez.</block>
-  <block id="6f1739c829744e6585dc123d746a9106" category="section-title">Revisión de los requisitos de uso compartido de archivos</block>
   <block id="8e4ba18b85274d135925d3a46f8bbe8f" category="list-text">Necesitará la lista de recursos compartidos que desea añadir en el formato<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block>. Puede introducir los recursos compartidos individualmente o proporcionar una lista separada por líneas de los recursos compartidos de archivos que desea escanear.</block>
-  <block id="d3f633c1be26eecfced739f558d6850a" category="section-title">Creación del grupo para los recursos compartidos de archivos</block>
   <block id="60d7a85c8e73898b7ffc998f747e0883" category="paragraph">Debe agregar un "grupo" de archivos compartidos antes de poder agregar los archivos compartidos. El grupo es un contenedor para los recursos compartidos de archivos que desea analizar y el nombre del grupo se utiliza como nombre del entorno de trabajo para esos archivos compartidos.</block>
   <block id="96fdaabb157bbdb2dbe197904f9a4dbb" category="paragraph">Puede mezclar los recursos compartidos de NFS y CIFS en el mismo grupo, sin embargo, todos los recursos compartidos de archivos CIFS de un grupo deben utilizar las mismas credenciales de Active Directory. Si va a añadir recursos compartidos CIFS que utilizan credenciales diferentes, debe crear un grupo independiente para cada conjunto único de credenciales.</block>
   <block id="859b0486d18f528c8edbdaa7f41170d0" category="list-text">En la página Configuración de entornos de trabajo, haga clic en *Agregar origen de datos* &gt; *Agregar grupo de recursos compartidos de archivos*.</block>
   <block id="0c3c72a2a46a4dd5c0107a9f0b07c592" category="paragraph"><block ref="0c3c72a2a46a4dd5c0107a9f0b07c592" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b5fa1ae0f2b7152c1235520708fb1af0" category="list-text">En el cuadro de diálogo Agregar grupo de recursos compartidos de archivos, introduzca el nombre del grupo de recursos compartidos y haga clic en *continuar*.</block>
   <block id="69438cb2e4a059b421af50a7d06c8f93" category="paragraph">El nuevo grupo de archivos compartidos se agrega a la lista de entornos de trabajo.</block>
-  <block id="22ad4f04c485447770e99ad6c793bc18" category="section-title">Agregar recursos compartidos de archivos a un grupo</block>
   <block id="7f36799e4767f2e3733ee3f582eeec9d" category="paragraph">Puede agregar recursos compartidos de archivos individuales o puede proporcionar una lista separada por líneas de los recursos compartidos de archivos que desea analizar. Puede añadir hasta 100 recursos compartidos al mismo tiempo.</block>
   <block id="c9ce688a21fc0a13e7a592a39d9b66de" category="paragraph">Al añadir ambos recursos compartidos NFS y CIFS en un único grupo, deberá realizar el proceso dos veces, una vez que añada recursos compartidos NFS y, a continuación, vuelva a añadir los recursos compartidos CIFS.</block>
   <block id="c696377eeab0348c7bd52ac7b4a8f54f" category="list-text">En la página _Working Environments_, haga clic en el botón *Configuración* del grupo de recursos compartidos de archivos.</block>
@@ -1009,7 +998,6 @@
   <block id="53642e15bf631c93172b796ba5a78cc2" category="cell">Active análisis de sólo asignación en recursos compartidos de archivos</block>
   <block id="80023efd80f3cd8c1fcad9523d36efb1" category="cell">Active análisis completos en recursos compartidos de archivos</block>
   <block id="ff947db636909b9c7791229bf6b5dd0a" category="cell">Desactive el análisis en recursos compartidos de archivos</block>
-  <block id="696cbb94224a469268edb5eb36133c83" category="section-title">Quitar un recurso compartido de archivos de los análisis de cumplimiento de normativas</block>
   <block id="4de725d331cf276fac026642a5f17603" category="paragraph">Si ya no necesita analizar determinados recursos compartidos de archivos, puede eliminar los recursos compartidos de archivos individuales para que los analice en cualquier momento. Haga clic en *Quitar recurso compartido* en la página Configuración.</block>
   <block id="90777a343fd7f5c83c97f473d59a2af2" category="inline-image-macro">Una captura de pantalla que muestra cómo eliminar un único recurso compartido de archivos para que se analicen los archivos.</block>
   <block id="c8716632d7055f530ad579b6f751cf3a" category="paragraph"><block ref="c8716632d7055f530ad579b6f751cf3a" category="inline-image-macro-rx" type="image"></block></block>
@@ -1309,7 +1297,6 @@
   <block id="5cb163817b0d897b166cc75827e8c477" category="inline-link-macro">Obtenga más información sobre los tipos</block>
   <block id="13d0a191166a1a3dc29ebcd8e3aae81f" category="inline-link-macro">Obtenga información sobre cómo responder a las solicitudes de acceso a sujetos de datos</block>
   <block id="7b895b198aba9634ffec5e0ec9a3aff4" category="section-title">Información general sobre redes</block>
-  <block id="d359ba9662c22ff5e27bf861300c6bbf" category="section-title">Acceso de los usuarios a la información de cumplimiento</block>
   <block id="7e576e4144e56e656ad24bb096e2e6fe" category="list-text">Un *Administrador de cuentas* puede administrar la configuración de cumplimiento y ver la información de cumplimiento de todos los entornos de trabajo.</block>
   <block id="78e53b124783e106b07d5599c5ff16c3" category="inline-link">Más información sobre los roles de BlueXP</block>
   <block id="2d4684d2aec68a0b0d987ac449846c38" category="inline-link">añadir usuarios con roles específicos</block>
@@ -1985,13 +1972,11 @@
   <block id="08f13635125ca31ad0dd4c558af740d0" category="paragraph">Seleccione o anule la selección de los volúmenes que desea analizar y la clasificación de BlueXP iniciará o detendrá su análisis.</block>
   <block id="be2976cf8226247a23c06d21cc561154" category="paragraph">Debes poner en marcha la clasificación de BlueXP en la misma red de AWS que el conector para AWS y los volúmenes FSx que desees analizar.</block>
   <block id="18b57e2e68f1be182173d49ffbcd4e0c" category="paragraph">*Nota:* Implementar la clasificación de BlueXP en una ubicación local no es compatible actualmente al escanear volúmenes de FSX.</block>
-  <block id="518cc68a91bee96febfc5e39ff8ba745" category="section-title">Habilitar la clasificación de BlueXP en tus entornos de trabajo</block>
   <block id="3ae736236dde2535cad4ec42745a0cbd" category="paragraph">Puedes habilitar la clasificación de BlueXP para FSx para volúmenes de ONTAP.</block>
   <block id="cb3aa3f952775ea9178b718df187d59d" category="inline-image-macro">Una captura de pantalla de la pestaña Configuration inmediatamente después de implementar la instancia de clasificación de BlueXP.</block>
   <block id="2cc6e87dfb5a6f87bc1fcbd217a498de" category="paragraph"><block ref="2cc6e87dfb5a6f87bc1fcbd217a498de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d5e967f01610f01cb30183e6b342e630" category="list-text">En el cuadro de diálogo de confirmación, haz clic en *Aprobar* para que la clasificación de BlueXP comience a escanear tus volúmenes.</block>
   <block id="b0dab6dc992c93096b218e009d2afb00" category="paragraph">La clasificación de BlueXP comienza a analizar los volúmenes que seleccionaste en el entorno de trabajo. Los resultados estarán disponibles en la consola de cumplimiento en cuanto la clasificación de BlueXP finalice los análisis iniciales. El tiempo que se tarda en depende de la cantidad de datos; puede que sea unos minutos u horas.</block>
-  <block id="5276878b0a17edd0ad3fbee3380d1635" category="section-title">Verificar que la clasificación de BlueXP tenga acceso a los volúmenes</block>
   <block id="6bc94b69811d2b0b701e915104066612" category="paragraph">Para asegurarse de que la clasificación de BlueXP pueda acceder a los volúmenes, compruebe la red, los grupos de seguridad y las políticas de exportación.</block>
   <block id="24f2d84d2538ae621015886e3ec8b0c0" category="paragraph">Tendrás que ofrecer la clasificación de BlueXP con credenciales CIFS para que pueda acceder a los volúmenes de CIFS.</block>
   <block id="57b038ede182cd587e669c8a0afda2ca" category="paragraph">Por ejemplo, la siguiente imagen muestra una clasificación de BlueXP de volúmenes que no se puede analizar debido a problemas de conectividad de red entre la instancia de clasificación de BlueXP y el volumen.</block>
@@ -2042,7 +2027,6 @@
   <block id="c67419f269df3afdc5c4ea77c6a74cef" category="paragraph">Al exportar a un recurso compartido de archivos, asegúrese de que la clasificación de BlueXP tenga los permisos correctos para acceder a las exportaciones.</block>
   <block id="44b34442167c9611792529867ee76d90" category="doc">Documentación de clasificación de BlueXP</block>
   <block id="7323ab6aab1dfb48468b77bc771127f5" category="summary">Completa unos pasos para empezar a analizar tus volúmenes de ONTAP en Cloud Volumes ONTAP y on-premises mediante la clasificación de BlueXP.</block>
-  <block id="968d6e0e449e2c68755e2d69920c0200" category="doc">Primeros pasos con la clasificación de BlueXP para Cloud Volumes ONTAP y ONTAP on-premises</block>
   <block id="1ba0d6aa3ccd6f872c6c6e6d87024c69" category="list-text">La instancia de clasificación de BlueXP necesita una conexión de red con cada subred de Cloud Volumes ONTAP o sistema ONTAP en las instalaciones.</block>
   <block id="305e305ac52012ce5ec303cdd558523f" category="list-text">Los grupos de seguridad de Cloud Volumes ONTAP deben permitir las conexiones entrantes desde la instancia de clasificación de BlueXP.</block>
   <block id="084b5e624d2227ca06a3f828bced0f33" category="list-text">La clasificación de BlueXP necesita credenciales de Active Directory para analizar los volúmenes de CIFS.</block>
@@ -2063,7 +2047,6 @@
   <block id="e7fa07083790a8112d00af542356ec88" category="paragraph">De forma predeterminada, los volúmenes de protección de datos (DP) no se analizan porque no se exponen externamente y la clasificación de BlueXP no puede acceder a ellos. Se trata de los volúmenes de destino de las operaciones de SnapMirror desde un sistema ONTAP en las instalaciones o desde un sistema Cloud Volumes ONTAP.</block>
   <block id="7c0a9b3e555cf595d3d01d33df76df82" category="list-text">Los volúmenes que se crearon inicialmente como volúmenes CIFS en el sistema ONTAP de origen requieren la introducción de credenciales CIFS para analizar dichos volúmenes DP. Si ya has introducido credenciales de Active Directory para que la clasificación de BlueXP pueda analizar los volúmenes de CIFS, pueda usar esas credenciales o puede especificar un conjunto diferente de credenciales de administrador.</block>
   <block id="784e4b64058d5e48385415f461c592f1" category="summary">Completa unos pasos para empezar a usar la clasificación de BlueXP para Azure NetApp Files.</block>
-  <block id="8c845b2820fb0d62f8438c10638d6c1d" category="doc">Primeros pasos con la clasificación de BlueXP para Azure NetApp Files</block>
   <block id="8d50e02b2718494115c81eb90fb74ae8" category="list-text">La instancia de clasificación de BlueXP necesita una conexión de red con cada subred Azure NetApp Files.</block>
   <block id="8fddb983f4dfa8df2d70736053accca9" category="paragraph">La clasificación de BlueXP debe ponerse en marcha en la nube al analizar los volúmenes de Azure NetApp Files y debe implementarse en la misma región que los volúmenes que deseas analizar.</block>
   <block id="ea6ade76b643d68393f95ac70484901e" category="paragraph">*Nota:* La implementación de la clasificación de BlueXP en una ubicación local no es compatible actualmente al analizar volúmenes de Azure NetApp Files.</block>
@@ -2128,7 +2111,6 @@
   <block id="d3a5131b7810b0fbf85a485b9bf39b04" category="list-text">Después de habilitar la clasificación de BlueXP, asegúrese de que los usuarios accedan a la interfaz de BlueXP desde un host que tiene una conexión a la instancia de clasificación de BlueXP.</block>
   <block id="862b53997bb34edb297d8534c2e45934" category="paragraph">La instancia de clasificación de BlueXP usa una dirección IP privada para garantizar que Internet no pueda acceder a los datos indexados. Como resultado, el navegador web que utiliza para acceder a BlueXP debe tener una conexión a esa dirección IP privada. Esa conexión puede proceder de una conexión directa con su proveedor de cloud (por ejemplo, una VPN), o de un host que esté dentro de la misma red que la instancia de clasificación de BlueXP.</block>
   <block id="9e354f6589446707ac0275ab903ced5e" category="list-text">Asegúrese de que el límite de vCPU de su proveedor de cloud permita poner en marcha una instancia con el número necesario de núcleos. Deberá verificar el límite de vCPU para la familia de instancias correspondiente en la región donde se está ejecutando BlueXP. <block ref="717b51db682bab072e4faa318f683866" category="inline-link-macro-rx"></block>.</block>
-  <block id="c1a00ed1dbc30942175034375e50264e" category="paragraph">Tenga en cuenta que puede poner en marcha la clasificación de BlueXP en una instancia en entornos de cloud de AWS con menos CPU y menos RAM, pero hay limitaciones cuando se utilizan estos sistemas. Consulte <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> para obtener más detalles.</block>
   <block id="55d5a81a565b7cb4265c8c73ecd4aa37" category="section-title">Pon en marcha la clasificación de BlueXP en el cloud</block>
   <block id="bd10ebfff36e591031f9055715e81cbe" category="paragraph">Sigue estos pasos para implementar una instancia de clasificación de BlueXP en la nube. Connector pondrá en marcha la instancia en la nube y, a continuación, instalará el software de clasificación BlueXP en esa instancia.</block>
   <block id="1387aca3016ca34e4eefec1995b863e8" category="paragraph">Tenga en cuenta que cuando implemente la clasificación de BlueXP desde un conector BlueXP en un entorno AWS, puede seleccionar el tamaño de instancia predeterminado o puede seleccionar entre dos tipos de instancia menores. <block ref="014512c6bb91f0e0099b18504a19e409" category="inline-link-macro-rx"></block>. En las regiones en las que el tipo de instancia predeterminado no está disponible, la clasificación de BlueXP se ejecuta en A. <block ref="45910d58f60ef6c6ec6de81dc1fbd5cf" category="inline-link-macro-rx"></block>.</block>
@@ -2234,7 +2216,6 @@
   <block id="16cae960f299f00958369748d3e1c51a" category="list-text">En AWS, la clasificación de BlueXP se ejecuta en una instancia m6i.4xlarge con un disco de 500 GiB y GP2 GB. Es posible seleccionar un tipo de instancia menor durante la implementación.</block>
   <block id="3469d8e945dec214762a845d4c8e80d1" category="list-text">En Azure, la clasificación de BlueXP se ejecuta en una máquina virtual Standard_D16s_v3 con un disco de 500 GiB.</block>
   <block id="e031741655e55753c073e2b5d1093bb5" category="list-text">En GCP, la clasificación de BlueXP se ejecuta en una VM n2 estándar 16 con un disco persistente estándar de 500 GiB.</block>
-  <block id="78b18bc5bc0e27d9091bf209445c0856" category="paragraph">Tenga en cuenta que puede poner en marcha la clasificación de BlueXP en un sistema con menos CPU y menos RAM, pero existen limitaciones al utilizar estos sistemas. Consulte <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> para obtener más detalles.</block>
   <block id="797bd364c60848e0440ffa738c32c899" category="section-title">¿Puedo poner en marcha la clasificación de BlueXP en mi propio host?</block>
   <block id="95d1f5c6f18bfa7376eedb279ef5e982" category="inline-link-macro">Puesta en marcha de la clasificación de BlueXP en las instalaciones</block>
   <block id="8be2dfe4654fe61cd966fe9bb3477f67" category="paragraph">Sí. Puede instalar el software de clasificación BlueXP en un host Linux que tenga acceso a Internet en su red o en el cloud. Todo funciona igual y continúa gestionando la configuración de exploración y los resultados a través de BlueXP. Consulte <block ref="7d72e0176b071fa2a7928cac369f766b" category="inline-link-macro-rx"></block> para conocer los requisitos del sistema y los detalles de la instalación.</block>
@@ -2249,7 +2230,6 @@
   <block id="2cd45d3fb160d90a0b0fe2eed550f4de" category="paragraph">Tenga en cuenta que puede personalizar el nombre de la empresa que aparece en la primera página del informe desde la parte superior de la página de clasificación de BlueXP haciendo clic en <block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block> Y, a continuación, haga clic en *Cambiar nombre de compañía*. La próxima vez que genere el informe, incluirá el nuevo nombre.</block>
   <block id="68676a88a8d6e6d5bf88ee02ab0819cd" category="summary">El software de clasificación de BlueXP debe ejecutarse en un host que cumpla con los requisitos específicos del sistema operativo, los requisitos de RAM, los requisitos de software, etc. Al poner en marcha la clasificación de BlueXP en el cloud, le recomendamos que utilice un sistema con las características «grandes» para disfrutar de todas las funciones.</block>
   <block id="78c4d5cab447ed4868497b1ef6cf5659" category="doc">Tipos de instancia de clasificación de BlueXP admitidos</block>
-  <block id="eb17da8d69e8bc0b997cbf15ff5957c3" category="paragraph">Puedes poner en marcha la clasificación de BlueXP en un sistema con menos CPU y menos RAM, pero existen algunas limitaciones al usar estos sistemas menos potentes. <block ref="fb3c609d29fe2d540c303a8bdcc4197c" category="inline-link-macro-rx"></block>.</block>
   <block id="50d06b6efd74f95cfab72bc9b5d467e6" category="paragraph">En las siguientes tablas, si el sistema marcado como «predeterminado» no está disponible en la región donde instalas la clasificación de BlueXP, se implementará el siguiente sistema de la tabla.</block>
   <block id="11f000270c03dc2a6cc3e9a5e9262aa8" category="summary">Antes de instalar manualmente la clasificación de BlueXP en un host Linux, puede ejecutar un script en el host para comprobar que haya todos los requisitos previos para instalar la clasificación de BlueXP. Puede ejecutar este script en un host Linux de su red o en un host Linux de la nube. El host puede conectarse a Internet, o el host puede residir en un sitio que no tenga acceso a Internet.</block>
   <block id="7c7a9443e0597003702e5cc73c6d075a" category="doc">Compruebe que su host Linux esté listo para instalar la clasificación de BlueXP</block>
@@ -2263,7 +2243,6 @@
   <block id="56fe5177fa37261644d5d8d101772da7" category="paragraph">La clasificación de BlueXP requiere acceso a Internet saliente. Si tu red física o virtual utiliza un servidor proxy para acceder a Internet, asegúrese de que la instancia de clasificación de BlueXP tenga acceso a Internet saliente para contactar con los siguientes extremos.</block>
   <block id="deee1d8f5a3df758bd42edb041e173a5" category="paragraph">Debes asegurarte de que todos los puertos requeridos estén abiertos para la comunicación entre el conector, la clasificación de BlueXP, Active Directory y los orígenes de datos.</block>
   <block id="f067a4d9a77738e1e7acac4c6780b5e2" category="cell">Conector Clasificación de &lt;&gt; BlueXP</block>
-  <block id="67f353d2e64b17c742189c98f95b49b3" category="cell">El firewall o las reglas de enrutamiento para Connector deben permitir el tráfico de entrada y salida a través del puerto 443 hacia y desde la instancia de clasificación de BlueXP. Asegúrese de que el puerto 8080 está abierto para que pueda ver el progreso de la instalación en BlueXP.</block>
   <block id="a26fd5b2cbfceb82a5a56055a3eb03b2" category="section-title">Ejecuta el script Prerequisites de clasificación de BlueXP</block>
   <block id="b87dc210bfdadbb1715d3a2f4432d3b2" category="paragraph">Sigue estos pasos para ejecutar el script de requisitos previos de clasificación de BlueXP.</block>
   <block id="5a3c7fe5b5c81c3229ac2d26caa35ec9" category="list-text">Descargue el script de requisitos previos de clasificación de BlueXP desde la<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>. El archivo que debe seleccionar se llama *Standalone-pre-requisito-tester-&lt;version&gt;*.</block>
@@ -2419,7 +2398,6 @@
   <block id="8bb62f2d8bb562c2448b94ddd2767086" category="paragraph">La clasificación de BlueXP se conecta a los datos igual que cualquier otro cliente ya que se monta en los volúmenes de NFS y CIFS. Se accede automáticamente a los volúmenes NFS como de solo lectura, mientras que se necesitan proporcionar credenciales de Active Directory para analizar volúmenes CIFS.</block>
   <block id="c7eecba843c437de6a7f23657d755812" category="paragraph">La clasificación de BlueXP te permite ejecutar un análisis general de «asignaciones» en fuentes de datos seleccionadas. La asignación sólo ofrece una descripción general de alto nivel de los datos, mientras que la clasificación proporciona un análisis profundo de los datos. La asignación se puede realizar en sus orígenes de datos muy rápidamente porque no tiene acceso a los archivos para ver los datos dentro.</block>
   <block id="4aa06a2b4191eee9b59686458a3cf0e5" category="section-title">Con qué rapidez escanea los datos de clasificación de BlueXP</block>
-  <block id="737ab30d4451f7b971d756cdcc6b7d6b" category="section-title">Información que indexa la clasificación de BlueXP</block>
   <block id="28e66615c1e04c19b63a24061d462220" category="paragraph">La clasificación de BlueXP recopila, indexa y asigna categorías a tus datos (archivos). Los datos que indexa la clasificación de BlueXP incluyen los siguientes:</block>
   <block id="6baaa35b9d6c708af7920a94de9f3951" category="paragraph">BlueXP implementa la instancia de clasificación de BlueXP con un grupo de seguridad que permite las conexiones HTTP de entrada desde la instancia de Connector.</block>
   <block id="b7753345b24c98f72b73e9e641a456d7" category="paragraph">Las reglas salientes están completamente abiertas. Se necesita acceso a Internet para instalar y actualizar el software de clasificación de BlueXP y para enviar las métricas de uso.</block>
@@ -2818,8 +2796,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="b096d4ea7a8d51978fe48f490785e86a" category="list-text">Elimine, copie, etiquete y asigne usuarios a los datos</block>
-  <block id="c61b92a36eb48c5d3300779a62372cd3" category="list-text">Clonar y copiar archivos</block>
   <block id="49ef162b6621f970581074315940ec6c" category="paragraph">\https://&lt;classification_ip&gt;/documentación</block>
   <block id="b62dbbecd6533f9627427d34160e7d75" category="section-title">Ejemplo que utiliza las API</block>
   <block id="b7fd2e4068e2c6cc68317c7892c5290c" category="paragraph">En el siguiente ejemplo se muestra una llamada API para copiar archivos.</block>
@@ -2843,7 +2819,6 @@
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>.</block>
   <block id="90ca6bd84833f8a6659f7ea02a7649ba" category="list-text">Puede agregar un recurso compartido DFS (sistema de archivos distribuidos) como un recurso compartido de CIFS normal. Sin embargo, como la clasificación de BlueXP no sabe que el recurso compartido se crea en varios servidores o volúmenes combinados como un único recurso compartido de CIFS, puede que reciba errores de permiso o conectividad sobre el recurso compartido cuando el mensaje solo se aplica a una de las carpetas o recursos compartidos que está ubicada en un servidor o volumen diferente.</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">Puede haber hasta tres archivos de informes descargados si la clasificación de BlueXP está analizando archivos (datos no estructurados), directorios (carpetas y recursos compartidos de archivos) y bases de datos (datos estructurados).</block>
-  <block id="abfab9fcbcf9c983c6fcb0efced8edc6" category="cell">8080 (TCP), 6000 (TCP), 443 (TCP) Y 80</block>
   <block id="17308c76959fcb971603b7274a57c128" category="list-text">*sistema operativo*:</block>
   <block id="3e91b710997d720d3e069e8c923eb206" category="list-text">Los siguientes sistemas operativos requieren el uso del motor de contenedor Docker:</block>
   <block id="156e173d1de86766f5cb22a057c779e9" category="list-text">Ubuntu 22,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)</block>
@@ -3454,7 +3429,6 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="a1870449a3811abcc8d02d43cec49cf2" category="list-text">Última modificación del archivo</block>
   <block id="5752d1aca2fb066ca51eb98052561289" category="list-text">Hora de detección de archivo</block>
   <block id="d9dc47834e451d5a23b2dd5638b1310b" category="list-text">Extracción de permisos</block>
-  <block id="e64f4699e3677ec83e92eb7fc517d88b" category="paragraph">*Diferencias en el panel de control de gobernanza*:</block>
   <block id="c8110422ac17b8559c40c507fe0bed65" category="cell">Asignar y clasificar</block>
   <block id="46f3ea056caa3126b91f3f70beea068c" category="cell">Asignar</block>
   <block id="58f9985309ad441d05540492b96a7afd" category="cell">Datos obsoletos</block>
@@ -3467,9 +3441,7 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="eeb19f8ceecc074a02badf8ee06710b5" category="cell">Datos confidenciales con amplios permisos</block>
   <block id="6c8173b9fd1df4291ec6a95f705c54f4" category="cell">Antigüedad de los datos</block>
   <block id="f737cdef2fd67e0953a5953ca506b30c" category="cell">Tamaño de los datos</block>
-  <block id="5155139afba6f744102515d13f1c5578" category="paragraph">*Diferencias del panel de control de cumplimiento*:</block>
   <block id="74a8dd8ef4ee037974b7843898eabfcd" category="cell">Informe de evaluación de riesgos de privacidad</block>
-  <block id="ba7cad27cdcf17f7da95938585ca2071" category="paragraph">*La investigación filtra las diferencias*:</block>
   <block id="f1be55e10a484bdeb7e4eae576688474" category="cell">Último acceso</block>
   <block id="4797f8fb709b9cdf801351bca3181105" category="cell">Ruta del directorio de archivos</block>
   <block id="76596c862fd4cd497cf2a3ea36b26c43" category="cell">Estado de clasificación</block>
@@ -3498,10 +3470,8 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="14aa1b744a832a1cebfb9dd4d34b809d" category="paragraph">Tanto el conector de BlueXP como la clasificación de BlueXP requerirán actualizaciones manuales periódicas para permitir nuevas funciones. Puedes ver la versión de clasificación de BlueXP en la parte inferior de las páginas de interfaz de usuario de clasificación de BlueXP. Compruebe la <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> para ver las nuevas funciones de cada versión y si desea esas funciones. A continuación, puede seguir los pasos a.<block ref="29c5c6557943f5249ffe666c6e468ce9" category="inline-link-rx"></block> y.. <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>.</block>
   <block id="8a39158958544ff49d3dc95bad3f3a82" category="list-text">Recomendamos que el software BlueXP Connector se actualice a la última versión disponible.<block ref="4abf459c8cfa6d4ca98cecc130eefa9a" category="inline-link-rx"></block>.</block>
   <block id="914179b3d4545ce8b8e8ba122c53f4d9" category="list-text">Al crear el sistema host en sus instalaciones, se puede elegir entre estos tamaños del sistema según el tamaño del conjunto de datos al que vaya a analizar la clasificación de BlueXP.</block>
-  <block id="6c09b1dff892b8048d63b1e31c61b814" category="section-title">Despliegue en distintos tipos de instancia</block>
   <block id="df08805f9a68769e5aca6dccacac7494" category="paragraph">Puedes poner en marcha la clasificación de BlueXP en un sistema con menos CPU y menos RAM.</block>
   <block id="57637b2cc8a0490c839620385b595b3e" category="paragraph">Al poner en marcha la clasificación de BlueXP en Azure o GCP, envía un correo electrónico a ng-contact-data-sense@netapp.com para obtener ayuda si quieres usar un tipo de instancia más pequeño.</block>
-  <block id="ac1250c44ca3735bfcf1d4592b478a30" category="list-text">*Metadatos estándar* La clasificación de BlueXP recopila metadatos estándar sobre los archivos: El tipo de archivo, su tamaño, fechas de creación y modificación, etc.</block>
   <block id="e59e38f5b5a816003a773fb9f75ff139" category="list-text">*Datos personales*: Información de identificación personal (PII) como direcciones de correo electrónico, números de identificación o números de tarjetas de crédito. <block ref="fc496cc858c0e8dff4419012ba17c358" category="inline-link-macro-rx"></block>.</block>
   <block id="58b08b9a6ba479db4005e79f9e8bfbc2" category="list-text">*Datos personales sensibles*: Tipos especiales de información personal sensible (SPII), como datos de salud, origen étnico u opiniones políticas, según lo definido por el RGPD y otras regulaciones de privacidad. <block ref="6221f6509a9900ea9a8146767340b3a8" category="inline-link-macro-rx"></block>.</block>
   <block id="e1b5177c05ab6adddb3fa94c4f67b610" category="list-text">*Categorías*: La clasificación de BlueXP toma los datos que escaneó y los divide en diferentes tipos de categorías. Las categorías son temas basados en el análisis de IA del contenido y los metadatos de cada archivo. <block ref="722783767558c868b0670a999b08f996" category="inline-link-macro-rx"></block>.</block>
@@ -3541,10 +3511,64 @@ Datos de aplicaciones de negocio</block>
   <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">Para obtener más información, consulte<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
   <block id="1e61042bc6437e79f5a1cc09c86acd1a" category="list-text">Podman versión 4 o superior. Para instalar Podman, introduzca <block ref="9305f04686d4e3dadce4d1e9e77d9d71" prefix="(" category="inline-code"></block>).</block>
   <block id="70e7e6a41e0598a3902dbaf5ca936aa0" category="list-text">Ubuntu 24,04 (requiere la versión de clasificación de BlueXP 1,23 o posterior)</block>
-  <block id="e1de422d9b50a40fe1300cc8736bc7f0" category="section-title">5 de agosto de 2024 (Versión 1,34)</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">Esta versión de clasificación de BlueXP  incluye la siguiente actualización.</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="section-title">Cambiar de CentOS a Ubuntu</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">La clasificación BlueXP  ha actualizado su sistema operativo Linux para Microsoft Azure y Google Cloud Platform (GCP) de CentOS 7,9 a Ubuntu 22,04.</block>
   <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">Instale en un host Linux con acceso a Internet y prepare el sistema host Linux</block>
   <block id="e6b6c1b590b016ecf7556d1571a4309e" category="paragraph">Para obtener más información sobre el despliegue, consulte<block ref="ba79134a77255d2e97755d6f7b772847" category="inline-link-rx"></block>.</block>
+  <block id="6b58a1f82ed5bb7a99f52822509a4519" category="paragraph">*Desplegar en diferentes tipos de instancia*</block>
+  <block id="f7b33a42cbd89983b15c11673a39ebbb" category="example-title">Diferencias en el panel de control:</block>
+  <block id="cfc520b0abc2bc5575f719562cb63734" category="example-title">Diferencias en el panel de cumplimiento:</block>
+  <block id="a8489c9a413df737ca55e133eea56820" category="example-title">La investigación filtra las diferencias:</block>
+  <block id="41723bb4585becfa9d2ed4726536b953" category="section-title">Información que clasifica BlueXP </block>
+  <block id="6cd355a083ac0c0abfe0db956ac0ab54" category="list-text">*Metadatos estándar* sobre archivos: Tipo de archivo, tamaño, fecha de creación y modificación, etc.</block>
+  <block id="1e81701a0a647214aeef7f6f5b09394b" category="section-title">Roles de usuario en la clasificación BlueXP </block>
+  <block id="eec6403f951e244b1c486300193cd34d" category="paragraph">Puedes poner en marcha la clasificación de BlueXP en un sistema con menos CPU y menos RAM, pero existen algunas limitaciones al usar estos sistemas menos potentes. <block ref="1b1d000d38aaad462efbebe4f445430b" category="inline-link-macro-rx"></block>.</block>
+  <block id="d2f4e7f4455a3bda8ed865e3c82c3eb1" category="cell">8080 (TCP), 6000 (TCP), 443 (TCP) Y 80. 9000</block>
+  <block id="87669b3f9ce07d9d9a218ff72c43f046" category="list-text">Si se utiliza un firewall en el host Linux, se requiere el puerto 9000 para los procesos internos de un servidor Ubuntu.</block>
+  <block id="c29fe88a82cdd613769957d60ae7e623" category="cell">Si un firewall utilizado en el host Linux</block>
+  <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000</block>
+  <block id="2c68446a47623409683fed996b7df333" category="cell">Necesario para procesos internos dentro de un servidor Ubuntu.</block>
+  <block id="f0fd47ef2ed43479969d8e3e0d0df156" category="cell">8080 (TCP), 443 (TCP) y 80. 9000</block>
+  <block id="1ed8980e59fe9f96e77c5a7b123780d1" category="cell">El firewall o las reglas de enrutamiento para Connector deben permitir el tráfico de entrada y salida a través del puerto 443 hacia y desde la instancia de clasificación de BlueXP. Asegúrese de que el puerto 8080 está abierto para que pueda ver el progreso de la instalación en BlueXP. Si se utiliza un firewall en el host Linux, se requiere el puerto 9000 para los procesos internos de un servidor Ubuntu.</block>
+  <block id="b228a09a75efeade7f59510b5c5b6da0" category="doc">Comience a utilizar la clasificación BlueXP  para Cloud Volumes ONTAP y ONTAP local</block>
+  <block id="effe342ed6fdd5b79625bb273c6f43da" category="section-title">Descubra los orígenes de datos que desea analizar</block>
+  <block id="3e07df694cbf4c604aed3e0514e35653" category="section-title">Active la clasificación BlueXP  en sus entornos de trabajo</block>
+  <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes</block>
+  <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">Consulte <block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block> para obtener más información.</block>
+  <block id="5ede9806a5e8e360f81d3184f388f33b" category="section-title">Compruebe que la clasificación BlueXP  tenga acceso a los volúmenes</block>
+  <block id="3f0bbcbd675537960ef9995a958d5fe0" category="section-title">Analizar volúmenes de protección de datos</block>
+  <block id="03013e116c1ce41f3b557b2caaef3575" category="doc">Comienza a usar la clasificación BlueXP  para Azure NetApp Files</block>
+  <block id="8c89db674531ab536128087dfb6cbe4f" category="section-title">Descubra el sistema Azure NetApp Files que desea escanear</block>
+  <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="doc">Analizar recursos compartidos de archivos</block>
+  <block id="9850feff1aac1d886b7a010236318d49" category="section-title">Revise los requisitos de recursos compartidos de archivos</block>
+  <block id="8324f4d6c5b9d56205261e30363b597f" category="paragraph">Las actualizaciones al software de clasificación BlueXP  se automatizan siempre que la instancia tenga conectividad a Internet.</block>
+  <block id="763e254befdcc246f3e8569877b63340" category="section-title">Cree el grupo para los recursos compartidos de archivos</block>
+  <block id="8c7259d7b7f8962c22537c08f66b5e09" category="section-title">Agregue recursos compartidos de archivos a un grupo</block>
+  <block id="0eb30c84638dc32a52a08e70a70b2a55" category="section-title">Eliminar un recurso compartido de archivos de los análisis de cumplimiento</block>
+  <block id="7189cf24cfe83953d8a6800deef41472" category="section-title">Descubre el sistema de archivos FSx para ONTAP que quieres analizar</block>
+  <block id="415692946bae6c6ee848f8732518a045" category="paragraph">Consulte <block ref="30e9b0cd02d911bb04c0ac893b6f8372" category="inline-xref-macro-rx"></block> para obtener más información.</block>
+  <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="doc">Escanee datos StorageGRID</block>
+  <block id="fec0b5d2f5737f21e60a6e49ddb4e55f" category="paragraph">*NOTA* Usando la clasificación BlueXP  que forma parte del núcleo BlueXP , ahora puede escanear datos StorageGRID.<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block> La información restante aquí es relevante solo para la clasificación BlueXP  versiones antiguas 1,30 y anteriores.</block>
+  <block id="c44712318b0c4e33e9d361583871c49c" category="summary">Complete unos pocos pasos para comenzar a escanear datos dentro de StorageGRID directamente con la clasificación BlueXP .</block>
+  <block id="301b54ac16625023c7d40dcc0122ef17" category="doc">Comience a escanear datos de StorageGRID</block>
+  <block id="62756ad365a0397e368bc1fff7694d09" category="paragraph">Debe tener la clave de acceso y la clave secreta de StorageGRID para que la clasificación de BlueXP  pueda acceder a los buckets.</block>
+  <block id="a1a191ce069b9cd9855c29e830e5edb1" category="paragraph">Agregue el servicio StorageGRID a la clasificación BlueXP .</block>
+  <block id="dc3fd4fe9b1bb66db60a59be3884a90c" category="section-title">Revisar los requisitos de StorageGRID</block>
+  <block id="75fb1719288a18e42bbcf12474e638ab" category="paragraph">Si está escaneando datos de StorageGRID que es accesible a través de Internet, puede <block ref="8faa540c15177bc62b151869f0948a64" category="inline-link-macro-rx"></block> o <block ref="15df3adeb2abcc06430d6dc64cee819e" category="inline-link-macro-rx"></block>.</block>
+  <block id="b7f5835679149c7ad528a93130c54fd2" category="paragraph">Si está escaneando datos de StorageGRID que se ha instalado en un sitio oscuro que no tiene acceso a Internet, debe <block ref="3beeea1c5d12940092999048e1c30313" category="inline-link-macro-rx"></block>. Esto también requiere que el conector BlueXP se despliegue en esa misma ubicación en las instalaciones.</block>
+  <block id="8da203a5374e4d2ee4312dc1aafd619c" category="section-title">Agregue el servicio StorageGRID a la clasificación BlueXP </block>
+  <block id="51fd71ec3cd52fe8a3a0c2ca75ecb69e" category="paragraph">Añada el servicio StorageGRID.</block>
+  <block id="d995bd148592a1e3039fe0e3deaeeafc" category="list-text">En el cuadro de diálogo Agregar servicio de almacenamiento de objetos, introduzca los detalles del servicio StorageGRID y haga clic en *Continuar*.</block>
+  <block id="f153721d9ef26ee125af0b2bd9b6a3e4" category="list-text">Introduzca el nombre que desea utilizar para el entorno de trabajo. Este nombre debe reflejar el nombre del servicio StorageGRID al que se está conectando.</block>
+  <block id="9352a83c797b7c34cb58ee6504218644" category="list-text">Introduzca la clave de acceso y la clave secreta para que la clasificación de BlueXP  pueda acceder a los bloques de StorageGRID.</block>
+  <block id="33d7a3218c026536f68e6f9eb287287c" category="paragraph">StorageGRID se agrega a la lista de entornos de trabajo.</block>
+  <block id="149bb086304a69799f52fb84d5e33370" category="section-title">Activar y desactivar los análisis de cumplimiento en bloques de StorageGRID</block>
+  <block id="81959d6a19d62d0f6e5ccbbd1a01c2f0" category="paragraph">Después de activar la clasificación BlueXP  en StorageGRID, el siguiente paso es configurar los depósitos que desea escanear. La clasificación de BlueXP descubre esos buckets y los muestra en el entorno de trabajo que has creado.</block>
+  <block id="ffc704586971ad083fdf8dd3a75b06c9" category="list-text">En la página Configuración, haga clic en *Configuración* en el entorno de trabajo de StorageGRID.</block>
+  <block id="2c9810189a9662217559e6c599b47a67" category="cell">8080 (TCP), 443 (TCP) y 80. 9000</block>
+  <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2 de septiembre de 2024 (Versión 1,35)</block>
+  <block id="83bceb987dd495cde1a148944580e473" category="paragraph">La clasificación BlueXP  ahora puede escanear datos en StorageGRID.</block>
+  <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">Para obtener más información, consulte <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>.</block>
+  <block id="a5ac20c838605b872613985f5c302c61" category="section-title">5 de agosto de 2024 (Versión 1,34)</block>
 </blocks>

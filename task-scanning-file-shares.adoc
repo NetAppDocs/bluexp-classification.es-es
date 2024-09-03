@@ -4,7 +4,7 @@ permalink: task-scanning-file-shares.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
 summary: Completa unos pasos para empezar a analizar recursos compartidos de archivos NFS o CIFS que no sean de NetApp directamente con la clasificación de BlueXP. Estos recursos compartidos de archivos pueden residir en las instalaciones o en el cloud. 
 ---
-= Analizando recursos compartidos de archivos
+= Analizar recursos compartidos de archivos
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -43,7 +43,7 @@ Agregue la lista de recursos compartidos de archivos que desea analizar y selecc
 
 
 
-== Revisión de los requisitos de uso compartido de archivos
+== Revise los requisitos de recursos compartidos de archivos
 
 Revise los siguientes requisitos previos para comprobar que tiene una configuración compatible antes de habilitar la clasificación de BlueXP.
 
@@ -68,15 +68,15 @@ Si quieres asegurarte de que las «horas de último acceso» no cambian debido a
 
 
 
-== Implementar la instancia de clasificación de BlueXP
+== Implementa la instancia de clasificación de BlueXP
 
 Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
 
-Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
+Las actualizaciones al software de clasificación BlueXP  se automatizan siempre que la instancia tenga conectividad a Internet.
 
 
 
-== Creación del grupo para los recursos compartidos de archivos
+== Cree el grupo para los recursos compartidos de archivos
 
 Debe agregar un "grupo" de archivos compartidos antes de poder agregar los archivos compartidos. El grupo es un contenedor para los recursos compartidos de archivos que desea analizar y el nombre del grupo se utiliza como nombre del entorno de trabajo para esos archivos compartidos.
 
@@ -94,7 +94,7 @@ El nuevo grupo de archivos compartidos se agrega a la lista de entornos de traba
 
 
 
-== Agregar recursos compartidos de archivos a un grupo
+== Agregue recursos compartidos de archivos a un grupo
 
 Añades archivos compartidos al grupo File Shares para que los archivos de esos recursos compartidos se analicen mediante la clasificación de BlueXP. Los recursos compartidos se añaden con el formato `<host_name>:/<share_path>`.
 
@@ -155,7 +155,7 @@ La clasificación de BlueXP comienza a analizar los archivos en los recursos com
 
 
 
-== Quitar un recurso compartido de archivos de los análisis de cumplimiento de normativas
+== Eliminar un recurso compartido de archivos de los análisis de cumplimiento
 
 Si ya no necesita analizar determinados recursos compartidos de archivos, puede eliminar los recursos compartidos de archivos individuales para que los analice en cualquier momento. Haga clic en *Quitar recurso compartido* en la página Configuración.
 

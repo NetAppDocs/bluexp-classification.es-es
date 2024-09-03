@@ -4,7 +4,7 @@ permalink: task-scanning-anf.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
 summary: Completa unos pasos para empezar a usar la clasificación de BlueXP para Azure NetApp Files. 
 ---
-= Primeros pasos con la clasificación de BlueXP para Azure NetApp Files
+= Comienza a usar la clasificación BlueXP  para Azure NetApp Files
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -59,7 +59,7 @@ Selecciona o anula la selección de los volúmenes que quieres analizar y la cla
 
 
 
-== Detección del sistema Azure NetApp Files que desea analizar
+== Descubra el sistema Azure NetApp Files que desea escanear
 
 Si el sistema Azure NetApp Files que desea escanear no está ya en BlueXP como entorno de trabajo, puede agregarlo al lienzo en este momento.
 
@@ -67,7 +67,7 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["D
 
 
 
-== Implementar la instancia de clasificación de BlueXP
+== Implementa la instancia de clasificación de BlueXP
 
 link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP"^] si aún no hay una instancia implementada.
 
@@ -79,7 +79,7 @@ Las actualizaciones del software de clasificación de BlueXP se automatizan siem
 
 
 
-== Habilitar la clasificación de BlueXP en tus entornos de trabajo
+== Active la clasificación BlueXP  en sus entornos de trabajo
 
 Puede habilitar la clasificación de BlueXP en sus volúmenes de Azure NetApp Files.
 
@@ -93,7 +93,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["Una captura de pantalla d
 ** Para asignar y clasificar todos los volúmenes, haga clic en *asignar y clasificar todos los volúmenes*.
 ** Para personalizar la exploración de cada volumen, haga clic en *o seleccione el tipo de exploración para cada volumen* y, a continuación, elija los volúmenes que desea asignar y/o clasificar.
 +
-Consulte <<Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes,Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes>> para obtener más detalles.
+Consulte <<Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes,Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes>> para obtener más información.
 
 
 
@@ -112,7 +112,7 @@ La clasificación de BlueXP comienza a analizar los volúmenes que seleccionaste
 ====
 
 
-== Verificar que la clasificación de BlueXP tenga acceso a los volúmenes
+== Compruebe que la clasificación BlueXP  tenga acceso a los volúmenes
 
 Asegúrese de que la clasificación de BlueXP pueda acceder a los volúmenes comprobando la red, los grupos de seguridad y las políticas de exportación. Tendrás que ofrecer la clasificación de BlueXP con credenciales CIFS para que pueda acceder a los volúmenes de CIFS.
 
@@ -161,7 +161,7 @@ image:screenshot_compliance_volume_details.gif["Una captura de pantalla de la p�
 
 
 
-== Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes
+== Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes
 
 Puede iniciar o detener exploraciones de sólo asignación, o bien análisis de asignación y clasificación, en un entorno de trabajo en cualquier momento desde la página Configuración. También puede cambiar de exploraciones de sólo asignación a exploraciones de asignación y clasificación, y viceversa. Le recomendamos que analice todos los volúmenes.
 

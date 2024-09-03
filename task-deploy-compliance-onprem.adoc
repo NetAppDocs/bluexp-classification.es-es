@@ -254,7 +254,7 @@ Debes asegurarte de que todos los puertos requeridos estén abiertos para la com
 | Tipo de conexión | Puertos | Descripción 
 
 
-| Conector Clasificación de <> BlueXP | 8080 (TCP), 443 (TCP) y 80 | El firewall o las reglas de enrutamiento para Connector deben permitir el tráfico de entrada y salida a través del puerto 443 hacia y desde la instancia de clasificación de BlueXP. Asegúrese de que el puerto 8080 está abierto para que pueda ver el progreso de la instalación en BlueXP. 
+| Conector Clasificación de <> BlueXP | 8080 (TCP), 443 (TCP) y 80. 9000 | El firewall o las reglas de enrutamiento para Connector deben permitir el tráfico de entrada y salida a través del puerto 443 hacia y desde la instancia de clasificación de BlueXP. Asegúrese de que el puerto 8080 está abierto para que pueda ver el progreso de la instalación en BlueXP. Si se utiliza un firewall en el host Linux, se requiere el puerto 9000 para los procesos internos de un servidor Ubuntu. 
 
 
 | Conector <> clúster ONTAP (NAS) | 443 (TCP)  a| 

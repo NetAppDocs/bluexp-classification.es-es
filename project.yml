@@ -40,16 +40,18 @@ sidebar:
         url: "/task-test-linux-system.html"
     - title: Active el análisis en sus orígenes de datos
       entries:
-      - title: Cloud Volumes ONTAP y ONTAP en las instalaciones
-        url: "/task-getting-started-compliance.html"
       - title: Azure NetApp Files
         url: "/task-scanning-anf.html"
       - title: Amazon FSX para ONTAP
         url: "/task-scanning-fsx.html"
+      - title: Cloud Volumes ONTAP y ONTAP en las instalaciones
+        url: "/task-getting-started-compliance.html"
       - title: Esquemas de base de datos
         url: "/task-scanning-databases.html"
       - title: Recursos compartidos de archivos
         url: "/task-scanning-file-shares.html"
+      - title: StorageGRID
+        url: "/task-scanning-storagegrid.html"
     - title: Integre Active Directory
       url: "/task-add-active-directory-datasense.html"
     - title: PREGUNTAS FRECUENTES
