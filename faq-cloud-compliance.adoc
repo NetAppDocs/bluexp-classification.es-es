@@ -260,7 +260,7 @@ Sí, la clasificación de BlueXP está totalmente integrada en BlueXP. Los usuar
 
 Además, si quieres permitir que determinados usuarios solo vean los resultados del análisis de clasificación de BlueXP sin tener la capacidad de administrar las configuraciones de clasificación de BlueXP, puedes asignar a esos usuarios el rol Cloud Compliance Viewer.
 
-link:concept-cloud-compliance.html#user-access-to-compliance-information["Leer más"^].
+link:concept-cloud-compliance.html["Leer más"^].
 
 
 

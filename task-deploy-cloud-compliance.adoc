@@ -182,7 +182,7 @@ Consulte los siguientes enlaces para obtener más información sobre los límite
 
 Sigue estos pasos para implementar una instancia de clasificación de BlueXP en la nube. Connector pondrá en marcha la instancia en la nube y, a continuación, instalará el software de clasificación BlueXP en esa instancia.
 
-Tenga en cuenta que cuando implemente la clasificación de BlueXP desde un conector BlueXP en un entorno AWS, puede seleccionar el tamaño de instancia predeterminado o puede seleccionar entre dos tipos de instancia menores. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Vea los tipos de instancia y las limitaciones disponibles"]. En las regiones en las que el tipo de instancia predeterminado no está disponible, la clasificación de BlueXP se ejecuta en A. link:reference-instance-types.html["tipo de instancia alternativa"].
+En las regiones en las que el tipo de instancia por defecto no está disponible, la clasificación BlueXP  se ejecuta en una link:reference-instance-types.html["tipo de instancia alternativa"].
 
 [role="tabbed-block"]
 ====
