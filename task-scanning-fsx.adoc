@@ -4,7 +4,7 @@ permalink: task-scanning-fsx.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
 summary: Completa unos pasos para empezar a analizar volúmenes de Amazon FSx para ONTAP con la clasificación de BlueXP. 
 ---
-= Comienza a usar la clasificación de BlueXP para Amazon FSx para ONTAP
+= Analiza Amazon FSx para volúmenes ONTAP con la clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -33,7 +33,7 @@ Hay algunas funciones y funcionalidades obsoletas en la versión principal de Bl
 | Clústeres de ONTAP en las instalaciones | Sí | Sí 
 
 
-| StorageGRID | Sí | No 
+| StorageGRID | Sí | Sí 
 
 
 | Azure NetApp Files | Sí | Sí 

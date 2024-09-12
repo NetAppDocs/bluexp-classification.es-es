@@ -4,7 +4,7 @@ permalink: task-scanning-storagegrid.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
 summary: Complete unos pocos pasos para comenzar a escanear datos dentro de StorageGRID directamente con la clasificación BlueXP . 
 ---
-= Comience a escanear datos de StorageGRID
+= Analice datos de StorageGRID con clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

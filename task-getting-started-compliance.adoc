@@ -4,7 +4,7 @@ permalink: task-getting-started-compliance.html
 keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense 
 summary: Completa unos pasos para empezar a analizar tus volúmenes de ONTAP en Cloud Volumes ONTAP y on-premises mediante la clasificación de BlueXP. 
 ---
-= Comience a utilizar la clasificación BlueXP  para Cloud Volumes ONTAP y ONTAP local
+= Analiza los volúmenes de Cloud Volumes ONTAP y ONTAP on-premises con la clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

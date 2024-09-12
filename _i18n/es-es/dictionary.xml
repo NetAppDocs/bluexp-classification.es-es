@@ -1945,7 +1945,6 @@
   <block id="589613ebded30ccfc7919805e48604f7" category="list-text">*Descargar informe DSAR*: Respuesta formal a la solicitud de acceso que se puede enviar al sujeto de datos. Este informe contiene información generada automáticamente en función de los datos que se ha encontrado en la clasificación de BlueXP del interesado y que se ha diseñado para utilizarse como plantilla. Debe completar el formulario y revisarlo internamente antes de enviarlo al sujeto de datos.</block>
   <block id="7c92d233233cf7ce5aafb02b9fc01c89" category="paragraph">Puedes filtrar el contenido de la consola de cumplimiento de normativas de clasificación de BlueXP para ver los datos de cumplimiento de todos los entornos de trabajo y bases de datos, o simplemente para entornos de trabajo específicos.</block>
   <block id="65f7d3315d8640ef3d8c452f389f943f" category="summary">Completa unos pasos para empezar a analizar volúmenes de Amazon FSx para ONTAP con la clasificación de BlueXP.</block>
-  <block id="4639bfb0440fe9f0921957654faaa847" category="doc">Comienza a usar la clasificación de BlueXP para Amazon FSx para ONTAP</block>
   <block id="ee226c8d12b49c169ecda644ad808139" category="list-text">Necesitas un conector activo en AWS para poner en marcha y gestionar la clasificación de BlueXP.</block>
   <block id="e8b81a0a7fb72885e122ca44791572fb" category="list-text">El grupo de seguridad que haya seleccionado al crear el entorno de trabajo debe permitir el tráfico desde la instancia de clasificación de BlueXP. Puede buscar el grupo de seguridad asociado mediante ENI conectado al FSX para el sistema de archivos ONTAP y editarlo mediante la consola de gestión de AWS.</block>
   <block id="0a1d05c09ebe4e90b8b31f3bbb2b6119" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Habilita la clasificación de BlueXP y selecciona los volúmenes que deseas escanear</block>
@@ -2991,7 +2990,6 @@
   <block id="8a5ea9dc53c4c86f4aed7ef4b4da982c" category="section-title">Ver archivos por categorías</block>
   <block id="ecb953672f3305298a86f0569c18d178" category="section-title">Ver archivos por tipos de archivo</block>
   <block id="303b0a57019c624c482fb5d775729281" category="section-title">Ver datos del panel de control para entornos de trabajo específicos</block>
-  <block id="50c07d396e4bf402b72ebf82cfaadea1" category="doc">Escanear esquemas de base de datos</block>
   <block id="846eb83e821481bdeafbcc34c9138401" category="section-title">Implementa la instancia de clasificación de BlueXP</block>
   <block id="117276e96b89d072e0a833596332ef29" category="section-title">Agregue el servidor de la base de datos</block>
   <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">Activar y desactivar exploraciones de cumplimiento en esquemas de base de datos</block>
@@ -3496,16 +3494,13 @@ Datos de aplicaciones de negocio</block>
   <block id="2c68446a47623409683fed996b7df333" category="cell">Necesario para procesos internos dentro de un servidor Ubuntu.</block>
   <block id="f0fd47ef2ed43479969d8e3e0d0df156" category="cell">8080 (TCP), 443 (TCP) y 80. 9000</block>
   <block id="1ed8980e59fe9f96e77c5a7b123780d1" category="cell">El firewall o las reglas de enrutamiento para Connector deben permitir el tráfico de entrada y salida a través del puerto 443 hacia y desde la instancia de clasificación de BlueXP. Asegúrese de que el puerto 8080 está abierto para que pueda ver el progreso de la instalación en BlueXP. Si se utiliza un firewall en el host Linux, se requiere el puerto 9000 para los procesos internos de un servidor Ubuntu.</block>
-  <block id="b228a09a75efeade7f59510b5c5b6da0" category="doc">Comience a utilizar la clasificación BlueXP  para Cloud Volumes ONTAP y ONTAP local</block>
   <block id="effe342ed6fdd5b79625bb273c6f43da" category="section-title">Descubra los orígenes de datos que desea analizar</block>
   <block id="3e07df694cbf4c604aed3e0514e35653" category="section-title">Active la clasificación BlueXP  en sus entornos de trabajo</block>
   <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes</block>
   <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">Consulte <block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block> para obtener más información.</block>
   <block id="5ede9806a5e8e360f81d3184f388f33b" category="section-title">Compruebe que la clasificación BlueXP  tenga acceso a los volúmenes</block>
   <block id="3f0bbcbd675537960ef9995a958d5fe0" category="section-title">Analizar volúmenes de protección de datos</block>
-  <block id="03013e116c1ce41f3b557b2caaef3575" category="doc">Comienza a usar la clasificación BlueXP  para Azure NetApp Files</block>
   <block id="8c89db674531ab536128087dfb6cbe4f" category="section-title">Descubra el sistema Azure NetApp Files que desea escanear</block>
-  <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="doc">Analizar recursos compartidos de archivos</block>
   <block id="9850feff1aac1d886b7a010236318d49" category="section-title">Revise los requisitos de recursos compartidos de archivos</block>
   <block id="8324f4d6c5b9d56205261e30363b597f" category="paragraph">Las actualizaciones al software de clasificación BlueXP  se automatizan siempre que la instancia tenga conectividad a Internet.</block>
   <block id="763e254befdcc246f3e8569877b63340" category="section-title">Cree el grupo para los recursos compartidos de archivos</block>
@@ -3516,7 +3511,6 @@ Datos de aplicaciones de negocio</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="doc">Escanee datos StorageGRID</block>
   <block id="fec0b5d2f5737f21e60a6e49ddb4e55f" category="paragraph">*NOTA* Usando la clasificación BlueXP  que forma parte del núcleo BlueXP , ahora puede escanear datos StorageGRID.<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block> La información restante aquí es relevante solo para la clasificación BlueXP  versiones antiguas 1,30 y anteriores.</block>
   <block id="c44712318b0c4e33e9d361583871c49c" category="summary">Complete unos pocos pasos para comenzar a escanear datos dentro de StorageGRID directamente con la clasificación BlueXP .</block>
-  <block id="301b54ac16625023c7d40dcc0122ef17" category="doc">Comience a escanear datos de StorageGRID</block>
   <block id="62756ad365a0397e368bc1fff7694d09" category="paragraph">Debe tener la clave de acceso y la clave secreta de StorageGRID para que la clasificación de BlueXP  pueda acceder a los buckets.</block>
   <block id="a1a191ce069b9cd9855c29e830e5edb1" category="paragraph">Agregue el servicio StorageGRID a la clasificación BlueXP .</block>
   <block id="dc3fd4fe9b1bb66db60a59be3884a90c" category="section-title">Revisar los requisitos de StorageGRID</block>
@@ -3549,4 +3543,10 @@ Datos de aplicaciones de negocio</block>
   <block id="83a1ac14de85f87d0324d9f2a2d89105" category="paragraph"><block ref="83a1ac14de85f87d0324d9f2a2d89105" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48e1eb4f3a8c9056e5dc0d4943a84ada" category="inline-image-macro">Una captura de pantalla que muestra la selección de los depósitos de StorageGRID que desea escanear.</block>
   <block id="d63ea5297bdc582794b89a4fc7b492d8" category="paragraph"><block ref="d63ea5297bdc582794b89a4fc7b492d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e285296eea347aa1a2f1fe8f2397693" category="doc">Analiza los volúmenes de Cloud Volumes ONTAP y ONTAP on-premises con la clasificación BlueXP </block>
+  <block id="cd459404fa850adef50a1d5a0b9fb8e7" category="doc">Analice volúmenes de Azure NetApp Files con la clasificación BlueXP </block>
+  <block id="2cac5148836fcc4449c2a57f4d2f787c" category="doc">Escanee esquemas de base de datos con clasificación BlueXP </block>
+  <block id="b5e00ff2b7559dfa6fc6fe96058ede54" category="doc">Analizar recursos compartidos de archivos con clasificación BlueXP </block>
+  <block id="7265eae2a2b23f32087dc3e5083938a2" category="doc">Analiza Amazon FSx para volúmenes ONTAP con la clasificación BlueXP </block>
+  <block id="98e210281b17a386ae53922f3fb716a8" category="doc">Analice datos de StorageGRID con clasificación BlueXP </block>
 </blocks>
