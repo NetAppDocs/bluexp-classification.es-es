@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-licensing-byol-freetrial.html 
 keywords: subscribe, trial, marketplace, subscription, byol, bring your own license, data sense, cloud data sense 
-summary: Los primeros 1 TB de datos que analiza la clasificación de BlueXP en un espacio de trabajo de BlueXP son gratis. Debe contar con una licencia BYOL de NetApp o una suscripción a su mercado proveedor de cloud para continuar analizando los datos después de ese punto. 
+summary: Los primeros 1 TB de datos que analiza la clasificación de BlueXP  en un proyecto o espacio de trabajo de BlueXP  son gratuitos. Debe contar con una licencia BYOL de NetApp o una suscripción a su mercado proveedor de cloud para continuar analizando los datos después de ese punto. 
 ---
 = Configura una prueba gratuita o BYOL para la clasificación de BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Los primeros 1 TB de datos que analiza la clasificación de BlueXP en u
 
 
 [role="lead"]
-Para las versiones 1,30 y anteriores, los primeros 1 TB de datos que analiza la clasificación de BlueXP en un espacio de trabajo de BlueXP se ofrecen gratis durante 30 días. Debe seguir analizando los datos después de ese momento una licencia BYOL de NetApp o una suscripción al mercado de su proveedor de cloud.
+Para las versiones 1,30 y anteriores, los primeros 1 TB de datos que analiza la clasificación BlueXP  en un proyecto o espacio de trabajo de BlueXP  pueden permanecer libres durante 30 días. Debe seguir analizando los datos después de ese momento una licencia BYOL de NetApp o una suscripción al mercado de su proveedor de cloud.
 
 []
 ====
@@ -23,7 +23,7 @@ Para las versiones 1,30 y anteriores, los primeros 1 TB de datos que analiza la 
 ====
 Antes de leer más:
 
-* La clasificación BYOL (bring-your-own-license) de BlueXP (Data Sense) es una licencia _flotante_ que puedes utilizar en todos los entornos de trabajo y orígenes de datos del espacio de trabajo que planeas analizar. Verás una suscripción activa en la cartera digital de BlueXP.
+* La clasificación BlueXP  (Data Sense) con licencia propia (BYOL) es una licencia _flotante_ que puede utilizar en todos los entornos de trabajo y orígenes de datos del proyecto o espacio de trabajo de BlueXP  que planea analizar. Verás una suscripción activa en la cartera digital de BlueXP.
 * La cantidad de datos que se analizan se calcula en función del tamaño lógico de archivo, sin ninguna eficiencia del almacenamiento.
 
 
@@ -33,7 +33,7 @@ link:concept-cloud-compliance.html#cost["Obtén más información sobre las lice
 
 == prueba gratuita de 30 días
 
-Está disponible una prueba gratuita de 30 días para hasta 1 TB de datos que analiza la clasificación de BlueXP en un espacio de trabajo de BlueXP. Tendrá que comprar una licencia BYOL de NetApp o un registro para obtener una suscripción desde el mercado del proveedor de cloud para seguir escaneando los datos después de ese momento.
+Hay disponible una prueba gratuita de 30 días para hasta 1 TB de datos que la clasificación BlueXP  escanea en un proyecto o espacio de trabajo de BlueXP . Tendrá que comprar una licencia BYOL de NetApp o un registro para obtener una suscripción desde el mercado del proveedor de cloud para seguir escaneando los datos después de ese momento.
 
 Puede suscribirse en cualquier momento y no se le cobrará hasta que finalice la prueba de 30 días o la cantidad de datos supere 1 TB. Siempre puedes ver la cantidad total de datos que se analizan en el Panel de gobernanza de clasificación de BlueXP. Y el botón _Subscribe Now_ facilita la suscripción cuando esté listo.
 

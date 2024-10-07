@@ -448,11 +448,8 @@ Si tiene requisitos estrictos de red, link:task-deploy-cloud-compliance.html#rev
 
 == Roles de usuario en la clasificación BlueXP 
 
-El rol asignado a cada usuario proporciona diferentes funcionalidades dentro de BlueXP y dentro de la clasificación de BlueXP:
+El rol asignado a cada usuario proporciona diferentes capacidades dentro de BlueXP  y dentro de la clasificación BlueXP . Si quiere más información, consulte lo siguiente:
 
-* Un *Administrador de cuentas* puede administrar la configuración de cumplimiento y ver la información de cumplimiento de todos los entornos de trabajo.
-* *Workspace Admin* puede administrar la configuración de cumplimiento y ver la información de cumplimiento sólo para los sistemas a los que tienen permisos de acceso. Si un administrador de espacio de trabajo no puede acceder a un entorno de trabajo en BlueXP, no podrá ver ninguna información de cumplimiento de normativas del entorno de trabajo en la pestaña de clasificación de BlueXP.
-* Los usuarios con la función *Compliance Viewer* sólo pueden ver información de cumplimiento y generar informes para los sistemas a los que tienen permiso de acceso. Estos usuarios no pueden habilitar o deshabilitar el análisis de volúmenes, bloques o esquemas de base de datos.
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Roles de IAM de BlueXP "] (Cuando se utiliza BlueXP  en modo estándar)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["Roles de cuenta de BlueXP "^] (Cuando se utiliza BlueXP  en modo restringido o en modo privado)
 
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["Más información sobre los roles de BlueXP"^] y cómo https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html#adding-users["añadir usuarios con roles específicos"^].

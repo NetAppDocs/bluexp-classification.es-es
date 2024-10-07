@@ -74,9 +74,9 @@ La clasificación de BlueXP admite etiquetas AIP en los siguientes tipos de arch
 ====
 
 
-=== Integre las etiquetas AIP en su espacio de trabajo
+=== Integre etiquetas AIP en su proyecto o área de trabajo
 
-Para poder administrar etiquetas AIP, debes integrar la funcionalidad de etiqueta AIP en la clasificación de BlueXP iniciando sesión en tu cuenta de Azure existente. Una vez activado, puede administrar etiquetas AIP dentro de los archivos para todos link:concept-cloud-compliance.html["fuentes de datos"^] En el espacio de trabajo de BlueXP.
+Para poder administrar etiquetas AIP, debes integrar la funcionalidad de etiqueta AIP en la clasificación de BlueXP iniciando sesión en tu cuenta de Azure existente. Una vez activado, puede administrar las etiquetas AIP dentro de los archivos para todos link:concept-cloud-compliance.html["fuentes de datos"^] en su proyecto o espacio de trabajo de BlueXP .
 
 .Requisitos
 * Debe tener una cuenta y una licencia de Azure Information Protection.
