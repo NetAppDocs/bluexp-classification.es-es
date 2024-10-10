@@ -57,15 +57,7 @@
 
 ** Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior:
 +
-*** Red Hat Enterprise Linux versiones 8,8, 9,0, 9,1, 9,2 y 9,3
-+
-Tenga en cuenta que las siguientes funciones no son compatibles actualmente con RHEL 8.x y RHEL 9.x:
-
-+
-**** Instalación en un sitio oscuro
-**** Escaneo distribuido; utilizando un nodo de escáner maestro y nodos de escáner remoto
-
-
+*** Red Hat Enterprise Linux versión 8,8, 9,0, 9,1, 9,2, 9,3 y 9,4
 
 
 
@@ -76,9 +68,6 @@ Tenga en cuenta que las siguientes funciones no son compatibles actualmente con 
 ** Dependiendo del sistema operativo que esté utilizando, deberá instalar uno de los motores de contenedores:
 +
 *** Docker Engine versión 19.3.1 o posterior. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^].
-+
-https://youtu.be/Ogoufel1q6c["Vea este vídeo"^] Para obtener una demostración rápida de la instalación de Docker en CentOS.
-
 *** Podman versión 4 o superior. Para instalar Podman, introduzca (`sudo yum install podman netavark -y`).
 
 
