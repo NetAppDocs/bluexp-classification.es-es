@@ -85,8 +85,6 @@
   <block id="41afcc0fca08d9d2c28748fc229f8f3d" category="list-text">En el cuadro de diálogo Agregar una cuenta de Google Drive, haga clic en *Iniciar sesión en Google Drive*.</block>
   <block id="b409ed344f8e93255d57fc76a98be428" category="paragraph">La cuenta de Google Drive se añade a la lista de entornos de trabajo.</block>
   <block id="00d7735cfe1be11b0d6c0c162ce477f6" category="list-text">En la página _Configuration_, haga clic en el botón *Configuration* de la cuenta de Google Drive.</block>
-  <block id="0dc1656c50d90854618395b6a5005845" category="inline-image-macro">Captura de pantalla de la página Configuración donde puede seleccionar el botón Configuración.</block>
-  <block id="9d94963dd1bda0d610b26873050a7b25" category="paragraph"><block ref="9d94963dd1bda0d610b26873050a7b25" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a546beb16c321b4c611cf0b9c297e9de" category="list-text">Active análisis de sólo asignación o análisis de asignación y clasificación en los archivos de la cuenta de Google Drive.</block>
   <block id="33caa076f23f453dd4061726f3706325" category="cell">Para:</block>
   <block id="5a2a9933405c81b69e2cbdd9151f9197" category="cell">Haga lo siguiente:</block>
@@ -166,7 +164,6 @@
   <block id="102692751f525192810434a5517a9248" category="list-text">Para asignar todos los volúmenes, haga clic en *asignar todos los volúmenes*.</block>
   <block id="21c697bd29539f20edb6f0b4e29ca986" category="list-text">Para asignar y clasificar todos los volúmenes, haga clic en *asignar y clasificar todos los volúmenes*.</block>
   <block id="5e5a91a0ea67cf11b397b43a5c240af0" category="list-text">Para personalizar la exploración de cada volumen, haga clic en *o seleccione el tipo de exploración para cada volumen* y, a continuación, elija los volúmenes que desea asignar y/o clasificar.</block>
-  <block id="9fa58f0e5c00772b9262b1da0ff9f2cb" category="inline-xref">Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes</block>
   <block id="2d680ca666fd821f3c51a507d41a26cb" category="inline-image-macro">Captura de pantalla de la ficha cumplimiento que muestra el botón Estado del análisis que está disponible en la parte superior derecha del panel de contenido.</block>
   <block id="0c0c3b0c55f2b5101c7ea7c5d755cabe" category="paragraph"><block ref="0c0c3b0c55f2b5101c7ea7c5d755cabe" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b401c479fc7a1b8aa216a7173ee8782f" category="paragraph">Después de introducir las credenciales, debe ver un mensaje que indica que todos los volúmenes CIFS se autenticaron correctamente.</block>
@@ -468,8 +465,6 @@
   <block id="fc8033e05bdb5950218106d24c9f7b6c" category="list-text">Se habilitaron los volúmenes creados inicialmente como volúmenes NFS en el FSX de origen para el sistema de archivos ONTAP.</block>
   <block id="65ba2ff339305392b787952e007185f1" category="inline-image-macro">Una captura de pantalla de las dos opciones para habilitar los volúmenes de protección de datos CIFS.</block>
   <block id="044f0d646b3277f06b2a18a6e8980572" category="paragraph"><block ref="044f0d646b3277f06b2a18a6e8980572" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c47a93a4db0f3326b39699f2c268ed84" category="inline-xref">del mismo modo que se habilitaron otros volúmenes</block>
-  <block id="2061db071134423faf2176bf292d0b95" category="list-text">Active cada volumen DP que desee analizar <block ref="86192a8c12894873fcc3d879f4018d85" category="inline-xref-macro-rx"></block>.</block>
   <block id="abcdab0f1cbbe968798a52245b476c30" category="paragraph">*Nota:* Si no ha tenido volúmenes de protección de datos CIFS cuando ha activado inicialmente el acceso a volúmenes DP y, más tarde, agregue algunos, el botón *Activar acceso a CIFS DP* aparece en la parte superior de la página Configuración. Haga clic en este botón y añada credenciales CIFS para habilitar el acceso a estos volúmenes CIFS DP.</block>
   <block id="21118277527dde4297826bff350dbf36" category="admonition">Las credenciales de Active Directory solo están registradas en la máquina virtual de almacenamiento del primer volumen CIFS DP, por lo que se analizarán todos los volúmenes de DP en esa SVM. Cualquier volumen que resida en otras SVM no tendrá registradas las credenciales de Active Directory; por lo tanto, esos volúmenes de DP no se analizarán.</block>
   <block id="2b91239a08044af034941b142fbcb9a9" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Descubra los orígenes de datos que desea analizar</block>
@@ -573,26 +568,7 @@
   <block id="580d63944c0010bfed9db7cc082666bf" category="list-text">_proxy_Port_ = Puerto para conectarse al servidor proxy (predeterminado 80).</block>
   <block id="382110a0400b590f5d4cf18a43519ec9" category="list-text">_Proxy_Scheme_ = combinación de conexiones: https o http (valor predeterminado http).</block>
   <block id="10e9c25445ddccd5fc8e39fb121f25f2" category="list-text">_proxy_password_ = Contraseña del nombre de usuario especificado.</block>
-  <block id="054d10b91a2e5ce49cf12f8ebacd96f3" category="section-title">Agregar nodos de escáner a una implementación existente</block>
-  <block id="0a4316eaec4759a96358821b3d6d871e" category="paragraph">Puede añadir más nodos de escáner si necesita más potencia de procesamiento de escaneado para analizar sus orígenes de datos. Puede añadir los nodos del escáner inmediatamente después de instalar el nodo Manager, o bien puede añadir un nodo de escáner más adelante. Por ejemplo, si se da cuenta de que la cantidad de datos de uno de sus orígenes de datos se ha duplicado o triplicado en tamaño después de 6 meses, puede añadir un nuevo nodo de escáner para ayudar con el análisis de datos.</block>
-  <block id="f114439eeb05a82baaead56da0d70a54" category="paragraph">Existen dos formas de añadir nodos de escáner adicionales:</block>
-  <block id="5df28ba528c6160d29730e9d7fc50471" category="list-text">agregue un nodo para ayudarle a analizar todos los orígenes de datos</block>
-  <block id="610e28574a4dbf2d34e497e3ed7bd822" category="list-text">agregar un nodo para ayudarle a escanear un origen de datos específico o un grupo específico de orígenes de datos (normalmente basado en la ubicación)</block>
-  <block id="0047b4042b118692c1d7c579abdeaefe" category="paragraph">De forma predeterminada, los nuevos nodos de escáner que agregue se agregarán al pool general de recursos de digitalización. Esto se denomina "grupo de escáner predeterminado". En la siguiente imagen, hay 1 nodo de administrador y 3 nodos de escáner en el grupo "predeterminado" que están analizando todos los datos de los 6 orígenes de datos.</block>
-  <block id="69aeb258470eedf7afb44d66a993f4d8" category="paragraph">Si tiene ciertos orígenes de datos que desea analizar mediante nodos de escáner que están físicamente más cercanos a los orígenes de datos, puede definir un nodo de escáner o un grupo de nodos de escáner, para analizar un origen de datos específico o un grupo de orígenes de datos. En la siguiente imagen, hay 1 nodo de administrador y 3 nodos de escáner.</block>
-  <block id="96990c600d9debe09076ef4bcf06d1eb" category="list-text">El nodo Administrador está en el grupo "predeterminado" y está analizando 1 origen de datos</block>
-  <block id="042304bf8365f5eb21d79ca01b78d44d" category="list-text">El nodo 1 del escáner se encuentra en el grupo "estados Unidos" y está analizando 2 orígenes de datos</block>
-  <block id="fce59aaa378d30cc0381e7eefc22f0ca" category="list-text">Los nodos de escáner 2 y 3 se encuentran en el grupo "europa" y comparten las tareas de escaneo para 3 fuentes de datos</block>
-  <block id="f8655d78a4818956ec9919a65a7f089b" category="list-text">Prepare los sistemas host Linux que actuarán como nodos del escáner</block>
-  <block id="c9680eb28f36717df9004e52c8105d05" category="list-text">Descargue el software Data Sense en estos sistemas Linux</block>
-  <block id="c65de7b0c08505f3e13c93ead522765f" category="list-text">Ejecute un comando en el nodo Administrador para identificar los nodos del escáner</block>
-  <block id="b2fe6e75aa67d3e83769c7fce0162b2e" category="list-text">Siga los pasos para implementar el software en los nodos del escáner (y para definir opcionalmente un "grupo de escáner" para determinados nodos del escáner)</block>
-  <block id="37151576493b3aebc74476f19e767278" category="list-text">Si ha definido un grupo de escáner, en el nodo Administrador:</block>
-  <block id="5a838e350187be3ad79ae1b63fe95a2b" category="list-text">Abra el archivo "working_Environment_to_scanner_group_config.yml" y defina los entornos de trabajo que explorarán cada grupo de escáneres</block>
-  <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">Ejecute la siguiente secuencia de comandos para registrar esta información de asignación en todos los nodos del escáner:<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
   <block id="95476067517016e17d42573817f40913" category="list-text">Asegúrese de tener privilegios de usuario raíz en los sistemas Linux.</block>
-  <block id="b24a973a5aa3fefd5ec9cba471feff39" category="list-text">Debe tener las direcciones IP de los hosts del nodo Scanner que desea añadir.</block>
-  <block id="3fe624f4914417740fe3cf68a4327554" category="list-text">Debe tener la dirección IP o el nombre de host del sistema Connector, su ID de cuenta de NetApp, su identificador de cliente conector y el token de acceso de usuario. Si tiene previsto utilizar grupos de escáner, deberá conocer el identificador de entorno de trabajo de cada origen de datos de su cuenta. Consulte los pasos *_Prerrequisito_* siguientes para obtener esta información.</block>
   <block id="03004a9b42bb90f829b688b381ea2e84" category="list-text">Deben habilitarse los siguientes puertos y protocolos en todos los hosts:</block>
   <block id="9985b4390c40137573e6da05caf85874" category="cell">Protocolos</block>
   <block id="269d837afada308dd4aeab28ca2d57e4" category="cell">2377</block>
@@ -610,35 +586,9 @@
   <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
   <block id="edcc6720ea7c450bc260e04210895e7c" category="cell">Servidor NFS para compartir archivos entre los hosts (necesario de cada nodo de escáner al nodo de administración)</block>
   <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
-  <block id="a27db93614949e38a138b99356391903" category="paragraph-title">Requisitos previos</block>
-  <block id="e498e68245d2d68d5d4b94b2fd3a608f" category="paragraph">Siga estos pasos para obtener el identificador de cuenta de NetApp, el identificador de cliente del conector, el nombre de servidor del conector y el token de acceso de usuario necesarios para añadir nodos de escáner.</block>
-  <block id="eabdc901feba22c87ee7a01af9e34801" category="list-text">En la barra de menús de BlueXP, haga clic en *cuenta &gt; Administrar cuentas*.</block>
-  <block id="f5ffeabde3d0f311232b751083215871" category="inline-image-macro">Una captura de pantalla de los detalles de la cuenta BlueXP.</block>
-  <block id="fa64916819288af5c8c616d80ff8c824" category="paragraph"><block ref="fa64916819288af5c8c616d80ff8c824" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="146d19c418f2c6c81536f28aa8c7bf6c" category="list-text">Copie el _ID de cuenta_.</block>
-  <block id="854bcb8a525626fd08f8d87ffe0c041a" category="list-text">En la barra de menús de BlueXP, haga clic en *Ayuda &gt; Soporte &gt; conector BlueXP*.</block>
-  <block id="91b88d5bc6686e901520c8c6a109242f" category="inline-image-macro">Una captura de pantalla de los ajustes de configuración de BlueXP Connector.</block>
-  <block id="1b2f697aae0e3b9b314fa04d847f3c19" category="paragraph"><block ref="1b2f697aae0e3b9b314fa04d847f3c19" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c65db7be59edaf2b09cc38b7c56763c6" category="list-text">Copie el conector _Client ID_ y el _Server Name_.</block>
-  <block id="b082b3834881d0e39e85d933337fa35f" category="inline-link">Centro de desarrollo de documentación de API</block>
-  <block id="e3aca1bee4b16554fd364b73482af4f3" category="list-text">Vaya a la<block ref="100b541e6046352c2cfaf3c9e6ddaf4d" category="inline-link-rx"></block> Y haga clic en *aprender a autenticar*.</block>
-  <block id="7ef314f37951a4ffae65aed3439a8da1" category="inline-image-macro">Captura de pantalla de la página Documentación de la API, con un enlace a las instrucciones de autenticación.</block>
-  <block id="e7897b39cbb592afc0430305aca32cc1" category="paragraph"><block ref="e7897b39cbb592afc0430305aca32cc1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1480262c4a9656977a70cff8c21b5dc0" category="paragraph"><block ref="0d45fd4edeb386e475963435f8cc230a" prefix="" category="inline-code"></block></block>
-  <block id="5d0fd32ac4fe744d7966c459776a6b4c" category="list-text">_Cm_host_ = dirección IP o nombre de host del sistema conector</block>
   <block id="33b07d0ffb66d0a6cd8a0162e20adca4" category="list-text">_USER_token_ = token de acceso de usuario JWT</block>
   <block id="611c763bf4c9dbb7098d6afa814b754f" category="list-text">En el host *cada nodo del escáner*:</block>
-  <block id="67fe0972cc96651c7684b8e71ee21edd" category="list-text">Copie el archivo de instalación de Data Sense (*DATASENSE-INSTALLER-&lt;version&gt;.tar.gz*) en el equipo host (usando<block ref="8a444a43bdf534c0c6338bb7809659b3" prefix=" " category="inline-code"></block> o algún otro método).</block>
   <block id="d3d41a6c99806d8a969b69a369935644" category="list-text">Descomprima el archivo del instalador.</block>
-  <block id="b0c80b9aebe2393782fd3bb0680a791b" category="list-text">Pegue y ejecute el comando que copió en el paso 2.</block>
-  <block id="4ab1272ad311bec96f677d25b0901105" category="list-text">Si desea agregar un nodo de escáner a un "grupo de escáner", agregue el parámetro *-r &lt;scanner_group_name&gt;* al comando. De lo contrario, el nodo del escáner se agrega al grupo "predeterminado".</block>
-  <block id="8dd42ed78b27180f93de7913ecab156f" category="paragraph">Cuando la instalación termina en todos los nodos del escáner y se han Unido al nodo del administrador, el script "add_scanner_node.sh" también finaliza. La instalación puede tardar entre 10 y 20 minutos.</block>
-  <block id="ced90f42fe9747f4578603471ea454a3" category="list-text">Si ha agregado algún nodo de escáner a un grupo de escáner, vuelva al nodo Administrador y realice las dos tareas siguientes:</block>
-  <block id="f76b6e3dc68f5a15976b3f64aae23646" category="paragraph">El grupo "predeterminado" analiza cualquier entorno de trabajo que no se agregue a la lista; debe tener al menos un nodo de administrador o escáner en el grupo "predeterminado".</block>
-  <block id="b77072323352dd1724df6d20002eb9f2" category="list-text">Ejecute la siguiente secuencia de comandos para registrar esta información de asignación en todos los nodos del escáner:<block ref="f484d7848213083a72fafef02f452b57" prefix=" " category="inline-code"></block></block>
-  <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">En la página Configuración puede seleccionar los orígenes de datos que desea analizar, si aún no lo ha hecho. Si ha creado grupos de escáner, los nodos de escáner del grupo correspondiente escanean cada origen de datos.</block>
-  <block id="00c5c673cfa296bce54ec77743dbf5a5" category="paragraph">Puede ver el nombre del grupo de escáneres de cada entorno de trabajo en la página Configuración.</block>
-  <block id="1f3259fd3977a2467ab298df6a6d44d1" category="paragraph">También puede ver la lista de todos los grupos de escáneres junto con la dirección IP y el estado de cada nodo de escáner del grupo en la parte inferior de la página Configuración.</block>
   <block id="4befe3f377758022758aadd1b583f964" category="list-text">Debe tener las direcciones IP de los hosts de nodos de escáner que desee utilizar.</block>
   <block id="26285ebf37a162fef382f275814886c9" category="inline-xref">Instalación de un solo host</block>
   <block id="184b6c7c3567a8ecd4dd8971fff94bfa" category="paragraph">Cuando la instalación finalice en todos los nodos de escáner y se han Unido al nodo de gestión, también se completa la instalación del nodo de gestión.</block>
@@ -1740,7 +1690,6 @@
   <block id="ce99bf86c57675420203e054ffc86a6d" category="list-text">Antes de que se complete la instalación del nodo de gestión, se mostrará un cuadro de diálogo con el comando de instalación necesario para los nodos del escáner. Copie el comando (por ejemplo:<block ref="2478484d96d8c17b7752fd15d3b26f12" prefix=" " category="inline-code"></block>) y guárdelo en un archivo de texto.</block>
   <block id="19c8d978817f5ad2c7d566851ddf6e4e" category="paragraph"><block ref="19c8d978817f5ad2c7d566851ddf6e4e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bda678b1fb683a403f093f2555da8faf" category="list-text">Aparece el cuadro de diálogo _Deploy Data Sense on local_. Copie el comando proporcionado (por ejemplo:<block ref="a402a6c8a10b4c24d7596599c6dfb7db" prefix=" " category="inline-code"></block>) y péguela en un archivo de texto para que pueda usarlo más tarde. A continuación, haga clic en *Cerrar* para descartar el cuadro de diálogo.</block>
-  <block id="3aa548170d376264933f54bb0d2c3ad6" category="list-text">Antes de que finalice la secuencia de comandos add_scanner_node, aparecerá un cuadro de diálogo con el comando de instalación necesario para los nodos del escáner. Copie el comando (por ejemplo:<block ref="7c95eda18e13e25941273928f0d149ba" prefix=" " category="inline-code"></block>) y guárdelo en un archivo de texto.</block>
   <block id="20aa1bbdb0fac9cadb849e6ab2887670" category="sidebar">Póngalo en marcha en la nube con BlueXP</block>
   <block id="7c454725651fa93e75c3603da01e3ae2" category="sidebar">Instale en un host Linux con acceso a Internet</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
@@ -1843,8 +1792,6 @@
   <block id="312ffbf4bf2c65989ebbd000c725c369" category="list-text">Si alguno de sus orígenes de datos implementa una organización en niveles de datos, los datos antiguos que ya residen en el almacenamiento de objetos se pueden identificar en la categoría _datos obsoletos_.</block>
   <block id="66d08fa5ddeba835b1d01655713b9120" category="admonition">Este panel admite archivos en recursos compartidos de CIFS, OneDrive y orígenes de datos de SharePoint. Actualmente no se admite el almacenamiento de bases de datos, Google Drive, Amazon S3 y objetos genéricos.</block>
   <block id="fd48a7c8c60d4f4ca62e7f192f27abea" category="list-text">Si alguno de sus orígenes de datos implementa una organización en niveles de datos, los datos antiguos que ya residen en el almacenamiento de objetos se pueden identificar en el gráfico _Age of Data_.</block>
-  <block id="81ca64cf8cdaf987cf8d5efa54a4b6fd" category="list-text">Siga las instrucciones de autenticación, usando el nombre de usuario y la contraseña del administrador de la cuenta en los parámetros «nombre de usuario» y «contraseña».</block>
-  <block id="1edd72049e168646cdf62fc97f08f63c" category="list-text">A continuación, copie el token _ACCESS_ de la respuesta.</block>
   <block id="c4758ec8f4163fa99b08557425a59f56" category="summary">Completa unos pasos para empezar a analizar recursos compartidos de archivos NFS o CIFS que no sean de NetApp directamente con la clasificación de BlueXP. Estos recursos compartidos de archivos pueden residir en las instalaciones o en el cloud.</block>
   <block id="a09cd5116a782af05884c8d339915769" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Implementa la instancia de clasificación de BlueXP</block>
   <block id="0ce4d42838344488f607ff306088fae9" category="inline-link-macro">Implementa la clasificación de BlueXP</block>
@@ -2252,7 +2199,6 @@
   <block id="c1e0b6a06406fd162de0635cd20ac657" category="paragraph">Los archivos de registro de auditoría de gestión están ubicados en la máquina de clasificación de BlueXP en lo siguiente:<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
   <block id="2970783922bde0b77210901329267de0" category="paragraph">Cuando se pone en marcha la clasificación de BlueXP en la nube, necesitas SSH para la instancia de clasificación de BlueXP. Debe SSH al sistema introduciendo el usuario y la contraseña, o usando la clave SSH que ha proporcionado durante la instalación de BlueXP Connector. El comando SSH es:</block>
   <block id="08aececdd8070f547d2aa65ea8c35446" category="summary">Descubre las novedades en la clasificación de BlueXP.</block>
-  <block id="406ca16c022fe122c7920a69664a84f2" category="doc">Novedades de la clasificación de BlueXP</block>
   <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">Capacidad de poner en marcha la clasificación de BlueXP en instancias más pequeñas en el cloud</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">El script independiente ya está disponible para calificar tu sistema Linux antes de instalar la clasificación de BlueXP</block>
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">Descubre cómo comprobar si tu host Linux está listo para instalar la clasificación de BlueXP</block>
@@ -2399,22 +2345,6 @@
   <block id="b38b55296c40fa4f717f81b6b88fa568" category="paragraph"><block ref="b38b55296c40fa4f717f81b6b88fa568" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5cfb15b32cc8e79b78f33c5c950f2e2e" category="list-text">Introduzca los detalles del proxy según se le solicite. Si tu BlueXP Connector ya utiliza un proxy, no es necesario volver a introducir esta información aquí, ya que la clasificación de BlueXP usará automáticamente el proxy que utilizará The Connector.</block>
   <block id="3675f8bc3dcc7378b49b58f9ceb1188f" category="list-text">_Ca_cert_dir_ = Ruta en el sistema Linux de clasificación BlueXP que contiene paquetes de certificados TLS CA adicionales. Sólo es necesario si el proxy está realizando intercepción TLS.</block>
-  <block id="a58267ce752204348883eaa09d46e8e1" category="inline-image-macro">Un diagrama de cómo los análisis de clasificación de BlueXP analizan los orígenes de datos en el grupo de análisis predeterminado.</block>
-  <block id="8b726f585c8d35d4b9fa6c080b6cf5c3" category="paragraph"><block ref="8b726f585c8d35d4b9fa6c080b6cf5c3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b2e82a12fe141edcc3076d819a99c43d" category="inline-image-macro">Un diagrama de cómo los escáneres de clasificación de BlueXP analizan las fuentes de datos cuando se asignan a diferentes grupos de escáneres.</block>
-  <block id="165f08a0e944c5264c6cfcb58cf6d842" category="paragraph"><block ref="165f08a0e944c5264c6cfcb58cf6d842" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2ae436bff38e681584b2d98366a60d53" category="paragraph">Los grupos de análisis de clasificación de BlueXP pueden definirse como áreas geográficas independientes en las que se almacenan los datos. Puedes poner en marcha varios nodos de escáner de clasificación de BlueXP en todo el mundo y elegir un grupo de escáner para cada nodo. De esta forma, cada nodo de escáner analizará los datos más cercanos. Cuanto más cerca esté el nodo del escáner de los datos, mejor será porque reduce la latencia de red tanto como sea posible mientras escanea datos.</block>
-  <block id="b07c98462d1539c2be49d642a4205223" category="paragraph">Puedes elegir qué grupos de escáneres añadir a la clasificación de BlueXP y puedes elegir sus nombres. La clasificación de BlueXP no obliga a que se ponga en marcha en Europa un nodo asignado a un grupo de escáner llamado «europa».</block>
-  <block id="e813ef1a90bc3c33aa7351454a0f3d1d" category="paragraph">Seguirás estos pasos para instalar nodos adicionales de escáner de clasificación de BlueXP:</block>
-  <block id="7516f4f6c5fbdf54b5b78be3de1b7d8a" category="list-text">Debe tener la dirección IP del sistema host del nodo del gestor de clasificación de BlueXP</block>
-  <block id="af7b7b7195a95f1ff1362b8290d4942b" category="list-text">Si está utilizando<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> En tus máquinas de clasificación de BlueXP, te recomendamos habilitarla antes de instalar la clasificación de BlueXP. Ejecute los siguientes comandos para configurar<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> Para que sea compatible con la clasificación de BlueXP:</block>
-  <block id="65377fdf29d2c6ab4f8df0a9d2506c57" category="list-text">Si tienes pensado usar grupos de escáner, en la pestaña Configuración de clasificación de BlueXP, copia el ID de entorno de trabajo de cada entorno de trabajo que quieras añadir a un grupo de escáner.</block>
-  <block id="7b919e251245304b6a04299b541b6ef0" category="inline-image-macro">Una captura de pantalla del ID de entorno de trabajo de la página de configuración de clasificación de BlueXP.</block>
-  <block id="73aa6f158c137c1058a103cdeac0a40e" category="paragraph"><block ref="73aa6f158c137c1058a103cdeac0a40e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b63ac9fcb193ee06e327c293934aaba4" category="list-text">En el nodo del gestor de clasificación de BlueXP, ejecute el script «add_scanner_node.sh». Por ejemplo, este comando añade 2 nodos de escáner:</block>
-  <block id="9d303bf713b934df67ac3fc8db55e1df" category="list-text">_ds_manager_ip_ = Dirección IP privada del sistema de nodos del Gestor de clasificación de BlueXP</block>
-  <block id="63cd14dda48c5ae594fd32586e8adbe6" category="list-text">_Node_private_ip_ = direcciones IP de los sistemas de nodos del escáner de clasificación de BlueXP (varias IP de los nodos del escáner están separadas con comas)</block>
-  <block id="66860472392a03bca0e5ca8e62545a3d" category="paragraph">La clasificación de BlueXP se configura con nodos Manager y Scanner para analizar todas tus fuentes de datos.</block>
   <block id="59fa51186008f79eadcd65359371b963" category="inline-link-macro">Aviso para la clasificación de BlueXP</block>
   <block id="2e704f1b5abc96acf51b532e4a02d03c" category="list-text"><block ref="2e704f1b5abc96acf51b532e4a02d03c" category="inline-link-macro-rx"></block></block>
   <block id="1fd880d67ad7d5a9e1ce56b61569fe92" category="summary">Puede desinstalar el software de clasificación de BlueXP para solucionar problemas o quitar de forma permanente el software del host. Al eliminar la instancia también se eliminan los discos asociados donde residen los datos indexados; toda la información que ha escaneado la clasificación de BlueXP se eliminará de forma permanente.</block>
@@ -2492,7 +2422,6 @@
   <block id="b629edc182d9ce4a079d9f954ad3f9b7" category="cell">Proporciona paquetes de requisitos previos para la instalación de Docker.</block>
   <block id="3c2ecff14c7a136216f1928a3a8052bf" category="list-text">Pegue el comando que copió del paso 7:<block ref="50a00801fc41bbffdcb652318eb14c43" prefix=" " category="inline-code"></block></block>
   <block id="8a7af24665c107d42e27bf9f85872742" category="cell">También puede crear el comando completo por adelantado, proporcionando los parámetros de host y proxy necesarios:<block ref="3b4bbf213dadbeb10421530a3d8a245b" prefix=" " category="inline-code"></block></block>
-  <block id="79dad5af8e7ba04bd45d58a3d10d4209" category="list-text">_Client_id_ = Identificador de cliente de conector (agregue el sufijo «Clientes» al ID de cliente que copió en los pasos de requisito previo)</block>
   <block id="c1560b054493db03cae97adece148673" category="list-text"><block ref="c1560b054493db03cae97adece148673" category="inline-link-rx"></block></block>
   <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
   <block id="9d7d457b861dcdf8b4b7f28f3a120c36" category="list-text"><block ref="9d7d457b861dcdf8b4b7f28f3a120c36" category="inline-link-rx"></block></block>
@@ -2610,8 +2539,6 @@
   <block id="5b1dc8e5b7717b205bb516bc41f51da7" category="paragraph">Estas versiones no son compatibles con nuevas implementaciones porque Red Hat ya no es compatible con Docker, lo cual es un requisito previo. Si ya tienes un equipo de clasificación de BlueXP en RHEL 8,6 o 8,7, NetApp seguirá admitiendo tu configuración.</block>
   <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">La clasificación de BlueXP se puede configurar como un recopilador de FPolicy para recibir eventos de FPolicy de sistemas ONTAP</block>
   <block id="e1161f065b10936afc930fd3d9d0c76f" category="section-title">Las licencias BYOL de Data Sense son ahora compatibles en sitios oscuros</block>
-  <block id="1ab65443ec0af7e5e1aee32a3cf59dcc" category="inline-link">Vea cómo obtener y cargar su licencia BYOL de Data Sense</block>
-  <block id="645f5675426bc396b45b524635e93bc7" category="paragraph">Ahora puedes cargar la licencia BYOL de Data Sense en la cartera digital de BlueXP en un sitio oscuro para que se te notifique cuando tu licencia esté baja.<block ref="bd823f9b4dce457c0ea2a8dcca6e749f" category="inline-link-rx"></block>.</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">El registro de ambos tipos de números de serie permite funcionalidades, como abrir tickets de soporte y la generación automática de casos. Para completar el registro, añade cuentas del sitio de soporte de NetApp (NSS) a BlueXP, como se describe a continuación.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Seleccione *Agregar credenciales NSS* y siga el aviso de autenticación del sitio de soporte de NetApp (NSS).</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Una captura de pantalla que muestra un número de serie de cuenta y una casilla de verificación verde y el texto registrado para soporte.</block>
@@ -2798,7 +2725,6 @@
   <block id="125161c62eedd013601db45d9716edf6" category="paragraph">Tenga en cuenta que la estructura de subdirectorios del archivo de origen se vuelve a crear en el recurso compartido de destino cuando se mueve el archivo, de modo que es más fácil entender desde dónde se movió el archivo. Si existe un archivo con el mismo nombre en la ubicación de destino, el archivo no se moverá.</block>
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">Esto permite ver las acciones que se completaron correctamente, las que están en curso en ese momento y las que han fallado para poder diagnosticar y corregir cualquier problema. Tenga en cuenta que las operaciones cortas que se completan rápidamente, como mover un único archivo, no aparecen en el panel Estado de acciones.</block>
   <block id="194351f6f6e0cb2f129f2a15d7f6df07" category="list-text">Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine o Podman y Python 3).</block>
-  <block id="70982664d9f01c2eb3895d455947c83d" category="list-text">Compruebe que los sistemas tienen instalados los dos paquetes de software de requisitos previos (Docker Engine o Podman y Python 3).</block>
   <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">Es necesario registrarse en soporte para recibir soporte técnico específico para BlueXP y sus servicios y soluciones de almacenamiento. También es necesario registrar soporte para habilitar flujos de trabajo clave para los sistemas Cloud Volumes ONTAP.</block>
   <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">Al registrarse para recibir soporte, no se habilita el soporte de NetApp para un servicio de archivos de proveedor de cloud. Para obtener soporte técnico relacionado con un servicio de archivos del proveedor de cloud, su infraestructura o cualquier solución que utilice el servicio, consulte «Obtener ayuda» en la documentación de BlueXP para ese producto.</block>
   <block id="71015deb6ac3269a57685acb827c23be" category="list-text">Solo se mueven los archivos de 50 MB o menos.</block>
@@ -3076,14 +3002,12 @@
   <block id="f943db85a7c2edd799890ddb18f29cab" category="doc">Instala la clasificación BlueXP en un host Linux sin acceso a Internet</block>
   <block id="e920147793c6514a998387c74226605b" category="paragraph">Completa unos pocos pasos para instalar la clasificación de BlueXP en un host Linux en un sitio local que no tenga acceso a Internet, también conocido como _modo privado_. Este tipo de instalación es perfecta para sus sitios seguros.</block>
   <block id="8e75bb9e135d127903c8df1b4d72574d" category="list-text">Los siguientes sistemas operativos requieren el uso del motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior:</block>
-  <block id="bf9330c0401cb1794286325e86e14bc1" category="paragraph">La clasificación de BlueXP es compatible con las versiones de NFS 3.x y CIFS 1.x, 2,0, 2,1 y 3,0.</block>
   <block id="8da041e8fe3c0d961b0ec560416bc9a4" category="section-title">¿La clasificación de BlueXP requiere acceso a las credenciales?</block>
   <block id="e54c52f3a3c545fc2e2f82026ac5945f" category="paragraph">La propia clasificación de BlueXP no recupera las credenciales de almacenamiento. En su lugar, se almacenan en el conector BlueXP.</block>
   <block id="7add4f4508f6a065e3f94f770f4bac2d" category="paragraph">La clasificación de BlueXP usa credenciales del plano de datos, por ejemplo, credenciales de CIFS para montar los recursos compartidos antes del análisis.</block>
   <block id="6ff26ca67814a870d6ad78d3687ba1a9" category="section-title">¿La comunicación entre el servicio y el conector utiliza HTTP?</block>
   <block id="421bab1ab5399669513b071e1e856dca" category="paragraph">Sí, la clasificación de BlueXP se comunica con el conector de BlueXP mediante HTTP.</block>
   <block id="5f0111c9b1c6f9cd6124c008eaaa60d2" category="paragraph">Antes de instalar manualmente la clasificación de BlueXP en un host Linux, puede ejecutar un script en el host para comprobar que estén establecidos todos los requisitos previos para instalar la clasificación de BlueXP. Puede ejecutar este script en un host Linux de su red o en un host Linux de la nube. El host se puede conectar a Internet, o el host puede residir en un sitio que no tiene acceso a Internet (un _sitio oscuro_).</block>
-  <block id="3b78d440a5ebfde1b671393949a4e52a" category="list-text">Abra el archivo «/opt/netapp/config/custom_configuration/working_environment_to_scanner_group_config.yml» e introduzca la asignación para la que los grupos de escáneres explorarán entornos de trabajo específicos. Deberá tener el _ID de entorno de trabajo_ para cada origen de datos. Por ejemplo, las siguientes entradas agregan 2 entornos de trabajo al grupo de escáneres "europa" y 2 al grupo de escáneres "estados Unidos":</block>
   <block id="0acb6de298fd251ec0fab09f46d78a47" category="summary">Planifique qué implementación de la clasificación de BlueXP satisface sus necesidades.</block>
   <block id="7ac7bc027539aa6045c98c020acd30a2" category="doc">¿Qué puesta en marcha de clasificación de BlueXP deberías utilizar?</block>
   <block id="6f3a66c40c100d6b6795bf6321152c15" category="paragraph">Puedes poner en marcha la clasificación de BlueXP de distintas formas. Aprende qué método satisface tus necesidades.</block>
@@ -3094,7 +3018,6 @@
   <block id="7c5fdd74ce4770d435a4270b4817294a" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>, También conocido como _modo privado._ Este tipo de instalación, que utiliza un script de instalación, es bueno para sus sitios seguros.</block>
   <block id="a59f7e9514f364f5b3574b8ad02f202d" category="paragraph">Tanto la instalación en un host Linux con acceso a Internet como la instalación en las instalaciones en un host Linux sin acceso a Internet utilizan un script de instalación. El script comienza comprobando si el sistema y el entorno cumplen los requisitos previos. Si se cumplen los requisitos previos, se inicia la instalación. Si desea verificar los requisitos previos independientemente de la ejecución de la instalación de la clasificación de BlueXP, puede descargar un paquete de software independiente que solo prueba los requisitos previos.</block>
   <block id="1e4c9e5b4eb9656593e357ac3f61cdc1" category="paragraph">Consulte <block ref="a838f62b35f046b790a8a32eff3e63b6" category="inline-link-macro-rx"></block>.</block>
-  <block id="b05347ded7555dfe4b18afd3dfa678f3" category="paragraph">Descubre las novedades de la clasificación de BlueXP (Cloud Data Sense).</block>
   <block id="1e3ff9766d4708d7de4568322138b5f8" category="section-title">1 de abril de 2024 (Versión 1,30)</block>
   <block id="1f2986b833ebc6f322deb045aeee0ad8" category="section-title">Compatibilidad añadida para la clasificación de BlueXP de RHEL v8,8 y v9,3</block>
   <block id="2c435ff16ae089dc2d457e7776588268" category="paragraph">Los siguientes sistemas operativos deben utilizar el motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior: Red Hat Enterprise Linux versiones 8,8, 9,0, 9,1, 9,2 y 9,3.</block>
@@ -3151,10 +3074,6 @@
   <block id="038b63b10a2be20857cf29359bdb6773" category="cell">Utilizar el registro de auditoría de acceso a archivos</block>
   <block id="83444d9d636df8a4ce2375f52930d565" category="cell">Active el acceso a archivos desde la página Configuración</block>
   <block id="1210bbe7e275bcc8150b9ac54d65c761" category="cell">Use ciertas políticas predefinidas</block>
-  <block id="236c6909a2aaaf6c54865574731a2519" category="summary">Complete unos pocos pasos para agregar nodos de escáner en un host Linux en la nube, que tiene acceso a Internet.</block>
-  <block id="cbbd546102a0bc266daf8b091654a2b4" category="paragraph">Puede agregar nodos de escáner a una implementación existente en un host Linux con acceso a Internet.</block>
-  <block id="c9e3afc5b6aaffe6ac686b4597beb1c2" category="list-text">Compruebe que todos los sistemas Linux para nodos de escáner cumplen los requisitos del host.</block>
-  <block id="b265c78ad0089ab8d45e4e16de6c955f" category="list-text">Compruebe que el entorno cumple con los permisos y la conectividad necesarios.</block>
   <block id="e32bdff502d5f24b8e2b7d5291d9fe6a" category="list-text">Cuando escanea datos en Cloud Volumes ONTAP en buckets de AWS o Amazon FSx para ONTAP, usa un conector en AWS.</block>
   <block id="d23cdfe3be69f69baed369d543f36aa9" category="paragraph">El área _Classification_ proporciona una lista de los más identificados <block ref="d3b5de2fe3785a28f0b4099f30abefe6" category="inline-link-macro-rx"></block> y.. <block ref="6d5873eba480eee9411c9a14fd12e5d9" category="inline-link-macro-rx"></block> en los datos escaneados.</block>
   <block id="f754acc189a7236fe2fb4657457fcb2c" category="paragraph">*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores. La versión de diciembre de 2023 (v1.26.6) eliminó la opción de integrar datos mediante etiquetas de protección de información de Azure (AIP).</block>
@@ -3162,7 +3081,6 @@
   <block id="52c31809bdb836acfc2de3ee032c0faa" category="paragraph">Para configuraciones muy grandes en las que analizará petabytes de datos, en las versiones 1,30 y anteriores, puede incluir varios hosts para proporcionar potencia de procesamiento adicional. Cuando se utilizan varios sistemas host, el sistema principal se denomina _Manager node_ y los sistemas adicionales que proporcionan potencia de procesamiento adicional se denominan _Scanner Nodes_.</block>
   <block id="166af9c4abcdeaeaa01f2df7fcd961a7" category="inline-link-macro">Instala la clasificación de BlueXP en varios hosts sin acceso a Internet</block>
   <block id="0dcde9bea70f4948a25486523fde4e97" category="paragraph">También puede hacerlo <block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block> para ubicaciones completamente seguras.</block>
-  <block id="85aa6acd6442a61f72e7d0ea942bae6f" category="admonition">Para las versiones anteriores 1,30 y anteriores, para agregar nodos de escáner, consulte <block ref="6201a969fc4638d8cfca1139fbc49a51" category="inline-link-macro-rx"></block>.</block>
   <block id="7cc60b2d044c80070664df0b3bdf1a77" category="paragraph">Es necesario un conector BlueXP para poder instalar y utilizar la clasificación de BlueXP. En la mayoría de los casos, es probable que tengas configurado un Connector antes de intentar activar la clasificación de BlueXP debido a que en la mayoría de los casos<block ref="4b65067251af1a04ab5f187e9a47f47a" category="inline-link-rx"></block>, pero hay casos en los que necesitará configurar uno ahora.</block>
   <block id="d91ed5bff9bd13eee5c43964bbe67be4" category="list-text">Cuando escanea datos en Cloud Volumes ONTAP en AWS o Amazon FSx para ONTAP, usa un conector en AWS.</block>
   <block id="428a85a15f039350823864cdd9f6711b" category="paragraph">En configuraciones de gran tamaño en las que va a escanear petabytes de datos, puede incluir varios hosts para proporcionar una capacidad de procesamiento adicional. Más información link:task-deploy-multi-host-install-dark-site.html&gt; acerca de la instalación en varios hosts para configuraciones grandes.</block>
@@ -3317,8 +3235,6 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="f146ec0537a829117da7d3ce3e588d3b" category="admonition">El análisis de datos procedentes de recursos compartidos de archivos que no son de NetApp no se admite en la versión central de la clasificación de BlueXP.</block>
   <block id="d809bb142c0a96aef201dfc891e977e3" category="list-text">Los recursos compartidos se pueden alojar en cualquier lugar, incluso en el cloud o en las instalaciones. Los recursos compartidos de CIFS de sistemas de almacenamiento antiguos de NetApp 7-Mode se pueden analizar como recursos compartidos de archivos.</block>
   <block id="8fedda70275ec7ba2bbf1cf099d2a559" category="paragraph"><block ref="8fedda70275ec7ba2bbf1cf099d2a559" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e1f976f12c87e7d413491bc2ea717ca3" category="inline-image-macro">Una captura de pantalla que muestra todos los grupos de escáner junto con la dirección IP de cada nodo de escáner del grupo.</block>
-  <block id="254be716f61cb4173917688092391cd9" category="paragraph"><block ref="254be716f61cb4173917688092391cd9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5d287499aa4821b39ee4c1fbee3fb8bf" category="paragraph">La clasificación de BlueXP proporciona información sobre tus datos. Estos conocimientos se pueden extraer y utilizar para las necesidades de su organización.</block>
   <block id="7d3c06dd12cabb9dbaf2d41b93d148c7" category="section-title">¿Las snapshots que residen en volúmenes ONTAP analizados?</block>
   <block id="d041b324ecbc035762393b90f89e331b" category="paragraph">No Los datos privados que se envíen entre su explorador y la instancia de clasificación de BlueXP se mantienen seguros gracias al cifrado integral con TLS 1,2, lo que significa que tanto NetApp como terceros no pueden leerlos. La clasificación de BlueXP no compartirá datos ni resultados con NetApp a menos que solicites y apruebes el acceso.</block>
@@ -3469,7 +3385,6 @@ Datos de aplicaciones de negocio</block>
   <block id="8c7259d7b7f8962c22537c08f66b5e09" category="section-title">Agregue recursos compartidos de archivos a un grupo</block>
   <block id="0eb30c84638dc32a52a08e70a70b2a55" category="section-title">Eliminar un recurso compartido de archivos de los análisis de cumplimiento</block>
   <block id="7189cf24cfe83953d8a6800deef41472" category="section-title">Descubre el sistema de archivos FSx para ONTAP que quieres analizar</block>
-  <block id="415692946bae6c6ee848f8732518a045" category="paragraph">Consulte <block ref="30e9b0cd02d911bb04c0ac893b6f8372" category="inline-xref-macro-rx"></block> para obtener más información.</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="doc">Escanee datos StorageGRID</block>
   <block id="fec0b5d2f5737f21e60a6e49ddb4e55f" category="paragraph">*NOTA* Usando la clasificación BlueXP  que forma parte del núcleo BlueXP , ahora puede escanear datos StorageGRID.<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block> La información restante aquí es relevante solo para la clasificación BlueXP  versiones antiguas 1,30 y anteriores.</block>
   <block id="c44712318b0c4e33e9d361583871c49c" category="summary">Complete unos pocos pasos para comenzar a escanear datos dentro de StorageGRID directamente con la clasificación BlueXP .</block>
@@ -3487,9 +3402,7 @@ Datos de aplicaciones de negocio</block>
   <block id="81959d6a19d62d0f6e5ccbbd1a01c2f0" category="paragraph">Después de activar la clasificación BlueXP  en StorageGRID, el siguiente paso es configurar los depósitos que desea escanear. La clasificación de BlueXP descubre esos buckets y los muestra en el entorno de trabajo que has creado.</block>
   <block id="ffc704586971ad083fdf8dd3a75b06c9" category="list-text">En la página Configuración, haga clic en *Configuración* en el entorno de trabajo de StorageGRID.</block>
   <block id="2c9810189a9662217559e6c599b47a67" category="cell">8080 (TCP), 443 (TCP) y 80. 9000</block>
-  <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2 de septiembre de 2024 (Versión 1,35)</block>
   <block id="83bceb987dd495cde1a148944580e473" category="paragraph">La clasificación BlueXP  ahora puede escanear datos en StorageGRID.</block>
-  <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">Para obtener más información, consulte <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>.</block>
   <block id="a5ac20c838605b872613985f5c302c61" category="section-title">5 de agosto de 2024 (Versión 1,34)</block>
   <block id="7618b35d0748b4efb66fc940006fadd5" category="paragraph"><block ref="83ed27e05a338173092039c2d8e0ae3b" category="inline-link-macro-rx"></block>.</block>
   <block id="67103c15357d4cb02c120c2f07095363" category="paragraph">En las regiones en las que el tipo de instancia por defecto no está disponible, la clasificación BlueXP  se ejecuta en una <block ref="45910d58f60ef6c6ec6de81dc1fbd5cf" category="inline-link-macro-rx"></block>.</block>
@@ -3542,11 +3455,29 @@ Datos de aplicaciones de negocio</block>
   <block id="c5910ee83de42fbe3194b03bc2ba3298" category="list-text">Red Hat Enterprise Linux versión 8,8, 9,0, 9,1, 9,2, 9,3 y 9,4</block>
   <block id="4f34a80e3e6d8f9cd074e18c890d4c92" category="list-text">En Azure, la clasificación BlueXP  se ejecuta en <block ref="258fa0e906df18ccf945022280cc0721" category="inline-link-macro-rx"></block>un con un disco de 500 GiB. La imagen del sistema operativo es Ubuntu 22,04.</block>
   <block id="8f378974482a16d17205adf9936c789b" category="list-text">En GCP, la clasificación de BlueXP  se ejecuta en un <block ref="f47e4641d38801bee7cf28563a438093" category="inline-link-macro-rx"></block>disco persistente estándar de 500 GiB. La imagen del sistema operativo es Ubuntu 22,04.</block>
-  <block id="e75804de09e19a35ad3cd360d45cd0fb" category="section-title">10 de octubre de 2024 (Versión 1,36)</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">Esta versión de clasificación de BlueXP  incluye las siguientes actualizaciones.</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">Compatibilidad con RHEL 9,4</block>
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">Esta versión es compatible con Red Hat Enterprise Linux v9,4 además de las versiones compatibles anteriormente. Esto se aplica a cualquier instalación manual en las instalaciones de la clasificación BlueXP , incluidas las puestas en marcha de sitios oscuros.</block>
   <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">Los siguientes sistemas operativos requieren el uso del motor de contenedores Podman y requieren la versión de clasificación BlueXP  1,30 o superior: Red Hat Enterprise Linux versión 8,8, 9,0, 9,1, 9,2, 9,3 y 9,4.</block>
   <block id="7062dd46798946172bc9078744756dfc" category="section-title">Rendimiento de escaneo mejorado</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">Esta versión mejora el rendimiento de escaneo.</block>
+  <block id="33131c83033941e511576a90476300a6" category="paragraph">La clasificación de BlueXP es compatible con las versiones de NFS 3.x, 4,0 y 4,1, y las versiones de CIFS 1.x, 2,0, 2,1 y 3,0.</block>
+  <block id="5f9318195cc151f5faab62105798a8f9" category="list-text">Active cada volumen DP que desee escanear.</block>
+  <block id="2940154367c6f9a7ec39da3423e3eb0a" category="paragraph">Consulte Habilitar y deshabilitar los análisis de cumplimiento en los volúmenes para obtener más información.</block>
+  <block id="713b2126f7ad5917ea8d35b725b0aacf" category="doc">Novedades en la clasificación BlueXP </block>
+  <block id="8339f3b73dd5a0afa74d7cfbebd1b2c2" category="section-title">4 de noviembre de 2024</block>
+  <block id="c1922490c576eff789b323f98c667589" category="section-title">Versión 1,37</block>
+  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Compatibilidad con RHEL 8,10</block>
+  <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">Esta versión es compatible con Red Hat Enterprise Linux v8,10 además de las versiones compatibles anteriormente. Esto se aplica a cualquier instalación manual en las instalaciones de la clasificación BlueXP , incluidas las puestas en marcha de sitios oscuros.</block>
+  <block id="d4f80552d7e61deedef657200662a6be" category="paragraph">Los siguientes sistemas operativos requieren el uso del motor de contenedores Podman y requieren la versión de clasificación BlueXP  1,30 o superior: Red Hat Enterprise Linux versión 8,8, 8,10, 9,0, 9,1, 9,2, 9,3 y 9,4.</block>
+  <block id="4cc849f381058f76f6b72a1c4279393d" category="inline-link">Clasificación de BlueXP</block>
+  <block id="2b569c1a8e17ba534c2e1f57f9d1bbe9" category="paragraph">Más información sobre<block ref="491ed29a13fdb2b66f8e1bbeefef79a5" category="inline-link-rx"></block>.</block>
+  <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="section-title">Compatibilidad con NFS v4,1</block>
+  <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">Esta versión ofrece compatibilidad con NFS v4,1 además de las versiones compatibles con anterioridad.</block>
+  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 de octubre de 2024</block>
+  <block id="5413a43995a4a97a249b7b24fbf3e785" category="section-title">Versión 1,36</block>
+  <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2 de septiembre de 2024</block>
+  <block id="2808185c0a48de3cd5dcc0d92f453531" category="section-title">Versión 1,35</block>
+  <block id="1aa327f677148af5679dfc598fb8f539" category="paragraph">Para obtener más información, consulte<block ref="3e1b901b9270f6f4c97e16e88c4e3161" category="inline-link-rx"></block> .</block>
+  <block id="164199ecac7ab88714ff0c68b5fb98f0" category="paragraph">Ahora puedes cargar la licencia BYOL de Data Sense en la cartera digital de BlueXP en un sitio oscuro para que se te notifique cuando tu licencia esté baja.</block>
 </blocks>

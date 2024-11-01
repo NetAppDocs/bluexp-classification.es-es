@@ -97,8 +97,7 @@ Seleccione el tipo de análisis que realizará la clasificación de BlueXP en lo
 
 .Pasos
 . En la página _Configuration_, haga clic en el botón *Configuration* de la cuenta de Google Drive.
-+
-image:screenshot_compliance_google_drive_add_sites.png["Captura de pantalla de la página Configuración donde puede seleccionar el botón Configuración."]
+
 
 . Active análisis de sólo asignación o análisis de asignación y clasificación en los archivos de la cuenta de Google Drive.
 +

@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
 summary: Descubre las novedades en la clasificación de BlueXP. 
 ---
-= Novedades de la clasificación de BlueXP
+= Novedades en la clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,49 @@ summary: Descubre las novedades en la clasificación de BlueXP.
 
 
 [role="lead"]
-Descubre las novedades de la clasificación de BlueXP (Cloud Data Sense).
+Descubre las novedades en la clasificación de BlueXP.
 
 
 
-== 10 de octubre de 2024 (Versión 1,36)
+== 4 de noviembre de 2024
+
+
+
+=== Versión 1,37
 
 Esta versión de clasificación de BlueXP  incluye las siguientes actualizaciones.
 
 
 
-=== Compatibilidad con RHEL 9,4
+==== Compatibilidad con RHEL 8,10
+
+Esta versión es compatible con Red Hat Enterprise Linux v8,10 además de las versiones compatibles anteriormente. Esto se aplica a cualquier instalación manual en las instalaciones de la clasificación BlueXP , incluidas las puestas en marcha de sitios oscuros.
+
+Los siguientes sistemas operativos requieren el uso del motor de contenedores Podman y requieren la versión de clasificación BlueXP  1,30 o superior: Red Hat Enterprise Linux versión 8,8, 8,10, 9,0, 9,1, 9,2, 9,3 y 9,4.
+
+Más información sobre https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Clasificación de BlueXP"].
+
+
+
+==== Compatibilidad con NFS v4,1
+
+Esta versión ofrece compatibilidad con NFS v4,1 además de las versiones compatibles con anterioridad.
+
+Más información sobre https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Clasificación de BlueXP"].
+
+
+
+== 10 de octubre de 2024
+
+
+
+=== Versión 1,36
+
+Esta versión de clasificación de BlueXP  incluye las siguientes actualizaciones.
+
+
+
+==== Compatibilidad con RHEL 9,4
 
 Esta versión es compatible con Red Hat Enterprise Linux v9,4 además de las versiones compatibles anteriormente. Esto se aplica a cualquier instalación manual en las instalaciones de la clasificación BlueXP , incluidas las puestas en marcha de sitios oscuros.
 
@@ -34,23 +66,27 @@ Más información acerca de https://docs.netapp.com/us-en/bluexp-classification/
 
 
 
-=== Rendimiento de escaneo mejorado
+==== Rendimiento de escaneo mejorado
 
 Esta versión mejora el rendimiento de escaneo.
 
 
 
-== 2 de septiembre de 2024 (Versión 1,35)
+== 2 de septiembre de 2024
+
+
+
+=== Versión 1,35
 
 Esta versión de clasificación de BlueXP  incluye la siguiente actualización.
 
 
 
-=== Escanee datos StorageGRID
+==== Escanee datos StorageGRID
 
 La clasificación BlueXP  ahora puede escanear datos en StorageGRID.
 
-Para obtener más información, consulte link:task-scanning-storagegrid.html["Escanee datos StorageGRID"].
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/task-scanning-storagegrid.html["Escanee datos StorageGRID"] .
 
 
 
@@ -331,7 +367,7 @@ Es posible habilitar los registros de auditoría de acceso a archivos para que s
 
 === Las licencias BYOL de Data Sense son ahora compatibles en sitios oscuros
 
-Ahora puedes cargar la licencia BYOL de Data Sense en la cartera digital de BlueXP en un sitio oscuro para que se te notifique cuando tu licencia esté baja. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Vea cómo obtener y cargar su licencia BYOL de Data Sense"].
+Ahora puedes cargar la licencia BYOL de Data Sense en la cartera digital de BlueXP en un sitio oscuro para que se te notifique cuando tu licencia esté baja.
 
 
 

@@ -36,9 +36,6 @@ NOTE: Para las versiones heredadas 1,30 y anteriores, si necesita instalar la cl
 También puede hacerlo link:task-deploy-compliance-dark-site.html["Instala la clasificación de BlueXP en un sitio on-premises que no tenga acceso a Internet"] para ubicaciones completamente seguras.
 
 
-NOTE: Para las versiones anteriores 1,30 y anteriores, para agregar nodos de escáner, consulte link:task-deploy-add-scanner-nodes.html["Agregar nodos de escáner a una implementación existente"].
-
-
 
 == Inicio rápido
 

@@ -226,7 +226,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Una captura de pantalla de las 
 
 
 
-. Active cada volumen DP que desee analizar <<Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes,del mismo modo que se habilitaron otros volúmenes>>.
+. Active cada volumen DP que desee escanear.
 
 
 .Resultado

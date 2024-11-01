@@ -107,7 +107,7 @@ image:screenshot_fsx_scanning_activate.png["Una captura de pantalla de la pesta�
 ** Para asignar y clasificar todos los volúmenes, haga clic en *asignar y clasificar todos los volúmenes*.
 ** Para personalizar la exploración de cada volumen, haga clic en *o seleccione el tipo de exploración para cada volumen* y, a continuación, elija los volúmenes que desea asignar y/o clasificar.
 +
-Consulte <<Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes,Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes>> para obtener más información.
+Consulte Habilitar y deshabilitar los análisis de cumplimiento en los volúmenes para obtener más información.
 
 
 
@@ -230,7 +230,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Una captura de pantalla de las 
 
 
 
-. Active cada volumen DP que desee analizar <<Habilitar y deshabilitar los análisis de cumplimiento de normativas en los volúmenes,del mismo modo que se habilitaron otros volúmenes>>.
+. Active cada volumen DP que desee escanear.
 
 
 .Resultado
