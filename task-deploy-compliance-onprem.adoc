@@ -28,12 +28,10 @@ La instalación típica en un host Linux _en la nube_ tiene los siguientes compo
 
 image:diagram_deploy_onprem_cloud_instance.png["Un diagrama de los componentes de red y BlueXP necesarios y las conexiones relacionadas."]
 
-Para configuraciones muy grandes en las que analizará petabytes de datos, en las versiones 1,30 y anteriores, puede incluir varios hosts para proporcionar potencia de procesamiento adicional. Cuando se utilizan varios sistemas host, el sistema principal se denomina _Manager node_ y los sistemas adicionales que proporcionan potencia de procesamiento adicional se denominan _Scanner Nodes_.
-
 
 NOTE: Para las versiones heredadas 1,30 y anteriores, si necesita instalar la clasificación de BlueXP en varios hosts, consulte link:task-deploy-multi-host-install-dark-site.html["Instala la clasificación de BlueXP en varios hosts sin acceso a Internet"].
 
-También puede hacerlo link:task-deploy-compliance-dark-site.html["Instala la clasificación de BlueXP en un sitio on-premises que no tenga acceso a Internet"] para ubicaciones completamente seguras.
+Usted también puede link:task-deploy-compliance-dark-site.html["Instala la clasificación de BlueXP en un sitio on-premises que no tenga acceso a Internet"].
 
 
 
@@ -286,10 +284,6 @@ Debe tener la información de Active Directory:
 En configuraciones típicas, instalará el software en un único sistema host. <<Instalación de un solo host para configuraciones típicas,Consulte estos pasos aquí>>.
 
 image:diagram_deploy_onprem_single_host_internet.png["Un diagrama que muestra la ubicación de los orígenes de datos que puedes analizar cuando utilizas una única instancia de clasificación de BlueXP puesta en marcha en las instalaciones con acceso a Internet."]
-
-En configuraciones de gran tamaño en las que va a escanear petabytes de datos, puede incluir varios hosts para proporcionar una capacidad de procesamiento adicional. Más información link:task-deploy-multi-host-install-dark-site.html> acerca de la instalación en varios hosts para configuraciones grandes.
-
-image:diagram_deploy_onprem_multi_host_internet.png["Un diagrama que muestra la ubicación de los orígenes de datos que puedes analizar cuando utilizas varias instancias de clasificación de BlueXP puestas en marcha en las instalaciones con acceso a Internet."]
 
 Consulte <<Prepare el sistema host Linux,Preparar el sistema host Linux>> y.. <<Habilita el acceso a Internet saliente desde la clasificación de BlueXP,Revisión de requisitos previos>> Para consultar la lista completa de requisitos antes de poner en marcha la clasificación de BlueXP.
 

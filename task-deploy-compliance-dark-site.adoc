@@ -14,7 +14,7 @@ summary: Completa unos pocos pasos para instalar la clasificación de BlueXP en 
 
 
 [role="lead"]
-Completa unos pocos pasos para instalar la clasificación de BlueXP en un host Linux en un sitio local que no tenga acceso a Internet, también conocido como _modo privado_. Este tipo de instalación es perfecta para sus sitios seguros.
+Completa unos pocos pasos para instalar la clasificación de BlueXP en un host Linux en un sitio local que no tenga acceso a Internet, también conocido como _modo privado_. Este tipo de instalación, que utiliza un script de instalación, no tiene conectividad con la capa SaaS de BlueXP .
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtén más información sobre los distintos modos de puesta en marcha para el conector de BlueXP y la clasificación de BlueXP"^].
 
@@ -254,8 +254,6 @@ Debe tener la información de Active Directory:
 
 | Si un firewall utilizado en el host Linux | 9000 | Necesario para procesos internos dentro de un servidor Ubuntu. 
 |===
-Si utilizas varios hosts de clasificación de BlueXP para obtener una capacidad de procesamiento adicional para analizar tus orígenes de datos, tendrás que habilitar puertos/protocolos adicionales. link:task-deploy-compliance-dark-site.html["Consulte los requisitos de puerto adicionales"].
-
 
 
 == Instale la clasificación BlueXP en el host Linux local
@@ -263,8 +261,6 @@ Si utilizas varios hosts de clasificación de BlueXP para obtener una capacidad 
 En configuraciones típicas, instalará el software en un único sistema host.
 
 image:diagram_deploy_onprem_single_host_no_internet.png["Un diagrama que muestra la ubicación de los orígenes de datos que puedes analizar cuando se utiliza una única instancia de clasificación de BlueXP puesta en marcha en las instalaciones sin acceso a Internet."]
-
-image:diagram_deploy_onprem_multi_host_no_internet.png["Un diagrama que muestra la ubicación de los orígenes de datos que puedes analizar cuando utilizas varias instancias de clasificación de BlueXP puestas en marcha en las instalaciones sin tener acceso a Internet."]
 
 
 
