@@ -3488,4 +3488,7 @@ Datos de aplicaciones de negocio</block>
   <block id="d201913c731a2c485562d2197234ff40" category="paragraph">Completa unos pocos pasos para instalar la clasificación de BlueXP en un host Linux en un sitio local que no tenga acceso a Internet, también conocido como _modo privado_. Este tipo de instalación, que utiliza un script de instalación, no tiene conectividad con la capa SaaS de BlueXP .</block>
   <block id="eea715e21fdd29a12f087199006074c7" category="paragraph">Usted también puede <block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block>.</block>
   <block id="6ff9945c9b8d3c1700dad8f9a06d2ab2" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>, También conocido como _modo privado._ Este tipo de instalación, que utiliza un script de instalación, no tiene conectividad con la capa SaaS de BlueXP .</block>
+  <block id="5ae300808387123005a76abbd5a99f46" category="doc">Versión 1,38</block>
+  <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">Esta versión de clasificación de BlueXP  incluye mejoras generales y correcciones de errores.</block>
+  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 de diciembre de 2024</block>
 </blocks>
