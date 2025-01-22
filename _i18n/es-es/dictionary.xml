@@ -335,7 +335,6 @@
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="list-text">Azure NetApp Files</block>
   <block id="18cf072964a583150dd247485ba75b92" category="list-text">Amazon FSX para ONTAP</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
-  <block id="34a23f91ee1733d5151d67d6f922e573" category="list-text">Recursos compartidos de archivos que no son de NetApp</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">¿Existen restricciones cuando se implementa en una región gubernamental?</block>
   <block id="d0a39c85bb5fdaacac18ed6c4e5b511f" category="list-text">Sistemas ONTAP en las instalaciones</block>
   <block id="ae9d17dd7732dafc7b97f62ac9094cf7" category="list-text">Esquemas de base de datos</block>
@@ -1460,7 +1459,6 @@
   <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">En la página Data Investigation, haga clic en <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> en la parte superior derecha de la página.</block>
   <block id="038235769c3322b247e85f9bc8d7b5da" category="list-text">Seleccione si desea descargar un informe .CSV o un informe .JSON de los datos y haga clic en *Descargar informe*.</block>
   <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">Captura de pantalla de la página Informe de investigación de descargas con varias opciones.</block>
-  <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baa6537e5347accba4142c762df4cdf0" category="paragraph">Al seleccionar un informe .JSON, introduzca el nombre del recurso compartido NFS al que se descargará el informe con el formato<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block>.</block>
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">Un cuadro de diálogo muestra un mensaje que indica que los informes se están descargando.</block>
   <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">Puede ver el progreso de la generación de informes JSON en la <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>.</block>
@@ -1806,7 +1804,6 @@
   <block id="81242ae208378634d2437d68837ba560" category="paragraph">El conmutador situado en la parte superior de la página para *Buscar cuando faltan los permisos de "atributos de escritura"* está desactivado de forma predeterminada. Esto significa que, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Si no le importa si se restablece la última hora de acceso, ENCIENDA el conmutador y se explorarán todos los archivos independientemente de los permisos. <block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>.</block>
   <block id="07ada1e73188e64ef4fd43b06b4a2a48" category="paragraph">La clasificación de BlueXP comienza a analizar los archivos en los recursos compartidos de archivos que ha añadido y los resultados se muestran en la consola y en otras ubicaciones.</block>
   <block id="6b3a75b3808f31da6754be1d099cbe3f" category="summary">Hay muchos tipos de datos privados que la clasificación de BlueXP puede identificar en tus volúmenes, bloques de Amazon S3, bases de datos, carpetas de OneDrive, cuentas de SharePoint, etc. Y cuentas de Google Drive.</block>
-  <block id="092e6dee95258860d663bccecea3a137" category="admonition">Si necesita la clasificación de BlueXP para identificar otros tipos de datos privados, como números de identificación nacionales o identificadores sanitarios adicionales, envíe un correo electrónico a ng-contact-data-sense@netapp.com con su solicitud.</block>
   <block id="b7dea65f9a155deeb2a423a4459776ee" category="paragraph">La clasificación de BlueXP categoriza los datos de la siguiente manera.</block>
   <block id="e28941ad3ee4450d4e082c1ed4ac7223" category="paragraph">La clasificación de BlueXP analiza todos los archivos para buscar información de categorías y metadatos y muestra todos los tipos de archivos en la sección Tipos de archivos de la consola.</block>
   <block id="e4ef3ccfa363c6ab883bef97f62feda4" category="paragraph">Pero cuando la clasificación de BlueXP detecta información personal identificable (PII) o cuando realiza una búsqueda DSAR, solo son compatibles los siguientes formatos de archivo:</block>
@@ -2556,7 +2553,6 @@
   <block id="7b608a074398a486bc744655598680ea" category="list-text">En el cuadro de diálogo _Uninstall Data Sense_, escriba *uninstall* para confirmar que desea desconectar la instancia de clasificación de BlueXP del conector BlueXP y, a continuación, haga clic en *Uninstall*.</block>
   <block id="f10f83db534963d9efae7a297e100091" category="list-text">Ve a la consola de tu proveedor de nube y elimina la instancia de clasificación de BlueXP. La instancia se denomina _CloudCompliance_ con un hash generado (UUID) concatenado. Por ejemplo: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
   <block id="961ca08e58e9f85191f5707bc4dac07a" category="paragraph">Esto elimina la instancia y todos los datos asociados que se recopilaron mediante la clasificación de BlueXP.</block>
-  <block id="2c81bcce32daace3a1e27ca8e62dfd40" category="list-text">Para desinstalar el software del host, ejecute el<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block> script en el equipo host, por ejemplo:</block>
   <block id="e1add3649abfc02bc2a83bd64183210e" category="summary">Completa unos pocos pasos para instalar la clasificación de BlueXP en un host Linux, en un sitio local que no tenga acceso a Internet, también conocido como «modo privado». Este tipo de instalación es perfecta para sus sitios seguros.</block>
   <block id="05e22c2c931d6a4218f029a72eeb9206" category="inline-link">Obtén más información sobre los distintos modos de puesta en marcha para el conector de BlueXP y la clasificación de BlueXP</block>
   <block id="3c86f5b7f0c9db7841cc30ae9d32c2c2" category="paragraph"><block ref="a9635649936a46cf7723db5b3c00a913" category="inline-link-rx"></block>.</block>
@@ -2819,9 +2815,6 @@
   <block id="fffb468d89636ef35919bda57df8f0bc" category="section-title">Ver permisos para archivos y directorios</block>
   <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">Compruebe si hay archivos duplicados en los sistemas de almacenamiento</block>
   <block id="e6bbcb2826ce1a4f58fd341c4f5ae5f3" category="paragraph">Puede descargar la lista de archivos duplicados y enviarlos al administrador de almacenamiento para que puedan decidir qué archivos se pueden eliminar, si los hay. O usted puede <block ref="53c8cd880d15e2953a8e763d6f4dff0c" category="inline-link-macro-rx"></block> usted mismo si está seguro de que una versión específica del archivo no es necesaria.</block>
-  <block id="11b431a799ad33cee933ceccc5de850c" category="section-title">Ver todos los archivos duplicados</block>
-  <block id="3c4c508b343b43aeeceba1d0993025fc" category="section-title">Ver si un archivo específico está duplicado</block>
-  <block id="d9f65abd84f27877cbba1b5ea828d53d" category="section-title">Generar el informe de investigación de datos</block>
   <block id="13b1a6e1bb1b3f8696189ada6b422170" category="list-text">Puede utilizar el "propietario del archivo" <block ref="8f117870d9a34eabfa5286947f602d95" category="inline-link-macro-rx"></block> Y consulte los resultados en los metadatos del archivo en el panel Investigación. En lugar del propietario del archivo que contiene el SID (identificador de seguridad), se rellena con el nombre de usuario real.</block>
   <block id="cd4d01ef1bbc41dd6c1a648ca6b131c3" category="list-text">Puede ver <block ref="bb7ccaeb199c0a6d94b809bfbddc428e" category="inline-link-macro-rx"></block> Para cada archivo y directorio al hacer clic en el botón "Ver todos los permisos".</block>
   <block id="04e7e9631c93eec889b2ab99b5143465" category="section-title">Conéctese a su servidor de Active Directory</block>
@@ -3071,9 +3064,6 @@ NOTA: El lanzamiento de diciembre de 2023 (versión 1.26.6) eliminó la opción 
   <block id="d2b1e6329082b8cf29999896b3d3d744" category="paragraph">Además de mostrarle el entorno de trabajo y el volumen donde reside el archivo, los metadatos muestran mucha más información, incluidos los permisos del archivo, el propietario del archivo y si hay duplicados de este archivo. Esta información es útil si tiene previsto hacerlo <block ref="8c7af7ec06ac1cea6800f7cd16a5f7c0" category="inline-link-macro-rx"></block> porque puede ver toda la información que puede utilizar para filtrar sus datos.</block>
   <block id="9538e6335cc9662b264dd0870f2ca091" category="paragraph">Tenga en cuenta que no toda la información está disponible para todas las fuentes de datos - sólo lo que es apropiado para ese origen de datos. Por ejemplo, el nombre del volumen y los permisos no son relevantes para los archivos de base de datos.</block>
   <block id="6fa893a1485524675ae044e22dd04d02" category="paragraph">Para ver una lista de todos los usuarios o grupos que tienen acceso a un archivo o directorio y los tipos de permisos que tienen, haga clic en *Ver todos los permisos*. Este botón solo está disponible para datos en recursos compartidos CIFS.</block>
-  <block id="fbc24f64c5cfaa3ec5851bea3459db25" category="paragraph">El informe está disponible como . Archivo CSV que puede guardar en la máquina local.</block>
-  <block id="707592628336b767af6468130ccb5f10" category="list-text">Seleccione esta opción para descargar una . Informe CSV de los datos y haga clic en *Descargar informe*.</block>
-  <block id="376c2577995f32a4c8892e8aefb140ba" category="section-title">Qué se incluye en el informe de investigación de datos</block>
   <block id="6d6f3f8c3e87f4e41fd51dc3695310ba" category="doc">Analizar cuentas de SharePoint</block>
   <block id="16976b9bcf6240cdf0301678ba12a525" category="section-title">Revisar los requisitos de SharePoint</block>
   <block id="13fed9c014904fd1b4e1eb85a98610e8" category="section-title">Agregue una cuenta de SharePoint Online</block>
@@ -3491,4 +3481,28 @@ Datos de aplicaciones de negocio</block>
   <block id="5ae300808387123005a76abbd5a99f46" category="doc">Versión 1,38</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">Esta versión de clasificación de BlueXP  incluye mejoras generales y correcciones de errores.</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 de diciembre de 2024</block>
+  <block id="0a401367ec8a2cd84bb197e6d12c99af" category="doc">Versión 1,39</block>
+  <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">Esta versión de clasificación de BlueXP  actualiza el proceso de exportación del informe de investigación de datos. Esta actualización de exportación es útil para realizar análisis adicionales de sus datos, crear visualizaciones adicionales de los datos o compartir los resultados de su investigación de datos con otros.</block>
+  <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">Anteriormente, la exportación del informe de investigación de datos se limitaba a 10.000 filas. Con esta versión, el límite se ha eliminado para que pueda exportar todos sus datos. Este cambio le permite exportar más datos de sus informes de investigación de datos, lo que le proporciona más flexibilidad en el análisis de datos.</block>
+  <block id="72fa9e7ff6f311a170ad8d720dff3f2f" category="paragraph">Puede elegir el entorno de trabajo, los volúmenes, la carpeta de destino y el formato JSON o CSV. El nombre de archivo exportado incluye una marca de tiempo para ayudarle a identificar cuándo se exportaron los datos.</block>
+  <block id="7afa5ec6a3f715e47b3c6fa2655f18b0" category="paragraph">Los entornos de trabajo compatibles incluyen:</block>
+  <block id="253b40ae359ba25b56231803430c4873" category="list-text">ONTAP</block>
+  <block id="a512cd9b163bcb1be6bf96aa95fdfe74" category="list-text">Compartir grupo</block>
+  <block id="d3fdc77553ad7d05684cea9b7806dac8" category="paragraph">La exportación de datos del informe de investigación de datos tiene las siguientes limitaciones:</block>
+  <block id="d33a90467b78849917ec44b3e694a192" category="list-text">El número máximo de registros para descargar es de 500 millones por tipo (archivos, directorios y tablas)</block>
+  <block id="9720aabb6c8d5eb9cfcffd189ef86ed1" category="list-text">Se espera que un millón de registros tarde unos 35 minutos en exportarse.</block>
+  <block id="e7b42111154b9b878df538017c7943a0" category="inline-link">Investiga los datos almacenados en tu organización</block>
+  <block id="e771ad044e30754f4af0addbc217531d" category="paragraph">Para obtener más información sobre la investigación de datos y el informe, consulte<block ref="5490a248bca38f18b55b559976dbad47" category="inline-link-rx"></block>.</block>
+  <block id="251452e49ab5b88b5d8545e58cd46509" category="admonition">Si necesita una clasificación BlueXP  para identificar otros tipos de datos privados, como números de identificación nacionales adicionales o identificadores de atención médica, póngase en contacto con su administrador de cuenta.</block>
+  <block id="2a09f412ecce26a24c17d782c064aa73" category="paragraph">Puede investigar los datos de su organización visualizando los detalles en la página Investigación de datos. Puedes navegar a esta página desde muchas áreas de la interfaz de usuario de clasificación de BlueXP, incluidas las consolas de gobierno y cumplimiento de normativas. Puede exportar los datos a un archivo CSV o JSON para su posterior análisis o compartirlos con otros.</block>
+  <block id="b995ac679338c896401b451552e5d419" category="paragraph">*Ver todos los archivos duplicados*</block>
+  <block id="ee27fa3e6dfe09f89a9d57742c167aa9" category="paragraph">*Ver si un archivo específico está duplicado*</block>
+  <block id="47b72e580332bb9da872607466b406bc" category="paragraph">El informe está disponible como un archivo .CSV o .JSON que se puede guardar en el equipo local.</block>
+  <block id="f257e5460f3ab87ec47290dc11518fc8" category="paragraph">*Qué se incluye en el Informe de Investigación de Datos*</block>
+  <block id="f3f4c1edbf92907aa9051152a36ae4cc" category="list-title">Pasos para generar el informe</block>
+  <block id="868f49e80cf5d3f7ac26cbec13a8d0be" category="list-text">Seleccione para descargar un informe .CSV o .JSON de los datos y haga clic en *Descargar informe*.</block>
+  <block id="8b93cae59bfdd9d1f5373c4f243f1891" category="paragraph"><block ref="8b93cae59bfdd9d1f5373c4f243f1891" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f22985ba0d865da0fb0dc1149ac8684" category="list-text">Para desinstalar el software del host, ejecute el<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block> script en la máquina host de clasificación BlueXP , por ejemplo:</block>
+  <block id="009d2060a609114df262eff04e83f241" category="section-title">22 de enero de 2025</block>
+  <block id="987a49b32f868f747d862315b00a6b36" category="sidebar">Recursos compartidos de archivos (CIFS, NFS)</block>
 </blocks>

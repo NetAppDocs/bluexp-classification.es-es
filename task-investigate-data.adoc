@@ -14,7 +14,7 @@ summary: Puede investigar los datos de su organización visualizando los detalle
 
 
 [role="lead"]
-Puede investigar los datos de su organización visualizando los detalles en la página Investigación de datos. Puedes navegar a esta página desde muchas áreas de la interfaz de usuario de clasificación de BlueXP, incluidas las consolas de gobierno y cumplimiento de normativas.
+Puede investigar los datos de su organización visualizando los detalles en la página Investigación de datos. Puedes navegar a esta página desde muchas áreas de la interfaz de usuario de clasificación de BlueXP, incluidas las consolas de gobierno y cumplimiento de normativas. Puede exportar los datos a un archivo CSV o JSON para su posterior análisis o compartirlos con otros.
 
 
 NOTE: Las capacidades descritas en esta sección sólo están disponibles si ha elegido realizar un análisis de clasificación completo en sus orígenes de datos. Los orígenes de datos que han tenido un análisis de sólo asignación no muestran detalles de nivel de archivo.
@@ -238,17 +238,13 @@ La clasificación de BlueXP usa tecnología de hash para determinar los archivos
 
 Puede descargar la lista de archivos duplicados y enviarlos al administrador de almacenamiento para que puedan decidir qué archivos se pueden eliminar, si los hay. O usted puede link:task-managing-highlights.html#delete-source-files["elimine el archivo"] usted mismo si está seguro de que una versión específica del archivo no es necesaria.
 
-
-
-=== Ver todos los archivos duplicados
+*Ver todos los archivos duplicados*
 
 Si desea obtener una lista de todos los archivos duplicados en los entornos de trabajo y los orígenes de datos que está analizando, puede utilizar el filtro llamado *duplicados > tiene duplicados* en la página Investigación de datos.
 
 Todos los archivos duplicados se muestran en la página de resultados.
 
-
-
-=== Ver si un archivo específico está duplicado
+*Ver si un archivo específico está duplicado*
 
 Si desea ver si un único archivo tiene duplicados, en el panel resultados de investigación de datos puede hacer clic en image:button_down_caret.png["signo de intercalación descendente"] para cualquier archivo individual para ver los metadatos del archivo. Si hay duplicados de un archivo determinado, esta información aparece junto al campo _Duplicates_.
 
@@ -265,28 +261,11 @@ TIP: Puede usar el valor "hash de archivo" que se proporciona en esta página e 
 
 El Informe de investigación de datos es una descarga del contenido filtrado de la página Investigación de datos.
 
-El informe está disponible como . Archivo CSV que puede guardar en la máquina local.
+El informe está disponible como un archivo .CSV o .JSON que se puede guardar en el equipo local.
 
 Puede haber hasta tres archivos de informes descargados si la clasificación de BlueXP está analizando archivos (datos no estructurados), directorios (carpetas y recursos compartidos de archivos) y bases de datos (datos estructurados).
 
-
-
-=== Generar el informe de investigación de datos
-
-.Pasos
-. En la página Data Investigation, haga clic en image:button_download.png["botón de descarga"] en la parte superior derecha de la página.
-. Seleccione esta opción para descargar una . Informe CSV de los datos y haga clic en *Descargar informe*.
-+
-image:screenshot_compliance_investigation_report.png["Captura de pantalla de la página Informe de investigación de descargas con varias opciones."]
-
-
-
-.Resultado
-Un cuadro de diálogo muestra un mensaje que indica que los informes se están descargando.
-
-
-
-=== Qué se incluye en el informe de investigación de datos
+*Qué se incluye en el Informe de Investigación de Datos*
 
 El *Informe de datos de archivos no estructurados* incluye la siguiente información sobre sus archivos:
 
@@ -339,3 +318,14 @@ El *Informe de datos estructurados* incluye la siguiente información sobre las 
 * Información personal
 * Información personal confidencial
 
+
+.Pasos para generar el informe
+. En la página Data Investigation, haga clic en image:button_download.png["botón de descarga"] en la parte superior derecha de la página.
+. Seleccione para descargar un informe .CSV o .JSON de los datos y haga clic en *Descargar informe*.
++
+image:screenshot_compliance_investigation_report2.png["Captura de pantalla de la página Informe de investigación de descargas con varias opciones."]
+
+
+
+.Resultado
+Un cuadro de diálogo muestra un mensaje que indica que los informes se están descargando.
