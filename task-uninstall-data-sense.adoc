@@ -52,6 +52,9 @@ image:screenshot_compliance_uninstall.png["Una captura de pantalla del botón pa
 ----
 cleanup.sh
 ----
++
+El script se encuentra en el `/install/light_probe/onprem_installer/cleanup.sh` directorio.
+
 
 
 Descubra cómo link:reference-log-in-to-instance.html["Inicia sesión en el equipo host de clasificación de BlueXP"].
