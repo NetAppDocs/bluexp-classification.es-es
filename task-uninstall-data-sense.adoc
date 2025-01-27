@@ -14,7 +14,7 @@ summary: Puede desinstalar el software de clasificación de BlueXP para solucion
 
 
 [role="lead"]
-Puede desinstalar el software de clasificación de BlueXP para solucionar problemas o quitar de forma permanente el software del host. Al eliminar la instancia también se eliminan los discos asociados donde residen los datos indexados; toda la información que ha escaneado la clasificación de BlueXP se eliminará de forma permanente.
+Desinstale el software de clasificación BlueXP  para solucionar problemas o quitar de forma permanente el software del host. Al eliminar la instancia también se eliminan los discos asociados donde residen los datos indexados; toda la información que ha escaneado la clasificación de BlueXP se eliminará de forma permanente.
 
 Los pasos que tienes que utilizar dependen de si has puesto en marcha la clasificación de BlueXP en la nube o en un host on-premises.
 

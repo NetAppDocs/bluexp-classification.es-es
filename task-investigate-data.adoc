@@ -23,7 +23,7 @@ NOTE: Las capacidades descritas en esta sección sólo están disponibles si ha 
 
 == Filtrar datos en la página Investigación de datos
 
-Puede filtrar el contenido de la página de investigación para que muestre solo los resultados que desea ver. Esta es una característica muy eficaz porque después de afinar los datos, puede utilizar la barra de botones en la parte superior de la página para realizar una variedad de acciones, incluyendo copiar archivos, mover archivos, agregar una etiqueta o etiqueta AIP a los archivos, y mucho más.
+Puede filtrar el contenido de la página de investigación para que muestre solo los resultados que desea ver.
 
 Si desea descargar el contenido de la página como un informe después de haberlo afinado, haga clic en image:button_download.png["botón de descarga"] botón. <<Informe de investigación de datos,Vaya aquí para obtener detalles sobre el informe de investigación de datos>>.
 

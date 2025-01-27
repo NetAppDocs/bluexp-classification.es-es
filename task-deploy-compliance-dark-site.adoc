@@ -18,7 +18,7 @@ Completa unos pocos pasos para instalar la clasificación de BlueXP en un host L
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtén más información sobre los distintos modos de puesta en marcha para el conector de BlueXP y la clasificación de BlueXP"^].
 
-Tenga en cuenta que también puede link:task-deploy-compliance-onprem.html["Pon en marcha la clasificación de BlueXP en un sitio local que tenga acceso a Internet"].
+Usted también puede link:task-deploy-compliance-onprem.html["Pon en marcha la clasificación de BlueXP en un sitio local que tenga acceso a Internet"].
 
 El script de instalación de clasificación de BlueXP comienza comprobando si el sistema y el entorno cumplen los requisitos previos necesarios. Si se cumplen todos los requisitos previos, se inicia la instalación. Si desea verificar los requisitos previos independientemente de la ejecución de la instalación de la clasificación de BlueXP, puede descargar un paquete de software independiente que solo prueba los requisitos previos. link:task-test-linux-system.html["Descubre cómo comprobar si tu host Linux está listo para instalar la clasificación de BlueXP"].
 
@@ -89,16 +89,24 @@ El software de clasificación de BlueXP debe ejecutarse en un host que cumpla co
 | Tamaño del sistema | CPU | RAM (la memoria de intercambio debe estar desactivada) | Disco 
 
 
-| * Extra grande* | 32 CPU | 128 GB DE MEMORIA RAM | 1 TiB SSD en /, o.
-- 100 GiB disponible en /opt
-- 895 GiB disponible en /var/lib/docker
-- 5 GiB en /tmp 
+| * Extra grande* | 32 CPU | 128 GB DE MEMORIA RAM  a| 
+** SSD de 1 TiB en / o 100 GiB disponible en /opt
+** 895 GiB disponible en /var/lib/docker
+** 5 GIB en /tmp
+** *Para Podman, 5 GB en /tmp*
+** *Para Podman, 30 GB en /var/tmp*
 
 
-| *Grande* | 16 CPU | 64 GB DE MEMORIA RAM | 500 GiB SSD en /, o.
-- 100 GiB disponible en /opt
-- 395 GiB disponible en /var/lib/docker o para Podman /var/lib/containers o para Podman /var/lib/containers
-- 5 GiB en /tmp 
+
+
+| *Grande* | 16 CPU | 64 GB DE MEMORIA RAM  a| 
+** 500 GiB SSD en / o 100 GiB disponible en /opt
+** 395 GiB disponible en /var/lib/docker, para Podman /var/lib/containers o para Podman /var/lib/containers
+** 5 GIB en /tmp
+** *Para Podman, 5 GB en /tmp*
+** *Para Podman, 30 GB en /var/tmp*
+
+
 |===
 * A la hora de poner en marcha una instancia de computación en la nube para la instalación de tu clasificación de BlueXP, te recomendamos un sistema que cumpla los requisitos «grandes» del sistema anteriores:
 +
