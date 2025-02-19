@@ -18,6 +18,48 @@ Descubre las novedades en la clasificación de BlueXP.
 
 
 
+== 19 de febrero de 2025
+
+
+
+=== Versión 1,40
+
+Esta versión de clasificación de BlueXP  incluye las siguientes actualizaciones.
+
+.Compatibilidad con RHEL 9,5
+Esta versión es compatible con Red Hat Enterprise Linux v9,5 además de las versiones compatibles anteriormente. Esto se aplica a cualquier instalación manual en las instalaciones de la clasificación BlueXP , incluidas las puestas en marcha de sitios oscuros.
+
+Los siguientes sistemas operativos requieren el uso del motor de contenedores Podman y requieren la versión de clasificación BlueXP  1,30 o superior: Red Hat Enterprise Linux versión 8,8, 8,10, 9,0, 9,1, 9,2, 9,3, 9,4 y 9,5.
+
+.Priorice las adquisiciones
+Al realizar exploraciones de sólo asignación, puede priorizar las exploraciones más importantes. Esta función ayuda cuando tiene muchos entornos de trabajo y desea garantizar que las exploraciones de alta prioridad se completen primero.
+
+De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Gracias a la capacidad de dar prioridad a las exploraciones, ahora puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
+
+La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
+
+La priorización está limitada alink:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["exploraciones de sólo asignación"]; no está disponible para las exploraciones de mapas y clasificaciones.
+
+Para cambiar la prioridad:
+
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. Seleccione los recursos que desea priorizar.
+. En la opción Acciones ..., seleccione *Priorizar escaneo*.
+
+
+.Vuelva a intentar todas las adquisiciones
+La clasificación BlueXP  ahora admite la capacidad de reintentar por lotes todos los análisis fallidos.
+
+Ahora puede volver a intentar escaneos en una operación por lotes con la función **Reintentar todo**. Si las exploraciones de clasificación fallan debido a un problema temporal, como una interrupción de la red, puede volver a intentar todas las exploraciones al mismo tiempo con un botón en lugar de volver a intentarlo individualmente. Las secuencias se pueden volver a intentar tantas veces como sea necesario.
+
+Para volver a intentar todas las adquisiciones:
+
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. Para volver a intentar todos los escaneos fallidos, seleccione *Reintentar todos los escaneos*.
+
+
+
+
 == 22 de enero de 2025
 
 
@@ -155,7 +197,7 @@ Los siguientes metadatos se extraen de los archivos durante las exploraciones de
 .Datos adicionales en consolas
 Esta versión actualiza los datos que aparecen en los paneles de control de gobierno, cumplimiento e investigación durante las exploraciones de mapeo.
 
-Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["¿Cuál es la diferencia entre las exploraciones de mapeo y clasificación"]
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["¿Cuál es la diferencia entre las exploraciones de mapeo y clasificación"]
 
 
 
@@ -353,7 +395,7 @@ Estas versiones no son compatibles con nuevas implementaciones porque Red Hat ya
 Es posible habilitar los registros de auditoría de acceso a archivos para que se recopilen en el sistema de clasificación de BlueXP para los eventos de acceso a archivos detectados en volúmenes en tus entornos de trabajo. La clasificación de BlueXP puede capturar los siguientes tipos de eventos de FPolicy y los usuarios que realizaron las acciones en sus archivos: Crear, leer, escribir, eliminar, cambiar el nombre, Cambie el propietario/permisos y cambie SACL/DACL.
 
 .Las licencias BYOL de Data Sense son ahora compatibles en sitios oscuros
-Ahora puede cargar su licencia BYOL de Data Sense en la cartera digital de BlueXP  en un sitio oscuro para que se le notifique cuando su licencia esté baja. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Vea cómo obtener y cargar su licencia BYOL de Data Sense"].
+Ahora puede cargar su licencia BYOL de Data Sense en la cartera digital de BlueXP  en un sitio oscuro para que se le notifique cuando su licencia esté baja. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-byol-freetrial.html#obtain-your-bluexp-classification-license-file["Vea cómo obtener y cargar su licencia BYOL de Data Sense"].
 
 
 

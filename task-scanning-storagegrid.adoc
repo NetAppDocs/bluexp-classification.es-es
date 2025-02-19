@@ -18,31 +18,6 @@ Complete unos pocos pasos para comenzar a escanear datos dentro de StorageGRID d
 
 
 
-== Inicio rápido
-
-Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las secciones restantes para obtener todos los detalles.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Revise los requisitos previos de StorageGRID
-[role="quick-margin-para"]
-Debe tener la URL de punto final para conectarse con el servicio StorageGRID.
-
-[role="quick-margin-para"]
-Debe tener la clave de acceso y la clave secreta de StorageGRID para que la clasificación de BlueXP  pueda acceder a los buckets.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP"^] si aún no hay una instancia implementada.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Agregue el servicio StorageGRID
-[role="quick-margin-para"]
-Agregue el servicio StorageGRID a la clasificación BlueXP .
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Seleccione los cucharones que desea escanear
-[role="quick-margin-para"]
-Selecciona los bloques que quieres escanear y la clasificación de BlueXP comenzará a escanearlos.
-
-
-
 == Revisar los requisitos de StorageGRID
 
 Revise los siguientes requisitos previos para comprobar que tiene una configuración compatible antes de habilitar la clasificación de BlueXP.
@@ -61,8 +36,6 @@ Si está escaneando datos de StorageGRID que es accesible a través de Internet,
 
 Si está escaneando datos de StorageGRID que se ha instalado en un sitio oscuro que no tiene acceso a Internet, debe link:task-deploy-compliance-dark-site.html["Pon en marcha la clasificación de BlueXP en la misma ubicación on-premises que no tiene acceso a Internet"^]. Esto también requiere que el conector BlueXP se despliegue en esa misma ubicación en las instalaciones.
 
-Las actualizaciones al software de clasificación BlueXP  se automatizan siempre que la instancia tenga conectividad a Internet.
-
 
 
 == Agregue el servicio StorageGRID a la clasificación BlueXP 
@@ -70,10 +43,8 @@ Las actualizaciones al software de clasificación BlueXP  se automatizan siempr
 Añada el servicio StorageGRID.
 
 .Pasos
-. En la página Configuración de entornos de trabajo, haga clic en *Agregar origen de datos* > *Agregar StorageGRID*.
-+
-image:screenshot-scanning-add-storagegrid.png["Una captura de pantalla de la página Configuración de escaneo donde puede hacer clic en el botón Agregar StorageGRID."]
-
+. En el menú de clasificación de BlueXP , seleccione la opción *Configuración*.
+. En la página Configuración, selecciona *Añadir entorno de trabajo* > *Añadir StorageGRID*.
 . En el cuadro de diálogo Agregar servicio StorageGRID, introduzca los detalles del servicio StorageGRID y haga clic en *Continuar*.
 +
 .. Introduzca el nombre que desea utilizar para el entorno de trabajo. Este nombre debe reflejar el nombre del servicio StorageGRID al que se está conectando.
@@ -96,28 +67,18 @@ StorageGRID se agrega a la lista de entornos de trabajo.
 Después de activar la clasificación BlueXP  en StorageGRID, el siguiente paso es configurar los depósitos que desea escanear. La clasificación de BlueXP descubre esos buckets y los muestra en el entorno de trabajo que has creado.
 
 .Pasos
-. En la página Configuración, haga clic en *Configuración* en el entorno de trabajo de StorageGRID.
-+
-image:screenshot-scanning-storagegrid-configuration.png["Una captura de pantalla de cómo hacer clic en Configuración para el entorno de trabajo para poder elegir los bloques que desea escanear."]
-
-. Active escaneos de sólo asignación o escaneos de asignación y clasificación en los bloques.
+. En la página Configuración, busque el entorno de trabajo de StorageGRID.
+. En el mosaico Entorno de trabajo de StorageGRID, seleccione *Configuración*.
 +
 image:screenshot-scanning-add-storagegrid-buckets.png["Una captura de pantalla que muestra la selección de los depósitos de StorageGRID que desea escanear."]
 
+. Lleve a cabo uno de los siguientes pasos para activar o desactivar la exploración:
 +
-[cols="45,45"]
-|===
-| Para: | Haga lo siguiente: 
+** Para habilitar las exploraciones de solo mapeo en un depósito, selecciona *Mapa*.
+** Para activar las exploraciones completas en un depósito, selecciona *Mapa y clasificación*.
+** Para desactivar el escaneo en un cubo, seleccione *Desactivado*.
 
 
-| Habilite los análisis de sólo asignación en un bloque | Haga clic en *Mapa* 
-
-
-| Activar exploraciones completas en un bloque | Haga clic en *Mapa y clasificación* 
-
-
-| Desactivar el análisis en un bloque | Haga clic en *Desactivado* 
-|===
 
 
 .Resultado

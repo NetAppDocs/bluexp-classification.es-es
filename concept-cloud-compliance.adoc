@@ -186,15 +186,19 @@ Puede activar y desactivar las exploraciones a nivel de volumen o en el nivel de
 
 === ¿Cuál es la diferencia entre las exploraciones de asignación y clasificación
 
-La clasificación de BlueXP te permite ejecutar un análisis general de «asignaciones» en fuentes de datos seleccionadas. La asignación sólo ofrece una descripción general de alto nivel de los datos, mientras que la clasificación proporciona un análisis profundo de los datos. La asignación se puede realizar en sus orígenes de datos muy rápidamente porque no tiene acceso a los archivos para ver los datos dentro.
+Puede realizar dos tipos de exploraciones en la clasificación BlueXP :
 
-A muchos usuarios les gusta esta funcionalidad porque quieren analizar rápidamente sus datos para identificar los orígenes de datos que requieren más investigación y, a continuación, pueden habilitar análisis de clasificación solo en los orígenes o volúmenes de datos necesarios.
+* **Solo mapeo** Los escaneos proporcionan solo una visión general de alto nivel de sus datos y se realizan en fuentes de datos seleccionadas. Las exploraciones de sólo asignación tardan menos tiempo que las exploraciones de asignación y clasificación, ya que no tienen acceso a los archivos para ver los datos que contienen.
+* **Los escaneos Map and Classify** proporcionan un escaneo de nivel profundo de sus datos.
+
+
+Las exploraciones de sólo asignación permiten escanear rápidamente los datos e identificar fuentes de datos que podrían requerir más investigación y, a continuación, realizar una exploración de Mapa y Clasificación.
 
 En la siguiente tabla se muestran algunas de las diferencias:
 
 [cols="47,18,18"]
 |===
-| Función | Clasificación | Asignación 
+| Función | Asignar y clasificar secuencias | Exploraciones de sólo asignación 
 
 
 | Velocidad de escaneado | Lento | Y rápido 
@@ -413,8 +417,8 @@ En la siguiente tabla se muestran algunas de las diferencias:
 
 La velocidad de análisis se ve afectada por la latencia de la red, la latencia del disco, el ancho de banda de la red, el tamaño del entorno y los tamaños de distribución de archivos.
 
-* Al realizar escaneos de mapeo, la clasificación de BlueXP puede analizar entre 100-150 TIBs de datos al día.
-* Al realizar análisis de clasificación, la clasificación de BlueXP puede analizar entre 15-40 TIBs de datos al día.
+* Al realizar exploraciones de sólo asignación, la clasificación BlueXP  puede explorar entre 100-150 TIBs de datos por día.
+* Al realizar exploraciones de Mapa y Clasificación, la clasificación de BlueXP  puede explorar entre 15-40 TIBs de datos al día.
 
 
 

@@ -31,53 +31,13 @@ https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interfaces de red elásticas de AWS (ENI)"^]
 
-
-
-
-
-== Inicio rápido
-
-Comience rápidamente siguiendo estos pasos o desplácese hacia abajo para obtener todos los detalles.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Descubra el FSX para los sistemas de archivos ONTAP que desea analizar
-[role="quick-margin-para"]
-Antes de poder analizar volúmenes FSX para ONTAP, https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["Debe tener un entorno de trabajo FSX con volúmenes configurados"^].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP en BlueXP"^] si aún no hay una instancia implementada.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Habilita la clasificación de BlueXP y selecciona los volúmenes que deseas escanear
-[role="quick-margin-para"]
-Seleccione la pestaña *Configuración* y active los escaneos de cumplimiento para volúmenes en entornos de trabajo específicos.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Garantice el acceso a los volúmenes
-[role="quick-margin-para"]
-Ahora que la clasificación de BlueXP está habilitada, asegúrate de que puede acceder a todos los volúmenes.
-
-[role="quick-margin-list"]
-* La instancia de clasificación de BlueXP necesita una conexión de red con cada subred de FSx para ONTAP.
-* Asegúrate de que los siguientes puertos estén abiertos a la instancia de clasificación de BlueXP:
+* Compruebe que los siguientes puertos estén abiertos en la instancia de clasificación de BlueXP:
 +
 ** Para NFS, puertos 111 y 2049.
 ** Para CIFS, puertos 139 y 445.
 
 
-* Las políticas de exportación de volúmenes de NFS deben permitir el acceso desde la instancia de clasificación de BlueXP.
-* La clasificación de BlueXP necesita credenciales de Active Directory para analizar los volúmenes de CIFS. + haga clic en *cumplimiento* > *Configuración* > *Editar credenciales CIFS* y proporcione las credenciales.
 
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinco"] Gestione los volúmenes que desea analizar
-[role="quick-margin-para"]
-Seleccione o anule la selección de los volúmenes que desea analizar y la clasificación de BlueXP iniciará o detendrá su análisis.
-
-
-
-== Descubre el sistema de archivos FSx para ONTAP que quieres analizar
-
-Si el sistema de archivos FSX para ONTAP que desea analizar no está ya en BlueXP como entorno de trabajo, puede agregarlo al lienzo en este momento.
-
-https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["Descubra cómo descubrir o crear el sistema de archivos FSX para ONTAP en BlueXP"^].
 
 
 
@@ -97,7 +57,8 @@ Las actualizaciones del software de clasificación de BlueXP se automatizan siem
 
 Puedes habilitar la clasificación de BlueXP para FSx para volúmenes de ONTAP.
 
-. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y seleccione la ficha *Configuración*.
+. En el menú de navegación izquierdo de BlueXP , selecciona *Gobernanza > Clasificación*.
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
 +
 image:screenshot_fsx_scanning_activate.png["Una captura de pantalla de la pestaña Configuration inmediatamente después de implementar la instancia de clasificación de BlueXP."]
 
@@ -106,9 +67,6 @@ image:screenshot_fsx_scanning_activate.png["Una captura de pantalla de la pesta�
 ** Para asignar todos los volúmenes, haga clic en *asignar todos los volúmenes*.
 ** Para asignar y clasificar todos los volúmenes, haga clic en *asignar y clasificar todos los volúmenes*.
 ** Para personalizar la exploración de cada volumen, haga clic en *o seleccione el tipo de exploración para cada volumen* y, a continuación, elija los volúmenes que desea asignar y/o clasificar.
-+
-Consulte Habilitar y deshabilitar los análisis de cumplimiento en los volúmenes para obtener más información.
-
 
 
 . En el cuadro de diálogo de confirmación, haz clic en *Aprobar* para que la clasificación de BlueXP comience a escanear tus volúmenes.
@@ -133,7 +91,8 @@ Para asegurarse de que la clasificación de BlueXP pueda acceder a los volúmene
 Tendrás que ofrecer la clasificación de BlueXP con credenciales CIFS para que pueda acceder a los volúmenes de CIFS.
 
 .Pasos
-. En la página _Configuration_, haga clic en *View Details* para revisar el estado y corregir los errores.
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. En la página de configuración, seleccione *Ver detalles* para revisar el estado y corregir cualquier error.
 +
 Por ejemplo, la siguiente imagen muestra una clasificación de BlueXP de volúmenes que no se puede analizar debido a problemas de conectividad de red entre la instancia de clasificación de BlueXP y el volumen.
 
@@ -145,17 +104,11 @@ image:screenshot_fsx_scanning_no_network_error.png["Una captura de pantalla de l
 
 NOTE: Para FSx para ONTAP, la clasificación de BlueXP puede analizar volúmenes solo en la misma región que BlueXP.
 
-. Compruebe que los siguientes puertos estén abiertos en la instancia de clasificación de BlueXP.
-+
-** Para NFS, puertos 111 y 2049.
-** Para CIFS, puertos 139 y 445.
-
-
 . Compruebe que las políticas de exportación de volúmenes de NFS incluyan la dirección IP de la instancia de clasificación de BlueXP para que pueda acceder a los datos de cada volumen.
 . Si usas CIFS, proporciona una clasificación de BlueXP con credenciales de Active Directory para que pueda analizar los volúmenes de CIFS.
 +
-.. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y seleccione la ficha *Configuración*.
-.. Para cada entorno de trabajo, haga clic en *Edit CIFS Credentials* e introduzca el nombre de usuario y la contraseña que la clasificación de BlueXP necesita para acceder a los volúmenes CIFS del sistema.
+.. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+.. Para cada entorno de trabajo, seleccione *Editar Credenciales CIFS* e introduzca el nombre de usuario y la contraseña que la clasificación BlueXP  necesita para acceder a los volúmenes CIFS del sistema.
 +
 Las credenciales pueden ser de solo lectura, pero al proporcionar credenciales de administrador se garantiza que la clasificación de BlueXP pueda leer cualquier dato que requiera permisos elevados. Las credenciales se almacenan en la instancia de clasificación de BlueXP.
 
@@ -179,31 +132,16 @@ El conmutador situado en la parte superior de la página para *Buscar cuando fal
 
 image:screenshot_volume_compliance_selection.png["Captura de pantalla de la página Configuración en la que puede activar o desactivar el análisis de volúmenes individuales."]
 
-[cols="45,45"]
-|===
-| Para: | Haga lo siguiente: 
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. En la página Configuración, localice el entorno de trabajo con los volúmenes que desea escanear.
+. Debe realizar una de las siguientes acciones:
++
+** Para habilitar las exploraciones de solo asignación en un volumen, en el área de volumen, seleccione *Mapa*. O bien, para habilitar en todos los volúmenes, en el área de encabezado, seleccione *Mapa*. Para activar el escaneo completo en un volumen, en el área de volumen, seleccione *Mapa y clasificación*. O bien, para activar todos los volúmenes, en el área de encabezado, seleccione *Mapa y clasificación*.
+** Para desactivar el escaneo en un volumen, en el área de volumen, seleccione *Desactivado*. Para desactivar el escaneo en todos los volúmenes, en el área de encabezado, seleccione *Desactivado*.
 
 
-| Active los análisis de sólo asignación en un volumen | En el área de volumen, haga clic en *Mapa* 
 
 
-| Active el análisis completo en un volumen | En el área de volumen, haga clic en *Mapa y clasificación* 
-
-
-| Desactive el análisis en un volumen | En el área de volumen, haga clic en *Desactivado* 
-
-
-|  |  
-
-
-| Active análisis de sólo asignación en todos los volúmenes | En el área de encabezado, haga clic en *Mapa* 
-
-
-| Active el análisis completo en todos los volúmenes | En el área de encabezado, haga clic en *Mapa y clasificación* 
-
-
-| Desactive el análisis en todos los volúmenes | En el área encabezado, haga clic en *Desactivado* 
-|===
 
 NOTE: Los nuevos volúmenes agregados al entorno de trabajo sólo se analizan automáticamente cuando se ha establecido el ajuste *Mapa* o *Mapa y clasificación* en el área de rumbo. Cuando se establece en *personalizado* o *Desactivado* en el área rumbo, deberá activar la asignación y/o la exploración completa en cada volumen nuevo que agregue en el entorno de trabajo.
 
@@ -220,8 +158,9 @@ image:screenshot_cloud_compliance_dp_volumes.png["Una captura de pantalla que mu
 .Pasos
 Si desea analizar estos volúmenes de protección de datos:
 
-. Haga clic en *Activar acceso a volúmenes DP* en la parte superior de la página.
-. Revise el mensaje de confirmación y vuelva a hacer clic en *Activar acceso a volúmenes DP*.
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. Seleccione *Habilitar acceso a volúmenes DP* en la parte superior de la página.
+. Revise el mensaje de confirmación y seleccione *Activar acceso a volúmenes DP* de nuevo.
 +
 ** Se habilitaron los volúmenes creados inicialmente como volúmenes NFS en el FSX de origen para el sistema de archivos ONTAP.
 ** Los volúmenes creados inicialmente como volúmenes CIFS en el FSX de origen para el sistema de archivos ONTAP requieren que introduzca credenciales CIFS para analizar esos volúmenes DP. Si ya has introducido credenciales de Active Directory para que la clasificación de BlueXP pueda analizar los volúmenes de CIFS, pueda usar esas credenciales o puede especificar un conjunto diferente de credenciales de administrador.
@@ -236,7 +175,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Una captura de pantalla de las 
 .Resultado
 Una vez habilitada, la clasificación de BlueXP crea un recurso compartido NFS de cada volumen de DP que se activó para el análisis. Las políticas de exportación de recursos compartidos solo permiten el acceso desde la instancia de clasificación de BlueXP.
 
-*Nota:* Si no ha tenido volúmenes de protección de datos CIFS cuando ha activado inicialmente el acceso a volúmenes DP y, más tarde, agregue algunos, el botón *Activar acceso a CIFS DP* aparece en la parte superior de la página Configuración. Haga clic en este botón y añada credenciales CIFS para habilitar el acceso a estos volúmenes CIFS DP.
+Si no tenía volúmenes de protección de datos CIFS cuando inicialmente habilitó el acceso a volúmenes DP y luego agregó algunos, el botón *Enable Access to CIFS DP* aparece en la parte superior de la página de configuración. Seleccione este botón y añada credenciales CIFS para permitir el acceso a estos volúmenes de CIFS DP.
 
 
-NOTE: Las credenciales de Active Directory solo están registradas en la máquina virtual de almacenamiento del primer volumen CIFS DP, por lo que se analizarán todos los volúmenes de DP en esa SVM. Cualquier volumen que resida en otras SVM no tendrá registradas las credenciales de Active Directory; por lo tanto, esos volúmenes de DP no se analizarán.
+NOTE: Las credenciales de Active Directory se registran solo en la máquina virtual de almacenamiento del primer volumen CIFS DP, por lo que todos los volúmenes de DP en esa SVM se analizarán. Cualquier volumen que resida en otras SVM no tendrá registradas las credenciales de Active Directory; por lo tanto, esos volúmenes de DP no se analizarán.

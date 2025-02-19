@@ -1,0 +1,41 @@
+= Versión 1,40
+:allow-uri-read: 
+
+
+
+
+=== Versión 1,40
+
+Esta versión de clasificación de BlueXP  incluye las siguientes actualizaciones.
+
+.Compatibilidad con RHEL 9,5
+Esta versión es compatible con Red Hat Enterprise Linux v9,5 además de las versiones compatibles anteriormente. Esto se aplica a cualquier instalación manual en las instalaciones de la clasificación BlueXP , incluidas las puestas en marcha de sitios oscuros.
+
+Los siguientes sistemas operativos requieren el uso del motor de contenedores Podman y requieren la versión de clasificación BlueXP  1,30 o superior: Red Hat Enterprise Linux versión 8,8, 8,10, 9,0, 9,1, 9,2, 9,3, 9,4 y 9,5.
+
+.Priorice las adquisiciones
+Al realizar exploraciones de sólo asignación, puede priorizar las exploraciones más importantes. Esta función ayuda cuando tiene muchos entornos de trabajo y desea garantizar que las exploraciones de alta prioridad se completen primero.
+
+De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Gracias a la capacidad de dar prioridad a las exploraciones, ahora puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
+
+La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
+
+La priorización está limitada alink:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["exploraciones de sólo asignación"]; no está disponible para las exploraciones de mapas y clasificaciones.
+
+Para cambiar la prioridad:
+
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. Seleccione los recursos que desea priorizar.
+. En la opción Acciones ..., seleccione *Priorizar escaneo*.
+
+
+.Vuelva a intentar todas las adquisiciones
+La clasificación BlueXP  ahora admite la capacidad de reintentar por lotes todos los análisis fallidos.
+
+Ahora puede volver a intentar escaneos en una operación por lotes con la función **Reintentar todo**. Si las exploraciones de clasificación fallan debido a un problema temporal, como una interrupción de la red, puede volver a intentar todas las exploraciones al mismo tiempo con un botón en lugar de volver a intentarlo individualmente. Las secuencias se pueden volver a intentar tantas veces como sea necesario.
+
+Para volver a intentar todas las adquisiciones:
+
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. Para volver a intentar todos los escaneos fallidos, seleccione *Reintentar todos los escaneos*.
+

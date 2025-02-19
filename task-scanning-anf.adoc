@@ -18,47 +18,6 @@ Completa unos pasos para empezar a usar la clasificación de BlueXP para Azure N
 
 
 
-== Inicio rápido
-
-Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las secciones restantes para obtener todos los detalles.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Descubra los sistemas Azure NetApp Files que desea analizar
-[role="quick-margin-para"]
-Antes de poder analizar volúmenes Azure NetApp Files, https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["Debe configurar BlueXP para descubrir la configuración"^].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP en BlueXP"^] si aún no hay una instancia implementada.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Habilita la clasificación de BlueXP y selecciona los volúmenes que deseas escanear
-[role="quick-margin-para"]
-Haga clic en *cumplimiento*, seleccione la ficha *Configuración* y active los análisis de cumplimiento para volúmenes en entornos de trabajo específicos.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Garantice el acceso a los volúmenes
-[role="quick-margin-para"]
-Ahora que la clasificación de BlueXP está habilitada, asegúrate de que puede acceder a todos los volúmenes.
-
-[role="quick-margin-list"]
-* La instancia de clasificación de BlueXP necesita una conexión de red con cada subred Azure NetApp Files.
-* Asegúrate de que estos puertos estén abiertos a la instancia de clasificación de BlueXP:
-+
-** Para NFS, puertos 111 y 2049.
-** Para CIFS, puertos 139 y 445.
-
-
-* Las políticas de exportación de volúmenes de NFS deben permitir el acceso desde la instancia de clasificación de BlueXP.
-* La clasificación de BlueXP necesita credenciales de Active Directory para analizar los volúmenes de CIFS.
-+
-Haga clic en *cumplimiento* > *Configuración* > *Editar credenciales CIFS* y proporcione las credenciales.
-
-
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinco"] Gestione los volúmenes que desea analizar
-[role="quick-margin-para"]
-Selecciona o anula la selección de los volúmenes que quieres analizar y la clasificación de BlueXP iniciará o detendrá su análisis.
-
-
-
 == Descubra el sistema Azure NetApp Files que desea escanear
 
 Si el sistema Azure NetApp Files que desea escanear no está ya en BlueXP como entorno de trabajo, puede agregarlo al lienzo en este momento.
@@ -75,29 +34,28 @@ La clasificación de BlueXP debe ponerse en marcha en la nube al analizar los vo
 
 *Nota:* La implementación de la clasificación de BlueXP en una ubicación local no es compatible actualmente al analizar volúmenes de Azure NetApp Files.
 
-Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
-
 
 
 == Active la clasificación BlueXP  en sus entornos de trabajo
 
 Puede habilitar la clasificación de BlueXP en sus volúmenes de Azure NetApp Files.
 
-. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y seleccione la ficha *Configuración*.
+. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación*.
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
 +
 image:screenshot_cloud_compliance_anf_scan_config.png["Una captura de pantalla de la pestaña Configuration inmediatamente después de implementar la instancia de clasificación de BlueXP."]
 
 . Seleccione cómo desea analizar los volúmenes en cada entorno de trabajo. link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Obtenga más información sobre las exploraciones de clasificación y mapeo"]:
 +
-** Para asignar todos los volúmenes, haga clic en *asignar todos los volúmenes*.
-** Para asignar y clasificar todos los volúmenes, haga clic en *asignar y clasificar todos los volúmenes*.
-** Para personalizar la exploración de cada volumen, haga clic en *o seleccione el tipo de exploración para cada volumen* y, a continuación, elija los volúmenes que desea asignar y/o clasificar.
+** Para asignar todos los volúmenes, selecciona *Asignar todos los volúmenes*.
+** Para asignar y clasificar todos los volúmenes, selecciona *Asignar y clasificar todos los volúmenes*.
+** Para personalizar el escaneo para cada volumen, selecciona *o selecciona el tipo de escaneo para cada volumen* y luego elige los volúmenes que deseas asignar y/o clasificar.
 +
 Consulte <<Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes,Habilite y deshabilite los análisis de cumplimiento de normativas de los volúmenes>> para obtener más información.
 
 
 
-. En el cuadro de diálogo de confirmación, haz clic en *Aprobar* para que la clasificación de BlueXP comience a escanear tus volúmenes.
+. En el cuadro de diálogo de confirmación, seleccione *Aprobar* para que la clasificación BlueXP  comience a escanear sus volúmenes.
 
 
 .Resultado
@@ -116,12 +74,11 @@ La clasificación de BlueXP comienza a analizar los volúmenes que seleccionaste
 
 Asegúrese de que la clasificación de BlueXP pueda acceder a los volúmenes comprobando la red, los grupos de seguridad y las políticas de exportación. Tendrás que ofrecer la clasificación de BlueXP con credenciales CIFS para que pueda acceder a los volúmenes de CIFS.
 
-.Pasos
-. Asegúrate de que haya una conexión de red entre la instancia de clasificación de BlueXP y cada red que incluya volúmenes para Azure NetApp Files.
-+
 
 NOTE: Para Azure NetApp Files, la clasificación de BlueXP solo puede analizar volúmenes que estén en la misma región que BlueXP.
 
+.Pasos
+. Asegúrate de que haya una conexión de red entre la instancia de clasificación de BlueXP y cada red que incluya volúmenes para Azure NetApp Files.
 . Compruebe que los siguientes puertos estén abiertos en la instancia de clasificación de BlueXP:
 +
 ** Para NFS, puertos 111 y 2049.
@@ -131,11 +88,15 @@ NOTE: Para Azure NetApp Files, la clasificación de BlueXP solo puede analizar v
 . Compruebe que las políticas de exportación de volúmenes de NFS incluyan la dirección IP de la instancia de clasificación de BlueXP para que pueda acceder a los datos de cada volumen.
 . Si usas CIFS, proporciona una clasificación de BlueXP con credenciales de Active Directory para que pueda analizar los volúmenes de CIFS.
 +
-.. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y seleccione la ficha *Configuración*.
+.. En el menú de navegación izquierdo de BlueXP , selecciona *Gobernanza > Clasificación*.
+
+
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
 +
 image:screenshot_cifs_credentials.gif["Captura de pantalla de la ficha cumplimiento que muestra el botón Estado del análisis que está disponible en la parte superior derecha del panel de contenido."]
 
-.. Para cada entorno de trabajo, haga clic en *Edit CIFS Credentials* e introduzca el nombre de usuario y la contraseña que la clasificación de BlueXP necesita para acceder a los volúmenes CIFS del sistema.
++
+.. Para cada entorno de trabajo, seleccione *Editar Credenciales CIFS* e introduzca el nombre de usuario y la contraseña que la clasificación BlueXP  necesita para acceder a los volúmenes CIFS del sistema.
 +
 Las credenciales pueden ser de solo lectura, pero al proporcionar credenciales de administrador se garantiza que la clasificación de BlueXP pueda leer cualquier dato que requiera permisos elevados. Las credenciales se almacenan en la instancia de clasificación de BlueXP.
 
@@ -150,7 +111,7 @@ image:screenshot_cifs_status.gif["Captura de pantalla que muestra la página Con
 
 
 
-. En la página _Configuration_, haga clic en *View Details* para revisar el estado de cada volumen CIFS y NFS y corregir los errores.
+. En la página de configuración, seleccione *Ver detalles* para revisar el estado de cada volumen CIFS y NFS y corregir cualquier error.
 +
 Por ejemplo, la siguiente imagen muestra cuatro volúmenes, uno de los cuales la clasificación de BlueXP no puede analizar debido a problemas de conectividad de red entre la instancia de clasificación de BlueXP y el volumen.
 
@@ -165,34 +126,20 @@ image:screenshot_compliance_volume_details.gif["Una captura de pantalla de la p�
 
 Puede iniciar o detener exploraciones de sólo asignación, o bien análisis de asignación y clasificación, en un entorno de trabajo en cualquier momento desde la página Configuración. También puede cambiar de exploraciones de sólo asignación a exploraciones de asignación y clasificación, y viceversa. Le recomendamos que analice todos los volúmenes.
 
+
+TIP: Los nuevos volúmenes agregados al entorno de trabajo sólo se analizan automáticamente cuando se ha establecido el ajuste *Mapa* o *Mapa y clasificación* en el área de rumbo. Cuando se establece en *personalizado* o *Desactivado* en el área rumbo, deberá activar la asignación y/o la exploración completa en cada volumen nuevo que agregue en el entorno de trabajo.
+
 El conmutador situado en la parte superior de la página para *Buscar cuando faltan los permisos de "atributos de escritura"* está desactivado de forma predeterminada. Esto significa que, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Si no le importa si se restablece la última hora de acceso, ENCIENDA el conmutador y se explorarán todos los archivos independientemente de los permisos. link:reference-collected-metadata.html#last-access-time-timestamp["Leer más"^].
 
 image:screenshot_volume_compliance_selection.png["Captura de pantalla de la página Configuración en la que puede activar o desactivar el análisis de volúmenes individuales."]
 
-[cols="45,45"]
-|===
-| Para: | Haga lo siguiente: 
+.Pasos
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. Debe realizar una de las siguientes acciones:
++
+** Para habilitar las exploraciones de solo asignación en un volumen, en el área de volumen, seleccione *Mapa*. Para activar todos los volúmenes, en el área de encabezado, seleccione *Mapa*.
+** Para activar el escaneo completo en un volumen, en el área de volumen, seleccione *Mapa y clasificación*. Para activar todos los volúmenes, en el área de encabezado, seleccione *Mapa y clasificación*.
+** Para desactivar el escaneo en un volumen, en el área de volumen, seleccione *Desactivado*. Para desactivar el escaneo en todos los volúmenes, en el área de encabezado, seleccione *Desactivado*.
 
 
-| Active los análisis de sólo asignación en un volumen | En el área de volumen, haga clic en *Mapa* 
 
-
-| Active el análisis completo en un volumen | En el área de volumen, haga clic en *Mapa y clasificación* 
-
-
-| Desactive el análisis en un volumen | En el área de volumen, haga clic en *Desactivado* 
-
-
-|  |  
-
-
-| Active análisis de sólo asignación en todos los volúmenes | En el área de encabezado, haga clic en *Mapa* 
-
-
-| Active el análisis completo en todos los volúmenes | En el área de encabezado, haga clic en *Mapa y clasificación* 
-
-
-| Desactive el análisis en todos los volúmenes | En el área encabezado, haga clic en *Desactivado* 
-|===
-
-NOTE: Los nuevos volúmenes agregados al entorno de trabajo sólo se analizan automáticamente cuando se ha establecido el ajuste *Mapa* o *Mapa y clasificación* en el área de rumbo. Cuando se establece en *personalizado* o *Desactivado* en el área rumbo, deberá activar la asignación y/o la exploración completa en cada volumen nuevo que agregue en el entorno de trabajo.

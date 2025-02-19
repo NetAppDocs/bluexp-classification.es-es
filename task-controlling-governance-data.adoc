@@ -44,7 +44,7 @@ Puede que desee investigar los elementos del área _Saving Opportunities_ para v
 ** Varios (categoría general "otros")
 
 
-* *Duplicar archivos*: Archivos duplicados en otras ubicaciones de los orígenes de datos que está analizando. link:task-investigate-data.html#view-all-duplicated-files["Consulte qué tipos de archivos duplicados se muestran"].
+* *Duplicar archivos*: Archivos duplicados en otras ubicaciones de los orígenes de datos que está analizando. link:task-investigate-data.html#filter-data-by-duplicates["Consulte qué tipos de archivos duplicados se muestran"].
 
 
 

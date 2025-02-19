@@ -18,28 +18,6 @@ Completa unos pasos para empezar a analizar tus esquemas de base de datos con la
 
 
 
-== Inicio rápido
-
-Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las secciones restantes para obtener todos los detalles.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Revisar los requisitos previos de la base de datos
-[role="quick-margin-para"]
-Asegúrese de que la base de datos es compatible y de que dispone de la información necesaria para conectarse a la base de datos.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Implementa la instancia de clasificación de BlueXP
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Implementa la clasificación de BlueXP"^] si aún no hay una instancia implementada.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Agregue el servidor de la base de datos
-[role="quick-margin-para"]
-Agregue el servidor de base de datos al que desea acceder.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Seleccione los esquemas
-[role="quick-margin-para"]
-Seleccione los esquemas que desea analizar.
-
-
-
 == Revise los requisitos previos
 
 Revise los siguientes requisitos previos para comprobar que tiene una configuración compatible antes de habilitar la clasificación de BlueXP.
@@ -89,18 +67,14 @@ Si está analizando esquemas de base de datos a los que se puede acceder a trav�
 
 Si está analizando esquemas de base de datos que se han instalado en un sitio oscuro que no tiene acceso a Internet, debe hacerlo link:task-deploy-compliance-dark-site.html["Pon en marcha la clasificación de BlueXP en la misma ubicación on-premises que no tiene acceso a Internet"^]. Esto también requiere que el conector BlueXP se despliegue en esa misma ubicación en las instalaciones.
 
-Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
-
 
 
 == Agregue el servidor de la base de datos
 
 Agregue el servidor de base de datos donde residen los esquemas.
 
-. En la página Configuración de entornos de trabajo, haga clic en *Agregar origen de datos* > *Agregar servidor de base de datos*.
-+
-image:screenshot_compliance_add_db_server_button.png["Captura de pantalla de la página Configuración de exploración donde puede hacer clic en el botón Agregar servidor de base de datos."]
-
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. En la página Configuración, seleccione *Agregar entorno de trabajo* > *Agregar servidor de base de datos*.
 . Introduzca la información necesaria para identificar el servidor de bases de datos.
 +
 .. Seleccione el tipo de base de datos.
@@ -126,7 +100,7 @@ Puede detener o iniciar el análisis completo de sus esquemas en cualquier momen
 
 TIP: No existe ninguna opción para seleccionar los análisis de sólo asignación para esquemas de base de datos.
 
-. En la página _Configuration_, haga clic en el botón *Configuration* de la base de datos que desea configurar.
+. En la página Configuración, seleccione el botón *Configuración* de la base de datos que desea configurar.
 +
 image:screenshot_compliance_db_server_config.png["Captura de pantalla de la página Configuración de exploración donde puede seleccionar el botón Configuración."]
 
@@ -139,4 +113,4 @@ image:screenshot_compliance_select_schemas.png["Captura de pantalla de la págin
 .Resultado
 La clasificación de BlueXP comienza a analizar los esquemas de base de datos que ha habilitado. Si hay algún error, aparecerán en la columna Estado, junto con la acción necesaria para corregir el error.
 
-Ten en cuenta que la clasificación de BlueXP analiza tus bases de datos una vez al día: Las bases de datos no se analizan continuamente, como otras fuentes de datos.
+La clasificación de BlueXP  analiza sus bases de datos una vez al día; las bases de datos no se analizan continuamente como otras fuentes de datos.
