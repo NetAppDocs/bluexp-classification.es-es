@@ -39,3 +39,6 @@ Para volver a intentar todas las adquisiciones:
 . En el menú de clasificación de BlueXP , selecciona *Configuración*.
 . Para volver a intentar todos los escaneos fallidos, seleccione *Reintentar todos los escaneos*.
 
+
+.Precisión mejorada del modelo de categorización
+La precisión del modelo de aprendizaje automático link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["categorías predefinidas"]ha mejorado en un 11%.
