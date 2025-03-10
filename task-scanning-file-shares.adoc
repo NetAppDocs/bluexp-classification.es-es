@@ -119,7 +119,7 @@ Si el cuadro de diálogo enumera los recursos compartidos que no se han podido a
 El conmutador situado en la parte superior de la página para *Buscar cuando faltan los permisos de "atributos de escritura"* está desactivado de forma predeterminada. Esto significa que, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Si no le importa si se restablece la última hora de acceso, ENCIENDA el conmutador y se explorarán todos los archivos independientemente de los permisos. link:reference-collected-metadata.html#last-access-time-timestamp["Leer más"^].
 
 .Resultado
-La clasificación de BlueXP comienza a analizar los archivos en los recursos compartidos de archivos que ha añadido y los resultados se muestran en la consola y en otras ubicaciones.
+La clasificación de BlueXP comienza a analizar los archivos en los recursos compartidos de archivos que ha añadido y los resultados se muestran en la consola y en otras ubicaciones. Puede realizar un seguimiento del progreso de la exploración inicial navegando al menú **Configuración** y luego seleccionando la **Configuración del entorno de trabajo**. El progreso de cada adquisición se muestra como una barra de progreso. También puede pasar el ratón sobre la barra de progreso para ver el número de archivos escaneados en relación con el total de archivos en el volumen.
 
 
 

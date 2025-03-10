@@ -82,4 +82,4 @@ image:screenshot-scanning-add-storagegrid-buckets.png["Una captura de pantalla q
 
 
 .Resultado
-La clasificación de BlueXP comienza a analizar los bloques que has habilitado. Si hay algún error, aparecerán en la columna Estado, junto con la acción necesaria para corregir el error.
+La clasificación de BlueXP comienza a analizar los bloques que has habilitado. Puede realizar un seguimiento del progreso de la exploración inicial navegando al menú **Configuración** y luego seleccionando la **Configuración del entorno de trabajo**. El progreso de cada adquisición se muestra como una barra de progreso. También puede pasar el ratón sobre la barra de progreso para ver el número de archivos escaneados en relación con el total de archivos en el volumen. Si hay algún error, aparecerán en la columna Estado, junto con la acción necesaria para corregir el error.

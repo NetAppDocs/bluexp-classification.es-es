@@ -59,7 +59,7 @@ Consulte <<Habilite y deshabilite los análisis de cumplimiento de normativas de
 
 
 .Resultado
-La clasificación de BlueXP comienza a analizar los volúmenes que seleccionaste en el entorno de trabajo. Los resultados estarán disponibles en la consola de cumplimiento en cuanto la clasificación de BlueXP finalice los análisis iniciales. El tiempo que se tarda en depende de la cantidad de datos; puede que sea unos minutos u horas.
+La clasificación de BlueXP comienza a analizar los volúmenes que seleccionaste en el entorno de trabajo. Los resultados estarán disponibles en la consola de cumplimiento en cuanto la clasificación de BlueXP finalice los análisis iniciales. El tiempo que se tarda en depende de la cantidad de datos; puede que sea unos minutos u horas. Puede realizar un seguimiento del progreso de la exploración inicial navegando al menú **Configuración** y luego seleccionando la **Configuración del entorno de trabajo**. El progreso de cada adquisición se muestra como una barra de progreso. También puede pasar el ratón sobre la barra de progreso para ver el número de archivos escaneados en relación con el total de archivos en el volumen.
 
 [NOTE]
 ====

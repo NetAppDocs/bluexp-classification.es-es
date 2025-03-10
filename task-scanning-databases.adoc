@@ -111,6 +111,6 @@ image:screenshot_compliance_select_schemas.png["Captura de pantalla de la págin
 
 
 .Resultado
-La clasificación de BlueXP comienza a analizar los esquemas de base de datos que ha habilitado. Si hay algún error, aparecerán en la columna Estado, junto con la acción necesaria para corregir el error.
+La clasificación de BlueXP comienza a analizar los esquemas de base de datos que ha habilitado. Puede realizar un seguimiento del progreso de la exploración inicial navegando al menú **Configuración** y luego seleccionando la **Configuración del entorno de trabajo**. El progreso de cada adquisición se muestra como una barra de progreso. También puede pasar el ratón sobre la barra de progreso para ver el número de archivos escaneados en relación con el total de archivos en el volumen. Si hay algún error, aparecerán en la columna Estado, junto con la acción necesaria para corregir el error.
 
 La clasificación de BlueXP  analiza sus bases de datos una vez al día; las bases de datos no se analizan continuamente como otras fuentes de datos.
