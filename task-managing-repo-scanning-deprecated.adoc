@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-repo-scanning-deprecated.html 
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
-summary: 'Puede gestionar cómo se analizan sus datos en cada uno de sus entornos de trabajo y fuentes de datos. Puede realizar los cambios en función del "repositorio", lo que significa que puede realizar cambios para cada volumen, bloque, recurso compartido, esquema, usuario, etc. dependiendo del tipo de origen de datos que esté escaneando.' 
+summary: Puede gestionar cómo se analizan sus datos en cada uno de sus entornos de trabajo y fuentes de datos. Puede realizar los cambios en función del repositorio, lo que significa que puede realizar cambios para cada volumen, depósito, recurso compartido, esquema, usuario, etc., según el tipo de origen de datos que esté escaneando. 
 ---
-= Volver a escanear datos para un repositorio existente
+= Volver a analizar los datos de un repositorio existente con la clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: reference-private-data-categories.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, categories, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, sex, criminal, compliance, privacy, 
 summary: Hay muchos tipos de datos privados que la clasificación de BlueXP puede identificar en tus volúmenes, bloques de Amazon S3, bases de datos, carpetas de OneDrive, cuentas de SharePoint, etc. Y cuentas de Google Drive. 
 ---
-= Categorías de datos privados
+= Categorías de datos privados en clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

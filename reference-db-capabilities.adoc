@@ -4,7 +4,7 @@ permalink: reference-db-capabilities.html
 keywords: database actions, database filters, supported, unsupported 
 summary: Hay algunas características y funcionalidades que no están disponibles con la clasificación de BlueXP cuando se analizan esquemas de base de datos. 
 ---
-= Capacidades de base de datos admitidas y no soportadas
+= Capacidades de base de datos admitidas y no soportadas en la clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

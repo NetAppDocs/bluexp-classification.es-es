@@ -4,7 +4,7 @@ permalink: task-using-policies-deprecated.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: Las directivas son como una lista de favoritos de filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento solicitadas con frecuencia. La clasificación de BlueXP proporciona un conjunto de políticas predefinidas basadas en solicitudes habituales de los clientes. Puede crear directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización. 
 ---
-= Enviar alertas de correo electrónico cuando se encuentren datos no conformes
+= Envíe alertas de correo electrónico cuando la clasificación BlueXP  encuentre datos que no cumplen con la normativa
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

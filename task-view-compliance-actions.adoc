@@ -4,7 +4,7 @@ permalink: task-view-compliance-actions.html
 keywords: compliance, actions, view progress 
 summary: Cuando ejecuta una acción desde el panel de resultados de la investigación en varios archivos, por ejemplo, al eliminar archivos 100, el proceso puede tardar algún tiempo. Puede supervisar el estado de estas acciones asíncronas en el panel Estado de la acción para saber cuándo se ha aplicado a todos los archivos. 
 ---
-= Ver el estado de las acciones de cumplimiento
+= Ver el estado de las acciones de cumplimiento en la clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

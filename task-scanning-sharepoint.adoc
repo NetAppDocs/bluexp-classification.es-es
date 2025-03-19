@@ -4,7 +4,7 @@ permalink: task-scanning-sharepoint.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, sharepoint online, sharepoint on-premises, data sense 
 summary: Complete unos pasos para empezar a analizar archivos en sus cuentas on-premise de SharePoint Online y SharePoint con clasificación de BlueXP. 
 ---
-= Analizar cuentas de SharePoint
+= Analizar cuentas de SharePoint con clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
