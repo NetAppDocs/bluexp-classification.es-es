@@ -130,7 +130,7 @@ Hay algunas funciones y funcionalidades obsoletas en la versión principal de Bl
 | Buscar nombres dentro de los archivos | Sí | Sí 
 
 
-| Exportar datos a NFS desde la investigación | Sí | No 
+| Exportar datos a NFS/CIFS desde investigación | Sí | Sí 
 
 
 | Exportar datos a CSV desde la investigación | Sí | Sí 
