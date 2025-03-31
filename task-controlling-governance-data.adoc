@@ -16,6 +16,8 @@ summary: Controle los costes relacionados con los datos que residen en los recur
 [role="lead"]
 Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato.
 
+Aquí es donde debe comenzar su investigación. En el panel de control de gobierno, puede seleccionar un área para una investigación más detallada.
+
 Además, si tiene pensado migrar datos desde ubicaciones en las instalaciones al cloud, puede ver el tamaño de los datos y si alguno de ellos contiene información confidencial antes de moverlos.
 
 
@@ -42,7 +44,7 @@ Puede que desee investigar los elementos del área _Saving Opportunities_ para v
 
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En cada mosaico Oportunidades de ahorro del panel de control de gobierno, seleccione *Optimizar almacenamiento* para ver los resultados filtrados en la página de investigación.
+. En cada mosaico Oportunidades de ahorro del panel de control de gobierno, seleccione *Optimizar almacenamiento* para ver los resultados filtrados en la página de investigación. Puede que desee investigar los elementos del área _Saving Opportunities_ para ver si hay datos que debe eliminar o organizar en niveles un almacenamiento de objetos menos costoso.
 +
 ** * Datos obsoletos* - datos que se modificaron por última vez hace 3 años.
 ** *Datos no profesionales* - datos que se consideran no relacionados con el negocio, en función de su categoría o tipo de archivo. Estos recursos incluyen:
@@ -70,13 +72,13 @@ NOTE: Si alguno de sus orígenes de datos implementa una organización en nivele
 
 En el área _Policies_, las políticas con el mayor número de resultados aparecen en la parte superior de la lista.
 
+Para obtener detalles sobre políticas, consulte link:task-using-policies.html["Asigne políticas a sus datos"].
+
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En el icono Políticas del panel de control de gobierno, seleccione el nombre de una política en para mostrar los resultados en la página Investigación.
-. Seleccione *Ver todo* para ver la lista de todas las políticas disponibles.
+. En el panel de control de gobierno > mosaico Políticas, seleccione el nombre de una política para mostrar los resultados en la página Investigación.
+. Seleccione *Ver todo* para ver la lista de todas las políticas disponibles. En el área _Policies_, las políticas con el mayor número de resultados aparecen en la parte superior de la lista.
 
-
-Para obtener detalles sobre políticas, consulte link:task-using-policies.html["Asigne políticas a sus datos"].
 
 
 
@@ -99,14 +101,15 @@ El informe de evaluación de detección de datos proporciona un análisis de alt
 |===
 Con este informe, puede realizar las siguientes acciones:
 
-* Reduzca los costes de almacenamiento cambiando su política de retención, o moviendo o eliminando determinados datos (datos obsoletos, duplicados o no empresariales).
-* Proteja los datos que tienen permisos amplios mediante la revisión de las políticas globales de gestión de grupos.
-* Proteja sus datos que tienen información personal o confidencial moviendo PII a almacenes de datos más seguros.
+* Reducir los costes de almacenamiento cambiando la política de retención o moviendo o eliminando ciertos datos (datos obsoletos, duplicados o no empresariales).
+* Proteja sus datos con amplios permisos mediante la revisión de las políticas de gestión de grupos globales
+* Proteja sus datos con información personal o confidencial moviendo PII a almacenes de datos más seguros
 
 
 .Pasos
-. En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En el panel de control de gobierno > sección Descripción general de datos, seleccione el botón *Informe de evaluación de detección de datos*.
+. En el menú BlueXP , selecciona *Gobernanza > Clasificación*.
+. Selecciona *Gobernanza*.
+. Selecciona *Informe de evaluación de descubrimiento de datos*.
 +
 image:screenshot-compliance-report-buttons.png["Captura de pantalla del panel de gobierno que muestra cómo iniciar el informe de evaluación de detección de datos."]
 
@@ -140,12 +143,13 @@ El informe incluye la siguiente información:
 | Tipos de archivo | Enumera el número total de archivos y la capacidad utilizada para cada tipo de archivo que se almacena en sus entornos de trabajo. 
 |===
 .Pasos
-. En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En el panel de control de gobernanza > sección Descripción general de datos, seleccione el botón *Informe general de asignación de datos completa*.
+. En el menú BlueXP , selecciona *Gobernanza > Clasificación*.
+. Selecciona *Gobernanza*.
+. Seleccione *Informe general de mapeo de datos completo*.
 +
 image:screenshot-compliance-report-buttons.png["Captura de pantalla del panel de gobierno que muestra cómo iniciar el informe de asignación de datos."]
 
-. Para personalizar el nombre de la empresa que aparece en la primera página del informe, en la parte superior de la página de clasificación BlueXP , seleccione image:screenshot_gallery_options.gif["El botón más"]. A continuación, seleccione *Cambiar el nombre de la empresa*. La próxima vez que genere el informe, incluirá el nuevo nombre.
+. Para personalizar el nombre de la empresa que aparece en la primera página del informe, en la parte superior derecha de la página de clasificación BlueXP , seleccione image:screenshot_gallery_options.gif["El botón más"]. A continuación, seleccione *Cambiar el nombre de la empresa*. La próxima vez que genere el informe, incluirá el nuevo nombre.
 
 
 .Resultado
@@ -155,7 +159,7 @@ Si el informe tiene un tamaño superior a 1 MB, el archivo .pdf se conservará e
 
 
 
-== Revise los principales repositorios de datos que aparecen según la sensibilidad de los datos
+=== Revise los principales repositorios de datos que aparecen según la sensibilidad de los datos
 
 El área _Top Data Repository by Sensitivity Level_ enumera los cuatro principales repositorios de datos (entornos de trabajo y orígenes de datos) que contienen los elementos más sensibles. El gráfico de barras de cada entorno de trabajo se divide en:
 
@@ -165,14 +169,13 @@ El área _Top Data Repository by Sensitivity Level_ enumera los cuatro principal
 
 
 .Pasos
-. En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En el panel de control de gobierno > sección Descripción general de datos, para ver el número total de elementos de cada categoría, coloque el cursor sobre cada sección de la barra.
+. Para ver el número total de elementos de cada categoría, coloque el cursor sobre cada sección de la barra.
 . Para filtrar los resultados que aparecerán en la página Investigación, seleccione cada área en la barra e investigue más.
 
 
 
 
-== Revise los datos confidenciales y los amplios permisos
+=== Revise los datos confidenciales y los amplios permisos
 
 El área Datos sensibles y Permisos amplios muestra el porcentaje de archivos que contienen datos confidenciales y tienen permisos amplios. El gráfico muestra los siguientes tipos de permisos:
 
@@ -181,14 +184,13 @@ El área Datos sensibles y Permisos amplios muestra el porcentaje de archivos qu
 
 
 .Pasos
-. En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En la sección Panel de control de gobierno > Datos confidenciales y Permisos amplios, para ver el número total de archivos de cada categoría, coloque el cursor sobre cada cuadro.
+. Para ver el número total de archivos en cada categoría, coloque el cursor sobre cada cuadro.
 . Para filtrar los resultados que aparecerán en la página Investigación, seleccione un cuadro e investigue más a fondo.
 
 
 
 
-== Revise los datos enumerados por tipos de permisos abiertos
+=== Revise los datos enumerados por tipos de permisos abiertos
 
 El área _Open Permissions_ muestra el porcentaje de cada tipo de permisos que existen para todos los archivos que se están analizando. El gráfico muestra los siguientes tipos de permisos:
 
@@ -199,20 +201,18 @@ El área _Open Permissions_ muestra el porcentaje de cada tipo de permisos que e
 
 
 .Pasos
-. En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En la sección Panel de control de gobierno > Abrir permisos, para ver el número total de archivos de cada categoría, coloque el cursor sobre cada cuadro.
+. Para ver el número total de archivos en cada categoría, coloque el cursor sobre cada cuadro.
 . Para filtrar los resultados que aparecerán en la página Investigación, seleccione un cuadro e investigue más a fondo.
 
 
 
 
-== Revise la edad y el tamaño de los datos
+=== Revise la edad y el tamaño de los datos
 
 Es posible que desee investigar los elementos de los gráficos _age_ y _Size_ para ver si hay algún dato que debe eliminar o organizar en niveles el almacenamiento de objetos menos costoso.
 
 .Pasos
-. En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En el gráfico Age of Data del panel Governance, para ver detalles sobre la antigüedad de los datos, coloque el cursor sobre un punto del gráfico.
+. En el gráfico Edad de los datos, para ver detalles sobre la antigüedad de los datos, coloque el cursor sobre un punto del gráfico.
 . Para filtrar por edad o rango de tamaño, seleccione esa edad o tamaño.
 +
 ** * Edad del Gráfico de datos* - categoriza los datos en función de la hora en que se creó, la última vez que se accedió o la última vez que se modificó.
@@ -226,34 +226,18 @@ NOTE: Si alguno de sus orígenes de datos implementa una organización en nivele
 
 
 
-== Revise las clasificaciones de datos más identificadas en sus datos
+=== Revise las clasificaciones de datos más identificadas en sus datos
 
 El área _Classification_ proporciona una lista de los más identificados link:task-controlling-private-data.html#view-files-by-categories["Categorías"^] y.. link:task-controlling-private-data.html#view-files-by-file-types["Tipos de archivo"^] en los datos escaneados.
-
-
-
-=== Revise las categorías de clasificación más identificadas
 
 Las categorías pueden ayudarle a entender lo que está pasando con sus datos mostrándole los tipos de información que tiene. Por ejemplo, una categoría como "currículos" o "contratos de empleados" puede incluir datos confidenciales. Al investigar los resultados, puede que se dé cuenta de que los contratos de empleados están almacenados en una ubicación no segura. Entonces puede corregir ese problema.
 
 Consulte link:task-controlling-private-data.html#view-files-by-categories["Ver archivos por categorías"^] si quiere más información.
 
 .Pasos
-. En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En el panel de control de gobernanza > sección Clasificación > mosaico Categorías, para ver los detalles de una categoría, selecciónela. La página Investigación proporciona datos que se filtran solo para esa categoría.
-. Para mostrar todas las categorías, selecciona *Ver todo*.
+. En el menú BlueXP, haga clic en *Gobierno > Clasificación*.
+. Haga clic en *Gobierno* y, a continuación, haga clic en el botón *Informe de evaluación de detección de datos*.
 
 
-
-
-=== Revise los tipos de archivo más identificados
-
-La revisión de los tipos de archivo puede ayudarle a controlar los datos confidenciales porque puede encontrar que determinados tipos de archivo no se almacenan correctamente.
-
-Consulte link:task-controlling-private-data.html#view-files-by-file-types["Visualización de tipos de archivo"^] si quiere más información.
-
-.Pasos
-. En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En el mosaico del panel de control de gobierno > sección Clasificación > Tipos de archivo, para ver los detalles sobre un tipo de archivo, selecciónelo en la sección Tipos de archivo del panel de control de gobierno. La página Investigación proporciona datos que se filtran sólo para ese tipo de archivo.
-. Para mostrar todos los tipos de archivo, seleccione *Ver todo*.
-
+.Resultado
+La clasificación de BlueXP genera un informe .pdf que se puede revisar y enviar a otros grupos según sea necesario.

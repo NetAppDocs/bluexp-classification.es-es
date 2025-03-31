@@ -40,6 +40,8 @@ sidebar:
         url: "/task-test-linux-system.html"
     - title: Active el análisis en sus orígenes de datos
       entries:
+      - title: Analice la información general de las fuentes de datos
+        url: "/task-scanning-overview.html"
       - title: Azure NetApp Files
         url: "/task-scanning-anf.html"
       - title: Amazon FSX para ONTAP

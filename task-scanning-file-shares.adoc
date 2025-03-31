@@ -21,7 +21,7 @@ NOTE: El análisis de datos procedentes de recursos compartidos de archivos que 
 
 
 
-== Revise los requisitos de recursos compartidos de archivos
+== Requisitos previos
 
 Revise los siguientes requisitos previos para comprobar que tiene una configuración compatible antes de habilitar la clasificación de BlueXP.
 
@@ -30,12 +30,6 @@ Revise los siguientes requisitos previos para comprobar que tiene una configurac
 Tenga en cuenta que la clasificación de BlueXP no puede extraer permisos ni la «última hora de acceso» de los sistemas 7-Mode. Además, debido a un problema conocido entre algunas versiones de Linux y recursos compartidos CIFS en sistemas 7-Mode, debe configurar el recurso compartido para que utilice solo SMB v1 con la autenticación NTLM habilitada.
 
 * Es necesario que haya conectividad de red entre la instancia de clasificación de BlueXP y los recursos compartidos.
-* Asegúrate de que estos puertos estén abiertos a la instancia de clasificación de BlueXP:
-+
-** Para NFS, puertos 111 y 2049.
-** Para CIFS, puertos 139 y 445.
-
-
 * Puede agregar un recurso compartido DFS (sistema de archivos distribuidos) como un recurso compartido de CIFS normal. Sin embargo, como la clasificación de BlueXP no sabe que el recurso compartido se crea en varios servidores o volúmenes combinados como un único recurso compartido de CIFS, puede que reciba errores de permiso o conectividad sobre el recurso compartido cuando el mensaje solo se aplica a una de las carpetas o recursos compartidos que está ubicada en un servidor o volumen diferente.
 * En el caso de los recursos compartidos CIFS (SMB), asegúrese de tener credenciales de Active Directory con acceso de lectura a los recursos compartidos. Se prefieren las credenciales de administrador en caso de que la clasificación de BlueXP deba analizar cualquier dato que requiera permisos elevados.
 +
@@ -46,17 +40,11 @@ Si quieres asegurarte de que las «horas de último acceso» no cambian debido a
 
 
 
-== Implementa la instancia de clasificación de BlueXP
-
-Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
-
-
-
 == Cree el grupo para los recursos compartidos de archivos
 
 Debe agregar un "grupo" de archivos compartidos antes de poder agregar los archivos compartidos. El grupo es un contenedor para los recursos compartidos de archivos que desea analizar y el nombre del grupo se utiliza como nombre del entorno de trabajo para esos archivos compartidos.
 
-Puede mezclar los recursos compartidos de NFS y CIFS en el mismo grupo, sin embargo, todos los recursos compartidos de archivos CIFS de un grupo deben utilizar las mismas credenciales de Active Directory. Si va a añadir recursos compartidos CIFS que utilizan credenciales diferentes, debe crear un grupo independiente para cada conjunto único de credenciales.
+Puede mezclar recursos compartidos de NFS y CIFS en el mismo grupo; sin embargo, todos los recursos compartidos de archivos CIFS de un grupo deben utilizar las mismas credenciales de Active Directory. Si va a añadir recursos compartidos CIFS que utilizan credenciales diferentes, debe crear un grupo independiente para cada conjunto único de credenciales.
 
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Configuración*.
@@ -81,32 +69,30 @@ Al añadir ambos recursos compartidos NFS y CIFS en un único grupo, deberá rea
 . En el menú de clasificación de BlueXP , selecciona *Configuración*.
 . En el mosaico Entornos de trabajo de la página Configuración, seleccione el botón *Configuración* para el Grupo de recursos compartidos de archivos.
 +
-image:screenshot_compliance_fileshares_add_shares.png["Captura de pantalla de la página Configuración de exploración donde puede seleccionar el botón Configuración."]
+image:screen-cl-config-file-shares.png["Una captura de pantalla que muestra el botón Configuración del grupo de recursos compartidos de archivos."]
 
 . Si esta es la primera vez que agrega recursos compartidos de archivos para este grupo de recursos compartidos de archivos, seleccione *Agregar sus primeros recursos compartidos*.
 +
-image:screenshot_compliance_fileshares_add_initial_shares.png["Una captura de pantalla que muestra el botón Agregar los primeros recursos compartidos para agregar los recursos compartidos iniciales al grupo."]
+image:screen-cl-config-file-shares-addshares.png["Una captura de pantalla que muestra el botón Agregar los primeros recursos compartidos para agregar los recursos compartidos iniciales al grupo."]
 
 +
-Si va a agregar recursos compartidos de archivos a un grupo existente, seleccione *Agregar recursos compartidos*.
+Si va a agregar recursos compartidos de archivos a un grupo existente, seleccione el grupo, seleccione *Configuración* y seleccione *Agregar recursos compartidos*.
 
+. Seleccione el protocolo para los recursos compartidos de archivos que va a añadir.
 +
-image:screenshot_compliance_fileshares_add_more_shares2.png["Una captura de pantalla que muestra el botón Agregar recursos compartidos para agregar más recursos compartidos al grupo."]
+image:screen-cl-config-shares-add.png["Una captura de pantalla que muestra las opciones para agregar recursos compartidos NFS o CIFS al grupo"]
 
-. Seleccione el protocolo para los archivos compartidos que está agregando, agregue los archivos compartidos que desea escanear (un archivo compartido por línea) y seleccione * Continuar *.
+. Agregue los recursos compartidos de archivos que desea escanear (un recurso compartido de archivos por línea).
 +
 Cuando se añaden recursos compartidos CIFS (SMB), debe introducir las credenciales de Active Directory con acceso de lectura a los recursos compartidos. Se prefieren las credenciales de administrador.
 
-+
-image:screenshot_compliance_fileshares_add_file_shares.png["Captura de pantalla de la página Agregar recursos compartidos de archivos donde puede agregar los recursos compartidos que se van a escanear."]
-
+. Seleccione *continuar*.
 +
 Un cuadro de diálogo de confirmación muestra el número de recursos compartidos que se han añadido.
 
 +
 Si el cuadro de diálogo enumera los recursos compartidos que no se han podido agregar, capture esta información para que pueda resolver el problema. En algunos casos, es posible volver a añadir el recurso compartido con un nombre de host o un nombre de recurso compartido corregidos.
 
-. Active análisis de sólo asignación o análisis de asignación y clasificación en cada recurso compartido de archivos.
 . Realice una de las siguientes acciones para activar o desactivar las exploraciones:
 +
 ** Para habilitar las exploraciones de solo asignación en recursos compartidos de archivos, selecciona *Mapa*.
@@ -114,12 +100,28 @@ Si el cuadro de diálogo enumera los recursos compartidos que no se han podido a
 ** Para desactivar el escaneo en archivos compartidos, seleccione *Desactivado*.
 
 
+. Si no le importa si se restablece la última hora de acceso, active el interruptor *Escanear cuando faltan permisos de “atributos de escritura”* y todos los archivos se escanean independientemente de los permisos.
++
+El conmutador situado en la parte superior de la página para *Buscar cuando faltan los permisos de "atributos de escritura"* está desactivado de forma predeterminada. Esto significa que, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. link:reference-collected-metadata.html#last-access-time-timestamp["Leer más"^].
 
 
-El conmutador situado en la parte superior de la página para *Buscar cuando faltan los permisos de "atributos de escritura"* está desactivado de forma predeterminada. Esto significa que, si la clasificación de BlueXP no tiene permisos de atributos de escritura en CIFS o permisos de escritura en NFS, el sistema no analizará los archivos, ya que la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Si no le importa si se restablece la última hora de acceso, ENCIENDA el conmutador y se explorarán todos los archivos independientemente de los permisos. link:reference-collected-metadata.html#last-access-time-timestamp["Leer más"^].
 
 .Resultado
-La clasificación de BlueXP comienza a analizar los archivos en los recursos compartidos de archivos que ha añadido y los resultados se muestran en la consola y en otras ubicaciones. Puede realizar un seguimiento del progreso de la exploración inicial navegando al menú **Configuración** y luego seleccionando la **Configuración del entorno de trabajo**. El progreso de cada adquisición se muestra como una barra de progreso. También puede pasar el ratón sobre la barra de progreso para ver el número de archivos escaneados en relación con el total de archivos en el volumen.
+La clasificación de BlueXP comienza a analizar los archivos en los recursos compartidos de archivos que ha añadido y los resultados se muestran en la consola y en otras ubicaciones.
+
+
+
+== Realice un seguimiento del progreso del escaneo
+
+Puede realizar un seguimiento del progreso de la adquisición inicial.
+
+. Seleccione el menú **Configuración**.
+. Seleccione la **configuración del entorno de trabajo**.
++
+El progreso de cada adquisición se muestra como una barra de progreso.
+
+. Pase el ratón sobre la barra de progreso para ver el número de archivos escaneados en relación con el total de archivos en el volumen.
+
 
 
 
@@ -129,8 +131,8 @@ Si ya no necesita analizar determinados recursos compartidos de archivos, puede 
 
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Configuración*.
-. En la página de configuración, selecciona *Eliminar recurso compartido*.
-+
-image:screenshot_compliance_fileshares_remove_share.png["Una captura de pantalla que muestra cómo eliminar un único recurso compartido de archivos para que se analicen los archivos."]
-
+. Seleccione el entorno de trabajo.
+. Seleccione *Configuración*.
+. En la página Configuration, seleccione las acciones image:button-actions-horizontal.png["El icono Actions"] para el recurso compartido de archivos que desea quitar.
+. En el menú Acciones, selecciona *Eliminar Compartir*.
 

@@ -1,0 +1,258 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-overview.html 
+keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense, cloud data sense, mapping-only scans, map and classify, map & classify 
+summary: Escanee sus fuentes de datos con la clasificación BlueXP . 
+---
+= Escanee la información general de las fuentes de datos con la clasificación BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La clasificación BlueXP  escanea los datos que se encuentran en los repositorios (volúmenes, esquemas de bases de datos u otros datos de usuario) que se selecciona para identificar datos personales y confidenciales. A continuación, la clasificación BlueXP  asigna los datos de la organización, categoriza cada archivo e identifica patrones predefinidos en los datos. El resultado de la exploración es un índice de información personal, información personal confidencial, categorías de datos y tipos de archivo.
+
+Después de la exploración inicial, la clasificación BlueXP  analiza continuamente los datos de forma por turnos para detectar cambios incrementales. Por eso es importante mantener la instancia en ejecución.
+
+Puede activar y desactivar las exploraciones a nivel de volumen o en el nivel de esquema de base de datos.
+
+
+
+== ¿Cuál es la diferencia entre las exploraciones de asignación y clasificación
+
+Puede realizar dos tipos de exploraciones en la clasificación BlueXP :
+
+* **Los escaneos de solo mapeo** proporcionan solo una visión general de alto nivel de sus datos y se realizan en fuentes de datos seleccionadas. Las exploraciones de sólo asignación tardan menos tiempo que las exploraciones de asignación y clasificación, ya que no tienen acceso a los archivos para ver los datos que contienen. Es posible que desee realizar esta operación inicialmente para identificar áreas de investigación y, a continuación, realizar una exploración de Mapa y Clasificación en dichas áreas.
+* **Los escaneos Map & Classify** proporcionan un escaneo profundo de sus datos.
+
+
+En la siguiente tabla se muestran algunas de las diferencias:
+
+[cols="47,18,18"]
+|===
+| Función | Asignar y clasificar secuencias | Exploraciones de sólo asignación 
+
+
+| Velocidad de escaneado | Lento | Y rápido 
+
+
+| precios | Libre | Libre 
+
+
+| Capacidad | Limitado a 500 TB | Limitado a 500 TB 
+
+
+| Lista de tipos de archivo y capacidad utilizada | Sí | Sí 
+
+
+| Número de archivos y capacidad utilizada | Sí | Sí 
+
+
+| Antigüedad y tamaño de los archivos | Sí | Sí 
+
+
+| Capacidad de ejecutar una link:task-controlling-governance-data.html#data-mapping-report["Informe de asignación de datos"] | Sí | Sí 
+
+
+| Página de investigación de datos para ver los detalles del archivo | Sí | No 
+
+
+| Buscar nombres dentro de los archivos | Sí | No 
+
+
+| Cree link:task-using-policies.html["normativas"] que proporcionan resultados de búsqueda personalizados | Sí | No 
+
+
+| Capacidad para ejecutar otros informes | Sí | No 
+
+
+| Posibilidad de ver metadatos de archivos* | No | Sí 
+|===
+*Los siguientes metadatos se extraen de los archivos durante los escaneos de mapeo:
+
+* Entorno de trabajo
+* Tipo de entorno de trabajo
+* Repositorio de almacenamiento
+* Tipo de archivo
+* Capacidad utilizada
+* Número de archivos
+* Tamaño de archivo
+* Creación de archivos
+* Último acceso al archivo
+* Última modificación del archivo
+* Hora de detección de archivo
+* Extracción de permisos
+
+
+.Diferencias en el panel de control:
+[%collapsible]
+====
+[cols="40,25,25"]
+|===
+| Función | Asignar y clasificar | Asignar 
+
+
+| Datos obsoletos | Sí | Sí 
+
+
+| Datos no empresariales | Sí | Sí 
+
+
+| Archivos duplicados | Sí | Sí 
+
+
+| Políticas predefinidas | Sí | No 
+
+
+| Políticas personalizadas | Sí | Sí 
+
+
+| Informe DDA | Sí | Sí 
+
+
+| Informe de asignación | Sí | Sí 
+
+
+| Detección del nivel de sensibilidad | Sí | No 
+
+
+| Datos confidenciales con amplios permisos | Sí | No 
+
+
+| Permisos abiertos | Sí | Sí 
+
+
+| Antigüedad de los datos | Sí | Sí 
+
+
+| Tamaño de los datos | Sí | Sí 
+
+
+| Categorías | Sí | No 
+
+
+| Tipos de archivo | Sí | Sí 
+|===
+====
+.Diferencias en el panel de cumplimiento:
+[%collapsible]
+====
+[cols="40,25,25"]
+|===
+| Función | Asignar y clasificar | Asignar 
+
+
+| Información personal | Sí | No 
+
+
+| Información personal confidencial | Sí | No 
+
+
+| Informe de evaluación de riesgos de privacidad | Sí | No 
+
+
+| Informe HIPAA | Sí | No 
+
+
+| Informe PCI DSS | Sí | No 
+|===
+====
+.La investigación filtra las diferencias:
+[%collapsible]
+====
+[cols="40,25,25"]
+|===
+| Función | Asignar y clasificar | Asignar 
+
+
+| Normativas | Sí | Sí 
+
+
+| Tipo de entorno de trabajo | Sí | Sí 
+
+
+| Entorno de trabajo | Sí | Sí 
+
+
+| Repositorio de almacenamiento | Sí | Sí 
+
+
+| Tipo de archivo | Sí | Sí 
+
+
+| Tamaño de archivo | Sí | Sí 
+
+
+| Hora de creación | Sí | Sí 
+
+
+| Hora de detección | Sí | Sí 
+
+
+| Última modificación | Sí | Sí 
+
+
+| Último acceso | Sí | Sí 
+
+
+| Permisos abiertos | Sí | Sí 
+
+
+| Ruta del directorio de archivos | Sí | Sí 
+
+
+| Categoría | Sí | No 
+
+
+| Nivel de sensibilidad | Sí | No 
+
+
+| Número de identificadores | Sí | No 
+
+
+| Datos personales | Sí | No 
+
+
+| Datos personales confidenciales | Sí | No 
+
+
+| Sujeto de datos | Sí | No 
+
+
+| Duplicados | Sí | Sí 
+
+
+| Estado de clasificación | Sí | El estado es siempre «Información limitada» 
+
+
+| Evento de análisis de adquisición | Sí | Sí 
+
+
+| Hash de archivo | Sí | Sí 
+
+
+| Número de usuarios con acceso | Sí | Sí 
+
+
+| Permisos de usuario/grupo | Sí | Sí 
+
+
+| Propietario del archivo | Sí | Sí 
+
+
+| Tipo de directorio | Sí | Sí 
+|===
+====
+
+
+== Con qué rapidez escanea los datos de clasificación de BlueXP
+
+La velocidad de análisis se ve afectada por la latencia de la red, la latencia del disco, el ancho de banda de la red, el tamaño del entorno y los tamaños de distribución de archivos.
+
+* Al realizar exploraciones de sólo asignación, la clasificación BlueXP  puede explorar entre 100-150 TIBs de datos por día.
+* Al realizar exploraciones de Mapa y Clasificación, la clasificación de BlueXP  puede explorar entre 15-40 TIBs de datos al día.
+
