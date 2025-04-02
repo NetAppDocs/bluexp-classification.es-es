@@ -55,7 +55,7 @@ En la siguiente tabla se muestran algunas de las diferencias:
 | Antigüedad y tamaño de los archivos | Sí | Sí 
 
 
-| Capacidad de ejecutar una link:task-controlling-governance-data.html#data-mapping-report["Informe de asignación de datos"] | Sí | Sí 
+| Capacidad para ejecutar un link:task-controlling-governance-data.html["Informe de asignación de datos"] | Sí | Sí 
 
 
 | Página de investigación de datos para ver los detalles del archivo | Sí | No 

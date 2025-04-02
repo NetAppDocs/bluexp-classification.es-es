@@ -53,7 +53,7 @@ De forma predeterminada, las exploraciones se ponen en cola según el orden en e
 
 La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
 
-La priorización está limitada alink:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["exploraciones de sólo asignación"]; no está disponible para las exploraciones de mapas y clasificaciones.
+La priorización está limitada alink:concept-cloud-compliance.html["exploraciones de sólo asignación"]; no está disponible para las exploraciones de mapas y clasificaciones.
 
 Para cambiar la prioridad:
 
@@ -215,7 +215,7 @@ Los siguientes metadatos se extraen de los archivos durante las exploraciones de
 .Datos adicionales en consolas
 Esta versión actualiza los datos que aparecen en los paneles de control de gobierno, cumplimiento e investigación durante las exploraciones de mapeo.
 
-Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["¿Cuál es la diferencia entre las exploraciones de mapeo y clasificación"]
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["¿Cuál es la diferencia entre las exploraciones de mapeo y clasificación"].
 
 
 
@@ -401,7 +401,7 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["Obt
 === Versión 1,23
 
 .Ahora se admite el japonés al buscar nombres de sujetos de datos
-Ahora se pueden introducir nombres en japonés al buscar el nombre de un sujeto en respuesta a una solicitud de acceso a los datos del interesado (DSAR). Puede generar un https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Informe de solicitud de acceso de asunto de datos"] con la información resultante. También puede introducir nombres japoneses en la https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content["Filtro de sujeto de datos en la página Investigación de datos"] para identificar los archivos que contienen el nombre del sujeto.
+Ahora se pueden introducir nombres en japonés al buscar el nombre de un sujeto en respuesta a una solicitud de acceso a los datos del interesado (DSAR). Puede generar un https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html["Informe de solicitud de acceso de asunto de datos"] con la información resultante. También puede introducir nombres japoneses en el https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Filtro de sujeto de datos en la página Investigación de datos"] para identificar los archivos que contienen el nombre del asunto.
 
 .Ubuntu ahora es una distribución Linux compatible en la que puedes instalar la clasificación de BlueXP
 Ubuntu 22,04 ha sido calificado como un sistema operativo compatible para la clasificación BlueXP. Puede instalar la clasificación de BlueXP en un host Ubuntu Linux de su red o en un host Linux en el cloud cuando utilice la versión 1,23 del instalador. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Descubre cómo instalar la clasificación de BlueXP en un host con Ubuntu instalado"].
@@ -413,7 +413,7 @@ Estas versiones no son compatibles con nuevas implementaciones porque Red Hat ya
 Es posible habilitar los registros de auditoría de acceso a archivos para que se recopilen en el sistema de clasificación de BlueXP para los eventos de acceso a archivos detectados en volúmenes en tus entornos de trabajo. La clasificación de BlueXP puede capturar los siguientes tipos de eventos de FPolicy y los usuarios que realizaron las acciones en sus archivos: Crear, leer, escribir, eliminar, cambiar el nombre, Cambie el propietario/permisos y cambie SACL/DACL.
 
 .Las licencias BYOL de Data Sense son ahora compatibles en sitios oscuros
-Ahora puede cargar su licencia BYOL de Data Sense en la cartera digital de BlueXP  en un sitio oscuro para que se le notifique cuando su licencia esté baja. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-byol-freetrial.html#obtain-your-bluexp-classification-license-file["Vea cómo obtener y cargar su licencia BYOL de Data Sense"].
+Ahora puedes cargar la licencia BYOL de Data Sense en la cartera digital de BlueXP en un sitio oscuro para que se te notifique cuando tu licencia esté baja.
 
 
 
@@ -424,10 +424,10 @@ Ahora puede cargar su licencia BYOL de Data Sense en la cartera digital de BlueX
 === Versión 1,22
 
 .Nuevo informe de evaluación de detección de datos
-El informe de evaluación de detección de datos proporciona un análisis de alto nivel del entorno escaneado para resaltar los resultados obtenidos por el sistema y mostrar las áreas de preocupación y los posibles pasos para solucionarlos. El objetivo de este informe es dar a conocer las preocupaciones sobre la gobernanza de datos, las amenazas a la seguridad de los datos y los vacíos de cumplimiento de normativas en relación con los datos de su conjunto de datos. https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-discovery-assessment-report["Descubra cómo generar y utilizar el Informe de evaluación de detección de datos"].
+El informe de evaluación de detección de datos proporciona un análisis de alto nivel del entorno escaneado para resaltar los resultados obtenidos por el sistema y mostrar las áreas de preocupación y los posibles pasos para solucionarlos. El objetivo de este informe es dar a conocer los problemas relacionados con el gobierno de los datos, la exposición a la seguridad de los datos y las deficiencias en el cumplimiento de los mismos. https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html["Descubra cómo generar y utilizar el Informe de evaluación de detección de datos"].
 
 .Capacidad de poner en marcha la clasificación de BlueXP en instancias más pequeñas en el cloud
-Al implementar la clasificación de BlueXP desde un conector BlueXP en un entorno AWS, ahora puedes elegir entre dos tipos de instancia menores de los que hay disponibles con la instancia predeterminada. Si está analizando un entorno pequeño, esto puede ayudarle a ahorrar costes en la nube. Sin embargo, hay algunas restricciones al utilizar la instancia más pequeña. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["Vea los tipos de instancia y las limitaciones disponibles"].
+Al implementar la clasificación de BlueXP desde un conector BlueXP en un entorno AWS, ahora puedes elegir entre dos tipos de instancia menores de los que hay disponibles con la instancia predeterminada. Si está analizando un entorno pequeño, esto puede ayudarle a ahorrar costes en la nube. Sin embargo, hay algunas restricciones cuando se utiliza la instancia más pequeña. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Vea los tipos de instancia y las limitaciones disponibles"].
 
 .El script independiente ya está disponible para calificar tu sistema Linux antes de instalar la clasificación de BlueXP
 Si desea verificar que su sistema Linux cumpla todos los requisitos previos independientemente de ejecutar la instalación de la clasificación de BlueXP, hay un script independiente que puede descargar y que solo prueba los requisitos previos. https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["Descubre cómo comprobar si tu host Linux está listo para instalar la clasificación de BlueXP"].
@@ -441,21 +441,21 @@ Si desea verificar que su sistema Linux cumpla todos los requisitos previos inde
 === Versión 1,21
 
 .Nueva funcionalidad para añadir tus propias categorías personalizadas desde la interfaz de usuario de clasificación de BlueXP
-Ahora, la clasificación de BlueXP te permite añadir tus propias categorías personalizadas de forma que la clasificación de BlueXP identifique los archivos que se adaptan a esas categorías. La clasificación de BlueXP tiene muchas https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories["categorías predefinidas"], por lo tanto, esta característica permite agregar categorías personalizadas para identificar dónde se encuentra la información que es única para la organización en los datos.
+Ahora, la clasificación de BlueXP te permite añadir tus propias categorías personalizadas de forma que la clasificación de BlueXP identifique los archivos que se adaptan a esas categorías. La clasificación de BlueXP  tiene muchos https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["categorías predefinidas"], por lo que esta función permite agregar categorías personalizadas para identificar dónde se encuentra la información exclusiva de la organización en los datos.
 
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-categories["Leer más"^].
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html["Leer más"^].
 
 .Ahora puedes añadir palabras clave personalizadas desde la interfaz de usuario de clasificación de BlueXP
 La clasificación de BlueXP ha tenido la capacidad de añadir palabras clave personalizadas que la clasificación de BlueXP identificará en futuros análisis durante algún tiempo. Sin embargo, tienes que iniciar sesión en el host Linux de clasificación BlueXP y utilizar una interfaz de línea de comandos para añadir las palabras clave. En esta versión, la capacidad de añadir palabras clave personalizadas se encuentra en la interfaz de usuario de clasificación de BlueXP, por lo que es muy fácil añadir y editar estas palabras clave.
 
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["Obtén más información sobre cómo añadir palabras clave personalizadas en la interfaz de usuario de clasificación de BlueXP"^].
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html["Obtén más información sobre cómo añadir palabras clave personalizadas en la interfaz de usuario de clasificación de BlueXP"^].
 
 .Posibilidad de que la clasificación de BlueXP *no* escanee los archivos cuando se cambie la “última hora de acceso”
 De forma predeterminada, si la clasificación de BlueXP no tiene permisos de «escritura» adecuados, el sistema no analizará los archivos de tus volúmenes, porque la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Sin embargo, si no le importa si la última hora de acceso se restablece a la hora original de sus archivos, puede anular este comportamiento en la página Configuration para que la clasificación de BlueXP analice los volúmenes con independencia de los permisos.
 
 Junto con esta funcionalidad, se ha añadido un nuevo filtro llamado «Scan Analysis Event» para que puedas ver los archivos que no se clasificaron porque la clasificación de BlueXP no pudo revertir el último acceso o los archivos clasificados aunque la clasificación de BlueXP no pudo revertir el último acceso.
 
-https://docs.netapp.com/us-en/bluexp-classification/reference-collected-metadata.html#last-access-time-timestamp["Obtén más información sobre la «marca de tiempo de último acceso» y los permisos que requiere la clasificación de BlueXP"].
+https://docs.netapp.com/us-en/bluexp-classification/reference-collected-metadata.html["Obtén más información sobre la «marca de tiempo de último acceso» y los permisos que requiere la clasificación de BlueXP"].
 
 .Existen tres nuevos tipos de datos personales identificados por la clasificación de BlueXP
 La clasificación de BlueXP puede identificar y categorizar los archivos que contengan los siguientes tipos de datos:
@@ -465,7 +465,7 @@ La clasificación de BlueXP puede identificar y categorizar los archivos que con
 * Tarjeta de identidad de registro nacional de Singapur (NRIC)
 
 
-https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Consulta todos los tipos de datos personales que la clasificación de BlueXP puede identificar en tus datos"].
+https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Consulta todos los tipos de datos personales que la clasificación de BlueXP puede identificar en tus datos"].
 
 .Funcionalidad actualizada para directorios
 * La opción "Informe CSV claro" para Informes de investigación de datos ahora incluye información de los directorios.
@@ -488,15 +488,15 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 .Posibilidad de enviar correos electrónicos de notificación basados en políticas a cualquier dirección de correo electrónico
 En versiones anteriores de la clasificación de BlueXP, puedes enviar alertas por correo electrónico a los usuarios de BlueXP en tu cuenta cuando ciertas Políticas críticas devuelvan resultados. Esta función le permite obtener notificaciones para proteger sus datos cuando no está en línea. Ahora también puede enviar alertas de correo electrónico desde Directivas a cualquier otro usuario - hasta 20 direcciones de correo electrónico - que no se encuentren en su cuenta de BlueXP.
 
-https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found["Obtenga más información sobre el envío de alertas por correo electrónico basadas en los resultados de la directiva"].
+https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["Obtenga más información sobre el envío de alertas por correo electrónico basadas en los resultados de la directiva"].
 
 .Ahora puedes añadir patrones personales desde la interfaz de usuario de clasificación de BlueXP
 La clasificación de BlueXP ha tenido la capacidad de añadir «datos personales» personalizados que la clasificación de BlueXP identificará en futuros análisis durante algún tiempo. Sin embargo, tenía que iniciar sesión en el host Linux de clasificación de BlueXP y utilizar una línea de comandos para añadir los patrones personalizados. En esta versión, la capacidad de añadir patrones personales con un regex se encuentra en la interfaz de usuario de clasificación de BlueXP, lo que facilita la adición y edición de estos patrones personalizados.
 
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["Obtén más información sobre cómo añadir patrones personalizados en la interfaz de usuario de clasificación de BlueXP"^].
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html["Obtén más información sobre cómo añadir patrones personalizados en la interfaz de usuario de clasificación de BlueXP"^].
 
 .Capacidad para mover 15 millones de archivos con la clasificación de BlueXP
-Anteriormente, la clasificación de BlueXP podía mover un máximo de 100.000 archivos de origen a cualquier recurso compartido NFS. Ahora puede mover hasta 15 millones de archivos a la vez. https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#move-source-files-to-an-nfs-share["Más información sobre mover archivos de origen con la clasificación de BlueXP"].
+Anteriormente, la clasificación de BlueXP podía mover un máximo de 100.000 archivos de origen a cualquier recurso compartido NFS. Ahora puede mover hasta 15 millones de archivos al mismo tiempo. https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html["Más información sobre mover archivos de origen con la clasificación de BlueXP"].
 
 .Capacidad para ver el número de usuarios que tienen acceso a archivos de SharePoint Online
 El filtro "número de usuarios con acceso" ahora admite archivos almacenados en repositorios en línea de SharePoint. Anteriormente, solo se admitía los ficheros con recursos compartidos CIFS. Tenga en cuenta que los grupos de SharePoint que no están basados en directorios activos no se contarán en este filtro en este momento.
@@ -513,7 +513,7 @@ El nuevo estado «Correcto parcial» indica que una acción de clasificación de
 === Versión 1,19
 
 .Capacidad para ver un gráfico de archivos que contienen datos confidenciales y que son excesivamente permisivos
-El panel de control de gobierno ha agregado un área nueva _sensible Data y permisos amplios_ que proporciona un mapa térmico de archivos que contienen datos confidenciales (incluidos datos personales confidenciales y confidenciales) y que son demasiado permisivos. Esto puede ayudarle a ver dónde puede tener algunos riesgos con datos confidenciales. https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["Leer más"].
+El panel de control de gobierno ha agregado un área nueva _sensible Data y permisos amplios_ que proporciona un mapa térmico de archivos que contienen datos confidenciales (incluidos datos personales confidenciales y confidenciales) y que son demasiado permisivos. Esto puede ayudarle a ver dónde puede tener algunos riesgos con datos confidenciales. https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html["Leer más"].
 
 .Hay tres filtros nuevos disponibles en la página Investigación de datos
 Hay nuevos filtros disponibles para refinar los resultados que se muestran en la página Investigación de datos:
@@ -523,7 +523,7 @@ Hay nuevos filtros disponibles para refinar los resultados que se muestran en la
 * El filtro "Ruta de acceso" le permite especificar rutas que desea excluir de los resultados de la consulta filtrada. Si introduce rutas para incluir y excluir determinados datos, primero la clasificación de BlueXP busca todos los archivos en las rutas incluidas, luego quita los archivos de las rutas excluidas y, a continuación, muestra los resultados.
 
 
-https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-in-the-data-investigation-page["Consulte la lista de todos los filtros que puede utilizar para investigar los datos"].
+https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Consulte la lista de todos los filtros que puede utilizar para investigar los datos"].
 
 .La clasificación de BlueXP puede identificar el número individual japonés
-La clasificación de BlueXP puede identificar y categorizar los archivos que contengan el número individual japonés (también conocido como My Number). Esto incluye tanto el número personal como el número de mi corporativo. https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Consulta todos los tipos de datos personales que la clasificación de BlueXP puede identificar en tus datos"].
+La clasificación de BlueXP puede identificar y categorizar los archivos que contengan el número individual japonés (también conocido como My Number). Esto incluye tanto el número personal como el número corporativo. https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Consulta todos los tipos de datos personales que la clasificación de BlueXP puede identificar en tus datos"].

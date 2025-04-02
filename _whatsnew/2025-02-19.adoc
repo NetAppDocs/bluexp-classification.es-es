@@ -20,7 +20,7 @@ De forma predeterminada, las exploraciones se ponen en cola según el orden en e
 
 La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
 
-La priorización está limitada alink:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["exploraciones de sólo asignación"]; no está disponible para las exploraciones de mapas y clasificaciones.
+La priorización está limitada alink:concept-cloud-compliance.html["exploraciones de sólo asignación"]; no está disponible para las exploraciones de mapas y clasificaciones.
 
 Para cambiar la prioridad:
 

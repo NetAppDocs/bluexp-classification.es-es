@@ -56,7 +56,7 @@ indexpage:
     - title: Generar informes de cumplimiento
       url: task-generating-compliance-reports.html
     - title: Responder a una solicitud de acceso de un sujeto de datos
-      url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
+      url: task-generating-compliance-reports.html
   - title: Funciones en desuso
     links:
     - title: Lista de operaciones anticuadas
