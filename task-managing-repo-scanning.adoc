@@ -16,7 +16,7 @@ summary: 'Puedes gestionar cómo se analizan los datos en cada uno de tus entorn
 [role="lead"]
 Puede gestionar cómo se analizan sus datos en cada uno de sus entornos de trabajo y fuentes de datos. Puede realizar los cambios en función del «repositorio»; esto significa que puede realizar cambios para cada volumen, esquema, usuario, etc., según el tipo de origen de datos que esté escaneando.
 
-Algunas de las cosas que puedes cambiar son si se analiza o no un repositorio y si la clasificación de BlueXP está realizando una link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["exploración de mapeo o exploración de clasificación de  de mapeo"]. También puede pausar y reanudar el escaneo, por ejemplo, si necesita detener el escaneo de un volumen durante un período de tiempo.
+Algunas de las cosas que puede cambiar son si un repositorio se escanea o no, y si la clasificación de BlueXP  está realizando un link:concept-cloud-compliance.html["exploración de mapeo o exploración de clasificación de  de mapeo"]. También puede pausar y reanudar el escaneo, por ejemplo, si necesita detener el escaneo de un volumen durante un período de tiempo.
 
 
 
@@ -37,17 +37,17 @@ Puede ver el estado de escaneo de cada entorno de trabajo en la página Configur
 
 
 .Pasos
-. En la ficha Configuración, haga clic en el botón *Configuración* del entorno de trabajo.
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
 +
 image:screenshot_compliance_config_button.png["Una captura de pantalla que muestra cómo hacer clic en el botón Configuración de un entorno de trabajo."]
 
-. En la página Configuración de exploración puede ver la configuración de exploración de todos los repositorios.
+. En la pestaña Configuración, seleccione el botón *Configuración* para el entorno de trabajo.
+. En la página Configuración de escaneo, vea los valores de escaneo para todos los repositorios.
 +
 image:screenshot_compliance_repo_scan_settings.png["Captura de pantalla que muestra si se están escaneando los cubos y el estado actual de la exploración."]
 
+. Pase el cursor sobre el gráfico de la columna _Mapping Status_ para ver el número de archivos que quedan por asignar o clasificar en cada repositorio (bucket en este ejemplo).
 
-
-Puede pasar el cursor sobre el gráfico en la columna _Mapping Status_ para ver el número de archivos que quedan por asignar o clasificar en cada repositorio (bucket en este ejemplo).
 
 
 
@@ -59,21 +59,25 @@ Puede iniciar o detener exploraciones de sólo asignación, o bien análisis de 
 TIP: Las bases de datos no se pueden establecer en análisis de sólo asignación. El análisis de bases de datos puede estar desactivado o activado; donde activado equivale a asignar y clasificar.
 
 .Pasos
-. En la ficha Configuración, haga clic en el botón *Configuración* del entorno de trabajo.
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. En la pestaña Configuración, seleccione el botón *Configuración* para el entorno de trabajo.
 +
 image:screenshot_compliance_config_button.png["Una captura de pantalla que muestra cómo hacer clic en el botón Configuración de un entorno de trabajo."]
 
-. En la página Configuración de escaneo puede cambiar cualquiera de los repositorios (bloques en este ejemplo) para realizar escaneos de *Map* o *Map & Classify*.
+. En la página Configuración de escaneo, cambie cualquiera de los repositorios (bloques en este ejemplo) para realizar escaneos *Map* o *Map & Classify*.
 +
 image:screenshot_compliance_repo_scan_settings.png["Una captura de pantalla que muestra cómo seleccionar el tipo de exploración de un cucharón."]
 
-
-
++
 Ciertos tipos de entornos de trabajo permiten cambiar el tipo de análisis global de todos los repositorios mediante una barra de botones en la parte superior de la página. Este valor es válido para sistemas Cloud Volumes ONTAP, ONTAP en las instalaciones, Azure NetApp Files y Amazon FSX para ONTAP.
 
++
 El ejemplo siguiente muestra esta barra de botones de un sistema Azure NetApp Files.
 
++
 image:screenshot_compliance_repo_scan_all.png["Captura de pantalla que muestra cómo configurar el mismo ajuste de captura para todos los volúmenes de un entorno de trabajo."]
+
+
 
 
 
@@ -82,13 +86,14 @@ image:screenshot_compliance_repo_scan_all.png["Captura de pantalla que muestra c
 Puede detener el análisis de un repositorio (por ejemplo, un volumen) si ya no necesita supervisarlo para cumplimiento de normativas. Para ello, desactive la exploración. Cuando se desactiva el escaneo, se elimina del sistema toda la indexación y la información sobre ese volumen, y se detiene la carga para el escaneo de los datos.
 
 .Pasos
-. En la ficha Configuración, haga clic en el botón *Configuración* del entorno de trabajo.
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. En la pestaña Configuración, seleccione el botón *Configuración* para el entorno de trabajo.
 +
 image:screenshot_compliance_config_button.png["Una captura de pantalla que muestra cómo hacer clic en el botón Configuración de un entorno de trabajo."]
 
 . En la página Configuración de escaneo, seleccione *Desactivado* para detener el escaneo de un depósito en particular.
 +
-image:screenshot_compliance_stop_repo_scanning.png["Una captura de pantalla que muestra cómo seleccionar el tipo de exploración de un cucharón."]
+image:screenshot_compliance_repo_scan_settings.png["Una captura de pantalla que muestra cómo seleccionar el tipo de exploración de un cucharón."]
 
 
 
@@ -101,18 +106,11 @@ Puede "pausar" el análisis en un repositorio si desea detener temporalmente el 
 Puede "reanudar" la exploración en cualquier momento.
 
 .Pasos
-. En la ficha Configuración, haga clic en el botón *Configuración* del entorno de trabajo.
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. En la pestaña Configuración, seleccione el botón *Configuración* para el entorno de trabajo.
 +
 image:screenshot_compliance_config_button.png["Una captura de pantalla que muestra cómo hacer clic en el botón Configuración de un entorno de trabajo."]
 
-. En la página Scan Configuration (Configuración de exploración), haga clic en el botón Pause (Pausa) para pausar la exploración de un volumen o pulse el botón Resume (Reanudar) para reanudar la exploración de un volumen que se había pausado previamente.
-+
-image:screenshot_compliance_repo_pause_resume.png["Captura de pantalla que muestra cómo pausar y reanudar el escaneo en un volumen."]
-
-+
-Tenga en cuenta que algunos orígenes de datos proporcionan la función Pausa y Reanudar en un menú, como se muestra a continuación en los sitios de SharePoint.
-
-+
-image:screenshot_compliance_repo_pause_resume2.png["Captura de pantalla que muestra cómo pausar y reanudar el análisis en un sitio de SharePoint."]
-
+. En la página Configuración de escaneo, seleccione el icono Accionesimage:button-actions-horizontal.png["El icono Actions"].
+. Seleccione *Pausa* para pausar el escaneo de un volumen, o seleccione *Reanudar* para reanudar el escaneo de un volumen que se había pausado anteriormente.
 

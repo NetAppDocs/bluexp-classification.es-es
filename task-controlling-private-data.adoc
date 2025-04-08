@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-controlling-private-data.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
-summary: Controle sus datos privados al ver los detalles sobre los datos personales y los datos personales confidenciales de su empresa. También puedes obtener visibilidad revisando las categorías y los tipos de archivos que se encuentra en la clasificación de BlueXP en tus datos. 
+summary: 'Obtenga el control de sus datos privados al ver los detalles sobre los datos personales (PII) y los datos personales confidenciales (SPII) en su organización. También puedes obtener visibilidad revisando las categorías y los tipos de archivos que se encuentra en la clasificación de BlueXP en tus datos.' 
 ---
 = Consulte los detalles del cumplimiento de normativas sobre los datos privados almacenados en su organización con la clasificación BlueXP 
 :hardbreaks:
@@ -19,37 +19,35 @@ Obtenga el control de sus datos privados al ver los detalles sobre los datos per
 
 NOTE: Las capacidades descritas en esta sección sólo están disponibles si ha elegido realizar un análisis de clasificación completo en sus orígenes de datos. Los orígenes de datos que han tenido un análisis de sólo asignación no muestran detalles de nivel de archivo.
 
-De forma predeterminada, la consola de clasificación de BlueXP muestra los datos de cumplimiento de normativas de todos los entornos de trabajo y las bases de datos.
+De forma predeterminada, la consola de clasificación de BlueXP muestra los datos de cumplimiento de normativas de todos los entornos de trabajo y las bases de datos. Para ver los datos sólo de algunos de los entornos de trabajo, selecciónelos.
 
 image:screenshot_compliance_dashboard.png["Una captura de pantalla del panel de clasificación de BlueXP"]
 
-Si sólo desea ver datos para algunos de los entornos de trabajo, <<Ver datos del panel de control para entornos de trabajo específicos,seleccione esos entornos de trabajo>>.
-
-También puede filtrar los resultados desde la página Investigación de datos y descargar un informe de los resultados como un archivo CSV. Consulte link:task-investigate-data.html#filter-data-in-the-data-investigation-page["Filtrar datos en la página Investigación de datos"] para obtener más detalles.
+Filtre los resultados de la página Investigación de datos y descargue un informe de los resultados como un archivo CSV. Consulte link:task-investigate-data.html["Filtrar datos en la página Investigación de datos"] para obtener más información.
 
 
 
 == Ver archivos que contienen datos personales
 
-La clasificación de BlueXP identifica automáticamente palabras, cadenas y patrones específicos (Regex) dentro de los datos. Por ejemplo, Información de identificación personal (PII), números de tarjeta de crédito, números de seguridad social, números de cuenta bancaria, contraseñas, y sigue. link:reference-private-data-categories.html#types-of-personal-data["Consulte la lista completa"^]. La clasificación de BlueXP identifica este tipo de información en archivos individuales, en archivos dentro de directorios (recursos compartidos y carpetas) y en tablas de bases de datos.
+La clasificación de BlueXP identifica automáticamente palabras, cadenas y patrones específicos (Regex) dentro de los datos. Por ejemplo, Información de identificación personal (PII), números de tarjeta de crédito, números de seguridad social, números de cuenta bancaria, contraseñas, y sigue. link:reference-private-data-categories.html["Consulte la lista completa"]. La clasificación de BlueXP identifica este tipo de información en archivos individuales, en archivos dentro de directorios (recursos compartidos y carpetas) y en tablas de bases de datos.
 
-Además, si ha agregado un servidor de bases de datos para analizar, la función _Data Fusion_ permite analizar los archivos para identificar si se encuentran identificadores únicos de las bases de datos en esos archivos u otras bases de datos. Consulte link:task-managing-data-fusion.html["Adición de identificadores de datos personales mediante Data Fusion"^] para obtener más detalles.
+Además, si ha agregado un servidor de base de datos para ser analizado, la función _Data Fusion_ escanea los archivos para identificar si se encuentran identificadores únicos de las bases de datos en esos archivos u otras bases de datos. Consulte link:task-managing-data-fusion.html["Adición de identificadores de datos personales mediante Data Fusion"] para obtener más información.
 
-Para algunos tipos de datos personales, la clasificación de BlueXP utiliza _proximity validation_ para validar sus descubrimientos. La validación se produce buscando una o más palabras clave predefinidas cerca de los datos personales encontrados. Por ejemplo, la clasificación de BlueXP identifica a un EE. UU Número de seguridad social (SSN) como un SSN si ve una palabra de proximidad junto a ella (por ejemplo, _SSN_ o _seguridad social_). link:reference-private-data-categories.html#types-of-personal-data["La tabla de datos personales"^] Muestra cuándo la clasificación de BlueXP utiliza validación de proximidad.
+Para algunos tipos de datos personales, la clasificación de BlueXP utiliza _proximity validation_ para validar sus descubrimientos. La validación se produce buscando una o más palabras clave predefinidas cerca de los datos personales encontrados. Por ejemplo, la clasificación BlueXP  identifica un número de seguro social (SSN) de EE. UU. Como un número de seguridad social si ve una palabra de proximidad junto a él, por ejemplo, _SSN_ o _SOCIAL SECURITY_. link:reference-private-data-categories.html["La tabla de datos personales"] Muestra cuándo la clasificación BlueXP  utiliza la validación de proximidad.
 
 .Pasos
-. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y, a continuación, haga clic en la ficha *cumplimiento*.
-. Para investigar los detalles de todos los datos personales, haga clic en el icono situado junto al porcentaje de datos personales.
+. En el menú de clasificación de BlueXP , seleccione la pestaña *Cumplimiento*.
+. Para investigar los detalles de todos los datos personales, seleccione el icono junto al porcentaje de datos personales.
 +
-image:screenshot_compliance_personal.gif["Captura de pantalla de selección del porcentaje de datos personales."]
+image:screenshot_compliance_dashboard.png["Una captura de pantalla del panel de clasificación de BlueXP"]
 
-. Para investigar los detalles de un tipo específico de datos personales, haga clic en *Ver todos* y, a continuación, en el icono *investigar resultados* para un tipo específico de datos personales; por ejemplo, direcciones de correo electrónico.
+. Para investigar los detalles de un tipo específico de datos personales, seleccione *Ver todo* y, a continuación, seleccione el icono de flecha *Investigar resultados* para un tipo específico de datos personales, por ejemplo, direcciones de correo electrónico.
 +
-image:screenshot_personal_files.gif["Una captura de pantalla del cuadro de diálogo Archivos personales donde puede hacer clic en el icono resultados de investigación situado junto a un tipo de datos personales."]
+image:screenshot_personal_files.png["Una captura de pantalla del cuadro de diálogo Archivos personales donde puede hacer clic en el icono resultados de investigación situado junto a un tipo de datos personales."]
 
-. Investigue los datos buscando, ordenando, ampliando los detalles de un archivo específico, haciendo clic en *investigar resultados* para ver la información enmascarada o descargando la lista de archivos.
+. Investigue los datos buscando, ordenando, ampliando los detalles de un archivo específico, seleccionando la flecha *Investigar resultados* para ver información enmascarada o descargando la lista de archivos.
 +
-Las 2 capturas de pantalla siguientes muestran datos personales encontrados en archivos individuales y encontrados en archivos dentro de directorios (recursos compartidos y carpetas). También puede seleccionar la ficha *estructurado* para ver los datos personales encontrados en las bases de datos.
+Las dos capturas de pantalla que aparecen a continuación muestran los datos personales que se encuentran en archivos individuales y que se encuentran en los directorios (recursos compartidos y carpetas). También puede seleccionar la ficha *estructurado* para ver los datos personales encontrados en las bases de datos.
 
 +
 image:screenshot_compliance_investigation_page.png["Una captura de pantalla de información detallada que se encuentra en los archivos después de hacer clic en investigar resultados."]
@@ -63,7 +61,7 @@ image:screenshot_compliance_investigation_page_directory.png["Captura de pantall
 
 == Ver archivos que contienen datos personales confidenciales
 
-La clasificación de BlueXP identifica automáticamente tipos especiales de información personal confidencial, tal y como definen las normativas de privacidad como https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["Artículos 9 y 10 del RGPD"^]. Por ejemplo, información sobre la salud, origen étnico o orientación sexual de una persona. link:reference-private-data-categories.html#types-of-sensitive-personal-data["Consulte la lista completa"^]. La clasificación de BlueXP identifica este tipo de información en archivos individuales, en archivos dentro de directorios (recursos compartidos y carpetas) y en tablas de bases de datos.
+La clasificación de BlueXP  identifica automáticamente tipos especiales de información personal confidencial, tal y como definen las regulaciones de privacidad como https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["Artículos 9 y 10 del RGPD"^]. Por ejemplo, información sobre la salud, origen étnico o orientación sexual de una persona. link:reference-private-data-categories.html["Consulte la lista completa"]. La clasificación de BlueXP identifica este tipo de información en archivos individuales, en archivos dentro de directorios (recursos compartidos y carpetas) y en tablas de bases de datos.
 
 La clasificación de BlueXP utiliza la inteligencia artificial (IA), el procesamiento del lenguaje natural (NLP), el aprendizaje automático (ML) y la computación cognitiva (CC) para entender el significado del contenido que escanea para extraer entidades y categorizarlo adecuadamente.
 
@@ -73,14 +71,14 @@ Por ejemplo, una categoría de datos confidenciales sobre el GDPR es su origen �
 NOTE: Sólo se admite inglés cuando se escanea datos personales confidenciales. Más adelante se añadirá compatibilidad con más idiomas.
 
 .Pasos
-. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y, a continuación, haga clic en la ficha *cumplimiento*.
-. Para investigar los detalles de todos los datos personales confidenciales, haga clic en el icono situado junto al porcentaje de datos personales confidenciales.
+. En el menú de clasificación de BlueXP , selecciona *Cumplimiento*.
+. Para investigar los detalles de todos los datos personales confidenciales, seleccione el icono situado junto al porcentaje de datos personales confidenciales.
 +
-image:screenshot_compliance_sensitive_personal.gif["Captura de pantalla de selección del porcentaje de datos personales confidenciales."]
+image:screenshot_compliance_sensitive_personal.png["Captura de pantalla de selección del porcentaje de datos personales confidenciales."]
 
-. Para investigar los detalles de un tipo específico de datos personales confidenciales, haga clic en *Ver todo* y, a continuación, haga clic en el icono *investigar resultados* para obtener un tipo específico de datos personales confidenciales.
+. Para investigar los detalles de un tipo específico de datos personales confidenciales, seleccione *Ver todo* y, a continuación, seleccione el icono de flecha *Investigar resultados* para un tipo específico de datos personales confidenciales.
 +
-image:screenshot_sensitive_personal_files.gif["Una captura de pantalla del cuadro de diálogo archivos personales confidenciales donde puede hacer clic en el icono resultados de investigación situado junto a un tipo de datos personales."]
+image:screenshot_sensitive_personal_files.png["Una captura de pantalla del cuadro de diálogo archivos personales confidenciales donde puede hacer clic en el icono resultados de investigación situado junto a un tipo de datos personales."]
 
 . Investigue los datos buscando, ordenando, ampliando los detalles de un archivo específico, haciendo clic en *investigar resultados* para ver la información enmascarada o descargando la lista de archivos.
 
@@ -89,7 +87,7 @@ image:screenshot_sensitive_personal_files.gif["Una captura de pantalla del cuadr
 
 == Ver archivos por categorías
 
-La clasificación de BlueXP toma los datos que ha escaneado y los divide en distintos tipos de categorías. Las categorías son temas basados en el análisis de IA del contenido y los metadatos de cada archivo. link:reference-private-data-categories.html#types-of-categories["Vea la lista de categorías"^].
+La clasificación de BlueXP toma los datos que ha escaneado y los divide en distintos tipos de categorías. Las categorías son temas basados en el análisis de IA del contenido y los metadatos de cada archivo. link:reference-private-data-categories.html["Vea la lista de categorías"].
 
 Las categorías pueden ayudarle a entender lo que está pasando con sus datos mostrándole los tipos de información que tiene. Por ejemplo, una categoría como currículos o contratos de empleados puede incluir datos confidenciales. Al investigar los resultados, puede que se dé cuenta de que los contratos de empleados están almacenados en una ubicación no segura. Entonces puede corregir ese problema.
 
@@ -97,42 +95,27 @@ Las categorías pueden ayudarle a entender lo que está pasando con sus datos mo
 NOTE: Las categorías son: Inglés, alemán y español. Más adelante se añadirá compatibilidad con más idiomas.
 
 .Pasos
-. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y, a continuación, haga clic en la ficha *cumplimiento*.
-. Haga clic en el icono *investigar resultados* de una de las 4 categorías principales directamente desde la pantalla principal, o haga clic en *Ver todos* y luego haga clic en el icono de cualquiera de las categorías.
+. En el menú de clasificación de BlueXP , seleccione la pestaña *Cumplimiento*.
+. Seleccione el icono de flecha de *Investigar resultados* para una de las 4 categorías principales directamente desde la pantalla principal, o seleccione *Ver todo* y luego seleccione el icono para cualquiera de las categorías.
 +
-image:screenshot_categories.gif["Una captura de pantalla del cuadro de diálogo Categorías donde puede hacer clic en el icono resultados de investigación situado junto a una categoría."]
+image:screenshot_categories.png["Una captura de pantalla del cuadro de diálogo Categorías donde puede hacer clic en el icono resultados de investigación situado junto a una categoría."]
 
-. Investigue los datos buscando, ordenando, ampliando los detalles de un archivo específico, haciendo clic en *investigar resultados* para ver la información enmascarada o descargando la lista de archivos.
+. Investigue los datos buscando, ordenando, ampliando los detalles de un archivo específico, seleccionando la flecha *Investigar resultados* para ver información enmascarada o descargando la lista de archivos.
 
 
 
 
 == Ver archivos por tipos de archivo
 
-La clasificación de BlueXP toma los datos que ha escaneado y los desglosa por según el tipo de archivo. La revisión de los tipos de archivo puede ayudarle a controlar los datos confidenciales porque puede encontrar que determinados tipos de archivo no se almacenan correctamente. link:reference-private-data-categories.html#types-of-files["Consulte la lista de tipos de archivo"^].
+La clasificación de BlueXP toma los datos que ha escaneado y los desglosa por según el tipo de archivo. La revisión de los tipos de archivo puede ayudarle a controlar los datos confidenciales porque puede encontrar que determinados tipos de archivo no se almacenan correctamente. link:reference-private-data-categories.html["Consulte la lista de tipos de archivo"].
 
 Por ejemplo, puede almacenar archivos CAD que incluyan información muy confidencial sobre su organización. Si no está seguro, puede tomar el control de los datos confidenciales restringiendo permisos o moviendo los archivos a otra ubicación.
 
 .Pasos
-. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación* y, a continuación, haga clic en la ficha *cumplimiento*.
-. Haga clic en el icono *investigar resultados* de uno de los 4 tipos de archivo principales directamente desde la pantalla principal, o haga clic en *Ver todos* y, a continuación, haga clic en el icono de cualquiera de los tipos de archivo.
+. En el memu de clasificación de BlueXP , seleccione la pestaña *Cumplimiento*.
+. Seleccione el icono de flecha *Resultados de investigación* para uno de los 4 tipos de archivo principales directamente desde la pantalla principal, o seleccione *Ver todo* y luego seleccione el icono para cualquiera de los tipos de archivo.
 +
-image:screenshot_file_types.gif["Una captura de pantalla del cuadro de diálogo tipos de archivos, donde puede hacer clic en el icono resultados de investigación situado junto a un tipo de archivo."]
+image:screenshot_file_types.png["Una captura de pantalla del cuadro de diálogo tipos de archivos, donde puede hacer clic en el icono resultados de investigación situado junto a un tipo de archivo."]
 
-. Investigue los datos buscando, ordenando, ampliando los detalles de un archivo específico, haciendo clic en *investigar resultados* para ver la información enmascarada o descargando la lista de archivos.
-
-
-
-
-== Ver datos del panel de control para entornos de trabajo específicos
-
-Puedes filtrar el contenido de la consola de clasificación de BlueXP para ver los datos de cumplimiento de normativas de todos los entornos de trabajo y bases de datos, o simplemente para entornos de trabajo específicos.
-
-Al filtrar la consola, la clasificación de BlueXP define los datos de cumplimiento y los informes solo a los entornos de trabajo que has seleccionado.
-
-.Pasos
-. Haga clic en el menú desplegable filtro, seleccione los entornos de trabajo para los que desea ver datos y haga clic en *Ver*.
-+
-image:screenshot_cloud_compliance_filter.gif["Una captura de pantalla que muestra cómo filtrar los resultados de la investigación para entornos de trabajo específicos."]
-
+. Investigue los datos buscando, ordenando, ampliando los detalles de un archivo específico, seleccionando la flecha *Investigar resultados* para ver información enmascarada o descargando la lista de archivos.
 

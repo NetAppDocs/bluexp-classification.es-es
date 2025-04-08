@@ -45,10 +45,11 @@ Puedes filtrar el contenido de la consola de cumplimiento de normativas de clasi
 Al filtrar la consola, la clasificación de BlueXP define los datos de cumplimiento y los informes solo a los entornos de trabajo que has seleccionado.
 
 .Pasos
-. Seleccione la lista desplegable de filtros y seleccione los entornos de trabajo.
+. En el menú de clasificación de BlueXP , selecciona “*Cumplimiento*”.
+. Seleccione la lista desplegable de filtros Entornos de trabajo y seleccione los entornos de trabajo.
 . Selecciona *Ver*.
 +
-image:screenshot_cloud_compliance_filter.gif["Captura de pantalla de la selección de los entornos de trabajo para los informes que desea ejecutar."]
+image:screenshot_cloud_compliance_filter.png["Captura de pantalla de la selección de los entornos de trabajo para los informes que desea ejecutar."]
 
 
 
@@ -77,8 +78,8 @@ Busque el nombre completo o el identificador conocido del sujeto de datos y, a c
 NOTE: El inglés, el alemán, el japonés y el español son compatibles al buscar los nombres de los sujetos de datos. Más adelante se añadirá compatibilidad con más idiomas.
 
 .Pasos
-. En el menú BlueXP , selecciona *Gobernanza > Clasificación*.
-. Selecciona *Datos*.
+. En el menú de clasificación de BlueXP , selecciona “*Cumplimiento*”.
+. En la página Cumplimiento, desplácese hacia abajo y seleccione *Temas de datos*.
 . Busque el nombre completo o el identificador conocido del sujeto de datos.
 +
 A continuación se muestra un ejemplo que muestra una búsqueda del nombre _john doe_:
@@ -125,8 +126,9 @@ El informe incluye la siguiente información:
 Vaya a la ficha cumplimiento para generar el informe.
 
 .Pasos
-. En el menú BlueXP , selecciona *Gobernanza > Clasificación*.
-. Seleccione *Cumplimiento* y luego seleccione el icono de descarga junto a *Informe HIPAA* en *Informes*.
+. En el menú de clasificación de BlueXP , selecciona “*Cumplimiento*”.
+. Desplácese hacia abajo y localice el panel *Informes*.
+. Seleccione el icono de descarga junto a *Informe HIPAA*.
 +
 image:screenshot_hipaa.gif["Captura de pantalla de la ficha cumplimiento de BlueXP que muestra el panel Informes en el que puede hacer clic en HIPAA."]
 
@@ -155,8 +157,9 @@ El informe incluye la siguiente información:
 Vaya a la ficha cumplimiento para generar el informe.
 
 .Pasos
-. En el menú BlueXP , selecciona *Gobernanza > Clasificación*.
-. Seleccione *Cumplimiento* y luego seleccione el icono de descarga junto a *Informe PCI DSS* en *Informes*.
+. En el menú de clasificación de BlueXP , selecciona “*Cumplimiento*”.
+. Desplácese hacia abajo y localice el panel *Informes*.
+. Seleccione el icono de descarga junto a *Informe PCI DSS*.
 +
 image:screenshot_pci_dss.gif["Captura de pantalla de la ficha cumplimiento de BlueXP que muestra el panel Informes en el que puede hacer clic en Evaluación de riesgo de privacidad."]
 
@@ -183,8 +186,9 @@ El informe incluye la siguiente información:
 Vaya a la ficha cumplimiento para generar el informe.
 
 .Pasos
-. En el menú BlueXP , selecciona *Gobernanza > Clasificación*.
-. Seleccione *Cumplimiento* y luego seleccione el icono de descarga junto a *Evaluación de riesgos de privacidad* en *Informes*.
+. En el menú de clasificación de BlueXP , selecciona “*Cumplimiento*”.
+. Desplácese hacia abajo y localice el panel *Informes*.
+. Seleccione el icono de descarga junto a *Evaluación de riesgos de privacidad*.
 +
 image:screenshot_privacy_risk_assessment.gif["Captura de pantalla de la ficha cumplimiento de BlueXP que muestra el panel Informes en el que puede hacer clic en Evaluación de riesgo de privacidad."]
 

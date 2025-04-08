@@ -155,13 +155,13 @@ image:screenshot-compliance-report-buttons.png["Captura de pantalla del panel de
 .Resultado
 La clasificación de BlueXP genera un informe .pdf que se puede revisar y enviar a otros grupos según sea necesario.
 
-Si el informe tiene un tamaño superior a 1 MB, el archivo .pdf se conservará en la instancia de clasificación de BlueXP, y verás un mensaje emergente sobre la ubicación exacta. Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, puede navegar directamente al archivo .pdf. Cuando la clasificación de BlueXP se ponga en marcha en la nube, necesitarás SSH en la instancia de clasificación de BlueXP para descargar el archivo .pdf. link:task-audit-data-sense-actions.html#access-the-log-files["Consulte cómo acceder a los datos en la instancia de clasificación"^].
+Si el informe tiene un tamaño superior a 1 MB, el archivo .pdf se conservará en la instancia de clasificación de BlueXP, y verás un mensaje emergente sobre la ubicación exacta. Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, puede navegar directamente al archivo .pdf. Cuando la clasificación de BlueXP se ponga en marcha en la nube, necesitarás SSH en la instancia de clasificación de BlueXP para descargar el archivo .pdf.
 
 
 
 === Revise los principales repositorios de datos que aparecen según la sensibilidad de los datos
 
-El área _Top Data Repository by Sensitivity Level_ enumera los cuatro principales repositorios de datos (entornos de trabajo y orígenes de datos) que contienen los elementos más sensibles. El gráfico de barras de cada entorno de trabajo se divide en:
+El área _Top Data Repository by Sensitivity Level_ del informe Data Mapping Overview muestra los cuatro repositorios de datos principales (entornos de trabajo y orígenes de datos) que contienen los elementos más confidenciales. El gráfico de barras de cada entorno de trabajo se divide en:
 
 * Datos no confidenciales
 * Datos personales
@@ -177,7 +177,7 @@ El área _Top Data Repository by Sensitivity Level_ enumera los cuatro principal
 
 === Revise los datos confidenciales y los amplios permisos
 
-El área Datos sensibles y Permisos amplios muestra el porcentaje de archivos que contienen datos confidenciales y tienen permisos amplios. El gráfico muestra los siguientes tipos de permisos:
+El área _Datos sensibles y Permisos amplios_ del informe Descripción general de asignación de datos muestra el porcentaje de archivos que contienen datos confidenciales y tienen permisos amplios. El gráfico muestra los siguientes tipos de permisos:
 
 * Desde los permisos restrictivos nost hasta las restricciones más permisivas en el axix horizontal.
 * Desde los datos menos sensibles hasta los datos más sensibles en el eje vertical.
@@ -192,7 +192,7 @@ El área Datos sensibles y Permisos amplios muestra el porcentaje de archivos qu
 
 === Revise los datos enumerados por tipos de permisos abiertos
 
-El área _Open Permissions_ muestra el porcentaje de cada tipo de permisos que existen para todos los archivos que se están analizando. El gráfico muestra los siguientes tipos de permisos:
+El área _Open Permissions_ del informe Descripción general de asignación de datos muestra el porcentaje de cada tipo de permisos que existen para todos los archivos que se están analizando. El gráfico muestra los siguientes tipos de permisos:
 
 * Sin permisos abiertos
 * Abierto a la organización
@@ -209,7 +209,7 @@ El área _Open Permissions_ muestra el porcentaje de cada tipo de permisos que e
 
 === Revise la edad y el tamaño de los datos
 
-Es posible que desee investigar los elementos de los gráficos _age_ y _Size_ para ver si hay algún dato que debe eliminar o organizar en niveles el almacenamiento de objetos menos costoso.
+Es posible que desee investigar los elementos de los gráficos _age_ y _Size_ del informe Descripción general de asignación de datos para ver si hay algún dato que deba eliminar o organizar en niveles el almacenamiento de objetos menos costoso.
 
 .Pasos
 . En el gráfico Edad de los datos, para ver detalles sobre la antigüedad de los datos, coloque el cursor sobre un punto del gráfico.
@@ -228,11 +228,11 @@ NOTE: Si alguno de sus orígenes de datos implementa una organización en nivele
 
 === Revise las clasificaciones de datos más identificadas en sus datos
 
-El área _Classification_ proporciona una lista de los más identificados link:task-controlling-private-data.html#view-files-by-categories["Categorías"^] y.. link:task-controlling-private-data.html#view-files-by-file-types["Tipos de archivo"^] en los datos escaneados.
+El área _Classification_ del informe Descripción general de asignación de datos proporciona una lista de los datos más identificados link:task-controlling-private-data.html["Categorías"] y link:task-controlling-private-data.html["Tipos de archivo"] en los datos escaneados.
 
 Las categorías pueden ayudarle a entender lo que está pasando con sus datos mostrándole los tipos de información que tiene. Por ejemplo, una categoría como "currículos" o "contratos de empleados" puede incluir datos confidenciales. Al investigar los resultados, puede que se dé cuenta de que los contratos de empleados están almacenados en una ubicación no segura. Entonces puede corregir ese problema.
 
-Consulte link:task-controlling-private-data.html#view-files-by-categories["Ver archivos por categorías"^] si quiere más información.
+Consulte link:task-controlling-private-data.html["Ver archivos por categorías"] para obtener más información.
 
 .Pasos
 . En el menú BlueXP, haga clic en *Gobierno > Clasificación*.
