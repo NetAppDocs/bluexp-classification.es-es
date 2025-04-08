@@ -164,7 +164,7 @@ La clasificación de BlueXP te permite ejecutar un análisis general de «asigna
 +
 Después de un análisis rápido, puede generar un informe de asignación de datos. Este informe es una descripción general de los datos almacenados en sus orígenes de datos corporativos para ayudarle a tomar decisiones sobre la utilización de los recursos, la migración, el backup, la seguridad y los procesos de cumplimiento de normativas.
 
-* *Exploración de clasificación de datos (profunda) (Map & Classify scan)*: Escaneos de clasificación BlueXP  utilizando protocolos estándar y permisos de solo lectura en todos sus entornos. Algunos archivos se abren y se analizan en busca de datos confidenciales relacionados con el negocio, información privada y problemas relacionados con el ransomware.
+* *Clasificación de datos Exploración profunda (Map & Classify scan)*: Escaneos de clasificación BlueXP  utilizando protocolos estándar y permisos de solo lectura en todos sus entornos. Algunos archivos se abren y se analizan en busca de datos confidenciales relacionados con el negocio, información privada y problemas relacionados con el ransomware.
 +
 Después de un análisis completo, hay muchas funciones adicionales de clasificación de BlueXP que puedes aplicar a tus datos, como ver y refinar datos en la página de Investigación de datos, buscar nombres dentro de los archivos, copiar, mover y eliminar archivos de origen, y mucho más.
 
