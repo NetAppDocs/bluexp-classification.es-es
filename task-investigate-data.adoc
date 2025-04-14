@@ -349,9 +349,9 @@ El *Informe de datos estructurados* incluye la siguiente información sobre las 
 . En la página Investigación de datos, seleccione el image:button_download.png["botón de descarga"] botón en la parte superior derecha de la página.
 . Seleccione el tipo de informe: CSV o JSON.
 . Introduzca un **Nombre del informe**.
-. Si eligió CSV para el tipo de informe, seleccione **Local** para descargar el informe en el navegador. Nota Esta opción limita el informe a las primeras 10.000 filas. No se requieren otras opciones con esta opción.
+. Para descargar el informe completo, seleccione **Entorno de trabajo** y, a continuación, elija **Entorno de trabajo** y **Volumen** en los menús desplegables correspondientes. Proporcione una **Ruta de carpeta de destino**.
 +
-Para el informe completo, seleccione **Entorno de trabajo** y, a continuación, elija **Entorno de trabajo** y **Volumen** en los menús desplegables correspondientes. Proporcione una **Ruta de carpeta de destino**.
+Para descargar el informe en el navegador, seleccione **Local** . Nota Esta opción limita el informe a las primeras 10.000 filas y se limita al formato **CSV**. No es necesario completar ningún otro campo si selecciona **Local**.
 
 . Selecciona **Descargar informe**.
 +
