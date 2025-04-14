@@ -22,12 +22,7 @@ La prioridad se concede una vez. Las nuevas exploraciones automáticas de los da
 
 La priorización está limitada alink:concept-cloud-compliance.html["exploraciones de sólo asignación"]; no está disponible para las exploraciones de mapas y clasificaciones.
 
-Para cambiar la prioridad:
-
-. En el menú de clasificación de BlueXP , selecciona *Configuración*.
-. Seleccione los recursos que desea priorizar.
-. En la opción Acciones ..., seleccione *Priorizar escaneo*.
-
+Para obtener más información, consulte link:task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
 
 .Vuelva a intentar todas las adquisiciones
 La clasificación BlueXP  ahora admite la capacidad de reintentar por lotes todos los análisis fallidos.

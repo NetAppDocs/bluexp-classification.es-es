@@ -81,6 +81,22 @@ image:screenshot_compliance_repo_scan_all.png["Captura de pantalla que muestra c
 
 
 
+== Priorice las adquisiciones
+
+Puede dar prioridad a las exploraciones más importantes--Sólo asignación o Mapa y clasificación. La capacidad de dar prioridad a las secuencias le permite garantizar que las secuencias de alta prioridad se completen primero.
+
+De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Gracias a la capacidad de dar prioridad a las exploraciones, ahora puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
+
+La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
+
+.Pasos
+. En el menú de clasificación de BlueXP , selecciona *Configuración*.
+. Seleccione los recursos que desea priorizar.
+. En la opción Acciones `...`, selecciona *Priorizar escaneo*.
+
+
+
+
 == Detener la búsqueda de un repositorio
 
 Puede detener el análisis de un repositorio (por ejemplo, un volumen) si ya no necesita supervisarlo para cumplimiento de normativas. Para ello, desactive la exploración. Cuando se desactiva el escaneo, se elimina del sistema toda la indexación y la información sobre ese volumen, y se detiene la carga para el escaneo de los datos.
