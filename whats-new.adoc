@@ -34,11 +34,6 @@ La clasificación BlueXP  ahora admite la capacidad de descargar informes de in
 
 Para obtener más información, consulte link:task-investigate-data.html#create-the-data-investigation-report["Investiga los datos almacenados en tu organización con la clasificación BlueXP "].
 
-.Priorice las secuencias de clasificación
-La clasificación BlueXP  ahora permite priorizar las secuencias de mapas y clasificación, además de las de sólo asignación. Se admite la priorización de las exploraciones de asignación y clasificación durante y antes de que comiencen las exploraciones. Si decide priorizar una exploración mientras está en curso, se priorizan tanto las secuencias de asignación como las de clasificación.
-
-Para obtener más información, consulte link:task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
-
 
 
 == 10 de marzo de 2025
@@ -69,7 +64,7 @@ Esta versión es compatible con Red Hat Enterprise Linux v9,5 además de las ver
 
 Los siguientes sistemas operativos requieren el uso del motor de contenedores Podman y requieren la versión de clasificación BlueXP  1,30 o superior: Red Hat Enterprise Linux versión 8,8, 8,10, 9,0, 9,1, 9,2, 9,3, 9,4 y 9,5.
 
-.Priorice las adquisiciones
+.Priorice las exploraciones de sólo asignación
 Al realizar exploraciones de sólo asignación, puede priorizar las exploraciones más importantes. Esta función ayuda cuando tiene muchos entornos de trabajo y desea garantizar que las exploraciones de alta prioridad se completen primero.
 
 De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Gracias a la capacidad de dar prioridad a las exploraciones, ahora puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
