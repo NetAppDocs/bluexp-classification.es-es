@@ -329,7 +329,7 @@ Esta versión incluye algunas mejoras menores.
 La versión también eliminó las siguientes opciones:
 
 * Se deshabilitó la opción para activar la recogida de registros de auditoría.
-* Durante la investigación de directorios, la opción de calcular el número de datos de información personal identificable (PII) por directorios no está disponible. Consulte link:task-investigate-data.html#filter-data-by-sensitivity-and-content["Investigue los datos almacenados en su organización"].
+* Durante la investigación de directorios, la opción de calcular el número de datos de información personal identificable (PII) por directorios no está disponible. Consulte link:task-investigate-data.html["Investigue los datos almacenados en su organización"].
 * Se ha desactivado la opción de integrar datos mediante etiquetas de Azure Information Protection (AIP). Consulte link:task-org-private-data.html["Organice sus datos privados"].
 
 

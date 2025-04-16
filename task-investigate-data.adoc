@@ -30,7 +30,7 @@ Puede filtrar el contenido de la página de investigación para que muestre solo
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Investigación*.
 . En la página Investigación de datos, realice cualquiera de las siguientes acciones:
-. Para descargar el contenido de la página como un informe después de afinarlo, seleccione el image:button_download.png["botón de descarga"] botón. <<Data Investigation Report,Vaya aquí para obtener detalles sobre el informe de investigación de datos>>.
+. Para descargar el contenido de la página como un informe después de afinarlo, seleccione el image:button_download.png["botón de descarga"] botón.
 +
 image:screenshot_compliance_investigation_filtered.png["Captura de pantalla de los filtros disponibles al afinar los resultados en la página Investigación."]
 
@@ -161,7 +161,7 @@ Use el siguiente filtro para ver los datos por políticas.
 | Filtro | Detalles 
 
 
-| Normativas | Seleccione una política o políticas. Vaya link:task-using-policies.html["aquí"^] para ver la lista de directivas existentes y crear sus propias directivas personalizadas. 
+| Normativas | Seleccione una política o políticas. Vaya link:task-using-policies.html["aquí"] a ver la lista de políticas existentes y a crear sus propias políticas personalizadas. 
 |===
 *Filtrar datos por estado de análisis*
 
@@ -194,7 +194,7 @@ Utilice el siguiente filtro para ver los archivos duplicados en su almacenamient
 
 == Ver metadatos de archivo
 
-Además de mostrarle el entorno de trabajo y el volumen donde reside el archivo, los metadatos muestran mucha más información, incluidos los permisos del archivo, el propietario del archivo y si hay duplicados de este archivo. Esta información es útil si está planeando hacerlolink:task-using-policies.html["Crear políticas"], ya que puede ver toda la información que puede utilizar para filtrar sus datos.
+Además de mostrarle el entorno de trabajo y el volumen donde reside el archivo, los metadatos muestran mucha más información, incluidos los permisos del archivo, el propietario del archivo y si hay duplicados de este archivo. Esta información es útil si está planeando hacerlolink:task-using-policies.html["crear políticas"], ya que puede ver toda la información que puede utilizar para filtrar sus datos.
 
 No toda la información está disponible para todas las fuentes de datos, solo lo que es apropiado para esa fuente de datos. Por ejemplo, el nombre del volumen y los permisos no son relevantes para los archivos de base de datos.
 
