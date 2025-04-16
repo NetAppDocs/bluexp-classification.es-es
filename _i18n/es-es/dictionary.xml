@@ -289,7 +289,6 @@
   <block id="ae9d17dd7732dafc7b97f62ac9094cf7" category="list-text">Esquemas de base de datos</block>
   <block id="c6b920b524033c55e0dbc0115eae5c7e" category="list-text">Almacenamiento de objetos que utiliza el protocolo simple Storage Service (S3)</block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">¿Qué tipos de archivo son compatibles?</block>
-  <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph"><block ref="0b3e64f511542d0a580dfbeb6d666614" prefix="" category="inline-code"></block></block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">Después de un análisis rápido, puede generar un informe de asignación de datos. Este informe es una descripción general de los datos almacenados en sus orígenes de datos corporativos para ayudarle a tomar decisiones sobre la utilización de los recursos, la migración, el backup, la seguridad y los procesos de cumplimiento de normativas.</block>
   <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">Licencias y costes</block>
   <block id="f56912566696fa3cc8524bcac5febbeb" category="section-title">Despliegue del conector</block>
@@ -3440,4 +3439,5 @@ Datos de aplicaciones de negocio</block>
   <block id="b07926c5eabcf7b05f3a674e478e6b18" category="inline-link-macro">crear políticas</block>
   <block id="3ee1fee226155df3d1aec325193a3b4a" category="paragraph">Además de mostrarle el entorno de trabajo y el volumen donde reside el archivo, los metadatos muestran mucha más información, incluidos los permisos del archivo, el propietario del archivo y si hay duplicados de este archivo. Esta información es útil si está planeando hacerlo<block ref="e4856c4af761ccf18001e0febd54584c" category="inline-link-macro-rx"></block>, ya que puede ver toda la información que puede utilizar para filtrar sus datos.</block>
   <block id="1c3cd11405c2cc34d1b337f6a930a0e5" category="list-text">Durante la investigación de directorios, la opción de calcular el número de datos de información personal identificable (PII) por directorios no está disponible. Consulte <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>.</block>
+  <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
 </blocks>
