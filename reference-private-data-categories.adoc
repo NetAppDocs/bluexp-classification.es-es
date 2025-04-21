@@ -56,7 +56,7 @@ Los idiomas en los que se pueden reconocer estos elementos se identifican en la 
 | Contraseña | Sí | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.57+| Identificadores nacionales | Australian TFN (número de archivo fiscal) | Sí | ✓ | ✓ | ✓ |  |  
+.88+| Identificadores nacionales | Australian TFN (número de archivo fiscal) | Sí | ✓ | ✓ | ✓ |  |  
 
 
 | Licencia Australian Driver's License | Sí | ✓ | ✓ | ✓ |  |  
@@ -87,6 +87,99 @@ Los idiomas en los que se pueden reconocer estos elementos se identifican en la 
 
 
 | ID búlgaro (UCN) | Sí | ✓ | ✓ | ✓ |  |  
+
+
+| Núm.s de información bancaria de Canadá: Núm. De cuenta | Sí | ✓ |  |  |  |  
+
+
+| Núm.s de información bancaria de Canadá: Núm. De tránsito | Sí | ✓ |  |  |  |  
+
+
+| Número de Ciudadanía Canadiense/Residente Permanente - Número de Tarjeta PR (UCI) | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Alberta | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Columbia Británica | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Manitoba | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Nuevo Brunswick | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Terranova y Labrador | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Territorios del Noroeste | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Nueva Escocia | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Nunavut | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Ontario | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Isla del Príncipe Eduardo | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Quebec | Sí | ✓ |  |  |  |  
+
+
+| Licencia de Conducir Canadiense - Saskatchewan | Sí | ✓ |  |  |  |  
+
+
+| Licencia de conducir canadiense - Yukon | Sí | ✓ |  |  |  |  
+
+
+| Número de tarjeta de salud canadiense - Alberta PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de tarjeta de salud canadiense - British Columbia PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de Tarjeta Sanitaria Canadiense - Manitoba PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de Tarjeta Sanitaria Canadiense - PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de Tarjeta Sanitaria Canadiense - Terranova y Labrador PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de Tarjeta Sanitaria Canadiense - Territorios del Noroeste PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de tarjeta de salud canadiense - Nova Scotia PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de Tarjeta Sanitaria Canadiense - Nunavut PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de tarjeta de salud canadiense - Ontario PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de tarjeta de salud canadiense - Isla del Príncipe Eduardo PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de Tarjeta Sanitaria Canadiense - Quebec PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de Tarjeta Sanitaria Canadiense - Saskatchewan PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de Tarjeta Sanitaria Canadiense - Yukon PHIN | Sí | ✓ |  |  |  |  
+
+
+| Número de pasaporte canadiense | Sí | ✓ |  |  |  |  
+
+
+| Número de Seguro Social de Canadá (SIN) | Sí | ✓ |  |  |  |  
 
 
 | Croata ID (OIB) | Sí | ✓ | ✓ | ✓ |  |  
@@ -209,10 +302,7 @@ Los idiomas en los que se pueden reconocer estos elementos se identifican en la 
 | ID sueco | Sí | ✓ | ✓ | ✓ |  |  
 
 
-| Licencia de conducir de Texas | Sí | ✓ | ✓ | ✓ |  |  
-
-
-| REINO UNIDO ID (NINO) | Sí | ✓ | ✓ | ✓ |  |  
+| REINO UNIDO (NINO) | Sí | ✓ | ✓ | ✓ |  |  
 
 
 | Licencia de conducir de Estados Unidos California | Sí | ✓ | ✓ | ✓ |  |  
@@ -222,6 +312,9 @@ Los idiomas en los que se pueden reconocer estos elementos se identifican en la 
 
 
 | Licencia de conducir de los Estados Unidos de Nueva York | Sí | ✓ | ✓ | ✓ |  |  
+
+
+| Licencia de conducir de USA Texas | Sí | ✓ | ✓ | ✓ |  |  
 
 
 | Número de Seguro Social de Estados Unidos (SSN) | Sí | ✓ | ✓ | ✓ |  |  
