@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Las directivas son como una lista de favoritos de filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento solicitadas con frecuencia. La clasificación de BlueXP proporciona un conjunto de políticas predefinidas basadas en solicitudes habituales de los clientes. Puede crear directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización. 
+summary: Las políticas son filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento comúnmente solicitadas. La clasificación BlueXP  proporciona un conjunto de políticas predefinidas basadas en solicitudes comunes o puede crear las suyas propias. 
 ---
 = Asigna políticas a tus datos con la clasificación BlueXP 
 :hardbreaks:
@@ -25,15 +25,15 @@ Las políticas ofrecen la siguiente funcionalidad:
 
 La pestaña *Policies* del Panel de cumplimiento enumera todas las políticas predefinidas y personalizadas disponibles en esta instancia de clasificación de BlueXP.
 
-image:screenshot_compliance_highlights_tab.png["Una captura de pantalla de la pestaña Políticas del panel de clasificación de BlueXP."]
+Las políticas también aparecen en la lista de filtros de la página Investigación.
 
-Además, las políticas aparecen en la lista de filtros de la página de investigación.
+image:screenshot_compliance_highlights_tab.png["Una captura de pantalla de la pestaña Políticas del panel de clasificación de BlueXP."]
 
 
 
 == Ver los resultados de la política en la página Investigación
 
-Para mostrar los resultados de una política en la página Investigación, haga clic en image:screenshot_gallery_options.gif["Botón más"] Para una política específica, y luego seleccione *Investigar resultados*.
+Para mostrar los resultados de una política en la página de investigación, seleccione el image:screenshot_gallery_options.gif["Botón más"] botón de una política específica y, a continuación, seleccione *Investigar resultados*.
 
 image:screenshot_compliance_highlights_investigate.png["Una captura de pantalla de la selección de resultados de investigación para una política específica en el separador Políticas."]
 
@@ -44,16 +44,16 @@ image:screenshot_compliance_highlights_investigate.png["Una captura de pantalla 
 Puede crear sus propias directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización. Los resultados se devuelven para todos los archivos y directorios (recursos compartidos y carpetas) que coincidan con los criterios de búsqueda.
 
 .Pasos
-. En la página Investigación de datos, defina la búsqueda seleccionando todos los filtros que desee utilizar. Consulte link:task-investigate-data.html["Filtrar datos en la página Investigación de datos"^] para obtener más detalles.
-. Una vez que tenga todas las características de filtro de la forma que desee, haga clic en *Crear directiva de esta búsqueda*.
+. En la pestaña Investigación, defina una búsqueda seleccionando los filtros que desea utilizar. Consulte link:task-investigate-data.html["Filtrado de datos en la página de investigación"] para obtener más información.
+. Una vez que tenga todas las características de filtro establecidas a su gusto, seleccione *Crear Política de esta búsqueda*.
 +
-image:screenshot_compliance_save_as_highlight.png["Captura de pantalla que muestra cómo guardar una consulta filtrada como directiva."]
+image:screenshot_compliance_save_as_highlight.png["Captura de pantalla que muestra cómo guardar una consulta filtrada como una política."]
 
 . Asigne un nombre a la política y seleccione otras acciones que puede realizar la política:
 +
 .. Introduzca un nombre y una descripción únicos.
 .. Opcionalmente, marque la casilla para eliminar automáticamente los archivos que coincidan con los parámetros de la política.
-.. Haga clic en *Crear directiva*.
+.. Seleccione *Crear directiva*.
 +
 image:screenshot_compliance_save_highlight2.png["Una captura de pantalla que muestra cómo configurar la directiva y guardarla."]
 
@@ -68,30 +68,27 @@ La nueva directiva aparece en la ficha Directivas.
 
 == Editar políticas
 
-Puede modificar cualquier criterio para una política existente que haya creado previamente. Esto puede resultar especialmente útil si desea cambiar la consulta (los elementos definidos mediante Filtros) para agregar o quitar determinados parámetros.
+Puede modificar los criterios de una política existente para cambiar la consulta (los elementos definidos mediante filtros) para agregar o eliminar determinados parámetros.
 
-Para las políticas predefinidas, sólo puede modificar si se envían notificaciones de correo electrónico y si se agregan etiquetas AIP. No se pueden cambiar otros valores.
+No puede modificar políticas predefinidas.
 
 .Pasos
-. En la página Lista de directivas, haga clic en *Editar* para la directiva que desea cambiar.
+. En la página Lista de políticas, seleccione *Editar política* para la política que desea cambiar.
 +
 image:screenshot_compliance_edit_policy_button.png["Una captura de pantalla que muestra cómo iniciar una edición en una directiva existente."]
 
-. Si sólo desea cambiar los elementos de esta página (Nombre, Descripción, si se envían notificaciones de correo electrónico y si se agregan etiquetas AIP), realice el cambio y haga clic en *Guardar directiva*.
+. Realice los cambios en los campos de nombre y descripción. Para solo cambiar estos campos, selecciona *Guardar política*.
 +
-Si desea cambiar los filtros de la consulta guardada, haga clic en *Editar consulta*.
+Para cambiar los filtros de la consulta guardada, seleccione *Editar consulta*.
 
 +
 image:screenshot_compliance_edit_policy_dialog.png["Captura de pantalla de la selección del botón Editar consulta en la página Editar directiva."]
 
-. En la página Investigación que define esa consulta, edite la consulta agregando, quitando o personalizando los filtros y haga clic en *Guardar cambios* .
+. En la página de investigación que define esa consulta, edite la consulta agregando, eliminando o personalizando los filtros, luego seleccione *Guardar cambios* .
 +
 image:screenshot_compliance_edit_policy_query.png["Una captura de pantalla que muestra cómo editar la consulta cambiando la configuración del filtro."]
 
 
-
-.Resultado
-La directiva cambia inmediatamente. Cualquier acción definida para que esa directiva envíe un correo electrónico, agregue etiquetas AIP o elimine archivos tendrá lugar en el siguiente interno.
 
 
 
@@ -99,7 +96,7 @@ La directiva cambia inmediatamente. Cualquier acción definida para que esa dire
 
 Puede eliminar cualquier política personalizada que haya creado si ya no la necesita. No puede eliminar ninguna de las políticas predefinidas.
 
-Para eliminar una política, haga clic en image:screenshot_gallery_options.gif["Botón más"] Para una directiva específica, haga clic en *Eliminar directiva* y, a continuación, vuelva a hacer clic en *Eliminar directiva* en el cuadro de diálogo de confirmación.
+Para eliminar una política, seleccione el image:screenshot_gallery_options.gif["Botón más"] botón de una política específica, seleccione *Eliminar política* y, a continuación, seleccione *Eliminar política* de nuevo en el cuadro de diálogo de confirmación.
 
 
 
