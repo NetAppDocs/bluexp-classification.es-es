@@ -16,11 +16,12 @@ summary: La clasificación de BlueXP ofrece muchas formas de agregar una lista p
 [role="lead"]
 La clasificación de BlueXP ofrece muchas formas de añadir una lista personalizada de «datos personales» que identificará la clasificación de BlueXP en futuros análisis, lo que te da una imagen completa sobre dónde residen los datos potencialmente confidenciales en _todos_ los archivos de tu organización.
 
-[]
-====
-*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
 
-====
+IMPORTANT: Para crear una clasificación personalizada en la versión 1,43 y posterior, consulte xref:task-custom-classification.adoc[Crear una clasificación personalizada].
+
+
+NOTE: Esta información sólo es relevante para la clasificación BlueXP  versiones anteriores 1,30 y anteriores.
+
 * Puede agregar identificadores únicos basados en columnas específicas de las bases de datos que está analizando.
 * Puede agregar palabras clave personalizadas desde un archivo de texto: Estas palabras se identifican dentro de sus datos.
 * Puede agregar un patrón personal utilizando una expresión regular (regex) -- el regex se agrega a los patrones predefinidos existentes.
@@ -36,7 +37,7 @@ NOTE: Las capacidades descritas en esta sección sólo están disponibles si ha 
 
 == Agregar identificadores de datos personales personalizados de las bases de datos
 
-Una función que llamamos _Data Fusion_ le permite analizar los datos de su organización para identificar si los identificadores únicos de sus bases de datos se encuentran en cualquiera de sus otros orígenes de datos. Puedes elegir los identificadores adicionales que buscará la clasificación de BlueXP en sus análisis si seleccionas una columna o columnas específicas en una tabla de base de datos. Por ejemplo, el siguiente diagrama muestra cómo se utilizan data Fusion para analizar los volúmenes, bloques y bases de datos en busca de apariciones de todos los ID de cliente de la base de datos de Oracle.
+_Data Fusion_ le permite analizar los datos de su organización para identificar si los identificadores únicos de sus bases de datos se encuentran en cualquiera de sus otros orígenes de datos. Puede elegir los identificadores adicionales que buscará la clasificación BlueXP  en sus exploraciones seleccionando una columna o columnas específicas en una tabla de base de datos. Por ejemplo, el siguiente diagrama muestra cómo se utilizan data Fusion para analizar los volúmenes, bloques y bases de datos en busca de apariciones de todos los ID de cliente de la base de datos de Oracle.
 
 image:diagram_compliance_data_fusion.png["Un diagrama que muestra cómo se puede utilizar el contenido de las bases de datos como origen para identificar los archivos que contienen los mismos datos."]
 

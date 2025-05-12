@@ -1,0 +1,41 @@
+= Versión 1,43
+:allow-uri-read: 
+
+
+
+
+=== Versión 1,43
+
+Esta versión de clasificación de BlueXP  incluye:
+
+.Priorice las secuencias de clasificación
+La clasificación BlueXP  ahora permite priorizar las secuencias de asignación y clasificación, además de las secuencias de sólo asignación, lo que permite seleccionar las secuencias que se realizan primero. Se admite la priorización de las exploraciones de asignación y clasificación durante y antes de que comiencen las exploraciones. Si decide priorizar una exploración mientras está en curso, se priorizan tanto las secuencias de asignación como las de clasificación.
+
+Para obtener más información, consulte link:task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
+
+.Soporte para las categorías de datos de información de identificación personal canadiense (PII)
+Los escaneos de clasificación de BlueXP  ahora identifican las categorías de datos de PII canadienses para información bancaria, número de pasaporte, número de seguro social y número de licencia de conducir y número de tarjeta de salud para todas las provincias y territorios.
+
+Para obtener más información, consulte xref:reference-private-data-categories.adoc#types-of-personal-data[Categorías de datos personales].
+
+.Clasificación personalizada (vista previa)
+La clasificación BlueXP  ahora admite clasificaciones personalizadas para las exploraciones de mapas y clasificaciones. Con clasificaciones personalizadas, puede personalizar los escaneos BlueXP  para capturar datos específicos de su organización y garantizar el cumplimiento de las expresiones regulares. Esta función se encuentra actualmente en la vista preliminar.
+
+Para obtener más información, consulte xref:task-custom-classification.adoc[Agregar clasificaciones personalizadas].
+
+.Pestaña Búsquedas guardadas
+Se ha cambiado el nombre de la pestaña **Políticas** xref:task-using-policies.html[**Búsquedas guardadas**]. La funcionalidad es la misma.
+
+.Enviar eventos de análisis al registro de auditoría
+Los eventos de exploración de BlueXP  ahora se pueden enviar a la xref:task-audit-data-sense-actions.html[registro de auditoría]. La clasificación BlueXP  también admite el envío de eventos de clasificación (cuando se inicia una exploración y cuando termina) al link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Línea de tiempo de BlueXP "^]. El envío de eventos de exploración de clasificación a la línea de tiempo de BlueXP  sólo se admite para entornos de trabajo.
+
+.Actualizaciones de seguridad
+* El paquete Keras ha sido actualizado, mitigando vulnerabilidades (BDSA-2025-0107 y BDSA-2025-1984).
+* La configuración de contenedores de Docker se ha actualizado. El contenedor ya no tiene acceso a las interfaces de red del host para crear paquetes de red raw. Al reducir el acceso innecesario, la actualización mitiga los posibles riesgos de seguridad.
+
+
+.Mejoras en el rendimiento
+Se han implementado mejoras de código para reducir el uso de RAM y mejorar el rendimiento general de la clasificación de BlueXP .
+
+.Corrección de errores
+Se han solucionado los errores que provocaban el fallo de las exploraciones de StorageGRID, las opciones de filtro de la página Investigación no cargaban y la evaluación de detección de datos no se descargaba para evaluaciones de gran volumen.

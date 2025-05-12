@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Las políticas son filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento comúnmente solicitadas. La clasificación BlueXP  proporciona un conjunto de políticas predefinidas basadas en solicitudes comunes o puede crear las suyas propias. 
+summary: Las búsquedas guardadas son filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para las consultas de conformidad solicitadas con frecuencia. La clasificación BlueXP  proporciona un conjunto de búsquedas guardadas predeterminadas basadas en solicitudes comunes o puede crear las suyas propias. 
 ---
-= Asigna políticas a tus datos con la clasificación BlueXP 
+= Gestionar búsquedas guardadas con clasificación BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,75 +14,66 @@ summary: Las políticas son filtros personalizados que proporcionan resultados d
 
 
 [role="lead"]
-Las directivas son como una lista de favoritos de filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para consultas de cumplimiento solicitadas con frecuencia. La clasificación de BlueXP proporciona un conjunto de políticas predefinidas basadas en solicitudes habituales de los clientes. Puede crear políticas personalizadas que proporcionen resultados para búsquedas específicas de su organización.
-
-Las políticas ofrecen la siguiente funcionalidad:
-
-* <<Lista de políticas predefinidas,Políticas predefinidas>> Desde NetApp según solicitudes de usuarios
-* Capacidad para crear sus propias políticas personalizadas
-* Inicie la página de investigación con los resultados de las políticas con un solo clic
+La clasificación BlueXP  permite guardar las consultas de búsqueda. Con una búsqueda guardada, puede crear filtros personalizados para ordenar las consultas frecuentes de la página de investigación de datos. La clasificación BlueXP  también incluye búsquedas guardadas predefinidas basadas en solicitudes comunes.
 
 
-La pestaña *Policies* del Panel de cumplimiento enumera todas las políticas predefinidas y personalizadas disponibles en esta instancia de clasificación de BlueXP.
+NOTE: En versiones de clasificación BlueXP  anteriores a 1,43, las búsquedas guardadas fueron llamadas xref:task-using-policies-deprecated.adoc[normativas].
 
-Las políticas también aparecen en la lista de filtros de la página Investigación.
+La pestaña *Búsquedas guardadas* en el Panel de cumplimiento muestra todas las búsquedas guardadas predefinidas y personalizadas disponibles en esta instancia de clasificación BlueXP .
 
-image:screenshot_compliance_highlights_tab.png["Una captura de pantalla de la pestaña Políticas del panel de clasificación de BlueXP."]
+Las búsquedas guardadas también aparecen en la lista de filtros de la página de investigación.
+
+image:screenshot_compliance_highlights_tab.png["Una captura de pantalla del separador Búsquedas Guardadas del panel de clasificación de BlueXP ."]
 
 
 
-== Ver los resultados de la política en la página Investigación
+== Ver los resultados de las búsquedas guardadas en la página de investigación
 
-Para mostrar los resultados de una política en la página de investigación, seleccione el image:screenshot_gallery_options.gif["Botón más"] botón de una política específica y, a continuación, seleccione *Investigar resultados*.
+Para mostrar los resultados de una búsqueda guardada en la página de investigación, seleccione el image:screenshot_gallery_options.gif["Botón más"] botón para una búsqueda específica y, a continuación, seleccione *Investigar resultados*.
 
-image:screenshot_compliance_highlights_investigate.png["Una captura de pantalla de la selección de resultados de investigación para una política específica en el separador Políticas."]
+image:screenshot_compliance_highlights_investigate.png["Una captura de pantalla que muestra la selección de resultados de investigación para una búsqueda específica en el separador Saced Search."]
 
 
 
-== Crear directivas personalizadas
+== Crear búsquedas guardadas personalizadas
 
-Puede crear sus propias directivas personalizadas que proporcionen resultados para búsquedas específicas de su organización. Los resultados se devuelven para todos los archivos y directorios (recursos compartidos y carpetas) que coincidan con los criterios de búsqueda.
+Puede crear sus propias búsquedas guardadas personalizadas que proporcionen resultados para las consultas específicas de su organización. Los resultados se devuelven para todos los archivos y directorios (recursos compartidos y carpetas) que coincidan con los criterios de búsqueda.
 
 .Pasos
 . En la pestaña Investigación, defina una búsqueda seleccionando los filtros que desea utilizar. Consulte link:task-investigate-data.html["Filtrado de datos en la página de investigación"] para obtener más información.
-. Una vez que tenga todas las características de filtro establecidas a su gusto, seleccione *Crear Política de esta búsqueda*.
+. Una vez que tengas todas las características de filtro establecidas a tu gusto, selecciona *Crear búsqueda guardada*.
 +
-image:screenshot_compliance_save_as_highlight.png["Captura de pantalla que muestra cómo guardar una consulta filtrada como una política."]
+image:screenshot_compliance_save_as_highlight.png["Captura de pantalla que muestra cómo guardar una consulta filtrada como una búsqueda guardada."]
 
-. Asigne un nombre a la política y seleccione otras acciones que puede realizar la política:
+. Asigne un nombre a la búsqueda guardada y añada una descripción. El nombre debe ser único.
+. Selecciona *Crear búsqueda guardada*.
 +
-.. Introduzca un nombre y una descripción únicos.
-.. Opcionalmente, marque la casilla para eliminar automáticamente los archivos que coincidan con los parámetros de la política.
-.. Seleccione *Crear directiva*.
-+
-image:screenshot_compliance_save_highlight2.png["Una captura de pantalla que muestra cómo configurar la directiva y guardarla."]
-
-
+image:screenshot_compliance_save_highlight2.png["Una captura de pantalla que muestra cómo configurar la búsqueda guardada y guardarla."]
 
 
 
 .Resultado
-La nueva directiva aparece en la ficha Directivas.
+La nueva búsqueda guardada se muestra en la pestaña Saved Searches.
 
 
 
-== Editar políticas
+== Editar búsquedas guardadas
 
-Puede modificar los criterios de una política existente para cambiar la consulta (los elementos definidos mediante filtros) para agregar o eliminar determinados parámetros.
+Puede modificar los criterios de una búsqueda guardada creada a medida para cambiar la consulta (los elementos definidos mediante filtros) para agregar o eliminar determinados parámetros.
 
-No puede modificar políticas predefinidas.
+No puede modificar las búsquedas guardadas predeterminadas.
 
 .Pasos
-. En la página Lista de políticas, seleccione *Editar política* para la política que desea cambiar.
+. En la página Búsquedas guardadas, selecciona *Editar búsqueda guardada* para la búsqueda que deseas cambiar.
 +
-image:screenshot_compliance_edit_policy_button.png["Una captura de pantalla que muestra cómo iniciar una edición en una directiva existente."]
+image:screenshot_compliance_edit_policy_button.png["Una captura de pantalla que muestra Editar búsqueda guardada."]
 
-. Realice los cambios en los campos de nombre y descripción. Para solo cambiar estos campos, selecciona *Guardar política*.
+. Realice los cambios en los campos de nombre y descripción. Para solo cambiar estos campos, selecciona *Guardar*.
 +
 Para cambiar los filtros de la consulta guardada, seleccione *Editar consulta*.
 
 +
-image:screenshot_compliance_edit_policy_dialog.png["Captura de pantalla de la selección del botón Editar consulta en la página Editar directiva."]
+image:screenshot_compliance_edit_policy_dialog.png["Captura de pantalla que muestra la selección del botón Editar Consulta en la página Editar Búsqueda Guardada."]
 
 . En la página de investigación que define esa consulta, edite la consulta agregando, eliminando o personalizando los filtros, luego seleccione *Guardar cambios* .
 +
@@ -92,34 +83,48 @@ image:screenshot_compliance_edit_policy_query.png["Una captura de pantalla que m
 
 
 
-== Eliminar políticas
+== Eliminar búsquedas guardadas
 
-Puede eliminar cualquier política personalizada que haya creado si ya no la necesita. No puede eliminar ninguna de las políticas predefinidas.
+Puede eliminar cualquier búsqueda guardada personalizada si ya no la necesita. No puede eliminar las búsquedas guardadas predeterminadas
 
-Para eliminar una política, seleccione el image:screenshot_gallery_options.gif["Botón más"] botón de una política específica, seleccione *Eliminar política* y, a continuación, seleccione *Eliminar política* de nuevo en el cuadro de diálogo de confirmación.
-
-
-
-== Lista de políticas predefinidas
-
-La clasificación de BlueXP proporciona las siguientes políticas definidas por el sistema:
-
-[cols="25,40,40"]
-|===
-| Nombre | Descripción | Lógica 
+Para eliminar una búsqueda guardada, seleccione el image:screenshot_gallery_options.gif["Botón más"] botón para una búsqueda específica, seleccione *Eliminar búsqueda guardada* y, a continuación, seleccione *Eliminar búsqueda* de nuevo en el cuadro de diálogo de confirmación.
 
 
-| Datos privados: Obsoletos a lo largo de 7 años | Archivos que contengan información personal o confidencial, modificado por última vez hace más de 7 años. | Archivos que contengan información personal o confidencial, modificado por última vez hace más de 7 años 
+
+== Búsquedas predeterminadas
+
+La clasificación BlueXP  proporciona las siguientes consultas de búsqueda definidas por el sistema:
+
+* **Nombres de los sujetos de datos - Alto riesgo**
++
+Archivos con más de 50 nombres de sujetos de datos
+
+* **Direcciones de correo electrónico - Alto riesgo**
++
+Archivos con más de 50 direcciones de correo electrónico o columnas de bases de datos con más del 50% de sus filas que contienen direcciones de correo electrónico
+
+* **Datos personales - Alto riesgo**
++
+Archivos con más de 20 identificadores de datos personales o columnas de base de datos con más del 50% de sus filas que contienen identificadores de datos personales
+
+* **Datos privados - anticuados durante 7 años**
++
+Archivos que contengan información personal o sensible, última modificación hace más de 7 años
+
+* **Proteger - Alto**
++
+Archivos o columnas de la base de datos que contienen una contraseña, información de la tarjeta de crédito, número IBAN o número de la seguridad social
+
+* **Proteger - Bajo**
++
+Archivos a los que no se ha accedido durante más de 3 años
+
+* **Proteger - Medio**
++
+Archivos que contienen archivos o columnas de bases de datos con identificadores de datos personales, incluidos números de identificación, números de identificación fiscal, números de licencia de conducir, ID de medicamentos o números de pasaporte
+
+* **Datos personales sensibles - Alto riesgo**
++
+Archivos con más de 20 identificadores de datos personales confidenciales o columnas de bases de datos con más del 50% de sus filas que contienen datos personales confidenciales
 
 
-| Nombres de sujetos de datos: Alto riesgo | Archivos con más de 50 nombres de asunto de datos. | Archivos con más de 50 nombres de asunto de datos 
-
-
-| Direcciones de correo electrónico: Alto riesgo | Archivos con más de 50 direcciones de correo electrónico o columnas de base de datos con más del 50% de sus filas que contienen direcciones de correo electrónico | Archivos con más de 50 direcciones de correo electrónico o columnas de base de datos con más del 50% de sus filas que contienen direcciones de correo electrónico 
-
-
-| Datos personales: Alto riesgo | Archivos con más de 20 identificadores de datos personales o columnas de base de datos con más del 50% de sus filas que contienen identificadores de datos personales. | Archivos con más de 20 columnas personales o de base de datos con más del 50% de sus filas que contienen personales 
-
-
-| Datos personales confidenciales: Alto riesgo | Archivos con más de 20 identificadores de datos personales confidenciales, o columnas de base de datos con más del 50% de sus filas que contienen datos personales confidenciales. | Archivos con más de 20 columnas confidenciales personales o de base de datos con más del 50% de sus filas que contienen personal confidencial 
-|===

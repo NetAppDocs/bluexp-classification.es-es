@@ -49,7 +49,7 @@ La clasificación de BlueXP puede identificar los datos a los que podría correr
 * Identifique todos los archivos y directorios (recursos compartidos y carpetas) con permisos abiertos que se exponen a toda la organización o al público.
 * Identifique los datos confidenciales que se encuentran fuera de la ubicación inicial dedicada.
 * Cumpla con las políticas de retención de datos.
-* Utilice _Policies_ para detectar automáticamente nuevos problemas de seguridad para que el personal de seguridad pueda actuar inmediatamente.
+* Utilice __Policies__ para detectar automáticamente nuevos problemas de seguridad para que el personal de seguridad pueda actuar de inmediato.
 
 
 .Optimice la utilización del almacenamiento

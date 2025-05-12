@@ -23,7 +23,7 @@ Puedes añadir tus esquemas de bases de datos a la clasificación de BlueXP para
 | Tipo | Descripción | MongoDB | Servidor SQL | MySQL | Oracle | PostgreSQL | SAP HANA | Amazon RDS 
 
 
-.9+| Acciones | Crear política | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+.9+| Acciones | Crear búsqueda guardada | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
 
 
 | Etiquetar | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
@@ -50,7 +50,7 @@ Puedes añadir tus esquemas de bases de datos a la clasificación de BlueXP para
 | Etiqueta | x | x | x | x | x | x | x 
 
 
-.25+| Filtros | Normativas | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+.25+| Filtros | Búsquedas guardadas | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
 
 
 | Estado del análisis de adquisición | ✓ | ✓ | ✓ | ✓ | ✓ |  |  

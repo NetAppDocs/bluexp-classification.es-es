@@ -21,11 +21,9 @@ Cuando está activada, el análisis lento se utiliza en todas las fuentes de dat
 
 TIP: No se puede reducir la velocidad de análisis al analizar bases de datos.
 
-[]
-====
-*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
 
-====
+NOTE: Esta información sólo es relevante para la clasificación BlueXP  versiones anteriores 1,30 y anteriores.
+
 .Pasos
 . Desde la parte inferior de la página _Configuration_, mueva el control deslizante hacia la derecha para activar el análisis lento.
 +

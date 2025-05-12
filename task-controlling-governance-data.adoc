@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies, data discovery assessment report, data mapping overview report, data repositories, data sensitivity, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato. 
 ---
 = Consulte los detalles de gobierno sobre los datos almacenados en su organización con la clasificación BlueXP 
@@ -68,16 +68,16 @@ NOTE: Si alguno de sus orígenes de datos implementa una organización en nivele
 
 
 
-=== Revise las políticas con el mayor número de resultados
+=== Revise las búsquedas guardadas con el mayor Núm. De resultados
 
-En el área _Policies_, las políticas con el mayor número de resultados aparecen en la parte superior de la lista.
+En la pestaña _Saved Searches_, las búsquedas con el mayor número de resultados aparecen en la parte superior de la lista.
 
-Para obtener detalles sobre políticas, consulte link:task-using-policies.html["Asigne políticas a sus datos"].
+Para obtener más información sobre las búsquedas guardadas, consulte link:task-using-policies.html["Crear búsquedas guardadas"].
 
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En el panel de control de gobierno > mosaico Políticas, seleccione el nombre de una política para mostrar los resultados en la página Investigación.
-. Seleccione *Ver todo* para ver la lista de todas las políticas disponibles. En el área _Policies_, las políticas con el mayor número de resultados aparecen en la parte superior de la lista.
+. En el panel de control Gobernación, localice el icono Búsquedas guardadas. Seleccione el nombre de una búsqueda guardada para mostrar los resultados en la página de investigación.
+. Selecciona *Ver todo* para ver la lista de todas las búsquedas guardadas disponibles. En el área _Saved Searches_, las búsquedas con el mayor número de resultados aparecen en la parte superior de la lista.
 
 
 
@@ -116,7 +116,7 @@ image:screenshot-compliance-report-buttons.png["Captura de pantalla del panel de
 
 
 .Resultado
-La clasificación de BlueXP genera un informe .pdf que se puede revisar y enviar a otros grupos según sea necesario.
+La clasificación de BlueXP genera un informe PDF que se puede revisar y enviar a otros grupos según sea necesario.
 
 
 

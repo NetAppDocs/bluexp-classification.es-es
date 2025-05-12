@@ -27,9 +27,9 @@ Puede filtrar el contenido de la página de investigación para que muestre solo
 
 
 
-=== Filtre los datos por etiquetas, usuarios asignados y políticas
+=== Filtre los datos por etiquetas, etiquetas, usuarios asignados y búsquedas guardadas
 
-Utilice los siguientes filtros para ver los datos por etiquetas, etiquetas AIP, usuarios asignados o políticas.
+Utilice los siguientes filtros para ver los datos por etiquetas, etiquetas AIP, usuarios asignados o búsquedas guardadas.
 
 []
 ====
@@ -41,7 +41,7 @@ Utilice los siguientes filtros para ver los datos por etiquetas, etiquetas AIP, 
 | Filtro | Detalles 
 
 
-| Normativas | Seleccione una política o políticas. Vaya link:task-using-policies.html["aquí"^] para ver la lista de directivas existentes y crear sus propias directivas personalizadas. 
+| Búsquedas guardadas | Seleccione una o varias búsquedas guardadas. Vaya a link:task-using-policies.html["aquí"^]ver la lista de búsquedas existentes o cree una nueva. 
 
 
 | Etiqueta | Seleccione link:task-org-private-data.html#categorize-your-data-using-aip-labels["Etiquetas AIP"] que se asignan a sus archivos. 

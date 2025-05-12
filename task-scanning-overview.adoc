@@ -64,7 +64,7 @@ En la siguiente tabla se muestran algunas de las diferencias:
 | Buscar nombres dentro de los archivos | Sí | No 
 
 
-| Cree link:task-using-policies.html["normativas"] que proporcionan resultados de búsqueda personalizados | Sí | No 
+| link:task-using-policies.html["búsquedas guardadas"]Crear que proporcione resultados de búsqueda personalizados | Sí | No 
 
 
 | Capacidad para ejecutar otros informes | Sí | No 
@@ -105,10 +105,10 @@ En la siguiente tabla se muestran algunas de las diferencias:
 | Archivos duplicados | Sí | Sí 
 
 
-| Políticas predefinidas | Sí | No 
+| Búsquedas guardadas predefinidas | Sí | No 
 
 
-| Políticas personalizadas | Sí | Sí 
+| Búsquedas guardadas predeterminadas | Sí | Sí 
 
 
 | Informe DDA | Sí | Sí 
@@ -169,7 +169,7 @@ En la siguiente tabla se muestran algunas de las diferencias:
 | Función | Asignar y clasificar | Asignar 
 
 
-| Normativas | Sí | Sí 
+| Búsquedas guardadas | Sí | Sí 
 
 
 | Tipo de entorno de trabajo | Sí | Sí 

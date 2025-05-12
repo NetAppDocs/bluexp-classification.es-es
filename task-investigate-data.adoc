@@ -152,16 +152,16 @@ Utilice los siguientes filtros para ver datos por tipo de almacenamiento.
 
 | Repositorio de almacenamiento | Seleccione el repositorio de almacenamiento, por ejemplo, un volumen o un esquema. 
 |===
-*Filtrar datos por políticas*
+*Filtrar datos por búsquedas guardadas*
 
-Use el siguiente filtro para ver los datos por políticas.
+Utilice el siguiente filtro para ver los datos según las búsquedas guardadas.
 
 [cols="30,60"]
 |===
 | Filtro | Detalles 
 
 
-| Normativas | Seleccione una política o políticas. Vaya link:task-using-policies.html["aquí"] a ver la lista de políticas existentes y a crear sus propias políticas personalizadas. 
+| Búsqueda guardada | Seleccione una búsqueda guardada o múltiplos. Vaya a link:task-using-policies.html["pestaña búsquedas guardadas"]para ver la lista de búsquedas guardadas existentes y cree otras nuevas. 
 |===
 *Filtrar datos por estado de análisis*
 
@@ -194,7 +194,7 @@ Utilice el siguiente filtro para ver los archivos duplicados en su almacenamient
 
 == Ver metadatos de archivo
 
-Además de mostrarle el entorno de trabajo y el volumen donde reside el archivo, los metadatos muestran mucha más información, incluidos los permisos del archivo, el propietario del archivo y si hay duplicados de este archivo. Esta información es útil si está planeando hacerlolink:task-using-policies.html["crear políticas"], ya que puede ver toda la información que puede utilizar para filtrar sus datos.
+Además de mostrarle el entorno de trabajo y el volumen donde reside el archivo, los metadatos muestran mucha más información, incluidos los permisos del archivo, el propietario del archivo y si hay duplicados de este archivo. Esta información es útil si está planeando hacerlolink:task-using-policies.html["crear búsquedas guardadas"], ya que puede ver toda la información que puede utilizar para filtrar sus datos.
 
 No toda la información está disponible para todas las fuentes de datos, solo lo que es apropiado para esa fuente de datos. Por ejemplo, el nombre del volumen y los permisos no son relevantes para los archivos de base de datos.
 
@@ -267,7 +267,7 @@ image:screenshot_compliance_duplicate_file.png["Una captura de pantalla que mues
 
 +
 
-TIP: Puede usar el valor "hash de archivo" que se proporciona en esta página e introducirlo directamente en la página Investigación para buscar un archivo duplicado específico en cualquier momento, o puede usarlo en una directiva.
+TIP: Puede utilizar el valor hash de archivo proporcionado en esta página e introducirlo directamente en la página de investigación para buscar un archivo duplicado específico en cualquier momento, o puede utilizarlo en una búsqueda guardada.
 
 
 
@@ -364,24 +364,18 @@ Un cuadro de diálogo muestra un mensaje que indica que los informes se están d
 
 
 
-== Crear una política basada en filtros seleccionados
+== Crear una búsqueda guardada basada en los filtros seleccionados
 
-Puede ser útil guardar los filtros que ha seleccionado en la página Investigación de datos como una política. De esta forma, puede ejecutar los mismos filtros en cualquier momento sin tener que volver a seleccionarlos.
+Puede crear una búsqueda guardada para los filtros de búsqueda utilizados con frecuencia en la página Investigación de datos para replicar fácilmente esas consultas de búsqueda.
 
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Investigación*.
-. En la página Investigación de datos, seleccione los filtros que desea utilizar para crear una política.
-. En la parte inferior del panel Filtro, selecciona *Crear política desde esta búsqueda*.
-. Introduzca un nombre y una descripción para la política.
+. En la página Investigación de datos, seleccione los filtros que desea utilizar para crear una búsqueda guardada.
+. En la parte inferior del panel Filtro, selecciona *Crear búsqueda guardada de esta búsqueda*.
+. Introduzca un nombre y una descripción para la búsqueda guardada.
 . Elija una de las siguientes opciones:
-+
-** *Elimina automáticamente archivos que coincidan con esta política (todos los días): Selecciona esta opción si quieres eliminar los archivos que coincidan con la política.
-** *Enviar actualizaciones por correo electrónico sobre esta política a los usuarios de BlueXP  en esta cuenta cada <day/week/month>*: Seleccione esta opción si desea enviar actualizaciones por correo electrónico sobre la política a los usuarios de BlueXP  en esta cuenta.
-** *Enviar correo electrónico cada <Day> a <email address>*: Seleccione esta opción si desea enviar un correo electrónico cada <Day> a una dirección de correo electrónico específica.
-
-
-. Seleccione *Crear directiva*.
+. Selecciona *Crear búsqueda guardada*.
 
 
 
-TIP: Los resultados pueden tardar hasta 15 minutos en aparecer en la página Políticas.
+TIP: Los resultados pueden tardar hasta 15 minutos en aparecer en la página Saved Searches.

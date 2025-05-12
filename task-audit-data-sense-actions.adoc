@@ -18,11 +18,9 @@ Actividades de gestión de registros de clasificación de BlueXP que se han real
 
 Puede ver el contenido de los archivos de registro de auditoría de clasificación de BlueXP o descargarlos, para ver qué cambios se han producido en los archivos y cuándo. Por ejemplo, puede ver qué solicitud se emitió, la hora de la solicitud y detalles como la ubicación de origen en caso de que se haya eliminado un archivo o la ubicación de origen y destino en caso de que se haya movido un archivo.
 
-[]
-====
-*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
 
-====
+NOTE: Esta información sólo es relevante para la clasificación BlueXP  versiones anteriores 1,30 y anteriores.
+
 
 
 == Contenido del archivo de registro
@@ -33,11 +31,11 @@ Cada línea del registro de auditoría contiene información con el siguiente fo
 
 * Fecha y hora: Marca de hora completa del evento
 * Estado: INFORMACIÓN, AVISO
-* Tipo de acción (eliminar, copiar, mover, crear política, actualizar política, Volver a analizar archivos, descargar informes JSON, etc.)
+* Tipo de acción (eliminar, copiar, mover, crear búsqueda guardada, actualizar búsqueda guardada, volver a escanear archivos, descargar informe JSON, etc.)
 * Nombre de archivo (si la acción es relevante para un archivo)
 * Detalles de la acción - lo que se hizo: Depende de la acción
 +
-** Nombre de la política
+** Nombre de búsqueda guardado
 ** Para mover: Origen y destino
 ** Para copia - origen y destino
 ** Para etiqueta: Nombre de etiqueta

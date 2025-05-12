@@ -83,9 +83,9 @@ image:screenshot_compliance_repo_scan_all.png["Captura de pantalla que muestra c
 
 == Priorice las adquisiciones
 
-Puede dar prioridad a las secuencias de sólo asignación más importantes para garantizar que las secuencias de alta prioridad se completen primero.
+Puede dar prioridad a las exploraciones de sólo asignación más importantes o asignar y clasificar exploraciones para garantizar que las exploraciones de alta prioridad se completen primero.
 
-De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Gracias a la capacidad de dar prioridad a las exploraciones, ahora puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente. Esta función está limitada a las exploraciones de sólo asignación. No está disponible para las secuencias de asignación y clasificación.
+De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Gracias a la capacidad de dar prioridad a las exploraciones, ahora puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
 
 La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
 
