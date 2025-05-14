@@ -16,13 +16,13 @@ summary: 'Completa unos pasos para empezar a analizar datos en el almacenamiento
 [role="lead"]
 Completa unos pasos para empezar a analizar datos en el almacenamiento de objetos directamente con la clasificación de BlueXP. La clasificación de BlueXP puede analizar datos de cualquier servicio de almacenamiento de objetos que use el protocolo Simple Storage Service (S3). Entre ellas se incluyen NetApp StorageGRID, IBM Cloud Object Store, Linode, B2 Cloud Storage, Amazon S3, etc.
 
+
+IMPORTANT: La siguiente información sólo es relevante para las versiones antiguas de clasificación BlueXP  1,30 y anteriores.
+
++ A partir de la versión 1,31, la clasificación BlueXP  es parte de la oferta principal de BlueXP . Para obtener más información, consulte link:task-scanning-storagegrid.html["Escanee datos StorageGRID"].
+
 []
 ====
-*NOTA* Usando la clasificación BlueXP  que forma parte del núcleo BlueXP , ahora puede escanear datos StorageGRID.link:task-scanning-storagegrid.html["Escanee datos StorageGRID"] La información restante aquí es relevante solo para la clasificación BlueXP  versiones antiguas 1,30 y anteriores.
-
-====
-
-
 == Inicio rápido
 
 Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las secciones restantes para obtener todos los detalles.
@@ -46,9 +46,7 @@ Añade el servicio de almacenamiento de objetos a la clasificación de BlueXP.
 [role="quick-margin-para"]
 Selecciona los bloques que quieres escanear y la clasificación de BlueXP comenzará a escanearlos.
 
-
-
-== Revisión de requisitos de almacenamiento de objetos
+== Revisión de los requisitos de almacenamiento de objetos
 
 Revise los siguientes requisitos previos para comprobar que tiene una configuración compatible antes de habilitar la clasificación de BlueXP.
 
@@ -56,9 +54,7 @@ Revise los siguientes requisitos previos para comprobar que tiene una configurac
 * Debe tener la clave de acceso y la clave secreta del proveedor de almacenamiento de objetos para que la clasificación de BlueXP pueda acceder a los bloques.
 
 
-
-
-== Implementar la instancia de clasificación de BlueXP
+== Desplegando la instancia de clasificación de BlueXP 
 
 Pon en marcha la clasificación de BlueXP si aún no hay una instancia implementada.
 
@@ -68,9 +64,7 @@ Si va a analizar datos del almacenamiento de objetos S3 que se ha instalado en u
 
 Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga conectividad a Internet.
 
-
-
-== Agregar el servicio de almacenamiento de objetos a la clasificación de BlueXP
+== Añadir el servicio de almacenamiento de objetos a la clasificación BlueXP 
 
 Añada el servicio de almacenamiento de objetos.
 
@@ -94,9 +88,7 @@ image:screenshot_compliance_add_object_storage.png["Captura de pantalla del cuad
 .Resultado
 El nuevo Servicio de almacenamiento de objetos se añade a la lista de entornos de trabajo.
 
-
-
-== Habilitación y deshabilitación de análisis de cumplimiento de normativas en bloques de almacenamiento de objetos
+== Habilitar y deshabilitar los análisis de cumplimiento de normativas en buckets de almacenamiento de objetos
 
 Después de habilitar la clasificación de BlueXP en tu servicio de almacenamiento de objetos, el paso siguiente es configurar los bloques que quieres analizar. La clasificación de BlueXP descubre esos buckets y los muestra en el entorno de trabajo que has creado.
 
@@ -127,3 +119,5 @@ image:screenshot_compliance_object_storage_select_buckets.png["Captura de pantal
 
 .Resultado
 La clasificación de BlueXP comienza a analizar los bloques que has habilitado. Si hay algún error, aparecerán en la columna Estado, junto con la acción necesaria para corregir el error.
+
+====

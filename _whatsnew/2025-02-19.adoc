@@ -16,7 +16,7 @@ Los siguientes sistemas operativos requieren el uso del motor de contenedores Po
 .Priorice las exploraciones de sólo asignación
 Al realizar exploraciones de sólo asignación, puede priorizar las exploraciones más importantes. Esta función ayuda cuando tiene muchos entornos de trabajo y desea garantizar que las exploraciones de alta prioridad se completen primero.
 
-De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Gracias a la capacidad de dar prioridad a las exploraciones, ahora puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
+De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Con la capacidad de priorizar las exploraciones, puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
 
 La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
 
@@ -25,9 +25,9 @@ La priorización está limitada alink:concept-cloud-compliance.html["exploracion
 Para obtener más información, consulte link:task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
 
 .Vuelva a intentar todas las adquisiciones
-La clasificación BlueXP  ahora admite la capacidad de reintentar por lotes todos los análisis fallidos.
+La clasificación BlueXP  admite la capacidad de reintentar por lotes todos los análisis fallidos.
 
-Ahora puede volver a intentar escaneos en una operación por lotes con la función **Reintentar todo**. Si las exploraciones de clasificación fallan debido a un problema temporal, como una interrupción de la red, puede volver a intentar todas las exploraciones al mismo tiempo con un botón en lugar de volver a intentarlo individualmente. Las secuencias se pueden volver a intentar tantas veces como sea necesario.
+Puede volver a intentar escaneos en una operación por lotes con la función **Reintentar todo**. Si las exploraciones de clasificación fallan debido a un problema temporal, como una interrupción de la red, puede volver a intentar todas las exploraciones al mismo tiempo con un botón en lugar de volver a intentarlo individualmente. Las secuencias se pueden volver a intentar tantas veces como sea necesario.
 
 Para volver a intentar todas las adquisiciones:
 

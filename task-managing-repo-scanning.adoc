@@ -29,7 +29,7 @@ Puede ver el estado de escaneo de cada entorno de trabajo en la página Configur
 * *Inicializando* (punto azul claro): Se activa la configuración del mapa o clasificación. Esto aparece durante unos segundos antes de iniciar el estado de “cola pendiente”.
 * *Cola pendiente* (punto naranja): La tarea de escaneo está esperando para ser listada en la cola de escaneo.
 * *En cola* (punto naranja): La tarea se ha agregado correctamente a la cola de escaneo. El sistema comenzará a asignar o clasificar el volumen cuando llegue su turno en la cola.
-* *Running* (punto verde): La tarea de escaneo, que estaba en la cola, ahora se está haciendo en el repositorio de almacenamiento seleccionado.
+* *Running* (punto verde): La tarea de escaneo, que estaba en la cola, está activamente en progreso en el repositorio de almacenamiento seleccionado.
 * *Finalizado* (punto verde): El escaneo del repositorio de almacenamiento está completo.
 * *Pausa* (punto gris): Seleccionaste la opción “Pausa” para pausar el escaneo. Aunque los cambios en el volumen no se muestran en el sistema, los datos escaneados siguen mostrándose.
 * *Error* (punto rojo): El escaneo no se puede completar porque ha encontrado problemas. Si necesita completar una acción, el error aparece en la información sobre herramientas debajo de la columna “Acción requerida”.  De lo contrario, el sistema muestra un estado de “error” e intenta recuperarse. Cuando termina, el estado cambia.
@@ -85,7 +85,7 @@ image:screenshot_compliance_repo_scan_all.png["Captura de pantalla que muestra c
 
 Puede dar prioridad a las exploraciones de sólo asignación más importantes o asignar y clasificar exploraciones para garantizar que las exploraciones de alta prioridad se completen primero.
 
-De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Gracias a la capacidad de dar prioridad a las exploraciones, ahora puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
+De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Con la capacidad de priorizar las exploraciones, puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
 
 La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
 
