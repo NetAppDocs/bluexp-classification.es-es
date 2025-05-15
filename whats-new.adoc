@@ -32,12 +32,12 @@ La clasificación BlueXP  permite priorizar las exploraciones de mapas y clasif
 Para obtener más información, consulte link:task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
 
 .Soporte para las categorías de datos de información de identificación personal canadiense (PII)
-Los escaneos de clasificación de BlueXP  identifican las categorías de datos de PII canadienses para información bancaria, número de pasaporte, número de seguro social y número de licencia de conducir y número de tarjeta de salud para todas las provincias y territorios.
+Las exploraciones de clasificación BlueXP  identifican categorías de datos de PII canadienses. Estas categorías incluyen información bancaria, números de pasaporte, números de seguro social, números de licencia de conducir y números de tarjeta de salud para todas las provincias y territorios canadienses.
 
 Para obtener más información, consulte xref:reference-private-data-categories.adoc#types-of-personal-data[Categorías de datos personales].
 
 .Clasificación personalizada (vista previa)
-La clasificación BlueXP  admite clasificaciones personalizadas para las exploraciones de mapas y clasificaciones. Con clasificaciones personalizadas, puede personalizar los escaneos BlueXP  para capturar datos específicos de su organización y garantizar el cumplimiento de las expresiones regulares. Esta función se encuentra actualmente en la vista preliminar.
+La clasificación BlueXP  admite clasificaciones personalizadas para las exploraciones de mapas y clasificaciones. Con clasificaciones personalizadas, puede personalizar los escaneos BlueXP  para capturar datos específicos de su organización mediante expresiones regulares. Esta función se encuentra actualmente en la vista preliminar.
 
 Para obtener más información, consulte xref:task-custom-classification.adoc[Agregar clasificaciones personalizadas].
 

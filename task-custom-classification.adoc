@@ -13,7 +13,7 @@ summary: La clasificación de BlueXP  permite personalizar una búsqueda de inf
 
 
 [role="lead"]
-Con la clasificación BlueXP , puede crear una búsqueda personalizada para información confidencial. La búsqueda se puede aplicar a una expresión regular o a un conjunto de palabras clave de proximidad.
+Con la clasificación BlueXP , puede crear una búsqueda personalizada para información confidencial. La búsqueda se puede delimitar a una expresión regular (regex).
 
 
 
@@ -22,14 +22,12 @@ Con la clasificación BlueXP , puede crear una búsqueda personalizada para inf
 La clasificación personalizada sólo está disponible para las adquisiciones de asignación y clasificación, no sólo para asignaciones. Esta función se encuentra actualmente en la vista preliminar.
 
 .Pasos
-. Seleccione la pestaña **Clasificación personalizada**.
-. Seleccione la opción **Agregar nuevo clasificador**.
-. Agregue Nombre y Descripción para el nuevo clasificador.
+. Seleccione la pestaña **Clasificación personalizada**. image:screenshot-custom-classification-tab.png["Captura de pantalla de la página de clasificación personalizada."]
+. Seleccione el botón **Agregar nuevo clasificador**.
+. Agregue un nombre y una descripción para el nuevo clasificador.
 . Para agregar la personalización como una expresión regular, seleccione **Expresión regular personalizada** y luego **Siguiente**.
-+
-.. Para una expresión regular, agregue el patrón para detectar la información específica de sus datos. Por ejemplo, el ID de 12 dígitos que comience por 201 sería \B201\f\d(9)b. Seleccione **Validar** para confirmar la sintaxis de la entrada.
-
-
+. Agregue un patrón para detectar la información específica de sus datos. Selecciona **Validar** para confirmar la sintaxis de tu entrada. image:screenshot-create-logic-regex.png["Captura de pantalla del cuadro de diálogo para crear una expresión regular."]
+. Seleccione **Hecho** para crear la clasificación personalizada.
 
 
 La nueva personalización se captura en la siguiente secuencia programada. Para ver los resultados, consulte xref:task-generating-compliance-reports.html[Generar informes de cumplimiento].

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-using-policies.html 
-keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
+keywords: compliance, privacy, filter data, highlights, policies, notifications, saved search, tags, data sense, edit query 
 summary: Las búsquedas guardadas son filtros personalizados que proporcionan resultados de búsqueda en la página de investigación para las consultas de conformidad solicitadas con frecuencia. La clasificación BlueXP  proporciona un conjunto de búsquedas guardadas predeterminadas basadas en solicitudes comunes o puede crear las suyas propias. 
 ---
 = Gestionar búsquedas guardadas con clasificación BlueXP 
@@ -29,9 +29,9 @@ image:screenshot_compliance_highlights_tab.png["Una captura de pantalla del sepa
 
 == Ver los resultados de las búsquedas guardadas en la página de investigación
 
-Para mostrar los resultados de una búsqueda guardada en la página de investigación, seleccione el image:screenshot_gallery_options.gif["Botón más"] botón para una búsqueda específica y, a continuación, seleccione *Investigar resultados*.
+Para mostrar los resultados de una búsqueda guardada en la página de investigación, seleccione el image:button-gallery-options.gif["Botón más"] botón para una búsqueda específica y, a continuación, seleccione *Investigar resultados*.
 
-image:screenshot_compliance_highlights_investigate.png["Una captura de pantalla que muestra la selección de resultados de investigación para una búsqueda específica en el separador Saced Search."]
+image:screenshot_compliance_highlights_investigate.png["Una captura de pantalla que muestra la selección de resultados de investigación para una búsqueda específica en la pestaña de búsqueda guardada."]
 
 
 
@@ -52,32 +52,31 @@ image:screenshot_compliance_save_highlight2.png["Una captura de pantalla que mue
 
 
 
-.Resultado
-La nueva búsqueda guardada se muestra en la pestaña Saved Searches.
+Una vez que hayas creado la búsqueda, puedes verla en la pestaña **Búsquedas guardadas**.
 
 
 
 == Editar búsquedas guardadas
 
-Puede modificar los criterios de una búsqueda guardada creada a medida para cambiar la consulta (los elementos definidos mediante filtros) para agregar o eliminar determinados parámetros.
+Puede modificar los criterios de consulta para una búsqueda guardada (es decir, los filtros definidos) para agregar o eliminar determinados parámetros.
 
 No puede modificar las búsquedas guardadas predeterminadas.
 
 .Pasos
-. En la página Búsquedas guardadas, selecciona *Editar búsqueda guardada* para la búsqueda que deseas cambiar.
+. En la página Búsquedas guardadas, selecciona *Editar búsqueda* para la búsqueda que deseas cambiar.
 +
-image:screenshot_compliance_edit_policy_button.png["Una captura de pantalla que muestra Editar búsqueda guardada."]
+image:screenshot-edit-search.png["Una captura de pantalla que muestra Editar búsqueda guardada."]
 
-. Realice los cambios en los campos de nombre y descripción. Para solo cambiar estos campos, selecciona *Guardar*.
+. Realice los cambios en los campos de nombre y descripción. Para cambiar solo los campos de nombre y descripción, selecciona *Guardar búsqueda*.
 +
-Para cambiar los filtros de la consulta guardada, seleccione *Editar consulta*.
+Para cambiar los filtros de la búsqueda guardada, seleccione *Editar consulta*.
 
 +
-image:screenshot_compliance_edit_policy_dialog.png["Captura de pantalla que muestra la selección del botón Editar Consulta en la página Editar Búsqueda Guardada."]
+image:screenshot-edit-search-dialog.png["Captura de pantalla del botón Editar Consulta de la página Editar Búsqueda Guardada."]
 
-. En la página de investigación que define esa consulta, edite la consulta agregando, eliminando o personalizando los filtros, luego seleccione *Guardar cambios* .
+. En la página Investigación, edite la consulta. Puede agregar, eliminar o modificar filtros. Para completar los cambios, seleccione *Guardar consulta para esta búsqueda*.
 +
-image:screenshot_compliance_edit_policy_query.png["Una captura de pantalla que muestra cómo editar la consulta cambiando la configuración del filtro."]
+image:screenshot-edit-query.png["Una captura de pantalla que muestra cómo editar la consulta cambiando la configuración del filtro."]
 
 
 
@@ -85,9 +84,9 @@ image:screenshot_compliance_edit_policy_query.png["Una captura de pantalla que m
 
 == Eliminar búsquedas guardadas
 
-Puede eliminar cualquier búsqueda guardada personalizada si ya no la necesita. No puede eliminar las búsquedas guardadas predeterminadas
+Puede eliminar cualquier búsqueda guardada personalizada si ya no la necesita. No puede eliminar las búsquedas guardadas predeterminadas.
 
-Para eliminar una búsqueda guardada, seleccione el image:screenshot_gallery_options.gif["Botón más"] botón para una búsqueda específica, seleccione *Eliminar búsqueda guardada* y, a continuación, seleccione *Eliminar búsqueda* de nuevo en el cuadro de diálogo de confirmación.
+Para eliminar una búsqueda guardada, seleccione el image:button-gallery-options.gif["Botón más"] botón para una búsqueda específica, seleccione *Eliminar búsqueda* y, a continuación, seleccione *Eliminar búsqueda* de nuevo en el cuadro de diálogo de confirmación.
 
 
 

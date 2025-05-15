@@ -130,11 +130,11 @@ image:screenshot_s3_enable_compliance.png["Una captura de pantalla de cómo habi
 +
 image:screenshot_s3_compliance_iam_role.png["Una captura de pantalla de cómo introducir el rol de IAM de AWS para la clasificación de BlueXP"]
 
-. Haga clic en *Activar*.
+. Selecciona *Activar*.
 
 
 
-TIP: También puede habilitar análisis de cumplimiento de un entorno de trabajo desde la página Configuración haciendo clic en image:screenshot_gallery_options.gif["tres puntos"] Y seleccionando *Activar clasificación de BlueXP*.
+TIP: También puede habilitar los escaneos de cumplimiento para un entorno de trabajo desde la página de configuración seleccionando el image:button-gallery-options.gif["tres puntos"] botón y luego *Activar clasificación BlueXP *.
 
 .Resultado
 BlueXP asigna la función IAM a la instancia.

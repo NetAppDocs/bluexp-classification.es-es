@@ -76,7 +76,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.ht
 
 Revise los siguientes requisitos previos para asegurarse de que tiene una configuración compatible antes de poner en marcha la clasificación de BlueXP en el cloud. Al poner en marcha la clasificación de BlueXP en el cloud, estará ubicada en la misma subred que Connector.
 
-Habilita el acceso a Internet saliente desde la clasificación de BlueXP:: La clasificación de BlueXP requiere acceso a Internet saliente. Si tu red física o virtual utiliza un servidor proxy para acceder a Internet, asegúrese de que la instancia de clasificación de BlueXP tenga acceso a Internet saliente para contactar con los siguientes extremos. El proxy debe ser no transparente; actualmente no admitimos proxies transparentes.
+Habilita el acceso a Internet saliente desde la clasificación de BlueXP:: La clasificación de BlueXP requiere acceso a Internet saliente. Si tu red física o virtual utiliza un servidor proxy para acceder a Internet, asegúrese de que la instancia de clasificación de BlueXP tenga acceso a Internet saliente para contactar con los siguientes extremos. El proxy no debe ser transparente. No se admiten proxies transparentes actualmente.
 +
 --
 Revisa la tabla correspondiente a continuación en función de si vas a poner en marcha la clasificación de BlueXP en AWS, Azure o GCP.

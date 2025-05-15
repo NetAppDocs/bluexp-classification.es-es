@@ -22,7 +22,7 @@ Si es necesario, puede detener la clasificación de BlueXP para que no analice u
 
 Al desactivar los análisis, la clasificación de BlueXP ya no analiza los datos en el entorno de trabajo y elimina la información de cumplimiento indexado de la instancia de clasificación de BlueXP (los datos del entorno de trabajo en sí no se eliminan).
 
-. En la página _Configuration_, haga clic en image:screenshot_gallery_options.gif["Botón más"] En la fila del entorno de trabajo y, a continuación, haga clic en *Desactivar detección de datos*.
+. En la página _Configuration_, seleccione el image:button-gallery-options.gif["Botón más"] botón en la fila para el entorno de trabajo y luego *Desactivar Data Sense*.
 
 
 image:screenshot_deactivate_compliance_scan.png["Una captura de pantalla del icono de acción donde puedes seleccionar Desactivar la clasificación de BlueXP. Esta opción está disponible después de seleccionar un entorno de trabajo de la página lienzo."]
@@ -36,7 +36,7 @@ TIP: También puede desactivar los análisis de cumplimiento de un entorno de tr
 
 Si ya no quieres analizar una determinada base de datos, puedes eliminarla de la interfaz de clasificación de BlueXP y detener todos los análisis.
 
-. En la página _Configuration_, haga clic en image:screenshot_gallery_options.gif["Botón más"] En la fila de la base de datos y, a continuación, haga clic en *Quitar servidor de base de datos*.
+. En la página _Configuration_, seleccione el image:button-gallery-options.gif["Botón más"] botón en la fila de la base de datos y luego *Remove DB Server*.
 
 
 image:screenshot_compliance_remove_db.png["Captura de pantalla del botón Eliminar servidor de base de datos de la página Configuración de exploración."]
@@ -48,7 +48,7 @@ image:screenshot_compliance_remove_db.png["Captura de pantalla del botón Elimin
 Si ya no desea analizar archivos de usuario de un grupo de recursos compartidos de archivos, puede eliminar el grupo File Shares de la interfaz de clasificación de BlueXP y detener todos los análisis.
 
 .Pasos
-. En la página _Configuration_, haga clic en image:screenshot_gallery_options.gif["Botón más"] En la fila del grupo de recursos compartidos de archivos y, a continuación, haga clic en *Quitar grupo de recursos compartidos de archivos*.
+. En la página _Configuration_, seleccione el image:button-gallery-options.gif["Botón más"] botón en la fila para el grupo de recursos compartidos de archivos y luego *Remove File Shares Group*.
 +
 image:screenshot_compliance_remove_fileshare_group.png["Captura de pantalla del botón Eliminar grupo de archivos compartidos de la página Configuración de exploración."]
 

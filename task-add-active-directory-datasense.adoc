@@ -116,4 +116,4 @@ image:screenshot_compliance_active_directory_added.png["Una captura de pantalla 
 
 Si necesita modificar algún valor de su integración con Active Directory, haga clic en el botón *Editar* y realice los cambios.
 
-También puede eliminar la integración si ya no la necesita haciendo clic en el image:screenshot_gallery_options.gif["Botón más"] Y a continuación *Quitar Active Directory*.
+También puede eliminar la integración seleccionando el image:button-gallery-options.gif["Botón más"] botón y luego *Eliminar Active Directory*.

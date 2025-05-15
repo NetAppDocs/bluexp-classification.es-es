@@ -149,7 +149,7 @@ El informe incluye la siguiente información:
 +
 image:screenshot-compliance-report-buttons.png["Captura de pantalla del panel de gobierno que muestra cómo iniciar el informe de asignación de datos."]
 
-. Para personalizar el nombre de la empresa que aparece en la primera página del informe, en la parte superior derecha de la página de clasificación BlueXP , seleccione image:screenshot_gallery_options.gif["El botón más"]. A continuación, seleccione *Cambiar el nombre de la empresa*. La próxima vez que genere el informe, incluirá el nuevo nombre.
+. Para personalizar el nombre de la empresa que aparece en la primera página del informe, en la parte superior derecha de la página de clasificación BlueXP , seleccione image:button-gallery-options.gif["El botón más"]. A continuación, seleccione *Cambiar el nombre de la empresa*. La próxima vez que genere el informe, incluirá el nuevo nombre.
 
 
 .Resultado
