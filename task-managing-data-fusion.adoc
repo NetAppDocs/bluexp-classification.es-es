@@ -192,7 +192,7 @@ Por ejemplo, es posible que desee ver dónde se encuentran los archivos de insta
 
 Después de actualizar las categorías personalizadas, la clasificación de BlueXP reiniciará el análisis de todas las fuentes de datos. Una vez que se haya completado el análisis, los nuevos resultados aparecerán en la consola de cumplimiento de la clasificación de BlueXP, en la sección «Categorías» y en la página de investigación del filtro «Categoría». link:task-controlling-private-data.html#view-files-by-categories["Vea cómo ver archivos por categorías"].
 
-.Lo que necesitará
+.Antes de empezar
 Tendrás que crear un mínimo de 25 archivos de entrenamiento que contengan muestras de las categorías de datos que quieres que reconozca la clasificación de BlueXP. Se admiten los siguientes tipos de archivo:
 
 `+.CSV, .DOC, .DOCX, .GZ, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`

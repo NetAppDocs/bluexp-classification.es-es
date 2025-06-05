@@ -20,12 +20,10 @@ Para configuraciones muy grandes en las que escaneará petabytes de datos en sit
 
 Siga estos pasos al instalar el software de clasificación BlueXP en varios hosts on-premises en un entorno sin conexión.
 
-[]
-====
-*NOTA* Esta información solo es relevante para las versiones heredadas de clasificación de BlueXP 1,30 y anteriores.
 
-====
-.Lo que necesitará
+NOTE: La siguiente información sólo es relevante para las versiones antiguas de clasificación BlueXP  1,30 y anteriores.
+
+.Antes de empezar
 * Compruebe que todos los sistemas Linux para los nodos Manager y Scanner cumplen los requisitos del host.
 * Compruebe que ha instalado los dos paquetes de software de requisitos previos (Docker Engine o Podman y Python 3).
 * Asegúrese de tener privilegios de usuario raíz en los sistemas Linux.

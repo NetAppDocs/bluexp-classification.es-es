@@ -221,7 +221,7 @@ Sigue estos pasos para ejecutar el script de requisitos previos de clasificació
 
 https://youtu.be/5ONowfPWkFs?si=QLGUw8mqPrz9qs4B["Vea este vídeo"^] Para ver cómo ejecutar el script de requisitos previos e interpretar los resultados.
 
-.Lo que necesitará
+.Antes de empezar
 * Compruebe que su sistema Linux cumple con el <<Verifique los requisitos del host,requisitos del host>>.
 * Compruebe que el sistema tiene instalados los dos paquetes de software de requisitos previos (Docker Engine o Podman y Python 3).
 * Asegúrese de tener privilegios de usuario raíz en el sistema Linux.
