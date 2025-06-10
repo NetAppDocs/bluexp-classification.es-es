@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
+keywords: savings, stale data, non-business data, duplicate data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato. 
 ---
 = Consulte los detalles de gobierno sobre los datos almacenados en su organización con la clasificación BlueXP 
@@ -14,7 +14,7 @@ summary: Controle los costes relacionados con los datos que residen en los recur
 
 
 [role="lead"]
-Controle los costes relacionados con los datos que residen en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato.
+Obtenga control de los costos relacionados con los datos en los recursos de almacenamiento de su organización. La clasificación de BlueXP identifica la cantidad de datos obsoletos, datos no empresariales, archivos duplicados y archivos muy grandes de tus sistemas, de modo que puedas decidir si quieres eliminar o organizar en niveles algunos archivos en un almacenamiento de objetos más barato.
 
 Aquí es donde debe comenzar su investigación. En el panel de control de gobierno, puede seleccionar un área para una investigación más detallada.
 
@@ -40,11 +40,11 @@ Aparece el panel de control de gobernanza.
 
 === Revise las oportunidades de ahorro
 
-Puede que desee investigar los elementos del área _Saving Opportunities_ para ver si hay datos que debe eliminar o organizar en niveles un almacenamiento de objetos menos costoso.
+El componente _Oportunidades de Ahorro_ muestra datos que puede eliminar o transferir a un almacenamiento de objetos más económico. Los datos de _Oportunidades de Ahorro_ se actualizan cada 2 horas y pueden actualizarse manualmente.
 
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En cada mosaico Oportunidades de ahorro del panel de control de gobierno, seleccione *Optimizar almacenamiento* para ver los resultados filtrados en la página de investigación. Puede que desee investigar los elementos del área _Saving Opportunities_ para ver si hay datos que debe eliminar o organizar en niveles un almacenamiento de objetos menos costoso.
+. En cada mosaico Oportunidades de ahorro del panel de control de gobierno, seleccione *Optimizar almacenamiento* para ver los resultados filtrados en la página de investigación. Para descubrir qué datos debe eliminar o transferir a un almacenamiento menos costoso, investigue las _Oportunidades de ahorro_.
 +
 ** * Datos obsoletos* - datos que se modificaron por última vez hace 3 años.
 ** *Datos no profesionales* - datos que se consideran no relacionados con el negocio, en función de su categoría o tipo de archivo. Estos recursos incluyen:
@@ -70,13 +70,13 @@ NOTE: Si alguno de sus orígenes de datos implementa una organización en nivele
 
 === Revise las búsquedas guardadas con el mayor Núm. De resultados
 
-En la pestaña _Saved Searches_, las búsquedas con el mayor número de resultados aparecen en la parte superior de la lista.
+En la pestaña _Saved Searches_, las búsquedas con el mayor número de resultados aparecen en la parte superior de la lista. Estos datos se actualizan cada dos horas.
 
 Para obtener más información sobre las búsquedas guardadas, consulte link:task-using-policies.html["Crear búsquedas guardadas"].
 
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Gobernanza*.
-. En el panel de control Gobernación, localice el icono Búsquedas guardadas. Seleccione el nombre de una búsqueda guardada para mostrar los resultados en la página de investigación.
+. En el panel de Gobernanza, ubique el mosaico Búsquedas guardadas. Seleccione el nombre de una búsqueda guardada para mostrar los resultados en la página de investigación.
 . Selecciona *Ver todo* para ver la lista de todas las búsquedas guardadas disponibles. En el área _Saved Searches_, las búsquedas con el mayor número de resultados aparecen en la parte superior de la lista.
 
 
@@ -122,7 +122,7 @@ La clasificación de BlueXP genera un informe PDF que se puede revisar y enviar 
 
 == Cree el informe Visión General de Asignación de Datos
 
-El informe Descripción general de la asignación de datos proporciona una visión general de los datos almacenados en las fuentes de datos corporativas para ayudarle con las decisiones de migración, copia de seguridad, seguridad y procesos de cumplimiento. En primer lugar, el informe muestra una descripción general que resume todos los entornos de trabajo y orígenes de datos y, a continuación, proporciona un análisis para cada entorno de trabajo.
+El informe Descripción general de la asignación de datos proporciona una visión general de los datos almacenados en las fuentes de datos corporativas para ayudarle con las decisiones de migración, copia de seguridad, seguridad y procesos de cumplimiento. El informe resume todos los entornos de trabajo y las fuentes de datos. También ofrece un análisis de cada uno de ellos.
 
 El informe incluye la siguiente información:
 
@@ -155,7 +155,7 @@ image:screenshot-compliance-report-buttons.png["Captura de pantalla del panel de
 .Resultado
 La clasificación de BlueXP genera un informe .pdf que se puede revisar y enviar a otros grupos según sea necesario.
 
-Si el informe tiene un tamaño superior a 1 MB, el archivo .pdf se conservará en la instancia de clasificación de BlueXP, y verás un mensaje emergente sobre la ubicación exacta. Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, puede navegar directamente al archivo .pdf. Cuando la clasificación de BlueXP se ponga en marcha en la nube, necesitarás SSH en la instancia de clasificación de BlueXP para descargar el archivo .pdf.
+Si el informe tiene un tamaño superior a 1 MB, el archivo .pdf se conservará en la instancia de clasificación de BlueXP, y verás un mensaje emergente sobre la ubicación exacta. Cuando se instala la clasificación de BlueXP en un equipo Linux en las instalaciones o en un equipo Linux puesto en marcha en el cloud, puede navegar directamente al archivo .pdf. Cuando la clasificación BlueXP se implementa en la nube, necesitará conectarse por SSH a la instancia de clasificación BlueXP para descargar el archivo .pdf.
 
 
 
@@ -168,9 +168,11 @@ El área _Top Data Repository by Sensitivity Level_ del informe Data Mapping Ove
 * Datos personales confidenciales
 
 
+Estos datos se actualizan cada dos horas y se pueden actualizar manualmente.
+
 .Pasos
 . Para ver el número total de elementos de cada categoría, coloque el cursor sobre cada sección de la barra.
-. Para filtrar los resultados que aparecerán en la página Investigación, seleccione cada área en la barra e investigue más.
+. Para filtrar los resultados que aparecerán en la página de Investigación, seleccione cada área en la barra e investigue más.
 
 
 
@@ -179,8 +181,8 @@ El área _Top Data Repository by Sensitivity Level_ del informe Data Mapping Ove
 
 El área _Datos sensibles y Permisos amplios_ del informe Descripción general de asignación de datos muestra el porcentaje de archivos que contienen datos confidenciales y tienen permisos amplios. El gráfico muestra los siguientes tipos de permisos:
 
-* Desde los permisos restrictivos nost hasta las restricciones más permisivas en el axix horizontal.
-* Desde los datos menos sensibles hasta los datos más sensibles en el eje vertical.
+* Desde los permisos más restrictivos hasta las restricciones más permisivas en el eje horizontal.
+* Desde los datos menos sensibles hasta los más sensibles en el eje vertical.
 
 
 .Pasos
@@ -235,8 +237,8 @@ Las categorías pueden ayudarle a entender lo que está pasando con sus datos mo
 Consulte link:task-controlling-private-data.html["Ver archivos por categorías"] para obtener más información.
 
 .Pasos
-. En el menú BlueXP, haga clic en *Gobierno > Clasificación*.
-. Haga clic en *Gobierno* y, a continuación, haga clic en el botón *Informe de evaluación de detección de datos*.
+. En el menú BlueXP , selecciona *Gobernanza > Clasificación*.
+. Seleccione *Gobernanza* y luego el botón *Informe de evaluación de descubrimiento de datos*.
 
 
 .Resultado
