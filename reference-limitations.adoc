@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-limitations.html 
 keywords: limitations, data sense, classification, bluexp, scan shares 
-summary: Las limitaciones conocidas identifican funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente. 
+summary: Las limitaciones conocidas identifican funciones que no son compatibles con esta versión del producto o que no interactúan correctamente con él. Revise estas limitaciones detenidamente. 
 ---
 = Limitaciones conocidas en la clasificación BlueXP 
 :hardbreaks:
@@ -14,22 +14,24 @@ summary: Las limitaciones conocidas identifican funciones que no son compatibles
 
 
 [role="lead"]
-Las limitaciones conocidas identifican funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente.
+Las limitaciones conocidas identifican funciones que no son compatibles o que no interoperan correctamente en esta versión. Revise estas limitaciones detenidamente.
 
 
 
-== El lanzamiento de clasificación de BlueXP eliminó las opciones
+== Opciones deshabilitadas de la clasificación BlueXP
 
 La versión de diciembre de 2023 (versión 1.26.6) eliminó las siguientes opciones:
 
 * Se deshabilitó la opción para activar la recogida de registros de auditoría.
-* Durante la investigación de directorios, la opción de calcular el número de datos de información personal identificable (PII) por directorios no está disponible.
+* Durante la investigación de Directorios, la opción para calcular la cantidad de datos de información de identificación personal (PII) por Directorios no está disponible.
 * Se ha desactivado la opción de integrar datos mediante etiquetas de Azure Information Protection (AIP).
 
 
 
 
-== Limitaciones de análisis de clasificación de BlueXP
+== Escaneo de clasificación BlueXP
+
+Las siguientes limitaciones ocurren con los escaneos de clasificaciones BlueXP.
 
 
 
@@ -43,7 +45,7 @@ Si tienes varios recursos compartidos de archivos en un solo volumen, la clasifi
 * /D/E
 
 
-A continuación, se escanearán los datos de /A. Los datos en /C y /D no se escanearán.
+En esta configuración, solo se escanean los datos en /A. Los datos en /C y /D no se escanean.
 
 .Solución alternativa
 Hay una solución para asegurarse de que está escaneando datos de todos los recursos compartidos del volumen. Siga estos pasos:
@@ -51,12 +53,12 @@ Hay una solución para asegurarse de que está escaneando datos de todos los rec
 . En el entorno de trabajo, agregue el volumen que se va a escanear.
 . Una vez que la clasificación de BlueXP haya completado el análisis del volumen, vaya a la página _Data Investigation_ y cree un filtro para ver qué recurso compartido se está analizando:
 +
-Filtrará los datos por «Nombre del entorno de trabajo» y «Tipo de directorio = Compartir» para ver qué recurso compartido se está escaneando.
+Filtre los datos por "Nombre del entorno de trabajo" y "Tipo de directorio = recurso compartido" para ver qué recurso compartido se está escaneando.
 
 . Obtenga la lista completa de recursos compartidos que existen en el volumen para poder ver qué recursos compartidos no se están analizando.
 . link:task-scanning-file-shares.html["Agregue los recursos compartidos restantes a un grupo de recursos compartidos"].
 +
-Deberá agregar todos los recursos compartidos de forma individual, por ejemplo:
+Agregue todas las acciones individualmente, por ejemplo:
 
 +
 ....
@@ -65,3 +67,9 @@ Deberá agregar todos los recursos compartidos de forma individual, por ejemplo:
 ....
 . Realice estos pasos para cada volumen del entorno de trabajo que tenga varios recursos compartidos.
 
+
+
+
+=== Marca de tiempo del último acceso
+
+Cuando la clasificación de BlueXP analiza un directorio, este se ve afectado por el campo **Último acceso**. Al visualizar este campo, los metadatos reflejan la fecha y hora del análisis o la última vez que un usuario accedió al directorio.
