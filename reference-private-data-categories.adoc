@@ -38,7 +38,7 @@ Los idiomas en los que se pueden reconocer estos elementos se identifican en la 
 | Tipo | Identificador | ¿validación de proximidad? | Inglés | Alemán | Español | Francés | Japonés 
 
 
-.6+| Generales | Número de tarjeta de crédito | No | ✓ | ✓ | ✓ |  | ✓ 
+.6+| Generales | Número de tarjeta de crédito | Sí | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | Datos sujetos | No | ✓ | ✓ | ✓ |  |  
@@ -413,7 +413,7 @@ La mayoría de estas categorías pueden ser reconocidas en inglés, alemán y es
 
 | Soporte técnico | Quejas y boletos | ✓ | ✓ | ✓ 
 |===
-Los siguientes metadatos también se categorizan y se identifican en los mismos idiomas compatibles:
+Los siguientes metadatos también están categorizados e identificados en los mismos idiomas admitidos:
 
 * Datos de aplicaciones
 * Archivos de archivo
@@ -446,9 +446,7 @@ Datos de aplicaciones de negocio
 
 == Tipos de archivos
 
-La clasificación de BlueXP analiza todos los archivos para buscar información de categorías y metadatos y muestra todos los tipos de archivos en la sección Tipos de archivos de la consola.
-
-Pero cuando la clasificación de BlueXP detecta información personal identificable (PII) o cuando realiza una búsqueda DSAR, solo son compatibles los siguientes formatos de archivo:
+La clasificación de BlueXP analiza todos los archivos para buscar información de categorías y metadatos y muestra todos los tipos de archivos en la sección Tipos de archivos de la consola. Cuando la clasificación de BlueXP detecta información de identificación personal (PII) o cuando realiza una búsqueda DSAR, solo se admiten los siguientes formatos de archivo:
 
 `+.CSV, .DCM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
