@@ -127,14 +127,14 @@ Tenga en cuenta lo siguiente acerca de la instancia predeterminada:
 * Solo se pone en marcha una instancia de clasificación de BlueXP por cada Connector.
 
 
-También puedes poner en marcha la clasificación de BlueXP en un host Linux on-premises o en un host de tu proveedor de nube preferido. El software funciona exactamente de la misma manera, independientemente del método de instalación que elija. Las actualizaciones del software de clasificación de BlueXP se automatizan siempre que la instancia tenga acceso a Internet.
+También puedes poner en marcha la clasificación de BlueXP en un host Linux on-premises o en un host de tu proveedor de nube preferido. El software funciona exactamente de la misma manera, independientemente del método de instalación que elija. Las actualizaciones del software de clasificación BlueXP se automatizan siempre que la instancia tenga acceso a Internet.
 
 
 TIP: La instancia debe permanecer ejecutándose en todo momento porque la clasificación de BlueXP analiza los datos de forma continua.
 
 *Desplegar en diferentes tipos de instancia*
 
-Puedes poner en marcha la clasificación de BlueXP en un sistema con menos CPU y menos RAM.
+Revise las siguientes especificaciones para los tipos de instancias:
 
 [cols="18,31,51"]
 |===
@@ -168,7 +168,7 @@ image:diagram_cloud_compliance_scan.png["Un diagrama que muestra una instancia d
 
 Después de la exploración inicial, la clasificación BlueXP  analiza continuamente los datos de forma por turnos para detectar cambios incrementales. Por eso es importante mantener la instancia en ejecución.
 
-Puede activar y desactivar las exploraciones a nivel de volumen o en el nivel de esquema de base de datos.
+Puede habilitar y deshabilitar escaneos a nivel de volumen o a nivel de esquema de base de datos.
 
 
 
@@ -176,7 +176,7 @@ Puede activar y desactivar las exploraciones a nivel de volumen o en el nivel de
 
 Puede realizar dos tipos de exploraciones en la clasificación BlueXP :
 
-* **Los escaneos de solo mapeo** proporcionan solo una visión general de alto nivel de sus datos y se realizan en fuentes de datos seleccionadas. Las exploraciones de sólo asignación tardan menos tiempo que las exploraciones de asignación y clasificación, ya que no tienen acceso a los archivos para ver los datos que contienen. Es posible que desee realizar esta operación inicialmente para identificar áreas de investigación y, a continuación, realizar una exploración de Mapa y Clasificación en dichas áreas.
+* **Los escaneos de solo mapeo** proporcionan solo una visión general de alto nivel de sus datos y se realizan en fuentes de datos seleccionadas. Los escaneos de solo mapeo toman menos tiempo que los escaneos de mapas y clasificación porque no acceden a los archivos para ver los datos dentro. Es posible que desee realizar esta operación inicialmente para identificar áreas de investigación y, a continuación, realizar una exploración de Mapa y Clasificación en dichas áreas.
 * **Los escaneos Map & Classify** proporcionan un escaneo profundo de sus datos.
 
 
