@@ -113,7 +113,7 @@ NOTE: Para FSx para ONTAP, la clasificación de BlueXP puede analizar volúmenes
 Las credenciales pueden ser de solo lectura, pero al proporcionar credenciales de administrador se garantiza que la clasificación de BlueXP pueda leer cualquier dato que requiera permisos elevados. Las credenciales se almacenan en la instancia de clasificación de BlueXP.
 
 +
-Si quieres asegurarte de que las «horas de último acceso» no cambian debido a los análisis de clasificación de BlueXP, recomendamos que el usuario tenga permisos de atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
+Si desea asegurarse de que los análisis de BlueXP classification no modifiquen la fecha de último acceso a sus archivos, se recomienda que el usuario tenga permisos de escritura en CIFS o NFS. Si es posible, configure el usuario de Active Directory como parte de un grupo principal de la organización que tenga permisos para todos los archivos.
 
 +
 Después de introducir las credenciales, debe ver un mensaje que indica que todos los volúmenes CIFS se autenticaron correctamente.

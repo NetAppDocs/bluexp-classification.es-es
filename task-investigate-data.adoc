@@ -36,7 +36,7 @@ image:screenshot_compliance_investigation_filtered.png["Captura de pantalla de l
 
 . Para ver los datos de archivos (datos no estructurados), directorios (carpetas y recursos compartidos de archivos) o de bases de datos (datos estructurados), seleccione una de las pestañas de la parte superior.
 . Para ordenar los resultados en orden numérico o alfabético, seleccione el control en la parte superior de cada columna.
-. Para refinar los resultados aún más, seleccione uno de los muchos filtros en el panel Filtro izquierdo.
+. Para refinar aún más los resultados, seleccione uno de los filtros en el panel Filtros.
 
 
 
@@ -196,7 +196,7 @@ Utilice el siguiente filtro para ver los archivos duplicados en su almacenamient
 
 Además de mostrarle el entorno de trabajo y el volumen donde reside el archivo, los metadatos muestran mucha más información, incluidos los permisos del archivo, el propietario del archivo y si hay duplicados de este archivo. Esta información es útil si está planeando hacerlolink:task-using-policies.html["crear búsquedas guardadas"], ya que puede ver toda la información que puede utilizar para filtrar sus datos.
 
-No toda la información está disponible para todas las fuentes de datos, solo lo que es apropiado para esa fuente de datos. Por ejemplo, el nombre del volumen y los permisos no son relevantes para los archivos de base de datos.
+La disponibilidad de la información depende de la fuente de datos. Por ejemplo, el nombre del volumen y los permisos no se comparten para los archivos de base de datos.
 
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Investigación*.
@@ -237,11 +237,11 @@ TIP: Puede expandir un nivel del grupo para ver los usuarios que forman parte de
 
 == Compruebe si hay archivos duplicados en los sistemas de almacenamiento
 
-Puede ver si se están almacenando ficheros duplicados en los sistemas de almacenamiento. Esto resulta útil para identificar áreas en las que puede ahorrar espacio de almacenamiento. También puede ser útil asegurarse de que determinados archivos que tienen permisos específicos o información confidencial no se dupliquen innecesariamente en sus sistemas de almacenamiento.
+Puede comprobar si se almacenan archivos duplicados en sus sistemas de almacenamiento. Esto resulta útil para identificar áreas en las que puede ahorrar espacio de almacenamiento. También conviene asegurarse de que ciertos archivos con permisos específicos o información confidencial no se dupliquen innecesariamente.
 
 Todos los archivos (sin incluir las bases de datos) que son de 1 MB o más, o que contienen información personal o confidencial, se comparan para ver si hay duplicados.
 
-La clasificación de BlueXP usa tecnología de hash para determinar los archivos duplicados. Si algún archivo tiene el mismo código hash que otro archivo, podemos estar 100% seguros de que los archivos son duplicados exactos, incluso si los nombres de archivo son diferentes.
+La clasificación de BlueXP usa tecnología de hash para determinar los archivos duplicados. Si algún archivo tiene el mismo código hash que otro archivo, puede estar 100% seguro de que los archivos son duplicados exactos, incluso si los nombres de archivo son diferentes.
 
 .Pasos
 . En el menú de clasificación de BlueXP , selecciona *Investigación*.
@@ -277,7 +277,7 @@ TIP: Puede utilizar el valor hash de archivo proporcionado en esta página e int
 
 El Informe de investigación de datos es una descarga del contenido filtrado de la página Investigación de datos.
 
-El informe está disponible como un archivo .CSV o .JSON que se puede guardar en el equipo local.
+El informe está disponible como archivo CSV o JSON que puede guardar en su máquina local.
 
 Puede haber hasta tres archivos de informes descargados si la clasificación de BlueXP está analizando archivos (datos no estructurados), directorios (carpetas y recursos compartidos de archivos) y bases de datos (datos estructurados).
 
@@ -307,6 +307,10 @@ El *Informe de datos de archivos no estructurados* incluye la siguiente informac
 * Última modificación
 * Último acceso
 * Propietario del archivo
++
+** Los datos del propietario del archivo incluyen el nombre de la cuenta, el nombre de la cuenta SAM y la dirección de correo electrónico cuando se configura Active Directory.
+
+
 * Categoría
 * Información personal
 * Información personal confidencial
@@ -314,7 +318,7 @@ El *Informe de datos de archivos no estructurados* incluye la siguiente informac
 * Error de análisis de adquisición
 * Fecha de detección de eliminación
 +
-Una fecha de detección de eliminación identifica la fecha en la que se eliminó o movió el archivo. Esto le permite identificar cuándo se han movido los archivos confidenciales. Los archivos eliminados no forman parte del recuento de números de archivo que aparece en el panel o en la página Investigación. Los archivos solo aparecen en los informes CSV.
+La fecha de detección de eliminación identifica la fecha en que se eliminó o movió el archivo. Esto le permite identificar cuándo se han movido los archivos confidenciales. Los archivos eliminados no se incluyen en el recuento de archivos que aparece en el panel ni en la página de Investigación. Los archivos solo aparecen en los informes CSV.
 
 
 

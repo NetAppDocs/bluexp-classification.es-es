@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-+ Si quieres asegurarte de que tus archivos “Tiempos de último acceso” no cambian por las exploraciones de clasificación de BlueXP, te recomendamos que el usuario tenga permisos de Atributos de escritura en CIFS o permisos de escritura en NFS. Si es posible, recomendamos que el usuario configurado de Active Directory sea parte de un grupo padre en la organización que tenga permisos para todos los archivos.
+Si desea asegurarse de que los análisis de BlueXP classification no modifiquen las fechas de último acceso de sus archivos, se recomienda que el usuario tenga permisos de escritura en CIFS o NFS. Si es posible, configure el usuario de Active Directory como parte de un grupo principal de la organización que tenga permisos para todos los archivos.
