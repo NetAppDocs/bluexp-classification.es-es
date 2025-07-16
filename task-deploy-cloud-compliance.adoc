@@ -63,6 +63,9 @@ Tenga en cuenta que también puede https://docs.netapp.com/us-en/bluexp-setup-ad
 Como puede ver, puede que haya algunas situaciones en las que necesite utilizar https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["Múltiples conectores"].
 
 
+TIP: La BlueXP classification no limita la cantidad de datos que puede escanear. Cada conector admite el escaneo y la visualización de 500 TiB de datos. Para escanear más de 500 TiB de datos, link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["instalar otro conector"^]entonces link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["implementar otra instancia de clasificación"]. La interfaz de usuario de BlueXP muestra datos de un solo conector. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabaje con varios conectores"^] .
+
+
 
 === Apoyo del Gobierno en las regiones
 

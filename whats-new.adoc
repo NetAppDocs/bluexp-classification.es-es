@@ -375,7 +375,10 @@ Para obtener una explicación de los estados, consulte https://docs.netapp.com/u
 === Versión 1,31
 
 .La clasificación está disponible como servicio principal en BlueXP
-La clasificación de BlueXP ahora está disponible como funcionalidad básica en BlueXP sin coste adicional para hasta 500 TiB de datos escaneados. No se requiere licencia de clasificación ni suscripción de pago. A medida que nos centramos en la funcionalidad de clasificación de BlueXP en analizar sistemas de almacenamiento de NetApp con esta nueva versión, algunas funcionalidades heredadas solo estarán disponibles para los clientes que hayan pagado previamente por una licencia. El uso de estas funciones heredadas caducará cuando el contrato pagado alcance su fecha de finalización.
+La BlueXP classification ahora está disponible como una capacidad principal dentro de BlueXP sin cargo adicional para hasta 500 TiB de datos escaneados por conector. No se requiere licencia de clasificación ni suscripción de pago. A medida que nos centramos en la funcionalidad de clasificación de BlueXP en analizar sistemas de almacenamiento de NetApp con esta nueva versión, algunas funcionalidades heredadas solo estarán disponibles para los clientes que hayan pagado previamente por una licencia. El uso de estas funciones heredadas caducará cuando el contrato pagado alcance su fecha de finalización.
+
+
+NOTE: La BlueXP classification no limita la cantidad de datos que puede escanear. Cada conector admite el escaneo y la visualización de 500 TiB de datos. Para escanear más de 500 TiB de datos, link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["instalar otro conector"^]entonces link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["implementar otra instancia de clasificación"]. La interfaz de usuario de BlueXP muestra datos de un solo conector. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabaje con varios conectores"^] .
 
 link:reference-free-paid.html["Obtenga más información sobre las características obsoletas"].
 
