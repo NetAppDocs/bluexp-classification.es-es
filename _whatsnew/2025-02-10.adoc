@@ -26,7 +26,7 @@ Es posible que se beneficie del uso de escaneos de sólo asignación para escane
 
 La prioridad se asigna sólo a las secuencias de sólo asignación, no a las secuencias de asignación y clasificación.
 
-La prioridad se establece en 1 de forma predeterminada, y puede cambiarla a cualquier número entre 1 y 10. Cuanto menor sea el número, mayor será la prioridad. Si no establece una prioridad, se le asigna a la exploración una prioridad de 5.
+La prioridad se establece en 1 de forma predeterminada, y puede cambiarla a cualquier número entre 1 y 10. Cuanto menor sea el número, mayor será la prioridad. Si no establece una prioridad, al escaneo se le asigna una prioridad de 5.
 
 Para cambiar la prioridad, haga lo siguiente:
 

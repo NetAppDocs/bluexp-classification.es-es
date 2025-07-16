@@ -20,9 +20,9 @@ De forma predeterminada, las exploraciones se ponen en cola según el orden en e
 
 La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
 
-La priorización está limitada alink:concept-cloud-compliance.html["exploraciones de sólo asignación"]; no está disponible para las exploraciones de mapas y clasificaciones.
+La priorización está limitada alink:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["exploraciones de sólo asignación"^]; no está disponible para las exploraciones de mapas y clasificaciones.
 
-Para obtener más información, consulte link:task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"^].
 
 .Vuelva a intentar todas las adquisiciones
 La clasificación BlueXP  admite la capacidad de reintentar por lotes todos los análisis fallidos.

@@ -11,20 +11,20 @@ Esta versión de clasificación de BlueXP  incluye:
 .Priorice las secuencias de clasificación
 La clasificación BlueXP  permite priorizar las exploraciones de mapas y clasificaciones, además de las de sólo asignación, lo que permite seleccionar las exploraciones que se realizan primero. Se admite la priorización de las exploraciones de asignación y clasificación durante y antes de que comiencen las exploraciones. Si decide priorizar una exploración mientras está en curso, se priorizan tanto las secuencias de asignación como las de clasificación.
 
-Para obtener más información, consulte link:task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
 
 .Soporte para las categorías de datos de información de identificación personal canadiense (PII)
 Las exploraciones de clasificación BlueXP  identifican categorías de datos de PII canadienses. Estas categorías incluyen información bancaria, números de pasaporte, números de seguro social, números de licencia de conducir y números de tarjeta de salud para todas las provincias y territorios canadienses.
 
-Para obtener más información, consulte xref:reference-private-data-categories.adoc#types-of-personal-data[Categorías de datos personales].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Categorías de datos personales"].
 
 .Clasificación personalizada (vista previa)
 La clasificación BlueXP  admite clasificaciones personalizadas para las exploraciones de mapas y clasificaciones. Con clasificaciones personalizadas, puede personalizar los escaneos BlueXP  para capturar datos específicos de su organización mediante expresiones regulares. Esta función se encuentra actualmente en la vista preliminar.
 
-Para obtener más información, consulte xref:task-custom-classification.adoc[Agregar clasificaciones personalizadas].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["Agregar clasificaciones personalizadas"].
 
 .Pestaña Búsquedas guardadas
-Se ha cambiado el nombre de la pestaña **Políticas** xref:task-using-policies.html[**Búsquedas guardadas**]. La funcionalidad es la misma.
+Se ha cambiado el nombre de la pestaña **Políticas** link:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**Búsquedas guardadas**"]. La funcionalidad no cambia.
 
 .Enviar eventos de escaneo a la línea de tiempo de BlueXP 
 La clasificación BlueXP  admite el envío de eventos de clasificación (cuando se inicia una exploración y cuando finaliza) a la link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Línea de tiempo de BlueXP "^].
