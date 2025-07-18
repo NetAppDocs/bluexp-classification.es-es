@@ -56,8 +56,6 @@ sidebar:
         url: "/task-scanning-storagegrid.html"
     - title: Integre Active Directory
       url: "/task-add-active-directory-datasense.html"
-    - title: PREGUNTAS FRECUENTES
-      url: "/faq-cloud-compliance.html"
   - title: Usa la clasificación de BlueXP
     entries:
     - title: Ver detalles sobre gobernanza de sus datos
@@ -141,6 +139,8 @@ sidebar:
       url: "/task-support-registration.html"
     - title: Obtenga ayuda
       url: "/task-get-help.html"
+  - title: PREGUNTAS FRECUENTES
+    url: "/faq-cloud-compliance.html"
   - title: Avisos legales
     url: "/legal-notices.html"
 product-family:
