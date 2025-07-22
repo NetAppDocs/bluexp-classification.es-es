@@ -25,6 +25,8 @@ sidebar:
     entries:
     - title: Más información sobre la clasificación de BlueXP
       url: "/concept-cloud-compliance.html"
+    - title: BlueXP classification
+      url: "/task-access.html"
     - title: Implementa la clasificación de BlueXP
       entries:
       - title: Qué implementación debe utilizar

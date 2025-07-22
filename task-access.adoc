@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: task-access.html 
+keywords: log in, sign in 
+summary: Comience a utilizar la BlueXP classification accediendo al servicio en BlueXP. 
+---
+= BlueXP classification
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/get-started/
+
+
+[role="lead"]
+Puede acceder al servicio de BlueXP classification a través de NetApp BlueXP.
+
+Para iniciar sesión en BlueXP, puede usar sus credenciales del sitio de soporte de NetApp o puede registrarse para iniciar sesión en la nube de NetApp usando su correo electrónico y una contraseña. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Más información sobre el inicio de sesión en BlueXP"^].
+
+Tareas específicas requieren roles de usuario específicos de BlueXP . link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^].
+
+.Antes de empezar
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Deberías agregar un conector BlueXP ."^]
+* link:task-deploy-cloud-compliance.html["Comprenda qué estilo de implementación de BlueXP classification se adapta a su carga de trabajo."]
+
+
+.Pasos
+. En un navegador web, navegue hasta el link:https://console.bluexp.netapp.com/["Consola BlueXP"^] .
++
+Aparece la página de inicio de sesión de NetApp BlueXP.
+
+. Sign in en BlueXP.
+. Desde el menú de navegación izquierdo de BlueXP , seleccione *Gobernanza* > *Clasificación*.
+. Si es la primera vez que accedes a la BlueXP classification, aparecerá la página de destino.
++
+Seleccione *Implementar clasificación en las instalaciones o en la nube* para comenzar a implementar su instancia de clasificación. Para obtener más información, consulte link:task-deploy-cloud-compliance.html["¿Qué puesta en marcha de clasificación de BlueXP deberías utilizar?"]
+
++
+image:screenshot-deploy-classification.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
+
++
+De lo contrario, aparecerá el panel de BlueXP classification .
+
+

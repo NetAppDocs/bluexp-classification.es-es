@@ -192,29 +192,29 @@ En las regiones en las que el tipo de instancia por defecto no está disponible,
 .Implemente en AWS
 --
 .Pasos
-. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación*.
+. En el menú de navegación izquierdo de BlueXP , selecciona *Gobernanza > Clasificación*.
+. Seleccione *Implementar clasificación local o en la nube*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
+image:screenshot-deploy-classification.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
 
-. Haga clic en *Activar detección de datos*.
-. En la página _Installation_, haga clic en *deploy > Deploy* para utilizar el tamaño de instancia "grande" e iniciar el asistente de implementación de la nube.
+. Desde la página _Instalación_, seleccione *Implementar > Implementar* para usar el tamaño de instancia "Grande" e iniciar el asistente de implementación en la nube.
 . El asistente muestra el progreso a medida que avanza por los pasos de implementación. Se detendrá y pedirá información si se produce algún problema.
 +
 image:screenshot_cloud_compliance_wizard_start.png["Una captura de pantalla del asistente de clasificación de BlueXP para implementar una nueva instancia."]
 
-. Cuando la instancia esté implementada y la clasificación de BlueXP esté instalada, haga clic en *Continuar con la configuración* para ir a la página _Configuration_.
+. Cuando se implementa la instancia y se instala la BlueXP classification , seleccione *Continuar con la configuración* para ir a la página _Configuración_.
 
 
 --
 .Implemente en Azure
 --
 .Pasos
-. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación*.
-. Haga clic en *Activar detección de datos*.
+. En el menú de navegación izquierdo de BlueXP , selecciona *Gobernanza > Clasificación*.
+. Seleccione *Implementar clasificación local o en la nube*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
+image:screenshot-deploy-classification.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
 
-. Haga clic en *desplegar* para iniciar el asistente de implementación de la nube.
+. Seleccione *Implementar* para iniciar el asistente de implementación en la nube.
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["Una captura de pantalla de cómo seleccionar el botón para implementar la clasificación de BlueXP en la nube."]
 
@@ -222,19 +222,19 @@ image:screenshot_cloud_compliance_deploy_cloud.png["Una captura de pantalla de c
 +
 image:screenshot_cloud_compliance_wizard_start.png["Una captura de pantalla del asistente de clasificación de BlueXP para implementar una nueva instancia."]
 
-. Cuando la instancia esté implementada y la clasificación de BlueXP esté instalada, haga clic en *Continuar con la configuración* para ir a la página _Configuration_.
+. Cuando se implementa la instancia y se instala la BlueXP classification , seleccione *Continuar con la configuración* para ir a la página _Configuración_.
 
 
 --
 .Realice puestas en marcha en Google Cloud
 --
 .Pasos
-. En el menú de navegación izquierdo de BlueXP, haga clic en *Gobierno > Clasificación*.
-. Haga clic en *Activar detección de datos*.
+. En el menú de navegación izquierdo de BlueXP , selecciona *Gobernanza > Clasificación*.
+. Seleccione *Implementar clasificación local o en la nube*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
+image:screenshot-deploy-classification.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
 
-. Haga clic en *desplegar* para iniciar el asistente de implementación de la nube.
+. Seleccione *Implementar* para iniciar el asistente de implementación en la nube.
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["Una captura de pantalla de cómo seleccionar el botón para implementar la clasificación de BlueXP en la nube."]
 
@@ -242,7 +242,7 @@ image:screenshot_cloud_compliance_deploy_cloud.png["Una captura de pantalla de c
 +
 image:screenshot_cloud_compliance_wizard_start.png["Una captura de pantalla del asistente de clasificación de BlueXP para implementar una nueva instancia."]
 
-. Cuando la instancia esté implementada y la clasificación de BlueXP esté instalada, haga clic en *Continuar con la configuración* para ir a la página _Configuration_.
+. Cuando se implementa la instancia y se instala la BlueXP classification , seleccione *Continuar con la configuración* para ir a la página _Configuración_.
 
 
 --

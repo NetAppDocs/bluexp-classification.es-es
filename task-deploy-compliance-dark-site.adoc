@@ -307,9 +307,9 @@ Esto extrae el software requerido y el archivo de instalación actual *cc_onprem
 tar -xzf cc_onprem_installer.tar.gz
 ----
 . Inicie BlueXP y seleccione *Gobierno > Clasificación*.
-. Haga clic en *Activar detección de datos*.
+. Seleccione *Implementar clasificación local o en la nube*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
+image:screenshot-deploy-classification.png["Una captura de pantalla donde se muestra cómo seleccionar el botón para activar la clasificación de BlueXP."]
 
 . Haga clic en *desplegar* para iniciar la instalación en las instalaciones.
 +
