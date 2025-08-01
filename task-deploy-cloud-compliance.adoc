@@ -150,7 +150,15 @@ Revisa la tabla correspondiente a continuación en función de si vas a poner en
 |===
 --
 ====
-Asegúrese de que BlueXP tiene los permisos necesarios:: Asegúrate de que BlueXP tenga permisos para implementar recursos y crear grupos de seguridad para la instancia de clasificación de BlueXP. Puede encontrar los últimos permisos de BlueXP en https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Las políticas proporcionadas por NetApp"^].
+Asegúrese de que BlueXP tiene los permisos necesarios:: Asegúrese de que BlueXP tenga permisos para implementar recursos y crear grupos de seguridad para la instancia de BlueXP classification .
++
+--
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Permisos de Google Cloud"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#classification["Permisos de AWS"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#classification["Permisos de Azure"^]
+
+
+--
 Asegúrate de que BlueXP Connector pueda acceder a la clasificación de BlueXP:: Garantiza la conectividad entre el Connector y la instancia de clasificación de BlueXP. El grupo de seguridad de Connector debe permitir el tráfico de entrada y salida a través del puerto 443 hacia y desde la instancia de clasificación de BlueXP. Esta conexión permite la implementación de la instancia de clasificación de BlueXP y permite ver información en las pestañas Cumplimiento y gobernanza. La clasificación de BlueXP es compatible con las regiones gubernamentales de AWS y Azure.
 +
 --

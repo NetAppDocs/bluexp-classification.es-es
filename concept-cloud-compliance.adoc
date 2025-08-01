@@ -212,9 +212,3 @@ Cuando usa BlueXP  en modo SaaS, la conexión a BlueXP  se establece a través
 Las reglas salientes están completamente abiertas. Se necesita acceso a Internet para instalar y actualizar el software de clasificación de BlueXP y para enviar las métricas de uso.
 
 Si tiene requisitos estrictos de red, link:task-deploy-cloud-compliance.html#review-prerequisites["Obtén más información sobre los extremos que contactos de clasificación de BlueXP"^].
-
-
-
-== Roles de usuario en la clasificación BlueXP 
-
-El rol asignado a cada usuario proporciona diferentes capacidades dentro de BlueXP  y dentro de la clasificación BlueXP . Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Roles de IAM de BlueXP "] (cuando se utiliza BlueXP  en modo estándar).
