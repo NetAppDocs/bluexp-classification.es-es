@@ -63,7 +63,7 @@ Puede copiar los archivos de origen que la clasificación de BlueXP esté analiz
 TIP: No se pueden copiar archivos que residen en bases de datos.
 
 .Requisitos
-* Debe tener permisos para copiar archivos. link:concept-cloud-compliance.html#user-roles["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"].
+* Debe tener permisos para copiar archivos. link:concept-cloud-compliance.html["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"] .
 * Para copiar archivos es necesario que el recurso compartido NFS de destino permita el acceso desde la instancia de clasificación de BlueXP.
 * Puede copiar entre 1 y 100,000 archivos a la vez.
 
@@ -106,7 +106,7 @@ El nuevo volumen se creará en el mismo agregado que el volumen de origen. Aseg�
 *Nota:* los volúmenes FlexGroup no se pueden clonar porque FlexClone no los admite.
 
 .Requisitos
-* Debe tener permisos para copiar archivos. link:concept-cloud-compliance.html#user-roles["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"].
+* Debe tener permisos para copiar archivos. link:concept-cloud-compliance.html["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"] .
 * Debe seleccionar un mínimo de 20 archivos.
 * Todos los archivos seleccionados deben ser del mismo volumen y el volumen debe estar en línea.
 * El volumen debe ser de un sistema ONTAP Cloud Volumes ONTAP o en las instalaciones. Actualmente no se admiten otros orígenes de datos.
@@ -160,7 +160,7 @@ Esto resulta útil en situaciones en las que se migran datos de un sistema de or
 TIP: No se pueden copiar y sincronizar archivos que residen en cuentas de SharePoint, cuentas de OneDrive o bases de datos.
 
 .Requisitos
-* Debe tener permisos para copiar y sincronizar archivos. link:concept-cloud-compliance.html#user-roles["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"].
+* Debe tener permisos para copiar y sincronizar archivos. link:concept-cloud-compliance.html["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"] .
 * Debe seleccionar un mínimo de 20 archivos.
 * Todos los archivos seleccionados deben ser del mismo repositorio de origen (volumen ONTAP, bloque de S3, recurso compartido NFS o CIFS, etc.).
 * Deberá activar el servicio de copia y sincronización de BlueXP y configurar un agente de datos como mínimo que se puede utilizar para transferir archivos entre los sistemas de origen y de destino. Revise los requisitos de copia y sincronización de BlueXP a partir del https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Descripción de Inicio rápido"^].
@@ -218,7 +218,7 @@ Tenga en cuenta que la estructura de subdirectorios del archivo de origen se vue
 TIP: No se pueden mover los archivos que residen en las bases de datos.
 
 .Requisitos
-* Debe tener permisos para mover archivos. link:concept-cloud-compliance.html#user-roles["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"].
+* Debe tener permisos para mover archivos. link:concept-cloud-compliance.html["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"] .
 * Los archivos de origen se pueden ubicar en los siguientes orígenes de datos: ONTAP en las instalaciones, Cloud Volumes ONTAP, Azure NetApp Files, recursos compartidos de archivos y SharePoint Online.
 * Puede mover un máximo de 15 millones de archivos al mismo tiempo.
 * Solo se mueven los archivos de 50 MB o menos.
@@ -270,7 +270,7 @@ Para eliminar archivos, es necesario contar con los siguientes permisos:
 === Elimine los archivos de origen manualmente
 
 .Requisitos
-* Debe tener permisos para eliminar archivos. link:concept-cloud-compliance.html#user-roles["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"].
+* Debe tener permisos para eliminar archivos. link:concept-cloud-compliance.html["Obtenga más información sobre el acceso de los usuarios a la información de cumplimiento normativo"] .
 * Puede eliminar un máximo de 100,000 archivos al mismo tiempo.
 
 
